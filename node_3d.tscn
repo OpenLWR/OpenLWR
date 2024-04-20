@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=3 uid="uid://d1voufvibxvu4"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/multiplayer.gd" id="1_qcftf"]
+[ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="1_r185b"]
+[ext_resource type="ArrayMesh" uid="uid://mh7bhpaspmgv" path="res://Assets/Misc/Models/placeholder_panel.obj" id="2_e6hnd"]
+[ext_resource type="Material" uid="uid://cxsxep1u6sj3f" path="res://Assets/Materials/panel material.tres" id="3_uq4p3"]
+[ext_resource type="PackedScene" uid="uid://dok8h20vi4url" path="res://Assets/Gauges/edgewise/edgewise_gauge.tscn" id="5_27fgl"]
+
+[sub_resource type="Environment" id="Environment_qd5ya"]
+ambient_light_source = 1
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_emsru"]
+data = PackedVector3Array(0, 0, 0, 0, 0, 59.9995, 36, 0, 59.9995, 0, 0, 0, 36, 0, 59.9995, 36, 0, 0, 0, 0, 59.9995, 0, 3.999, 59.9995, 36, 3.999, 59.9995, 0, 0, 59.9995, 36, 3.999, 59.9995, 36, 0, 59.9995, 0, 3.999, 59.9995, 0, 29.9994, 65.3939, 36, 29.9994, 65.3939, 0, 3.999, 59.9995, 36, 29.9994, 65.3939, 36, 3.999, 59.9995, 0, 29.9994, 65.3939, 0, 35.9993, 35.9993, 36, 35.9993, 35.9993, 0, 29.9994, 65.3939, 36, 35.9993, 35.9993, 36, 29.9994, 65.3939, 0, 35.9993, 35.9993, 0, 93.9986, 35.9993, 36, 93.9986, 35.9993, 0, 35.9993, 35.9993, 36, 93.9986, 35.9993, 36, 35.9993, 35.9993, 0, 93.9986, 35.9993, 0, 94, 0, 36, 94, 0, 0, 93.9986, 35.9993, 36, 94, 0, 36, 93.9986, 35.9993, 0, 94, 0, 0, 0, 0, 36, 0, 0, 0, 94, 0, 36, 0, 0, 36, 94, 0, 36, 0, 0, 36, 0, 59.9995, 36, 35.9993, 35.9993, 36, 0, 0, 36, 35.9993, 35.9993, 36, 94, 0, 36, 94, 0, 36, 35.9993, 35.9993, 36, 93.9986, 35.9993, 36, 3.999, 59.9995, 36, 29.9994, 65.3939, 36, 35.9993, 35.9993, 36, 3.999, 59.9995, 36, 35.9993, 35.9993, 36, 0, 59.9995, 0, 94, 0, 0, 93.9986, 35.9993, 0, 35.9993, 35.9993, 0, 94, 0, 0, 35.9993, 35.9993, 0, 0, 0, 0, 0, 0, 0, 35.9993, 35.9993, 0, 0, 59.9995, 0, 3.999, 59.9995, 0, 0, 59.9995, 0, 35.9993, 35.9993, 0, 3.999, 59.9995, 0, 35.9993, 35.9993, 0, 29.9994, 65.3939)
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000860214, -0.00277793, 0.000972271)
+script = ExtResource("1_qcftf")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_qd5ya")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0127487, 2.48194, 0.0338306)
+use_collision = true
+flip_faces = true
+size = Vector3(10, 5, 10)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.57742)
+size = Vector3(20, 20, 23.494)
+
+[node name="Player" parent="." instance=ExtResource("1_r185b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06602, 0)
+
+[node name="Panel" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.146745, 0, 0, 0, 0.02532, 0, 0, 0, 0.02532, -3.03419, -0.018195, -4.28669)
+material_override = ExtResource("3_uq4p3")
+mesh = ExtResource("2_e6hnd")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Panel"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Panel/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_emsru")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.01869, 4.27658, -1.19061)
+light_energy = 3.845
+omni_range = 14.003
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.02648, 4.28278, -1.19124)
+light_energy = 3.845
+omni_range = 14.003
+
+[node name="test_gauge" parent="." instance=ExtResource("5_27fgl")]
+transform = Transform3D(0.00217571, 0, -0.152384, 0, 0.1524, 0, 0.152384, 0, 0.00217571, -0.0264395, 1.40843, -3.50526)
+
+[editable path="test_gauge"]
+[editable path="test_gauge/edgewise_gauge"]

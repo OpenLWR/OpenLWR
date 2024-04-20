@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://7gv6q50fuutj"]
+
+[ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_1w47b"]
+[ext_resource type="Script" path="res://Scenes/Player/FPS Counter.gd" id="2_m6aot"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_emkox"]
+radius = 0.493347
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_6b3ky"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_1w47b")
+
+[node name="CollisionShape3d" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_emkox")
+
+[node name="MeshInstance3d" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_6b3ky")
+
+[node name="Head" type="Node3D" parent="."]
+
+[node name="Camera3d" type="Camera3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.603, -0.386)
+current = true
+near = 0.035
+far = 48.01
+
+[node name="RayCast3d" type="RayCast3D" parent="Head/Camera3d"]
+transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 0, -0.00588065, 0.463024)
+target_position = Vector3(60, 0, 0)
+
+[node name="Node2D" type="Node2D" parent="Head/Camera3d"]
+
+[node name="Label" type="Label" parent="Head/Camera3d/Node2D"]
+offset_right = 114.0
+offset_bottom = 23.0
+text = "FPS:"
+script = ExtResource("2_m6aot")

@@ -1,0 +1,5 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c1j8toxlvfuds"]
+
+[resource]
+albedo_color = Color(0.196078, 0.196078, 0.196078, 1)
+refraction_enabled = true

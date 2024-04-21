@@ -10,6 +10,7 @@ enum client_packets {
 enum server_packets {
 	METER_PARAMETERS_UPDATE = 0,
 	USER_LOGOUT = 1,
+	SWITCH_PARAMETERS_UPDATE = 3,
 }
 
 @onready var gauges = {
@@ -23,6 +24,7 @@ enum server_packets {
 
 var switches = {
 	"test_switch": {
+		"switch": null,
 		"positions": {
 			0: 45,
 			1: 0,
@@ -83,6 +85,13 @@ func _process(delta):
 				server_packets.USER_LOGOUT:
 					# data: the username of the person who logged out, string
 					print("User %s logged out." % [packet_data])
+					
+				server_packets.SWITCH_PARAMETERS_UPDATE:
+					packet_data = json.parse_string(packet_data)
+					for switch in packet_data:
+						var position = packet_data[switch]
+						if switches[switch].switch != null:
+							switches[switch].switch.switch_position_change(position)
 				
 				
 	elif state == WebSocketPeer.STATE_CLOSING:

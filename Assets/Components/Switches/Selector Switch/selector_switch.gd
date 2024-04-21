@@ -3,7 +3,10 @@ extends Node3D
 @onready var node_3d = $"/root/Node3D"
 @onready var switch = node_3d.switches[self.name]
 
-func switch_position_change(to_position):
+func _ready():
+	switch.switch = self
+
+func switch_position_change(to_position: int):
 	switch.position = to_position
 	# TODO: switch audio
 	$"selector_switch/Handle".set_rotation_degrees(Vector3(90, switch.positions[switch.position], 0))

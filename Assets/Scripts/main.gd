@@ -43,8 +43,6 @@ func _ready(): # assume here that the scene was called by the lobby screen
 	socket.connect_to_url(endpoint)
 	
 func parse_b64(b64):
-	# remove b'' from string
-	b64 = b64.right(-2).left(-1)
 	return Marshalls.base64_to_utf8(b64)
 
 func _process(delta):
@@ -57,7 +55,7 @@ func _process(delta):
 		for switch_name in switches:
 			var switch = switches[switch_name]
 			if switch.updated == true:
-				updated_switches[switch_name] = switch
+				updated_switches[switch_name] = switch.position
 		
 		# if switches have been turned, send them to the server
 		if updated_switches != {}:

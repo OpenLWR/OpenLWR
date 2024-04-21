@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://d1voufvibxvu4"]
 
-[ext_resource type="Script" path="res://Assets/Scripts/multiplayer.gd" id="1_qcftf"]
+[ext_resource type="Script" path="res://Assets/Scripts/main.gd" id="1_qcftf"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="1_r185b"]
 [ext_resource type="ArrayMesh" uid="uid://mh7bhpaspmgv" path="res://Assets/Misc/Models/placeholder_panel.obj" id="2_e6hnd"]
 [ext_resource type="Material" uid="uid://cxsxep1u6sj3f" path="res://Assets/Materials/panel material.tres" id="3_uq4p3"]

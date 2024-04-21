@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://d1voufvibxvu4"]
+[gd_scene load_steps=9 format=3 uid="uid://d1voufvibxvu4"]
 
-[ext_resource type="Script" path="res://Assets/Scripts/multiplayer.gd" id="1_qcftf"]
+[ext_resource type="Script" path="res://Assets/Scripts/main.gd" id="1_qcftf"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="1_r185b"]
 [ext_resource type="ArrayMesh" uid="uid://mh7bhpaspmgv" path="res://Assets/Misc/Models/placeholder_panel.obj" id="2_e6hnd"]
 [ext_resource type="Material" uid="uid://cxsxep1u6sj3f" path="res://Assets/Materials/panel material.tres" id="3_uq4p3"]
-[ext_resource type="PackedScene" uid="uid://dok8h20vi4url" path="res://Assets/Gauges/edgewise/edgewise_gauge.tscn" id="5_27fgl"]
+[ext_resource type="PackedScene" uid="uid://dok8h20vi4url" path="res://Assets/Components/Gauges/Edgewise/edgewise_gauge.tscn" id="5_27fgl"]
+[ext_resource type="PackedScene" uid="uid://cyksa23nxqjwn" path="res://Assets/Components/Switches/Selector Switch/selector_switch.tscn" id="6_3apnd"]
 
 [sub_resource type="Environment" id="Environment_qd5ya"]
 ambient_light_source = 1
@@ -53,7 +54,10 @@ light_energy = 3.845
 omni_range = 14.003
 
 [node name="test_gauge" parent="." instance=ExtResource("5_27fgl")]
-transform = Transform3D(0.00217571, 0, -0.152384, 0, 0.1524, 0, 0.152384, 0, 0.00217571, -0.0264395, 1.40843, -3.50526)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.59784, -3.51043)
 
-[editable path="test_gauge"]
-[editable path="test_gauge/edgewise_gauge"]
+[node name="test_switch" parent="." instance=ExtResource("6_3apnd")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.39593, -3.36214)
+
+[editable path="test_switch"]
+[editable path="test_switch/selector_switch"]

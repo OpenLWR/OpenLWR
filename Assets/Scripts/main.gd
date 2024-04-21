@@ -5,6 +5,7 @@ const uuid_util = preload('res://addons/uuid/uuid.gd')
 
 enum client_packets {
 	LOGOUT = 2,
+	SWITCH_PARAMETERS_UPDATE = 3,
 }
 
 enum server_packets {
@@ -21,8 +22,24 @@ enum server_packets {
 	},
 }
 
+var switches = {
+	"test_switch": {
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false
+	},
+}
+
+func build_packet(packet_id, data):
+	return "{%s}|{%s}" % [str(packet_id), Marshalls.utf8_to_base64(data)]
+
 func _ready():
-	socket.connect_to_url("ws://192.168.0.112:7001/ws/%s" % [uuid_util.v4()])
+	socket.connect_to_url("ws://192.168.0.112:7001/ws/%s" % [uuid_util.v4()]) # TODO: should token be generated on server-side?
 	
 func parse_b64(b64):
 	# remove b'' from string
@@ -33,6 +50,13 @@ func _process(delta):
 	socket.poll()
 	var state = socket.get_ready_state()
 	if state == WebSocketPeer.STATE_OPEN:
+		# check if any switches have been turned
+		for switch_name in switches:
+			var switch = switches[switch_name]
+			if switch.updated == true:
+				pass
+		
+		# recieve packets
 		while socket.get_available_packet_count():
 			var packet = socket.get_packet().get_string_from_utf8().split("|")
 			var packet_id = int(packet[0])

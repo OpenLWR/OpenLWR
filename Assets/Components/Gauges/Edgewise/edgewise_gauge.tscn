@@ -1,9 +1,9 @@
 [gd_scene load_steps=12 format=3 uid="uid://dok8h20vi4url"]
 
-[ext_resource type="PackedScene" uid="uid://dwlvtbrsq8blg" path="res://Assets/Gauges/edgewise/edgewise_gauge.glb" id="1_kpy8e"]
-[ext_resource type="Script" path="res://Assets/Gauges/edgewise/edgewise_gauge.gd" id="1_uwsdk"]
-[ext_resource type="Texture2D" uid="uid://d3hiq4sjgx00w" path="res://Assets/Gauges/edgewise/textures/placeholder/left.png" id="3_1foyj"]
-[ext_resource type="Texture2D" uid="uid://dfxr8mswmegkc" path="res://Assets/Gauges/edgewise/textures/placeholder/right.png" id="4_fihgh"]
+[ext_resource type="PackedScene" uid="uid://dwlvtbrsq8blg" path="res://Assets/Components/Gauges/Edgewise/edgewise_gauge.glb" id="1_kpy8e"]
+[ext_resource type="Script" path="res://Assets/Components/Gauges/Edgewise/edgewise_gauge.gd" id="1_uwsdk"]
+[ext_resource type="Texture2D" uid="uid://d3hiq4sjgx00w" path="res://Assets/Components/Gauges/Edgewise/textures/placeholder/left.png" id="3_1foyj"]
+[ext_resource type="Texture2D" uid="uid://dfxr8mswmegkc" path="res://Assets/Components/Gauges/Edgewise/textures/placeholder/right.png" id="4_fihgh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ysqbr"]
 albedo_texture = ExtResource("3_1foyj")
@@ -55,6 +55,7 @@ shadow_mesh = SubResource("ArrayMesh_0d7jx")
 script = ExtResource("1_uwsdk")
 
 [node name="edgewise_gauge" parent="." instance=ExtResource("1_kpy8e")]
+transform = Transform3D(-6.66159e-09, 0, -0.152399, 0, 0.152399, 0, 0.152399, 0, -6.66159e-09, 0, 0, 0)
 
 [node name="Face" parent="edgewise_gauge" index="0"]
 material_override = SubResource("StandardMaterial3D_ysqbr")

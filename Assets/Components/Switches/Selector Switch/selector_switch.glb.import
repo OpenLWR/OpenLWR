@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dwlvtbrsq8blg"
-path="res://.godot/imported/edgewise_gauge.glb-cb4a73725cf6448c12c7495a5b0db67d.scn"
+uid="uid://b8ytxboqk7tb7"
+path="res://.godot/imported/selector_switch.glb-eaa1085b6446b10dac0c328c06319f63.scn"
 
 [deps]
 
-source_file="res://Assets/Gauges/edgewise/edgewise_gauge.glb"
-dest_files=["res://.godot/imported/edgewise_gauge.glb-cb4a73725cf6448c12c7495a5b0db67d.scn"]
+source_file="res://Assets/Components/Switches/Selector Switch/selector_switch.glb"
+dest_files=["res://.godot/imported/selector_switch.glb-eaa1085b6446b10dac0c328c06319f63.scn"]
 
 [params]
 

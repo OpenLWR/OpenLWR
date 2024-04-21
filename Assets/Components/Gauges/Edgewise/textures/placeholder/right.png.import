@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfxr8mswmegkc"
-path.s3tc="res://.godot/imported/right.png-46939c9a695ce1e0a38e0b24aa49c8fa.s3tc.ctex"
+path.s3tc="res://.godot/imported/right.png-eaa20f42ea5a6508c900ba39d615f956.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Gauges/edgewise/textures/placeholder/right.png"
-dest_files=["res://.godot/imported/right.png-46939c9a695ce1e0a38e0b24aa49c8fa.s3tc.ctex"]
+source_file="res://Assets/Components/Gauges/Edgewise/textures/placeholder/right.png"
+dest_files=["res://.godot/imported/right.png-eaa20f42ea5a6508c900ba39d615f956.s3tc.ctex"]
 
 [params]
 

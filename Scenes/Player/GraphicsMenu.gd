@@ -21,6 +21,7 @@ func _new_occlusion_selected(index):
 func set_antialiasing_dropdown(dropdown):
 	dropdown.add_item("MSAA 8x")
 	dropdown.add_item("MSAA 4x")
+	dropdown.add_item("MSAA 2x")
 	dropdown.add_item("TAA")
 	dropdown.add_item("DISABLED")
 
@@ -33,8 +34,11 @@ func _new_antialiasing_selected(index):
 		viewport.msaa_3d = 2
 		viewport.use_taa = false
 	elif index == 3:
+		viewport.msaa_3d = 1
+		viewport.use_taa = false
+	elif index == 4:
 		viewport.msaa_3d = 0
 		viewport.use_taa = true
-	elif index == 4:
+	elif index == 5:
 		viewport.msaa_3d = 0
 		viewport.use_taa = false

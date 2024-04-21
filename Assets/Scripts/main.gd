@@ -31,12 +31,13 @@ var switches = {
 		},
 		"position": 1,
 		"momentary": false,
-		"updated": false
+		"updated": true,
 	},
 }
 
 func build_packet(packet_id, data):
-	return "{%s}|{%s}" % [str(packet_id), Marshalls.utf8_to_base64(data)]
+	return "%s|%s" % [str(packet_id), Marshalls.utf8_to_base64(data)]
+	
 
 func _ready(): # assume here that the scene was called by the lobby screen
 	var endpoint = "ws://%s:7001/ws/%s" % [globals.server_ip_requested_tojoin, uuid_util.v4()] # TODO: should token be generated on server-side?
@@ -53,11 +54,21 @@ func _process(delta):
 	globals.connection_state = state
 	if state == WebSocketPeer.STATE_OPEN:
 		# check if any switches have been turned
+		var updated_switches = {}
 		for switch_name in switches:
 			var switch = switches[switch_name]
 			if switch.updated == true:
-				pass
+				updated_switches[switch_name] = switch
 		
+		# if switches have been turned, send them to the server
+		if updated_switches != {}:
+			var err = socket.send_text(build_packet(client_packets.SWITCH_PARAMETERS_UPDATE, json.stringify(updated_switches)))
+			if not err:
+				for switch in updated_switches:
+					switches[switch].updated = false
+			else:
+				print(err)
+			
 		# recieve packets
 		while socket.get_available_packet_count():
 			var packet = socket.get_packet().get_string_from_utf8().split("|")

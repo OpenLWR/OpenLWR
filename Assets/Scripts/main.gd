@@ -4,8 +4,7 @@ var socket = WebSocketPeer.new()
 const uuid_util = preload('res://addons/uuid/uuid.gd')
 
 enum client_packets {
-	LOGOUT = 2,
-	SWITCH_PARAMETERS_UPDATE = 3,
+	SWITCH_PARAMETERS_UPDATE = 2,
 }
 
 enum server_packets {

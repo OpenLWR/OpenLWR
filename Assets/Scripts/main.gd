@@ -1,7 +1,6 @@
 extends Node3D
 var json = JSON.new()
 var socket = WebSocketPeer.new()
-const uuid_util = preload('res://addons/uuid/uuid.gd')
 
 enum client_packets {
 	SWITCH_PARAMETERS_UPDATE = 2,
@@ -41,7 +40,7 @@ func build_packet(packet_id, data):
 	
 
 func _ready(): # assume here that the scene was called by the lobby screen
-	var endpoint = "ws://%s:7001/ws/%s" % [globals.server_ip_requested_tojoin, uuid_util.v4()] # TODO: should token be generated on server-side?
+	var endpoint = "ws://%s:7001/ws" % [globals.server_ip_requested_tojoin] # TODO: should token be generated on server-side?
 	socket.connect_to_url(endpoint)
 	
 func parse_b64(b64):

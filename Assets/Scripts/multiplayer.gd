@@ -21,8 +21,9 @@ enum server_packets {
 	},
 }
 
-func _ready():
-	socket.connect_to_url("ws://192.168.0.112:7001/ws/%s" % [uuid_util.v4()])
+func _ready(): # assume here that the scene was called by the lobby screen
+	var ip_formatted = "ws://%s:7001/ws/%s" % [globals.server_ip_requested_tojoin,uuid_util.v4()]
+	socket.connect_to_url(ip_formatted)
 	
 func parse_b64(b64):
 	# remove b'' from string

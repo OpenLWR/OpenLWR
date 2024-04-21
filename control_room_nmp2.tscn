@@ -1,0 +1,190 @@
+[gd_scene load_steps=15 format=3 uid="uid://hp5vectj4xsb"]
+
+[ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_4xgnc"]
+[ext_resource type="Material" uid="uid://b0b37alwlfoju" path="res://Assets/Materials/white_metal.tres" id="2_yxnln"]
+[ext_resource type="Texture2D" uid="uid://bbvchytlxmrql" path="res://Assets/Textures/reference diagrams/right top.png" id="3_wac5a"]
+[ext_resource type="Texture2D" uid="uid://71j2fqbc3wtf" path="res://Assets/Textures/reference diagrams/containment diagram.png" id="4_gn0to"]
+[ext_resource type="Texture2D" uid="uid://bnjxm5soj3u4k" path="res://Assets/Textures/reference diagrams/containment valve position board 2.png" id="5_cu8b6"]
+[ext_resource type="Texture2D" uid="uid://bpmcwxrat7733" path="res://Assets/Textures/reference diagrams/containment valve position board.png" id="6_6loh1"]
+[ext_resource type="Texture2D" uid="uid://ckmu8r7l2275j" path="res://Assets/Textures/reference diagrams/right bottom.png" id="7_24gte"]
+[ext_resource type="Texture2D" uid="uid://b6wxx3h3n7ma4" path="res://Assets/Textures/reference diagrams/far right top.png" id="8_kak5j"]
+[ext_resource type="Texture2D" uid="uid://c5mf7w21bguk3" path="res://Assets/Textures/reference diagrams/far right bottom.png" id="9_kymi5"]
+[ext_resource type="Texture2D" uid="uid://b3n4wehhobo3m" path="res://Assets/Textures/reference diagrams/left top.png" id="10_qngks"]
+[ext_resource type="Texture2D" uid="uid://beqqlv1n26wjl" path="res://Assets/Textures/reference diagrams/left bottom.png" id="11_j80ym"]
+[ext_resource type="Texture2D" uid="uid://00yvkya2csl6" path="res://Assets/Textures/reference diagrams/ML18041A0162.png" id="12_ytk0k"]
+[ext_resource type="Texture2D" uid="uid://bcsu84r2hm3o8" path="res://Assets/Textures/reference diagrams/ML18041A01621.png" id="13_3gybx"]
+
+[sub_resource type="Environment" id="Environment_gjsn6"]
+ambient_light_source = 1
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("2_4xgnc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06602, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -0.842663, 1.96479, -2.23032)
+use_collision = true
+flip_faces = true
+size = Vector3(20.6954, 3.9657, 14.5513)
+material = ExtResource("2_yxnln")
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.57742)
+size = Vector3(20, 20, 23.494)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_gjsn6")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2066, 3.26588, 0.773689)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43964, 3.26588, 0.773689)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33286, 3.26588, 0.773689)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2066, 3.26588, -4.43525)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43964, 3.26588, -4.43525)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33286, 3.26588, -4.43525)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="Control Room Panels" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.9503)
+
+[node name="Main Panel Right Side" type="CSGPolygon3D" parent="Control Room Panels"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.93732, 0.806, 15.7596)
+use_collision = true
+polygon = PackedVector2Array(0.998528, 0.108852, 0.999, 1.584, 0.072, 1.584, 0.072, -0.805, 1.612, -0.805, 1.612, -0.702, 1.73853, -0.0391665)
+depth = 2.6
+
+[node name="reference diagrams" type="Node3D" parent="Control Room Panels/Main Panel Right Side"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.04038)
+
+[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Right Side/reference diagrams"]
+transform = Transform3D(-4.74269e-08, 0, 1.085, 0, 1.085, 0, -1.085, 0, -4.74269e-08, 0.999079, 0.844471, -2.337)
+sorting_offset = 1.0
+pixel_size = 0.0007
+texture = ExtResource("3_wac5a")
+
+[node name="Sprite3D3" type="Sprite3D" parent="Control Room Panels/Main Panel Right Side/reference diagrams"]
+transform = Transform3D(-3.71547e-08, 0, 0.85, 0, 0.85, 0, -0.85, 0, -3.71547e-08, 0.999079, 1.15013, -2.70729)
+sorting_offset = 2.0
+pixel_size = 0.0003
+texture = ExtResource("4_gn0to")
+
+[node name="Sprite3D4" type="Sprite3D" parent="Control Room Panels/Main Panel Right Side/reference diagrams"]
+transform = Transform3D(-3.93403e-08, 0, 0.9, 0, 0.9, 0, -0.9, 0, -3.93403e-08, 0.999079, 0.64759, -2.95903)
+sorting_offset = 2.0
+pixel_size = 0.0004
+texture = ExtResource("5_cu8b6")
+
+[node name="Sprite3D5" type="Sprite3D" parent="Control Room Panels/Main Panel Right Side/reference diagrams"]
+transform = Transform3D(-3.93403e-08, 0, 0.9, 0, 0.9, 0, -0.9, 0, -3.93403e-08, 0.999079, 0.64759, -2.45105)
+sorting_offset = 2.0
+pixel_size = 0.0004
+texture = ExtResource("6_6loh1")
+
+[node name="Sprite3D2" type="Sprite3D" parent="Control Room Panels/Main Panel Right Side/reference diagrams"]
+transform = Transform3D(-4.74269e-08, -1.06397, 0.212602, 0, 0.212602, 1.06397, -1.085, 4.65075e-08, -9.29311e-09, 1.36796, 0.0351377, -2.33779)
+sorting_offset = 1.0
+pixel_size = 0.0007
+texture = ExtResource("7_24gte")
+
+[node name="Main Panel Far Right Side" type="CSGPolygon3D" parent="Control Room Panels"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.9487, 0.806, 15.7596)
+use_collision = true
+polygon = PackedVector2Array(0.998528, 0.108852, 0.999, 1.584, -0.062, 1.584, -0.062, -0.805, 1.612, -0.805, 1.612, -0.702, 1.73853, -0.0391665)
+depth = 6.6
+
+[node name="reference diagrams" type="Node3D" parent="Control Room Panels/Main Panel Far Right Side"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0389862, 0.00164974, -0.929476)
+
+[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Far Right Side/reference diagrams"]
+transform = Transform3D(-4.43671e-08, 0, 1.015, 0, 1.015, 0, -1.015, 0, -4.43671e-08, 0.975982, 0.844, -2.371)
+sorting_offset = 10.0
+pixel_size = 0.0007
+texture = ExtResource("8_kak5j")
+
+[node name="Sprite3D2" type="Sprite3D" parent="Control Room Panels/Main Panel Far Right Side/reference diagrams"]
+transform = Transform3D(-4.43671e-08, -0.995324, 0.198885, 0, 0.198885, 0.995324, -1.015, 4.3507e-08, -8.69354e-09, 1.35944, 0.0360031, -2.33807)
+sorting_offset = 10.0
+pixel_size = 0.0007
+texture = ExtResource("9_kymi5")
+
+[node name="Main Panel Left Side" type="CSGPolygon3D" parent="Control Room Panels"]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 9.5113, 0.806, 2.68892)
+use_collision = true
+polygon = PackedVector2Array(0.998528, 0.108852, 0.999, 1.584, 0.072, 1.584, 0.072, -0.805, 1.612, -0.805, 1.612, -0.702, 1.73853, -0.0391665)
+depth = 9.5
+
+[node name="reference diagrams" type="Node3D" parent="Control Room Panels/Main Panel Left Side"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.487)
+
+[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/reference diagrams"]
+transform = Transform3D(-4.43671e-08, 0, 1.015, 0, 1.015, 0, -1.015, 0, -4.43671e-08, 1, 0.838, -2.282)
+sorting_offset = 1.0
+pixel_size = 0.0007
+texture = ExtResource("10_qngks")
+
+[node name="Sprite3D2" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/reference diagrams"]
+transform = Transform3D(-4.43671e-08, -0.995324, 0.198885, 0, 0.198885, 0.995324, -1.015, 4.3507e-08, -8.69354e-09, 1.36754, 0.035221, -2.28235)
+sorting_offset = 1.0
+pixel_size = 0.0007
+texture = ExtResource("11_j80ym")
+
+[node name="Main Panel Center" type="CSGPolygon3D" parent="Control Room Panels"]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 9.63457, 0.806, 12.4748)
+use_collision = true
+polygon = PackedVector2Array(0.998528, 0.108852, 0.999, 1.584, 0.072, 1.584, 0.072, -0.805, 1.612, -0.805, 1.612, -0.702, 1.73853, -0.0391665)
+depth = 4.8
+
+[node name="reference diagrams" type="Node3D" parent="Control Room Panels/Main Panel Center"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000125885, 5.96046e-08, 0.00373268)
+
+[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Center/reference diagrams"]
+transform = Transform3D(-5.96046e-08, 0, 1.015, 0, 1.015, 0, -1.015, 0, -5.96046e-08, 0.999429, 0.948, -2.29557)
+sorting_offset = 1.0
+pixel_size = 0.0007
+texture = ExtResource("12_ytk0k")
+
+[node name="Sprite3D2" type="Sprite3D" parent="Control Room Panels/Main Panel Center/reference diagrams"]
+transform = Transform3D(-5.96046e-08, -0.995325, 0.198885, 0, 0.198885, 0.995324, -1.015, 8.9407e-08, 0, 1.44245, 0.0202525, -2.296)
+sorting_offset = 1.0
+pixel_size = 0.0007
+texture = ExtResource("13_3gybx")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, 7.228, 2.39, 4.943)
+use_collision = true
+polygon = PackedVector2Array(0.072, 3.89, 0.072, 0.86, 3.329, -2.475, 13.203, -2.475, 13.203, -1.583, 3.6211, -2.00192, 0.470073, 1.0652, 0.426829, 3.89049)
+depth = 2.4

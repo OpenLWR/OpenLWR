@@ -33,6 +33,7 @@ func parse_b64(b64):
 func _process(delta):
 	socket.poll()
 	var state = socket.get_ready_state()
+	globals.connection_state = state
 	if state == WebSocketPeer.STATE_OPEN:
 		while socket.get_available_packet_count():
 			var packet = socket.get_packet().get_string_from_utf8().split("|")

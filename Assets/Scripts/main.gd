@@ -38,8 +38,9 @@ var switches = {
 func build_packet(packet_id, data):
 	return "{%s}|{%s}" % [str(packet_id), Marshalls.utf8_to_base64(data)]
 
-func _ready():
-	socket.connect_to_url("ws://192.168.0.112:7001/ws/%s" % [uuid_util.v4()]) # TODO: should token be generated on server-side?
+func _ready(): # assume here that the scene was called by the lobby screen
+	var endpoint = "ws://%s:7001/ws/%s" % [globals.server_ip_requested_tojoin, uuid_util.v4()] # TODO: should token be generated on server-side?
+	socket.connect_to_url(endpoint)
 	
 func parse_b64(b64):
 	# remove b'' from string
@@ -49,6 +50,7 @@ func parse_b64(b64):
 func _process(delta):
 	socket.poll()
 	var state = socket.get_ready_state()
+  globals.connection_state = state
 	if state == WebSocketPeer.STATE_OPEN:
 		# check if any switches have been turned
 		for switch_name in switches:

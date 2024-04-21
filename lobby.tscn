@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://euuixnwadyuo"]
+
+[ext_resource type="Script" path="res://LobbyScreen.gd" id="1_xa6da"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_x4kxn"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("1_xa6da")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Node2D"]
+modulate = Color(0.150104, 0.16789, 0.219662, 1)
+position = Vector2(394.25, 222.25)
+scale = Vector2(735.5, 407.5)
+mesh = SubResource("BoxMesh_x4kxn")
+
+[node name="ServerIP" type="Label" parent="Node2D"]
+offset_left = 348.0
+offset_top = 22.0
+offset_right = 417.0
+offset_bottom = 45.0
+text = "Server IP"
+
+[node name="TextEdit" type="TextEdit" parent="Node2D/ServerIP"]
+layout_mode = 0
+offset_left = -77.0
+offset_top = 23.0
+offset_right = 147.0
+offset_bottom = 56.0
+placeholder_text = "Server Ip (explodet)"
+
+[node name="Button" type="Button" parent="Node2D"]
+offset_left = 241.0
+offset_top = 276.0
+offset_right = 522.0
+offset_bottom = 388.0
+text = "Join that one thing"
+
+[node name="Username" type="Label" parent="Node2D"]
+offset_left = 347.0
+offset_top = 86.0
+offset_right = 427.0
+offset_bottom = 109.0
+text = "Username"
+
+[node name="TextEdit" type="TextEdit" parent="Node2D/Username"]
+layout_mode = 0
+offset_left = -77.0
+offset_top = 23.0
+offset_right = 147.0
+offset_bottom = 56.0
+placeholder_text = "Albert Einstein"
+
+[connection signal="pressed" from="Node2D/Button" to="Node2D" method="connect_button_pressed"]

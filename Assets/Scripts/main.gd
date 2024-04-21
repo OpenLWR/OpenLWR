@@ -32,7 +32,7 @@ var switches = {
 		},
 		"position": 1,
 		"momentary": false,
-		"updated": true,
+		"updated": false,
 	},
 }
 

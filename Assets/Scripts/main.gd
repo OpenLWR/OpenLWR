@@ -101,5 +101,7 @@ func _process(delta):
 		var code = socket.get_close_code()
 		var reason = socket.get_close_reason()
 		print("WebSocket closed with code: %d, reason %s. Clean: %s" % [code, reason, code != -1])
+		#kick to lobby screen
+		get_tree().change_scene_to_file("res://lobby.tscn")
 		set_process(false) # Stop processing.
 

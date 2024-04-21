@@ -21,6 +21,9 @@ func _physics_process(_delta):
 		tween.tween_property($Head/Camera3d, "fov", 75, 0.1)
 	tween.play()
 	
+	if Input.is_action_just_pressed("menu_toggle"):
+		get_node("Head/Camera3d/Menu").visible = true
+	
 	# Get the input direction and handle the movement/deceleration.
 	var input_dir = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()

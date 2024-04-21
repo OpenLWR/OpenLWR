@@ -1,10 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://7gv6q50fuutj"]
+[gd_scene load_steps=13 format=3 uid="uid://7gv6q50fuutj"]
 
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_1w47b"]
 [ext_resource type="Script" path="res://Scenes/Player/FPS Counter.gd" id="2_m6aot"]
 [ext_resource type="Texture2D" uid="uid://dbusbncrfmp2s" path="res://Assets/Textures/gear-solid.svg" id="3_t3trs"]
 [ext_resource type="Script" path="res://Scenes/Player/SettingsButton.gd" id="4_blftj"]
 [ext_resource type="Script" path="res://Scenes/Player/ConnectionStateUpdate.gd" id="5_72wwd"]
+[ext_resource type="Script" path="res://Scenes/Player/MenuPlayer.gd" id="6_qkj5w"]
+[ext_resource type="Script" path="res://Scenes/Player/GraphicsMenu.gd" id="6_ssrgo"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_emkox"]
 radius = 0.493347
@@ -42,8 +44,8 @@ target_position = Vector3(60, 0, 0)
 [node name="Node2D" type="Node2D" parent="Head/Camera3d"]
 
 [node name="Label" type="Label" parent="Head/Camera3d/Node2D"]
-offset_left = 138.0
-offset_right = 252.0
+offset_left = 1.0
+offset_right = 115.0
 offset_bottom = 23.0
 text = "FPS:"
 script = ExtResource("2_m6aot")
@@ -83,41 +85,52 @@ script = ExtResource("5_72wwd")
 
 [node name="Menu" type="Node2D" parent="Head/Camera3d"]
 visible = false
+script = ExtResource("6_qkj5w")
 
 [node name="Menu" type="Node2D" parent="Head/Camera3d/Menu"]
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="Head/Camera3d/Menu/Menu"]
-modulate = Color(0.192157, 0.254902, 0.329412, 0.215686)
+modulate = Color(0.120758, 0.166205, 0.220152, 0.603922)
 position = Vector2(576, 324)
 scale = Vector2(1152, 648)
 mesh = SubResource("BoxMesh_n4lxw")
 
 [node name="Disconnect" type="Button" parent="Head/Camera3d/Menu/Menu"]
 offset_left = 393.0
-offset_top = 507.0
+offset_top = 570.0
 offset_right = 722.0
-offset_bottom = 555.0
+offset_bottom = 618.0
 text = "Disconnect "
 
 [node name="Settings" type="Button" parent="Head/Camera3d/Menu/Menu"]
 offset_left = 393.0
-offset_top = 437.0
+offset_top = 500.0
 offset_right = 722.0
-offset_bottom = 485.0
+offset_bottom = 548.0
 text = "Settings"
 
-[node name="Settings" type="Node2D" parent="Head/Camera3d/Menu"]
+[node name="Continue" type="Button" parent="Head/Camera3d/Menu/Menu"]
+offset_left = 393.0
+offset_top = 429.0
+offset_right = 722.0
+offset_bottom = 477.0
+text = "Continue"
 
-[node name="TabContainer" type="TabContainer" parent="Head/Camera3d/Menu/Settings"]
+[node name="Settings" type="Node2D" parent="Head/Camera3d/Menu"]
+visible = false
+
+[node name="Settings" type="TabContainer" parent="Head/Camera3d/Menu/Settings"]
 offset_left = 287.0
 offset_top = 75.0
 offset_right = 830.0
 offset_bottom = 400.0
+current_tab = 1
 
-[node name="General" type="Control" parent="Head/Camera3d/Menu/Settings/TabContainer"]
+[node name="General" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
+visible = false
 layout_mode = 2
 
-[node name="CheckButton" type="CheckButton" parent="Head/Camera3d/Menu/Settings/TabContainer/General"]
+[node name="CheckButton" type="CheckButton" parent="Head/Camera3d/Menu/Settings/Settings/General"]
 layout_mode = 0
 offset_left = 21.0
 offset_top = 19.0
@@ -125,18 +138,43 @@ offset_right = 124.0
 offset_bottom = 50.0
 text = "Setting"
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="Head/Camera3d/Menu/Settings/TabContainer/General"]
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Head/Camera3d/Menu/Settings/Settings/General"]
 z_index = -1
 position = Vector2(88, 149)
 scale = Vector2(147.5, 271.75)
 mesh = SubResource("BoxMesh_nyxp3")
 
-[node name="Graphics" type="Control" parent="Head/Camera3d/Menu/Settings/TabContainer"]
+[node name="Graphics" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
+layout_mode = 2
+script = ExtResource("6_ssrgo")
+
+[node name="OptionButton" type="OptionButton" parent="Head/Camera3d/Menu/Settings/Settings/Graphics"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 79.0
+offset_right = 160.0
+offset_bottom = 99.0
+
+[node name="Label" type="Label" parent="Head/Camera3d/Menu/Settings/Settings/Graphics/OptionButton"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -25.0
+offset_right = 78.0
+offset_bottom = -2.0
+text = "Quality"
+
+[node name="Controls" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
 visible = false
 layout_mode = 2
 
-[node name="Controls" type="Control" parent="Head/Camera3d/Menu/Settings/TabContainer"]
-visible = false
-layout_mode = 2
+[node name="Exit" type="Button" parent="Head/Camera3d/Menu/Settings"]
+offset_left = 794.0
+offset_top = 74.0
+offset_right = 829.0
+offset_bottom = 105.0
+text = "X"
 
 [connection signal="input_event" from="Head/Camera3d/SettingsButton/Button/StaticBody2D" to="Head/Camera3d/SettingsButton/Button/StaticBody2D" method="_on_input_event"]
+[connection signal="pressed" from="Head/Camera3d/Menu/Menu/Settings" to="Head/Camera3d/Menu" method="_settings_button_pressed"]
+[connection signal="pressed" from="Head/Camera3d/Menu/Menu/Continue" to="Head/Camera3d/Menu" method="_continue_button_pressed"]
+[connection signal="pressed" from="Head/Camera3d/Menu/Settings/Exit" to="Head/Camera3d/Menu" method="_settings_exit_pressed"]

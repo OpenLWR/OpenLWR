@@ -1,5 +1,11 @@
 extends Node2D
 
+func _ready():
+	set_scene_dropdown(get_node("Scene"))
+
+func set_scene_dropdown(dropdown):
+	dropdown.add_item("Dev Test")
+	dropdown.add_item("Control Room")
 
 func connect_button_pressed():
 	print("Connect")
@@ -9,4 +15,7 @@ func connect_button_pressed():
 	print(username_requested)
 	globals.server_ip_requested_tojoin = server_ip_requested
 	globals.username_requested_tojoin = username_requested
-	get_tree().change_scene_to_file("res://node_3d.tscn")
+	if get_node("Scene").selected == 0:
+		get_tree().change_scene_to_file("res://node_3d.tscn")
+	else:
+		get_tree().change_scene_to_file("res://control_room_nmp2.tscn")

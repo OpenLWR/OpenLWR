@@ -52,4 +52,19 @@ offset_right = 147.0
 offset_bottom = 56.0
 placeholder_text = "Albert Einstein"
 
+[node name="Scene" type="OptionButton" parent="Node2D"]
+offset_left = 338.0
+offset_top = 196.0
+offset_right = 426.0
+offset_bottom = 216.0
+
+[node name="Label" type="Label" parent="Node2D/Scene"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = -24.0
+offset_right = 77.0
+offset_bottom = -1.0
+text = "Scene"
+horizontal_alignment = 1
+
 [connection signal="pressed" from="Node2D/Button" to="Node2D" method="connect_button_pressed"]

@@ -163,6 +163,21 @@ offset_right = 78.0
 offset_bottom = -2.0
 text = "Occlusion"
 
+[node name="Vsync" type="OptionButton" parent="Head/Camera3d/Menu/Settings/Settings/Graphics"]
+layout_mode = 0
+offset_left = 151.0
+offset_top = 43.0
+offset_right = 232.0
+offset_bottom = 63.0
+
+[node name="Label" type="Label" parent="Head/Camera3d/Menu/Settings/Settings/Graphics/Vsync"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -25.0
+offset_right = 78.0
+offset_bottom = -2.0
+text = "VSync"
+
 [node name="Antialiasing" type="OptionButton" parent="Head/Camera3d/Menu/Settings/Settings/Graphics"]
 offset_left = 26.0
 offset_top = 167.0
@@ -192,5 +207,6 @@ text = "X"
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Settings" to="Head/Camera3d/Menu" method="_settings_button_pressed"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Continue" to="Head/Camera3d/Menu" method="_continue_button_pressed"]
 [connection signal="item_selected" from="Head/Camera3d/Menu/Settings/Settings/Graphics/Occlusion" to="Head/Camera3d/Menu/Settings/Settings/Graphics" method="_new_occlusion_selected"]
+[connection signal="item_selected" from="Head/Camera3d/Menu/Settings/Settings/Graphics/Vsync" to="Head/Camera3d/Menu/Settings/Settings/Graphics" method="_new_vsync_selected"]
 [connection signal="item_selected" from="Head/Camera3d/Menu/Settings/Settings/Graphics/Antialiasing" to="Head/Camera3d/Menu/Settings/Settings/Graphics" method="_new_antialiasing_selected"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Settings/Exit" to="Head/Camera3d/Menu" method="_settings_exit_pressed"]

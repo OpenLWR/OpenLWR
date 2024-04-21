@@ -4,10 +4,12 @@ extends Control
 func _ready():
 	set_occlusion_dropdown(get_node("Occlusion"))
 	set_antialiasing_dropdown(get_node("Antialiasing"))
+	set_vsync_dropdown(get_node("Vsync"))
 	var viewport = get_viewport()
 	viewport.msaa_3d = 3
 	viewport.use_taa = false
 	viewport.use_occlusion_culling = true
+	DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_ENABLED)
 	
 #TODO: actually set graphics quality
 func set_occlusion_dropdown(dropdown):
@@ -42,3 +44,13 @@ func _new_antialiasing_selected(index):
 	elif index == 5:
 		viewport.msaa_3d = 0
 		viewport.use_taa = false
+
+func set_vsync_dropdown(dropdown):
+	dropdown.add_item("On")
+	dropdown.add_item("Disabled")
+
+func _new_vsync_selected(index):
+	if index == 1:
+		DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_ENABLED)
+	else:
+		DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)

@@ -13,7 +13,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var tween = get_tree().create_tween()
 	if Input.is_action_pressed("zoom"):
 		tween.tween_property($Head/Camera3d, "fov", 15, 0.1)

@@ -1,6 +1,6 @@
 extends Label
 
-func _process(delta):
+func _process(_delta):
 	var state = "Connected"
 	if globals.connection_state == WebSocketPeer.STATE_CLOSED:
 		state = "Disconnected"

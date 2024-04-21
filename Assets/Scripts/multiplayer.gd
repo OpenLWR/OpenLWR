@@ -30,7 +30,7 @@ func parse_b64(b64):
 	b64 = b64.right(-2).left(-1)
 	return Marshalls.base64_to_utf8(b64)
 
-func _process(delta):
+func _process(_delta):
 	socket.poll()
 	var state = socket.get_ready_state()
 	globals.connection_state = state

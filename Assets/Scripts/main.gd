@@ -35,6 +35,23 @@ var switches = {
 	},
 }
 
+enum annunciator_state {
+	CLEAR = 0,
+	ACTIVE = 1,
+	ACKNOWLEDGED = 2,
+	ACTIVE_CLEAR = 3,
+}
+
+var annunciators = {
+	"test alarm": {
+		"box": 1,
+		"window": "A1",
+		"state": annunciator_state.CLEAR,
+		"color": "a", #TODO: how to set this to an actual color?
+		"material": null,
+	},
+}
+
 func build_packet(packet_id, data):
 	return "%s|%s" % [str(packet_id), Marshalls.utf8_to_base64(data)]
 	

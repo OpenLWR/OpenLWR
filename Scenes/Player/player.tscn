@@ -179,6 +179,7 @@ offset_bottom = -2.0
 text = "VSync"
 
 [node name="Antialiasing" type="OptionButton" parent="Head/Camera3d/Menu/Settings/Settings/Graphics"]
+layout_mode = 0
 offset_left = 26.0
 offset_top = 167.0
 offset_right = 107.0

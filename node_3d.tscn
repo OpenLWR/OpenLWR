@@ -62,7 +62,6 @@ transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.3
 
 [node name="Annunciator" parent="." instance=ExtResource("7_j0n3w")]
 transform = Transform3D(-3.0598e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.0598e-08, 0.0303937, 2.12253, -3.38803)
-script = null
 
 [editable path="test_switch"]
 [editable path="test_switch/selector_switch"]

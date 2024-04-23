@@ -1975,6 +1975,24 @@ text = "ROD MOTION BLOCKS"
 font_size = 16
 outline_size = 16
 
+[node name="Rod Motion Blocks2" type="Label3D" parent="Rod Select Panel/Panel 2"]
+transform = Transform3D(1.04308e-07, -1.78814e-07, -1, -2.98023e-08, -1, 6.70552e-08, -1, 8.9407e-08, -4.47035e-08, -0.00103071, -0.150176, 1.43051e-06)
+sorting_offset = 10.0
+pixel_size = 0.0005
+shaded = true
+text = "RPIS STATUS"
+font_size = 16
+outline_size = 16
+
+[node name="Rod Motion Blocks3" type="Label3D" parent="Rod Select Panel/Panel 2"]
+transform = Transform3D(1.11759e-07, -2.01166e-07, -1, -2.98023e-08, -1, 4.47035e-08, -1, 8.9407e-08, -4.47035e-08, -0.00103074, -0.21585, 9.53674e-07)
+sorting_offset = 10.0
+pixel_size = 0.0005
+shaded = true
+text = "RDCS STATUS"
+font_size = 16
+outline_size = 16
+
 [node name="Lights and buttons" type="Node3D" parent="Rod Select Panel/Panel 2"]
 transform = Transform3D(1, 7.45058e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, -0.00148284, 0, -1.43051e-06)
 
@@ -1984,23 +2002,13 @@ use_collision = true
 size = Vector3(0.002, 0.042, 0.042)
 material = SubResource("StandardMaterial3D_2dm8g")
 
-[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 2/Lights and buttons/Insert_pb"]
-transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
-sorting_offset = 10.0
-pixel_size = 0.0005
-shaded = true
-modulate = Color(0, 0, 0, 1)
-text = "INSERT"
-font_size = 12
-outline_size = 16
-
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Panel 2/Lights and buttons/Insert_pb"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rod Select Panel/Panel 2/Lights and buttons/Insert_pb/StaticBody3D"]
 shape = SubResource("BoxShape3D_7k5lw")
 
 [node name="Insert_lt" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
-transform = Transform3D(1, 8.9407e-08, 0, -1.3411e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.122533, 0.0299995)
+transform = Transform3D(1, 1.78814e-07, 0, -1.19209e-07, 1, 0, 0, 0, 1, 3.27826e-07, 0.116769, 0.0299983)
 use_collision = true
 size = Vector3(0.002, 0.0338821, 0.042)
 material = SubResource("StandardMaterial3D_7s68e")
@@ -2016,7 +2024,7 @@ font_size = 12
 outline_size = 16
 
 [node name="Withdraw_lt" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
-transform = Transform3D(1, 8.9407e-08, 0, -1.3411e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.122999, -0.03)
+transform = Transform3D(1, 1.78814e-07, 0, -1.19209e-07, 1, 0, 0, 0, 1, 2.68221e-07, 0.117236, -0.0300007)
 use_collision = true
 size = Vector3(0.002, 0.0338821, 0.042)
 material = SubResource("StandardMaterial3D_a2rxq")
@@ -2077,8 +2085,8 @@ sorting_offset = 10.0
 pixel_size = 0.0005
 shaded = true
 modulate = Color(0, 0, 0, 1)
-text = "WITHDRAW
-BLOCK"
+text = "DATA
+FAULT"
 font_size = 12
 outline_size = 16
 
@@ -2094,8 +2102,9 @@ sorting_offset = 10.0
 pixel_size = 0.0005
 shaded = true
 modulate = Color(0, 0, 0, 1)
-text = "WITHDRAW
-BLOCK"
+text = "ACTIVITY
+CONTROLS
+DISAGREE"
 font_size = 12
 outline_size = 16
 
@@ -2116,20 +2125,10 @@ font_size = 12
 outline_size = 16
 
 [node name="Withdraw_pb" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
-transform = Transform3D(1, 7.45058e-08, 0, -1.3411e-07, 1, 0, 0, 0, 1, 5.96046e-08, 0.184999, -0.03)
+transform = Transform3D(1, 1.04308e-07, 0, -1.19209e-07, 1, 0, 0, 0, 1, 1.19209e-07, 0.184999, -0.0300004)
 use_collision = true
 size = Vector3(0.002, 0.042, 0.042)
 material = SubResource("StandardMaterial3D_aiqtk")
-
-[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 2/Lights and buttons/Withdraw_pb"]
-transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
-sorting_offset = 10.0
-pixel_size = 0.0005
-shaded = true
-modulate = Color(0, 0, 0, 1)
-text = "WITHDRAW"
-font_size = 12
-outline_size = 16
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Panel 2/Lights and buttons/Withdraw_pb"]
 
@@ -2148,8 +2147,27 @@ sorting_offset = 10.0
 pixel_size = 0.0005
 shaded = true
 modulate = Color(0, 0, 0, 1)
-text = "INSERT"
+text = "ROD
+BYPASSED"
 font_size = 12
+outline_size = 16
+
+[node name="Insert" type="Label3D" parent="Rod Select Panel/Panel 2"]
+transform = Transform3D(1.04308e-07, -6.4075e-07, -0.999998, -2.98023e-08, -1, 2.08616e-07, -1, 8.9407e-08, -4.47035e-08, -0.00172445, 0.148313, 0.0300789)
+sorting_offset = 10.0
+pixel_size = 0.0005
+shaded = true
+text = "INSERT"
+font_size = 14
+outline_size = 16
+
+[node name="Withdraw" type="Label3D" parent="Rod Select Panel/Panel 2"]
+transform = Transform3D(1.04308e-07, -6.55651e-07, -0.999998, -2.98023e-08, -1, 2.08616e-07, -1, 8.9407e-08, -4.47035e-08, -0.00172424, 0.148312, -0.0289769)
+sorting_offset = 10.0
+pixel_size = 0.0005
+shaded = true
+text = "WITHDRAW"
+font_size = 14
 outline_size = 16
 
 [node name="Safety Covers" type="Node3D" parent="Rod Select Panel"]
@@ -2168,7 +2186,7 @@ transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 1.49012e-08, 0, -7.45058e-09, 1
 shape = SubResource("BoxShape3D_qqe8e")
 
 [node name="Withdraw" type="CSGBox3D" parent="Rod Select Panel/Safety Covers"]
-transform = Transform3D(-4.47035e-08, -5.51343e-07, 1, 0, 1, 5.43892e-07, -1, 0, -4.47035e-08, -0.00999984, 0.185002, -0.0295587)
+transform = Transform3D(-4.47035e-08, -5.21541e-07, 1, 0, 1, 6.25849e-07, -1, 0, -4.47035e-08, -0.00999987, 0.185002, -0.0295582)
 sorting_offset = 20.0
 size = Vector3(0.0500394, 0.0514165, 0.0182538)
 material = SubResource("StandardMaterial3D_2o33n")
@@ -2180,9 +2198,9 @@ transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 1.49012e-08, 0, -7.45058e-09, 1
 shape = SubResource("BoxShape3D_qqe8e")
 
 [node name="Continuous Insert" type="CSGBox3D" parent="Rod Select Panel/Safety Covers"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.01, 0.185, 0.734)
+transform = Transform3D(-4.47035e-08, 1.04308e-07, 1, 0, 1, 7.45058e-09, -1.00001, 0, -4.47035e-08, -0.00999996, 0.185, 0.70465)
 sorting_offset = 20.0
-size = Vector3(0.0500394, 0.0514165, 0.0182538)
+size = Vector3(0.106582, 0.0514165, 0.0182538)
 material = SubResource("StandardMaterial3D_2o33n")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Safety Covers/Continuous Insert"]
@@ -2191,20 +2209,8 @@ material = SubResource("StandardMaterial3D_2o33n")
 transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 1.49012e-08, 0, -7.45058e-09, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_qqe8e")
 
-[node name="Continuous Withdraw" type="CSGBox3D" parent="Rod Select Panel/Safety Covers"]
-transform = Transform3D(-4.47035e-08, 0, 1, 0, 1, -7.45058e-09, -1, 0, -3.72529e-08, -0.00999987, 0.185, 0.673978)
-sorting_offset = 20.0
-size = Vector3(0.0500394, 0.0514165, 0.0182538)
-material = SubResource("StandardMaterial3D_2o33n")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Safety Covers/Continuous Withdraw"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Rod Select Panel/Safety Covers/Continuous Withdraw/StaticBody3D"]
-transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 1.49012e-08, 0, -7.45058e-09, 1, 0, 0, 0)
-shape = SubResource("BoxShape3D_qqe8e")
-
 [node name="Drift Reset" type="CSGBox3D" parent="Rod Select Panel/Safety Covers"]
-transform = Transform3D(-4.47035e-08, 0, 1, 0, 1, -7.45058e-09, -1, 0, -3.72529e-08, -0.00999963, 0.0354357, 0.673978)
+transform = Transform3D(-4.47035e-08, 8.9407e-08, 1, 0, 1, 7.45058e-09, -1, 0, -4.47035e-08, -0.00999969, 0.0354366, 0.67393)
 sorting_offset = 20.0
 size = Vector3(0.0500394, 0.0514165, 0.0182538)
 material = SubResource("StandardMaterial3D_2o33n")
@@ -2216,7 +2222,7 @@ transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 1.49012e-08, 0, -7.45058e-09, 1
 shape = SubResource("BoxShape3D_qqe8e")
 
 [node name="Drift Test" type="CSGBox3D" parent="Rod Select Panel/Safety Covers"]
-transform = Transform3D(-4.47035e-08, 0, 1, 0, 1, -7.45058e-09, -1, 0, -3.72529e-08, -0.0099996, 0.0354357, 0.733008)
+transform = Transform3D(-4.47035e-08, 1.04308e-07, 1, 0, 1, 7.45058e-09, -1, 0, -4.47035e-08, -0.00999936, 0.0354371, 0.73296)
 sorting_offset = 20.0
 size = Vector3(0.0500394, 0.0514165, 0.0182538)
 material = SubResource("StandardMaterial3D_2o33n")
@@ -2241,30 +2247,19 @@ use_collision = true
 size = Vector3(0.002, 0.042, 0.042)
 material = SubResource("StandardMaterial3D_2dm8g")
 
-[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 1/Lights and buttons/ContInsert_pb"]
-transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
-sorting_offset = 10.0
-pixel_size = 0.0005
-shaded = true
-modulate = Color(0, 0, 0, 1)
-text = "CONTINUOUS
-INSERT"
-font_size = 12
-outline_size = 16
-
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Panel 1/Lights and buttons/ContInsert_pb"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rod Select Panel/Panel 1/Lights and buttons/ContInsert_pb/StaticBody3D"]
 shape = SubResource("BoxShape3D_7k5lw")
 
 [node name="ContWithdraw_lt" type="CSGBox3D" parent="Rod Select Panel/Panel 1/Lights and buttons"]
-transform = Transform3D(1, 1.04308e-07, 0, -1.19209e-07, 1, 0, 0, 0, 1, 0, 0.123, -0.03)
+transform = Transform3D(1, 1.93715e-07, 0, -1.19209e-07, 1, 0, 0, 0, 1, 2.08616e-07, 0.117242, -0.0299983)
 use_collision = true
 size = Vector3(0.002, 0.0338821, 0.042)
 material = SubResource("StandardMaterial3D_fi3o8")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Panel 1/Lights and buttons/ContWithdraw_lt"]
-transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
+transform = Transform3D(2.23517e-08, -2.23517e-08, -1, -8.9407e-08, -1, -7.45058e-09, -1, 8.9407e-08, -4.47035e-08, -0.00200039, 0, 0)
 sorting_offset = 10.0
 pixel_size = 0.0005
 shaded = true
@@ -2274,13 +2269,13 @@ WITHDRAW"
 font_size = 12
 outline_size = 16
 
-[node name="ContWithdraw_lt2" type="CSGBox3D" parent="Rod Select Panel/Panel 1/Lights and buttons"]
+[node name="SelectBlock" type="CSGBox3D" parent="Rod Select Panel/Panel 1/Lights and buttons"]
 transform = Transform3D(1, 1.49012e-07, 0, -1.19209e-07, 1, 0, 0, 0, 1, 0, -0.032999, -0.0299993)
 use_collision = true
 size = Vector3(0.002, 0.0338821, 0.042)
 material = SubResource("StandardMaterial3D_fi3o8")
 
-[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 1/Lights and buttons/ContWithdraw_lt2"]
+[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 1/Lights and buttons/SelectBlock"]
 transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
 sorting_offset = 10.0
 pixel_size = 0.0005
@@ -2291,13 +2286,13 @@ BLOCK"
 font_size = 12
 outline_size = 16
 
-[node name="ContWithdraw_lt3" type="CSGBox3D" parent="Rod Select Panel/Panel 1/Lights and buttons"]
+[node name="BValveSelected" type="CSGBox3D" parent="Rod Select Panel/Panel 1/Lights and buttons"]
 transform = Transform3D(1, 1.63913e-07, 0, -1.19209e-07, 1, 0, 0, 0, 1, 0, -0.188999, -0.029999)
 use_collision = true
 size = Vector3(0.002, 0.0338821, 0.042)
 material = SubResource("StandardMaterial3D_fi3o8")
 
-[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 1/Lights and buttons/ContWithdraw_lt3"]
+[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 1/Lights and buttons/BValveSelected"]
 transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
 sorting_offset = 10.0
 pixel_size = 0.0005
@@ -2309,13 +2304,13 @@ SELECTED"
 font_size = 12
 outline_size = 16
 
-[node name="ContWithdraw_lt5" type="CSGBox3D" parent="Rod Select Panel/Panel 1/Lights and buttons"]
+[node name="AValveSelected" type="CSGBox3D" parent="Rod Select Panel/Panel 1/Lights and buttons"]
 transform = Transform3D(1, 3.57628e-07, 0, -1.19209e-07, 1, 0, 0, 0, 1, 2.98023e-08, -0.188995, 0.0300112)
 use_collision = true
 size = Vector3(0.002, 0.0338821, 0.042)
 material = SubResource("StandardMaterial3D_fi3o8")
 
-[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 1/Lights and buttons/ContWithdraw_lt5"]
+[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 1/Lights and buttons/AValveSelected"]
 transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
 sorting_offset = 10.0
 pixel_size = 0.0005
@@ -2333,17 +2328,6 @@ use_collision = true
 size = Vector3(0.002, 0.042, 0.042)
 material = SubResource("StandardMaterial3D_aiqtk")
 
-[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 1/Lights and buttons/ContWithdraw_pb"]
-transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
-sorting_offset = 10.0
-pixel_size = 0.0005
-shaded = true
-modulate = Color(0, 0, 0, 1)
-text = "CONTINUOUS
-WITHDRAW"
-font_size = 12
-outline_size = 16
-
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Panel 1/Lights and buttons/ContWithdraw_pb"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rod Select Panel/Panel 1/Lights and buttons/ContWithdraw_pb/StaticBody3D"]
@@ -2354,16 +2338,6 @@ transform = Transform3D(1, 5.96046e-08, 0, -1.49012e-07, 1, 0, 0, 0, 1, 6.4075e-
 use_collision = true
 size = Vector3(0.002, 0.042, 0.042)
 material = SubResource("StandardMaterial3D_2dm8g")
-
-[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 1/Lights and buttons/DriftTest_pb"]
-transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
-sorting_offset = 10.0
-pixel_size = 0.0005
-shaded = true
-modulate = Color(0, 0, 0, 1)
-text = "TEST"
-font_size = 12
-outline_size = 16
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Panel 1/Lights and buttons/DriftTest_pb"]
 
@@ -2381,15 +2355,15 @@ material = SubResource("StandardMaterial3D_2dm8g")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rod Select Panel/Panel 1/Lights and buttons/AccumAck_pb/StaticBody3D"]
 shape = SubResource("BoxShape3D_7k5lw")
 
-[node name="AccumAck_pb2" type="CSGBox3D" parent="Rod Select Panel/Panel 1/Lights and buttons"]
+[node name="ValveSelector_pb" type="CSGBox3D" parent="Rod Select Panel/Panel 1/Lights and buttons"]
 transform = Transform3D(1, 1.3411e-07, 0, -1.19209e-07, 1, 0, 0, 0, 1, 6.25849e-07, -0.111156, 0.0300038)
 use_collision = true
 size = Vector3(0.002, 0.042, 0.042)
 material = SubResource("StandardMaterial3D_2dm8g")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Panel 1/Lights and buttons/AccumAck_pb2"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Panel 1/Lights and buttons/ValveSelector_pb"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Rod Select Panel/Panel 1/Lights and buttons/AccumAck_pb2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Rod Select Panel/Panel 1/Lights and buttons/ValveSelector_pb/StaticBody3D"]
 shape = SubResource("BoxShape3D_7k5lw")
 
 [node name="DriftReset_pb" type="CSGBox3D" parent="Rod Select Panel/Panel 1/Lights and buttons"]
@@ -2397,16 +2371,6 @@ transform = Transform3D(1, 5.96046e-08, 0, -1.49012e-07, 1, 0, 0, 0, 1, 5.66244e
 use_collision = true
 size = Vector3(0.002, 0.042, 0.042)
 material = SubResource("StandardMaterial3D_aiqtk")
-
-[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 1/Lights and buttons/DriftReset_pb"]
-transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
-sorting_offset = 10.0
-pixel_size = 0.0005
-shaded = true
-modulate = Color(0, 0, 0, 1)
-text = "RESET"
-font_size = 12
-outline_size = 16
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Panel 1/Lights and buttons/DriftReset_pb"]
 
@@ -2431,7 +2395,7 @@ text = "ROD DRIFT"
 font_size = 16
 outline_size = 16
 
-[node name="Rod Drift2" type="Label3D" parent="Rod Select Panel/Panel 1"]
+[node name="AccumTrouble" type="Label3D" parent="Rod Select Panel/Panel 1"]
 transform = Transform3D(1.04308e-07, -2.23517e-07, -1, -5.96046e-08, -1, 2.98023e-08, -1, 8.9407e-08, -3.72529e-08, -0.00103018, -0.0718212, 0.030997)
 sorting_offset = 10.0
 pixel_size = 0.0005
@@ -2442,7 +2406,45 @@ ACKNOWLEDGE"
 font_size = 14
 outline_size = 16
 
-[node name="Rod Drift4" type="Label3D" parent="Rod Select Panel/Panel 1"]
+[node name="TestDrift" type="Label3D" parent="Rod Select Panel/Panel 1"]
+transform = Transform3D(1.04308e-07, -3.20375e-07, -1, -5.96046e-08, -1, 1.49012e-08, -1, 8.9407e-08, -4.47035e-08, -0.00103021, 0.00764513, 0.0295231)
+sorting_offset = 10.0
+pixel_size = 0.0005
+shaded = true
+text = "TEST"
+font_size = 14
+outline_size = 16
+
+[node name="ResetDrift" type="Label3D" parent="Rod Select Panel/Panel 1"]
+transform = Transform3D(1.04308e-07, -3.35276e-07, -1, -5.96046e-08, -1, 1.49012e-08, -1, 8.9407e-08, -4.47035e-08, -0.00103021, 0.00764513, -0.0295312)
+sorting_offset = 10.0
+pixel_size = 0.0005
+shaded = true
+text = "RESET"
+font_size = 14
+outline_size = 16
+
+[node name="ContInsert" type="Label3D" parent="Rod Select Panel/Panel 1"]
+transform = Transform3D(1.04308e-07, -3.94881e-07, -1, -5.96046e-08, -1, 1.49012e-08, -1, 8.9407e-08, -4.47035e-08, -0.00103024, 0.149739, 0.0295222)
+sorting_offset = 10.0
+pixel_size = 0.0005
+shaded = true
+text = "CONTINUOUS
+INSERT"
+font_size = 14
+outline_size = 16
+
+[node name="ContWithdraw" type="Label3D" parent="Rod Select Panel/Panel 1"]
+transform = Transform3D(1.04308e-07, -3.94881e-07, -1, -5.96046e-08, -1, 1.49012e-08, -1, 8.9407e-08, -4.47035e-08, -0.00103012, 0.149739, -0.0295317)
+sorting_offset = 10.0
+pixel_size = 0.0005
+shaded = true
+text = "CONTINUOUS
+WITHDRAW"
+font_size = 14
+outline_size = 16
+
+[node name="ValveSelector" type="Label3D" parent="Rod Select Panel/Panel 1"]
 transform = Transform3D(1.04308e-07, -2.6077e-07, -1, -5.96046e-08, -1, 1.49012e-08, -1, 8.9407e-08, -4.47035e-08, -0.00103021, -0.15068, 0.0309968)
 sorting_offset = 10.0
 pixel_size = 0.0005
@@ -2452,7 +2454,7 @@ SELECTOR"
 font_size = 14
 outline_size = 16
 
-[node name="Rod Drift3" type="Label3D" parent="Rod Select Panel/Panel 1"]
+[node name="RodSelectBlock" type="Label3D" parent="Rod Select Panel/Panel 1"]
 transform = Transform3D(1.04308e-07, -2.6077e-07, -1, -5.96046e-08, -1, 1.49012e-08, -1, 8.9407e-08, -4.47035e-08, -0.00103024, -0.0718217, -0.0299926)
 sorting_offset = 10.0
 pixel_size = 0.0005
@@ -6548,14 +6550,13 @@ max_distance = 3.0
 [connection signal="input_event" from="Rod Select Panel/Safety Covers/Insert/StaticBody3D" to="Rod Select Panel/Safety Covers/Insert/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Safety Covers/Withdraw/StaticBody3D" to="Rod Select Panel/Safety Covers/Withdraw/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Safety Covers/Continuous Insert/StaticBody3D" to="Rod Select Panel/Safety Covers/Continuous Insert/StaticBody3D" method="_on_input_event"]
-[connection signal="input_event" from="Rod Select Panel/Safety Covers/Continuous Withdraw/StaticBody3D" to="Rod Select Panel/Safety Covers/Continuous Withdraw/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Safety Covers/Drift Reset/StaticBody3D" to="Rod Select Panel/Safety Covers/Drift Reset/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Safety Covers/Drift Test/StaticBody3D" to="Rod Select Panel/Safety Covers/Drift Test/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Panel 1/Lights and buttons/ContInsert_pb/StaticBody3D" to="Rod Select Panel/Panel 1/Lights and buttons/ContInsert_pb/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Panel 1/Lights and buttons/ContWithdraw_pb/StaticBody3D" to="Rod Select Panel/Panel 1/Lights and buttons/ContWithdraw_pb/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Panel 1/Lights and buttons/DriftTest_pb/StaticBody3D" to="Rod Select Panel/Panel 1/Lights and buttons/DriftTest_pb/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Panel 1/Lights and buttons/AccumAck_pb/StaticBody3D" to="Rod Select Panel/Panel 1/Lights and buttons/AccumAck_pb/StaticBody3D" method="_on_input_event"]
-[connection signal="input_event" from="Rod Select Panel/Panel 1/Lights and buttons/AccumAck_pb2/StaticBody3D" to="Rod Select Panel/Panel 1/Lights and buttons/AccumAck_pb2/StaticBody3D" method="_on_input_event"]
+[connection signal="input_event" from="Rod Select Panel/Panel 1/Lights and buttons/ValveSelector_pb/StaticBody3D" to="Rod Select Panel/Panel 1/Lights and buttons/ValveSelector_pb/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Panel 1/Lights and buttons/DriftReset_pb/StaticBody3D" to="Rod Select Panel/Panel 1/Lights and buttons/DriftReset_pb/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/02-19/StaticBody3D" to="Rod Select Panel/Rod Selectors/02-19/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/06-19/StaticBody3D" to="Rod Select Panel/Rod Selectors/06-19/StaticBody3D" method="_on_input_event"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://d1voufvibxvu4"]
+[gd_scene load_steps=11 format=3 uid="uid://d1voufvibxvu4"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/main.gd" id="1_qcftf"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="1_r185b"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dok8h20vi4url" path="res://Assets/Components/Gauges/Edgewise/edgewise_gauge.tscn" id="5_27fgl"]
 [ext_resource type="PackedScene" uid="uid://cyksa23nxqjwn" path="res://Assets/Components/Switches/Selector Switch/selector_switch.tscn" id="6_3apnd"]
 [ext_resource type="PackedScene" uid="uid://d15asefp4u8t6" path="res://Assets/Components/Annunciators/annunciator_test.tscn" id="7_j0n3w"]
+[ext_resource type="PackedScene" uid="uid://crga4wior2o86" path="res://Assets/Components/Switches/Selector Switch 2/selector_switch_2.tscn" id="8_qgke1"]
 
 [sub_resource type="Environment" id="Environment_qd5ya"]
 ambient_light_source = 1
@@ -57,11 +58,14 @@ omni_range = 14.003
 [node name="test_gauge" parent="." instance=ExtResource("5_27fgl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.59784, -3.51043)
 
-[node name="test_switch" parent="." instance=ExtResource("6_3apnd")]
+[node name="test_switch2" parent="." instance=ExtResource("6_3apnd")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.39593, -3.36214)
 
 [node name="Annunciator" parent="." instance=ExtResource("7_j0n3w")]
 transform = Transform3D(-3.0598e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.0598e-08, 0.0303937, 2.12253, -3.38803)
 
-[editable path="test_switch"]
-[editable path="test_switch/selector_switch"]
+[node name="test_switch" parent="." instance=ExtResource("8_qgke1")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.33125, -3.36239)
+
+[editable path="test_switch2"]
+[editable path="test_switch2/selector_switch"]

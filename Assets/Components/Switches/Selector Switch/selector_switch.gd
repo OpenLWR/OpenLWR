@@ -5,11 +5,16 @@ extends Node3D
 
 func _ready():
 	switch.switch = self
+	
+
 
 func switch_position_change(to_position: int):
 	switch.position = to_position
 	# TODO: switch audio
-	$"selector_switch/Handle".set_rotation_degrees(Vector3(90, switch.positions[switch.position], 0))
+	
+	
+	
+	$"selector_switch/Handle".rotation_degrees.y = switch.positions[switch.position]
 
 func switch_click_left(_camera, event, _position, _normal, _shape_idx):
 	var mouse_click = event as InputEventMouseButton

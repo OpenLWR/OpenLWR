@@ -16,7 +16,7 @@ script = ExtResource("1_w2284")
 transform = Transform3D(4.83786e-17, 1.10677e-09, -0.02532, 0.02532, -1.10677e-09, 0, -1.10677e-09, -0.02532, -1.10677e-09, 0, 0, 0)
 
 [node name="Handle" parent="selector_switch" index="0"]
-transform = Transform3D(1, 5.92923e-21, 1.42109e-14, 1.42109e-14, -3.57628e-07, -1, -6.35275e-22, 1, -3.57628e-07, 0, 0, 0)
+transform = Transform3D(1, 8.47033e-21, 1.77636e-14, 1.77636e-14, -3.57628e-07, -1, -1.69407e-21, 1, -3.57628e-07, 0, 0, 0)
 material_override = ExtResource("2_jm5jg")
 
 [node name="Cube_Cube_002" parent="selector_switch/Handle" index="0"]

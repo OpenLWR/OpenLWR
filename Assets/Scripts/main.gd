@@ -10,6 +10,7 @@ enum server_packets {
 	METER_PARAMETERS_UPDATE = 0,
 	USER_LOGOUT = 1,
 	SWITCH_PARAMETERS_UPDATE = 3,
+	INDICATOR_PARAMETERS_UPDATE = 4,
 }
 
 @onready var gauges = {
@@ -63,6 +64,10 @@ var annunciators = {
 	},
 }
 
+@onready var indicators = {
+	"lamp_test": $"indicator".get_material()
+}
+
 func build_packet(packet_id, data):
 	return "%s|%s" % [str(packet_id), Marshalls.utf8_to_base64(data)]
 	
@@ -70,6 +75,7 @@ func build_packet(packet_id, data):
 func _ready(): # assume here that the scene was called by the lobby screen
 	var endpoint = "ws://%s:7001/ws" % [globals.server_ip_requested_tojoin] # TODO: should token be generated on server-side?
 	socket.connect_to_url(endpoint)
+	
 	
 func parse_b64(b64):
 	return Marshalls.base64_to_utf8(b64)
@@ -119,6 +125,12 @@ func _process(delta):
 						var position = packet_data[switch]
 						if switches[switch].switch != null:
 							switches[switch].switch.switch_position_change(position)
+				
+				server_packets.INDICATOR_PARAMETERS_UPDATE:
+					packet_data = json.parse_string(packet_data)
+					for indicator in packet_data:
+						var indicator_state = packet_data[indicator]
+						indicators[indicator].emission_enabled = indicator_state
 				
 				
 	elif state == WebSocketPeer.STATE_CLOSING:

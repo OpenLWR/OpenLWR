@@ -84,7 +84,6 @@ text = "State: Not Connected"
 script = ExtResource("5_72wwd")
 
 [node name="Menu" type="Node2D" parent="Head/Camera3d"]
-visible = false
 script = ExtResource("6_qkj5w")
 
 [node name="Menu" type="Node2D" parent="Head/Camera3d/Menu"]

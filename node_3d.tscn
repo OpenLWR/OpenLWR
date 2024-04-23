@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://d1voufvibxvu4"]
+[gd_scene load_steps=16 format=3 uid="uid://d1voufvibxvu4"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/main.gd" id="1_qcftf"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="1_r185b"]
@@ -6,8 +6,10 @@
 [ext_resource type="Material" uid="uid://cxsxep1u6sj3f" path="res://Assets/Materials/panel material.tres" id="3_uq4p3"]
 [ext_resource type="PackedScene" uid="uid://dok8h20vi4url" path="res://Assets/Components/Gauges/Edgewise/edgewise_gauge.tscn" id="5_27fgl"]
 [ext_resource type="PackedScene" uid="uid://cyksa23nxqjwn" path="res://Assets/Components/Switches/Selector Switch/selector_switch.tscn" id="6_3apnd"]
-[ext_resource type="PackedScene" uid="uid://d15asefp4u8t6" path="res://Assets/Components/Annunciators/annunciator_test.tscn" id="7_j0n3w"]
+[ext_resource type="PackedScene" uid="uid://dp5ytydbdxgoi" path="res://Assets/Components/Annunciators/annunciator_6x3.tscn" id="8_5upq6"]
 [ext_resource type="PackedScene" uid="uid://crga4wior2o86" path="res://Assets/Components/Switches/Selector Switch 2/selector_switch_2.tscn" id="8_qgke1"]
+[ext_resource type="Script" path="res://Assets/Components/Annunciators/annunciator.gd" id="9_2476f"]
+[ext_resource type="Script" path="res://button.gd" id="10_0d60s"]
 
 [sub_resource type="Environment" id="Environment_qd5ya"]
 ambient_light_source = 1
@@ -15,14 +17,21 @@ ambient_light_source = 1
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_emsru"]
 data = PackedVector3Array(0, 0, 0, 0, 0, 59.9995, 36, 0, 59.9995, 0, 0, 0, 36, 0, 59.9995, 36, 0, 0, 0, 0, 59.9995, 0, 3.999, 59.9995, 36, 3.999, 59.9995, 0, 0, 59.9995, 36, 3.999, 59.9995, 36, 0, 59.9995, 0, 3.999, 59.9995, 0, 29.9994, 65.3939, 36, 29.9994, 65.3939, 0, 3.999, 59.9995, 36, 29.9994, 65.3939, 36, 3.999, 59.9995, 0, 29.9994, 65.3939, 0, 35.9993, 35.9993, 36, 35.9993, 35.9993, 0, 29.9994, 65.3939, 36, 35.9993, 35.9993, 36, 29.9994, 65.3939, 0, 35.9993, 35.9993, 0, 93.9986, 35.9993, 36, 93.9986, 35.9993, 0, 35.9993, 35.9993, 36, 93.9986, 35.9993, 36, 35.9993, 35.9993, 0, 93.9986, 35.9993, 0, 94, 0, 36, 94, 0, 0, 93.9986, 35.9993, 36, 94, 0, 36, 93.9986, 35.9993, 0, 94, 0, 0, 0, 0, 36, 0, 0, 0, 94, 0, 36, 0, 0, 36, 94, 0, 36, 0, 0, 36, 0, 59.9995, 36, 35.9993, 35.9993, 36, 0, 0, 36, 35.9993, 35.9993, 36, 94, 0, 36, 94, 0, 36, 35.9993, 35.9993, 36, 93.9986, 35.9993, 36, 3.999, 59.9995, 36, 29.9994, 65.3939, 36, 35.9993, 35.9993, 36, 3.999, 59.9995, 36, 35.9993, 35.9993, 36, 0, 59.9995, 0, 94, 0, 0, 93.9986, 35.9993, 0, 35.9993, 35.9993, 0, 94, 0, 0, 35.9993, 35.9993, 0, 0, 0, 0, 0, 0, 0, 35.9993, 35.9993, 0, 0, 59.9995, 0, 3.999, 59.9995, 0, 0, 59.9995, 0, 35.9993, 35.9993, 0, 3.999, 59.9995, 0, 35.9993, 35.9993, 0, 29.9994, 65.3939)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_88a8s"]
-albedo_color = Color(0.775063, 0.775063, 0.775063, 1)
-emission_enabled = true
-emission = Color(1, 1, 1, 1)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gninv"]
 albedo_color = Color(0.340339, 0.340339, 0.340339, 1)
 emission = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v6fy7"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.705882, 0.517647, 0.254902, 1)
+albedo_texture_force_srgb = true
+emission = Color(1, 1, 1, 1)
+clearcoat = 0.16
+clearcoat_roughness = 1.0
+refraction_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_giu2e"]
+size = Vector3(0.0144663, 0.0430282, 0.0426735)
 
 [node name="Node3D" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000860214, -0.00277793, 0.000972271)
@@ -56,12 +65,12 @@ shape = SubResource("ConcavePolygonShape3D_emsru")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.01869, 4.27658, -1.19061)
-light_energy = 3.845
+light_energy = 1.086
 omni_range = 14.003
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.02648, 4.28278, -1.19124)
-light_energy = 3.845
+light_energy = 1.086
 omni_range = 14.003
 
 [node name="test_gauge" parent="." instance=ExtResource("5_27fgl")]
@@ -70,12 +79,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.59784, -3.51043)
 [node name="test_switch2" parent="." instance=ExtResource("6_3apnd")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.39593, -3.36214)
 
-[node name="Annunciator" parent="." instance=ExtResource("7_j0n3w")]
-transform = Transform3D(-3.0598e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.0598e-08, 0.0303937, 2.12253, -3.38803)
-
-[node name="A1" parent="Annunciator/Windows" index="0"]
-surface_material_override/0 = SubResource("StandardMaterial3D_88a8s")
-
 [node name="test_switch" parent="." instance=ExtResource("8_qgke1")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.33125, -3.36239)
 
@@ -83,6 +86,27 @@ transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.3
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36062, 0.920411, 0)
 material = SubResource("StandardMaterial3D_gninv")
 
+[node name="Box1" parent="." instance=ExtResource("8_5upq6")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.797207, 1.96649, -3.38308)
+script = ExtResource("9_2476f")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="test_button" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.96046e-08, 1.0623, -3.37413)
+use_collision = true
+size = Vector3(0.002, 0.042, 0.042)
+material = SubResource("StandardMaterial3D_v6fy7")
+script = ExtResource("10_0d60s")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="test_button"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="test_button/StaticBody3D"]
+shape = SubResource("BoxShape3D_giu2e")
+
+[connection signal="input_event" from="test_button/StaticBody3D" to="test_button" method="switch_click"]
+
 [editable path="test_switch2"]
 [editable path="test_switch2/selector_switch"]
-[editable path="Annunciator"]
+[editable path="Box1"]

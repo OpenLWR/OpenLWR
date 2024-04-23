@@ -4,6 +4,7 @@ var socket = WebSocketPeer.new()
 
 enum client_packets {
 	SWITCH_PARAMETERS_UPDATE = 2,
+	BUTTON_PARAMETERS_UPDATE = 6,
 }
 
 enum server_packets {
@@ -11,6 +12,8 @@ enum server_packets {
 	USER_LOGOUT = 1,
 	SWITCH_PARAMETERS_UPDATE = 3,
 	INDICATOR_PARAMETERS_UPDATE = 4,
+	ALARM_PARAMETERS_UPDATE = 5,
+	BUTTON_PARAMETERS_UPDATE = 7,
 }
 
 @onready var gauges = {
@@ -47,6 +50,15 @@ var switches = {
 	},
 }
 
+var buttons = {
+	"test_button": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"updated": false,
+	}
+}
+
 enum annunciator_state {
 	CLEAR = 0,
 	ACTIVE = 1,
@@ -54,12 +66,11 @@ enum annunciator_state {
 	ACTIVE_CLEAR = 3,
 }
 
-var annunciators = {
-	"test alarm": {
-		"box": 1,
+var alarms = {
+	"test_alarm": {
+		"box": "Box1",
 		"window": "A1",
 		"state": annunciator_state.CLEAR,
-		"color": "a", #TODO: how to set this to an actual color?
 		"material": null,
 	},
 }
@@ -75,6 +86,9 @@ func build_packet(packet_id, data):
 func _ready(): # assume here that the scene was called by the lobby screen
 	var endpoint = "ws://%s:7001/ws" % [globals.server_ip_requested_tojoin] # TODO: should token be generated on server-side?
 	socket.connect_to_url(endpoint)
+	for alarm in alarms:
+		alarm = alarms[alarm]
+		alarm["material"] = get_node(alarm["box"]+"/Box/Windows/"+alarm["window"]).get_material()
 	
 	
 func parse_b64(b64):
@@ -98,6 +112,23 @@ func _process(delta):
 			if not err:
 				for switch in updated_switches:
 					switches[switch].updated = false
+			else:
+				print(err)
+				
+		#check if any buttons have been pressed
+		
+		var updated_buttons = {}
+		for button_name in buttons:
+			var button = buttons[button_name]
+			if button.updated == true:
+				updated_buttons[button_name] = button.state
+				
+		if updated_buttons != {}:
+			var err = socket.send_text(build_packet(client_packets.BUTTON_PARAMETERS_UPDATE, json.stringify(updated_buttons)))
+			if not err:
+				for button in updated_buttons:
+					buttons[button].updated = false
+					print(button)
 			else:
 				print(err)
 			
@@ -131,6 +162,20 @@ func _process(delta):
 					for indicator in packet_data:
 						var indicator_state = packet_data[indicator]
 						indicators[indicator].emission_enabled = indicator_state
+						
+				server_packets.ALARM_PARAMETERS_UPDATE:
+					packet_data = json.parse_string(packet_data)
+					for alarm in packet_data:
+						var alarm_state = packet_data[alarm]
+						alarms[alarm].state = int(alarm_state)
+						
+				server_packets.BUTTON_PARAMETERS_UPDATE:
+					packet_data = json.parse_string(packet_data)
+					for button in packet_data:
+						var button_state = packet_data[button]
+						if buttons[button].switch != null:
+							buttons[button].switch.button_state_change(button_state)
+							print(button)
 				
 				
 	elif state == WebSocketPeer.STATE_CLOSING:

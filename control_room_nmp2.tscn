@@ -1775,7 +1775,7 @@ clearcoat = 0.16
 clearcoat_roughness = 1.0
 refraction_enabled = true
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D2" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("2_4xgnc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06602, 0)

@@ -9,8 +9,7 @@ func _ready():
 
 
 func button_state_change(state: bool):
-	button.position = state
-	button.updated = true
+	button.state = state
 	# TODO: button audio
 
 func switch_click(_camera, event, _position, _normal, _shape_idx):
@@ -18,3 +17,4 @@ func switch_click(_camera, event, _position, _normal, _shape_idx):
 	if mouse_click and mouse_click.button_index == 1:
 		var button = node_3d.buttons[self.name]
 		button_state_change(mouse_click.pressed)
+		button.updated = true

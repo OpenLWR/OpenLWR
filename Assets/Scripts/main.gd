@@ -5,6 +5,7 @@ var socket = WebSocketPeer.new()
 enum client_packets {
 	SWITCH_PARAMETERS_UPDATE = 2,
 	BUTTON_PARAMETERS_UPDATE = 6,
+	PLAYER_POSITION_PARAMETERS_UPDATE = 9,
 }
 
 enum server_packets {
@@ -14,6 +15,7 @@ enum server_packets {
 	INDICATOR_PARAMETERS_UPDATE = 4,
 	ALARM_PARAMETERS_UPDATE = 5,
 	BUTTON_PARAMETERS_UPDATE = 7,
+	PLAYER_POSITION_PARAMETERS_UPDATE = 8,
 }
 
 @onready var gauges = {
@@ -79,6 +81,16 @@ var alarms = {
 	"lamp_test": $"indicator".get_material()
 }
 
+@onready var players = {
+	#"1":{ #key is userid, for now its username
+	#	"position" : {"x" : 0, "y" : 0, "z" : 0,}, # Can we use a Vector3 here?
+	#	"username" : "john",
+	#	"object" : null, #player object to manipulate, 
+	#}
+}
+
+const remote_player_scene = preload("res://Scenes/Player/remote_player.tscn")
+
 func build_packet(packet_id, data):
 	return "%s|%s" % [str(packet_id), Marshalls.utf8_to_base64(data)]
 	
@@ -131,6 +143,30 @@ func _process(delta):
 					print(button)
 			else:
 				print(err)
+				
+		# TODO: only fire to server when our position updated
+		
+		var local_player_position = {}
+		
+		var local_player = get_node("Player")
+		
+		local_player_position = {[globals.username_requested_tojoin] : {
+			"x" : local_player.position["x"],
+			"y" : local_player.position["y"],
+			"z" : local_player.position["z"],
+		}}
+		
+		if local_player_position != {}:
+			var err = socket.send_text(build_packet(client_packets.PLAYER_POSITION_PARAMETERS_UPDATE, json.stringify(local_player_position)))
+			if err:
+				print(err)
+				
+		#TODO: add a script on each remote player that updates their own position (?)
+		
+		for player in players:
+			var player_object = get_node(player)
+			var player_position = players[player].position
+			player_object.position = player_position
 			
 		# recieve packets
 		while socket.get_available_packet_count():
@@ -176,6 +212,29 @@ func _process(delta):
 						if buttons[button].switch != null:
 							buttons[button].switch.button_state_change(button_state)
 							print(button)
+				
+				server_packets.PLAYER_POSITION_PARAMETERS_UPDATE:
+					packet_data = json.parse_string(packet_data) # dict of all players, dict OR Vector3(?) of position
+					for player in packet_data:
+						var player_position = packet_data[player]
+						
+						if player == globals.username_requested_tojoin:
+							break #if the player is ourselves, ignore it
+						
+						if player in players:
+							players[player].position = player_position
+							
+						else:
+							# player is not in our list, assume its a new player and insert a new entry
+							players[player] = {
+								"position" : player_position,
+							}
+							# actually create the other player character
+							var NewRemotePlayer = remote_player_scene.instantiate()
+							NewRemotePlayer.name = player
+							self.add_child(NewRemotePlayer)
+							# TODO: remove remote player instance when they disconnect
+							
 				
 				
 	elif state == WebSocketPeer.STATE_CLOSING:

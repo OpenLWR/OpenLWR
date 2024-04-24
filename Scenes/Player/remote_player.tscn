@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://pvlarrijgipj"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_emkox"]
+radius = 0.493347
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_6b3ky"]
+
+[node name="Player" type="CharacterBody3D"]
+
+[node name="CollisionShape3d" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_emkox")
+
+[node name="MeshInstance3d" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_6b3ky")
+
+[node name="Head" type="Node3D" parent="."]

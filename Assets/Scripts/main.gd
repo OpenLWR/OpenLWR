@@ -150,7 +150,7 @@ func _process(delta):
 		
 		var local_player = get_node("Player")
 		
-		local_player_position = {[globals.username_requested_tojoin] : {
+		local_player_position = {globals.username_requested_tojoin : {
 			"x" : local_player.position["x"],
 			"y" : local_player.position["y"],
 			"z" : local_player.position["z"],
@@ -166,7 +166,9 @@ func _process(delta):
 		for player in players:
 			var player_object = get_node(player)
 			var player_position = players[player].position
-			player_object.position = player_position
+			player_object.position['x'] = player_position['x']
+			player_object.position['y'] = player_position['y']
+			player_object.position['z'] = player_position['z']
 			
 		# recieve packets
 		while socket.get_available_packet_count():

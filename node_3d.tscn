@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://d1voufvibxvu4"]
+[gd_scene load_steps=18 format=3 uid="uid://d1voufvibxvu4"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/main.gd" id="1_qcftf"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="1_r185b"]
@@ -10,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://crga4wior2o86" path="res://Assets/Components/Switches/Selector Switch 2/selector_switch_2.tscn" id="8_qgke1"]
 [ext_resource type="Script" path="res://Assets/Components/Annunciators/annunciator.gd" id="9_2476f"]
 [ext_resource type="Script" path="res://button.gd" id="10_0d60s"]
+[ext_resource type="AudioStream" uid="uid://bfn1cqw1n0oqs" path="res://Assets/Audio/reactor_alarm_loop.mp3" id="11_jie8d"]
+[ext_resource type="AudioStream" uid="uid://bqm26847iqdj1" path="res://Assets/Audio/electrical_alarm_loop.mp3" id="12_exg7f"]
 
 [sub_resource type="Environment" id="Environment_qd5ya"]
 ambient_light_source = 1
@@ -90,6 +92,10 @@ material = SubResource("StandardMaterial3D_gninv")
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.797207, 1.96649, -3.38308)
 script = ExtResource("9_2476f")
 
+[node name="Label" parent="Box1/Box/Windows/A1" index="0"]
+text = "TEST
+ANNUNCIATOR"
+
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.1
 
@@ -104,6 +110,14 @@ script = ExtResource("10_0d60s")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="test_button/StaticBody3D"]
 shape = SubResource("BoxShape3D_giu2e")
+
+[node name="Alarm1" type="Node3D" parent="."]
+
+[node name="Fast" type="AudioStreamPlayer" parent="Alarm1"]
+stream = ExtResource("11_jie8d")
+
+[node name="Slow" type="AudioStreamPlayer" parent="Alarm1"]
+stream = ExtResource("12_exg7f")
 
 [connection signal="input_event" from="test_button/StaticBody3D" to="test_button" method="switch_click"]
 

@@ -6,6 +6,8 @@ var active_annunciator_on = false
 var clear_annunciator_on = false
 var internal_timer = 0
 
+var alarm_node = "Alarm1/"
+
 func _ready():
 	while true:
 		active_annunciator_on = not active_annunciator_on
@@ -14,6 +16,8 @@ func _ready():
 			clear_annunciator_on = not clear_annunciator_on
 		if internal_timer > 11:
 			internal_timer = 0
+		var alarm_active = false
+		var clear_alarm_active = false
 		for alarm in node_3d.alarms:
 			alarm = node_3d.alarms[alarm]
 			if alarm.material == null:
@@ -24,14 +28,24 @@ func _ready():
 				
 				annunciator_state.ACTIVE:
 					alarm.material.emission_enabled = active_annunciator_on
+					alarm_active = true
 				
 				annunciator_state.ACKNOWLEDGED:
 					alarm.material.emission_enabled = true
 					
 				annunciator_state.ACTIVE_CLEAR:
 					alarm.material.emission_enabled = clear_annunciator_on
-				
-		
+					clear_alarm_active = true
+		#get fast and slow alarm nodes
+		var fast_alarm = get_parent().get_node("Alarm1/"+"Fast")
+		var slow_alarm = get_parent().get_node("Alarm1/"+"Slow")
+		#play/stop if needed
+		if fast_alarm.playing != alarm_active:
+			fast_alarm.playing = alarm_active
+	
+		if slow_alarm.playing != clear_alarm_active:
+			slow_alarm.playing = clear_alarm_active
+			
 		
 		
 		await get_tree().create_timer(0.1).timeout

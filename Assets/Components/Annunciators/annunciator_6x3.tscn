@@ -1,6 +1,8 @@
-[gd_scene load_steps=21 format=3 uid="uid://dp5ytydbdxgoi"]
+[gd_scene load_steps=23 format=3 uid="uid://dp5ytydbdxgoi"]
 
 [ext_resource type="Material" uid="uid://b0b37alwlfoju" path="res://Assets/Materials/white_metal.tres" id="1_rwfib"]
+[ext_resource type="Material" uid="uid://d2mabc0jor366" path="res://annunciator_outline_orange.tres" id="2_vxtug"]
+[ext_resource type="Material" uid="uid://h3pec0eq2wyc" path="res://annunciator_outline_red.tres" id="3_kypfr"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7kt2m"]
 vertex_color_use_as_albedo = true
@@ -103,7 +105,7 @@ refraction_enabled = true
 [node name="Node3D" type="Node3D"]
 
 [node name="Box" type="CSGBox3D" parent="."]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0.0110002, 0.128, 0.787)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 size = Vector3(0.0433738, 0.420358, 0.861724)
 material = SubResource("StandardMaterial3D_7kt2m")
 
@@ -122,7 +124,7 @@ pixel_size = 0.001
 shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "IRM
-TRIP SYSTEM
+TRIP SYSTEM A
 UPSCALE/
 INOPERABLE"
 font_size = 14
@@ -169,7 +171,7 @@ pixel_size = 0.001
 shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "APRM
-TRIP SYSTEM
+TRIP SYSTEM A
 UPSCALE/
 INOPERABLE"
 font_size = 14
@@ -400,3 +402,50 @@ text = "ANNUNCIATOR 603200"
 font_size = 40
 outline_size = 0
 line_spacing = -2.0
+
+[node name="Outlines" type="Node3D" parent="Box"]
+transform = Transform3D(1.66667, 0, 0, 0, 1.66667, 0, 0, 0, 1.66667, -1.65686, -2.19397, 1.5791)
+
+[node name="OrangeOutline2" type="CSGBox3D" parent="Box/Outlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.39027, -0.986119)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_vxtug")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/Outlines/OrangeOutline2"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_vxtug")
+
+[node name="OrangeOutline3" type="CSGBox3D" parent="Box/Outlines"]
+transform = Transform3D(0.0478192, -0.205031, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.39027, -0.908752)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_vxtug")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/Outlines/OrangeOutline3"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_vxtug")
+
+[node name="OrangeOutline4" type="CSGBox3D" parent="Box/Outlines"]
+transform = Transform3D(0.0478192, -0.205031, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.39027, -0.83013)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_kypfr")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/Outlines/OrangeOutline4"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_vxtug")
+
+[node name="OrangeOutline5" type="CSGBox3D" parent="Box/Outlines"]
+transform = Transform3D(0.0478192, -0.205031, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.39027, -0.751762)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_kypfr")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/Outlines/OrangeOutline5"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_vxtug")

@@ -1,7 +1,8 @@
-[gd_scene load_steps=52 format=3 uid="uid://dmx7kcqtkcpx0"]
+[gd_scene load_steps=53 format=3 uid="uid://dmx7kcqtkcpx0"]
 
 [ext_resource type="Material" uid="uid://b0b37alwlfoju" path="res://Assets/Materials/white_metal.tres" id="1_ywi2m"]
 [ext_resource type="Material" uid="uid://d2mabc0jor366" path="res://annunciator_outline_orange.tres" id="2_3au0t"]
+[ext_resource type="Material" uid="uid://h3pec0eq2wyc" path="res://annunciator_outline_red.tres" id="3_lye6f"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oti7f"]
 vertex_color_use_as_albedo = true
@@ -254,7 +255,7 @@ refraction_enabled = true
 [node name="Node3D3" type="Node3D"]
 
 [node name="Box" type="CSGBox3D" parent="."]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0.994116, 1.31638, -0.94746)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 size = Vector3(0.0433738, 0.748432, 1.11588)
 material = SubResource("StandardMaterial3D_oti7f")
 
@@ -1063,12 +1064,139 @@ font_size = 40
 outline_size = 0
 line_spacing = -2.0
 
-[node name="H7" type="CSGBox3D" parent="."]
+[node name="RedOutlines" type="Node3D" parent="Box"]
+transform = Transform3D(1.66667, 0, 0, 0, 1.66667, 0, 0, 0, 1.66667, -1.65686, -2.19397, 1.5791)
+
+[node name="OrangeOutline4" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -1.22054)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline4"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="OrangeOutline5" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -1.14235)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline5"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="OrangeOutline6" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -1.06416)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline6"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="OrangeOutline7" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -0.985967)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline7"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="OrangeOutline8" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -0.907777)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline8"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="OrangeOutline9" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -0.829587)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline9"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="OrangeOutline10" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -0.751397)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline10"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="OrangeOutline11" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -0.673207)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline11"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="OrangeOutline12" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.42363, -0.673207)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline12"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="OrangeOutline13" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.42363, -0.751397)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline13"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="OrangeOutlines" type="Node3D" parent="Box"]
+transform = Transform3D(1.66667, 0, 0, 0, 1.66667, 0, 0, 0, 1.66667, -1.65686, -2.19397, 1.5791)
+
+[node name="OrangeOutline" type="CSGBox3D" parent="Box/OrangeOutlines"]
 transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.16056, -1.21987)
 size = Vector3(0.108, 0.04, 0.129)
 material = ExtResource("2_3au0t")
 
-[node name="H8" type="CSGBox3D" parent="H7"]
+[node name="Subtract" type="CSGBox3D" parent="Box/OrangeOutlines/OrangeOutline"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("3_lye6f")
+
+[node name="OrangeOutline2" type="CSGBox3D" parent="Box/OrangeOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.16056, -1.1419)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_3au0t")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/OrangeOutlines/OrangeOutline2"]
 transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
 operation = 2
 size = Vector3(0.0962942, 0.04, 0.129)

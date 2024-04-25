@@ -1,5 +1,6 @@
-[gd_scene load_steps=214 format=3 uid="uid://hp5vectj4xsb"]
+[gd_scene load_steps=225 format=3 uid="uid://hp5vectj4xsb"]
 
+[ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/main.gd" id="1_skxkr"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_4xgnc"]
 [ext_resource type="Material" uid="uid://b0b37alwlfoju" path="res://Assets/Materials/white_metal.tres" id="2_yxnln"]
 [ext_resource type="Texture2D" uid="uid://bbvchytlxmrql" path="res://Assets/Textures/reference diagrams/right top.png" id="3_wac5a"]
@@ -15,9 +16,31 @@
 [ext_resource type="Texture2D" uid="uid://bcsu84r2hm3o8" path="res://Assets/Textures/reference diagrams/ML18041A01621.png" id="13_3gybx"]
 [ext_resource type="Material" uid="uid://c2raag84b6lqd" path="res://Assets/Materials/black_metal.tres" id="14_he4ct"]
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="15_anrx5"]
+[ext_resource type="Script" path="res://button.gd" id="15_ou0an"]
+[ext_resource type="PackedScene" uid="uid://dmx7kcqtkcpx0" path="res://Assets/Components/Annunciators/annunciator_8x6.tscn" id="16_25mp6"]
+[ext_resource type="PackedScene" uid="uid://dp5ytydbdxgoi" path="res://Assets/Components/Annunciators/annunciator_6x3.tscn" id="17_y8n64"]
+[ext_resource type="Material" uid="uid://d2mabc0jor366" path="res://annunciator_outline_orange.tres" id="18_ro6fv"]
+[ext_resource type="Script" path="res://Assets/Components/Annunciators/annunciator.gd" id="19_3k53m"]
+[ext_resource type="AudioStream" uid="uid://bfn1cqw1n0oqs" path="res://Assets/Audio/reactor_alarm_loop.mp3" id="22_1ivuw"]
+[ext_resource type="AudioStream" uid="uid://bqm26847iqdj1" path="res://Assets/Audio/electrical_alarm_loop.mp3" id="23_ykdw5"]
 
 [sub_resource type="Environment" id="Environment_gjsn6"]
 ambient_light_source = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_skqwy"]
+albedo_color = Color(0.890197, 0, 0.0730685, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_umpcg"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.705882, 0.517647, 0.254902, 1)
+albedo_texture_force_srgb = true
+emission = Color(1, 1, 1, 1)
+clearcoat = 0.16
+clearcoat_roughness = 1.0
+refraction_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hjk8c"]
+size = Vector3(0.0144663, 0.0430282, 0.0426735)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2dm8g"]
 vertex_color_use_as_albedo = true
@@ -1775,7 +1798,8 @@ clearcoat = 0.16
 clearcoat_roughness = 1.0
 refraction_enabled = true
 
-[node name="Node3D2" type="Node3D"]
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_skxkr")
 
 [node name="Player" parent="." instance=ExtResource("2_4xgnc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06602, 0)
@@ -1847,6 +1871,7 @@ depth = 2.6
 
 [node name="reference diagrams" type="Node3D" parent="Control Room Panels/Main Panel Right Side"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.04038)
+visible = false
 
 [node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Right Side/reference diagrams"]
 transform = Transform3D(-4.74269e-08, 0, 1.085, 0, 1.085, 0, -1.085, 0, -4.74269e-08, 0.999079, 0.844471, -2.337)
@@ -1886,6 +1911,7 @@ depth = 6.6
 
 [node name="reference diagrams" type="Node3D" parent="Control Room Panels/Main Panel Far Right Side"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0389862, 0.00164974, -0.929476)
+visible = false
 
 [node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Far Right Side/reference diagrams"]
 transform = Transform3D(-4.43671e-08, 0, 1.015, 0, 1.015, 0, -1.015, 0, -4.43671e-08, 0.975982, 0.844, -2.371)
@@ -1907,6 +1933,7 @@ depth = 9.5
 
 [node name="reference diagrams" type="Node3D" parent="Control Room Panels/Main Panel Left Side"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.487)
+visible = false
 
 [node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/reference diagrams"]
 transform = Transform3D(-4.43671e-08, 0, 1.015, 0, 1.015, 0, -1.015, 0, -4.43671e-08, 1, 0.838, -2.282)
@@ -1928,6 +1955,7 @@ depth = 4.8
 
 [node name="reference diagrams" type="Node3D" parent="Control Room Panels/Main Panel Center"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000125885, 5.96046e-08, 0.00373268)
+visible = false
 
 [node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Center/reference diagrams"]
 transform = Transform3D(-5.96046e-08, 0, 1.015, 0, 1.015, 0, -1.015, 0, -5.96046e-08, 0.999429, 0.948, -2.29557)
@@ -1940,6 +1968,67 @@ transform = Transform3D(-5.96046e-08, -0.995325, 0.198885, 0, 0.198885, 0.995324
 sorting_offset = 1.0
 pixel_size = 0.0007
 texture = ExtResource("13_3gybx")
+
+[node name="Controls" type="Node3D" parent="Control Room Panels/Main Panel Center"]
+
+[node name="SCRAMA1B1" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls"]
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1"]
+transform = Transform3D(0, 0, 0.242258, 0, 0.124781, 0, -0.230662, 0, -2.23517e-08, 1.00597, 0.160973, -1.80098)
+polygon = PackedVector2Array(1, 0.95, 1, 0.05, 0.97, 0, 0.03, 0, 0, 0.05, 0, 0.95, 0.03, 1, 0.97, 1)
+material = SubResource("StandardMaterial3D_skqwy")
+
+[node name="SCRAM_A1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00564, 0.221932, -1.85461)
+use_collision = true
+size = Vector3(0.002, 0.042, 0.042)
+material = SubResource("StandardMaterial3D_umpcg")
+script = ExtResource("15_ou0an")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_A1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_A1/StaticBody3D"]
+shape = SubResource("BoxShape3D_hjk8c")
+
+[node name="label" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1"]
+transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00564, 0.259777, -1.85356)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.071291)
+material = ExtResource("2_yxnln")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/label"]
+transform = Transform3D(-2.18557e-09, 0, 0.05, 0, 0.07, 0, -0.05, 0, -2.18557e-09, 0.00387335, 0, 4.76837e-07)
+modulate = Color(0, 0, 0, 1)
+text = "REACTOR SCRAM
+A1"
+font_size = 20
+outline_size = 0
+
+[node name="label2" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1"]
+transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00564, 0.259777, -1.98215)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.071291)
+material = ExtResource("2_yxnln")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/label2"]
+transform = Transform3D(-2.18557e-09, 0, 0.05, 0, 0.07, 0, -0.05, 0, -2.18557e-09, 0.00387287, 0, 4.76837e-07)
+modulate = Color(0, 0, 0, 1)
+text = "REACTOR SCRAM
+B1"
+font_size = 20
+outline_size = 0
+
+[node name="SCRAM_B1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00564, 0.221932, -1.98201)
+use_collision = true
+size = Vector3(0.002, 0.042, 0.042)
+material = SubResource("StandardMaterial3D_umpcg")
+script = ExtResource("15_ou0an")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_B1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_B1/StaticBody3D"]
+shape = SubResource("BoxShape3D_hjk8c")
 
 [node name="CSGPolygon3D" type="CSGPolygon3D" parent="."]
 transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, 7.228, 2.39, 4.943)
@@ -6545,6 +6634,145 @@ max_distance = 3.0
 [node name="Button Unclick" type="AudioStreamPlayer3D" parent="Rod Select Panel"]
 max_distance = 3.0
 
+[node name="Annunciators" type="Node3D" parent="."]
+script = ExtResource("19_3k53m")
+
+[node name="Box1" parent="Annunciators" instance=ExtResource("16_25mp6")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 8.2612, 2.11625, 1.49981)
+
+[node name="Box4" parent="Annunciators" instance=ExtResource("16_25mp6")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.21203, 2.11625, 3.54897)
+
+[node name="Node3D" parent="Annunciators" instance=ExtResource("17_y8n64")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 7.79535, 2.21402, 1.96874)
+
+[node name="603200" parent="Annunciators" instance=ExtResource("17_y8n64")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.68453, 2.21402, 3.07956)
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/A2" index="0"]
+transform = Transform3D(-7.45058e-09, 1, 9.68575e-08, 5.96046e-08, 2.98023e-08, -1, -0.999999, 0, -5.96046e-08, 0.00259233, -0.0208244, 0.00126791)
+text = "RWM
+ROD
+BLOCK"
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/A3" index="0"]
+text = "CRD
+PUMP 1A/1B
+MOTOR
+ELEC FAULT"
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/B2" index="0"]
+transform = Transform3D(0, 1, 1.04308e-07, 5.96046e-08, 2.98023e-08, -1, -1, 0, -5.96046e-08, 0.00259209, -0.0208282, 0.00127172)
+text = "CRD
+PUMP 1A/1B
+AUTO TRIP"
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/B3" index="0"]
+text = "CRD
+PUMP 1A/1B
+MOTOR
+OVERLOAD"
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/C1" index="0"]
+transform = Transform3D(0, 1, 1.04308e-07, 5.96046e-08, 2.98023e-08, -1, -1, 0, -5.96046e-08, 0.00259137, -0.0208216, 0.000358105)
+text = "ROD DRIVE
+CONTROL SYS
+INOPERABLE"
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/C2" index="0"]
+transform = Transform3D(0, 1, 1.04308e-07, 5.96046e-08, 2.98023e-08, -1, -1, 0, -5.96046e-08, 0.00259137, -0.0208216, 0.00127316)
+text = "CRD
+PUMP 1A
+SUCTION PRESS
+LOW"
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/C3" index="0"]
+transform = Transform3D(0, 1, 1.04308e-07, 5.96046e-08, 2.98023e-08, -1, -1, 0, -5.96046e-08, 0.00259137, -0.0208216, 0.00127316)
+text = "CRD
+PUMP 1A/1B
+MOTOR
+OVERLOAD"
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/D1" index="0"]
+transform = Transform3D(0, 1, 1.04308e-07, 5.96046e-08, 2.98023e-08, -1, -1, 0, -5.96046e-08, 0.00259185, -0.0208216, 0.00127316)
+text = "ROD POSITION
+INDICATING SYS
+INOPERABLE"
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/D2" index="0"]
+transform = Transform3D(0, 1, 1.04308e-07, 5.96046e-08, 2.98023e-08, -1, -1, 0, -5.96046e-08, 0.00259137, -0.0208225, 0.00127316)
+text = "CRD
+PUMP 1A/1B
+TROUBLE"
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/D3" index="0"]
+text = "CONTROL ROD
+TEMPERATURE
+HIGH"
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/E1" index="0"]
+transform = Transform3D(0, 1, 1.04308e-07, 5.96046e-08, 2.98023e-08, -1, -1, 0, -5.96046e-08, 0.00259209, -0.0208225, 0.00127363)
+text = "CONTROL
+ROD
+DISPLAY
+INOPERABLE"
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/E2" index="0"]
+text = "CRD
+CHARGING WTR
+PRESSURE
+LOW"
+
+[node name="E3" parent="Annunciators/603200/Box/Windows" index="14"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.0686579, -0.0645609)
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/E3" index="0"]
+text = "CRD
+DRV WTR FLTR
+DIFF PRESSURE
+HIGH"
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/F1" index="0"]
+text = "CRD SCRAM
+VALVE PILOT
+AIR HDR PRESS
+HIGH/LOW"
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/F3" index="0"]
+text = "CRD PUMPS
+SUCTION FLTR
+DIFF PRESSURE
+HIGH"
+
+[node name="OrangeOutline6" type="CSGBox3D" parent="Annunciators/603200/Box/Outlines" index="1"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.39027, -1.06322)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" type="CSGBox3D" parent="Annunciators/603200/Box/Outlines/OrangeOutline6"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, 1.14441e-05, 9.53674e-07)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline3" parent="Annunciators/603200/Box/Outlines" index="2"]
+transform = Transform3D(0.0478192, -0.205031, 0, 0.54657, 0.0179378, 0, 0, 0, 0.573309, 1.01238, 1.39027, -0.907772)
+size = Vector3(0.108, 0.04, 0.131761)
+
+[node name="Subtract" parent="Annunciators/603200/Box/Outlines/OrangeOutline3" index="0"]
+transform = Transform3D(1.06858, -1.11759e-08, 0, -5.21541e-07, 1.1996, 0, 0, 0, 0.987324, 0.000227928, -3.8147e-06, 0)
+
+[node name="Alarm1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.55557, 2.31361, 2.79219)
+
+[node name="Fast" type="AudioStreamPlayer" parent="Alarm1"]
+stream = ExtResource("22_1ivuw")
+
+[node name="Slow" type="AudioStreamPlayer" parent="Alarm1"]
+stream = ExtResource("23_ykdw5")
+
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_A1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_A1" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_B1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_B1" method="switch_click"]
 [connection signal="input_event" from="Rod Select Panel/Panel 2/Lights and buttons/Insert_pb/StaticBody3D" to="Rod Select Panel/Panel 2/Lights and buttons/Insert_pb/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Panel 2/Lights and buttons/Withdraw_pb/StaticBody3D" to="Rod Select Panel/Panel 2/Lights and buttons/Withdraw_pb/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Safety Covers/Insert/StaticBody3D" to="Rod Select Panel/Safety Covers/Insert/StaticBody3D" method="_on_input_event"]
@@ -6743,3 +6971,5 @@ max_distance = 3.0
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/50-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/50-39/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/54-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/54-39/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/58-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/58-39/StaticBody3D" method="_on_input_event"]
+
+[editable path="Annunciators/603200"]

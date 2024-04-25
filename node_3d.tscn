@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://d1voufvibxvu4"]
+[gd_scene load_steps=17 format=3 uid="uid://d1voufvibxvu4"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/main.gd" id="1_qcftf"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="1_r185b"]
@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://dp5ytydbdxgoi" path="res://Assets/Components/Annunciators/annunciator_6x3.tscn" id="8_5upq6"]
 [ext_resource type="PackedScene" uid="uid://crga4wior2o86" path="res://Assets/Components/Switches/Selector Switch 2/selector_switch_2.tscn" id="8_qgke1"]
 [ext_resource type="Script" path="res://Assets/Components/Annunciators/annunciator.gd" id="9_2476f"]
-[ext_resource type="Script" path="res://button.gd" id="10_0d60s"]
 [ext_resource type="AudioStream" uid="uid://bfn1cqw1n0oqs" path="res://Assets/Audio/reactor_alarm_loop.mp3" id="11_jie8d"]
 [ext_resource type="AudioStream" uid="uid://bqm26847iqdj1" path="res://Assets/Audio/electrical_alarm_loop.mp3" id="12_exg7f"]
 
@@ -99,18 +98,6 @@ ANNUNCIATOR"
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.1
 
-[node name="test_button" type="CSGBox3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.96046e-08, 1.0623, -3.37413)
-use_collision = true
-size = Vector3(0.002, 0.042, 0.042)
-material = SubResource("StandardMaterial3D_v6fy7")
-script = ExtResource("10_0d60s")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="test_button"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="test_button/StaticBody3D"]
-shape = SubResource("BoxShape3D_giu2e")
-
 [node name="Alarm1" type="Node3D" parent="."]
 
 [node name="Fast" type="AudioStreamPlayer" parent="Alarm1"]
@@ -119,7 +106,21 @@ stream = ExtResource("11_jie8d")
 [node name="Slow" type="AudioStreamPlayer" parent="Alarm1"]
 stream = ExtResource("12_exg7f")
 
-[connection signal="input_event" from="test_button/StaticBody3D" to="test_button" method="switch_click"]
+[node name="Annunciators" type="Node3D" parent="."]
+script = ExtResource("9_2476f")
+
+[node name="test_button" type="CSGBox3D" parent="Annunciators"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.96046e-08, 1.0623, -3.37413)
+use_collision = true
+size = Vector3(0.002, 0.042, 0.042)
+material = SubResource("StandardMaterial3D_v6fy7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Annunciators/test_button"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Annunciators/test_button/StaticBody3D"]
+shape = SubResource("BoxShape3D_giu2e")
+
+[connection signal="input_event" from="Annunciators/test_button/StaticBody3D" to="Annunciators/test_button" method="switch_click"]
 
 [editable path="test_switch2"]
 [editable path="test_switch2/selector_switch"]

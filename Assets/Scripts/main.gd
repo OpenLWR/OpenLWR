@@ -156,7 +156,13 @@ func _process(delta):
 			"z" : local_player.position["z"],
 		}}
 		
-		if local_player_position != {}:
+		if local_player_position != {} and (
+		globals.last_sent_x != local_player.position["x"]
+		or globals.last_sent_y != local_player.position["y"]
+		or globals.last_sent_z != local_player.position["z"]):
+			globals.last_sent_x = local_player.position["x"]
+			globals.last_sent_y = local_player.position["y"]
+			globals.last_sent_z = local_player.position["z"]
 			var err = socket.send_text(build_packet(client_packets.PLAYER_POSITION_PARAMETERS_UPDATE, json.stringify(local_player_position)))
 			if err:
 				print(err)

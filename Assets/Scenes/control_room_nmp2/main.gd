@@ -25,12 +25,12 @@ var switches = {
 	"reactor_mode_switch": {
 		"switch": null,
 		"positions": {
-			0: 45,
-			1: 0,
-			2: -45,
-			3: -90,
+			0: 45, #Shutdown
+			1: 0, #Refuel
+			2: -45, #Startup
+			3: -90, #Run
 		},
-		"position": 1,
+		"position": 0,
 		"momentary": false,
 		"updated": false,
 	},

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj3y1ridejbw0"]
+
+[ext_resource type="PackedScene" uid="uid://dyk86rtadlnxg" path="res://Assets/Scenes/full_core_display_lights.tscn" id="1_8eyi6"]
+[ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black plastic 2.tres" id="2_sak3l"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Full Core Display" type="Node3D" parent="."]
+transform = Transform3D(0, 0, -0.75, 0, 0.75, 0, 0.75, 0, 0, 1.00228, 1.1063, -2.40535)
+
+[node name="full core display lights" parent="Full Core Display" instance=ExtResource("1_8eyi6")]
+transform = Transform3D(-1.77636e-15, 1.78814e-07, -1.1, 1.1, -4.80825e-08, -5.73188e-15, -4.80825e-08, -1.1, -1.78814e-07, -0.481903, -0.141908, -0.272004)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Full Core Display"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00373006, 0.00457096)
+size = Vector3(1.20895, 1.19438, 0.002)
+material = ExtResource("2_sak3l")

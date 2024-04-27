@@ -16,6 +16,7 @@ enum server_packets {
 	ALARM_PARAMETERS_UPDATE = 5,
 	BUTTON_PARAMETERS_UPDATE = 7,
 	PLAYER_POSITION_PARAMETERS_UPDATE = 8,
+	ROD_POSITION_PARAMETERS_UPDATE = 10,
 }
 
 @onready var gauges = {}
@@ -106,6 +107,8 @@ var alarm_groups = {
 	"SCRAM_SOLENOID_H": $"Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_H/Lamp".get_material(),
 	
 }
+
+var rod_information = {}
 
 @onready var players = {
 	#"1":{ #key is userid, for now its username
@@ -271,6 +274,10 @@ func _process(delta):
 							NewRemotePlayer.name = player
 							self.add_child(NewRemotePlayer)
 							# TODO: remove remote player instance when they disconnect
+							
+				server_packets.ROD_POSITION_PARAMETERS_UPDATE:
+					packet_data = json.parse_string(packet_data)
+					rod_information = packet_data
 							
 				
 				

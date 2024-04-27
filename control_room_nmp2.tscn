@@ -1,4 +1,4 @@
-[gd_scene load_steps=237 format=3 uid="uid://hp5vectj4xsb"]
+[gd_scene load_steps=239 format=3 uid="uid://hp5vectj4xsb"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/main.gd" id="1_skxkr"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_4xgnc"]
@@ -17,7 +17,9 @@
 [ext_resource type="Material" uid="uid://c2raag84b6lqd" path="res://Assets/Materials/black_metal.tres" id="14_he4ct"]
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="15_anrx5"]
 [ext_resource type="Script" path="res://button.gd" id="15_ou0an"]
+[ext_resource type="PackedScene" uid="uid://dyk86rtadlnxg" path="res://Assets/Scenes/control_room_nmp2/FCD/full_core_display_lights.tscn" id="16_5ugyd"]
 [ext_resource type="PackedScene" uid="uid://dmx7kcqtkcpx0" path="res://Assets/Components/Annunciators/annunciator_8x6.tscn" id="16_25mp6"]
+[ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/FCD/full_core_display.gd" id="17_i8txs"]
 [ext_resource type="PackedScene" uid="uid://dp5ytydbdxgoi" path="res://Assets/Components/Annunciators/annunciator_6x3.tscn" id="17_y8n64"]
 [ext_resource type="Material" uid="uid://d2mabc0jor366" path="res://annunciator_outline_orange.tres" id="18_ro6fv"]
 [ext_resource type="Script" path="res://Assets/Components/Annunciators/annunciator.gd" id="19_3k53m"]
@@ -1999,6 +2001,7 @@ depth = 4.8
 
 [node name="reference diagrams" type="Node3D" parent="Control Room Panels/Main Panel Center"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000125885, 5.96046e-08, 0.00373268)
+visible = false
 
 [node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Center/reference diagrams"]
 transform = Transform3D(-5.96046e-08, 0, 1.015, 0, 1.015, 0, -1.015, 0, -5.96046e-08, 0.999429, 0.948, -2.29557)
@@ -2473,6 +2476,18 @@ shaded = true
 text = "TEST"
 font_size = 16
 outline_size = 0
+
+[node name="Full Core Display" type="Node3D" parent="Control Room Panels/Main Panel Center"]
+transform = Transform3D(0, 0, -0.75, 0, 0.75, 0, 0.75, 0, 0, 1.00228, 1.1063, -2.40535)
+
+[node name="full core display lights" parent="Control Room Panels/Main Panel Center/Full Core Display" instance=ExtResource("16_5ugyd")]
+transform = Transform3D(-1.77636e-15, 1.78814e-07, -1.1, 1.1, -4.80825e-08, -5.73188e-15, -4.80825e-08, -1.1, -1.78814e-07, -0.481903, -0.141908, -0.272004)
+script = ExtResource("17_i8txs")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Full Core Display"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00373006, 0.00457096)
+size = Vector3(1.20895, 1.19438, 0.002)
+material = ExtResource("15_anrx5")
 
 [node name="CSGPolygon3D" type="CSGPolygon3D" parent="."]
 transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, 7.228, 2.39, 4.943)

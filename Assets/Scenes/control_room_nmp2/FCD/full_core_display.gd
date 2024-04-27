@@ -43,7 +43,7 @@ func _ready():
 				else:
 					set_rod_light_emission(rod_number, "ACCUM", false)
 			else:
-				set_rod_light_emission(rod_number, "ACCUM", rod_info["cr_accum_trouble"] and not rpis_inop)
+				set_rod_light_emission(rod_number, "ACCUM", rod_info["accum_trouble"] and not rpis_inop)
 			if cycles >= 3:
 				cycles = -1
 			

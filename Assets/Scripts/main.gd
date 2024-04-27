@@ -140,7 +140,6 @@ func _process(delta):
 			if not err:
 				for button in updated_buttons:
 					buttons[button].updated = false
-					print(button)
 			else:
 				print(err)
 				
@@ -206,6 +205,7 @@ func _process(delta):
 					for indicator in packet_data:
 						var indicator_state = packet_data[indicator]
 						indicators[indicator].emission_enabled = indicator_state
+						print(indicator)
 						
 				server_packets.ALARM_PARAMETERS_UPDATE:
 					packet_data = json.parse_string(packet_data)

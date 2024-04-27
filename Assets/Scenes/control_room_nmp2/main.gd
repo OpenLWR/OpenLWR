@@ -35,6 +35,36 @@ var buttons = {
 		"momentary": false,
 		"updated": false,
 	},
+	"SCRAM_A2": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"updated": false,
+	},
+	"SCRAM_B2": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"updated": false,
+	},
+	"ALARM_SILENCE_1": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"updated": false,
+	},
+	"ALARM_ACK_1": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"updated": false,
+	},
+	"ALARM_RESET_1": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"updated": false,
+	},
 }
 
 enum annunciator_state {
@@ -49,17 +79,33 @@ var alarms = {
 		"box": "Box1",
 		"window": "B2",
 		"state": annunciator_state.CLEAR,
+		"silenced" : false,
 		"material": null,
 	},
 	"rps_b_auto_trip": {
 		"box": "Box4",
 		"window": "B2",
 		"state": annunciator_state.CLEAR,
+		"silenced" : false,
 		"material": null,
 	},
 }
 
-@onready var indicators = {}
+var alarm_groups = {
+	"1" : {"F" : false, "S" : false}, # F - Fast S - Slow
+}
+
+@onready var indicators = {
+	"SCRAM_SOLENOID_A": $"Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_A/Lamp".get_material(),
+	"SCRAM_SOLENOID_B": $"Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_B/Lamp".get_material(),
+	"SCRAM_SOLENOID_C": $"Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_C/Lamp".get_material(),
+	"SCRAM_SOLENOID_D": $"Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_D/Lamp".get_material(),
+	"SCRAM_SOLENOID_E": $"Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_E/Lamp".get_material(),
+	"SCRAM_SOLENOID_F": $"Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_F/Lamp".get_material(),
+	"SCRAM_SOLENOID_G": $"Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_G/Lamp".get_material(),
+	"SCRAM_SOLENOID_H": $"Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_H/Lamp".get_material(),
+	
+}
 
 @onready var players = {
 	#"1":{ #key is userid, for now its username
@@ -182,10 +228,19 @@ func _process(delta):
 						indicators[indicator].emission_enabled = indicator_state
 						
 				server_packets.ALARM_PARAMETERS_UPDATE:
-					packet_data = json.parse_string(packet_data)
-					for alarm in packet_data:
-						var alarm_state = packet_data[alarm]
+					packet_data = packet_data.split("|")
+					var alarm_dict = json.parse_string(packet_data[0])
+					var groups = json.parse_string(packet_data[1])
+					for alarm in alarm_dict:
+						var alarm_state = alarm_dict[alarm]["state"]
 						alarms[alarm].state = int(alarm_state)
+						alarms[alarm].silenced = bool(alarm_dict[alarm]["silenced"])
+						
+					for group in groups:
+						var fast_state = groups[group]["F"]
+						var slow_state = groups[group]["S"]
+						alarm_groups[group]["F"] = bool(fast_state)
+						alarm_groups[group]["S"] = bool(slow_state)
 						
 				server_packets.BUTTON_PARAMETERS_UPDATE:
 					packet_data = json.parse_string(packet_data)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=225 format=3 uid="uid://hp5vectj4xsb"]
+[gd_scene load_steps=237 format=3 uid="uid://hp5vectj4xsb"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/main.gd" id="1_skxkr"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_4xgnc"]
@@ -22,13 +22,14 @@
 [ext_resource type="Material" uid="uid://d2mabc0jor366" path="res://annunciator_outline_orange.tres" id="18_ro6fv"]
 [ext_resource type="Script" path="res://Assets/Components/Annunciators/annunciator.gd" id="19_3k53m"]
 [ext_resource type="AudioStream" uid="uid://bfn1cqw1n0oqs" path="res://Assets/Audio/reactor_alarm_loop.mp3" id="22_1ivuw"]
+[ext_resource type="Script" path="res://Assets/Components/Annunciators/Alarm.gd" id="22_5ffiy"]
 [ext_resource type="AudioStream" uid="uid://bqm26847iqdj1" path="res://Assets/Audio/electrical_alarm_loop.mp3" id="23_ykdw5"]
 
 [sub_resource type="Environment" id="Environment_gjsn6"]
 ambient_light_source = 1
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_skqwy"]
-albedo_color = Color(0.890197, 0, 0.0730685, 1)
+albedo_color = Color(1, 0.120131, 0.122347, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_umpcg"]
 vertex_color_use_as_albedo = true
@@ -41,6 +42,44 @@ refraction_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hjk8c"]
 size = Vector3(0.0144663, 0.0430282, 0.0426735)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_av737"]
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_abj82"]
+albedo_color = Color(0.755256, 0.749754, 0.734791, 1)
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rsgbh"]
+albedo_color = Color(0.755256, 0.749754, 0.734791, 1)
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ldbk4"]
+albedo_color = Color(0.755256, 0.749754, 0.734791, 1)
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ea4fq"]
+albedo_color = Color(0.755256, 0.749754, 0.734791, 1)
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b5xxn"]
+albedo_color = Color(0.755256, 0.749754, 0.734791, 1)
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ch751"]
+albedo_color = Color(0.755256, 0.749754, 0.734791, 1)
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7s16l"]
+albedo_color = Color(0.755256, 0.749754, 0.734791, 1)
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_djlq7"]
+albedo_color = Color(0.755256, 0.749754, 0.734791, 1)
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qbqto"]
+albedo_color = Color(0.435867, 0.456668, 0.447776, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2dm8g"]
 vertex_color_use_as_albedo = true
@@ -1798,6 +1837,11 @@ clearcoat = 0.16
 clearcoat_roughness = 1.0
 refraction_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sixdk"]
+emission = Color(1, 0, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_skxkr")
 
@@ -1955,7 +1999,6 @@ depth = 4.8
 
 [node name="reference diagrams" type="Node3D" parent="Control Room Panels/Main Panel Center"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000125885, 5.96046e-08, 0.00373268)
-visible = false
 
 [node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Center/reference diagrams"]
 transform = Transform3D(-5.96046e-08, 0, 1.015, 0, 1.015, 0, -1.015, 0, -5.96046e-08, 0.999429, 0.948, -2.29557)
@@ -1971,32 +2014,32 @@ texture = ExtResource("13_3gybx")
 
 [node name="Controls" type="Node3D" parent="Control Room Panels/Main Panel Center"]
 
-[node name="SCRAMA1B1" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls"]
+[node name="SCRAM1" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls"]
 
-[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1"]
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM1"]
 transform = Transform3D(0, 0, 0.242258, 0, 0.124781, 0, -0.230662, 0, -2.23517e-08, 1.00597, 0.160973, -1.80098)
 polygon = PackedVector2Array(1, 0.95, 1, 0.05, 0.97, 0, 0.03, 0, 0, 0.05, 0, 0.95, 0.03, 1, 0.97, 1)
 material = SubResource("StandardMaterial3D_skqwy")
 
-[node name="SCRAM_A1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1"]
+[node name="SCRAM_A1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00564, 0.221932, -1.85461)
 use_collision = true
 size = Vector3(0.002, 0.042, 0.042)
 material = SubResource("StandardMaterial3D_umpcg")
 script = ExtResource("15_ou0an")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_A1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_A1"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_A1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_A1/StaticBody3D"]
 shape = SubResource("BoxShape3D_hjk8c")
 
-[node name="label" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1"]
+[node name="label" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM1"]
 transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00564, 0.259777, -1.85356)
 use_collision = true
 size = Vector3(0.002, 0.0239888, 0.071291)
 material = ExtResource("2_yxnln")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/label"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM1/label"]
 transform = Transform3D(-2.18557e-09, 0, 0.05, 0, 0.07, 0, -0.05, 0, -2.18557e-09, 0.00387335, 0, 4.76837e-07)
 modulate = Color(0, 0, 0, 1)
 text = "REACTOR SCRAM
@@ -2004,13 +2047,13 @@ A1"
 font_size = 20
 outline_size = 0
 
-[node name="label2" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1"]
+[node name="label2" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM1"]
 transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00564, 0.259777, -1.98215)
 use_collision = true
 size = Vector3(0.002, 0.0239888, 0.071291)
 material = ExtResource("2_yxnln")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/label2"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM1/label2"]
 transform = Transform3D(-2.18557e-09, 0, 0.05, 0, 0.07, 0, -0.05, 0, -2.18557e-09, 0.00387287, 0, 4.76837e-07)
 modulate = Color(0, 0, 0, 1)
 text = "REACTOR SCRAM
@@ -2018,17 +2061,418 @@ B1"
 font_size = 20
 outline_size = 0
 
-[node name="SCRAM_B1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1"]
+[node name="SCRAM_B1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00564, 0.221932, -1.98201)
 use_collision = true
 size = Vector3(0.002, 0.042, 0.042)
 material = SubResource("StandardMaterial3D_umpcg")
 script = ExtResource("15_ou0an")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_B1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_B1"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_B1/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_B1/StaticBody3D"]
 shape = SubResource("BoxShape3D_hjk8c")
+
+[node name="SCRAM2" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.970127)
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM2"]
+transform = Transform3D(0, 0, 0.242258, 0, 0.124781, 0, -0.230662, 0, -2.23517e-08, 1.00597, 0.160973, -1.80098)
+polygon = PackedVector2Array(1, 0.95, 1, 0.05, 0.97, 0, 0.03, 0, 0, 0.05, 0, 0.95, 0.03, 1, 0.97, 1)
+material = SubResource("StandardMaterial3D_skqwy")
+
+[node name="SCRAM_A1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00564, 0.221932, -1.85461)
+use_collision = true
+size = Vector3(0.002, 0.042, 0.042)
+material = SubResource("StandardMaterial3D_umpcg")
+script = ExtResource("15_ou0an")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM2/SCRAM_A1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM2/SCRAM_A1/StaticBody3D"]
+shape = SubResource("BoxShape3D_hjk8c")
+
+[node name="label" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM2"]
+transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00564, 0.259777, -1.85356)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.071291)
+material = ExtResource("2_yxnln")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM2/label"]
+transform = Transform3D(-2.18557e-09, 0, 0.05, 0, 0.07, 0, -0.05, 0, -2.18557e-09, 0.00387335, 0, 4.76837e-07)
+modulate = Color(0, 0, 0, 1)
+text = "REACTOR SCRAM
+A1"
+font_size = 20
+outline_size = 0
+
+[node name="label2" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM2"]
+transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00564, 0.259777, -1.98215)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.071291)
+material = ExtResource("2_yxnln")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM2/label2"]
+transform = Transform3D(-2.18557e-09, 0, 0.05, 0, 0.07, 0, -0.05, 0, -2.18557e-09, 0.00387287, 0, 4.76837e-07)
+modulate = Color(0, 0, 0, 1)
+text = "REACTOR SCRAM
+B1"
+font_size = 20
+outline_size = 0
+
+[node name="SCRAM_B1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00564, 0.221932, -1.98201)
+use_collision = true
+size = Vector3(0.002, 0.042, 0.042)
+material = SubResource("StandardMaterial3D_umpcg")
+script = ExtResource("15_ou0an")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM2/SCRAM_B1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM2/SCRAM_B1/StaticBody3D"]
+shape = SubResource("BoxShape3D_hjk8c")
+
+[node name="ScramCircuits" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls"]
+
+[node name="SCRAM_SOLENOID_C" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(-4.47035e-08, -1, 0, 1, 0, 0, 0, 0, 1, 1.00476, 0.787867, -1.4248)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_C"]
+transform = Transform3D(1, -1.49012e-08, 0, 3.55271e-15, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902367, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_abj82")
+
+[node name="label" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00564, 0.757608, -1.42448)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0498057)
+material = ExtResource("2_yxnln")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/label"]
+transform = Transform3D(0, 0, 0.05, 0, 0.07, 0, -0.05, 0, 0, 0.00104666, 0, -0.00110102)
+modulate = Color(0, 0, 0, 1)
+text = "SOLENOID
+C
+"
+font_size = 20
+outline_size = 0
+
+[node name="SCRAM_SOLENOID_A" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(-4.47035e-08, -1, 0, 1, 0, 0, 0, 0, 1, 1.00476, 0.849537, -1.4248)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_A"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_rsgbh")
+
+[node name="label2" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00564, 0.819278, -1.42448)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0498057)
+material = ExtResource("2_yxnln")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/label2"]
+transform = Transform3D(0, 0, 0.05, 0, 0.07, 0, -0.05, 0, 0, 0.00104666, 0, -0.00110102)
+modulate = Color(0, 0, 0, 1)
+text = "SOLENOID
+A
+"
+font_size = 20
+outline_size = 0
+
+[node name="SCRAM_SOLENOID_G" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(-4.47035e-08, -1, 0, 1, 0, 0, 0, 0, 1, 1.00469, 0.787867, -1.54736)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_G"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_ldbk4")
+
+[node name="label3" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00557, 0.757608, -1.54704)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0498057)
+material = ExtResource("2_yxnln")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/label3"]
+transform = Transform3D(0, 0, 0.05, 0, 0.07, 0, -0.05, 0, 0, 0.00104666, 0, -0.00110102)
+modulate = Color(0, 0, 0, 1)
+text = "SOLENOID
+G
+"
+font_size = 20
+outline_size = 0
+
+[node name="SCRAM_SOLENOID_E" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(-4.47035e-08, -1, 0, 1, 0, 0, 0, 0, 1, 1.00469, 0.849537, -1.54736)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_E"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_ea4fq")
+
+[node name="label4" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00557, 0.819278, -1.54704)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0498057)
+material = ExtResource("2_yxnln")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/label4"]
+transform = Transform3D(0, 0, 0.05, 0, 0.07, 0, -0.05, 0, 0, 0.00104666, 0, -0.00110102)
+modulate = Color(0, 0, 0, 1)
+text = "SOLENOID
+E
+"
+font_size = 20
+outline_size = 0
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(0, 0, 0.242258, 0, 0.140806, 0, -0.186761, 0, -2.23517e-08, 1.00597, 0.731087, -1.39194)
+polygon = PackedVector2Array(1, 0.95, 1, 0.05, 0.97, 0, 0.03, 0, 0, 0.05, 0, 0.95, 0.03, 1, 0.97, 1)
+material = SubResource("StandardMaterial3D_skqwy")
+
+[node name="SCRAM_SOLENOID_H" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(-4.47035e-08, -1, 0, 1, 0, 0, 0, 0, 1, 1.00246, 0.787867, -3.24182)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_H"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_b5xxn")
+
+[node name="label5" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00334, 0.757608, -3.2415)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0498057)
+material = ExtResource("2_yxnln")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/label5"]
+transform = Transform3D(0, 0, 0.05, 0, 0.07, 0, -0.05, 0, 0, 0.00104666, 0, -0.00110102)
+modulate = Color(0, 0, 0, 1)
+text = "SOLENOID
+H
+"
+font_size = 20
+outline_size = 0
+
+[node name="SCRAM_SOLENOID_B" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(-4.47035e-08, -1, 0, 1, 0, 0, 0, 0, 1, 1.00246, 0.849537, -3.24182)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_B"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_ch751")
+
+[node name="label6" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00334, 0.819278, -3.2415)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0498057)
+material = ExtResource("2_yxnln")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/label6"]
+transform = Transform3D(0, 0, 0.05, 0, 0.07, 0, -0.05, 0, 0, 0.00104713, 0, -0.00110078)
+modulate = Color(0, 0, 0, 1)
+text = "SOLENOID
+B
+"
+font_size = 20
+outline_size = 0
+
+[node name="SCRAM_SOLENOID_F" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(-4.47035e-08, -1, 0, 1, 0, 0, 0, 0, 1, 1.00239, 0.787867, -3.36438)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_F"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_7s16l")
+
+[node name="label7" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00327, 0.757608, -3.36406)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0498057)
+material = ExtResource("2_yxnln")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/label7"]
+transform = Transform3D(0, 0, 0.05, 0, 0.07, 0, -0.05, 0, 0, 0.00104666, 0, -0.00110102)
+modulate = Color(0, 0, 0, 1)
+text = "SOLENOID
+F
+"
+font_size = 20
+outline_size = 0
+
+[node name="SCRAM_SOLENOID_D" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(-4.47035e-08, -1, 0, 1, 0, 0, 0, 0, 1, 1.00239, 0.849537, -3.36438)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_D"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_djlq7")
+
+[node name="label8" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00327, 0.819278, -3.36406)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0498057)
+material = ExtResource("2_yxnln")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits/label8"]
+transform = Transform3D(0, 0, 0.05, 0, 0.07, 0, -0.05, 0, 0, 0.00104666, 0, -0.00110102)
+modulate = Color(0, 0, 0, 1)
+text = "SOLENOID
+D
+"
+font_size = 20
+outline_size = 0
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
+transform = Transform3D(0, 0, 0.242258, 0, 0.140806, 0, -0.186761, 0, -2.23517e-08, 1.00367, 0.731087, -3.20896)
+polygon = PackedVector2Array(1, 0.95, 1, 0.05, 0.97, 0, 0.03, 0, 0, 0.05, 0, 0.95, 0.03, 1, 0.97, 1)
+material = SubResource("StandardMaterial3D_skqwy")
+
+[node name="Annunciation" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls"]
+transform = Transform3D(-0.199367, 0.979924, 0, -0.979924, -0.199368, 0, 0, 0, 1, 1.36717, 0.038075, -2.76097)
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
+transform = Transform3D(0, -0.000903593, 0.242249, 2.23517e-08, 0.10354, 0.00211398, -0.242729, 2.23517e-08, 0, 0.241103, -0.302353, -1.14401)
+polygon = PackedVector2Array(1, 0.95, 1, 0.05, 0.97, 0, 0.03, 0, 0, 0.05, 0, 0.95, 0.03, 1, 0.97, 1)
+material = SubResource("StandardMaterial3D_qbqto")
+
+[node name="ALARM_SILENCE_1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
+transform = Transform3D(-0.999963, 0.0087267, 0, -0.00872615, -0.999963, 0, 0, 0, 1, -0.00202006, -0.232256, -1.18421)
+use_collision = true
+size = Vector3(0.002, 0.042, 0.042)
+material = SubResource("StandardMaterial3D_umpcg")
+script = ExtResource("15_ou0an")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_SILENCE_1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_SILENCE_1/StaticBody3D"]
+shape = SubResource("BoxShape3D_hjk8c")
+
+[node name="ALARM_ACK_1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
+transform = Transform3D(-0.999963, 0.0087267, 0, -0.00872615, -0.999963, 0, 0, 0, 1, -0.00202009, -0.232255, -1.24251)
+use_collision = true
+size = Vector3(0.002, 0.042, 0.042)
+material = SubResource("StandardMaterial3D_umpcg")
+script = ExtResource("15_ou0an")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_ACK_1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_ACK_1/StaticBody3D"]
+shape = SubResource("BoxShape3D_hjk8c")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_ACK_1"]
+transform = Transform3D(0, 0, 0.242258, 0, 0.124781, 0, -0.230662, 0, -2.23517e-08, 1.00597, 0.160973, -1.80098)
+polygon = PackedVector2Array(1, 0.95, 1, 0.05, 0.97, 0, 0.03, 0, 0, 0.05, 0, 0.95, 0.03, 1, 0.97, 1)
+material = SubResource("StandardMaterial3D_skqwy")
+
+[node name="ALARM_RESET_1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
+transform = Transform3D(-0.999963, 0.0087267, 0, -0.00872615, -0.999963, 0, 0, 0, 1, -0.00202009, -0.232255, -1.2986)
+use_collision = true
+size = Vector3(0.002, 0.042, 0.042)
+material = SubResource("StandardMaterial3D_umpcg")
+script = ExtResource("15_ou0an")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_RESET_1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_RESET_1/StaticBody3D"]
+shape = SubResource("BoxShape3D_hjk8c")
+
+[node name="pain" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
+transform = Transform3D(-0.999963, 0.0087267, 0, -0.00872615, -0.999963, 0, 0, 0, 1, -0.00202009, -0.232255, -1.35342)
+use_collision = true
+size = Vector3(0.002, 0.042, 0.042)
+material = SubResource("StandardMaterial3D_umpcg")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation/pain"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation/pain/StaticBody3D"]
+shape = SubResource("BoxShape3D_hjk8c")
+
+[node name="Rod Motion Blocks4" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
+transform = Transform3D(1.04308e-07, -4.32134e-07, -1, -5.96046e-08, -1, 6.70552e-08, -1, 8.9407e-08, -4.47035e-08, -0.00196323, -0.287911, -1.26933)
+sorting_offset = 10.0
+pixel_size = 0.0005
+shaded = true
+text = "ANNUNCIATION"
+font_size = 16
+outline_size = 0
+
+[node name="Rod Motion Blocks5" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
+transform = Transform3D(1.04308e-07, -5.21541e-07, -1, -5.96046e-08, -1, 3.72529e-08, -1, 8.9407e-08, -3.72529e-08, -0.00196341, -0.262863, -1.18432)
+sorting_offset = 10.0
+pixel_size = 0.0005
+shaded = true
+text = "SILENCE"
+font_size = 16
+outline_size = 0
+
+[node name="Rod Motion Blocks6" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
+transform = Transform3D(1.04308e-07, -5.36442e-07, -1, -5.96046e-08, -1, 4.47035e-08, -1, 8.9407e-08, -4.47035e-08, -0.00196341, -0.262862, -1.24279)
+sorting_offset = 10.0
+pixel_size = 0.0005
+shaded = true
+text = "ACK"
+font_size = 16
+outline_size = 0
+
+[node name="Rod Motion Blocks7" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
+transform = Transform3D(1.04308e-07, -5.51343e-07, -1, -5.96046e-08, -1, 5.21541e-08, -1, 8.9407e-08, -3.72529e-08, -0.00196335, -0.262863, -1.29797)
+sorting_offset = 10.0
+pixel_size = 0.0005
+shaded = true
+text = "RESET"
+font_size = 16
+outline_size = 0
+
+[node name="Rod Motion Blocks8" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
+transform = Transform3D(1.04308e-07, -5.66244e-07, -1, -5.96046e-08, -1, 5.96046e-08, -1, 8.9407e-08, -4.47035e-08, -0.00196359, -0.262863, -1.35301)
+sorting_offset = 10.0
+pixel_size = 0.0005
+shaded = true
+text = "TEST"
+font_size = 16
+outline_size = 0
 
 [node name="CSGPolygon3D" type="CSGPolygon3D" parent="."]
 transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, 7.228, 2.39, 4.943)
@@ -6640,6 +7084,9 @@ script = ExtResource("19_3k53m")
 [node name="Box1" parent="Annunciators" instance=ExtResource("16_25mp6")]
 transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 8.2612, 2.11625, 1.49981)
 
+[node name="B2" parent="Annunciators/Box1/Box/Windows" index="7"]
+material = SubResource("StandardMaterial3D_sixdk")
+
 [node name="Box4" parent="Annunciators" instance=ExtResource("16_25mp6")]
 transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.21203, 2.11625, 3.54897)
 
@@ -6648,6 +7095,13 @@ transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107
 
 [node name="603200" parent="Annunciators" instance=ExtResource("17_y8n64")]
 transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.68453, 2.21402, 3.07956)
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/A1" index="0"]
+transform = Transform3D(-7.45058e-09, 1, 1.04308e-07, 5.96046e-08, 2.23517e-08, -1, -0.999999, 0, -5.96046e-08, 0.00259209, -0.0208216, 0.00126982)
+text = "IRM
+TRIP SYSTEM B
+UPSCALE/
+INOPERABLE"
 
 [node name="Label" parent="Annunciators/603200/Box/Windows/A2" index="0"]
 transform = Transform3D(-7.45058e-09, 1, 9.68575e-08, 5.96046e-08, 2.98023e-08, -1, -0.999999, 0, -5.96046e-08, 0.00259233, -0.0208244, 0.00126791)
@@ -6660,6 +7114,12 @@ text = "CRD
 PUMP 1A/1B
 MOTOR
 ELEC FAULT"
+
+[node name="Label" parent="Annunciators/603200/Box/Windows/B1" index="0"]
+text = "APRM
+TRIP SYSTEM B
+UPSCALE/
+INOPERABLE"
 
 [node name="Label" parent="Annunciators/603200/Box/Windows/B2" index="0"]
 transform = Transform3D(0, 1, 1.04308e-07, 5.96046e-08, 2.98023e-08, -1, -1, 0, -5.96046e-08, 0.00259209, -0.0208282, 0.00127172)
@@ -6762,8 +7222,12 @@ size = Vector3(0.108, 0.04, 0.131761)
 [node name="Subtract" parent="Annunciators/603200/Box/Outlines/OrangeOutline3" index="0"]
 transform = Transform3D(1.06858, -1.11759e-08, 0, -5.21541e-07, 1.1996, 0, 0, 0, 0.987324, 0.000227928, -3.8147e-06, 0)
 
+[node name="Subtract" parent="Annunciators/603200/Box/Outlines/OrangeOutline5" index="0"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, 0, 4.76837e-07)
+
 [node name="Alarm1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.55557, 2.31361, 2.79219)
+script = ExtResource("22_5ffiy")
 
 [node name="Fast" type="AudioStreamPlayer" parent="Alarm1"]
 stream = ExtResource("22_1ivuw")
@@ -6771,8 +7235,14 @@ stream = ExtResource("22_1ivuw")
 [node name="Slow" type="AudioStreamPlayer" parent="Alarm1"]
 stream = ExtResource("23_ykdw5")
 
-[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_A1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_A1" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_B1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAMA1B1/SCRAM_B1" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_A1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_A1" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_B1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_B1" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM2/SCRAM_A1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM2/SCRAM_A1" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM2/SCRAM_B1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM2/SCRAM_B1" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_SILENCE_1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_SILENCE_1" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_ACK_1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_ACK_1" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_RESET_1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_RESET_1" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Annunciation/pain/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Annunciation/pain" method="switch_click"]
 [connection signal="input_event" from="Rod Select Panel/Panel 2/Lights and buttons/Insert_pb/StaticBody3D" to="Rod Select Panel/Panel 2/Lights and buttons/Insert_pb/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Panel 2/Lights and buttons/Withdraw_pb/StaticBody3D" to="Rod Select Panel/Panel 2/Lights and buttons/Withdraw_pb/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Safety Covers/Insert/StaticBody3D" to="Rod Select Panel/Safety Covers/Insert/StaticBody3D" method="_on_input_event"]
@@ -6972,4 +7442,5 @@ stream = ExtResource("23_ykdw5")
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/54-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/54-39/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/58-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/58-39/StaticBody3D" method="_on_input_event"]
 
+[editable path="Annunciators/Box1"]
 [editable path="Annunciators/603200"]

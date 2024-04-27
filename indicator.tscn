@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqq6kqjvod17o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2yshe"]
+metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7lfmu"]
+albedo_color = Color(0, 0.588235, 0, 1)
+emission = Color(0, 0.839216, 0, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Off" type="CSGCylinder3D" parent="."]
+transform = Transform3D(-4.47035e-08, -1, 0, 1, 0, 0, 0, 0, 1, 0, 0.112, 0.029)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_2yshe")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="Off"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_7lfmu")

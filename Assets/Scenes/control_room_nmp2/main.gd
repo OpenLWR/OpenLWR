@@ -325,7 +325,8 @@ func _process(delta):
 							
 				server_packets.ROD_POSITION_PARAMETERS_UPDATE:
 					packet_data = json.parse_string(packet_data)
-					rod_information = packet_data
+					for rod in packet_data:
+						rod_information[rod] = packet_data[rod]
 							
 				
 				

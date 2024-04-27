@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://crga4wior2o86"]
+[gd_scene load_steps=9 format=3 uid="uid://crga4wior2o86"]
 
 [ext_resource type="Script" path="res://Assets/Components/Switches/Selector Switch/selector_switch.gd" id="1_t033c"]
 [ext_resource type="PackedScene" uid="uid://cnkhmv4fni50x" path="res://Assets/Components/Switches/Selector Switch 2/selector_switch_2.glb" id="2_jskew"]
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="3_mip2f"]
 [ext_resource type="Material" path="res://Assets/Materials/silver_metal.tres" id="4_2xavh"]
 [ext_resource type="Material" uid="uid://c2raag84b6lqd" path="res://Assets/Materials/black_metal.tres" id="4_i4tw7"]
+[ext_resource type="AudioStream" uid="uid://wlb0cgw34y6m" path="res://Assets/Audio/breaker_switch.mp3" id="6_gwkef"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_isvvb"]
 size = Vector3(0.0273438, 0.0568848, 0.0185547)
@@ -97,6 +98,9 @@ radius = 0.0176114
 height = 0.0279754
 smooth_faces = false
 material = ExtResource("3_mip2f")
+
+[node name="Move" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_gwkef")
 
 [connection signal="input_event" from="Left" to="." method="switch_click_left"]
 [connection signal="input_event" from="Right" to="." method="switch_click_right"]

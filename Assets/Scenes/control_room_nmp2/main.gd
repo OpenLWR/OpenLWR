@@ -79,6 +79,18 @@ var buttons = {
 		"momentary": false,
 		"updated": false,
 	},
+	"ACCUM_TROUBLE_RESET": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"updated": false,
+	},
+	"ROD_DRIFT_RESET": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"updated": false,
+	},
 }
 
 enum annunciator_state {
@@ -103,6 +115,27 @@ var alarms = {
 		"silenced" : false,
 		"material": null,
 	},
+	"rod_drive_accumulator_trouble": {
+		"box": "Box4",
+		"window": "A6",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	"control_rod_out_block": {
+		"box": "Box4",
+		"window": "B6",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	"control_rod_drift": {
+		"box": "Box4",
+		"window": "C6",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
 }
 
 var alarm_groups = {
@@ -118,6 +151,8 @@ var alarm_groups = {
 	"SCRAM_SOLENOID_F": $"Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_F/Lamp".get_material(),
 	"SCRAM_SOLENOID_G": $"Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_G/Lamp".get_material(),
 	"SCRAM_SOLENOID_H": $"Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_H/Lamp".get_material(),
+	
+	"RMCS_WITHDRAW_BLOCK": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_BLOCK".get_material(),
 	
 }
 

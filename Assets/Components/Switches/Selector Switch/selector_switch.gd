@@ -10,10 +10,7 @@ func _ready():
 
 func switch_position_change(to_position: int):
 	switch.position = to_position
-	# TODO: switch audio
-	
-	
-	
+	$"Move".playing = true
 	$"selector_switch/Handle".rotation_degrees.y = switch.positions[switch.position]
 
 func switch_click_left(_camera, event, _position, _normal, _shape_idx):

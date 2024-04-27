@@ -21,7 +21,20 @@ enum server_packets {
 
 @onready var gauges = {}
 
-var switches = {}
+var switches = {
+	"reactor_mode_switch": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+			3: -90,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+	},
+}
 
 var buttons = {
 	"SCRAM_A1": {

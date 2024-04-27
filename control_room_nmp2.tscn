@@ -1,4 +1,4 @@
-[gd_scene load_steps=239 format=3 uid="uid://hp5vectj4xsb"]
+[gd_scene load_steps=240 format=3 uid="uid://hp5vectj4xsb"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/main.gd" id="1_skxkr"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_4xgnc"]
@@ -19,6 +19,7 @@
 [ext_resource type="Script" path="res://button.gd" id="15_ou0an"]
 [ext_resource type="PackedScene" uid="uid://dyk86rtadlnxg" path="res://Assets/Scenes/control_room_nmp2/FCD/full_core_display_lights.tscn" id="16_5ugyd"]
 [ext_resource type="PackedScene" uid="uid://dmx7kcqtkcpx0" path="res://Assets/Components/Annunciators/annunciator_8x6.tscn" id="16_25mp6"]
+[ext_resource type="PackedScene" uid="uid://crga4wior2o86" path="res://Assets/Components/Switches/Selector Switch 2/selector_switch_2.tscn" id="16_em1bd"]
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/FCD/full_core_display.gd" id="17_i8txs"]
 [ext_resource type="PackedScene" uid="uid://dp5ytydbdxgoi" path="res://Assets/Components/Annunciators/annunciator_6x3.tscn" id="17_y8n64"]
 [ext_resource type="Material" uid="uid://d2mabc0jor366" path="res://annunciator_outline_orange.tres" id="18_ro6fv"]
@@ -2475,6 +2476,9 @@ shaded = true
 text = "TEST"
 font_size = 16
 outline_size = 0
+
+[node name="reactor_mode_switch" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("16_em1bd")]
+transform = Transform3D(-8.9407e-08, -0.978148, -0.207912, 0, 0.207912, -0.978148, 1, -8.9407e-08, 0, 1.38546, 0.044186, -3.06725)
 
 [node name="Full Core Display" type="Node3D" parent="Control Room Panels/Main Panel Center"]
 transform = Transform3D(0, 0, -0.75, 0, 0.75, 0, 0.75, 0, 0, 1.00228, 1.1063, -2.40535)
@@ -7456,5 +7460,7 @@ stream = ExtResource("23_ykdw5")
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/54-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/54-39/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/58-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/58-39/StaticBody3D" method="_on_input_event"]
 
+[editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch"]
+[editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/selector_switch"]
 [editable path="Annunciators/Box1"]
 [editable path="Annunciators/603200"]

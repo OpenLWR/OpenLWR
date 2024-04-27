@@ -55,6 +55,30 @@ polygon = PackedVector2Array(0.108744, -0.0443115, 0.10631, -0.0371923, 0.096069
 depth = 0.01
 material = SubResource("StandardMaterial3D_a3cg5")
 
+[node name="Label3D" type="Label3D" parent="selector_switch"]
+transform = Transform3D(-0.3, 4.52987e-08, 1.98006e-15, 0, -1.31134e-08, 0.3, 4.52987e-08, 0.3, 1.31134e-08, -8.39233e-05, 0.156524, 0.737557)
+text = "NORMAL"
+font_size = 50
+outline_size = 0
+
+[node name="Label3D3" type="Label3D" parent="selector_switch"]
+transform = Transform3D(-0.212132, -0.212132, -1.14642e-15, 9.27259e-09, -9.27259e-09, 0.3, -0.212132, 0.212132, 1.31134e-08, -0.450098, 0.156524, 0.558338)
+text = "NORMAL"
+font_size = 50
+outline_size = 0
+
+[node name="Label3D4" type="Label3D" parent="selector_switch"]
+transform = Transform3D(-5.04871e-28, -0.3, -9.27259e-09, 9.27259e-09, -9.27259e-09, 0.3, -0.3, -1.85288e-22, 9.27259e-09, -0.674808, 0.156524, 0.0837282)
+text = "NORMAL"
+font_size = 50
+outline_size = 0
+
+[node name="Label3D2" type="Label3D" parent="selector_switch"]
+transform = Transform3D(-0.212132, 0.212132, -1.14642e-15, -9.27259e-09, -9.27259e-09, 0.3, 0.212132, 0.212132, 1.31134e-08, 0.472578, 0.156524, 0.535534)
+text = "NORMAL"
+font_size = 50
+outline_size = 0
+
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
 transform = Transform3D(0.382683, 8.57944e-10, 0.92388, 0.92388, -1.284e-09, -0.382683, 2.69838e-08, 0.0317948, -4.03841e-08, 2.11686e-10, -3.1681e-10, 0.00784493)
 radius = 0.0232206

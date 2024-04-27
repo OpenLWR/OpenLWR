@@ -2001,7 +2001,6 @@ depth = 4.8
 
 [node name="reference diagrams" type="Node3D" parent="Control Room Panels/Main Panel Center"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000125885, 5.96046e-08, 0.00373268)
-visible = false
 
 [node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Center/reference diagrams"]
 transform = Transform3D(-5.96046e-08, 0, 1.015, 0, 1.015, 0, -1.015, 0, -5.96046e-08, 0.999429, 0.948, -2.29557)

@@ -1,6 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://dfd15iqtdnefv"]
+[gd_scene load_steps=5 format=3 uid="uid://dfd15iqtdnefv"]
+
+[ext_resource type="PackedScene" uid="uid://c3kfnbxqwgtd6" path="res://Scenes/Player/username_text.tscn" id="1_jnwma"]
+[ext_resource type="Script" path="res://Scenes/Player/username_text.gd" id="2_jjdfv"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_6b3ky"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_2n12p"]
+viewport_path = NodePath("Sprite3D/SubViewport")
 
 [node name="Player" type="CharacterBody3D"]
 
@@ -8,3 +14,16 @@
 mesh = SubResource("CapsuleMesh_6b3ky")
 
 [node name="Head" type="Node3D" parent="."]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.12263, 0)
+pixel_size = 0.002
+billboard = 2
+texture = SubResource("ViewportTexture_2n12p")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D"]
+transparent_bg = true
+size = Vector2i(1000, 512)
+
+[node name="Node2D" parent="Sprite3D/SubViewport" instance=ExtResource("1_jnwma")]
+script = ExtResource("2_jjdfv")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3kfnbxqwgtd6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ade60"]
+font_size = 100
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 880.0
+offset_bottom = 286.0
+text = "im a big fat nerd"
+label_settings = SubResource("LabelSettings_ade60")
+horizontal_alignment = 1
+vertical_alignment = 1

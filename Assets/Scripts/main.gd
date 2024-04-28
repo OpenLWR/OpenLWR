@@ -6,6 +6,7 @@ enum client_packets {
 	SWITCH_PARAMETERS_UPDATE = 2,
 	BUTTON_PARAMETERS_UPDATE = 6,
 	PLAYER_POSITION_PARAMETERS_UPDATE = 9,
+	ROD_SELECT_UPDATE = 10,
 }
 
 enum server_packets {
@@ -89,6 +90,8 @@ var alarms = {
 	#}
 }
 
+var selected_rod = null
+
 const remote_player_scene = preload("res://Scenes/Player/remote_player.tscn")
 
 func build_packet(packet_id, data):
@@ -144,6 +147,13 @@ func _process(delta):
 				print(err)
 				
 		# TODO: only fire to server when our position updated
+		
+		if selected_rod != null:
+			var err = socket.send_text(build_packet(client_packets.ROD_SELECT_UPDATE, json.stringify(selected_rod)))
+			if not err:
+				selected_rod = null
+			else:
+				print(err)
 		
 		var local_player_position = {}
 		

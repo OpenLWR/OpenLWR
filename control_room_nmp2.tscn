@@ -1944,7 +1944,6 @@ depth = 2.6
 
 [node name="reference diagrams" type="Node3D" parent="Control Room Panels/Main Panel Right Side"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.04038)
-visible = false
 
 [node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Right Side/reference diagrams"]
 transform = Transform3D(-4.74269e-08, 0, 1.085, 0, 1.085, 0, -1.085, 0, -4.74269e-08, 0.999079, 0.844471, -2.337)
@@ -2527,7 +2526,7 @@ size = Vector3(0.002, 0.0239888, 0.071291)
 material = ExtResource("2_yxnln")
 
 [node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/label2"]
-transform = Transform3D(-2.18557e-09, 0, 0.05, 0, 0.07, 0, -0.05, 0, -2.18557e-09, 0.00387287, 0, 4.76837e-07)
+transform = Transform3D(-1.86265e-09, -4.65661e-10, 0.05, 0, 0.07, 4.65661e-10, -0.05, 1.86265e-09, -2.32831e-09, 0.00105691, 0, 4.76837e-07)
 modulate = Color(0, 0, 0, 1)
 text = "REACTOR
 MODE SWITCH"
@@ -3062,13 +3061,13 @@ outline_size = 16
 
 [node name="Rod Selectors" type="Node3D" parent="Rod Select Panel"]
 transform = Transform3D(0.999997, -1.78814e-07, 0, -3.8743e-07, 1, 0, 0, 0, 1, -0.0370332, 0.00177908, 0.0359957)
-script = ExtResource("21_lib1f")
 
 [node name="02-19" type="CSGBox3D" parent="Rod Select Panel/Rod Selectors"]
 transform = Transform3D(1, -1.49012e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, 1.19209e-07, 0.0960026, 0.191999)
 use_collision = true
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_c5dx5")
+script = ExtResource("21_lib1f")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/02-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -3091,6 +3090,7 @@ outline_size = 16
 transform = Transform3D(1, 0, 0, -7.45058e-08, 1, 0, 0, 0, 1, 5.96046e-08, 0.0960026, 0.159998)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_tdsvl")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/06-19"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3113,6 +3113,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-07, 0.0960035, 0.127997)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_2jrj8")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/10-19"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3135,6 +3136,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-07, 0.0960026, 0.0959969)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_87bc2")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/14-19"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3157,6 +3159,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-07, 0.0960016, 0.0639975)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_v00go")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-19"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3179,6 +3182,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.0960016, 0.031997)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_vdork")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-19"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3201,6 +3205,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -1.19209e-07, 0.0960016, -3.8147e-06)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_bj1ee")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-19"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3223,6 +3228,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-08, 0.0960016, -0.0320044)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_5onjv")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-19"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3245,6 +3251,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -1.3411e-07, 1, 0, 0, 0, 1, 2.98023e-07, 0.0960035, -0.0639999)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_7bftd")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-19"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3267,6 +3274,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-07, 0.0960016, -0.0960007)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_tl1no")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-19"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3289,6 +3297,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-07, 0.0960016, -0.128002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_3mmor")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-19"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3311,6 +3320,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.0960016, -0.160002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_j2hyv")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/46-19"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3333,6 +3343,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -1.19209e-07, 0.0960016, -0.192003)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_452ls")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/50-19"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3355,6 +3366,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-08, 0.0960016, -0.224004)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_tli3f")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/54-19"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3377,6 +3389,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -7.45058e-08, 1, 0, 0, 0, 1, 2.38419e-07, 0.128002, 0.159998)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_fuhym")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/06-15"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3399,6 +3412,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, 0.128003, 0.127998)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_aoc7t")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/10-15"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3421,6 +3435,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, 0.128003, 0.0959973)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_i6tch")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/14-15"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3443,6 +3458,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, 0.128002, 0.0639985)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_f1li8")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-15"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3465,6 +3481,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 0, 0.128001, 0.0319984)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_4l5ly")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-15"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3487,6 +3504,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.78814e-07, 0.128001, -3.8147e-06)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_hj33n")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-15"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3509,6 +3527,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, 0.128001, -0.0320044)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_3layp")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-15"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3531,6 +3550,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -1.3411e-07, 1, 0, 0, 0, 1, 4.76837e-07, 0.128003, -0.0639989)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_1yrjq")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-15"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3553,6 +3573,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, 0.128001, -0.096)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_04y40")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-15"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3575,6 +3596,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.38419e-07, 0.128001, -0.128002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_mnf3q")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-15"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3597,6 +3619,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -1.19209e-07, 0.128001, -0.160001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_robka")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/46-15"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3619,6 +3642,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-07, 0.128002, -0.192002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_mqsv1")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/50-15"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3641,6 +3665,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 3.57628e-07, 0.160003, 0.127998)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_cvubu")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/10-11"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3663,6 +3688,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 3.57628e-07, 0.160003, 0.0959978)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_4jovu")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/14-11"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3685,6 +3711,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 4.76837e-07, 0.160003, 0.0639987)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_j62hy")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-11"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3707,6 +3734,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-08, 0.160001, 0.0319986)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_2pqd0")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-11"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3729,6 +3757,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-07, 0.160001, -3.8147e-06)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_23o5e")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-11"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3751,6 +3780,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, 0.160001, -0.0320044)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_3r007")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-11"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3773,6 +3803,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -1.19209e-07, 1, 0, 0, 0, 1, 4.17233e-07, 0.160003, -0.0639982)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_wno2o")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-11"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3795,6 +3826,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 4.17233e-07, 0.160001, -0.0959997)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_tcccm")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-11"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3817,6 +3849,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, 0.160001, -0.128001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_qtcxn")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-11"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3839,6 +3872,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.160001, -0.160001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_melam")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/46-11"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3861,6 +3895,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -1.19209e-07, 0.160002, -0.192002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_5exg0")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/50-11"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3883,6 +3918,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 3.57628e-07, -0.159997, 0.127998)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_lvnoh")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/10-51"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3905,6 +3941,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, -0.159997, 0.0959978)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_dxhv7")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/14-51"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3927,6 +3964,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 4.76837e-07, -0.159997, 0.0639989)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_kc42y")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-51"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3949,6 +3987,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.38419e-07, -0.159999, 0.0319986)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_ulbtv")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-51"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3971,6 +4010,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-08, -0.159999, -3.09944e-06)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_t5ylr")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-51"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -3993,6 +4033,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 3.57628e-07, -0.159999, -0.0320036)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_vapav")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-51"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4015,6 +4056,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -8.9407e-08, 1, 0, 0, 0, 1, 4.76837e-07, -0.159997, -0.0639982)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_rq02i")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-51"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4037,6 +4079,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, -0.159999, -0.0959997)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_k3m4r")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-51"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4059,6 +4102,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, -0.159999, -0.128001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_40o8s")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-51"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4081,6 +4125,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-07, -0.159999, -0.160001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_on1sh")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/46-51"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4103,6 +4148,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-08, -0.159999, -0.192002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_8amjr")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/50-51"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4125,6 +4171,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 4.76837e-07, 0.192003, 0.0959985)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_d5psl")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/14-07"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4147,6 +4194,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-07, 0.192002, 0.0639992)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_1ypod")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-07"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4169,6 +4217,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.78814e-07, 0.192, 0.0319989)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_6hdnq")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-07"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4191,6 +4240,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-07, 0.192, -2.86102e-06)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_3djf5")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-07"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4213,6 +4263,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 4.17233e-07, 0.192, -0.0320034)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_yep2p")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-07"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4235,6 +4286,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -8.9407e-08, 1, 0, 0, 0, 1, 5.36442e-07, 0.192002, -0.063998)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_20jrm")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-07"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4257,6 +4309,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 4.76837e-07, 0.192, -0.0959995)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_mw0uh")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-07"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4279,6 +4332,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 4.17233e-07, 0.192, -0.128001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_ajnvw")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-07"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4301,6 +4355,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 7.7486e-07, 0.224002, 0.0639994)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_5xuju")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-03"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4323,6 +4378,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 3.57628e-07, 0.224, 0.0319996)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_bmg2i")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-03"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4345,6 +4401,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, 0.224, -2.86102e-06)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_ls77j")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-03"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4367,6 +4424,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 7.15256e-07, 0.224, -0.0320032)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_2pmnh")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-03"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4389,6 +4447,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, 8.34465e-07, 0.224002, -0.0639973)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_vmivm")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-03"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4411,6 +4470,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 6.55651e-07, 0.224, -0.0959988)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_b6im4")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-03"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4433,6 +4493,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-07, 0.224, -0.128001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_fexvu")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-03"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4455,6 +4516,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 9.53674e-07, -0.223998, 0.0639999)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_65v1g")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-59"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4477,6 +4539,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 6.55651e-07, -0.224, 0.0319996)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_0xla2")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-59"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4499,6 +4562,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 3.57628e-07, -0.224, -2.14577e-06)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_p0h4f")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-59"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4521,6 +4585,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 9.53674e-07, -0.224, -0.0320024)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_m1j8s")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-59"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4543,6 +4608,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, 1.01328e-06, -0.223998, -0.0639975)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_ni6g5")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-59"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4565,6 +4631,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 8.34465e-07, -0.224, -0.0959988)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_ujl68")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-59"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4587,6 +4654,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 7.15256e-07, -0.224, -0.128)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_1mffd")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-59"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4609,6 +4677,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-08, 0.192, -0.160001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_de0yr")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/46-07"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4631,6 +4700,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 6.55651e-07, -0.191997, 0.0959988)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_nmcn0")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/14-55"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4653,6 +4723,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 7.15256e-07, -0.191998, 0.0639997)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_lmfda")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-55"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4675,6 +4746,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 3.57628e-07, -0.192, 0.0319998)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_tywje")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-55"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4697,6 +4769,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.78814e-07, -0.192, -2.38419e-06)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_a6oy2")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-55"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4719,6 +4792,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-07, -0.191999, -0.0320036)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_tpads")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-55"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4741,6 +4815,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, 7.15256e-07, -0.191998, -0.0639968)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_i7f05")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-55"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4763,6 +4838,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-07, -0.192, -0.0959985)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_6u0ul")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-55"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4785,6 +4861,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-07, -0.191999, -0.128001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_stk5b")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-55"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4807,6 +4884,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.38419e-07, -0.192, -0.16)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_3q1uf")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/46-55"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4829,6 +4907,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, 0.128001, -0.224004)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_irynn")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/54-15"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4851,6 +4930,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -7.45058e-08, 1, 0, 0, 0, 1, 4.17233e-07, -0.127997, 0.159998)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_fvku4")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/06-47"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4873,6 +4953,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, -0.127997, 0.127999)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_p5opc")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/10-47"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4895,6 +4976,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 3.57628e-07, -0.127997, 0.0959983)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_ltbud")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/14-47"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4917,6 +4999,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 3.57628e-07, -0.127997, 0.0639989)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_i6ggs")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-47"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4939,6 +5022,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-08, -0.127999, 0.0319984)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_1lm2y")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-47"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4961,6 +5045,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.38419e-07, -0.127999, -3.33786e-06)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_fhrt6")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-47"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -4983,6 +5068,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, -0.127999, -0.0320039)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_5egx5")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-47"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5005,6 +5091,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -1.19209e-07, 1, 0, 0, 0, 1, 4.17233e-07, -0.127996, -0.0639989)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_bb5pe")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-47"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5027,6 +5114,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 4.76837e-07, -0.127999, -0.0959992)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_fa2gc")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-47"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5049,6 +5137,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, -0.127999, -0.128002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_xm6r4")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-47"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5071,6 +5160,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 0, -0.127999, -0.16)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_1yorq")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/46-47"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5093,6 +5183,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-07, -0.127998, -0.192002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_plf2e")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/50-47"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5115,6 +5206,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, -0.127999, -0.224003)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_6wb56")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/54-47"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5137,6 +5229,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.0960016, -0.256004)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_lb8pa")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/58-19"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5159,6 +5252,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -1.78814e-07, 1, 0, 0, 0, 1, 5.96046e-08, 0.0640039, 0.191998)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_5jtph")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/02-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5181,6 +5275,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.19209e-07, 1, 0, 0, 0, 1, 1.19209e-07, 0.064003, 0.159998)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_sd1e6")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/06-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5203,6 +5298,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 0, 0.064003, 0.127997)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_iryvf")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/10-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5225,6 +5321,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 0, 0.064003, 0.0959961)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_u6qbs")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/14-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5247,6 +5344,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.064002, 0.0639961)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_hii3r")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5269,6 +5367,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -1.19209e-07, 0.064002, 0.0319958)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_tlt5t")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5291,6 +5390,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.064002, -4.52995e-06)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_u6ufb")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5313,6 +5413,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.064002, -0.0320051)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_5pq8k")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5335,6 +5436,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -1.3411e-07, 1, 0, 0, 0, 1, 5.96046e-08, 0.0640039, -0.0640013)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_oi8tt")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5357,6 +5459,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 0, 0.064002, -0.0960009)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_ulqjt")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5379,6 +5482,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.064002, -0.128003)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_q0b8y")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5401,6 +5505,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.064002, -0.160004)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_qiygh")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/46-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5423,6 +5528,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.064002, -0.192004)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_epb41")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/50-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5445,6 +5551,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.064002, -0.224005)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_5hq7m")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/54-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5467,6 +5574,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.064002, -0.256005)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_6r61h")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/58-23"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5489,6 +5597,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -1.3411e-07, 1, 0, 0, 0, 1, 2.38419e-07, 0.0320034, 0.191999)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_k2um7")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/02-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5511,6 +5620,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-07, 0.0320024, 0.16)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_2gfga")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/06-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5533,6 +5643,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-08, 0.0320024, 0.127997)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_33bjq")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/10-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5555,6 +5666,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-07, 0.0320024, 0.0959966)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_oopt6")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/14-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5577,6 +5689,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -1.19209e-07, 0.0320015, 0.063997)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_5xyo7")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5599,6 +5712,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 0, 0.0320015, 0.0319965)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_p87um")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5621,6 +5735,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.0320015, -4.05312e-06)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_3w4u4")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5643,6 +5758,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-08, 0.0320015, -0.0320046)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_f0nrm")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5665,6 +5781,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -1.3411e-07, 1, 0, 0, 0, 1, 2.38419e-07, 0.0320044, -0.0640008)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_41ytb")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5687,6 +5804,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-07, 0.0320015, -0.0960002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_a6f3r")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5709,6 +5827,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 0, 0.0320024, -0.128003)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_5evcg")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5731,6 +5850,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-08, 0.0320024, -0.160003)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_j3k3e")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/46-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5753,6 +5873,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-08, 0.0320024, -0.192004)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_tf830")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/50-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5775,6 +5896,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-08, 0.0320024, -0.224005)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_vqpha")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/54-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5797,6 +5919,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 0, 0.0320015, -0.256005)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_gffro")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/58-27"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5819,6 +5942,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -1.3411e-07, 1, 0, 0, 0, 1, 8.34465e-07, 1.90735e-06, 0.192)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_jk085")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/02-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5841,6 +5965,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-07, 1.90735e-06, 0.160002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_f43cc")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/06-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5863,6 +5988,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 6.55651e-07, 1.90735e-06, 0.127998)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_66u7a")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/10-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5885,6 +6011,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 7.15256e-07, 1.90735e-06, 0.0959976)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_ixsav")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/14-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5907,6 +6034,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -1.19209e-07, 9.53674e-07, 0.0639977)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_0l1nf")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5929,6 +6057,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 0, 9.53674e-07, 0.0319972)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_dgyx8")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5951,6 +6080,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.98023e-07, 0, -2.38419e-06)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_aywa4")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5973,6 +6103,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 3.57628e-07, 0, -0.0320029)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_lh1dt")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -5995,6 +6126,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -1.19209e-07, 1, 0, 0, 0, 1, 7.7486e-07, 3.8147e-06, -0.0640004)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_a43ob")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6017,6 +6149,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.36442e-07, 0, -0.0959988)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_np5xl")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6039,6 +6172,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-07, 1.90735e-06, -0.128002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_oiaki")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6061,6 +6195,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-07, 1.90735e-06, -0.160003)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_5cpp7")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/46-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6083,6 +6218,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 6.55651e-07, 1.90735e-06, -0.192003)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_sfm3s")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/50-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6105,6 +6241,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-07, 1.90735e-06, -0.224004)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_d3h1v")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/54-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6127,6 +6264,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 0, 9.53674e-07, -0.256004)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_13vkr")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/58-31"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6149,6 +6287,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -1.19209e-07, 1, 0, 0, 0, 1, 6.55651e-07, -0.0319986, 0.192001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_l48wo")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/02-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6171,6 +6310,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.36442e-07, -0.0319996, 0.160002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_lyfyf")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/06-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6193,6 +6333,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 8.34465e-07, -0.0319996, 0.127999)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_2wlvg")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/10-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6215,6 +6356,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.36442e-07, -0.0319996, 0.0959985)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_ecnm6")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/14-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6237,6 +6379,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 0, -0.0319986, 0.0639989)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_7vw6s")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6259,6 +6402,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.78814e-07, -0.0319986, 0.0319986)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_jwnih")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6281,6 +6425,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.38419e-07, -0.0320005, -7.15256e-07)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_uggv3")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6303,6 +6448,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 2.38419e-07, -0.0320005, -0.0320013)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_j2adu")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6325,6 +6471,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -7.45058e-08, 1, 0, 0, 0, 1, 8.34465e-07, -0.0319967, -0.0640001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_4aetb")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6347,6 +6494,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 4.76837e-07, -0.0320005, -0.0959983)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_6rnid")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6369,6 +6517,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 7.15256e-07, -0.0319986, -0.128002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_hi23v")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6391,6 +6540,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 6.55651e-07, -0.0319986, -0.160003)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_bvgmf")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/46-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6413,6 +6563,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 9.53674e-07, -0.0319986, -0.192003)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_wrbgk")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/50-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6435,6 +6586,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.36442e-07, -0.0319996, -0.224003)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_wv8r8")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/54-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6457,6 +6609,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 0, -0.0319986, -0.256002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_p6by6")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/58-35"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 8.9407e-08, -4.47035e-08, -0.00200003, 9.53674e-07, 4.76837e-07)
@@ -6479,6 +6632,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, 9.53674e-07, -0.0959997, 0.192002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_0tus7")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/02-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6501,6 +6655,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 8.9407e-07, -0.0959997, 0.160003)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_dj531")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/06-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6523,6 +6678,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.2517e-06, -0.0959997, 0.128)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_r77uq")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/10-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6545,6 +6701,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 9.53674e-07, -0.0960007, 0.0960002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_n0hen")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/14-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6567,6 +6724,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 3.57628e-07, -0.0959997, 0.0639997)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_oqv0o")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6589,6 +6747,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, -1.78814e-07, -0.0959978, 0.0320008)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_mym5k")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6611,6 +6770,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 4.17233e-07, -0.0960007, 2.6226e-06)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_kxj54")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6633,6 +6793,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 9.53674e-07, -0.0960026, -0.0320008)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_sdmb3")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6655,6 +6816,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, 8.34465e-07, -0.0959969, -0.0639985)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_6w4aj")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6677,6 +6839,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.3113e-06, -0.0960007, -0.0959971)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_gshj2")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6699,6 +6862,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.07288e-06, -0.0959988, -0.128001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_quwud")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6721,6 +6885,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.2517e-06, -0.0959997, -0.160001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_rcm47")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/46-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6743,6 +6908,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.01328e-06, -0.0959978, -0.192002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_otvc6")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/50-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6765,6 +6931,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 9.53674e-07, -0.0960007, -0.224002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_gj5tb")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/54-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6787,6 +6954,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 3.57628e-07, -0.0960007, -0.256)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_hvhql")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/58-43"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 8.9407e-08, -4.47035e-08, -0.00200003, 9.53674e-07, 4.76837e-07)
@@ -6809,6 +6977,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, 1.07288e-06, -0.0640001, 0.192002)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_1hhgx")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/02-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6831,6 +7000,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.13249e-06, -0.0640001, 0.160003)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_0rr41")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/06-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6853,6 +7023,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.2517e-06, -0.0640001, 0.128)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_4ptcd")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/10-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6875,6 +7046,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.13249e-06, -0.0640001, 0.0960004)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_46heh")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/14-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6897,6 +7069,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 4.76837e-07, -0.0640001, 0.0639999)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_if5re")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/18-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6919,6 +7092,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-08, -0.0639982, 0.0320005)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_t76kb")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/22-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6941,6 +7115,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.96046e-07, -0.0640011, 2.6226e-06)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_lg2fe")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/26-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6963,6 +7138,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-06, -0.064002, -0.0320005)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_eowen")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/30-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -6985,6 +7161,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 1.49012e-08, 0, -5.96046e-08, 1, 0, 0, 0, 1, 8.34465e-07, -0.0639973, -0.0639985)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_7cn1n")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/34-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -7007,6 +7184,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.19209e-06, -0.0640001, -0.0959961)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_3wgjd")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/38-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -7029,6 +7207,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.07288e-06, -0.0639992, -0.128001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_hk5h4")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/42-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -7051,6 +7230,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.2517e-06, -0.0640001, -0.160001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_x7fjs")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/46-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -7073,6 +7253,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 9.53674e-07, -0.0639982, -0.192001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_be3lr")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/50-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -7095,6 +7276,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 1.07288e-06, -0.0640001, -0.224001)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_m8xfs")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/54-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 5.96046e-08, -4.47035e-08, -0.002, 0, 0)
@@ -7117,6 +7299,7 @@ shape = SubResource("BoxShape3D_fxeyo")
 transform = Transform3D(1, 0, 0, -1.04308e-07, 1, 0, 0, 0, 1, 5.36442e-07, -0.0640011, -0.255999)
 size = Vector3(0.002, 0.024, 0.024)
 material = SubResource("StandardMaterial3D_mvsm3")
+script = ExtResource("21_lib1f")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Rod Selectors/58-39"]
 transform = Transform3D(4.47035e-08, 0, -1, -8.9407e-08, -1, 2.98023e-08, -1, 8.9407e-08, -4.47035e-08, -0.00200003, 9.53674e-07, 4.76837e-07)
@@ -7652,7 +7835,7 @@ stream = ExtResource("23_ykdw5")
 [connection signal="input_event" from="Rod Select Panel/Panel 1/Lights and buttons/ACCUM_TROUBLE_RESET/StaticBody3D" to="Rod Select Panel/Panel 1/Lights and buttons/ACCUM_TROUBLE_RESET" method="switch_click"]
 [connection signal="input_event" from="Rod Select Panel/Panel 1/Lights and buttons/ValveSelector_pb/StaticBody3D" to="Rod Select Panel/Panel 1/Lights and buttons/ValveSelector_pb/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Panel 1/Lights and buttons/ROD_DRIFT_RESET/StaticBody3D" to="Rod Select Panel/Panel 1/Lights and buttons/ROD_DRIFT_RESET" method="switch_click"]
-[connection signal="input_event" from="Rod Select Panel/Rod Selectors/02-19/StaticBody3D" to="Rod Select Panel/Rod Selectors/02-19/StaticBody3D" method="_on_input_event"]
+[connection signal="input_event" from="Rod Select Panel/Rod Selectors/02-19/StaticBody3D" to="Rod Select Panel/Rod Selectors/02-19" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/06-19/StaticBody3D" to="Rod Select Panel/Rod Selectors/06-19/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/10-19/StaticBody3D" to="Rod Select Panel/Rod Selectors/10-19/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/14-19/StaticBody3D" to="Rod Select Panel/Rod Selectors/14-19/StaticBody3D" method="_on_input_event"]
@@ -7835,8 +8018,8 @@ stream = ExtResource("23_ykdw5")
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/42-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/42-39/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/46-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/46-39/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/50-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/50-39/StaticBody3D" method="_on_input_event"]
-[connection signal="input_event" from="Rod Select Panel/Rod Selectors/54-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/54-39/StaticBody3D" method="_on_input_event"]
-[connection signal="input_event" from="Rod Select Panel/Rod Selectors/58-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/58-39/StaticBody3D" method="_on_input_event"]
+[connection signal="input_event" from="Rod Select Panel/Rod Selectors/54-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/54-39" method="switch_click"]
+[connection signal="input_event" from="Rod Select Panel/Rod Selectors/58-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/58-39" method="switch_click"]
 
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/selector_switch"]

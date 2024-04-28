@@ -16,6 +16,8 @@ var fcd_enums = {
 	"FULL_OUT" : "FULL_IN_OUT_IND/FULL OUT",
 }
 
+#TODO: table with all the materials instead of this garbage
+
 func set_rod_light_emission(rod_number,light,state):
 	var fcd_light = get_node(str(rod_number)+"/"+(fcd_enums[light]))
 	fcd_light.get_material().emission_enabled = state

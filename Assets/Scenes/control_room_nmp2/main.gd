@@ -6,6 +6,7 @@ enum client_packets {
 	SWITCH_PARAMETERS_UPDATE = 2,
 	BUTTON_PARAMETERS_UPDATE = 6,
 	PLAYER_POSITION_PARAMETERS_UPDATE = 9,
+	ROD_SELECT_UPDATE = 10,
 }
 
 enum server_packets {
@@ -166,19 +167,26 @@ var rod_information = {}
 	#}
 }
 
+var selected_rod = null
+
 const remote_player_scene = preload("res://Scenes/Player/remote_player.tscn")
 
 func build_packet(packet_id, data):
 	return "%s|%s" % [str(packet_id), Marshalls.utf8_to_base64(data)]
-	
+
+func build_rod_select():
+	for rod in rod_information:
+		var button = buttons["select_%s" % rod]
 
 func _ready(): # assume here that the scene was called by the lobby screen
+	build_rod_select()
 	var endpoint = "ws://%s:7001/ws" % [globals.server_ip_requested_tojoin] # TODO: should token be generated on server-side?
 	socket.connect_to_url(endpoint)
 	for alarm in alarms:
 		alarm = alarms[alarm]
 		alarm["material"] = get_node("Annunciators/"+alarm["box"]+"/Box/Windows/"+alarm["window"]).get_material()
 	
+
 	
 func parse_b64(b64):
 	return Marshalls.base64_to_utf8(b64)
@@ -222,6 +230,15 @@ func _process(delta):
 				print(err)
 				
 		# TODO: only fire to server when our position updated
+		
+		if selected_rod != null:
+			print("a")
+			var err = socket.send_text(build_packet(client_packets.ROD_SELECT_UPDATE, json.stringify(selected_rod)))
+			if not err:
+				selected_rod = null
+			else:
+				print(err)
+		
 		
 		var local_player_position = {}
 		
@@ -297,6 +314,8 @@ func _process(delta):
 					packet_data = json.parse_string(packet_data)
 					for button in packet_data:
 						var button_state = packet_data[button]
+						if button not in buttons:
+							continue
 						if buttons[button].switch != null:
 							buttons[button].switch.button_state_change(button_state)
 							print(button)

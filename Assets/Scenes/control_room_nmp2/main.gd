@@ -140,7 +140,7 @@ var alarms = {
 }
 
 var alarm_groups = {
-	"1" : {"F" : false, "S" : false}, # F - Fast S - Slow
+	"1" : {"F" : true, "S" : true}, # F - Fast S - Slow
 }
 
 @onready var indicators = {
@@ -180,7 +180,7 @@ func build_rod_select():
 
 func _ready(): # assume here that the scene was called by the lobby screen
 	build_rod_select()
-	var endpoint = "ws://%s:7001/ws" % [globals.server_ip_requested_tojoin] # TODO: should token be generated on server-side?
+	var endpoint = "ws://%s/ws" % [globals.server_ip_requested_tojoin] # TODO: should token be generated on server-side?
 	socket.connect_to_url(endpoint)
 	for alarm in alarms:
 		alarm = alarms[alarm]

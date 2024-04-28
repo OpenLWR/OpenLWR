@@ -11,6 +11,8 @@ func connect_button_pressed():
 	print("Connect")
 	var server_ip_requested = get_node("ServerIP/TextEdit").text
 	var username_requested = get_node("Username/TextEdit").text
+	if server_ip_requested == "":
+		server_ip_requested = "127.0.0.1:7001"
 	print(server_ip_requested)
 	print(username_requested)
 	globals.server_ip_requested_tojoin = server_ip_requested

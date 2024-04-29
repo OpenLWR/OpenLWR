@@ -325,7 +325,7 @@ func _process(delta):
 							var alarm_state = alarm_dict[alarm]["state"]
 							alarms[alarm].state = int(alarm_state)
 							alarms[alarm].silenced = bool(alarm_dict[alarm]["silenced"])
-							
+
 						for group in groups:
 							var fast_state = groups[group]["F"]
 							var slow_state = groups[group]["S"]
@@ -370,9 +370,6 @@ func _process(delta):
 								players[player]["object"] = NewRemotePlayer
 								# TODO: remove remote player instance when they disconnect
 								
-					server_packets.ROD_POSITION_PARAMETERS_UPDATE:
-						packet_data = json.parse_string(packet_data)
-						rod_information = packet_data
 								
 					
 					

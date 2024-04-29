@@ -170,6 +170,7 @@ var rod_information = {}
 }
 
 var selected_rod = null
+@onready var tween = get_tree().create_tween()
 
 var connection_ready = false
 var connection_packet_sent = false
@@ -273,11 +274,16 @@ func _process(delta):
 			#TODO: add a script on each remote player that updates their own position (?)
 			
 			for player in players:
-				var player_object = get_node(player)
 				var player_position = players[player].position
-				player_object.position['x'] = player_position['x']
-				player_object.position['y'] = player_position['y']
-				player_object.position['z'] = player_position['z']
+				var actual_position = players[player].object.position
+				var twn = create_tween()
+				twn.tween_property(players[player].object,"position",Vector3(player_position['x'],player_position['y'],player_position['z']),0.1)
+				twn.set_trans(Tween.TRANS_LINEAR)
+				twn.set_ease(Tween.EASE_IN_OUT)
+				twn.play()
+				#player_object.position['x'] = player_position['x']
+				#player_object.position['y'] = player_position['y']
+				#player_object.position['z'] = player_position['z']
 				
 			# recieve packets
 			while socket.get_available_packet_count():
@@ -296,6 +302,7 @@ func _process(delta):
 					server_packets.USER_LOGOUT:
 						# data: the username of the person who logged out, string
 						print("User %s logged out." % [packet_data])
+						
 						
 					server_packets.SWITCH_PARAMETERS_UPDATE:
 						packet_data = json.parse_string(packet_data)
@@ -355,6 +362,7 @@ func _process(delta):
 								var NewRemotePlayer = remote_player_scene.instantiate()
 								NewRemotePlayer.name = player
 								self.add_child(NewRemotePlayer)
+								players[player]["object"] = NewRemotePlayer
 								# TODO: remove remote player instance when they disconnect
 								
 					server_packets.ROD_POSITION_PARAMETERS_UPDATE:

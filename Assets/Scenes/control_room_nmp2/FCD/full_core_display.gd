@@ -28,16 +28,8 @@ var fcd_lights = {
 }
 
 func set_rod_light_emission(rod_number,light,state):
-	var fcd_light = fcd_lights[rod_number][light]
-	fcd_light.emission_enabled = state
-	
-func generate_rod_material():
-	for rod_number in node_3d.rod_information:
-		fcd_lights[rod_number] = {}
-		for light in fcd_enums:
-			var fcd_light = get_node(str(rod_number)+"/"+(fcd_enums[light]))
-			fcd_lights[rod_number][light] = fcd_light.get_material()
-	return true
+	var fcd_light = get_node(str(rod_number)+"/"+(fcd_enums[light]))
+#	fcd_light.get_material().emission_enabled = state
 
 func _ready():
 	while node_3d.rod_information == null or node_3d.rod_information == {}:

@@ -3204,7 +3204,7 @@ outline_size = 0
 transform = Transform3D(0, 0, -0.75, 0, 0.75, 0, 0.75, 0, 0, 1.00228, 1.1063, -2.40535)
 
 [node name="full core display lights" parent="Control Room Panels/Main Panel Center/Full Core Display" instance=ExtResource("16_5ugyd")]
-transform = Transform3D(-1.77636e-15, 1.78814e-07, -1.1, 1.1, -4.80825e-08, -5.73188e-15, -4.80825e-08, -1.1, -1.78814e-07, -0.481903, -0.141908, -0.272004)
+transform = Transform3D(-3.55271e-15, 1.78814e-07, -1.1, 1.1, -4.80825e-08, -5.73188e-15, -4.80825e-08, -1.1, -1.78814e-07, -0.00114822, 0.032429, -0.016716)
 script = ExtResource("17_i8txs")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Full Core Display"]

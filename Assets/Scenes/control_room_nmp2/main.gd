@@ -325,12 +325,13 @@ func _process(delta):
 							var alarm_state = alarm_dict[alarm]["state"]
 							alarms[alarm].state = int(alarm_state)
 							alarms[alarm].silenced = bool(alarm_dict[alarm]["silenced"])
+							
 						for group in groups:
 							var fast_state = groups[group]["F"]
 							var slow_state = groups[group]["S"]
 							alarm_groups[group]["F"] = bool(fast_state)
 							alarm_groups[group]["S"] = bool(slow_state)
-							
+
 					server_packets.ROD_POSITION_PARAMETERS_UPDATE:
 						packet_data = json.parse_string(packet_data)
 						for rod in packet_data:

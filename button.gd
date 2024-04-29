@@ -1,9 +1,12 @@
 extends CSGBox3D
 
 @onready var node_3d = $"/root/Node3D"
-@onready var button = node_3d.buttons[self.name]
+var button 
 
 func _ready():
+	while not self.name in node_3d.buttons:
+		await get_tree().create_timer(0.1).timeout
+	button = node_3d.buttons[self.name]
 	button.switch = self
 	
 

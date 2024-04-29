@@ -28,7 +28,7 @@ offset_left = -77.0
 offset_top = 23.0
 offset_right = 147.0
 offset_bottom = 56.0
-placeholder_text = "Server Ip (explodet)"
+placeholder_text = "127.0.0.1:7001"
 
 [node name="Button" type="Button" parent="Node2D"]
 offset_left = 241.0
@@ -39,9 +39,9 @@ text = "Join that one thing"
 
 [node name="Username" type="Label" parent="Node2D"]
 offset_left = 347.0
-offset_top = 86.0
+offset_top = 87.0
 offset_right = 427.0
-offset_bottom = 109.0
+offset_bottom = 110.0
 text = "Username"
 
 [node name="TextEdit" type="TextEdit" parent="Node2D/Username"]

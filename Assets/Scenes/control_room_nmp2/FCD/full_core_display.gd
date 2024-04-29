@@ -16,14 +16,35 @@ var fcd_enums = {
 	"FULL_OUT" : "FULL_IN_OUT_IND/FULL OUT",
 }
 
+var fcd_lights = {
+	"02-17" : {
+		"ACCUM" : null,
+		"SCRAM" : null,
+		"DRIFT" : null,
+		"SELECT" : null,
+		"FULL_IN" : null,
+		"FULL_OUT" : null,
+	}
+}
+
 func set_rod_light_emission(rod_number,light,state):
-	var fcd_light = get_node(str(rod_number)+"/"+(fcd_enums[light]))
-	fcd_light.get_material().emission_enabled = state
+	var fcd_light = fcd_lights[rod_number][light]
+	fcd_light.emission_enabled = state
+	
+func generate_rod_material():
+	for rod_number in node_3d.rod_information:
+		fcd_lights[rod_number] = {}
+		for light in fcd_enums:
+			var fcd_light = get_node(str(rod_number)+"/"+(fcd_enums[light]))
+			fcd_lights[rod_number][light] = fcd_light.get_material()
+	return true
 
 func _ready():
-	while node_3d.rod_information == null:
+	while node_3d.rod_information == null or node_3d.rod_information == {}:
 		await get_tree().create_timer(0.1).timeout #just wait around for it to come in
-		
+	
+	generate_rod_material()
+	
 	while true:
 		await get_tree().create_timer(0.1).timeout
 		for rod_number in node_3d.rod_information:
@@ -38,13 +59,13 @@ func _ready():
 			# 18-59 has a slight offset to avoid it appearing desynced from the rest of the lights
 			# TODO: check if 18-59 actually needs this offset (or whatever the first rod in the dict is)
 			if rod_info["accum_trouble_acknowledged"] == false:
-				if rod_info["accum_trouble"] and cycles >= 0: #(rod_number == "18-59" or cycles >= 0):
-					set_rod_light_emission(rod_number, "ACCUM", cycles <= 1 and not rpis_inop)
+				if rod_info["accum_trouble"] and cycles <= 1 : #(rod_number == "18-59" or cycles >= 0):
+					set_rod_light_emission(rod_number, "ACCUM", not rpis_inop)
 				else:
 					set_rod_light_emission(rod_number, "ACCUM", false)
 			else:
 				set_rod_light_emission(rod_number, "ACCUM", rod_info["accum_trouble"] and not rpis_inop)
-			if cycles >= 3:
+			if cycles >= 5:
 				cycles = -1
 			
 		cycles += 1

@@ -204,6 +204,7 @@ offset_bottom = 105.0
 text = "X"
 
 [connection signal="input_event" from="Head/Camera3d/SettingsButton/Button/StaticBody2D" to="Head/Camera3d/SettingsButton/Button/StaticBody2D" method="_on_input_event"]
+[connection signal="pressed" from="Head/Camera3d/Menu/Menu/Disconnect" to="Head/Camera3d/Menu" method="_disconnect_button_pressed"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Settings" to="Head/Camera3d/Menu" method="_settings_button_pressed"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Continue" to="Head/Camera3d/Menu" method="_continue_button_pressed"]
 [connection signal="item_selected" from="Head/Camera3d/Menu/Settings/Settings/Graphics/Occlusion" to="Head/Camera3d/Menu/Settings/Settings/Graphics" method="_new_occlusion_selected"]

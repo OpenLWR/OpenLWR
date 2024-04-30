@@ -2,7 +2,7 @@
 
 [ext_resource type="Shader" path="res://Assets/Scenes/control_room_nmp2/FCD/full_core_display_lights.gdshader" id="1_0twiq"]
 [ext_resource type="Texture2D" uid="uid://642y54boax6p" path="res://Assets/Textures/full core display.bmp" id="2_1sk0f"]
-[ext_resource type="Texture2D" uid="uid://dpdj7nfcojmit" path="res://Assets/Textures/fcd labels.bmp" id="3_7c7x7"]
+[ext_resource type="Texture2D" uid="uid://b22abyktvrwd3" path="res://Assets/Textures/fcd labels.webp" id="3_kn2v2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dcjwe"]
 emission_enabled = true
@@ -8154,9 +8154,9 @@ refraction_enabled = true
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_yn0cx"]
 render_priority = 0
 shader = ExtResource("1_0twiq")
-shader_parameter/blink = true
+shader_parameter/blink = false
 shader_parameter/rod_statuses = ExtResource("2_1sk0f")
-shader_parameter/rod_texts = ExtResource("3_7c7x7")
+shader_parameter/rod_texts = ExtResource("3_kn2v2")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_8n80q"]
 
@@ -8165,6 +8165,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 
 
 [node name="full core display lights" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13, 0.234, 0.437)
+visible = false
 
 [node name="02-19" type="CSGCombiner3D" parent="full core display lights"]
 transform = Transform3D(1, -3.55271e-15, 0, -3.55271e-15, 1, 0, -1.77636e-15, 0, 1, 0, 0, 0)

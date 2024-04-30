@@ -8018,8 +8018,8 @@ stream = ExtResource("23_ykdw5")
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/42-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/42-39" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/46-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/46-39" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Rod Selectors/50-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/50-39" method="_on_input_event"]
-[connection signal="input_event" from="Rod Select Panel/Rod Selectors/54-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/54-39" method="switch_click"]
-[connection signal="input_event" from="Rod Select Panel/Rod Selectors/58-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/58-39" method="switch_click"]
+[connection signal="input_event" from="Rod Select Panel/Rod Selectors/54-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/54-39" method="_on_input_event"]
+[connection signal="input_event" from="Rod Select Panel/Rod Selectors/58-39/StaticBody3D" to="Rod Select Panel/Rod Selectors/58-39" method="_on_input_event"]
 
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/selector_switch"]

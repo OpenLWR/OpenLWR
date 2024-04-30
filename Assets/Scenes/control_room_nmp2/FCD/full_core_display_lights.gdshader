@@ -11,12 +11,12 @@ const vec3 FULL_IN = vec3(0.0, 1.0, 0.0);
 const vec3 FULL_OUT = vec3(1.0, 0.0, 0.0);
 
 const vec3 SELECTED = vec3(1.0);
-const vec3 DRIFT = vec3(1.0, 0.0, 0.0);
+const vec3 DRIFT = vec3(1.0, 0.0, 1.0);
 const vec3 ACCUM = vec3(1.0, 0.53, 0.0);
 const vec3 SCRAM = vec3(0.0, 0.0, 1.0);
 
-const vec3 LPRM_UPSCALE = vec3(1.0, 0.53, 0.0);
-const vec3 LPRM_DOWNSCALE = vec3(1.0, 0.53, 0.0);
+const vec3 LPRM_UPSCALE = vec3(0.5, 0.53, 1.0);
+const vec3 LPRM_DOWNSCALE = vec3(0.0, 0.53, 1.0);
 
 void vertex() {
 	// Called for every vertex the material is visible on.
@@ -32,7 +32,8 @@ bool getRodEnabled(in ivec2 rod) {
 }
 
 bool shouldFlash(in uvec4 rod_status) {
-	return rod_status.x < 6u;
+	//return false;
+	return rod_status.x > 6u;
 }
 
 void fragment() {
@@ -46,12 +47,15 @@ void fragment() {
 	uvec4 rod_status = getRod(rod);
 	
 	vec3 col;
+	vec2 UV_offset;
 	
 	switch (rod_status.x) {
 		case 0u:
 			ALPHA = 0.0;
+			UV_offset = vec2(0.0);
 			break;
 		case 1u:
+			UV_offset = vec2(0.0);
 			col = FULL_IN;
 			break;
 		case 2u:
@@ -76,7 +80,7 @@ void fragment() {
 			col = SCRAM;
 			break;
 	}
-	EMISSION = col * ((shouldFlash(rod_status) || mod(TIME, 0.2) < 0.1) && getRodEnabled(rod) ? 1.0 : 0.0);
+	EMISSION = col * ((!shouldFlash(rod_status) || mod(TIME, 0.2) < 0.1) && getRodEnabled(rod) ? 1.0 : 0.0);
 	ALBEDO = col * 0.2;
 	ALPHA = ALPHA * 0.5;
 }

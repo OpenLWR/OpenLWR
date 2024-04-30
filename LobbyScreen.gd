@@ -1,5 +1,30 @@
 extends Control
 
+func _parse_arguments() -> Dictionary:
+	var arguments = {}
+	for argument in OS.get_cmdline_user_args():
+		if argument.find("=") > -1:
+			var key_value = argument.split("=")
+			arguments[key_value[0].lstrip("--")] = key_value[1]
+		else:
+			# Options without an argument will be present in the dictionary,
+			# with the value set to an empty string.
+			arguments[argument.lstrip("--")] = ""
+	return arguments
+
+func _ready():
+	var arguments = _parse_arguments()
+	
+	if arguments.has("username"):
+		$Panel/Username/TextEdit.text = arguments.username
+	if arguments.has("scene"):
+		$Panel/Scene.select(int(arguments.scene))
+	if arguments.has("join"):
+		if not arguments.join.is_empty():
+			$Panel/ServerIP/TextEdit.text = arguments.join
+		_on_connect_button_pressed()
+	pass
+
 func _on_connect_button_pressed():
 	print("Connect")
 	var server_ip_requested = $Panel/ServerIP/TextEdit.text

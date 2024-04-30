@@ -1,50 +1,52 @@
-[gd_scene load_steps=3 format=3 uid="uid://euuixnwadyuo"]
+[gd_scene load_steps=2 format=3 uid="uid://euuixnwadyuo"]
 
 [ext_resource type="Script" path="res://LobbyScreen.gd" id="1_xa6da"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_x4kxn"]
-
-[node name="Node3D" type="Node3D"]
-
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_xa6da")
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="Node2D"]
-modulate = Color(0.150104, 0.16789, 0.219662, 1)
-position = Vector2(394.25, 222.25)
-scale = Vector2(735.5, 407.5)
-mesh = SubResource("BoxMesh_x4kxn")
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="ServerIP" type="Label" parent="Node2D"]
-offset_left = 348.0
-offset_top = 22.0
-offset_right = 417.0
-offset_bottom = 45.0
+[node name="ServerIP" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 455.8
+offset_top = 172.2
+offset_right = 606.8
+offset_bottom = 195.2
 text = "Server IP"
 
-[node name="TextEdit" type="TextEdit" parent="Node2D/ServerIP"]
+[node name="TextEdit" type="LineEdit" parent="Panel/ServerIP"]
 layout_mode = 0
 offset_left = -77.0
 offset_top = 23.0
 offset_right = 147.0
 offset_bottom = 56.0
-placeholder_text = "127.0.0.1:7001"
+text = "localhost"
+placeholder_text = "Server Ip (explodet)"
 
-[node name="Button" type="Button" parent="Node2D"]
-offset_left = 241.0
-offset_top = 276.0
-offset_right = 522.0
-offset_bottom = 388.0
-text = "Join that one thing"
-
-[node name="Username" type="Label" parent="Node2D"]
-offset_left = 347.0
-offset_top = 87.0
-offset_right = 427.0
-offset_bottom = 110.0
+[node name="Username" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 455.8
+offset_top = 236.2
+offset_right = 606.8
+offset_bottom = 259.2
 text = "Username"
 
-[node name="TextEdit" type="TextEdit" parent="Node2D/Username"]
+[node name="TextEdit" type="LineEdit" parent="Panel/Username"]
 layout_mode = 0
 offset_left = -77.0
 offset_top = 23.0
@@ -52,19 +54,46 @@ offset_right = 147.0
 offset_bottom = 56.0
 placeholder_text = "Albert Einstein"
 
-[node name="Scene" type="OptionButton" parent="Node2D"]
-offset_left = 338.0
-offset_top = 196.0
-offset_right = 426.0
-offset_bottom = 216.0
+[node name="Scene" type="OptionButton" parent="Panel"]
+layout_mode = 2
+offset_left = 401.8
+offset_top = 348.2
+offset_right = 553.8
+offset_bottom = 379.2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+item_count = 2
+selected = 1
+popup/item_0/text = "Dev Test"
+popup/item_0/id = 0
+popup/item_1/text = "Control Room"
+popup/item_1/id = 1
 
-[node name="Label" type="Label" parent="Node2D/Scene"]
-layout_mode = 0
-offset_left = 8.0
-offset_top = -24.0
-offset_right = 77.0
-offset_bottom = -1.0
+[node name="Label" type="Label" parent="Panel/Scene"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = -0.435
+anchor_right = 0.5
+anchor_bottom = -0.435
+offset_left = -34.5
+offset_top = -11.515
+offset_right = 34.5
+offset_bottom = 11.485
+grow_horizontal = 2
+grow_vertical = 2
 text = "Scene"
 horizontal_alignment = 1
 
-[connection signal="pressed" from="Node2D/Button" to="Node2D" method="connect_button_pressed"]
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 2
+offset_left = 402.0
+offset_top = 428.0
+offset_right = 553.0
+offset_bottom = 459.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Join that one thing"
+
+[connection signal="text_submitted" from="Panel/Username/TextEdit" to="." method="_on_connect_button_pressed" unbinds=1]
+[connection signal="pressed" from="Panel/Button" to="." method="_on_connect_button_pressed"]

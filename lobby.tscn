@@ -35,7 +35,7 @@ offset_left = -77.0
 offset_top = 23.0
 offset_right = 147.0
 offset_bottom = 56.0
-text = "localhost"
+text = "127.0.0.1"
 placeholder_text = "Server Ip (explodet)"
 
 [node name="Username" type="Label" parent="Panel"]

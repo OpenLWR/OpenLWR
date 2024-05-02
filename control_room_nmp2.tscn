@@ -1,4 +1,4 @@
-[gd_scene load_steps=246 format=3 uid="uid://hp5vectj4xsb"]
+[gd_scene load_steps=250 format=3 uid="uid://hp5vectj4xsb"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/main.gd" id="1_skxkr"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_4xgnc"]
@@ -56,8 +56,9 @@ albedo_color = Color(0.755256, 0.749754, 0.734791, 1)
 emission = Color(1, 1, 1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rsgbh"]
-albedo_color = Color(0.755256, 0.749754, 0.734791, 1)
-emission = Color(1, 1, 1, 1)
+albedo_color = Color(0, 0.547876, 0.128561, 1)
+emission_enabled = true
+emission = Color(0.26334, 0.95078, 0.19242, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ldbk4"]
 albedo_color = Color(0.755256, 0.749754, 0.734791, 1)
@@ -85,6 +86,15 @@ emission = Color(1, 1, 1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qbqto"]
 albedo_color = Color(0.435867, 0.456668, 0.447776, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_skhu7"]
+albedo_color = Color(0, 0.547876, 0.128561, 1)
+emission_enabled = true
+emission = Color(0.26334, 0.95078, 0.19242, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2n4gi"]
+albedo_color = Color(0.479588, 0, 0.050164, 1)
+emission = Color(0.882621, 0, 0.0941243, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2dm8g"]
 vertex_color_use_as_albedo = true
@@ -1871,6 +1881,16 @@ emission = Color(1, 1, 1, 1)
 backlight = Color(1, 0.537255, 0, 1)
 refraction_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dwco3"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wmn37"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_skxkr")
 
@@ -2005,7 +2025,6 @@ depth = 9.5
 
 [node name="reference diagrams" type="Node3D" parent="Control Room Panels/Main Panel Left Side"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.487)
-visible = false
 
 [node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/reference diagrams"]
 transform = Transform3D(-4.43671e-08, 0, 1.015, 0, 1.015, 0, -1.015, 0, -4.43671e-08, 1, 0.838, -2.282)
@@ -2507,9 +2526,11 @@ outline_size = 0
 transform = Transform3D(-8.9407e-08, -0.978148, -0.207912, 0, 0.207912, -0.978148, 1, -8.9407e-08, 0, 1.38546, 0.044186, -3.06725)
 
 [node name="Label3D" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/selector_switch" index="2"]
+transform = Transform3D(-0.3, 5.96046e-08, 0, -3.72529e-09, -1.30385e-08, 0.3, 4.47035e-08, 0.3, 1.49012e-08, -8.39233e-05, 0.156525, 0.737564)
 text = "REFUEL"
 
 [node name="Label3D3" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/selector_switch" index="3"]
+transform = Transform3D(-0.212132, -0.212132, 0, 5.50062e-09, -1.11759e-08, 0.3, -0.212132, 0.212132, 1.49012e-08, -0.450111, 0.156525, 0.55835)
 text = "STARTUP/
 HOT STBY"
 
@@ -2532,6 +2553,65 @@ text = "REACTOR
 MODE SWITCH"
 font_size = 20
 outline_size = 0
+
+[node name="cb_test_test2" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("16_em1bd")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 7.4308, 0.0611877, 5.41426)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Center/Controls/cb_test_test2/selector_switch" index="2"]
+transform = Transform3D(-0.3, 5.96046e-08, 1.86265e-09, -7.45058e-09, -1.49012e-08, 0.3, 4.47035e-08, 0.3, 1.49012e-08, -7.62939e-05, 0.156521, 0.737579)
+
+[node name="Label3D3" parent="Control Room Panels/Main Panel Center/Controls/cb_test_test2/selector_switch" index="3"]
+transform = Transform3D(-0.212132, -0.212132, 1.86265e-09, 1.77533e-09, -1.11759e-08, 0.3, -0.212132, 0.212132, 1.49012e-08, -0.450104, 0.156523, 0.55835)
+text = "CLOSE"
+
+[node name="Label3D4" parent="Control Room Panels/Main Panel Center/Controls/cb_test_test2/selector_switch" index="4"]
+transform = Transform3D(0, -0.3, -9.31323e-09, 7.45058e-09, -1.30385e-08, 0.3, -0.3, 0, 1.67638e-08, -0.674812, 0.156523, 0.0837402)
+text = ""
+
+[node name="Label3D2" parent="Control Room Panels/Main Panel Center/Controls/cb_test_test2/selector_switch" index="5"]
+transform = Transform3D(-0.212132, 0.212132, 1.86265e-09, -1.11759e-08, -5.50062e-09, 0.3, 0.212132, 0.212132, 1.67638e-08, 0.47258, 0.156521, 0.535522)
+text = "TRIP"
+
+[node name="label2" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/cb_test_test2"]
+transform = Transform3D(-4.47035e-08, 2.98023e-08, 1, 1.49012e-08, 0.746681, 0, -1, -1.49012e-08, -4.47035e-08, -0.000754356, 0.0545387, 0.0134238)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.071291)
+material = ExtResource("2_yxnln")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/cb_test_test2/label2"]
+transform = Transform3D(-1.39698e-09, -4.65661e-10, 0.05, 0, 0.07, 9.31323e-10, -0.05, 1.86265e-09, -2.32831e-09, 0.00105691, 0, 4.76837e-07)
+modulate = Color(0, 0, 0, 1)
+text = "BREAKER
+CB-TEST-TEST2
+"
+font_size = 20
+outline_size = 0
+
+[node name="cb_test_test2_green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/cb_test_test2"]
+transform = Transform3D(0.7, 0, 0, 0, -2.98023e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0201278, 0.0791693, 0.0128866)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/cb_test_test2/cb_test_test2_green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_skhu7")
+
+[node name="cb_test_test2_red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/cb_test_test2"]
+transform = Transform3D(0.7, 0, 0, 0, -2.98023e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0242891, 0.0791683, 0.0128865)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/cb_test_test2/cb_test_test2_red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_2n4gi")
 
 [node name="Full Core Display" type="Node3D" parent="Control Room Panels/Main Panel Center"]
 transform = Transform3D(0, 0, -0.75, 0, 0.75, 0, 0.75, 0, 0, 1.00228, 1.1063, -2.40535)
@@ -7805,6 +7885,106 @@ transform = Transform3D(1.06858, -1.11759e-08, 0, -5.21541e-07, 1.1996, 0, 0, 0,
 [node name="Subtract" parent="Annunciators/603200/Box/Outlines/OrangeOutline5" index="0"]
 transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, 0, 4.76837e-07)
 
+[node name="ElecTest" parent="Annunciators" instance=ExtResource("16_25mp6")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52179, 2.55537, -7.88397)
+
+[node name="Label" parent="Annunciators/ElecTest/Box/Windows/B1" index="0"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.23517e-08, -1, -1, -4.37114e-08, 0, 0.00259304, -0.0208235, 0.00127411)
+
+[node name="F6" parent="Annunciators/ElecTest/Box/Windows" index="35"]
+transform = Transform3D(0.0871558, -0.996195, -7.10543e-15, 0.996194, 0.0871558, 0, 0, -7.10543e-15, 1, 0.0165033, -0.261341, -0.194561)
+
+[node name="G5" parent="Annunciators/ElecTest/Box/Windows" index="40"]
+material = SubResource("StandardMaterial3D_dwco3")
+
+[node name="Label" parent="Annunciators/ElecTest/Box/Windows/G5" index="0"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.98023e-08, -1, -1, -4.37114e-08, 0, 0.00259399, -0.0208225, 0.00127316)
+
+[node name="H5" parent="Annunciators/ElecTest/Box/Windows" index="46"]
+material = SubResource("StandardMaterial3D_wmn37")
+
+[node name="Label" parent="Annunciators/ElecTest/Box/Windows/H5" index="0"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.98023e-08, -1, -1, -4.37114e-08, 0, 0.00259209, -0.0208244, 0.00127411)
+text = "4KV
+BUS 101
+UNDERVOLTAGE"
+
+[node name="OrangeOutline4" parent="Annunciators/ElecTest/Box/RedOutlines" index="0"]
+visible = false
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/ElecTest/Box/RedOutlines/OrangeOutline4" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline5" parent="Annunciators/ElecTest/Box/RedOutlines" index="1"]
+visible = false
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/ElecTest/Box/RedOutlines/OrangeOutline5" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline6" parent="Annunciators/ElecTest/Box/RedOutlines" index="2"]
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/ElecTest/Box/RedOutlines/OrangeOutline6" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline7" parent="Annunciators/ElecTest/Box/RedOutlines" index="3"]
+visible = false
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/ElecTest/Box/RedOutlines/OrangeOutline7" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline8" parent="Annunciators/ElecTest/Box/RedOutlines" index="4"]
+visible = false
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/ElecTest/Box/RedOutlines/OrangeOutline8" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline9" parent="Annunciators/ElecTest/Box/RedOutlines" index="5"]
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/ElecTest/Box/RedOutlines/OrangeOutline9" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline10" parent="Annunciators/ElecTest/Box/RedOutlines" index="6"]
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/ElecTest/Box/RedOutlines/OrangeOutline10" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline11" parent="Annunciators/ElecTest/Box/RedOutlines" index="7"]
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/ElecTest/Box/RedOutlines/OrangeOutline11" index="0"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, -8.88178e-16, 3.55271e-15, 0.957133, 0.000227928, -3.8147e-06, 0)
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline12" parent="Annunciators/ElecTest/Box/RedOutlines" index="8"]
+visible = false
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/ElecTest/Box/RedOutlines/OrangeOutline12" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline13" parent="Annunciators/ElecTest/Box/RedOutlines" index="9"]
+visible = false
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/ElecTest/Box/RedOutlines/OrangeOutline13" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutlines" parent="Annunciators/ElecTest/Box" index="3"]
+visible = false
+
+[node name="OrangeOutline" parent="Annunciators/ElecTest/Box/OrangeOutlines" index="0"]
+material = null
+
+[node name="OrangeOutline2" parent="Annunciators/ElecTest/Box/OrangeOutlines" index="1"]
+material = null
+
 [node name="Alarm1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.55557, 2.31361, 2.79219)
 script = ExtResource("22_5ffiy")
@@ -8023,6 +8203,9 @@ stream = ExtResource("23_ykdw5")
 
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/selector_switch"]
+[editable path="Control Room Panels/Main Panel Center/Controls/cb_test_test2"]
+[editable path="Control Room Panels/Main Panel Center/Controls/cb_test_test2/selector_switch"]
 [editable path="Annunciators/Box1"]
 [editable path="Annunciators/Box4"]
 [editable path="Annunciators/603200"]
+[editable path="Annunciators/ElecTest"]

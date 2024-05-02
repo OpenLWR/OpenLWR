@@ -37,6 +37,17 @@ var switches = {
 		"momentary": false,
 		"updated": false,
 	},
+	"cb_test_test2": {
+		"switch": null,
+		"positions": {
+			0: 45, #Trip
+			1: 0, 
+			2: -45, #Close
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+	},
 }
 
 var buttons = {
@@ -139,6 +150,21 @@ var alarms = {
 		"silenced" : false,
 		"material": null,
 	},
+	#annunciators for electrical
+	"bus_test_undervoltage": {
+		"box": "ElecTest",
+		"window": "G5",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	"bus2_test_undervoltage": {
+		"box": "ElecTest",
+		"window": "H5",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
 }
 
 var alarm_groups = {
@@ -156,6 +182,9 @@ var alarm_groups = {
 	"SCRAM_SOLENOID_H": $"Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_H/Lamp".get_material(),
 	
 	"RMCS_WITHDRAW_BLOCK": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_BLOCK".get_material(),
+	
+	"cb_test_test2_green": $"Control Room Panels/Main Panel Center/Controls/cb_test_test2/cb_test_test2_green/Lamp".get_material(),
+	"cb_test_test2_red": $"Control Room Panels/Main Panel Center/Controls/cb_test_test2/cb_test_test2_red/Lamp".get_material(),
 	
 }
 
@@ -314,6 +343,7 @@ func _process(delta):
 					server_packets.INDICATOR_PARAMETERS_UPDATE:
 						packet_data = json.parse_string(packet_data)
 						for indicator in packet_data:
+							print(indicator)
 							var indicator_state = packet_data[indicator]
 							indicators[indicator].emission_enabled = indicator_state
 							

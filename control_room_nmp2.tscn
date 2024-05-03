@@ -1940,7 +1940,7 @@ emission = Color(1, 0.447059, 0, 1)
 backlight = Color(1, 0.537255, 0, 1)
 refraction_enabled = true
 
-[node name="Node3D3" type="Node3D"]
+[node name="Node3D" type="Node3D"]
 script = ExtResource("1_skxkr")
 
 [node name="Player" parent="." instance=ExtResource("2_4xgnc")]

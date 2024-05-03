@@ -55,8 +55,8 @@ func _get_light_offset(rod: Vector2i, type: StringName) -> Vector2i:
 	rod += offset
 	rod += BLOCK_OFFSETS[type] * flip
 	rod.y *= 2
-	if not BOTTOM_TYPE_OF_BLOCK:
-		rod.y += 1
+	if BOTTOM_TYPE_OF_BLOCK[type]:
+		rod.y -= 1
 	rod.y = 58 - rod.y
 	return rod
 
@@ -73,6 +73,8 @@ func _set_rod_light_emission(rod: Vector2i, light: StringName, state: bool, targ
 	pass
 
 func _set_rod_light(rod: Vector2i, light: StringName, state:bool, target:Image):
+	if false and state:
+		print(light)
 	return _set_rod_light_emission(rod, light, state and not rpis_inop, target)
 
 func _ready():

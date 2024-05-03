@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://dyk86rtadlnxg"]
 
 [ext_resource type="Shader" path="res://Assets/Scenes/control_room_nmp2/FCD/full_core_display_lights.gdshader" id="1_0twiq"]
-[ext_resource type="Texture2D" uid="uid://642y54boax6p" path="res://Assets/Textures/full core display.bmp" id="2_1sk0f"]
-[ext_resource type="Texture2D" uid="uid://b22abyktvrwd3" path="res://Assets/Textures/fcd labels.webp" id="3_kn2v2"]
+[ext_resource type="Texture2D" path="res://Assets/Textures/full core display.bmp" id="2_1sk0f"]
+[ext_resource type="Texture2D" path="res://Assets/Textures/fcd labels.webp" id="3_kn2v2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_yn0cx"]
 resource_local_to_scene = true

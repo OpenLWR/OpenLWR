@@ -103,8 +103,9 @@ albedo_color = Color(1, 0.120131, 0.122347, 1)
 albedo_color = Color(0.755256, 0.749754, 0.734791, 1)
 emission = Color(1, 1, 1, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nkjf5"]
-metallic = 1.0
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uhhmk"]
+albedo_color = Color(0.755256, 0.749754, 0.734791, 1)
+emission = Color(1, 1, 1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ldbk4"]
 albedo_color = Color(0.755256, 0.749754, 0.734791, 1)
@@ -2868,7 +2869,7 @@ material = SubResource("StandardMaterial3D_av737")
 transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
 radius = 0.014
 rings = 5
-material = SubResource("StandardMaterial3D_nkjf5")
+material = SubResource("StandardMaterial3D_uhhmk")
 
 [node name="label2" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/ScramCircuits"]
 transform = Transform3D(1, 0, 0, 0, 0.746681, 0, 0, 0, 1, 1.00564, 0.819278, -1.42448)
@@ -8588,7 +8589,6 @@ material = SubResource("StandardMaterial3D_dwco3")
 transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.98023e-08, -1, -1, -4.37114e-08, 0, 0.00259399, -0.0208225, 0.00127316)
 
 [node name="G6" parent="Annunciators/Elec_Box2/Box/Windows" index="41"]
-transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.261341, -0.324563)
 material = SubResource("StandardMaterial3D_8whq1")
 
 [node name="H5" parent="Annunciators/Elec_Box2/Box/Windows" index="46"]

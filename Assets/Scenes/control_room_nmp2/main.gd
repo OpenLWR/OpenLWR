@@ -8,6 +8,7 @@ enum client_packets {
 	PLAYER_POSITION_PARAMETERS_UPDATE = 9,
 	ROD_SELECT_UPDATE = 11,
 	USER_LOGIN = 12,
+	SYNCHRONIZE = 14,
 }
 
 enum server_packets {
@@ -424,6 +425,7 @@ func _process(delta):
 				#player_object.position['y'] = player_position['y']
 				#player_object.position['z'] = player_position['z']
 				
+				
 			# recieve packets
 			while socket.get_available_packet_count():
 				var packet = socket.get_packet().get_string_from_utf8().split("|")
@@ -532,7 +534,7 @@ func _process(delta):
 					disconnected(socket) 
 				else:
 					connection_packet_sent = true
-				
+					
 			while socket.get_available_packet_count():
 				var packet = socket.get_packet().get_string_from_utf8().split("|")
 				var packet_id = int(packet[0])
@@ -540,3 +542,5 @@ func _process(delta):
 				
 				if packet_id == server_packets.USER_LOGIN_ACK:
 					connection_ready = true
+					#request all the information for the client
+					var err = socket.send_text(build_packet(client_packets.SYNCHRONIZE,"a")) #TODO: does it matter what text we send? can i use a different way?

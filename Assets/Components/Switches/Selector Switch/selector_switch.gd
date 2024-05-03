@@ -5,13 +5,17 @@ extends Node3D
 
 func _ready():
 	switch.switch = self
-	
-
 
 func switch_position_change(to_position: int):
 	switch.position = to_position
+	var rotate_position = switch.positions[switch.position]
+	
+	# used in the case where a switch was modeled such that it needs to be rotated the opposite direction
+	if get_node_or_null("rotate_opposite") != null:
+		rotate_position = rotate_position * -1
+		
 	$"Move".playing = true
-	$"selector_switch/Handle".rotation_degrees.y = switch.positions[switch.position]
+	$"selector_switch/Handle".rotation_degrees.y = rotate_position
 
 func switch_click_left(_camera, event, _position, _normal, _shape_idx):
 	var mouse_click = event as InputEventMouseButton

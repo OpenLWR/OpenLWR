@@ -1,14 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://cyksa23nxqjwn"]
+[gd_scene load_steps=7 format=3 uid="uid://cyksa23nxqjwn"]
 
 [ext_resource type="Script" path="res://Assets/Components/Switches/Selector Switch/selector_switch.gd" id="1_w2284"]
 [ext_resource type="Material" uid="uid://dqms4q6oxflb7" path="res://Assets/Materials/silver_metal.tres" id="2_jm5jg"]
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="3_ym3f2"]
 [ext_resource type="PackedScene" uid="uid://gxikcyses8jk" path="res://Assets/Components/Switches/Selector Switch/selector_switch.glb" id="4_o0pj7"]
+[ext_resource type="AudioStream" uid="uid://wlb0cgw34y6m" path="res://Assets/Audio/breaker_switch.mp3" id="5_o4khq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_isvvb"]
 size = Vector3(0.0236816, 0.0439453, 0.0185547)
 
-[node name="Switch" type="Node3D"]
+[node name="Selector Switch" type="Node3D"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
 script = ExtResource("1_w2284")
 
@@ -19,7 +20,7 @@ transform = Transform3D(-1, 8.74228e-08, 3.82137e-15, 0, -4.37114e-08, 1, 8.7422
 material_override = ExtResource("2_jm5jg")
 
 [node name="Handle" parent="selector_switch" index="1"]
-transform = Transform3D(1, 3.48683e-35, 0, 0, -3.57628e-07, -1, 0, 1, -3.57628e-07, 0, 0, -4.88111e-05)
+transform = Transform3D(1, 3.48683e-35, -3.61112e-35, 0, -3.57628e-07, -1, 0, 1, -3.57628e-07, 0, 0, -4.88111e-05)
 material_override = ExtResource("2_jm5jg")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="selector_switch/Handle" index="0"]
@@ -51,6 +52,12 @@ transform = Transform3D(-1, -2.5411e-21, 8.74228e-08, 8.74228e-08, -4.37114e-08,
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="selector_switch/Right"]
 shape = SubResource("BoxShape3D_isvvb")
+
+[node name="Move" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5_o4khq")
+max_distance = 6.0
+
+[node name="rotate_opposite" type="Node" parent="."]
 
 [connection signal="input_event" from="selector_switch/Left" to="." method="switch_click_left"]
 [connection signal="input_event" from="selector_switch/Right" to="." method="switch_click_right"]

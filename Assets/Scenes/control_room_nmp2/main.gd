@@ -37,7 +37,64 @@ var switches = {
 		"momentary": false,
 		"updated": false,
 	},
-	"cb_test_test2": {
+	"cb_14-2": {
+		"switch": null,
+		"positions": {
+			0: 45, #Trip
+			1: 0, 
+			2: -45, #Close
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+	},
+	"cb_15-3": {
+		"switch": null,
+		"positions": {
+			0: 45, #Trip
+			1: 0, 
+			2: -45, #Close
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+	},
+	
+	"cb_14-1": {
+		"switch": null,
+		"positions": {
+			0: 45, #Trip
+			1: 0, 
+			2: -45, #Close
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+	},
+	"cb_101-14": {
+		"switch": null,
+		"positions": {
+			0: 45, #Trip
+			1: 0, 
+			2: -45, #Close
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+	},
+	
+	"cb_15-8": {
+		"switch": null,
+		"positions": {
+			0: 45, #Trip
+			1: 0, 
+			2: -45, #Close
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+	},
+	"cb_103-8": {
 		"switch": null,
 		"positions": {
 			0: 45, #Trip
@@ -93,6 +150,26 @@ var buttons = {
 		"momentary": false,
 		"updated": false,
 	},
+	
+	"ALARM_SILENCE_2": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"updated": false,
+	},
+	"ALARM_ACK_2": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"updated": false,
+	},
+	"ALARM_RESET_2": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"updated": false,
+	},
+	
 	"ACCUM_TROUBLE_RESET": {
 		"switch": null,
 		"state": false,
@@ -151,16 +228,30 @@ var alarms = {
 		"material": null,
 	},
 	#annunciators for electrical
-	"bus_test_undervoltage": {
-		"box": "ElecTest",
+	"bus_101_undervoltage": {
+		"box": "Elec_Box1",
+		"window": "H5",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	"bus_103_undervoltage": {
+		"box": "Elec_Box1",
 		"window": "G5",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
 	},
-	"bus2_test_undervoltage": {
-		"box": "ElecTest",
-		"window": "H5",
+	"bus_014_undervoltage": {
+		"box": "Elec_Box2",
+		"window": "H6",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	"bus_015_undervoltage": {
+		"box": "Elec_Box2",
+		"window": "G6",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
@@ -169,6 +260,7 @@ var alarms = {
 
 var alarm_groups = {
 	"1" : {"F" : true, "S" : true}, # F - Fast S - Slow
+	"2" : {"F" : true, "S" : true}, # F - Fast S - Slow
 }
 
 @onready var indicators = {
@@ -183,8 +275,26 @@ var alarm_groups = {
 	
 	"RMCS_WITHDRAW_BLOCK": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_BLOCK".get_material(),
 	
-	"cb_test_test2_green": $"Control Room Panels/Main Panel Center/Controls/cb_test_test2/cb_test_test2_green/Lamp".get_material(),
-	"cb_test_test2_red": $"Control Room Panels/Main Panel Center/Controls/cb_test_test2/cb_test_test2_red/Lamp".get_material(),
+	"cb_14-2_green": $"Control Room Panels/Main Panel Left Side/Controls/cb_14-2/green/Lamp".get_material(),
+	"cb_14-2_red": $"Control Room Panels/Main Panel Left Side/Controls/cb_14-2/red/Lamp".get_material(),
+	
+	"cb_15-3_green": $"Control Room Panels/Main Panel Left Side/Controls/cb_15-3/green/Lamp".get_material(),
+	"cb_15-3_red": $"Control Room Panels/Main Panel Left Side/Controls/cb_15-3/red/Lamp".get_material(),
+	
+	"cb_14-1_green": $"Control Room Panels/Main Panel Left Side/Controls/cb_14-1/green/Lamp".get_material(),
+	"cb_14-1_red": $"Control Room Panels/Main Panel Left Side/Controls/cb_14-1/red/Lamp".get_material(),
+	
+	"cb_101-14_green": $"Control Room Panels/Main Panel Left Side/Controls/cb_101-14/green/Lamp".get_material(),
+	"cb_101-14_red": $"Control Room Panels/Main Panel Left Side/Controls/cb_101-14/red/Lamp".get_material(),
+	
+	"cb_15-8_green": $"Control Room Panels/Main Panel Left Side/Controls/cb_15-8/green/Lamp".get_material(),
+	"cb_15-8_red": $"Control Room Panels/Main Panel Left Side/Controls/cb_15-8/red/Lamp".get_material(),
+	
+	"cb_103-8_green": $"Control Room Panels/Main Panel Left Side/Controls/cb_103-8/green/Lamp".get_material(),
+	"cb_103-8_red": $"Control Room Panels/Main Panel Left Side/Controls/cb_103-8/red/Lamp".get_material(),
+	
+	"cr_light_normal": null,
+	"cr_light_emergency": null,
 	
 }
 
@@ -343,8 +453,13 @@ func _process(delta):
 					server_packets.INDICATOR_PARAMETERS_UPDATE:
 						packet_data = json.parse_string(packet_data)
 						for indicator in packet_data:
-							print(indicator)
 							var indicator_state = packet_data[indicator]
+							if "cr_light" in indicator:
+								if indicator == "cr_light_normal":
+									$LightNormal.visible = indicator_state
+								if indicator == "cr_light_emergency":
+									$LightEmergency.visible = indicator_state
+								continue
 							indicators[indicator].emission_enabled = indicator_state
 							
 					server_packets.ALARM_PARAMETERS_UPDATE:
@@ -366,6 +481,7 @@ func _process(delta):
 						packet_data = json.parse_string(packet_data)
 						for rod in packet_data:
 							rod_information[rod] = packet_data[rod]
+						print("rod update")
 							
 					server_packets.BUTTON_PARAMETERS_UPDATE:
 						packet_data = json.parse_string(packet_data)

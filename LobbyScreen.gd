@@ -1,23 +1,40 @@
-extends Node2D
+extends Control
+
+func _parse_arguments() -> Dictionary:
+	var arguments = {}
+	for argument in OS.get_cmdline_user_args():
+		if argument.find("=") > -1:
+			var key_value = argument.split("=")
+			arguments[key_value[0].lstrip("--")] = key_value[1]
+		else:
+			# Options without an argument will be present in the dictionary,
+			# with the value set to an empty string.
+			arguments[argument.lstrip("--")] = ""
+	return arguments
 
 func _ready():
-	set_scene_dropdown(get_node("Scene"))
+	var arguments = _parse_arguments()
+	
+	if arguments.has("username"):
+		$Panel/Username/TextEdit.text = arguments.username
+	if arguments.has("scene"):
+		$Panel/Scene.select(int(arguments.scene))
+	if arguments.has("join"):
+		if not arguments.join.is_empty():
+			$Panel/ServerIP/TextEdit.text = arguments.join
+		_on_connect_button_pressed()
+	pass
 
-func set_scene_dropdown(dropdown):
-	dropdown.add_item("Dev Test")
-	dropdown.add_item("Control Room")
-
-func connect_button_pressed():
+func _on_connect_button_pressed():
 	print("Connect")
-	var server_ip_requested = get_node("ServerIP/TextEdit").text
-	var username_requested = get_node("Username/TextEdit").text
-	if server_ip_requested == "":
-		server_ip_requested = "127.0.0.1:7001"
+	var server_ip_requested = $Panel/ServerIP/TextEdit.text
+	var username_requested = $Panel/Username/TextEdit.text
 	print(server_ip_requested)
 	print(username_requested)
 	globals.server_ip_requested_tojoin = server_ip_requested
 	globals.username_requested_tojoin = username_requested
-	if get_node("Scene").selected == 0:
-		get_tree().change_scene_to_file("res://node_3d.tscn")
-	else:
-		get_tree().change_scene_to_file("res://control_room_nmp2.tscn")
+	match $Panel/Scene.selected:
+		0:
+			get_tree().change_scene_to_file("res://node_3d.tscn")
+		1:
+			get_tree().change_scene_to_file("res://control_room_nmp2.tscn")

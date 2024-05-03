@@ -1940,7 +1940,7 @@ emission = Color(1, 0.447059, 0, 1)
 backlight = Color(1, 0.537255, 0, 1)
 refraction_enabled = true
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D3" type="Node3D"]
 script = ExtResource("1_skxkr")
 
 [node name="Player" parent="." instance=ExtResource("2_4xgnc")]
@@ -8588,7 +8588,6 @@ material = SubResource("StandardMaterial3D_dwco3")
 transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.98023e-08, -1, -1, -4.37114e-08, 0, 0.00259399, -0.0208225, 0.00127316)
 
 [node name="G6" parent="Annunciators/Elec_Box2/Box/Windows" index="41"]
-transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.261341, -0.324563)
 material = SubResource("StandardMaterial3D_8whq1")
 
 [node name="H5" parent="Annunciators/Elec_Box2/Box/Windows" index="46"]
@@ -8778,11 +8777,11 @@ light_indirect_energy = 0.838
 light_size = 0.172
 omni_range = 17.632
 
+[connection signal="rods_updated" from="." to="Control Room Panels/Main Panel Center/Full Core Display/full core display lights" method="_on_node_3d_rods_updated"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/Annunciation/ALARM_SILENCE_2/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/Annunciation/ALARM_SILENCE_2" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/Annunciation/ALARM_ACK_2/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/Annunciation/ALARM_ACK_2" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/Annunciation/ALARM_RESET_2/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/Annunciation/ALARM_RESET_2" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/Annunciation/pain/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/Annunciation/pain" method="switch_click"]
-[connection signal="rods_updated" from="." to="Control Room Panels/Main Panel Center/Full Core Display/full core display lights" method="_on_node_3d_rods_updated"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_A1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_A1" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_B1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_B1" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM2/SCRAM_A1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM2/SCRAM_A1" method="switch_click"]

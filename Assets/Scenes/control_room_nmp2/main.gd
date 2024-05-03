@@ -483,7 +483,7 @@ func _process(delta):
 						packet_data = json.parse_string(packet_data)
 						for rod in packet_data:
 							rod_information[rod] = packet_data[rod]
-						print("rod update")
+						rods_updated.emit(packet_data.duplicate(true))
 							
 					server_packets.BUTTON_PARAMETERS_UPDATE:
 						packet_data = json.parse_string(packet_data)
@@ -518,10 +518,6 @@ func _process(delta):
 								players[player]["object"] = NewRemotePlayer
 								# TODO: remove remote player instance when they disconnect
 								
-					server_packets.ROD_POSITION_PARAMETERS_UPDATE:
-						packet_data = json.parse_string(packet_data)
-						rod_information = packet_data
-						rods_updated.emit(packet_data.duplicate(true))
 								
 					
 					

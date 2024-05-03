@@ -1,22 +1,14 @@
 shader_type spatial;
 
+#define FETCH_METHOD 2
+
 uniform sampler2D rod_statuses;
 uniform sampler2D rod_enabled;
 uniform sampler2D rod_texts;
 
 uniform bool blink;
 
-const vec4 TYPES = vec4(14.0, 15.0, 2.0, 1.0);
-const vec3 FULL_IN = vec3(0.0, 1.0, 0.0);
-const vec3 FULL_OUT = vec3(1.0, 0.0, 0.0);
-
-const vec3 SELECTED = vec3(1.0);
-const vec3 DRIFT = vec3(1.0, 0.0, 0.0);
-const vec3 ACCUM = vec3(1.0, 0.53, 0.0);
-const vec3 SCRAM = vec3(0.0, 0.0, 1.0);
-
-const vec3 LPRM_UPSCALE = vec3(1.0, 0.53, 0.0);
-const vec3 LPRM_DOWNSCALE = vec3(1.0, 0.53, 0.0);
+const vec4 TYPES = vec4(14.0, 15.0, 3.0, 1.0);
 
 void vertex() {
 	// Called for every vertex the material is visible on.
@@ -26,19 +18,26 @@ uvec4 getRod(in ivec2 rod) {
 	return uvec4(texelFetch(rod_statuses, rod, 0) * TYPES);
 }
 
-vec4 getRodColor(in uvec4 rod_map, in vec2 sub_uv) {
-	vec2 TEXTS_SIZE = vec2(textureSize(rod_texts, 0));
-	return texelFetch(rod_texts, ivec2((vec2(rod_map.xy) + sub_uv) * TEXTS_SIZE / vec2(14.0, 15.0)), 0);
+vec4 getRodColor(in uvec4 rod_map, in vec2 sub_uv, in float z) {
+	#if FETCH_METHOD == 0
+		vec2 abs_sub_uv = abs(sub_uv - 0.5);
+		float lod_bias = (abs_sub_uv.x > 0.4 || abs_sub_uv.y > 0.4) ? -999.0e9 : -1.0;
+		return texture(rod_texts, vec2((vec2(rod_map.xy) + sub_uv) / TYPES.xy), lod_bias);
+	#elif FETCH_METHOD == 1
+		return textureLod(rod_texts, vec2((vec2(rod_map.xy) + sub_uv) / TYPES.xy), 0.0);
+	#elif FETCH_METHOD == 2
+		vec2 TEXTS_SIZE = vec2(textureSize(rod_texts, 0));
+		return texelFetch(rod_texts, ivec2((vec2(rod_map.xy) + sub_uv) * TEXTS_SIZE / TYPES.xy), 0);
+	#endif //FETCH_METHOD
 }
 
 bool getRodEnabled(in ivec2 rod) {
-	return blink;
-	return texelFetch(rod_enabled, rod, 0).x > 0.5;
+	//return blink;
+	return getRod(rod).b > 0u;
 }
 
 bool shouldFlash(in uvec4 rod_status) {
-	return false;
-	return rod_status.b > 0u;
+	return rod_status.b == 2u;
 }
 
 void fragment() {
@@ -51,9 +50,9 @@ void fragment() {
 	vec2 sub_UV = mod((vec2(0, 1) + vec2(1, -1) * UV.yx) * vec2(RODS), 1.0);
 	uvec4 rod_status = getRod(rod);
 	
-	vec4 col = getRodColor(rod_status, sub_UV);
+	vec4 col = getRodColor(rod_status, sub_UV, FRAGCOORD.z);
 	EMISSION = col.rgb * ((!shouldFlash(rod_status) || mod(TIME, 0.2) < 0.1) && getRodEnabled(rod) ? 1.0 : 0.0);
-	ALBEDO = col.rgb * 0.2;
+	ALBEDO = vec3(length(col.rgb) > 0.1 ? 0.4 : 0.0);
 	ALPHA = col.a;
 }
 

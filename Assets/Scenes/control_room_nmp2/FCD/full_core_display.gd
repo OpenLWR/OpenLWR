@@ -7,6 +7,9 @@ var insertion
 var rpis_inop = false #TODO: make these replicate from server
 var fcd_inop = false #TODO: make these replicate from server
 
+var image: Image
+var texture: ImageTexture
+
 var fcd_enums = {
 	"ACCUM" : "ACCUM_SCRAM_IND/ACCUM",
 	"SCRAM" : "ACCUM_SCRAM_IND/SCRAM",
@@ -16,56 +19,84 @@ var fcd_enums = {
 	"FULL_OUT" : "FULL_IN_OUT_IND/FULL OUT",
 }
 
-var fcd_lights = {
-	"02-17" : {
-		"ACCUM" : null,
-		"SCRAM" : null,
-		"DRIFT" : null,
-		"SELECT" : null,
-		"FULL_IN" : null,
-		"FULL_OUT" : null,
-	}
+var activated_states = {
+	"ACCUM": 2,
+	"SCRAM": 2,
+	"DRIFT": 2,
+	"SELECT": 1,
+	"FULL_IN": 1,
+	"FULL_OUT": 1,
 }
 
-func set_rod_light_emission(rod_number,light,state):
-	var fcd_light = get_node(str(rod_number)+"/"+(fcd_enums[light]))
-#	fcd_light.get_material().emission_enabled = state
+const BLOCK_OFFSETS = {
+	&"ACCUM": Vector2i(0, 1),
+	&"SCRAM": Vector2i(0, 1),
+	&"DRIFT": Vector2i(0, 0),
+	&"SELECT": Vector2i(0, 0),
+	&"FULL_IN": Vector2i(1, 0),
+	&"FULL_OUT": Vector2i(1, 0),
+}
+
+const BOTTOM_TYPE_OF_BLOCK = {
+	&"ACCUM": false,
+	&"SCRAM": true,
+	&"DRIFT": true,
+	&"SELECT": false,
+	&"FULL_IN": false,
+	&"FULL_OUT": true,
+}
+
+func _get_light_offset(rod: Vector2i, type: StringName) -> Vector2i:
+	rod -= Vector2i(2, 3)
+	rod /= 4
+	var flip = Vector2i(1 if rod.x % 2 == 1 else -1, 1 if rod.y % 2 == 1 else -1)
+	var offset = Vector2i(1 if rod.x % 2 == 0 else 0, 1 if rod.y % 2 == 0 else 0)
+	rod *= 2
+	rod += offset
+	rod += BLOCK_OFFSETS[type] * flip
+	rod.y *= 2
+	if not BOTTOM_TYPE_OF_BLOCK:
+		rod.y += 1
+	rod.y = 58 - rod.y
+	return rod
+
+#TODO: table with all the materials instead of this garbage
+
+func _set_rod_light_emission(rod: Vector2i, light: StringName, state: bool, target: Image):
+	rod = _get_light_offset(rod, light)
+	var color = target.get_pixelv(rod)
+	if state:
+		color.b = (activated_states[light] + 0.5) / 3
+	else:
+		color.b = 0
+	target.set_pixelv(rod, color)
+	pass
+
+func _set_rod_light(rod: Vector2i, light: StringName, state:bool, target:Image):
+	return _set_rod_light_emission(rod, light, state and not rpis_inop, target)
 
 func _ready():
-	while node_3d.rod_information == null or node_3d.rod_information == {}:
-		await get_tree().create_timer(0.1).timeout #just wait around for it to come in
-	
-	generate_rod_material()
-	
-	while true:
-		await get_tree().create_timer(0.1).timeout
-		for rod_number in node_3d.rod_information:
-			var rod_info = node_3d.rod_information[rod_number]
-			insertion = rod_info.insertion
-			set_rod_light_emission(rod_number, "FULL_IN", insertion == 0 and not rpis_inop)
-			set_rod_light_emission(rod_number, "FULL_OUT", insertion == 48 and not rpis_inop)
-			set_rod_light_emission(rod_number, "SCRAM", rod_info["scram"] and not rpis_inop)
-			set_rod_light_emission(rod_number, "DRIFT", rod_info["drift_alarm"] and not rpis_inop)
-			set_rod_light_emission(rod_number, "SELECT", rod_info["select"] and not rpis_inop)
-			
-			# 18-59 has a slight offset to avoid it appearing desynced from the rest of the lights
-			# TODO: check if 18-59 actually needs this offset (or whatever the first rod in the dict is)
-			if rod_info["accum_trouble_acknowledged"] == false:
-				if rod_info["accum_trouble"] and cycles <= 1 : #(rod_number == "18-59" or cycles >= 0):
-					set_rod_light_emission(rod_number, "ACCUM", not rpis_inop)
-				else:
-					set_rod_light_emission(rod_number, "ACCUM", false)
-			else:
-				set_rod_light_emission(rod_number, "ACCUM", rod_info["accum_trouble"] and not rpis_inop)
-			if cycles >= 5:
-				cycles = -1
-			
-		cycles += 1
-		#TODO: LPRMs
-		#for lprm_number in node_3d.local_power_range_monitors:
-		#	for detector in node_3d.local_power_range_monitors[lprm_number]:
-		#		node_3d.local_power_range_monitors[lprm_number][detector]["full_core_display_downscale_light"].emission_enabled = true if node_3d.local_power_range_monitors[lprm_number][detector]["power"] < 3 else false
-		#		node_3d.local_power_range_monitors[lprm_number][detector]["full_core_display_upscale_light"].emission_enabled = true if node_3d.local_power_range_monitors[lprm_number][detector]["power"] > node_3d.local_power_range_monitors[lprm_number][detector]["upscale_setpoint"] else false
+	var prev_texture = $shaderfcd.material_override["shader_parameter/rod_statuses"]
+	image = prev_texture.get_image()
+	texture = ImageTexture.create_from_image(image)
+	$shaderfcd.material_override["shader_parameter/rod_statuses"] = texture
+	pass
 
 func _process(delta):
 	pass
+
+
+func _on_node_3d_rods_updated(new_info):
+	for rod_number in new_info:
+		var rod_info = new_info[rod_number]
+		var insertion = rod_info.insertion
+		rod_number = rod_number.split("-")
+		var rod = Vector2i(int(rod_number[0]), int(rod_number[1]))
+		_set_rod_light(rod, &"FULL_IN", insertion == 0, image)
+		_set_rod_light(rod, &"FULL_OUT", insertion == 48, image)
+		_set_rod_light(rod, &"SCRAM", rod_info.scram, image)
+		_set_rod_light(rod, &"DRIFT", rod_info.drift_alarm, image)
+		_set_rod_light(rod, &"SELECT", rod_info.select, image)
+	#_set_rod_light_emission(Vector2i(18, 03), &"SELECT", true, image)
+	texture.update(image)
+	pass # Replace with function body.

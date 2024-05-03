@@ -8680,7 +8680,7 @@ material = null
 material = null
 
 [node name="Alarm1" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.55557, 2.31361, 2.79219)
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 7.55557, 2.31361, 2.79219)
 script = ExtResource("22_5ffiy")
 
 [node name="Fast" type="AudioStreamPlayer" parent="Alarm1"]
@@ -8782,6 +8782,7 @@ omni_range = 17.632
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/Annunciation/ALARM_ACK_2/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/Annunciation/ALARM_ACK_2" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/Annunciation/ALARM_RESET_2/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/Annunciation/ALARM_RESET_2" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/Annunciation/pain/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/Annunciation/pain" method="switch_click"]
+[connection signal="rods_updated" from="." to="Control Room Panels/Main Panel Center/Full Core Display/full core display lights" method="_on_node_3d_rods_updated"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_A1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_A1" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_B1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM1/SCRAM_B1" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM2/SCRAM_A1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM2/SCRAM_A1" method="switch_click"]

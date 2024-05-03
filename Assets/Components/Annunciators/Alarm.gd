@@ -1,12 +1,12 @@
 extends Node3D
 
 @onready var node_3d = $"/root/Node3D"
+@onready var alarm_group = self.name.substr(5,1)
 
 func _ready():
 	while true:
-		
-		var alarm_active = not node_3d.alarm_groups["1"]["F"]
-		var clear_alarm_active = not node_3d.alarm_groups["1"]["S"]
+		var alarm_active = not node_3d.alarm_groups[alarm_group]["F"]
+		var clear_alarm_active = not node_3d.alarm_groups[alarm_group]["S"]
 		
 		var fast_alarm = get_node("Fast")
 		var slow_alarm = get_node("Slow")

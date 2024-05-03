@@ -1,60 +1,66 @@
-[gd_scene load_steps=6 format=3 uid="uid://cyksa23nxqjwn"]
+[gd_scene load_steps=7 format=3 uid="uid://cyksa23nxqjwn"]
 
-[ext_resource type="PackedScene" uid="uid://b8ytxboqk7tb7" path="res://Assets/Components/Switches/Selector Switch/selector_switch.glb" id="1_jfk0h"]
 [ext_resource type="Script" path="res://Assets/Components/Switches/Selector Switch/selector_switch.gd" id="1_w2284"]
-[ext_resource type="Material" uid="uid://dqms4q6oxflb7" path="res://Assets/Materials/silver_metal.tres" id="2_jm5jg"]
+[ext_resource type="Material" path="res://Assets/Materials/silver_metal.tres" id="2_jm5jg"]
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="3_ym3f2"]
+[ext_resource type="PackedScene" uid="uid://gxikcyses8jk" path="res://Assets/Components/Switches/Selector Switch/selector_switch.glb" id="4_o0pj7"]
+[ext_resource type="AudioStream" uid="uid://wlb0cgw34y6m" path="res://Assets/Audio/breaker_switch.mp3" id="5_o4khq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_isvvb"]
-size = Vector3(0.0236816, 0.0439453, 0.0185547)
+size = Vector3(0.0166016, 0.0341797, 0.0185547)
 
-[node name="Switch" type="Node3D"]
+[node name="Selector Switch" type="Node3D"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
 script = ExtResource("1_w2284")
 
-[node name="selector_switch" parent="." instance=ExtResource("1_jfk0h")]
-transform = Transform3D(4.83786e-17, 1.10677e-09, -0.02532, 0.02532, -1.10677e-09, 0, -1.10677e-09, -0.02532, -1.10677e-09, 0, 0, 0)
+[node name="selector_switch" parent="." instance=ExtResource("4_o0pj7")]
+transform = Transform3D(-1, 8.74228e-08, 3.82137e-15, 0, -4.37114e-08, 1, 8.74228e-08, 1, 4.37114e-08, -1.38783e-11, 0, -0.00015875)
 
-[node name="Handle" parent="selector_switch" index="0"]
-transform = Transform3D(1, 8.47033e-21, 1.77636e-14, 1.77636e-14, -3.57628e-07, -1, -1.69407e-21, 1, -3.57628e-07, 0, 0, 0)
+[node name="Base" parent="selector_switch" index="0"]
 material_override = ExtResource("2_jm5jg")
 
-[node name="Cube_Cube_002" parent="selector_switch/Handle" index="0"]
-transform = Transform3D(1, 8.47033e-22, 0, -8.47033e-22, 1, -2.84217e-14, -7.10543e-15, 2.84217e-14, 1, 0, 0, 0)
+[node name="Handle" parent="selector_switch" index="1"]
+transform = Transform3D(1, 3.48683e-35, -3.61112e-35, 0, -3.57628e-07, -1, 0, 1, -3.57628e-07, 0, 0, -4.88111e-05)
 material_override = ExtResource("2_jm5jg")
 
-[node name="CSGTorus3D" type="CSGTorus3D" parent="selector_switch/Handle" index="1"]
-transform = Transform3D(1, 0, -6.35275e-22, -8.47033e-22, -3.57628e-07, 1, -7.10543e-15, -1, -3.57628e-07, 0, 0, 0)
-inner_radius = 0.505
-outer_radius = 0.565
+[node name="CSGBox3D" type="CSGBox3D" parent="selector_switch/Handle" index="0"]
+transform = Transform3D(7.86804e-10, 0.018, 1.57357e-09, 0.0179995, -7.86789e-10, -5.65035e-09, -5.65035e-09, 1.57361e-09, -0.0179995, 4.42836e-05, 0.000113114, -0.000710284)
+size = Vector3(0.988281, 0.147217, 0.05)
+material = ExtResource("3_ym3f2")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="selector_switch"]
+transform = Transform3D(-1, -8.74228e-08, -3.82137e-15, 8.74228e-08, -1, -8.74228e-08, 3.82137e-15, -8.74228e-08, 1, -9.60219e-05, 0.0134853, 0.020028)
+size = Vector3(0.0361328, 0.002, 0.00805664)
+material = ExtResource("3_ym3f2")
+
+[node name="CSGTorus3D" type="CSGTorus3D" parent="selector_switch"]
+transform = Transform3D(-4.52975e-16, 5.53386e-09, -0.02532, -7.94836e-09, 0.02532, 5.53385e-09, 0.02532, 7.94836e-09, 1.28419e-15, -3.59069e-10, 0.00433464, 4.88099e-05)
+inner_radius = 0.402286
+outer_radius = 0.446371
 sides = 24
 ring_sides = 3
 material = ExtResource("3_ym3f2")
 
-[node name="CSGPolygon3D" type="CSGPolygon3D" parent="selector_switch/Handle" index="2"]
-transform = Transform3D(1, 1.86347e-20, 0, -3.38813e-21, 1, -8.52651e-14, -7.4607e-14, 8.52651e-14, 1, -0.346, -0.0523734, -0.095)
-polygon = PackedVector2Array(0, 0.079, 0.55, 0.079, 0.55, 0.15, 0.75, 0.055, 0.55, -0.05, 0.55, 0.02, 0, 0.02)
-depth = 0.05
-material = ExtResource("3_ym3f2")
+[node name="Left" type="StaticBody3D" parent="selector_switch"]
+transform = Transform3D(-1, -2.5411e-21, 8.74228e-08, 8.74228e-08, -4.37114e-08, 1, 3.82137e-15, 1, 4.37114e-08, -0.009, 0, 0)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 9.60231e-05, 0.0248156, 0.0133266)
-size = Vector3(0.0458984, 0.002, 0.00939941)
-material = ExtResource("3_ym3f2")
-
-[node name="Left" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.013, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Left"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="selector_switch/Left"]
+transform = Transform3D(1, 0, 0, 1.9421e-35, 1, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_isvvb")
 
-[node name="Right" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.013, 0, 0)
+[node name="Right" type="StaticBody3D" parent="selector_switch"]
+transform = Transform3D(-1, -2.5411e-21, 8.74228e-08, 8.74228e-08, -4.37114e-08, 1, 3.82137e-15, 1, 4.37114e-08, 0.009, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Right"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="selector_switch/Right"]
 shape = SubResource("BoxShape3D_isvvb")
 
-[connection signal="input_event" from="Left" to="." method="switch_click_left"]
-[connection signal="input_event" from="Right" to="." method="switch_click_right"]
+[node name="Move" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5_o4khq")
+max_distance = 6.0
+
+[node name="rotate_opposite" type="Node" parent="."]
+
+[connection signal="input_event" from="selector_switch/Left" to="." method="switch_click_left"]
+[connection signal="input_event" from="selector_switch/Right" to="." method="switch_click_right"]
 
 [editable path="selector_switch"]

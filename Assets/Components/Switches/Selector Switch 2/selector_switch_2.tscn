@@ -99,8 +99,9 @@ height = 0.0279754
 smooth_faces = false
 material = ExtResource("3_mip2f")
 
-[node name="Move" type="AudioStreamPlayer" parent="."]
+[node name="Move" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("6_gwkef")
+max_distance = 6.0
 
 [connection signal="input_event" from="Left" to="." method="switch_click_left"]
 [connection signal="input_event" from="Right" to="." method="switch_click_right"]

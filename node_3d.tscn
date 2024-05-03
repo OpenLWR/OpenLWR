@@ -80,6 +80,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.59784, -3.51043)
 [node name="test_switch2" parent="." instance=ExtResource("6_3apnd")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.39593, -3.36214)
 
+[node name="selector_switch" parent="test_switch2" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Handle" parent="test_switch2/selector_switch" index="1"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, 0, 1, -3.57628e-07, 0, 0, -4.88111e-05)
+material_override = null
+
+[node name="CSGTorus3D" parent="test_switch2/selector_switch/Handle" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CSGPolygon3D" parent="test_switch2/selector_switch/Handle" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
 [node name="test_switch" parent="." instance=ExtResource("8_qgke1")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1.33125, -3.36239)
 

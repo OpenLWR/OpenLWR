@@ -183,6 +183,19 @@ var buttons = {
 		"momentary": false,
 		"updated": false,
 	},
+	
+	"RMCS_INSERT_PB": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"updated": false,
+	},
+	"RMCS_WITHDRAW_PB": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"updated": false,
+	},
 }
 
 enum annunciator_state {
@@ -275,6 +288,11 @@ var alarm_groups = {
 	"SCRAM_SOLENOID_H": $"Control Room Panels/Main Panel Center/Controls/ScramCircuits/SCRAM_SOLENOID_H/Lamp".get_material(),
 	
 	"RMCS_WITHDRAW_BLOCK": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_BLOCK".get_material(),
+	"RMCS_INSERT_BLOCK": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_BLOCK".get_material(),
+	
+	"RMCS_WITHDRAW": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW".get_material(),
+	"RMCS_INSERT": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT".get_material(),
+	"RMCS_SETTLE": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_SETTLE".get_material(),
 	
 	"cb_14-2_green": $"Control Room Panels/Main Panel Left Side/Controls/cb_14-2/green/Lamp".get_material(),
 	"cb_14-2_red": $"Control Room Panels/Main Panel Left Side/Controls/cb_14-2/red/Lamp".get_material(),
@@ -421,9 +439,6 @@ func _process(delta):
 				twn.set_trans(Tween.TRANS_LINEAR)
 				twn.set_ease(Tween.EASE_IN_OUT)
 				twn.play()
-				#player_object.position['x'] = player_position['x']
-				#player_object.position['y'] = player_position['y']
-				#player_object.position['z'] = player_position['z']
 				
 				
 			# recieve packets

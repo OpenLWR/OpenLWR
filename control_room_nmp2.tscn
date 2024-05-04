@@ -1,4 +1,4 @@
-[gd_scene load_steps=261 format=3 uid="uid://hp5vectj4xsb"]
+[gd_scene load_steps=262 format=3 uid="uid://hp5vectj4xsb"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/main.gd" id="1_skxkr"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_4xgnc"]
@@ -143,7 +143,7 @@ refraction_enabled = true
 [sub_resource type="BoxShape3D" id="BoxShape3D_7k5lw"]
 size = Vector3(0.0144663, 0.0430282, 0.0426735)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7s68e"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6niud"]
 vertex_color_use_as_albedo = true
 albedo_color = Color(0.552941, 0.552941, 0.552941, 1)
 albedo_texture_force_srgb = true
@@ -153,7 +153,7 @@ clearcoat = 0.16
 clearcoat_roughness = 1.0
 refraction_enabled = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a2rxq"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6nrab"]
 vertex_color_use_as_albedo = true
 albedo_color = Color(0.552941, 0.552941, 0.552941, 1)
 albedo_texture_force_srgb = true
@@ -163,7 +163,7 @@ clearcoat = 0.16
 clearcoat_roughness = 1.0
 refraction_enabled = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6jsm2"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kdq3c"]
 vertex_color_use_as_albedo = true
 albedo_color = Color(0.705882, 0.517647, 0.254902, 1)
 albedo_texture_force_srgb = true
@@ -190,7 +190,7 @@ clearcoat = 0.16
 clearcoat_roughness = 1.0
 refraction_enabled = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_18rm6"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5yuik"]
 vertex_color_use_as_albedo = true
 albedo_color = Color(0.552941, 0.552941, 0.552941, 1)
 albedo_texture_force_srgb = true
@@ -205,6 +205,16 @@ vertex_color_use_as_albedo = true
 albedo_color = Color(0.705882, 0.517647, 0.254902, 1)
 albedo_texture_force_srgb = true
 emission = Color(1, 1, 1, 1)
+clearcoat = 0.16
+clearcoat_roughness = 1.0
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7s68e"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.552941, 0.552941, 0.552941, 1)
+albedo_texture_force_srgb = true
+emission = Color(1, 0.839216, 0.666667, 1)
+emission_energy_multiplier = 2.0
 clearcoat = 0.16
 clearcoat_roughness = 1.0
 refraction_enabled = true
@@ -3268,24 +3278,25 @@ outline_size = 16
 [node name="Lights and buttons" type="Node3D" parent="Rod Select Panel/Panel 2"]
 transform = Transform3D(1, 7.45058e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, -0.00148284, 0, -1.43051e-06)
 
-[node name="Insert_pb" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
+[node name="RMCS_INSERT_PB" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
 transform = Transform3D(1, 7.45058e-08, 0, -1.3411e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.184999, 0.0300002)
 use_collision = true
 size = Vector3(0.002, 0.042, 0.042)
 material = SubResource("StandardMaterial3D_2dm8g")
+script = ExtResource("15_ou0an")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Panel 2/Lights and buttons/Insert_pb"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_PB"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Rod Select Panel/Panel 2/Lights and buttons/Insert_pb/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_PB/StaticBody3D"]
 shape = SubResource("BoxShape3D_7k5lw")
 
-[node name="Insert_lt" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
+[node name="RMCS_INSERT" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
 transform = Transform3D(1, 1.78814e-07, 0, -1.19209e-07, 1, 0, 0, 0, 1, 3.27826e-07, 0.116769, 0.0299983)
 use_collision = true
 size = Vector3(0.002, 0.0338821, 0.042)
-material = SubResource("StandardMaterial3D_7s68e")
+material = SubResource("StandardMaterial3D_6niud")
 
-[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 2/Lights and buttons/Insert_lt"]
+[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT"]
 transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
 sorting_offset = 10.0
 pixel_size = 0.0005
@@ -3295,13 +3306,13 @@ text = "INSERT"
 font_size = 12
 outline_size = 16
 
-[node name="Withdraw_lt" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
+[node name="RMCS_WITHDRAW" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
 transform = Transform3D(1, 1.78814e-07, 0, -1.19209e-07, 1, 0, 0, 0, 1, 2.68221e-07, 0.117236, -0.0300007)
 use_collision = true
 size = Vector3(0.002, 0.0338821, 0.042)
-material = SubResource("StandardMaterial3D_a2rxq")
+material = SubResource("StandardMaterial3D_6nrab")
 
-[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 2/Lights and buttons/Withdraw_lt"]
+[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW"]
 transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
 sorting_offset = 10.0
 pixel_size = 0.0005
@@ -3311,13 +3322,13 @@ text = "WITHDRAW"
 font_size = 12
 outline_size = 16
 
-[node name="InsertBlock_lt" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
+[node name="RMCS_INSERT_BLOCK" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
 transform = Transform3D(1, 2.83122e-07, 0, -1.78814e-07, 1, 0, 0, 0, 1, -1.07288e-06, -0.0334659, 0.03)
 use_collision = true
 size = Vector3(0.002, 0.0338821, 0.042)
-material = SubResource("StandardMaterial3D_6jsm2")
+material = SubResource("StandardMaterial3D_kdq3c")
 
-[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 2/Lights and buttons/InsertBlock_lt"]
+[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_BLOCK"]
 transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
 sorting_offset = 10.0
 pixel_size = 0.0005
@@ -3380,13 +3391,13 @@ DISAGREE"
 font_size = 12
 outline_size = 16
 
-[node name="Settle_lt" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
+[node name="RMCS_SETTLE" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
 transform = Transform3D(1, 8.9407e-08, 0, -4.47035e-08, 1, 0, 0, 0, 1, -5.96046e-07, 0.0454874, -0.0299993)
 use_collision = true
 size = Vector3(0.002, 0.0338821, 0.042)
-material = SubResource("StandardMaterial3D_18rm6")
+material = SubResource("StandardMaterial3D_5yuik")
 
-[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 2/Lights and buttons/Settle_lt"]
+[node name="Label" type="Label3D" parent="Rod Select Panel/Panel 2/Lights and buttons/RMCS_SETTLE"]
 transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
 sorting_offset = 10.0
 pixel_size = 0.0005
@@ -3396,15 +3407,16 @@ text = "SETTLE"
 font_size = 12
 outline_size = 16
 
-[node name="Withdraw_pb" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
+[node name="RMCS_WITHDRAW_PB" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
 transform = Transform3D(1, 1.04308e-07, 0, -1.19209e-07, 1, 0, 0, 0, 1, 1.19209e-07, 0.184999, -0.0300004)
 use_collision = true
 size = Vector3(0.002, 0.042, 0.042)
 material = SubResource("StandardMaterial3D_aiqtk")
+script = ExtResource("15_ou0an")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Panel 2/Lights and buttons/Withdraw_pb"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_PB"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Rod Select Panel/Panel 2/Lights and buttons/Withdraw_pb/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_PB/StaticBody3D"]
 shape = SubResource("BoxShape3D_7k5lw")
 
 [node name="Insert_lt2" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
@@ -3458,7 +3470,7 @@ transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 1.49012e-08, 0, -7.45058e-09, 1
 shape = SubResource("BoxShape3D_qqe8e")
 
 [node name="RodMotion" type="CSGBox3D" parent="Rod Select Panel/Safety Covers"]
-transform = Transform3D(-4.47035e-08, 7.45058e-08, 1, 0, 1, 0, -1.00001, 0, -3.72529e-08, -0.01, 0.185001, -0.000196457)
+transform = Transform3D(-4.47035e-08, 5.96046e-08, 1, 0, 1, 0, -1.00001, 0, -3.72529e-08, -0.0100001, 0.185001, -0.145332)
 sorting_offset = 20.0
 size = Vector3(0.106582, 0.0514165, 0.0182538)
 material = SubResource("StandardMaterial3D_2o33n")
@@ -8790,8 +8802,8 @@ omni_range = 17.632
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_ACK_1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_ACK_1" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_RESET_1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_RESET_1" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Annunciation/pain/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Annunciation/pain" method="switch_click"]
-[connection signal="input_event" from="Rod Select Panel/Panel 2/Lights and buttons/Insert_pb/StaticBody3D" to="Rod Select Panel/Panel 2/Lights and buttons/Insert_pb/StaticBody3D" method="_on_input_event"]
-[connection signal="input_event" from="Rod Select Panel/Panel 2/Lights and buttons/Withdraw_pb/StaticBody3D" to="Rod Select Panel/Panel 2/Lights and buttons/Withdraw_pb/StaticBody3D" method="_on_input_event"]
+[connection signal="input_event" from="Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_PB/StaticBody3D" to="Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_PB" method="switch_click"]
+[connection signal="input_event" from="Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_PB/StaticBody3D" to="Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_PB" method="switch_click"]
 [connection signal="input_event" from="Rod Select Panel/Safety Covers/RodMotionOverrides/StaticBody3D" to="Rod Select Panel/Safety Covers/RodMotionOverrides/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Safety Covers/RodMotion/StaticBody3D" to="Rod Select Panel/Safety Covers/RodMotion/StaticBody3D" method="_on_input_event"]
 [connection signal="input_event" from="Rod Select Panel/Safety Covers/RodDriftReset/StaticBody3D" to="Rod Select Panel/Safety Covers/RodDriftReset/StaticBody3D" method="_on_input_event"]

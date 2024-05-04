@@ -23,7 +23,24 @@ enum server_packets {
 	USER_LOGIN_ACK = 13,
 }
 
-@onready var gauges = {}
+@onready var gauges = {
+	"four_rod_br": {
+		"value": 1,
+		"atypical" : true, #The min/maxes dont apply. This is simply used for receiving a value.
+	},
+	"four_rod_bl": {
+		"value": 1,
+		"atypical" : true,
+	},
+	"four_rod_tr": {
+		"value": 1,
+		"atypical" : true,
+	},
+	"four_rod_tl": {
+		"value": 1,
+		"atypical" : true,
+	},
+}
 
 var switches = {
 	"reactor_mode_switch": {
@@ -453,6 +470,7 @@ func _process(delta):
 						for gauge in packet_data:
 							var value = packet_data[gauge]
 							gauges[gauge].value = value
+							if gauges[gauge].atypical: continue
 							gauges[gauge].node.set_needle_position(gauges[gauge].value, gauges[gauge].min_value, gauges[gauge].max_value)
 					
 					server_packets.USER_LOGOUT:

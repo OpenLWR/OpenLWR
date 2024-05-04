@@ -57,9 +57,8 @@ func _ready():
 			set_rod_light_emission(rod_number, "SELECT", rod_info["select"] and not rpis_inop)
 			
 			# 18-59 has a slight offset to avoid it appearing desynced from the rest of the lights
-			# TODO: check if 18-59 actually needs this offset (or whatever the first rod in the dict is)
 			if rod_info["accum_trouble_acknowledged"] == false:
-				if rod_info["accum_trouble"] and cycles <= 1 : #(rod_number == "18-59" or cycles >= 0):
+				if rod_info["accum_trouble"] and (cycles <= 1 or (rod_number == "18-59" and (cycles == 0 or cycles == 5))) :
 					set_rod_light_emission(rod_number, "ACCUM", not rpis_inop)
 				else:
 					set_rod_light_emission(rod_number, "ACCUM", false)

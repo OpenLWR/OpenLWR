@@ -29,6 +29,7 @@ vec4 getRodColor(in uvec4 rod_map, in vec2 sub_uv, in float z) {
 }
 
 bool getRodEnabled(in uvec4 rod_status) {
+	//return true;
 	return rod_status.b > 0u;
 }
 
@@ -41,15 +42,14 @@ void fragment() {
 	ALPHA_SCISSOR_THRESHOLD = 0.5;
 	
 	ivec2 RODS = textureSize(rods, 0);
-	ivec2 rod = ivec2(UV.yx * vec2(RODS));
-	rod = ivec2(1, -1) * rod + ivec2(0, 1) * RODS + ivec2(0,-1);
-	vec2 sub_UV = mod((vec2(0, 1) + vec2(1, -1) * UV.yx) * vec2(RODS), 1.0);
+	ivec2 rod = ivec2(UV * vec2(RODS));
+	vec2 sub_UV = mod(UV * vec2(RODS), 1.0);
 	uvec4 rod_status = getRod(rod);
 	
 	vec4 col = getRodColor(rod_status, sub_UV, FRAGCOORD.z);
 	EMISSION = col.rgb * ((!shouldFlash(rod_status) || mod(TIME, 0.2) < 0.1) && getRodEnabled(rod_status) ? 1.0 : 0.0);
-	ALBEDO = vec3(length(col.rgb) > 0.1 ? 0.4 : 0.0);
-	ALPHA = col.a;
+	ALBEDO = vec3(length(col.rgb) > 0.5 ? 0.4 : 0.0);
+	//ALPHA = col.a;
 }
 
 //void light() {

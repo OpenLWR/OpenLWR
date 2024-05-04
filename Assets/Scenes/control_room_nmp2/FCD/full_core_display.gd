@@ -10,6 +10,8 @@ var fcd_inop = false #TODO: make these replicate from server
 var image: Image
 var texture: ImageTexture
 
+var prev_info: Dictionary = {}
+
 enum LightState {
 	OFF = 0,
 	ON = 1,
@@ -54,7 +56,7 @@ func _get_light_offset(rod: Vector2i, type: StringName) -> Vector2i:
 	rod.y *= 2
 	if BOTTOM_TYPE_OF_BLOCK[type]:
 		rod.y -= 1
-	rod.y = image.get_size().y - rod.y - 2
+	rod.y = 60 - rod.y - 2
 	return rod
 
 #TODO: table with all the materials instead of this garbage
@@ -62,6 +64,8 @@ func _get_light_offset(rod: Vector2i, type: StringName) -> Vector2i:
 func _set_rod_light_emission(rod: Vector2i, light: StringName, state: LightState, target: Image):
 	rod = _get_light_offset(rod, light)
 	var color = target.get_pixelv(rod)
+	if color.b == (state + 0.5) / 3:
+		return
 	color.b = (state + 0.5) / 3
 	target.set_pixelv(rod, color)
 	pass
@@ -83,7 +87,10 @@ func _process(delta):
 	pass
 
 
-func _on_node_3d_rods_updated(new_info):
+func _on_node_3d_rods_updated(new_info: Dictionary):
+	if prev_info == new_info:
+		return
+	prev_info = new_info.duplicate()
 	for rod_number in new_info:
 		var rod_info = new_info[rod_number]
 		var insertion = rod_info.insertion

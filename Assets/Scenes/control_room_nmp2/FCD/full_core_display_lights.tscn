@@ -3,6 +3,7 @@
 [ext_resource type="Shader" path="res://Assets/Scenes/control_room_nmp2/FCD/full_core_display_lights.gdshader" id="1_0twiq"]
 [ext_resource type="Texture2D" path="res://Assets/Textures/full core display.bmp" id="2_1sk0f"]
 [ext_resource type="Texture2D" path="res://Assets/Textures/fcd labels.webp" id="3_kn2v2"]
+[ext_resource type="ArrayMesh" uid="uid://bhgk7038mvcp8" path="res://Assets/Misc/Models/fcd.obj" id="4_mfyjx"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_yn0cx"]
 resource_local_to_scene = true
@@ -11,8 +12,6 @@ shader = ExtResource("1_0twiq")
 shader_parameter/rods = ExtResource("2_1sk0f")
 shader_parameter/rod_texts = ExtResource("3_kn2v2")
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_8n80q"]
-
 [node name="Node3D" type="Node3D"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
 
@@ -20,5 +19,5 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 
 transform = Transform3D(0.48, 0, 0, 0, 0.48, 0, 0, 0, 0.48, 0, 0, 0)
 sorting_offset = 1.0
 material_override = SubResource("ShaderMaterial_yn0cx")
-mesh = SubResource("PlaneMesh_8n80q")
+mesh = ExtResource("4_mfyjx")
 skeleton = NodePath("")

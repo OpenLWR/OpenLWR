@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bhgk7038mvcp8"
+path="res://.godot/imported/fcd.obj-eb2dc6a734e9833008a99b511cd143aa.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fcd.obj-eb2dc6a734e9833008a99b511cd143aa.mesh"]
+
+source_file="res://Assets/Misc/Models/fcd.obj"
+dest_files=["res://.godot/imported/fcd.obj-eb2dc6a734e9833008a99b511cd143aa.mesh", "res://.godot/imported/fcd.obj-eb2dc6a734e9833008a99b511cd143aa.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

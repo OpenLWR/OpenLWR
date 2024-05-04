@@ -335,6 +335,8 @@ var connection_packet_sent = false
 
 const remote_player_scene = preload("res://Scenes/Player/remote_player.tscn")
 
+signal rods_updated(new_info: Dictionary)
+
 func build_packet(packet_id, data):
 	return "%s|%s" % [str(packet_id), Marshalls.utf8_to_base64(data)]
 
@@ -498,7 +500,7 @@ func _process(delta):
 						packet_data = json.parse_string(packet_data)
 						for rod in packet_data:
 							rod_information[rod] = packet_data[rod]
-						print("rod update")
+						rods_updated.emit(packet_data.duplicate(true))
 							
 					server_packets.BUTTON_PARAMETERS_UPDATE:
 						packet_data = json.parse_string(packet_data)

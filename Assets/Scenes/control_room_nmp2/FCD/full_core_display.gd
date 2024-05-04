@@ -10,22 +10,19 @@ var fcd_inop = false #TODO: make these replicate from server
 var image: Image
 var texture: ImageTexture
 
-var fcd_enums = {
-	"ACCUM" : "ACCUM_SCRAM_IND/ACCUM",
-	"SCRAM" : "ACCUM_SCRAM_IND/SCRAM",
-	"DRIFT" : "ROD_DRIFT_IND/DRIFT",
-	"SELECT" : "ROD_DRIFT_IND/ROD",
-	"FULL_IN" : "FULL_IN_OUT_IND/FULL IN",
-	"FULL_OUT" : "FULL_IN_OUT_IND/FULL OUT",
+enum LightState {
+	OFF = 0,
+	ON = 1,
+	FLASHING = 2,
 }
 
-var activated_states = {
-	"ACCUM": 2,
-	"SCRAM": 2,
-	"DRIFT": 2,
-	"SELECT": 1,
-	"FULL_IN": 1,
-	"FULL_OUT": 1,
+const ACTIVATED_STATES = {
+	#&"ACCUM": LightState.FLASHING, # handled seperately
+	&"SCRAM": LightState.ON,
+	&"DRIFT": LightState.ON,
+	&"SELECT": LightState.ON,
+	&"FULL_IN": LightState.ON,
+	&"FULL_OUT": LightState.ON,
 }
 
 const BLOCK_OFFSETS = {
@@ -57,31 +54,29 @@ func _get_light_offset(rod: Vector2i, type: StringName) -> Vector2i:
 	rod.y *= 2
 	if BOTTOM_TYPE_OF_BLOCK[type]:
 		rod.y -= 1
-	rod.y = 58 - rod.y
+	rod.y = image.get_size().y - rod.y - 2
 	return rod
 
 #TODO: table with all the materials instead of this garbage
 
-func _set_rod_light_emission(rod: Vector2i, light: StringName, state: bool, target: Image):
+func _set_rod_light_emission(rod: Vector2i, light: StringName, state: LightState, target: Image):
 	rod = _get_light_offset(rod, light)
 	var color = target.get_pixelv(rod)
-	if state:
-		color.b = (activated_states[light] + 0.5) / 3
-	else:
-		color.b = 0
+	color.b = (state + 0.5) / 3
 	target.set_pixelv(rod, color)
 	pass
 
-func _set_rod_light(rod: Vector2i, light: StringName, state:bool, target:Image):
-	if false and state:
-		print(light)
-	return _set_rod_light_emission(rod, light, state and not rpis_inop, target)
+func _set_rod_light_state(rod: Vector2i, light: StringName, state: LightState, target:Image):
+	return _set_rod_light_emission(rod, light, state if not rpis_inop else LightState.OFF, target)
+
+func _set_rod_light(rod: Vector2i, light: StringName, state: bool, target: Image):
+	return _set_rod_light_state(rod, light, ACTIVATED_STATES[light] if state else LightState.OFF, target)
 
 func _ready():
-	var prev_texture = $shaderfcd.material_override["shader_parameter/rod_statuses"]
+	var prev_texture = $shaderfcd.material_override["shader_parameter/rods"]
 	image = prev_texture.get_image()
 	texture = ImageTexture.create_from_image(image)
-	$shaderfcd.material_override["shader_parameter/rod_statuses"] = texture
+	$shaderfcd.material_override["shader_parameter/rods"] = texture
 	pass
 
 func _process(delta):
@@ -99,6 +94,9 @@ func _on_node_3d_rods_updated(new_info):
 		_set_rod_light(rod, &"SCRAM", rod_info.scram, image)
 		_set_rod_light(rod, &"DRIFT", rod_info.drift_alarm, image)
 		_set_rod_light(rod, &"SELECT", rod_info.select, image)
+		var accum_state = LightState.FLASHING if not rod_info.accum_trouble_acknowledged else LightState.ON
+		_set_rod_light_state(rod, &"ACCUM", accum_state if rod_info.accum_trouble else LightState.OFF, image)
+		
 	#_set_rod_light_emission(Vector2i(18, 03), &"SELECT", true, image)
 	texture.update(image)
 	pass # Replace with function body.

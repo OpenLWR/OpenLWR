@@ -2,11 +2,8 @@ shader_type spatial;
 
 #define FETCH_METHOD 2
 
-uniform sampler2D rod_statuses;
-uniform sampler2D rod_enabled;
+uniform sampler2D rods;
 uniform sampler2D rod_texts;
-
-uniform bool blink;
 
 const vec4 TYPES = vec4(14.0, 15.0, 3.0, 1.0);
 
@@ -15,7 +12,7 @@ void vertex() {
 }
 
 uvec4 getRod(in ivec2 rod) {
-	return uvec4(texelFetch(rod_statuses, rod, 0) * TYPES);
+	return uvec4(texelFetch(rods, rod, 0) * TYPES);
 }
 
 vec4 getRodColor(in uvec4 rod_map, in vec2 sub_uv, in float z) {
@@ -31,9 +28,8 @@ vec4 getRodColor(in uvec4 rod_map, in vec2 sub_uv, in float z) {
 	#endif //FETCH_METHOD
 }
 
-bool getRodEnabled(in ivec2 rod) {
-	//return blink;
-	return getRod(rod).b > 0u;
+bool getRodEnabled(in uvec4 rod_status) {
+	return rod_status.b > 0u;
 }
 
 bool shouldFlash(in uvec4 rod_status) {
@@ -44,14 +40,14 @@ void fragment() {
 	// Called for every pixel the material is visible on.
 	ALPHA_SCISSOR_THRESHOLD = 0.5;
 	
-	ivec2 RODS = textureSize(rod_statuses, 0);
+	ivec2 RODS = textureSize(rods, 0);
 	ivec2 rod = ivec2(UV.yx * vec2(RODS));
 	rod = ivec2(1, -1) * rod + ivec2(0, 1) * RODS + ivec2(0,-1);
 	vec2 sub_UV = mod((vec2(0, 1) + vec2(1, -1) * UV.yx) * vec2(RODS), 1.0);
 	uvec4 rod_status = getRod(rod);
 	
 	vec4 col = getRodColor(rod_status, sub_UV, FRAGCOORD.z);
-	EMISSION = col.rgb * ((!shouldFlash(rod_status) || mod(TIME, 0.2) < 0.1) && getRodEnabled(rod) ? 1.0 : 0.0);
+	EMISSION = col.rgb * ((!shouldFlash(rod_status) || mod(TIME, 0.2) < 0.1) && getRodEnabled(rod_status) ? 1.0 : 0.0);
 	ALBEDO = vec3(length(col.rgb) > 0.1 ? 0.4 : 0.0);
 	ALPHA = col.a;
 }

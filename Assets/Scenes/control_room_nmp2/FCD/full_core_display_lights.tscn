@@ -8,8 +8,7 @@
 resource_local_to_scene = true
 render_priority = 0
 shader = ExtResource("1_0twiq")
-shader_parameter/blink = true
-shader_parameter/rod_statuses = ExtResource("2_1sk0f")
+shader_parameter/rods = ExtResource("2_1sk0f")
 shader_parameter/rod_texts = ExtResource("3_kn2v2")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_8n80q"]

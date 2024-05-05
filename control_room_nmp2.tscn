@@ -1,4 +1,4 @@
-[gd_scene load_steps=264 format=3 uid="uid://hp5vectj4xsb"]
+[gd_scene load_steps=266 format=3 uid="uid://hp5vectj4xsb"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/main.gd" id="1_skxkr"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Scenes/Player/player.tscn" id="2_4xgnc"]
@@ -23,6 +23,7 @@
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/FCD/full_core_display.gd" id="17_i8txs"]
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/Four Rod Display.gd" id="17_oofjd"]
 [ext_resource type="PackedScene" uid="uid://dp5ytydbdxgoi" path="res://Assets/Components/Annunciators/annunciator_6x3.tscn" id="17_y8n64"]
+[ext_resource type="PackedScene" uid="uid://dok8h20vi4url" path="res://Assets/Components/Gauges/Edgewise/edgewise_gauge.tscn" id="18_mq3j2"]
 [ext_resource type="Material" uid="uid://d2mabc0jor366" path="res://annunciator_outline_orange.tres" id="18_ro6fv"]
 [ext_resource type="Script" path="res://Assets/Components/Annunciators/annunciator.gd" id="19_3k53m"]
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/Rod Select.gd" id="21_lib1f"]
@@ -30,6 +31,7 @@
 [ext_resource type="Script" path="res://Assets/Components/Annunciators/Alarm.gd" id="22_5ffiy"]
 [ext_resource type="AudioStream" uid="uid://bqm26847iqdj1" path="res://Assets/Audio/electrical_alarm_loop.mp3" id="23_ykdw5"]
 [ext_resource type="Material" uid="uid://h3pec0eq2wyc" path="res://annunciator_outline_red.tres" id="24_fiek4"]
+[ext_resource type="PackedScene" uid="uid://dvw6yyr4x1mdt" path="res://Assets/Components/Annunciators/annunciator_10x6.tscn" id="28_3rypo"]
 
 [sub_resource type="Environment" id="Environment_gjsn6"]
 ambient_light_source = 1
@@ -2049,7 +2051,6 @@ depth = 9.5
 
 [node name="reference diagrams" type="Node3D" parent="Control Room Panels/Main Panel Left Side"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.487)
-visible = false
 
 [node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/reference diagrams"]
 transform = Transform3D(-4.43671e-08, 0, 1.015, 0, 1.015, 0, -1.015, 0, -4.43671e-08, 1, 0.838, -2.282)
@@ -2668,7 +2669,7 @@ material = ExtResource("2_yxnln")
 [node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams/label9"]
 transform = Transform3D(-1.39696e-09, -9.31323e-10, 0.05, -2.39038e-15, 0.0908602, 9.31323e-09, -0.0164229, 6.1181e-10, -7.64761e-10, 0.00105739, -9.53674e-07, -6.58035e-05)
 modulate = Color(0, 0, 0, 1)
-text = "NNS 4160V BUS 013"
+text = "NNS 4160V BUS 012"
 font_size = 36
 outline_size = 0
 
@@ -3268,6 +3269,37 @@ text = "4 8
 "
 font_size = 60
 outline_size = 0
+
+[node name="Rod Worth Minimizer" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.989454, 0.649201, -3.1798)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.244693, 0.120239, 0.151245)
+size = Vector3(0.51062, 0.239014, 0.303467)
+
+[node name="srm_d_counts" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("18_mq3j2")]
+transform = Transform3D(-8.9407e-08, 0, 1, 0, 1, 0, -1, 0, -8.9407e-08, 0.864584, 0.991194, -1.55457)
+
+[node name="srm_a_period" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("18_mq3j2")]
+transform = Transform3D(-8.9407e-08, 0, 1, 0, 1, 0, -1, 0, -8.9407e-08, 0.864584, 0.991194, -1.67998)
+
+[node name="srm_b_period" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("18_mq3j2")]
+transform = Transform3D(-8.9407e-08, 0, 1, 0, 1, 0, -1, 0, -8.9407e-08, 0.864584, 0.991194, -1.71984)
+
+[node name="srm_c_period" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("18_mq3j2")]
+transform = Transform3D(-8.9407e-08, 0, 1, 0, 1, 0, -1, 0, -8.9407e-08, 0.864583, 0.991194, -1.75979)
+
+[node name="srm_d_period" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("18_mq3j2")]
+transform = Transform3D(-8.9407e-08, 0, 1, 0, 1, 0, -1, 0, -8.9407e-08, 0.864583, 0.991194, -1.79917)
+
+[node name="srm_c_counts" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("18_mq3j2")]
+transform = Transform3D(-8.9407e-08, 0, 1, 0, 1, 0, -1, 0, -8.9407e-08, 0.864584, 0.991194, -1.51469)
+
+[node name="srm_b_counts" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("18_mq3j2")]
+transform = Transform3D(-8.9407e-08, 0, 1, 0, 1, 0, -1, 0, -8.9407e-08, 0.864583, 0.991194, -1.47497)
+
+[node name="srm_a_counts" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("18_mq3j2")]
+transform = Transform3D(-8.9407e-08, 0, 1, 0, 1, 0, -1, 0, -8.9407e-08, 0.864583, 0.991194, -1.43552)
 
 [node name="Full Core Display" type="Node3D" parent="Control Room Panels/Main Panel Center"]
 transform = Transform3D(0, 0, -0.75, 0, 0.75, 0, 0.75, 0, 0, 1.00228, 1.1063, -2.40535)
@@ -8544,19 +8576,250 @@ transform = Transform3D(1.06858, -1.11759e-08, 0, -5.21541e-07, 1.1996, 0, 0, 0,
 transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, 0, 4.76837e-07)
 
 [node name="Elec_Box1" parent="Annunciators" instance=ExtResource("16_25mp6")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52179, 2.12425, -7.88397)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52179, 2.54259, -7.88397)
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/A1" index="0"]
+text = "DIVISION 1
+EDG 1
+START SYSTEM
+INOPERABLE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/A2" index="0"]
+text = "DIVISION 1
+EDG 1
+START SYSTEM
+TROUBLE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/A3" index="0"]
+transform = Transform3D(-4.37113e-08, 1, -4.47035e-08, 7.10543e-15, -2.98023e-08, -1, -0.999999, -4.37114e-08, -7.10543e-15, 0.00259304, -0.0208178, 0.00127029)
+text = "EDG 1
+RUNNING"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/A4" index="0"]
+text = "EDG 1
+OVERSPEED
+TRIP"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/A5" index="0"]
+transform = Transform3D(-4.37113e-08, 1, -4.47035e-08, 7.10543e-15, -2.98023e-08, -1, -0.999999, -4.37114e-08, -7.10543e-15, 0.00259304, -0.0208225, 0.00127029)
+text = "EDG 1
+OVERVOLTAGE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/A6" index="0"]
+text = "EDG 1
+MAINTENANCE
+MODE"
 
 [node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/B1" index="0"]
 transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.23517e-08, -1, -1, -4.37114e-08, 0, 0.00259304, -0.0208235, 0.00127411)
+text = "DIVISION 1
+EDG 1
+FUEL SYSTEM
+INOPERABLE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/B2" index="0"]
+text = "DIVISION 1
+EDG 1
+FUEL SYSTEM
+TROUBLE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/B3" index="0"]
+text = "EDG 1
+SERVICE WATER
+INLET PRESS
+LOW"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/B4" index="0"]
+text = "EDG 1
+SERVICE WATER
+FLOW
+LOW"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/B5" index="0"]
+text = "EDG 1
+SHUTDOWN
+MECHANICAL
+FAILURE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/B6" index="0"]
+text = "EDG 1
+MECHANICAL
+FAILURE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/C1" index="0"]
+text = "EDG 1
+SYSTEM
+INOPERABLE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/C2" index="0"]
+text = "EDG 1
+ELECTRICAL
+SYTEM
+TROUBLE/TRIP"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/C3" index="0"]
+text = "EDG 1
+DC CONT POWER
+FAILURE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/C4" index="0"]
+text = "EDG 1
+PROT LOCKOUT
+RELAY
+TRIP"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/C5" index="0"]
+text = "EDG 1
+FIELD GROUND
+FAULT"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/C6" index="0"]
+text = ""
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/D1" index="0"]
+text = "EDG 1
+BRKR 101-1
+AUTO CLOSE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/D2" index="0"]
+text = "BRKR 101-1
+AUTO TRIP/
+FAIL TO CLOSE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/D3" index="0"]
+text = "EDG 1
+BRKR 101-N1
+AUTO TRIP"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/D4" index="0"]
+text = ""
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/D5" index="0"]
+text = "EDG 1
+LOCA BYPASS
+SWITCH ON"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/D6" index="0"]
+text = "EDG 1
+LOCA TEST
+SWITCH ON"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/E1" index="0"]
+text = ""
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/E2" index="0"]
+text = ""
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/E4" index="0"]
+text = ""
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/E5" index="0"]
+text = ""
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/E6" index="0"]
+text = ""
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/F1" index="0"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 7.10543e-15, -2.98023e-08, -1, -1, -4.37114e-08, -7.10543e-15, 0.00259209, -0.0208216, 0.0012722)
+text = "DIVISION I
+LOAD CENTER
+EJS SYSTEM
+INOPERABLE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/F2" index="0"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 7.10543e-15, -2.98023e-08, -1, -1, -4.37114e-08, -7.10543e-15, 0.00259209, -0.0208216, 0.0012722)
+text = "LOAD CENTER
+EJS USI
+TROUBLE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/F3" index="0"]
+text = "LOAD CENTER
+EJS USI
+BUS
+UNDERVOLTAGE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/F4" index="0"]
+text = "BRKR 101-2
+BRKR 101-14
+AUTO TRIP"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/F5" index="0"]
+text = "BRKR 101-2
+BRKR 101-14
+LOCKOUT RELAY
+TRIP"
 
 [node name="F6" parent="Annunciators/Elec_Box1/Box/Windows" index="35"]
 transform = Transform3D(0.0871558, -0.996195, -7.10543e-15, 0.996194, 0.0871558, 0, 0, -7.10543e-15, 1, 0.0165033, -0.261341, -0.194561)
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/F6" index="0"]
+text = "DIVISION I
+EMER 600V
+DISTRIBUTION
+TROUBLE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/G1" index="0"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 2.13163e-14, -2.23517e-08, -1, -1, -4.37114e-08, -7.10543e-15, 0.00259352, -0.0208263, 0.00127697)
+text = "BRKR 101-10
+BRKR 101-13
+AUTO TRIP"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/G2" index="0"]
+text = "BRKR 101-11
+LOCKOUT RELAY
+TROUBLE/TRIP"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/G3" index="0"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 7.10543e-15, -2.98023e-08, -1, -1, -4.37114e-08, -7.10543e-15, 0.00259376, -0.0208254, 0.00127506)
+text = "4KV
+BUS 101
+DC CONT POWER
+FAILURE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/G4" index="0"]
+text = "BRKR 101-10
+BRKR 101-13
+ELEC FAULT
+PRI PROT TRIP"
 
 [node name="G5" parent="Annunciators/Elec_Box1/Box/Windows" index="40"]
 material = SubResource("StandardMaterial3D_dwco3")
 
 [node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/G5" index="0"]
 transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.98023e-08, -1, -1, -4.37114e-08, 0, 0.00259399, -0.0208225, 0.00127316)
+text = "BRKR 101-10
+BRKR 1-1-13
+BACKUP
+PROT TRIP"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/G6" index="0"]
+text = "BRKR 101-10
+BRKR 101-13
+GROUND FAULT
+PRI PROT TRIP"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/H1" index="0"]
+text = "DIV I EMER
+BUS SYS 002A
+125VDC SYSTEM
+TROUBLE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/H2" index="0"]
+text = "DIVISION I
+UPS 2A
+SYSTEM
+TROUBLE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/H3" index="0"]
+text = "DIVISION I
+UPS 2A ON
+BATT 2A POWER"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/H4" index="0"]
+text = "4KV
+BUS 101
+UNDER
+FREQUENCY"
 
 [node name="H5" parent="Annunciators/Elec_Box1/Box/Windows" index="46"]
 material = SubResource("StandardMaterial3D_wmn37")
@@ -8566,6 +8829,12 @@ transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.98023e-08, -1, -1, 
 text = "4KV
 BUS 101
 UNDERVOLTAGE"
+
+[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/H6" index="0"]
+text = "BRKR 101-10
+BRKR 101-13
+PHASE
+OVERCURRENT"
 
 [node name="OrangeOutline4" parent="Annunciators/Elec_Box1/Box/RedOutlines" index="0"]
 visible = false
@@ -8644,7 +8913,7 @@ material = null
 material = null
 
 [node name="Elec_Box2" parent="Annunciators" instance=ExtResource("16_25mp6")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52179, 2.12425, -7.18439)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52179, 2.54259, -7.20444)
 
 [node name="Label" parent="Annunciators/Elec_Box2/Box/Windows/B1" index="0"]
 transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.23517e-08, -1, -1, -4.37114e-08, 0, 0.00259304, -0.0208235, 0.00127411)
@@ -8748,6 +9017,124 @@ material = null
 
 [node name="OrangeOutline2" parent="Annunciators/Elec_Box2/Box/OrangeOutlines" index="1"]
 material = null
+
+[node name="Elec_Box3" parent="Annunciators" instance=ExtResource("16_25mp6")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52179, 2.54259, -6.52533)
+
+[node name="Label" parent="Annunciators/Elec_Box3/Box/Windows/B1" index="0"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.23517e-08, -1, -1, -4.37114e-08, 0, 0.00259304, -0.0208235, 0.00127411)
+
+[node name="F6" parent="Annunciators/Elec_Box3/Box/Windows" index="35"]
+transform = Transform3D(0.0871558, -0.996195, -7.10543e-15, 0.996194, 0.0871558, 0, 0, -7.10543e-15, 1, 0.0165033, -0.261341, -0.194561)
+
+[node name="G5" parent="Annunciators/Elec_Box3/Box/Windows" index="40"]
+material = SubResource("StandardMaterial3D_dwco3")
+
+[node name="Label" parent="Annunciators/Elec_Box3/Box/Windows/G5" index="0"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.98023e-08, -1, -1, -4.37114e-08, 0, 0.00259399, -0.0208225, 0.00127316)
+
+[node name="G6" parent="Annunciators/Elec_Box3/Box/Windows" index="41"]
+material = SubResource("StandardMaterial3D_8whq1")
+
+[node name="H5" parent="Annunciators/Elec_Box3/Box/Windows" index="46"]
+material = SubResource("StandardMaterial3D_rbkxj")
+
+[node name="Label" parent="Annunciators/Elec_Box3/Box/Windows/H5" index="0"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.98023e-08, -1, -1, -4.37114e-08, 0, 0.00259209, -0.0208244, 0.00127411)
+text = "4KV
+BUS 103
+UNDERVOLTAGE"
+
+[node name="H6" parent="Annunciators/Elec_Box3/Box/Windows" index="47"]
+material = SubResource("StandardMaterial3D_0akmc")
+
+[node name="OrangeOutline4" parent="Annunciators/Elec_Box3/Box/RedOutlines" index="0"]
+visible = false
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/Elec_Box3/Box/RedOutlines/OrangeOutline4" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline5" parent="Annunciators/Elec_Box3/Box/RedOutlines" index="1"]
+visible = false
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/Elec_Box3/Box/RedOutlines/OrangeOutline5" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline6" parent="Annunciators/Elec_Box3/Box/RedOutlines" index="2"]
+transform = Transform3D(0.0478188, -0.205029, 3.55271e-15, 0.54657, 0.0179378, 0, 0, 1.77636e-15, 0.57073, 1.01263, 1.48923, -1.1423)
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/Elec_Box3/Box/RedOutlines/OrangeOutline6" index="0"]
+transform = Transform3D(1.06858, -3.72529e-09, 8.88178e-16, -5.06639e-07, 1.1996, -1.42109e-14, 0, 0, 0.957133, 0.000227928, -3.8147e-06, 0)
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline7" parent="Annunciators/Elec_Box3/Box/RedOutlines" index="3"]
+visible = false
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/Elec_Box3/Box/RedOutlines/OrangeOutline7" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline8" parent="Annunciators/Elec_Box3/Box/RedOutlines" index="4"]
+visible = false
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/Elec_Box3/Box/RedOutlines/OrangeOutline8" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline9" parent="Annunciators/Elec_Box3/Box/RedOutlines" index="5"]
+transform = Transform3D(0.0478188, -0.205029, 1.42109e-14, 0.54657, 0.0179378, 0, 0, 7.10543e-15, 0.57073, 1.01263, 1.3573, -0.829587)
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/Elec_Box3/Box/RedOutlines/OrangeOutline9" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline10" parent="Annunciators/Elec_Box3/Box/RedOutlines" index="6"]
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/Elec_Box3/Box/RedOutlines/OrangeOutline10" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline11" parent="Annunciators/Elec_Box3/Box/RedOutlines" index="7"]
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/Elec_Box3/Box/RedOutlines/OrangeOutline11" index="0"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, -8.88178e-16, 3.55271e-15, 0.957133, 0.000227928, -3.8147e-06, 0)
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline12" parent="Annunciators/Elec_Box3/Box/RedOutlines" index="8"]
+visible = false
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/Elec_Box3/Box/RedOutlines/OrangeOutline12" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutline13" parent="Annunciators/Elec_Box3/Box/RedOutlines" index="9"]
+visible = false
+material = ExtResource("18_ro6fv")
+
+[node name="Subtract" parent="Annunciators/Elec_Box3/Box/RedOutlines/OrangeOutline13" index="0"]
+material = ExtResource("18_ro6fv")
+
+[node name="OrangeOutlines" parent="Annunciators/Elec_Box3/Box" index="3"]
+visible = false
+
+[node name="OrangeOutline" parent="Annunciators/Elec_Box3/Box/OrangeOutlines" index="0"]
+material = null
+
+[node name="OrangeOutline2" parent="Annunciators/Elec_Box3/Box/OrangeOutlines" index="1"]
+material = null
+
+[node name="Elec_Box4" parent="Annunciators" instance=ExtResource("28_3rypo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52384, 2.5426, -5.8476)
+
+[node name="Elec_Box5" parent="Annunciators" instance=ExtResource("28_3rypo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52384, 2.5426, -5.01939)
+
+[node name="Elec_Box6" parent="Annunciators" instance=ExtResource("28_3rypo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52384, 2.5426, -4.19016)
 
 [node name="Alarm1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.55557, 2.31361, 2.79219)
@@ -9077,3 +9464,4 @@ omni_range = 17.632
 [editable path="Annunciators/603200"]
 [editable path="Annunciators/Elec_Box1"]
 [editable path="Annunciators/Elec_Box2"]
+[editable path="Annunciators/Elec_Box3"]

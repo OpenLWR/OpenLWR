@@ -40,6 +40,63 @@ enum server_packets {
 		"value": 1,
 		"atypical" : true,
 	},
+	"srm_a_counts": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/srm_a_counts",
+		"value": 0,
+		"min_value": -2.33,
+		"max_value": 14,
+		"atypical" : false,
+	},
+	"srm_b_counts": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/srm_b_counts",
+		"value": 0,
+		"min_value": -2.33,
+		"max_value": 14,
+		"atypical" : false,
+	},
+	"srm_c_counts": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/srm_c_counts",
+		"value": 0,
+		"min_value": -2.33,
+		"max_value": 14,
+		"atypical" : false,
+	},
+	"srm_d_counts": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/srm_d_counts",
+		"value": 0,
+		"min_value": -2.33,
+		"max_value": 14,
+		"atypical" : false,
+	},
+	
+	"srm_a_period": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/srm_a_period",
+		"value": 0,
+		"min_value": -0.009998,
+		"max_value": 0.09930,
+		"atypical" : false,
+	},
+	"srm_b_period": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/srm_b_period",
+		"value": 0,
+		"min_value": -0.009998,
+		"max_value": 0.09930,
+		"atypical" : false,
+	},
+	"srm_c_period": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/srm_c_period",
+		"value": 0,
+		"min_value": -0.009998,
+		"max_value": 0.09930,
+		"atypical" : false,
+	},
+	"srm_d_period": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/srm_d_period",
+		"value": 0,
+		"min_value": -0.009998,
+		"max_value": 0.09930,
+		"atypical" : false,
+	},
 }
 
 var switches = {

@@ -4,8 +4,17 @@ extends Node3D
 func format_position(pos:int):
 	var text = ""
 	var selected = false
-	if abs(pos) == 60: #this is considered "- -"
-		text = "- -"
+	#Information for this is from Hope Creek.
+	# Double Dash -- Odd numbered position reed switch closed.
+	# Double X XX Two even reed switches closed, RMCS Data Fault Light will be lit.
+	# Blank no even or odd position reed switch closed
+	match abs(pos):
+		60: #this is considered "- -".
+			text = "- -"
+		70: #Double X
+			text = "X X"
+		80: #Blank:
+			" "
 	
 	if abs(pos) != pos: #if the value is negative, this is the selected rod
 		selected = true

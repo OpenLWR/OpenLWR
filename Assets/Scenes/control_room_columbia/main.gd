@@ -27,18 +27,22 @@ enum server_packets {
 	"four_rod_br": {
 		"value": 1,
 		"atypical" : true, #The min/maxes dont apply. This is simply used for receiving a value.
+		"text" : false, #Is handled differently than regular gauges. Is text instead of a linear scale.
 	},
 	"four_rod_bl": {
 		"value": 1,
 		"atypical" : true,
+		"text" : false,
 	},
 	"four_rod_tr": {
 		"value": 1,
 		"atypical" : true,
+		"text" : false,
 	},
 	"four_rod_tl": {
 		"value": 1,
 		"atypical" : true,
+		"text" : false,
 	},
 	"srm_a_counts": {
 		"node": $"Control Room Panels/Main Panel Center/Controls/srm_a_counts",
@@ -46,6 +50,7 @@ enum server_packets {
 		"min_value": -2.33,
 		"max_value": 14,
 		"atypical" : false,
+		"text" : false,
 	},
 	"srm_b_counts": {
 		"node": $"Control Room Panels/Main Panel Center/Controls/srm_b_counts",
@@ -53,6 +58,7 @@ enum server_packets {
 		"min_value": -2.33,
 		"max_value": 14,
 		"atypical" : false,
+		"text" : false,
 	},
 	"srm_c_counts": {
 		"node": $"Control Room Panels/Main Panel Center/Controls/srm_c_counts",
@@ -60,6 +66,7 @@ enum server_packets {
 		"min_value": -2.33,
 		"max_value": 14,
 		"atypical" : false,
+		"text" : false,
 	},
 	"srm_d_counts": {
 		"node": $"Control Room Panels/Main Panel Center/Controls/srm_d_counts",
@@ -67,6 +74,7 @@ enum server_packets {
 		"min_value": -2.33,
 		"max_value": 14,
 		"atypical" : false,
+		"text" : false,
 	},
 	
 	"srm_a_period": {
@@ -75,6 +83,7 @@ enum server_packets {
 		"min_value": -0.009998,
 		"max_value": 0.09930,
 		"atypical" : false,
+		"text" : false,
 	},
 	"srm_b_period": {
 		"node": $"Control Room Panels/Main Panel Center/Controls/srm_b_period",
@@ -82,6 +91,7 @@ enum server_packets {
 		"min_value": -0.009998,
 		"max_value": 0.09930,
 		"atypical" : false,
+		"text" : false,
 	},
 	"srm_c_period": {
 		"node": $"Control Room Panels/Main Panel Center/Controls/srm_c_period",
@@ -89,6 +99,7 @@ enum server_packets {
 		"min_value": -0.009998,
 		"max_value": 0.09930,
 		"atypical" : false,
+		"text" : false,
 	},
 	"srm_d_period": {
 		"node": $"Control Room Panels/Main Panel Center/Controls/srm_d_period",
@@ -96,6 +107,13 @@ enum server_packets {
 		"min_value": -0.009998,
 		"max_value": 0.09930,
 		"atypical" : false,
+		"text" : false,
+	},
+	"aprm_temporary": {
+		"node": $"Control Room Panels/Main Panel Center/Power/Label3D",
+		"value": 1,
+		"atypical" : false,
+		"text" : true,
 	},
 }
 
@@ -533,7 +551,10 @@ func _process(delta):
 							var value = packet_data[gauge]
 							gauges[gauge].value = value
 							if gauges[gauge].atypical: continue
-							gauges[gauge].node.set_needle_position(gauges[gauge].value, gauges[gauge].min_value, gauges[gauge].max_value)
+							if gauges[gauge].text:
+								gauges[gauge].node.set_needle_position(gauges[gauge].value)
+							else:
+								gauges[gauge].node.set_needle_position(gauges[gauge].value, gauges[gauge].min_value, gauges[gauge].max_value)
 					
 					server_packets.USER_LOGOUT:
 						# data: the username of the person who logged out, string

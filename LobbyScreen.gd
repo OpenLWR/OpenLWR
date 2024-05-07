@@ -38,3 +38,5 @@ func _on_connect_button_pressed():
 			get_tree().change_scene_to_file("res://node_3d.tscn")
 		1:
 			get_tree().change_scene_to_file("res://control_room_nmp2.tscn")
+		2:
+			get_tree().change_scene_to_file("res://control_room_columbia.tscn")

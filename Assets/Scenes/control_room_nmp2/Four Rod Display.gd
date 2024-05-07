@@ -14,7 +14,7 @@ func format_position(pos:int):
 		70: #Double X
 			text = "X X"
 		80: #Blank:
-			" "
+			text = " "
 	
 	if abs(pos) != pos: #if the value is negative, this is the selected rod
 		selected = true

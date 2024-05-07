@@ -56,18 +56,20 @@ placeholder_text = "Albert Einstein"
 
 [node name="Scene" type="OptionButton" parent="Panel"]
 layout_mode = 2
-offset_left = 401.8
+offset_left = 381.8
 offset_top = 348.2
-offset_right = 553.8
+offset_right = 604.8
 offset_bottom = 379.2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-item_count = 2
-selected = 1
+item_count = 3
+selected = 2
 popup/item_0/text = "Dev Test"
 popup/item_0/id = 0
-popup/item_1/text = "Control Room"
+popup/item_1/text = "Nine Mile Point - Unit 2"
 popup/item_1/id = 1
+popup/item_2/text = "Columbia"
+popup/item_2/id = 2
 
 [node name="Label" type="Label" parent="Panel/Scene"]
 layout_mode = 1

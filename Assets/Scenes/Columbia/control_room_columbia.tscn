@@ -21,8 +21,8 @@
 [ext_resource type="Script" path="res://Assets/Scenes/Nine Mile Point Unit 2/rod_select_panel.gd" id="23_uaogx"]
 [ext_resource type="Script" path="res://Assets/Common/Annunciators/annunciator.gd" id="24_02a15"]
 [ext_resource type="PackedScene" uid="uid://dmx7kcqtkcpx0" path="res://Assets/Common/Annunciators/annunciator_8x6.tscn" id="25_efym0"]
-[ext_resource type="Material" uid="uid://d2mabc0jor366" path="res://Assets/Materials/orange_plastic.tres" id="26_jf4g3"]
-[ext_resource type="Material" uid="uid://h3pec0eq2wyc" path="res://Assets/Materials/red_plastic.tres" id="27_mwtj8"]
+[ext_resource type="Material" path="res://Assets/Materials/orange_plastic.tres" id="26_jf4g3"]
+[ext_resource type="Material" path="res://Assets/Materials/red_plastic.tres" id="27_mwtj8"]
 [ext_resource type="PackedScene" uid="uid://dvw6yyr4x1mdt" path="res://Assets/Common/Annunciators/annunciator_10x6.tscn" id="29_8fyte"]
 [ext_resource type="Script" path="res://Assets/Common/Annunciators/alarms.gd" id="30_mjcs6"]
 [ext_resource type="AudioStream" uid="uid://bfn1cqw1n0oqs" path="res://Assets/Audio/reactor_alarm_loop.mp3" id="31_l3fxx"]
@@ -3127,6 +3127,9 @@ outline_size = 0
 [node name="reactor_mode_switch" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(-8.9407e-08, 0, -1, 0, 1, 0, 1, 0, -5.96046e-08, 1.01137, 0.228621, -2.35259)
 
+[node name="Cube_003" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/selector_switch/Base/Cube_002" index="0"]
+transform = Transform3D(1, 1.42109e-14, 0, 0, 1, 0, 0, 2.84217e-14, 1, 0, 0, 0)
+
 [node name="Label3D" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/selector_switch" index="2"]
 transform = Transform3D(-0.3, 5.96046e-08, 0, -3.72529e-09, -1.30385e-08, 0.3, 4.47035e-08, 0.3, 1.49012e-08, -8.39233e-05, 0.156525, 0.737564)
 text = "REFUEL"
@@ -3137,9 +3140,11 @@ text = "STARTUP/
 HOT STBY"
 
 [node name="Label3D4" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/selector_switch" index="4"]
+transform = Transform3D(-1.31134e-08, -0.3, 4.47035e-08, 1.31134e-08, 4.47035e-08, 0.3, -0.3, 1.31134e-08, 1.31134e-08, -0.673019, 0.160721, 0.106232)
 text = "RUN"
 
 [node name="Label3D2" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/selector_switch" index="5"]
+transform = Transform3D(-0.212132, 0.212132, 4.47035e-08, 7.45058e-09, -8.19564e-08, 0.3, 0.212132, 0.212132, 1.31134e-08, 0.467735, 0.157074, 0.53817)
 text = "S/D"
 
 [node name="label2" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch"]

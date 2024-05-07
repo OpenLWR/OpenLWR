@@ -1,0 +1,104 @@
+[gd_scene load_steps=9 format=3 uid="uid://crga4wior2o86"]
+
+[ext_resource type="Script" path="res://Assets/Common/Switches/Selector Switch/selector_switch.gd" id="1_t033c"]
+[ext_resource type="PackedScene" uid="uid://cnkhmv4fni50x" path="res://Assets/Common/Switches/Selector Switch 2/selector_switch_2.glb" id="2_jskew"]
+[ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="3_mip2f"]
+[ext_resource type="Material" uid="uid://dqms4q6oxflb7" path="res://Assets/Materials/silver_metal.tres" id="4_2xavh"]
+[ext_resource type="Material" uid="uid://c2raag84b6lqd" path="res://Assets/Materials/black_metal.tres" id="4_i4tw7"]
+[ext_resource type="AudioStream" uid="uid://wlb0cgw34y6m" path="res://Assets/Audio/breaker_switch.mp3" id="6_gwkef"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_isvvb"]
+size = Vector3(0.0273438, 0.0568848, 0.0185547)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a3cg5"]
+
+[node name="Switch" type="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+script = ExtResource("1_t033c")
+
+[node name="Left" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.013, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00195313, 0, -2.22045e-16)
+shape = SubResource("BoxShape3D_isvvb")
+
+[node name="Right" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.013, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Right"]
+shape = SubResource("BoxShape3D_isvvb")
+
+[node name="selector_switch" parent="." instance=ExtResource("2_jskew")]
+transform = Transform3D(0.028, -2.44783e-09, -1.06998e-16, 0, -1.22392e-09, 0.028, -2.44783e-09, -0.028, -1.22392e-09, -3.13202e-11, -0.0016467, 0.0116417)
+
+[node name="Cube_001" parent="selector_switch/Base" index="0"]
+surface_material_override/0 = ExtResource("3_mip2f")
+
+[node name="Sphere_001" parent="selector_switch/Base/Cube_002/Sphere_002" index="0"]
+surface_material_override/0 = ExtResource("4_i4tw7")
+
+[node name="Handle" parent="selector_switch" index="1"]
+transform = Transform3D(0.9, -6.46235e-26, 0, 0, -4.29153e-07, 0.9, 3.23117e-27, -0.9, -4.29153e-07, -2.4869e-14, 0.154928, 0)
+
+[node name="Cube_005" parent="selector_switch/Handle/Cube_004" index="0"]
+surface_material_override/0 = ExtResource("4_2xavh")
+
+[node name="Cylinder_002" parent="selector_switch/Handle" index="1"]
+surface_material_override/0 = ExtResource("3_mip2f")
+
+[node name="Cylinder_003" parent="selector_switch/Handle/Cylinder_004" index="0"]
+surface_material_override/0 = ExtResource("3_mip2f")
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="selector_switch/Handle" index="3"]
+polygon = PackedVector2Array(0.108744, -0.0443115, 0.10631, -0.0371923, 0.0960698, -0.0126681, 0.0949333, -0.0117164, 0.0936432, -0.0129657, 0.0838408, -0.0366397, 0.081579, -0.0429978, 0.0833914, -0.051281, 0.0878973, -0.0555415, 0.0936937, -0.0579047, 0.101825, -0.0562472, 0.106539, -0.0519843)
+depth = 0.01
+material = SubResource("StandardMaterial3D_a3cg5")
+
+[node name="Label3D" type="Label3D" parent="selector_switch"]
+sorting_offset = 1.0
+text = "NORMAL"
+font_size = 50
+outline_size = 0
+
+[node name="Label3D3" type="Label3D" parent="selector_switch"]
+sorting_offset = 1.0
+text = "NORMAL"
+font_size = 50
+outline_size = 0
+
+[node name="Label3D4" type="Label3D" parent="selector_switch"]
+sorting_offset = 1.0
+text = "NORMAL"
+font_size = 50
+outline_size = 0
+
+[node name="Label3D2" type="Label3D" parent="selector_switch"]
+sorting_offset = 1.0
+text = "NORMAL"
+font_size = 50
+outline_size = 0
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(0.382683, 8.57944e-10, 0.92388, 0.92388, -1.284e-09, -0.382683, 2.69838e-08, 0.0317948, -4.03841e-08, 2.11686e-10, -3.1681e-10, 0.00784493)
+radius = 0.0232206
+height = 0.0279754
+smooth_faces = false
+material = ExtResource("3_mip2f")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCylinder3D"]
+transform = Transform3D(1, 2.22045e-16, -2.98023e-08, 0, 1.40623, -1.13687e-13, 2.98023e-08, 1.11022e-16, 1, 0, 0, 0)
+operation = 2
+radius = 0.0176114
+height = 0.0279754
+smooth_faces = false
+material = ExtResource("3_mip2f")
+
+[node name="Move" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("6_gwkef")
+max_distance = 6.0
+
+[connection signal="input_event" from="Left" to="." method="switch_click_left"]
+[connection signal="input_event" from="Right" to="." method="switch_click_right"]
+
+[editable path="selector_switch"]

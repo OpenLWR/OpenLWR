@@ -1,0 +1,451 @@
+[gd_scene load_steps=23 format=3 uid="uid://dp5ytydbdxgoi"]
+
+[ext_resource type="Material" uid="uid://b0b37alwlfoju" path="res://Assets/Materials/white_metal.tres" id="1_rwfib"]
+[ext_resource type="Material" uid="uid://d2mabc0jor366" path="res://Assets/Materials/orange_plastic.tres" id="2_vxtug"]
+[ext_resource type="Material" uid="uid://h3pec0eq2wyc" path="res://Assets/Materials/red_plastic.tres" id="3_kypfr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7kt2m"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0, 0, 0, 1)
+albedo_texture_force_srgb = true
+clearcoat = 0.16
+clearcoat_roughness = 1.0
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_33xpd"]
+emission = Color(1, 0, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nnxcs"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rv32m"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e2wyb"]
+emission = Color(1, 0, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_axjav"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jfspj"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k5ad0"]
+emission = Color(1, 0.447059, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ueovu"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_75ow5"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cj5wa"]
+emission = Color(1, 0.447059, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qnvok"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rw52j"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0rq3l"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vwb2i"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k7f7b"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p6b83"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v78ju"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p3uvq"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Box" type="CSGBox3D" parent="."]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
+size = Vector3(0.0433738, 0.420358, 0.861724)
+material = SubResource("StandardMaterial3D_7kt2m")
+
+[node name="Windows" type="Node3D" parent="Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -0.167073, -0.129722)
+
+[node name="A1" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.288658, 0.455444)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_33xpd")
+
+[node name="Label" type="Label3D" parent="Box/Windows/A1"]
+transform = Transform3D(-7.45058e-09, 1, 1.00583e-07, 8.9407e-08, 2.98023e-08, -1, -0.999999, 0, -8.9407e-08, 0.00259233, -0.0208216, 0.00127029)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "IRM
+TRIP SYSTEM A
+UPSCALE/
+INOPERABLE"
+font_size = 14
+
+[node name="A2" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.178658, 0.455444)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_nnxcs")
+
+[node name="Label" type="Label3D" parent="Box/Windows/A2"]
+transform = Transform3D(-7.45058e-09, 1, 1.00583e-07, 8.9407e-08, 2.98023e-08, -1, -0.999999, 0, -8.9407e-08, 0.00259233, -0.0208235, 0.00126934)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "IRM
+UPSCALE"
+font_size = 14
+
+[node name="A3" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.0686579, 0.455444)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_rv32m")
+
+[node name="Label" type="Label3D" parent="Box/Windows/A3"]
+transform = Transform3D(-7.45058e-09, 1, 1.00583e-07, 8.9407e-08, 2.98023e-08, -1, -0.999999, 0, -8.9407e-08, 0.0025928, -0.0208187, 0.00127029)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "IRM
+DOWNSCALE"
+font_size = 14
+
+[node name="B1" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.288658, 0.325442)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_e2wyb")
+
+[node name="Label" type="Label3D" parent="Box/Windows/B1"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259304, -0.0208235, 0.00127411)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "APRM
+TRIP SYSTEM A
+UPSCALE/
+INOPERABLE"
+font_size = 14
+
+[node name="B2" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.178658, 0.325442)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_axjav")
+
+[node name="Label" type="Label3D" parent="Box/Windows/B2"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259233, -0.0208273, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "APRM
+TRIP SYSTEM
+UPSCALE"
+font_size = 14
+
+[node name="B3" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.0686579, 0.325442)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_jfspj")
+
+[node name="Label" type="Label3D" parent="Box/Windows/B3"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259304, -0.0208225, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "APRM
+TRIP SYSTEM
+DOWNSCALE"
+font_size = 14
+
+[node name="C1" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.288658, 0.195441)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_k5ad0")
+
+[node name="Label" type="Label3D" parent="Box/Windows/C1"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259161, -0.0208216, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "SRM
+UPSCALE/
+INOPERABLE"
+font_size = 14
+
+[node name="C2" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.178658, 0.195441)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_ueovu")
+
+[node name="Label" type="Label3D" parent="Box/Windows/C2"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259161, -0.0208216, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "SRM
+SHORT
+PERIOD"
+font_size = 14
+
+[node name="C3" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.0686579, 0.195441)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_75ow5")
+
+[node name="Label" type="Label3D" parent="Box/Windows/C3"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259161, -0.0208216, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "SRM
+DOWNSCALE"
+font_size = 14
+
+[node name="D1" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.288658, 0.0654407)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_cj5wa")
+
+[node name="Label" type="Label3D" parent="Box/Windows/D1"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259185, -0.0208216, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RBM
+UPSCALE/
+INOPERABLE"
+font_size = 14
+
+[node name="D2" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.178658, 0.0654407)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_qnvok")
+
+[node name="Label" type="Label3D" parent="Box/Windows/D2"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259161, -0.0208216, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RBM
+DOWNSCALE"
+font_size = 14
+
+[node name="D3" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.0686579, 0.0654407)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_rw52j")
+
+[node name="Label" type="Label3D" parent="Box/Windows/D3"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259185, -0.0208206, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "SRM
+DETECTOR
+POSITION
+ABNORMAL"
+font_size = 14
+
+[node name="E1" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.288658, -0.0645604)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_0rq3l")
+
+[node name="Label" type="Label3D" parent="Box/Windows/E1"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259209, -0.0208225, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "LPRM
+UPSCALE"
+font_size = 14
+
+[node name="E2" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.178658, -0.0645604)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_vwb2i")
+
+[node name="Label" type="Label3D" parent="Box/Windows/E2"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259209, -0.0208235, 0.00127411)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "LPRM
+DOWNSCALE"
+font_size = 14
+
+[node name="E3" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.0686579, -0.0645604)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_k7f7b")
+
+[node name="Label" type="Label3D" parent="Box/Windows/E3"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259185, -0.0208206, 0.00127268)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+font_size = 14
+
+[node name="F1" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.288658, -0.194561)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_p6b83")
+
+[node name="Label" type="Label3D" parent="Box/Windows/F1"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259185, -0.0208216, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "FLOW
+REFERENCE
+OFF
+NORMAL"
+font_size = 14
+
+[node name="F2" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.178658, -0.194561)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_v78ju")
+
+[node name="Label" type="Label3D" parent="Box/Windows/F2"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259185, -0.0208216, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+font_size = 14
+
+[node name="F3" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.0686579, -0.194561)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_p3uvq")
+
+[node name="Label" type="Label3D" parent="Box/Windows/F3"]
+transform = Transform3D(0, 1, 1.11759e-07, 8.9407e-08, 2.23517e-08, -1, -1, 0, -5.96046e-08, 0.00259185, -0.0208197, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+font_size = 14
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Box"]
+transform = Transform3D(-1.49012e-07, 0, 1.66667, 0, 1.66666, 0, -1.66667, 0, -1.49012e-07, 0.0189915, -0.181602, 0.000445247)
+size = Vector3(0.153121, 0.0112841, 0.00717134)
+material = ExtResource("1_rwfib")
+
+[node name="Label3D" type="Label3D" parent="Box/CSGBox3D3"]
+transform = Transform3D(0.999999, 2.98023e-08, -1.49012e-08, 0, 1, 0, -2.98023e-08, 1.49012e-08, 0.999999, -4.76837e-07, 0, 0.00378251)
+pixel_size = 0.0003
+modulate = Color(0, 0, 0, 1)
+text = "ANNUNCIATOR 603200"
+font_size = 40
+outline_size = 0
+line_spacing = -2.0
+
+[node name="Outlines" type="Node3D" parent="Box"]
+transform = Transform3D(1.66667, 0, 0, 0, 1.66667, 0, 0, 0, 1.66667, -1.65686, -2.19397, 1.5791)
+
+[node name="OrangeOutline2" type="CSGBox3D" parent="Box/Outlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.39027, -0.986119)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_vxtug")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/Outlines/OrangeOutline2"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_vxtug")
+
+[node name="OrangeOutline3" type="CSGBox3D" parent="Box/Outlines"]
+transform = Transform3D(0.0478192, -0.205031, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.39027, -0.908752)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_vxtug")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/Outlines/OrangeOutline3"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_vxtug")
+
+[node name="OrangeOutline4" type="CSGBox3D" parent="Box/Outlines"]
+transform = Transform3D(0.0478192, -0.205031, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.39027, -0.83013)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_kypfr")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/Outlines/OrangeOutline4"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_vxtug")
+
+[node name="OrangeOutline5" type="CSGBox3D" parent="Box/Outlines"]
+transform = Transform3D(0.0478192, -0.205031, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.39027, -0.751762)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_kypfr")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/Outlines/OrangeOutline5"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_vxtug")

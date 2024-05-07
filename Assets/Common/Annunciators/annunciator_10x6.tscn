@@ -1,0 +1,1402 @@
+[gd_scene load_steps=53 format=3 uid="uid://dvw6yyr4x1mdt"]
+
+[ext_resource type="Material" uid="uid://b0b37alwlfoju" path="res://Assets/Materials/white_metal.tres" id="1_uu5ew"]
+[ext_resource type="Material" uid="uid://h3pec0eq2wyc" path="res://Assets/Materials/red_plastic.tres" id="2_qsug3"]
+[ext_resource type="Material" uid="uid://d2mabc0jor366" path="res://Assets/Materials/orange_plastic.tres" id="3_yihfw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oti7f"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0, 0, 0, 1)
+albedo_texture_force_srgb = true
+clearcoat = 0.16
+clearcoat_roughness = 1.0
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sd5m8"]
+emission = Color(1, 0, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rr8fw"]
+emission = Color(1, 0, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bjhaj"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x7d23"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_akp2y"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0m3dy"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_af6ul"]
+emission = Color(1, 0, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ldmi6"]
+emission = Color(1, 0, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hb8fe"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aj3yx"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5t11s"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ieim"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d15fv"]
+emission = Color(1, 0, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ahiwt"]
+emission = Color(1, 0, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8013q"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7t1y2"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qkjfm"]
+emission = Color(1, 0.447059, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p3sys"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hy1id"]
+emission = Color(1, 0, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5hkfy"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mgnek"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xfv6h"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p25yw"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rs4fh"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ep0ak"]
+emission = Color(1, 0, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a5b3v"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qwruj"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xgsus"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5lywm"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d8beo"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eetst"]
+emission = Color(1, 0, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mcuen"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_86qk4"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hyng3"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gx75x"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nkvf7"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gaohx"]
+emission = Color(1, 0, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i0574"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3py66"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ojo7d"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vf8ob"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d5pi3"]
+emission = Color(1, 0.447059, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nmua0"]
+emission = Color(1, 0, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n18bp"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b71vh"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lkkj1"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7nyxi"]
+emission = Color(1, 1, 1, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uxxtb"]
+emission = Color(1, 0.447059, 0, 1)
+backlight = Color(1, 0.537255, 0, 1)
+refraction_enabled = true
+
+[node name="Node3D3" type="Node3D"]
+
+[node name="Box" type="CSGBox3D" parent="."]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, -0.0751961)
+size = Vector3(0.0433738, 0.748432, 1.36653)
+material = SubResource("StandardMaterial3D_oti7f")
+
+[node name="Windows" type="Node3D" parent="Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.125327)
+
+[node name="A1" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.288658, 0.455444)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_sd5m8")
+
+[node name="Label" type="Label3D" parent="Box/Windows/A1"]
+transform = Transform3D(-4.37113e-08, 1, -4.47035e-08, 0, -3.72529e-08, -1, -0.999999, -4.37114e-08, 1.91069e-15, 0.00259233, -0.0208216, 0.00127029)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+DRYWELL
+PRESSURE HIGH
+TRIP"
+font_size = 14
+
+[node name="A2" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.178658, 0.455444)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_rr8fw")
+
+[node name="Label" type="Label3D" parent="Box/Windows/A2"]
+transform = Transform3D(-4.37113e-08, 1, -4.47035e-08, 0, -3.72529e-08, -1, -0.999999, -4.37114e-08, 1.91069e-15, 0.00259233, -0.0208236, 0.00126946)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+DISCH VOLUME
+HIGH LEVEL
+TRIP"
+font_size = 14
+
+[node name="A3" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.0686579, 0.455444)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_bjhaj")
+
+[node name="Label" type="Label3D" parent="Box/Windows/A3"]
+transform = Transform3D(-4.37113e-08, 1, -4.47035e-08, 0, -3.72529e-08, -1, -0.999999, -4.37114e-08, 1.91069e-15, 0.0025928, -0.0208187, 0.00127029)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+SDV
+HIGH LEVEL
+BYPASSED"
+font_size = 14
+
+[node name="A4" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, -0.041342, 0.455444)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_x7d23")
+
+[node name="Label" type="Label3D" parent="Box/Windows/A4"]
+transform = Transform3D(-4.37113e-08, 1, -4.47035e-08, 0, -3.72529e-08, -1, -0.999999, -4.37114e-08, 1.91069e-15, 0.0025928, -0.0208243, 0.00127029)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DIVISION I
+REACTOR
+WATER LEVEL
+LO/LO"
+font_size = 14
+
+[node name="A5" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, -0.151342, 0.455444)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_akp2y")
+
+[node name="Label" type="Label3D" parent="Box/Windows/A5"]
+transform = Transform3D(-4.37113e-08, 1, -4.47035e-08, 0, -3.72529e-08, -1, -0.999999, -4.37114e-08, 1.91069e-15, 0.00259304, -0.0208236, 0.00126946)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "MN STEAM LINE
+RADIATION
+HIGH"
+font_size = 14
+
+[node name="A6" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, -0.261341, 0.455444)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_0m3dy")
+
+[node name="Label" type="Label3D" parent="Box/Windows/A6"]
+transform = Transform3D(-4.37113e-08, 1, -4.47035e-08, 0, -3.72529e-08, -1, -0.999999, -4.37114e-08, 1.91069e-15, 0.00259304, -0.0208215, 0.00127029)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "FD WTR SYSTEM
+REACTOR
+WATER LEVEL
+HIGH"
+font_size = 14
+
+[node name="B1" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.288658, 0.325442)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_af6ul")
+
+[node name="Label" type="Label3D" parent="Box/Windows/B1"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259304, -0.0208235, 0.00127423)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+NMS
+TRIP"
+font_size = 14
+
+[node name="B2" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.178658, 0.325442)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_ldmi6")
+
+[node name="Label" type="Label3D" parent="Box/Windows/B2"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259233, -0.0208273, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+AUTO
+TRIP"
+font_size = 14
+
+[node name="B3" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.0686579, 0.325442)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_hb8fe")
+
+[node name="Label" type="Label3D" parent="Box/Windows/B3"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259304, -0.0208224, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+TRIP UNIT
+OUT OF FILE/
+POWER FAILURE"
+font_size = 14
+
+[node name="B4" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, -0.041342, 0.325442)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_aj3yx")
+
+[node name="Label" type="Label3D" parent="Box/Windows/B4"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259233, -0.0208243, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DIVISION I
+MN STEAM LINE
+FLOW
+HIGH"
+font_size = 14
+
+[node name="B5" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, -0.151342, 0.325442)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_5t11s")
+
+[node name="Label" type="Label3D" parent="Box/Windows/B5"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259256, -0.0208302, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "MN STEAM LINE
+RADIATION
+DOWNSCALE/
+FAILURE"
+font_size = 14
+
+[node name="B6" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, -0.261341, 0.325442)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_2ieim")
+
+[node name="Label" type="Label3D" parent="Box/Windows/B6"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259209, -0.0208234, 0.00127423)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "FEEDWATER
+SYSTEM
+CONTROL
+SIGNAL FAILURE"
+font_size = 14
+
+[node name="C1" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.288658, 0.195441)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_d15fv")
+
+[node name="Label" type="Label3D" parent="Box/Windows/C1"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259161, -0.0208216, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+REACTOR
+PRESSURE HIGH
+TRIP"
+font_size = 14
+
+[node name="C2" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.178658, 0.195441)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_ahiwt")
+
+[node name="Label" type="Label3D" parent="Box/Windows/C2"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259161, -0.0208216, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+MANUAL
+TRIP"
+font_size = 14
+
+[node name="C3" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.0686579, 0.195441)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_8013q")
+
+[node name="Label" type="Label3D" parent="Box/Windows/C3"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259161, -0.0208216, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+ISOL INPUT CD
+OUT OF FILE/
+POWER FAILURE"
+font_size = 14
+
+[node name="C4" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, -0.041342, 0.195441)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_7t1y2")
+
+[node name="Label" type="Label3D" parent="Box/Windows/C4"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259113, -0.0208235, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DIVISION I
+MN STEAM LINE
+PRESSURE
+LOW"
+font_size = 14
+
+[node name="C5" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, -0.151342, 0.195441)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_qkjfm")
+
+[node name="Label" type="Label3D" parent="Box/Windows/C5"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259113, -0.0208235, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "FEEDWATER
+SHUTOFF VALVE
+MOV 21A/21B
+BYPASS INOP"
+font_size = 14
+
+[node name="C6" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, -0.261341, 0.195441)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_p3sys")
+
+[node name="Label" type="Label3D" parent="Box/Windows/C6"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259113, -0.0208216, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "FD WTR CONT V
+10A/10B/10C
+ACTUATOR
+TROUBLE"
+font_size = 14
+
+[node name="D1" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.288658, 0.0654407)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_hy1id")
+
+[node name="Label" type="Label3D" parent="Box/Windows/D1"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259209, -0.0208217, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+TURB CONT VLV
+FAST CLOSE
+TRIP"
+font_size = 14
+
+[node name="D2" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.178658, 0.0654407)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_5hkfy")
+
+[node name="Label" type="Label3D" parent="Box/Windows/D2"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259209, -0.0208217, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+CONT & STOP V
+CLOSURE
+BYPASS
+"
+font_size = 14
+
+[node name="D3" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.0686579, 0.0654407)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_mgnek")
+
+[node name="Label" type="Label3D" parent="Box/Windows/D3"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259185, -0.0208207, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+ISOLATOR
+OUTPUT CARD
+OUT OF FILE"
+font_size = 14
+
+[node name="D4" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.041342, 0.0654407)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_xfv6h")
+
+[node name="Label" type="Label3D" parent="Box/Windows/D4"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259233, -0.0208254, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DIVISION I
+CONDENSER
+VACUUM
+LOW"
+font_size = 14
+
+[node name="D5" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.151342, 0.0654407)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_p25yw")
+
+[node name="Label" type="Label3D" parent="Box/Windows/D5"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259185, -0.0208224, 0.00127411)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "FEEDWATER
+SHUTOFF VALVE
+MOV 21A/21B
+MOT OVERLOAD"
+font_size = 14
+
+[node name="D6" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.261341, 0.0654407)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_rs4fh")
+
+[node name="Label" type="Label3D" parent="Box/Windows/D6"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259089, -0.0208216, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "REACTOR WATER
+DRAIN VALVE
+MOV 128/129
+NOT CLOSED"
+font_size = 14
+
+[node name="E1" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.288658, -0.0645604)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_ep0ak")
+
+[node name="Label" type="Label3D" parent="Box/Windows/E1"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259233, -0.0208224, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+REACTOR
+WTR LEVEL LOW
+TRIP"
+font_size = 14
+
+[node name="E2" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.178658, -0.0645604)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_a5b3v")
+
+[node name="Label" type="Label3D" parent="Box/Windows/E2"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259209, -0.0208235, 0.00127411)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+MANUAL
+SCRAM SWITCH
+ARMED"
+font_size = 14
+
+[node name="E3" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.0686579, -0.0645604)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_qwruj")
+
+[node name="E4" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.041342, -0.0645604)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_xgsus")
+
+[node name="Label" type="Label3D" parent="Box/Windows/E4"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259161, -0.0208255, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DIVISION I
+CONDENSER
+VACUUM LOW
+BYPASSED"
+font_size = 14
+
+[node name="E5" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.151342, -0.0645604)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_5lywm")
+
+[node name="Label" type="Label3D" parent="Box/Windows/E5"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259185, -0.0208255, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DIVISION I
+CONTMT ISOL
+MANUAL
+ISOLATION"
+font_size = 14
+
+[node name="E6" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.261341, -0.0645604)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_d8beo")
+
+[node name="Label" type="Label3D" parent="Box/Windows/E6"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259185, -0.0208224, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "TIP SHEAR VLV
+FIRED/
+CKT ABNORMAL"
+font_size = 14
+
+[node name="F1" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.288658, -0.194561)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_eetst")
+
+[node name="Label" type="Label3D" parent="Box/Windows/F1"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259209, -0.0208217, 0.00127208)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+TURB STOP VLV
+CLOSURE
+TRIP"
+font_size = 14
+
+[node name="F2" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.178658, -0.194561)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_mcuen")
+
+[node name="Label" type="Label3D" parent="Box/Windows/F2"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259209, -0.0208217, 0.00127208)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS
+CHANNEL A1
+120VAC POWER
+FAILURE"
+font_size = 14
+
+[node name="F3" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.0686579, -0.194561)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_86qk4")
+
+[node name="Label" type="Label3D" parent="Box/Windows/F3"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259209, -0.0208197, 0.00127208)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "SDV
+TRIP UNIT
+IN CALIB/
+GROSS FAILURE"
+font_size = 14
+
+[node name="F4" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.041342, -0.194561)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_hyng3")
+
+[node name="Label" type="Label3D" parent="Box/Windows/F4"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259256, -0.0208244, 0.00127268)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "SDV
+LEVEL
+HIGH"
+font_size = 14
+
+[node name="F5" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.151342, -0.194561)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_gx75x")
+
+[node name="Label" type="Label3D" parent="Box/Windows/F5"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259256, -0.0208244, 0.00127268)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+TRIP UNIT
+IN CALIB/
+GROSS FAILURE"
+font_size = 14
+
+[node name="F6" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.261341, -0.194561)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_nkvf7")
+
+[node name="Label" type="Label3D" parent="Box/Windows/F6"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259185, -0.0208217, 0.00127208)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+font_size = 14
+
+[node name="G1" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.288658, -0.324563)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_gaohx")
+
+[node name="Label" type="Label3D" parent="Box/Windows/G1"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259328, -0.0208254, 0.00127518)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+MN STM LINE
+RADN HIGH
+TRIP"
+font_size = 14
+
+[node name="G2" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.178658, -0.324563)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_i0574")
+
+[node name="Label" type="Label3D" parent="Box/Windows/G2"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259376, -0.0208225, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS
+CHANNEL A2
+120VAC POWER
+FAILURE"
+font_size = 14
+
+[node name="G3" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.0686579, -0.324563)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_3py66")
+
+[node name="Label" type="Label3D" parent="Box/Windows/G3"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259352, -0.0208243, 0.00127459)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "SDV
+TRIP UNIT
+OUT OF FILE/
+POWER FAILURE"
+font_size = 14
+
+[node name="G4" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.041342, -0.324563)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_ojo7d")
+
+[node name="Label" type="Label3D" parent="Box/Windows/G4"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259328, -0.0208292, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "REACTOR
+PRESSURE
+HIGH"
+font_size = 14
+
+[node name="G5" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.151342, -0.324563)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_vf8ob")
+
+[node name="Label" type="Label3D" parent="Box/Windows/G5"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259376, -0.0208225, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "REACTOR
+WATER LEVEL
+HIGH/LOW"
+font_size = 14
+
+[node name="G6" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.261341, -0.324563)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_d5pi3")
+
+[node name="Label" type="Label3D" parent="Box/Windows/G6"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259233, -0.0208254, 0.00127518)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+SYSTEM
+INOPERABLE"
+font_size = 14
+
+[node name="H1" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.288658, -0.454564)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_nmua0")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H1"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259113, -0.0208216, 0.00127292)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+MSIV CLOSURE
+TRIP"
+font_size = 14
+
+[node name="H2" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.178658, -0.454564)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_n18bp")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H2"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259113, -0.0208205, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+MSIV
+CLOSURE TRIP
+BYPASSED"
+font_size = 14
+
+[node name="H3" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.0686579, -0.454564)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_b71vh")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H3"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259113, -0.0208215, 0.00127292)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+MODE SWITCH
+SHUTDOWN
+SCRAM BYPASS"
+font_size = 14
+
+[node name="H4" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.041342, -0.454564)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_lkkj1")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H4"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259209, -0.0208244, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS NON DIV
+TRIP UNIT
+IN CALIB/
+GROSS FAILURE"
+font_size = 14
+
+[node name="H5" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.151342, -0.454564)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_7nyxi")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H5"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259209, -0.0208244, 0.00127363)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DRYWELL
+PRESSURE
+HIGH/LOW"
+font_size = 14
+
+[node name="H6" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.261341, -0.454564)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_uxxtb")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H6"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259161, -0.0208187, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RECIRC PUMPS
+TRIP SYSTEM A
+INOPERABLE"
+font_size = 14
+
+[node name="H7" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.288658, -0.584701)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_nmua0")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H7"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259113, -0.0208216, 0.00127292)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+MSIV CLOSURE
+TRIP"
+font_size = 14
+
+[node name="H8" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.178658, -0.584701)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_n18bp")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H8"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259113, -0.0208205, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+MSIV
+CLOSURE TRIP
+BYPASSED"
+font_size = 14
+
+[node name="H9" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.0686579, -0.584701)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_b71vh")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H9"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259113, -0.0208215, 0.00127292)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+MODE SWITCH
+SHUTDOWN
+SCRAM BYPASS"
+font_size = 14
+
+[node name="H10" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.041342, -0.584701)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_lkkj1")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H10"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259209, -0.0208244, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS NON DIV
+TRIP UNIT
+IN CALIB/
+GROSS FAILURE"
+font_size = 14
+
+[node name="H11" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.151342, -0.584701)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_7nyxi")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H11"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259209, -0.0208244, 0.00127363)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DRYWELL
+PRESSURE
+HIGH/LOW"
+font_size = 14
+
+[node name="H12" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.261341, -0.584701)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_uxxtb")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H12"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259161, -0.0208187, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RECIRC PUMPS
+TRIP SYSTEM A
+INOPERABLE"
+font_size = 14
+
+[node name="H13" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.288658, -0.714608)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_nmua0")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H13"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259113, -0.0208216, 0.00127292)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+MSIV CLOSURE
+TRIP"
+font_size = 14
+
+[node name="H14" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.178658, -0.714608)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_n18bp")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H14"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259113, -0.0208205, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+MSIV
+CLOSURE TRIP
+BYPASSED"
+font_size = 14
+
+[node name="H15" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.0686579, -0.714608)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_b71vh")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H15"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259113, -0.0208215, 0.00127292)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS A
+MODE SWITCH
+SHUTDOWN
+SCRAM BYPASS"
+font_size = 14
+
+[node name="H16" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.041342, -0.714608)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_lkkj1")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H16"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259209, -0.0208244, 0.0012722)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RPS NON DIV
+TRIP UNIT
+IN CALIB/
+GROSS FAILURE"
+font_size = 14
+
+[node name="H17" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.151342, -0.714608)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_7nyxi")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H17"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259209, -0.0208244, 0.00127363)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DRYWELL
+PRESSURE
+HIGH/LOW"
+font_size = 14
+
+[node name="H18" type="CSGBox3D" parent="Box/Windows"]
+transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, -0.261341, -0.714608)
+size = Vector3(0.108, 0.04, 0.129)
+material = SubResource("StandardMaterial3D_uxxtb")
+
+[node name="Label" type="Label3D" parent="Box/Windows/H18"]
+transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259161, -0.0208187, 0.00127316)
+sorting_offset = 10.0
+pixel_size = 0.001
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RECIRC PUMPS
+TRIP SYSTEM A
+INOPERABLE"
+font_size = 14
+
+[node name="OrangeOutlines" type="Node3D" parent="Box"]
+transform = Transform3D(1.66667, 0, 0, 0, 1.66667, 0, 0, 0, 1.66667, -1.65686, -2.19397, 1.70443)
+
+[node name="OrangeOutline" type="CSGBox3D" parent="Box/OrangeOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.16056, -1.21987)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_yihfw")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/OrangeOutlines/OrangeOutline"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="OrangeOutline2" type="CSGBox3D" parent="Box/OrangeOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.16056, -1.1419)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("3_yihfw")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/OrangeOutlines/OrangeOutline2"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("3_yihfw")
+
+[node name="RedOutlines" type="Node3D" parent="Box"]
+transform = Transform3D(1.66667, 0, 0, 0, 1.66667, 0, 0, 0, 1.66667, -1.65686, -2.19397, 1.70443)
+
+[node name="OrangeOutline4" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -1.22054)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline4"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="OrangeOutline5" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -1.14235)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline5"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="OrangeOutline6" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -1.06416)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline6"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="OrangeOutline7" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -0.985967)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline7"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="OrangeOutline8" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -0.907777)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline8"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="OrangeOutline9" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -0.829587)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline9"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="OrangeOutline10" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -0.751397)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline10"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="OrangeOutline11" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.48923, -0.673207)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline11"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="OrangeOutline12" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.42363, -0.673207)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline12"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="OrangeOutline13" type="CSGBox3D" parent="Box/RedOutlines"]
+transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01263, 1.42363, -0.751397)
+size = Vector3(0.108, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="Subtract" type="CSGBox3D" parent="Box/RedOutlines/OrangeOutline13"]
+transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+operation = 2
+size = Vector3(0.0962942, 0.04, 0.129)
+material = ExtResource("2_qsug3")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Box"]
+transform = Transform3D(-1.49012e-07, 0, 1.66667, 0, 1.66666, 0, -1.66667, 0, -1.49012e-07, 0.0189918, -0.344047, -0.00380845)
+size = Vector3(0.153121, 0.0112841, 0.00717134)
+material = ExtResource("1_uu5ew")
+
+[node name="Label3D" type="Label3D" parent="Box/CSGBox3D"]
+transform = Transform3D(0.999999, 2.98023e-08, -1.49012e-08, 0, 1, 0, -2.98023e-08, 1.49012e-08, 0.999999, -4.76837e-07, 0, 0.00378251)
+pixel_size = 0.0003
+modulate = Color(0, 0, 0, 1)
+text = "ANNUNCIATOR 603100"
+font_size = 40
+outline_size = 0
+line_spacing = -2.0

@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="Reactor"
-run/main_scene="res://lobby.tscn"
+run/main_scene="res://Assets/Scenes/Lobby/lobby.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-globals="*res://Assets/Scripts/globals.gd"
+globals="*res://Assets/Main Scripts/globals.gd"
 
 [filesystem]
 

@@ -225,12 +225,20 @@ var buttons = {
 		"momentary": false,
 		"updated": false,
 	},
-	"ALARM_SILENCE_1": {
+	
+	"SCRAM_RESET_A": {
 		"switch": null,
 		"state": false,
 		"momentary": false,
 		"updated": false,
 	},
+	"SCRAM_RESET_B": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"updated": false,
+	},
+	
 	"ALARM_ACK_1": {
 		"switch": null,
 		"state": false,
@@ -411,6 +419,27 @@ var alarm_groups = {
 	
 	"cr_light_normal": null,
 	"cr_light_emergency": null,
+	
+	"APRM_A_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A/UPSCALE_INOP".get_material(),
+	"APRM_B_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B/UPSCALE_INOP".get_material(),
+	"APRM_C_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C/UPSCALE_INOP".get_material(),
+	"APRM_D_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D/UPSCALE_INOP".get_material(),
+	"APRM_E_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E/UPSCALE_INOP".get_material(),
+	"APRM_F_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F/UPSCALE_INOP".get_material(),
+	
+	"APRM_A_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A/UPSCALE".get_material(),
+	"APRM_B_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B/UPSCALE".get_material(),
+	"APRM_C_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C/UPSCALE".get_material(),
+	"APRM_D_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D/UPSCALE".get_material(),
+	"APRM_E_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E/UPSCALE".get_material(),
+	"APRM_F_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F/UPSCALE".get_material(),
+
+	"APRM_A_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A/DOWNSCALE".get_material(),
+	"APRM_B_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B/DOWNSCALE".get_material(),
+	"APRM_C_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C/DOWNSCALE".get_material(),
+	"APRM_D_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D/DOWNSCALE".get_material(),
+	"APRM_E_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E/DOWNSCALE".get_material(),
+	"APRM_F_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F/DOWNSCALE".get_material(),
 	
 }
 

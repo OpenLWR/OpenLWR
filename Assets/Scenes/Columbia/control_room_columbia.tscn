@@ -1,4 +1,4 @@
-[gd_scene load_steps=269 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=290 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -21,6 +21,7 @@
 [ext_resource type="Script" path="res://Assets/Scenes/Nine Mile Point Unit 2/rod_select_panel.gd" id="23_uaogx"]
 [ext_resource type="Script" path="res://Assets/Common/Annunciators/annunciator.gd" id="24_02a15"]
 [ext_resource type="PackedScene" uid="uid://dmx7kcqtkcpx0" path="res://Assets/Common/Annunciators/annunciator_8x6.tscn" id="25_efym0"]
+[ext_resource type="AudioStream" uid="uid://h63ya0mtowh1" path="res://Assets/Audio/CGSPanelAlarm.mp3" id="26_77or2"]
 [ext_resource type="Material" path="res://Assets/Materials/orange_plastic.tres" id="26_jf4g3"]
 [ext_resource type="Material" path="res://Assets/Materials/red_plastic.tres" id="27_mwtj8"]
 [ext_resource type="PackedScene" uid="uid://dvw6yyr4x1mdt" path="res://Assets/Common/Annunciators/annunciator_10x6.tscn" id="29_8fyte"]
@@ -106,6 +107,9 @@ albedo_color = Color(0.537255, 0.0784314, 0.0431373, 1)
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ikmfu"]
 height = 0.797993
 radius = 0.429731
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_82s6k"]
+albedo_color = Color(0.701961, 0.643137, 0.52549, 0.752941)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cis0m"]
 albedo_color = Color(0.535444, 0.709759, 0.787381, 1)
@@ -238,6 +242,113 @@ emission = Color(0.953162, 0.322496, 0, 1)
 emission_energy_multiplier = 2.0
 clearcoat = 0.16
 clearcoat_roughness = 1.0
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q0yel"]
+emission_enabled = true
+emission = Color(1, 0.25098, 0.0235294, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pfvhn"]
+emission_enabled = true
+emission = Color(0.979269, 0.501547, 0, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ww5q"]
+emission = Color(0.639216, 0.639216, 0.639216, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v2t82"]
+emission = Color(0.639216, 0.639216, 0.639216, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ec1u1"]
+emission_enabled = true
+emission = Color(1, 0.25098, 0.0235294, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i6dwf"]
+emission_enabled = true
+emission = Color(0.979269, 0.501547, 0, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h1niu"]
+emission = Color(0.639216, 0.639216, 0.639216, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mqohd"]
+emission_enabled = true
+emission = Color(1, 0.25098, 0.0235294, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_18tsh"]
+emission_enabled = true
+emission = Color(0.979269, 0.501547, 0, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oeu7b"]
+emission = Color(0.639216, 0.639216, 0.639216, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y6qsp"]
+emission_enabled = true
+emission = Color(1, 0.25098, 0.0235294, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nc5gh"]
+emission_enabled = true
+emission = Color(0.979269, 0.501547, 0, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_al73j"]
+emission = Color(0.639216, 0.639216, 0.639216, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nb0ey"]
+emission_enabled = true
+emission = Color(1, 0.25098, 0.0235294, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ooxkf"]
+emission_enabled = true
+emission = Color(0.979269, 0.501547, 0, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qtxn7"]
+emission = Color(0.639216, 0.639216, 0.639216, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7it4e"]
+emission_enabled = true
+emission = Color(1, 0.25098, 0.0235294, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qn3fg"]
+emission_enabled = true
+emission = Color(0.979269, 0.501547, 0, 1)
+backlight = Color(1, 0, 0, 1)
+refraction_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h4if0"]
+emission = Color(0.639216, 0.639216, 0.639216, 1)
+backlight = Color(1, 0, 0, 1)
 refraction_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2dm8g"]
@@ -2912,7 +3023,7 @@ size = Vector3(0.002, 0.0239888, 0.071291)
 material = ExtResource("3_pvt5y")
 
 [node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM2/label2"]
-transform = Transform3D(-2.09548e-09, 9.31323e-10, 0.05, 0, 0.07, -9.31323e-10, -0.05, 0, -1.86265e-09, 0.00111972, 0, 4.76837e-07)
+transform = Transform3D(-1.86265e-09, 0, 0.05, 0, 0.07, -9.31323e-10, -0.05, 0, -2.32831e-09, 0.00111973, 0, 2.38419e-07)
 modulate = Color(0, 0, 0, 1)
 text = "REACTOR SCRAM
 LOGIC B2"
@@ -3025,24 +3136,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.237748, 0)
 shape = SubResource("CylinderShape3D_ikmfu")
 
 [node name="Annunciation" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls"]
-transform = Transform3D(-0.199367, 0.979924, 0, -0.979924, -0.199368, 0, 0, 0, 1, 1.36717, 0.038075, -2.76097)
+transform = Transform3D(-0.199367, 0.979924, 0, -0.979924, -0.199368, 0, 0, 0, 1, 1.90655, -0.071664, -0.240426)
 
 [node name="CSGPolygon3D2" type="CSGPolygon3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
-transform = Transform3D(0, -0.000903593, 0.242249, 2.23517e-08, 0.10354, 0.00211398, -0.242729, 2.23517e-08, 0, 0.241103, -0.302353, -1.14401)
+transform = Transform3D(0, -0.000903588, 0.242249, 1.49012e-08, 0.10354, 0.00211398, -0.216459, 1.86265e-08, 0, 0.241103, -0.302355, -1.21352)
 polygon = PackedVector2Array(1, 0.95, 1, 0.05, 0.97, 0, 0.03, 0, 0, 0.05, 0, 0.95, 0.03, 1, 0.97, 1)
-material = SubResource("StandardMaterial3D_qbqto")
-
-[node name="ALARM_SILENCE_1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
-transform = Transform3D(-0.999963, 0.0087267, 0, -0.00872615, -0.999963, 0, 0, 0, 1, -0.00202006, -0.232256, -1.18421)
-use_collision = true
-size = Vector3(0.002, 0.042, 0.042)
-material = SubResource("StandardMaterial3D_umpcg")
-script = ExtResource("14_bc77r")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_SILENCE_1"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_SILENCE_1/StaticBody3D"]
-shape = SubResource("BoxShape3D_hjk8c")
+material = SubResource("StandardMaterial3D_82s6k")
 
 [node name="ALARM_ACK_1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
 transform = Transform3D(-0.999963, 0.0087267, 0, -0.00872615, -0.999963, 0, 0, 0, 1, -0.00202009, -0.232255, -1.24251)
@@ -3057,7 +3156,7 @@ script = ExtResource("14_bc77r")
 shape = SubResource("BoxShape3D_hjk8c")
 
 [node name="ALARM_RESET_1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
-transform = Transform3D(-0.999963, 0.0087267, 0, -0.00872615, -0.999963, 0, 0, 0, 1, -0.00202009, -0.232255, -1.2986)
+transform = Transform3D(-0.999963, 0.00872669, 0, -0.00872613, -0.999963, 0, 0, 0, 1, -0.00202006, -0.232256, -1.32301)
 use_collision = true
 size = Vector3(0.002, 0.042, 0.042)
 material = SubResource("StandardMaterial3D_umpcg")
@@ -3069,7 +3168,7 @@ script = ExtResource("14_bc77r")
 shape = SubResource("BoxShape3D_hjk8c")
 
 [node name="pain" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
-transform = Transform3D(-0.999963, 0.0087267, 0, -0.00872615, -0.999963, 0, 0, 0, 1, -0.00202009, -0.232255, -1.35342)
+transform = Transform3D(-0.999963, 0.00872669, 0, -0.00872613, -0.999963, 0, 0, 0, 1, -0.00202012, -0.232255, -1.39714)
 use_collision = true
 size = Vector3(0.002, 0.042, 0.042)
 material = SubResource("StandardMaterial3D_umpcg")
@@ -3080,20 +3179,11 @@ material = SubResource("StandardMaterial3D_umpcg")
 shape = SubResource("BoxShape3D_hjk8c")
 
 [node name="Rod Motion Blocks4" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
-transform = Transform3D(1.04308e-07, -4.32134e-07, -1, -5.96046e-08, -1, 6.70552e-08, -1, 8.9407e-08, -4.47035e-08, -0.00196323, -0.287911, -1.26933)
+transform = Transform3D(1.19209e-07, -4.32134e-07, -1, -5.96046e-08, -1, 7.45058e-08, -1, 8.9407e-08, -3.72529e-08, -0.0019632, -0.287912, -1.32245)
 sorting_offset = 10.0
 pixel_size = 0.0005
 shaded = true
 text = "ANNUNCIATION"
-font_size = 16
-outline_size = 0
-
-[node name="Rod Motion Blocks5" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
-transform = Transform3D(1.04308e-07, -5.21541e-07, -1, -5.96046e-08, -1, 3.72529e-08, -1, 8.9407e-08, -3.72529e-08, -0.00196341, -0.262863, -1.18432)
-sorting_offset = 10.0
-pixel_size = 0.0005
-shaded = true
-text = "SILENCE"
 font_size = 16
 outline_size = 0
 
@@ -3107,7 +3197,7 @@ font_size = 16
 outline_size = 0
 
 [node name="Rod Motion Blocks7" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
-transform = Transform3D(1.04308e-07, -5.51343e-07, -1, -5.96046e-08, -1, 5.21541e-08, -1, 8.9407e-08, -3.72529e-08, -0.00196335, -0.262863, -1.29797)
+transform = Transform3D(1.11759e-07, -5.43892e-07, -1, -5.96046e-08, -1, 5.96046e-08, -1, 5.96046e-08, -4.47035e-08, -0.00196344, -0.262863, -1.32314)
 sorting_offset = 10.0
 pixel_size = 0.0005
 shaded = true
@@ -3116,7 +3206,7 @@ font_size = 16
 outline_size = 0
 
 [node name="Rod Motion Blocks8" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Annunciation"]
-transform = Transform3D(1.04308e-07, -5.66244e-07, -1, -5.96046e-08, -1, 5.96046e-08, -1, 8.9407e-08, -4.47035e-08, -0.00196359, -0.262863, -1.35301)
+transform = Transform3D(1.19209e-07, -5.66244e-07, -1, -5.96046e-08, -1, 7.45058e-08, -1, 8.9407e-08, -3.72529e-08, -0.00196373, -0.262864, -1.39769)
 sorting_offset = 10.0
 pixel_size = 0.0005
 shaded = true
@@ -3502,6 +3592,361 @@ ENERG"
 font_size = 40
 outline_size = 0
 
+[node name="APRM_STATUS" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls"]
+transform = Transform3D(0.981627, 0.190809, 0, -0.190809, 0.981627, 0, 0, 0, 1, 1.01772, 0.104539, -1.79148)
+
+[node name="A" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS"]
+transform = Transform3D(1, 1.49012e-08, 0, 2.98023e-08, 1, 0, 0, 0, 1, -0.00940609, 2.98023e-08, 0)
+
+[node name="UPSCALE_INOP" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A"]
+transform = Transform3D(1, -1.49012e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, 0, 0, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_q0yel")
+
+[node name="UPSCALE" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A"]
+transform = Transform3D(1, -1.49012e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, 0.0148816, 2.98023e-08, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_pfvhn")
+
+[node name="DOWNSCALE" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A"]
+transform = Transform3D(1, -2.98023e-08, 0, -1.49012e-08, 1, 0, 0, 0, 1, 0.0299129, 8.9407e-08, 2.38419e-07)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_3ww5q")
+
+[node name="BYPASS" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A"]
+transform = Transform3D(1, -2.98023e-08, 0, -1.49012e-08, 1, 0, 0, 0, 1, 0.0447946, 8.9407e-08, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_v2t82")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A"]
+transform = Transform3D(0, -0.03, -2.32831e-09, 2.32831e-10, -4.65661e-10, 0.03, -0.03, 0, 0, 8.67844e-05, 0.00447157, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "UPSC TRIP
+OR INOP
+"
+outline_size = 0
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -9.31323e-10, 0.03, -0.03, 0, 0, 0.0144258, 0.00447157, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "UPSC
+ALARM"
+outline_size = 0
+
+[node name="Label3D3" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -1.39698e-09, 0.03, -0.03, 0, 0, 0.0300255, 0.0044716, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "DNSC"
+outline_size = 0
+
+[node name="Label3D4" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A"]
+transform = Transform3D(0, -0.03, -1.39698e-09, 2.32831e-10, -9.31323e-10, 0.03, -0.03, 0, 0, 0.0439696, 0.00447175, 2.38419e-06)
+modulate = Color(0, 0, 0, 1)
+text = "BYPASS"
+outline_size = 0
+
+[node name="C" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS"]
+transform = Transform3D(1, 2.98023e-08, 0, 4.47035e-08, 1, 0, 0, 0, 1, -0.00940561, 5.96046e-08, -0.0303783)
+
+[node name="UPSCALE_INOP" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C"]
+transform = Transform3D(1, -1.49012e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, 0, 0, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_ec1u1")
+
+[node name="UPSCALE" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C"]
+transform = Transform3D(1, -1.49012e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, 0.0148816, 2.98023e-08, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_i6dwf")
+
+[node name="DOWNSCALE" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C"]
+transform = Transform3D(1, -2.98023e-08, 0, -1.49012e-08, 1, 0, 0, 0, 1, 0.0299129, 8.9407e-08, 2.38419e-07)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_h1niu")
+
+[node name="BYPASS" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C"]
+transform = Transform3D(1, -2.98023e-08, 0, -1.49012e-08, 1, 0, 0, 0, 1, 0.0447946, 8.9407e-08, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_v2t82")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C"]
+transform = Transform3D(0, -0.03, -2.32831e-09, 2.32831e-10, -4.65661e-10, 0.03, -0.03, 0, 0, 8.67844e-05, 0.00447157, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "UPSC TRIP
+OR INOP
+"
+outline_size = 0
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -9.31323e-10, 0.03, -0.03, 0, 0, 0.0144258, 0.00447157, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "UPSC
+ALARM"
+outline_size = 0
+
+[node name="Label3D3" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -1.39698e-09, 0.03, -0.03, 0, 0, 0.0300255, 0.0044716, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "DNSC"
+outline_size = 0
+
+[node name="Label3D4" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -1.86265e-09, 0.03, -0.03, 0, 0, 0.0439701, 0.00447163, 2.38419e-06)
+modulate = Color(0, 0, 0, 1)
+text = "BYPASS"
+outline_size = 0
+
+[node name="E" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS"]
+transform = Transform3D(1, 1.49012e-08, 0, 4.47035e-08, 1, 0, 0, 0, 1, -0.00940561, 2.98023e-08, -0.0606401)
+
+[node name="UPSCALE_INOP" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E"]
+transform = Transform3D(1, -1.49012e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, 0, 0, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_mqohd")
+
+[node name="UPSCALE" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E"]
+transform = Transform3D(1, -1.49012e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, 0.0148816, 2.98023e-08, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_18tsh")
+
+[node name="DOWNSCALE" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E"]
+transform = Transform3D(1, -2.98023e-08, 0, -1.49012e-08, 1, 0, 0, 0, 1, 0.0299129, 8.9407e-08, 2.38419e-07)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_oeu7b")
+
+[node name="BYPASS" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E"]
+transform = Transform3D(1, -2.98023e-08, 0, -1.49012e-08, 1, 0, 0, 0, 1, 0.0447946, 8.9407e-08, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_v2t82")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E"]
+transform = Transform3D(0, -0.03, -2.32831e-09, 2.32831e-10, -4.65661e-10, 0.03, -0.03, 0, 0, 8.67844e-05, 0.00447157, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "UPSC TRIP
+OR INOP
+"
+outline_size = 0
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -9.31323e-10, 0.03, -0.03, 0, 0, 0.0144258, 0.00447157, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "UPSC
+ALARM"
+outline_size = 0
+
+[node name="Label3D3" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -1.39698e-09, 0.03, -0.03, 0, 0, 0.0300255, 0.0044716, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "DNSC"
+outline_size = 0
+
+[node name="Label3D4" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -1.86265e-09, 0.03, -0.03, 0, 0, 0.0439701, 0.00447163, 2.38419e-06)
+modulate = Color(0, 0, 0, 1)
+text = "BYPASS"
+outline_size = 0
+
+[node name="B" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS"]
+transform = Transform3D(1, 2.98023e-08, 0, 4.47035e-08, 1, 0, 0, 0, 1, -0.00940561, 0, -1.17105)
+
+[node name="UPSCALE_INOP" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B"]
+transform = Transform3D(1, -1.49012e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, 0, 0, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_y6qsp")
+
+[node name="UPSCALE" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B"]
+transform = Transform3D(1, -1.49012e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, 0.0148816, 2.98023e-08, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_nc5gh")
+
+[node name="DOWNSCALE" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B"]
+transform = Transform3D(1, -2.98023e-08, 0, -1.49012e-08, 1, 0, 0, 0, 1, 0.0299129, 8.9407e-08, 2.38419e-07)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_al73j")
+
+[node name="BYPASS" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B"]
+transform = Transform3D(1, -2.98023e-08, 0, -1.49012e-08, 1, 0, 0, 0, 1, 0.0447946, 8.9407e-08, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_v2t82")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B"]
+transform = Transform3D(0, -0.03, -2.32831e-09, 2.32831e-10, -4.65661e-10, 0.03, -0.03, 0, 0, 8.67844e-05, 0.00447157, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "UPSC TRIP
+OR INOP
+"
+outline_size = 0
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -9.31323e-10, 0.03, -0.03, 0, 0, 0.0144258, 0.00447157, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "UPSC
+ALARM"
+outline_size = 0
+
+[node name="Label3D3" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -1.39698e-09, 0.03, -0.03, 0, 0, 0.0300255, 0.0044716, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "DNSC"
+outline_size = 0
+
+[node name="Label3D4" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -1.86265e-09, 0.03, -0.03, 0, 0, 0.0439701, 0.00447163, 2.38419e-06)
+modulate = Color(0, 0, 0, 1)
+text = "BYPASS"
+outline_size = 0
+
+[node name="D" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS"]
+transform = Transform3D(1, 1.49012e-08, 0, 4.47035e-08, 1, 0, 0, 0, 1, -0.00940561, 5.96046e-08, -1.20143)
+
+[node name="UPSCALE_INOP" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D"]
+transform = Transform3D(1, -1.49012e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, 0, 0, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_nb0ey")
+
+[node name="UPSCALE" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D"]
+transform = Transform3D(1, -1.49012e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, 0.0148816, 2.98023e-08, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_ooxkf")
+
+[node name="DOWNSCALE" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D"]
+transform = Transform3D(1, -2.98023e-08, 0, -1.49012e-08, 1, 0, 0, 0, 1, 0.0299129, 8.9407e-08, 2.38419e-07)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_qtxn7")
+
+[node name="BYPASS" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D"]
+transform = Transform3D(1, -2.98023e-08, 0, -1.49012e-08, 1, 0, 0, 0, 1, 0.0447946, 8.9407e-08, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_v2t82")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D"]
+transform = Transform3D(0, -0.03, -2.32831e-09, 2.32831e-10, -4.65661e-10, 0.03, -0.03, 0, 0, 8.67844e-05, 0.00447157, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "UPSC TRIP
+OR INOP
+"
+outline_size = 0
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -9.31323e-10, 0.03, -0.03, 0, 0, 0.0144258, 0.00447157, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "UPSC
+ALARM"
+outline_size = 0
+
+[node name="Label3D3" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -1.39698e-09, 0.03, -0.03, 0, 0, 0.0300255, 0.0044716, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "DNSC"
+outline_size = 0
+
+[node name="Label3D4" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -1.86265e-09, 0.03, -0.03, 0, 0, 0.0439701, 0.00447163, 2.38419e-06)
+modulate = Color(0, 0, 0, 1)
+text = "BYPASS"
+outline_size = 0
+
+[node name="F" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS"]
+transform = Transform3D(1, 2.98023e-08, 0, 5.96046e-08, 1, 0, 0, 0, 1, -0.00940561, -2.98023e-08, -1.23169)
+
+[node name="UPSCALE_INOP" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F"]
+transform = Transform3D(1, -1.49012e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, 0, 0, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_7it4e")
+
+[node name="UPSCALE" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F"]
+transform = Transform3D(1, -1.49012e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, 0.0148816, 2.98023e-08, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_qn3fg")
+
+[node name="DOWNSCALE" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F"]
+transform = Transform3D(1, -2.98023e-08, 0, -1.49012e-08, 1, 0, 0, 0, 1, 0.0299129, 8.9407e-08, 2.38419e-07)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_h4if0")
+
+[node name="BYPASS" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F"]
+transform = Transform3D(1, -2.98023e-08, 0, -1.49012e-08, 1, 0, 0, 0, 1, 0.0447946, 8.9407e-08, 0)
+size = Vector3(0.015, 0.007, 0.03)
+material = SubResource("StandardMaterial3D_v2t82")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F"]
+transform = Transform3D(0, -0.03, -2.32831e-09, 2.32831e-10, -4.65661e-10, 0.03, -0.03, 0, 0, 8.67844e-05, 0.00447157, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "UPSC TRIP
+OR INOP
+"
+outline_size = 0
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -9.31323e-10, 0.03, -0.03, 0, 0, 0.0144258, 0.00447157, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "UPSC
+ALARM"
+outline_size = 0
+
+[node name="Label3D3" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -1.39698e-09, 0.03, -0.03, 0, 0, 0.0300255, 0.0044716, 2.14577e-06)
+modulate = Color(0, 0, 0, 1)
+text = "DNSC"
+outline_size = 0
+
+[node name="Label3D4" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F"]
+transform = Transform3D(0, -0.03, -1.86265e-09, 2.32831e-10, -1.86265e-09, 0.03, -0.03, 0, 0, 0.0439701, 0.00447163, 2.38419e-06)
+modulate = Color(0, 0, 0, 1)
+text = "BYPASS"
+outline_size = 0
+
+[node name="SCRAM_RESET_A" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls"]
+transform = Transform3D(-0.199368, 0.979924, 0, -0.979924, -0.199368, 0, 0, 0, 1, 1.548, -0.00104612, -3.12414)
+use_collision = true
+size = Vector3(0.002, 0.042, 0.042)
+material = SubResource("StandardMaterial3D_2dm8g")
+script = ExtResource("14_bc77r")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_A"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_A/StaticBody3D"]
+shape = SubResource("BoxShape3D_7k5lw")
+
+[node name="label5" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_A"]
+transform = Transform3D(-0.999962, 0.00651613, 0, -0.00872618, -0.746653, 0, 0, 0, 1, 0.000207782, -0.0353928, -0.000134468)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.071291)
+material = ExtResource("3_pvt5y")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_A/label5"]
+transform = Transform3D(-1.86265e-09, 0, 0.05, 0, 0.07, -9.31323e-10, -0.05, 0, -2.32831e-09, 0.00111973, 0, 2.38419e-07)
+modulate = Color(0, 0, 0, 1)
+text = "REACTOR SCRAM
+RESET LOGIC A"
+font_size = 20
+outline_size = 0
+
+[node name="SCRAM_RESET_B" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls"]
+transform = Transform3D(-0.199368, 0.979924, 0, -0.979924, -0.199368, 0, 0, 0, 1, 1.548, -0.00104612, -3.20268)
+use_collision = true
+size = Vector3(0.002, 0.042, 0.042)
+material = SubResource("StandardMaterial3D_2dm8g")
+script = ExtResource("14_bc77r")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_B"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_B/StaticBody3D"]
+shape = SubResource("BoxShape3D_7k5lw")
+
+[node name="label5" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_B"]
+transform = Transform3D(-0.999962, 0.00651613, 0, -0.00872618, -0.746653, 0, 0, 0, 1, 0.000207782, -0.0353928, -0.000134468)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.071291)
+material = ExtResource("3_pvt5y")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_B/label5"]
+transform = Transform3D(-1.86265e-09, 0, 0.05, 0, 0.07, -9.31323e-10, -0.05, 0, -2.32831e-09, 0.00111973, 0, 2.38419e-07)
+modulate = Color(0, 0, 0, 1)
+text = "REACTOR SCRAM
+RESET LOGIC A"
+font_size = 20
+outline_size = 0
+
 [node name="Full Core Display" type="Node3D" parent="Control Room Panels/Main Panel Center"]
 transform = Transform3D(0, 0, -0.75, 0, 0.75, 0, 0.75, 0, 0, 1.00228, 1.01165, -2.40535)
 
@@ -3589,7 +4034,7 @@ outline_size = 16
 transform = Transform3D(1, 7.45058e-08, 0, -2.98023e-08, 1, 0, 0, 0, 1, -0.00148284, 0, -1.43051e-06)
 
 [node name="RMCS_INSERT_PB" type="CSGBox3D" parent="Rod Select Panel/Panel 2/Lights and buttons"]
-transform = Transform3D(1, 7.45058e-08, 0, -1.3411e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.184999, 0.0300002)
+transform = Transform3D(1, 7.45058e-08, 0, -1.19209e-07, 1, 0, 0, 0, 1, -5.96046e-08, 0.184999, 0.03)
 use_collision = true
 size = Vector3(0.002, 0.042, 0.042)
 material = SubResource("StandardMaterial3D_2dm8g")
@@ -9228,7 +9673,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.55557, 2.31361, 2.79219)
 script = ExtResource("30_mjcs6")
 
 [node name="Fast" type="AudioStreamPlayer" parent="Alarm1"]
-stream = ExtResource("31_l3fxx")
+stream = ExtResource("26_77or2")
 
 [node name="Slow" type="AudioStreamPlayer" parent="Alarm1"]
 stream = ExtResource("32_nxmn4")
@@ -9330,10 +9775,11 @@ omni_range = 17.632
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM1/Node3D2/SCRAM_B1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM1/Node3D2/SCRAM_B1" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM2/Node3D/SCRAM_A2/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM2/Node3D/SCRAM_A2" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM2/Node3D2/SCRAM_B2/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM2/Node3D2/SCRAM_B2" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_SILENCE_1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_SILENCE_1" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_ACK_1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_ACK_1" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_RESET_1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_RESET_1" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Annunciation/pain/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Annunciation/pain" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_A/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_A" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_B/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_B" method="switch_click"]
 [connection signal="input_event" from="Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_PB/StaticBody3D" to="Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_PB" method="switch_click"]
 [connection signal="input_event" from="Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_PB/StaticBody3D" to="Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_PB" method="switch_click"]
 [connection signal="input_event" from="Rod Select Panel/Safety Covers/RodMotionOverrides/StaticBody3D" to="Rod Select Panel/Safety Covers/RodMotionOverrides/StaticBody3D" method="_on_input_event"]

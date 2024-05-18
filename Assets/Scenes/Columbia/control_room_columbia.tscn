@@ -1,4 +1,4 @@
-[gd_scene load_steps=285 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=287 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -23,11 +23,10 @@
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="21_y8sv6"]
 [ext_resource type="Script" path="res://Assets/Scenes/Nine Mile Point Unit 2/rod_select_panel.gd" id="23_uaogx"]
 [ext_resource type="Script" path="res://Assets/Common/Annunciators/annunciator.gd" id="24_02a15"]
-[ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="25_6in2t"]
-[ext_resource type="PackedScene" uid="uid://dmx7kcqtkcpx0" path="res://Assets/Common/Annunciators/annunciator_8x6.tscn" id="25_efym0"]
 [ext_resource type="AudioStream" uid="uid://h63ya0mtowh1" path="res://Assets/Audio/CGSPanelAlarm.mp3" id="26_77or2"]
+[ext_resource type="Texture2D" uid="uid://c8q4aym8ckihj" path="res://Assets/Textures/AnnunciatorTriangle.png" id="26_ud3n4"]
+[ext_resource type="PackedScene" uid="uid://bwi0yuo7jm8bp" path="res://Assets/Common/Annunciators/annunciator_cgs_8x6.tscn" id="27_6jg2m"]
 [ext_resource type="Material" path="res://Assets/Materials/red_plastic.tres" id="27_mwtj8"]
-[ext_resource type="PackedScene" uid="uid://dvw6yyr4x1mdt" path="res://Assets/Common/Annunciators/annunciator_10x6.tscn" id="29_8fyte"]
 [ext_resource type="Script" path="res://Assets/Common/Annunciators/alarms.gd" id="30_mjcs6"]
 [ext_resource type="AudioStream" uid="uid://bfn1cqw1n0oqs" path="res://Assets/Audio/reactor_alarm_loop.mp3" id="31_l3fxx"]
 [ext_resource type="AudioStream" uid="uid://bqm26847iqdj1" path="res://Assets/Audio/electrical_alarm_loop.mp3" id="32_nxmn4"]
@@ -2086,50 +2085,53 @@ refraction_enabled = true
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xa3lg"]
 albedo_color = Color(0.00362519, 0.00934596, 0.012812, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sixdk"]
-emission = Color(1, 0, 0, 1)
-backlight = Color(1, 0.537255, 0, 1)
-refraction_enabled = true
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c1cb8"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtsoi"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4jef3"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qal4j"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ec62"]
 emission = Color(1, 1, 1, 1)
-backlight = Color(1, 0.537255, 0, 1)
-refraction_enabled = true
+emission_energy_multiplier = 1.9
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eiwhn"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r1so6"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ijh84"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ryfe"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ukdp4"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3s48m"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6lb8r"]
 emission = Color(1, 1, 1, 1)
-backlight = Color(1, 0.537255, 0, 1)
-refraction_enabled = true
+emission_energy_multiplier = 1.9
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gmwdk"]
-emission = Color(1, 1, 1, 1)
-backlight = Color(1, 0.537255, 0, 1)
-refraction_enabled = true
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rfm4u"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dwco3"]
-emission = Color(1, 1, 1, 1)
-backlight = Color(1, 0.537255, 0, 1)
-refraction_enabled = true
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wmn37"]
-emission = Color(1, 1, 1, 1)
-backlight = Color(1, 0.537255, 0, 1)
-refraction_enabled = true
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8whq1"]
-emission = Color(1, 0.447059, 0, 1)
-backlight = Color(1, 0.537255, 0, 1)
-refraction_enabled = true
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rbkxj"]
-emission = Color(1, 1, 1, 1)
-backlight = Color(1, 0.537255, 0, 1)
-refraction_enabled = true
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0akmc"]
-emission = Color(1, 0.447059, 0, 1)
-backlight = Color(1, 0.537255, 0, 1)
-refraction_enabled = true
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w25c2"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_4t1fm")
@@ -2211,6 +2213,7 @@ transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 
 
 [node name="hpcs_p_1" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 7.62955, 0.0655675, 5.64766)
+script = null
 
 [node name="Left" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_p_1" index="0"]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
@@ -2353,6 +2356,7 @@ visible = false
 
 [node name="cb_4_2" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 7.53484, 0.0940377, 5.74237)
+script = null
 
 [node name="Left" parent="Control Room Panels/Main Panel Left Side/Controls/cb_4_2" index="0"]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
@@ -2522,6 +2526,7 @@ outline_size = 0
 
 [node name="hpcs_v_4" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("13_r65ec")]
 transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 7.41804, 0.0655057, 5.43617)
+script = null
 
 [node name="selector_switch" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4" index="0"]
 transform = Transform3D(-1, 8.74228e-08, 3.82137e-15, 3.55271e-15, -1.49012e-08, 1, 8.74228e-08, 1, 1.49012e-08, 0, 0.00783634, -0.000158787)
@@ -8568,650 +8573,646 @@ material = SubResource("StandardMaterial3D_xa3lg")
 [node name="Annunciators" type="Node3D" parent="."]
 script = ExtResource("24_02a15")
 
-[node name="Box1" parent="Annunciators" instance=ExtResource("25_efym0")]
-transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 8.2612, 2.11625, 1.49981)
+[node name="Box1" parent="Annunciators" instance=ExtResource("27_6jg2m")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 8.20568, 2.12677, 1.55294)
 
-[node name="B2" parent="Annunciators/Box1/Box/Windows" index="7"]
-material = SubResource("StandardMaterial3D_sixdk")
+[node name="Label3D" parent="Annunciators/Box1/Windows/1-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
 
-[node name="Label" parent="Annunciators/Box1/Box/Windows/H5" index="0"]
-transform = Transform3D(-1.74846e-08, 0.4, -1.74846e-08, 0, -1.74846e-08, -0.4, -0.4, -1.74846e-08, 7.64274e-16, 0.00259209, -0.0208244, 0.00127363)
-text = "CRD PUMP
-SUCTION FLTR
-DP HIGH"
-font = ExtResource("25_6in2t")
-font_size = 40
+[node name="CSGBox3D" parent="Annunciators/Box1/Windows/1-7" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671387, -0.109344)
 
-[node name="Box4" parent="Annunciators" instance=ExtResource("25_efym0")]
-transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.21203, 2.11625, 3.54897)
+[node name="Label3D" parent="Annunciators/Box1/Windows/1-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "RPIS OR
+RWM INOP"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/A1" index="0"]
-transform = Transform3D(-4.47035e-08, 1, -2.98023e-08, 0, -4.47035e-08, -1, -0.999999, -4.09782e-08, 0, 0.00259137, -0.0208225, 0.000285864)
-text = "RPS B
-DRYWELL
-PRESSURE HIGH
-TRIP"
+[node name="Label3D" parent="Annunciators/Box1/Windows/1-6/CSGBox3D" index="0"]
+text = "CRD PUMP A
+SUCTION
+PRESS LOW"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/A2" index="0"]
-text = "RPS B
-DISCH VOLUME
-HIGH LEVEL
-TRIP"
+[node name="Label3D" parent="Annunciators/Box1/Windows/1-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/A3" index="0"]
-text = "RPS B
-SDV
-HIGH LEVEL
-BYPASSED"
+[node name="Label3D" parent="Annunciators/Box1/Windows/1-4/CSGBox3D" index="0"]
+text = "MAIN
+STEAM LINE
+RADIATION TRIP"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/A4" index="0"]
-text = "DIVISION II
-REACTOR
-WATER LEVEL
-LO/LO"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/A5" index="0"]
+[node name="Label3D" parent="Annunciators/Box1/Windows/1-3/CSGBox3D" index="0"]
 text = "SDV
-DRAIN
-AOV 123
-CLOSED"
+LEVEL HIGH
+TRIP"
 
-[node name="A6" parent="Annunciators/Box4/Box/Windows" index="5"]
-material = SubResource("StandardMaterial3D_gtsoi")
+[node name="CSGBox3D" parent="Annunciators/Box1/Windows/1-2" index="1"]
+material = SubResource("StandardMaterial3D_c1cb8")
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/A6" index="0"]
+[node name="Label3D" parent="Annunciators/Box1/Windows/1-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "REACTOR SCRAM
+A1 AND B1
+LOSS"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/1-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "ANNUNCIATOR
+125 VDC
+LOSS"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/2-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
 text = "ROD DRIVE
-ACCUMULATOR
-TROUBLE"
+CONTROL SYS
+INOP"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/B1" index="0"]
-transform = Transform3D(-4.47035e-08, 1, -3.72529e-08, 0, -3.72529e-08, -1, -1, -4.47035e-08, 0, 0.00259304, -0.0208225, 0.00127411)
-text = "RPS B
-NMS
-TRIP"
+[node name="CSGBox3D" parent="Annunciators/Box1/Windows/2-7" index="1"]
+material = SubResource("StandardMaterial3D_4jef3")
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/B2" index="0"]
-text = "RPS B
-AUTO
-TRIP"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/B3" index="0"]
-text = "RPS B
-TRIP UNIT
-OUT OF FILE/
-POWER FAILURE"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/B4" index="0"]
-text = "DIVISION II
-MN STEAM LINE
-FLOW
-HIGH"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/B5" index="0"]
-text = "SDV
-DRAIN
-AOV 130
-CLOSED"
-
-[node name="B6" parent="Annunciators/Box4/Box/Windows" index="11"]
-material = SubResource("StandardMaterial3D_eiwhn")
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/B6" index="0"]
-text = "CONTROL
-ROD
+[node name="Label3D" parent="Annunciators/Box1/Windows/2-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "ROD
 OUT
 BLOCK"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/C1" index="0"]
-text = "RPS B
-REACTOR
-PRESSURE HIGH
+[node name="Label3D" parent="Annunciators/Box1/Windows/2-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "CRD PUMP B
+SUCTION
+PRESS LOW"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/2-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/Box1/Windows/2-4" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00169373, 0.00671387, -0.109329)
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/2-4/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "OPRM TRIP
+RPS-A"
+
+[node name="CSGBox3D" parent="Annunciators/Box1/Windows/2-3" index="1"]
+material = SubResource("StandardMaterial3D_qal4j")
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/2-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "RPV
+LEVEL LOW
+TRIP +13\""
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/2-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "RPV
+PRESS HIGH
 TRIP"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/C2" index="0"]
-text = "RPS B
-MANUAL
+[node name="Label3D" parent="Annunciators/Box1/Windows/2-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "MSIV
+CLOSURE TRIP"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/3-8/CSGBox3D" index="0"]
+text = "CRD
+CHARGE WATER
+PRESS LOW"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/3-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "OPRM ENABLED
+RPS-A"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/3-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "CRD
+DRIVE WATER
+FILTER
+ΔP HIGH"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/3-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "IRM
+MONITORS
+UPSCALE"
+
+[node name="3-4" parent="Annunciators/Box1/Windows" index="20"]
+transform = Transform3D(0, 0, 0.03, 0, 0.03, 0, -0.03, 0, 0, 0.0136123, 0.0557945, 0.118167)
+
+[node name="CSGBox3D" parent="Annunciators/Box1/Windows/3-4" index="1"]
+material = SubResource("StandardMaterial3D_3ec62")
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/3-4/CSGBox3D" index="0"]
+text = "1/2 SCRAM
+SYSTEM 'A'"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/3-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "NEUTRON
+MONITOR
+SYSTEM
 TRIP"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/C3" index="0"]
-text = "RPS B
-ISOL INPUT CD
-OUT OF FILE/
-POWER FAILURE"
+[node name="Label3D" parent="Annunciators/Box1/Windows/3-2/CSGBox3D" index="0"]
+text = "TURBINE
+SV CLOSURE
+TRIP"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/C4" index="0"]
-text = "DIVISION II
-MN STEAM LINE
-PRESSURE
-LOW"
+[node name="Label3D" parent="Annunciators/Box1/Windows/3-1/CSGBox3D" index="0"]
+text = "ATWS-ARI
+TRIP"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/C5" index="0"]
+[node name="Label3D" parent="Annunciators/Box1/Windows/4-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = ""
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/4-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "ROD & DET
+DISPLAY
+TEMP HIGH"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/4-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "CRD PUMPS
+ABNORMAL
+OPERATION"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/4-5/CSGBox3D" index="0"]
+text = "IRM
+MONITORS
+DOWNSCALE"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/4-4/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "TURBINE
+CV FAST
+THROTTLE CLOSE
+TRIP"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/4-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
 text = "SDV
-VENT
-AOV 124
-CLOSED"
+LEVEL HIGH
+TRIP BYPASS"
 
-[node name="C6" parent="Annunciators/Box4/Box/Windows" index="17"]
-material = SubResource("StandardMaterial3D_gmwdk")
+[node name="Label3D" parent="Annunciators/Box1/Windows/4-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "TURBINE
+SV CLOSURE
+TRIP BYPASS"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/C6" index="0"]
-text = "CONTROL
-ROD
-DRIFT"
+[node name="Label3D" parent="Annunciators/Box1/Windows/4-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "ATWS-ARI
+IN TEST/
+LOSS OF POWER"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/D1" index="0"]
-text = "RPS B
-TURB CONT VLV
-FAST CLOSE
-TRIP"
+[node name="Label3D" parent="Annunciators/Box1/Windows/5-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = "CRD PUMP
+SUCTION FLTR
+ΔP HIGH"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/D2" index="0"]
-text = "RPS B
-CONT & STOP V
-CLOSURE
-BYPASS
-"
+[node name="CSGBox3D" parent="Annunciators/Box1/Windows/5-7" index="1"]
+material = SubResource("StandardMaterial3D_r1so6")
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/D3" index="0"]
-text = "RPS B
-ISOLATOR
-OUTPUT CARD
-OUT OF FILE"
+[node name="Label3D" parent="Annunciators/Box1/Windows/5-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "ROD DRIFT"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/D4" index="0"]
-text = "DIVISION II
-CONDENSER
-VACUUM
-LOW"
+[node name="CSGBox3D" parent="Annunciators/Box1/Windows/5-6" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00169373, 0.00671387, -0.109329)
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/D5" index="0"]
-text = "SDV
-VENT
-AOV 132
-CLOSED"
+[node name="Label3D" parent="Annunciators/Box1/Windows/5-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "SRM
+PERIOD
+FAST"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/D6" index="0"]
-text = "CONTROL
-ROD
-OVERTRAVEL"
+[node name="Label3D" parent="Annunciators/Box1/Windows/5-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "SRM DET
+RETRACTED
+WHEN NOT
+PERMITTED"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/E1" index="0"]
-transform = Transform3D(-4.47035e-08, 1, -3.72529e-08, 0, -3.72529e-08, -1, -1, -4.47035e-08, 0, 0.00259233, -0.0208216, 0.00127268)
-text = "RPS B
-REACTOR
-WTR LEVEL LOW
-TRIP"
+[node name="Label3D" parent="Annunciators/Box1/Windows/5-4/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "TURBINE
+CV FAST
+THROTTLE CLOSE
+TRIP BYPASS"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/E2" index="0"]
-text = "RPS B
-MANUAL
-SCRAM SWITCH
-ARMED"
+[node name="Label3D" parent="Annunciators/Box1/Windows/5-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "DRYWELL
+PRESS
+HIGH/LOW
+ALERT"
 
-[node name="Label" type="Label3D" parent="Annunciators/Box4/Box/Windows/E3" index="0"]
-transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, -4.44089e-16, -3.72529e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0.00259209, -0.0208235, 0.00127411)
-sorting_offset = 10.0
-pixel_size = 0.001
-shaded = true
-modulate = Color(0, 0, 0, 1)
-text = "DIV I/II RRCS
-MANUAL
-INITIATION
-ARMED"
-font_size = 14
+[node name="Label3D" parent="Annunciators/Box1/Windows/5-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "MODE SWITCH
+IN SHUTDOWN
+POSITION"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/E5" index="0"]
-text = "DIVISION II
-CONTMT ISOL
-MANUAL
-ISOLATION"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/E6" index="0"]
-transform = Transform3D(-4.47035e-08, 1, -3.72529e-08, 0, -3.72529e-08, -1, -1, -4.47035e-08, 0, 0.00259137, -0.0208225, 0.00127268)
-text = "DIVISION I/II
-RRCS
+[node name="Label3D" parent="Annunciators/Box1/Windows/5-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "RPS
+TRIP UNIT
 TROUBLE"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/F1" index="0"]
-transform = Transform3D(-4.47035e-08, 1, -3.72529e-08, 0, -3.72529e-08, -1, -1, -4.47035e-08, 0, 0.00259185, -0.0208225, 0.00127172)
-text = "RPS B
-TURB STOP VLV
-CLOSURE
+[node name="Label3D" parent="Annunciators/Box1/Windows/6-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/Box1/Windows/6-7" index="1"]
+material = SubResource("StandardMaterial3D_ijh84")
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/6-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "ROD
+ACCUMULATOR
+TROUBLE"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/6-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "SRM
+MONITORS
+DOWNSCALE"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/6-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "SRM
+MONITORS
+UPSCL OR INOP"
+
+[node name="Label3D" parent="Annunciators/Box1/Windows/6-4/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "DRYWELL
+PRESS HIGH
 TRIP"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/F2" index="0"]
-text = "RPS
-CHANNEL B1
-120VAC POWER
-FAILURE"
+[node name="Label3D" parent="Annunciators/Box1/Windows/6-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/F3" index="0"]
-text = "DIVISION I/II
-RRCS
-POTENTIAL
-ATWS"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/F4" index="0"]
-text = "DIVISION I/II
-RRCS
-FW RUNBACK
-DISABLED"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/F5" index="0"]
-text = "RPS B
-TRIP UNIT
-IN CALIB/
-GROSS FAILURE"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/F6" index="0"]
-text = "CRD PUMP
-DISCH HEADER
-PRESSURE
-LOW"
-metadata/_edit_lock_ = true
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/G1" index="0"]
-transform = Transform3D(-4.47035e-08, 1, -3.72529e-08, 0, -3.72529e-08, -1, -1, -4.47035e-08, 0, 0.00259352, -0.0208254, 0.00127506)
-text = "RPS B
-MN STM LINE
-RADN HIGH
-TRIP"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/G2" index="0"]
-text = "RPS
-CHANNEL B2
-120VAC POWER
-FAILURE"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/G3" index="0"]
-text = "DIVISION I/II
-RRCS
-RECIRC PUMPS
-TRIP"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/G4" index="0"]
-text = "DIVISION I/II
-RRCS
-FW RUNBACK
-INITIATED"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/G5" index="0"]
-text = "DIVISION I/II
-RRCS
-CONFIRMED
-ATWS"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/G6" index="0"]
-text = "RPS B
-SYSTEM
-INOPERABLE"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/H1" index="0"]
-text = "RPS B
-MSIV CLOSURE
-TRIP"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/H2" index="0"]
-text = "RPS B
-MSIV
-CLOSURE TRIP
-BYPASSED"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/H3" index="0"]
-text = "RPS B
-MODE SWITCH
-SHUTDOWN
-SCRAM BYPASS"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/H4" index="0"]
-text = "DIVISION I/II
-RRCS
-MANUAL
-INITIATED"
-
-[node name="Label" parent="Annunciators/Box4/Box/Windows/H5" index="0"]
-text = "DIVISION I/II
-RRCS
+[node name="Label3D" parent="Annunciators/Box1/Windows/6-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "SLC DIV 1
 OUT OF
 SERVICE"
 
-[node name="Label" parent="Annunciators/Box4/Box/Windows/H6" index="0"]
-text = "RECIRC PUMPS
-TRIP SYSTEM B
-INOPERABLE"
+[node name="Label3D" parent="Annunciators/Box1/Windows/6-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "RPS SYS A
+OUT OF
+SERVICE"
 
-[node name="Label3D" parent="Annunciators/Box4/Box/CSGBox3D" index="0"]
-text = "ANNUNCIATOR 603400"
+[node name="Triangle" parent="Annunciators/Box1" index="3"]
+transform = Transform3D(-4.65661e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.65661e-10, 0.0133395, 0.0788476, 0.108312)
 
-[node name="Elec_Box1" parent="Annunciators" instance=ExtResource("25_efym0")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52179, 2.54259, -7.88397)
+[node name="Triangle2" type="Sprite3D" parent="Annunciators/Box1"]
+transform = Transform3D(-4.65661e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.65661e-10, 0.0133395, 0.0788476, 0.204294)
+shaded = true
+double_sided = false
+texture = ExtResource("26_ud3n4")
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/A1" index="0"]
-text = "DIVISION 1
-EDG 1
-START SYSTEM
-INOPERABLE"
+[node name="Triangle3" type="Sprite3D" parent="Annunciators/Box1"]
+transform = Transform3D(-4.65661e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.65661e-10, 0.0133405, -0.166197, 0.0123229)
+shaded = true
+double_sided = false
+texture = ExtResource("26_ud3n4")
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/A2" index="0"]
-text = "DIVISION 1
-EDG 1
-START SYSTEM
+[node name="Box2" parent="Annunciators" instance=ExtResource("27_6jg2m")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.25768, 2.12677, 3.50093)
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/1-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = "RFW
+VLV CONTROL
+SIGNAL FAIL"
+
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/1-7" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671387, -0.109344)
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/1-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "OPRM POWER
+SUPPLY
 TROUBLE"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/A3" index="0"]
-transform = Transform3D(-4.37113e-08, 1, -4.47035e-08, 7.10543e-15, -2.98023e-08, -1, -0.999999, -4.37114e-08, -7.10543e-15, 0.00259304, -0.0208178, 0.00127029)
-text = "EDG 1
-RUNNING"
+[node name="Label3D" parent="Annunciators/Box2/Windows/1-6/CSGBox3D" index="0"]
+text = "APRM
+UPSCL
+TRIP OR INOP"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/A4" index="0"]
-text = "EDG 1
-OVERSPEED
+[node name="Label3D" parent="Annunciators/Box2/Windows/1-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "IRM
+UPSCL
+TRIP OR INOP"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/1-4/CSGBox3D" index="0"]
+text = "MAIN
+STEAM LINE
+RADIATION TRIP"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/1-3/CSGBox3D" index="0"]
+text = "SDV
+LEVEL HIGH
 TRIP"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/A5" index="0"]
-transform = Transform3D(-4.37113e-08, 1, -4.47035e-08, 7.10543e-15, -2.98023e-08, -1, -0.999999, -4.37114e-08, -7.10543e-15, 0.00259304, -0.0208225, 0.00127029)
-text = "EDG 1
-OVERVOLTAGE"
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/1-2" index="1"]
+material = SubResource("StandardMaterial3D_7ryfe")
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/A6" index="0"]
-text = "EDG 1
-MAINTENANCE
-MODE"
+[node name="Label3D" parent="Annunciators/Box2/Windows/1-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = "REACTOR SCRAM
+A2 AND B2
+LOSS"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/B1" index="0"]
-transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.23517e-08, -1, -1, -4.37114e-08, 0, 0.00259304, -0.0208235, 0.00127411)
-text = "DIVISION 1
-EDG 1
-FUEL SYSTEM
-INOPERABLE"
+[node name="Label3D" parent="Annunciators/Box2/Windows/1-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "OPRM ALARM"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/B2" index="0"]
-text = "DIVISION 1
-EDG 1
-FUEL SYSTEM
-TROUBLE"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/B3" index="0"]
-text = "EDG 1
-SERVICE WATER
-INLET PRESS
-LOW"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/B4" index="0"]
-text = "EDG 1
-SERVICE WATER
-FLOW
-LOW"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/B5" index="0"]
-text = "EDG 1
-SHUTDOWN
-MECHANICAL
+[node name="Label3D" parent="Annunciators/Box2/Windows/2-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = "RFW TURB
+CONTROL SIGNAL
 FAILURE"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/B6" index="0"]
-text = "EDG 1
-MECHANICAL
-FAILURE"
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/2-7" index="1"]
+material = SubResource("StandardMaterial3D_ukdp4")
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/C1" index="0"]
-text = "EDG 1
+[node name="Label3D" parent="Annunciators/Box2/Windows/2-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "SETPOINT
+SETDOWN
+ACTIVE"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/2-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "APRM
+UPSCALE"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/2-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "LPRM
+UPSCALE"
+
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/2-4" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00169373, 0.00671387, -0.109329)
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/2-4/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "OPRM TRIP
+RPS-B"
+
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/2-3" index="1"]
+material = SubResource("StandardMaterial3D_3s48m")
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/2-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "RPV
+LEVEL LOW
+TRIP +13\""
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/2-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "RPV
+PRESS HIGH
+TRIP"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/2-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "MSIV
+CLOSURE TRIP"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/3-8/CSGBox3D" index="0"]
+text = "RFW
+RPV PRESS
+HIGH ALERT"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/3-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "RPV LEVEL
+HIGH/LOW
+ALARM"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/3-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "FLOW
+REFERENCE
+OFF NORMAL"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/3-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "RBM
+UPSCL OR INOP"
+
+[node name="3-4" parent="Annunciators/Box2/Windows" index="20"]
+transform = Transform3D(0, 0, 0.03, 0, 0.03, 0, -0.03, 0, 0, 0.0136123, 0.0557945, 0.118167)
+
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/3-4" index="1"]
+material = SubResource("StandardMaterial3D_6lb8r")
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/3-4/CSGBox3D" index="0"]
+text = "1/2 SCRAM
+SYSTEM 'B'"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/3-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "NEUTRON
+MONITOR
 SYSTEM
-INOPERABLE"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/C2" index="0"]
-text = "EDG 1
-ELECTRICAL
-SYTEM
-TROUBLE/TRIP"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/C3" index="0"]
-text = "EDG 1
-DC CONT POWER
-FAILURE"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/C4" index="0"]
-text = "EDG 1
-PROT LOCKOUT
-RELAY
 TRIP"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/C5" index="0"]
-text = "EDG 1
-FIELD GROUND
-FAULT"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/C6" index="0"]
-text = ""
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/D1" index="0"]
-text = "EDG 1
-BRKR 101-1
-AUTO CLOSE"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/D2" index="0"]
-text = "BRKR 101-1
-AUTO TRIP/
-FAIL TO CLOSE"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/D3" index="0"]
-text = "EDG 1
-BRKR 101-N1
-AUTO TRIP"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/D4" index="0"]
-text = ""
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/D5" index="0"]
-text = "EDG 1
-LOCA BYPASS
-SWITCH ON"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/D6" index="0"]
-text = "EDG 1
-LOCA TEST
-SWITCH ON"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/E1" index="0"]
-text = ""
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/E2" index="0"]
-text = ""
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/E4" index="0"]
-text = ""
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/E5" index="0"]
-text = ""
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/E6" index="0"]
-text = ""
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/F1" index="0"]
-transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 7.10543e-15, -2.98023e-08, -1, -1, -4.37114e-08, -7.10543e-15, 0.00259209, -0.0208216, 0.0012722)
-text = "DIVISION I
-LOAD CENTER
-EJS SYSTEM
-INOPERABLE"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/F2" index="0"]
-transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 7.10543e-15, -2.98023e-08, -1, -1, -4.37114e-08, -7.10543e-15, 0.00259209, -0.0208216, 0.0012722)
-text = "LOAD CENTER
-EJS USI
-TROUBLE"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/F3" index="0"]
-text = "LOAD CENTER
-EJS USI
-BUS
-UNDERVOLTAGE"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/F4" index="0"]
-text = "BRKR 101-2
-BRKR 101-14
-AUTO TRIP"
-
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/F5" index="0"]
-text = "BRKR 101-2
-BRKR 101-14
-LOCKOUT RELAY
+[node name="Label3D" parent="Annunciators/Box2/Windows/3-2/CSGBox3D" index="0"]
+text = "TURBINE
+SV CLOSURE
 TRIP"
 
-[node name="F6" parent="Annunciators/Elec_Box1/Box/Windows" index="35"]
-transform = Transform3D(0.0871558, -0.996195, -7.10543e-15, 0.996194, 0.0871558, 0, 0, -7.10543e-15, 1, 0.0165033, -0.261341, -0.194561)
+[node name="Label3D" parent="Annunciators/Box2/Windows/3-1/CSGBox3D" index="0"]
+text = "ATWS-ARI
+TRIP"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/F6" index="0"]
-text = "DIVISION I
-EMER 600V
-DISTRIBUTION
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/4-8" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671387, -0.109344)
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/4-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = "SLC
+TANK TEMP
+HIGH/LOW"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/4-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "RFW/TURBINE
+RPV LEVEL HIGH
+TRIP"
+
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/4-6" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671387, -0.109344)
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/4-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "APRM
+DOWNSCALE"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/4-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.62939e-06, 0, 0.163086)
+text = ""
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/4-4/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "TURBINE
+CV FAST
+THROTTLE CLOSE
+TRIP"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/4-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "SDV
+LEVEL HIGH
+TRIP BYPASS"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/4-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "TURBINE
+SV CLOSURE
+TRIP BYPASS"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/4-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "ATWS-ARI
+IN TEST/
+LOSS OF POWER"
+
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/5-8" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671387, -0.109344)
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/5-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = "SLC
+TANK LEVEL
+HIGH/LOW"
+
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/5-7" index="1"]
+material = SubResource("StandardMaterial3D_rfm4u")
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/5-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/5-6" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00169373, 0.00671387, -0.109329)
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/5-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "LPRM
+DOWNSCALE"
+
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/5-5" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671387, -0.109344)
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/5-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/5-4/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "TURBINE
+CV FAST
+THROTTLE CLOSE
+TRIP BYPASS"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/5-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "DRYWELL
+PRESS HIGH
+TRIP"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/5-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "MODE SWITCH
+IN SHUTDOWN
+POSITION"
+
+[node name="Label3D" parent="Annunciators/Box2/Windows/5-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "RPS
+TRIP UNIT
 TROUBLE"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/G1" index="0"]
-transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 2.13163e-14, -2.23517e-08, -1, -1, -4.37114e-08, -7.10543e-15, 0.00259352, -0.0208263, 0.00127697)
-text = "BRKR 101-10
-BRKR 101-13
-AUTO TRIP"
+[node name="Label3D" parent="Annunciators/Box2/Windows/6-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = "SLC DIV 2
+OUT OF SERVICE"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/G2" index="0"]
-text = "BRKR 101-11
-LOCKOUT RELAY
-TROUBLE/TRIP"
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/6-7" index="1"]
+material = SubResource("StandardMaterial3D_w25c2")
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/G3" index="0"]
-transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 7.10543e-15, -2.98023e-08, -1, -1, -4.37114e-08, -7.10543e-15, 0.00259376, -0.0208254, 0.00127506)
-text = "4KV
-BUS 101
-DC CONT POWER
-FAILURE"
+[node name="Label3D" parent="Annunciators/Box2/Windows/6-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/G4" index="0"]
-text = "BRKR 101-10
-BRKR 101-13
-ELEC FAULT
-PRI PROT TRIP"
+[node name="Label3D" parent="Annunciators/Box2/Windows/6-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "RBM
+DOWNSCALE"
 
-[node name="G5" parent="Annunciators/Elec_Box1/Box/Windows" index="40"]
-material = SubResource("StandardMaterial3D_dwco3")
+[node name="Label3D" parent="Annunciators/Box2/Windows/6-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "OPRM ENABLED
+RPS-B"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/G5" index="0"]
-transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.98023e-08, -1, -1, -4.37114e-08, 0, 0.00259399, -0.0208225, 0.00127316)
-text = "BRKR 101-10
-BRKR 1-1-13
-BACKUP
-PROT TRIP"
+[node name="Label3D" parent="Annunciators/Box2/Windows/6-4/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = "SCRAM VALVE
+PILOT AIR HDR
+PRESS LOW"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/G6" index="0"]
-text = "BRKR 101-10
-BRKR 101-13
-GROUND FAULT
-PRI PROT TRIP"
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/6-3" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00172424, 0.00671387, -0.109329)
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/H1" index="0"]
-text = "DIV I EMER
-BUS SYS 002A
-125VDC SYSTEM
-TROUBLE"
+[node name="Label3D" parent="Annunciators/Box2/Windows/6-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "SCRAM VALVE
+PILOT AIR HDR
+PRESS HIGH"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/H2" index="0"]
-text = "DIVISION I
-UPS 2A
-SYSTEM
-TROUBLE"
+[node name="Label3D" parent="Annunciators/Box2/Windows/6-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "SDV
+NOT DRAINED"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/H3" index="0"]
-text = "DIVISION I
-UPS 2A ON
-BATT 2A POWER"
+[node name="Label3D" parent="Annunciators/Box2/Windows/6-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "RPS SYS B
+OUT OF
+SERVICE"
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/H4" index="0"]
-text = "4KV
-BUS 101
-UNDER
-FREQUENCY"
+[node name="Label3D" parent="Annunciators/Box2/Label" index="0"]
+text = "ANN PANEL
+P603.A8"
 
-[node name="H5" parent="Annunciators/Elec_Box1/Box/Windows" index="46"]
-material = SubResource("StandardMaterial3D_wmn37")
+[node name="Triangle" parent="Annunciators/Box2" index="3"]
+transform = Transform3D(-4.65661e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.65661e-10, 0.0133395, 0.0788476, 0.108312)
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/H5" index="0"]
-transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.98023e-08, -1, -1, -4.37114e-08, 0, 0.00259209, -0.0208244, 0.00127411)
-text = "4KV
-BUS 101
-UNDERVOLTAGE"
+[node name="Triangle2" type="Sprite3D" parent="Annunciators/Box2"]
+transform = Transform3D(-4.65661e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.65661e-10, 0.0133395, 0.0788476, 0.204294)
+shaded = true
+double_sided = false
+texture = ExtResource("26_ud3n4")
 
-[node name="Label" parent="Annunciators/Elec_Box1/Box/Windows/H6" index="0"]
-text = "BRKR 101-10
-BRKR 101-13
-PHASE
-OVERCURRENT"
-
-[node name="Elec_Box2" parent="Annunciators" instance=ExtResource("25_efym0")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52179, 2.54259, -7.20444)
-
-[node name="Label" parent="Annunciators/Elec_Box2/Box/Windows/B1" index="0"]
-transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.23517e-08, -1, -1, -4.37114e-08, 0, 0.00259304, -0.0208235, 0.00127411)
-
-[node name="F6" parent="Annunciators/Elec_Box2/Box/Windows" index="35"]
-transform = Transform3D(0.0871558, -0.996195, -7.10543e-15, 0.996194, 0.0871558, 0, 0, -7.10543e-15, 1, 0.0165033, -0.261341, -0.194561)
-
-[node name="G5" parent="Annunciators/Elec_Box2/Box/Windows" index="40"]
-material = SubResource("StandardMaterial3D_dwco3")
-
-[node name="Label" parent="Annunciators/Elec_Box2/Box/Windows/G5" index="0"]
-transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.98023e-08, -1, -1, -4.37114e-08, 0, 0.00259399, -0.0208225, 0.00127316)
-
-[node name="G6" parent="Annunciators/Elec_Box2/Box/Windows" index="41"]
-material = SubResource("StandardMaterial3D_8whq1")
-
-[node name="H5" parent="Annunciators/Elec_Box2/Box/Windows" index="46"]
-material = SubResource("StandardMaterial3D_rbkxj")
-
-[node name="Label" parent="Annunciators/Elec_Box2/Box/Windows/H5" index="0"]
-transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.98023e-08, -1, -1, -4.37114e-08, 0, 0.00259209, -0.0208244, 0.00127411)
-text = "4KV
-BUS 103
-UNDERVOLTAGE"
-
-[node name="H6" parent="Annunciators/Elec_Box2/Box/Windows" index="47"]
-material = SubResource("StandardMaterial3D_0akmc")
-
-[node name="Elec_Box3" parent="Annunciators" instance=ExtResource("25_efym0")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52179, 2.54259, -6.52533)
-
-[node name="Label" parent="Annunciators/Elec_Box3/Box/Windows/B1" index="0"]
-transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.23517e-08, -1, -1, -4.37114e-08, 0, 0.00259304, -0.0208235, 0.00127411)
-
-[node name="F6" parent="Annunciators/Elec_Box3/Box/Windows" index="35"]
-transform = Transform3D(0.0871558, -0.996195, -7.10543e-15, 0.996194, 0.0871558, 0, 0, -7.10543e-15, 1, 0.0165033, -0.261341, -0.194561)
-
-[node name="G5" parent="Annunciators/Elec_Box3/Box/Windows" index="40"]
-material = SubResource("StandardMaterial3D_dwco3")
-
-[node name="Label" parent="Annunciators/Elec_Box3/Box/Windows/G5" index="0"]
-transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.98023e-08, -1, -1, -4.37114e-08, 0, 0.00259399, -0.0208225, 0.00127316)
-
-[node name="G6" parent="Annunciators/Elec_Box3/Box/Windows" index="41"]
-material = SubResource("StandardMaterial3D_8whq1")
-
-[node name="H5" parent="Annunciators/Elec_Box3/Box/Windows" index="46"]
-material = SubResource("StandardMaterial3D_rbkxj")
-
-[node name="Label" parent="Annunciators/Elec_Box3/Box/Windows/H5" index="0"]
-transform = Transform3D(-4.37114e-08, 1, -4.47035e-08, 0, -2.98023e-08, -1, -1, -4.37114e-08, 0, 0.00259209, -0.0208244, 0.00127411)
-text = "4KV
-BUS 103
-UNDERVOLTAGE"
-
-[node name="H6" parent="Annunciators/Elec_Box3/Box/Windows" index="47"]
-material = SubResource("StandardMaterial3D_0akmc")
-
-[node name="Elec_Box4" parent="Annunciators" instance=ExtResource("29_8fyte")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52384, 2.5426, -5.8476)
-
-[node name="Elec_Box5" parent="Annunciators" instance=ExtResource("29_8fyte")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52384, 2.5426, -5.01939)
-
-[node name="Elec_Box6" parent="Annunciators" instance=ExtResource("29_8fyte")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52384, 2.5426, -4.19016)
+[node name="Triangle3" type="Sprite3D" parent="Annunciators/Box2"]
+transform = Transform3D(-4.65661e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.65661e-10, 0.0133419, -0.1052, 0.108559)
+shaded = true
+double_sided = false
+texture = ExtResource("26_ud3n4")
 
 [node name="Alarm1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.55557, 2.31361, 2.79219)
@@ -9542,7 +9543,4 @@ omni_range = 17.632
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch3"]
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch3/selector_switch"]
 [editable path="Annunciators/Box1"]
-[editable path="Annunciators/Box4"]
-[editable path="Annunciators/Elec_Box1"]
-[editable path="Annunciators/Elec_Box2"]
-[editable path="Annunciators/Elec_Box3"]
+[editable path="Annunciators/Box2"]

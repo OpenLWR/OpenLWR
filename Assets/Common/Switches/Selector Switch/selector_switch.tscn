@@ -49,7 +49,7 @@ shape = SubResource("BoxShape3D_isvvb")
 shape = SubResource("BoxShape3D_isvvb")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="selector_switch"]
-transform = Transform3D(0.05, -4.90454e-44, 7.44793e-35, 0, -2.18557e-09, -0.05, 0, 0.05, -2.18557e-09, -2.26288e-05, 0.012883, 0.0200607)
+transform = Transform3D(0.05, 0, 7.44793e-35, 0, -2.18557e-09, -0.05, 0, 0.05, -2.18557e-09, -2.26288e-05, 0.012883, 0.0200607)
 size = Vector3(0.719238, 0.17273, 0.0166133)
 material = ExtResource("3_ym3f2")
 

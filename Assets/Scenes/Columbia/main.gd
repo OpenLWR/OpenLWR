@@ -306,66 +306,67 @@ enum annunciator_state {
 }
 
 var alarms = {
-	"rps_a_auto_trip": {
+	"reactor_scram_a1_and_b1_loss": {
 		"box": "Box1",
-		"window": "B2",
+		"window": "1-2",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
 	},
-	"rps_b_auto_trip": {
-		"box": "Box4",
-		"window": "B2",
+	"1/2_scram_system_a": {
+		"box": "Box1",
+		"window": "3-4",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
 	},
-	"rod_drive_accumulator_trouble": {
-		"box": "Box4",
-		"window": "A6",
+	"rpv_level_low_trip_a": {
+		"box": "Box1",
+		"window": "2-3",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
 	},
-	"control_rod_out_block": {
-		"box": "Box4",
-		"window": "B6",
+	"rod_accumulator_trouble": {
+		"box": "Box1",
+		"window": "6-7",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
 	},
-	"control_rod_drift": {
-		"box": "Box4",
-		"window": "C6",
+	"rod_out_block": {
+		"box": "Box1",
+		"window": "2-7",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
 	},
-	#annunciators for electrical
-	"bus_101_undervoltage": {
-		"box": "Elec_Box1",
-		"window": "H5",
+	"rod_drift": {
+		"box": "Box1",
+		"window": "5-7",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
 	},
-	"bus_103_undervoltage": {
-		"box": "Elec_Box1",
-		"window": "G5",
+	
+	#Ann A8
+	"reactor_scram_a2_and_b2_loss": {
+		"box": "Box2",
+		"window": "1-2",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
 	},
-	"bus_014_undervoltage": {
-		"box": "Elec_Box2",
-		"window": "H6",
+	"1/2_scram_system_b": {
+		"box": "Box2",
+		"window": "3-4",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
 	},
-	"bus_015_undervoltage": {
-		"box": "Elec_Box2",
-		"window": "G6",
+	"rpv_level_low_trip_b": {
+		"box": "Box2",
+		"window": "2-3",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
@@ -398,24 +399,6 @@ var alarm_groups = {
 	"RMCS_WITHDRAW": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW".get_material(),
 	"RMCS_INSERT": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT".get_material(),
 	"RMCS_SETTLE": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_SETTLE".get_material(),
-	
-	"cb_14-2_green": $"Control Room Panels/Main Panel Left Side/Controls/cb_14-2/green/Lamp".get_material(),
-	"cb_14-2_red": $"Control Room Panels/Main Panel Left Side/Controls/cb_14-2/red/Lamp".get_material(),
-	
-	"cb_15-3_green": $"Control Room Panels/Main Panel Left Side/Controls/cb_15-3/green/Lamp".get_material(),
-	"cb_15-3_red": $"Control Room Panels/Main Panel Left Side/Controls/cb_15-3/red/Lamp".get_material(),
-	
-	"cb_14-1_green": $"Control Room Panels/Main Panel Left Side/Controls/cb_14-1/green/Lamp".get_material(),
-	"cb_14-1_red": $"Control Room Panels/Main Panel Left Side/Controls/cb_14-1/red/Lamp".get_material(),
-	
-	"cb_101-14_green": $"Control Room Panels/Main Panel Left Side/Controls/cb_101-14/green/Lamp".get_material(),
-	"cb_101-14_red": $"Control Room Panels/Main Panel Left Side/Controls/cb_101-14/red/Lamp".get_material(),
-	
-	"cb_15-8_green": $"Control Room Panels/Main Panel Left Side/Controls/cb_15-8/green/Lamp".get_material(),
-	"cb_15-8_red": $"Control Room Panels/Main Panel Left Side/Controls/cb_15-8/red/Lamp".get_material(),
-	
-	"cb_103-8_green": $"Control Room Panels/Main Panel Left Side/Controls/cb_103-8/green/Lamp".get_material(),
-	"cb_103-8_red": $"Control Room Panels/Main Panel Left Side/Controls/cb_103-8/red/Lamp".get_material(),
 	
 	"cr_light_normal": null,
 	"cr_light_emergency": null,
@@ -483,7 +466,7 @@ func _ready(): # assume here that the scene was called by the lobby screen
 
 	for alarm in alarms:
 		alarm = alarms[alarm]
-		alarm["material"] = get_node("Annunciators/"+alarm["box"]+"/Box/Windows/"+alarm["window"]).get_material()
+		alarm["material"] = get_node("Annunciators/"+alarm["box"]+"/Windows/"+alarm["window"]+"/CSGBox3D").get_material()
 	
 
 	

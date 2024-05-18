@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Assets/Common/Switches/Selector Switch/selector_switch.gd" id="1_t033c"]
 [ext_resource type="PackedScene" uid="uid://cnkhmv4fni50x" path="res://Assets/Common/Switches/Selector Switch 2/selector_switch_2.glb" id="2_jskew"]
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="3_mip2f"]
-[ext_resource type="Material" uid="uid://dqms4q6oxflb7" path="res://Assets/Materials/silver_metal.tres" id="4_2xavh"]
+[ext_resource type="Material" path="res://Assets/Materials/silver_metal.tres" id="4_2xavh"]
 [ext_resource type="Material" uid="uid://c2raag84b6lqd" path="res://Assets/Materials/black_metal.tres" id="4_i4tw7"]
 [ext_resource type="AudioStream" uid="uid://wlb0cgw34y6m" path="res://Assets/Audio/breaker_switch.mp3" id="6_gwkef"]
 
@@ -57,24 +57,28 @@ material = SubResource("StandardMaterial3D_a3cg5")
 
 [node name="Label3D" type="Label3D" parent="selector_switch"]
 sorting_offset = 1.0
+shaded = true
 text = "NORMAL"
 font_size = 50
 outline_size = 0
 
 [node name="Label3D3" type="Label3D" parent="selector_switch"]
 sorting_offset = 1.0
+shaded = true
 text = "NORMAL"
 font_size = 50
 outline_size = 0
 
 [node name="Label3D4" type="Label3D" parent="selector_switch"]
 sorting_offset = 1.0
+shaded = true
 text = "NORMAL"
 font_size = 50
 outline_size = 0
 
 [node name="Label3D2" type="Label3D" parent="selector_switch"]
 sorting_offset = 1.0
+shaded = true
 text = "NORMAL"
 font_size = 50
 outline_size = 0

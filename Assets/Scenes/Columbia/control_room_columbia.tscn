@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://ckmu8r7l2275j" path="res://Assets/Textures/reference diagrams/right bottom.png" id="8_kqhf6"]
 [ext_resource type="Script" path="res://Assets/Scenes/Columbia/Switches/Scram Pushbutton/scram_pushbutton.gd" id="12_hwagm"]
 [ext_resource type="PackedScene" uid="uid://crga4wior2o86" path="res://Assets/Common/Switches/Selector Switch 2/selector_switch_2.tscn" id="13_ba4xl"]
+[ext_resource type="PackedScene" uid="uid://cyksa23nxqjwn" path="res://Assets/Common/Switches/Selector Switch/selector_switch.tscn" id="13_r65ec"]
 [ext_resource type="PackedScene" uid="uid://cpwib70utulux" path="res://Assets/Common/Misc/SwitchLabel.tscn" id="13_sbqyo"]
 [ext_resource type="Script" path="res://Assets/Common/Switches/button.gd" id="14_bc77r"]
 [ext_resource type="FontFile" uid="uid://buyai76qopogh" path="res://Assets/Fonts/Roboto/Roboto-Regular.ttf" id="14_chbuk"]
@@ -25,7 +26,6 @@
 [ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="25_6in2t"]
 [ext_resource type="PackedScene" uid="uid://dmx7kcqtkcpx0" path="res://Assets/Common/Annunciators/annunciator_8x6.tscn" id="25_efym0"]
 [ext_resource type="AudioStream" uid="uid://h63ya0mtowh1" path="res://Assets/Audio/CGSPanelAlarm.mp3" id="26_77or2"]
-[ext_resource type="Material" path="res://Assets/Materials/orange_plastic.tres" id="26_jf4g3"]
 [ext_resource type="Material" path="res://Assets/Materials/red_plastic.tres" id="27_mwtj8"]
 [ext_resource type="PackedScene" uid="uid://dvw6yyr4x1mdt" path="res://Assets/Common/Annunciators/annunciator_10x6.tscn" id="29_8fyte"]
 [ext_resource type="Script" path="res://Assets/Common/Annunciators/alarms.gd" id="30_mjcs6"]
@@ -2137,21 +2137,6 @@ script = ExtResource("1_4t1fm")
 [node name="Player" parent="." instance=ExtResource("2_upyw6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06602, 0)
 
-[node name="Annunciators_Box4_Box_OrangeOutlines#OrangeOutline3" type="CSGBox3D" parent="."]
-transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01221, 1.22656, -1.21987)
-size = Vector3(0.108, 0.04, 0.129)
-material = ExtResource("26_jf4g3")
-
-[node name="Annunciators_Box4_Box_OrangeOutlines#OrangeOutline5" type="CSGBox3D" parent="."]
-transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01262, 1.29309, -1.21987)
-size = Vector3(0.108, 0.04, 0.129)
-material = ExtResource("27_mwtj8")
-
-[node name="Annunciators_Box4_Box_OrangeOutlines#OrangeOutline4" type="CSGBox3D" parent="."]
-transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01221, 1.22656, -1.14214)
-size = Vector3(0.108, 0.04, 0.129)
-material = ExtResource("27_mwtj8")
-
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -0.842663, 1.96479, -2.23032)
 use_collision = true
@@ -2211,6 +2196,8 @@ transform = Transform3D(-4.74269e-08, -1.06397, 0.212602, 0, 0.212602, 1.06397, 
 sorting_offset = 1.0
 pixel_size = 0.0007
 texture = ExtResource("8_kqhf6")
+
+[node name="Controls" type="Node3D" parent="Control Room Panels/Main Panel Right Side"]
 
 [node name="Main Panel Left Side" type="CSGPolygon3D" parent="Control Room Panels"]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 9.5113, 0.806, 2.68892)
@@ -2289,8 +2276,12 @@ HPCS-P-1"
 [node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_p_1/Label" index="1"]
 text = "SM-4"
 
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_p_1/Label" index="2"]
+visible = false
+
 [node name="hpcs_p_2" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 7.52335, 0.0655675, 5.54146)
+script = null
 
 [node name="Left" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_p_2" index="0"]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
@@ -2350,78 +2341,15 @@ material = SubResource("StandardMaterial3D_86mto")
 transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -3.55271e-15, -1, -5.96046e-08, -4.47035e-08, 0, 0.0432863, 0.0111108)
 
 [node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_p_2/Label" index="0"]
-text = "PUMP
-HPCS-P-1"
+text = "480 V TRANSFORMER
+FEEDER
+CB-4/41"
 
 [node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_p_2/Label" index="1"]
 text = "SM-4"
 
-[node name="hpcs_v_4" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("13_ba4xl")]
-transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 7.41805, 0.0655675, 5.43616)
-
-[node name="Left" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4" index="0"]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
-
-[node name="Right" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4" index="1"]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, -0.013, 0.00648308, 0.00137824)
-
-[node name="selector_switch" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4" index="2"]
-transform = Transform3D(0.028, -2.44783e-09, -1.06998e-16, -2.22045e-16, -1.39698e-09, 0.028, -2.44783e-09, -0.028, -1.39698e-09, 0, 0.00483799, 0.01302)
-
-[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/selector_switch" index="2"]
-transform = Transform3D(-0.3, 5.96046e-08, 1.86265e-09, -7.45058e-09, -1.49012e-08, 0.3, 4.47035e-08, 0.3, 1.49012e-08, -7.62939e-05, 0.156521, 0.737579)
-text = "AUTO"
-
-[node name="Label3D3" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/selector_switch" index="3"]
-transform = Transform3D(-0.212132, -0.212132, 1.86265e-09, 1.77533e-09, -1.11759e-08, 0.3, -0.212132, 0.212132, 1.49012e-08, -0.450104, 0.156523, 0.55835)
-text = "START"
-
-[node name="Label3D4" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/selector_switch" index="4"]
-transform = Transform3D(0, -0.3, -9.31323e-09, 7.45058e-09, -1.30385e-08, 0.3, -0.3, 0, 1.67638e-08, -0.674812, 0.156523, 0.0837402)
-text = ""
-
-[node name="Label3D2" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/selector_switch" index="5"]
-transform = Transform3D(-0.212132, 0.212132, 1.86265e-09, -1.11759e-08, -5.50062e-09, 0.3, 0.212132, 0.212132, 1.67638e-08, 0.47258, 0.156521, 0.535522)
-text = "STOP"
-
-[node name="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4" index="3"]
-transform = Transform3D(0.382683, 8.57943e-10, 0.923879, 0.92388, -1.39698e-09, -0.382683, 2.98023e-08, 0.0317948, 0, 0, 0.00648308, 0.00922257)
-
-[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4"]
-transform = Transform3D(0.699999, 0, 0, 0, 1.49012e-08, -0.7, 0, 0.7, -2.98023e-08, 0.022, 0.07, 0.012)
-radius = 0.017
-height = 0.01
-sides = 10
-material = SubResource("StandardMaterial3D_av737")
-
-[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/green"]
-transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
-radius = 0.014
-rings = 5
-material = SubResource("StandardMaterial3D_k4h0m")
-
-[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4"]
-transform = Transform3D(0.699999, 0, 0, 0, 1.49012e-08, -0.7, 0, 0.7, -2.98023e-08, -0.022, 0.07, 0.012)
-radius = 0.017
-height = 0.01
-sides = 10
-material = SubResource("StandardMaterial3D_av737")
-
-[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/red"]
-transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
-radius = 0.014
-rings = 5
-material = SubResource("StandardMaterial3D_86mto")
-
-[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4" instance=ExtResource("13_sbqyo")]
-transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -3.55271e-15, -1, -5.96046e-08, -4.47035e-08, 0, 0.0432863, 0.0111108)
-
-[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/Label" index="0"]
-text = "PUMP
-HPCS-P-1"
-
-[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/Label" index="1"]
-text = "SM-4"
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_p_2/Label" index="2"]
+visible = false
 
 [node name="cb_4_2" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 7.53484, 0.0940377, 5.74237)
@@ -2488,6 +2416,9 @@ CB-4/2"
 
 [node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/cb_4_2/Label" index="1"]
 text = "SM-2"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/cb_4_2/Label" index="2"]
+visible = false
 
 [node name="Annunciation" type="Node3D" parent="Control Room Panels/Main Panel Left Side/Controls"]
 transform = Transform3D(-0.140974, 0.692911, 0.707107, -0.979924, -0.199368, 0, 0.140974, -0.692911, 0.707107, 7.18382, 0.0372, 5.06535)
@@ -2588,6 +2519,55 @@ shaded = true
 text = "TEST"
 font_size = 16
 outline_size = 0
+
+[node name="hpcs_v_4" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 7.41804, 0.0655057, 5.43617)
+
+[node name="selector_switch" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4" index="0"]
+transform = Transform3D(-1, 8.74228e-08, 3.82137e-15, 3.55271e-15, -1.49012e-08, 1, 8.74228e-08, 1, 1.49012e-08, 0, 0.00783634, -0.000158787)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/selector_switch/CSGBox3D" index="0"]
+transform = Transform3D(0.45, -8.88177e-16, -7.10543e-15, 1.15186e-15, 0.45, -5.45955e-23, 0, 7.45058e-09, 0.45, -0.236176, 0, 0.0108414)
+text = "CLOSE"
+
+[node name="Move" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4" index="1"]
+transform = Transform3D(0.999999, 0, 0, 0, 0.999999, -1.04308e-07, 0, -1.49012e-08, 1, 0, 0.00670242, 0)
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4"]
+transform = Transform3D(0.699999, 0, 0, 0, 4.47035e-08, -0.7, 0, 0.7, -1.49012e-08, 0.0219984, 0.0700026, 0.0119368)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_k4h0m")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4"]
+transform = Transform3D(0.699999, 0, 0, 0, 4.47035e-08, -0.7, 0, 0.7, -1.49012e-08, -0.0220013, 0.0700026, 0.0119368)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_86mto")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -7.45058e-08, 0.746681, -4.44089e-15, -1, -5.96046e-08, -4.47035e-08, -1.43051e-06, 0.0432863, 0.0110474)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/Label" index="0"]
+text = "RPV INJECTION
+HPCS-V-4"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/Label" index="1"]
+text = "MC-4A"
 
 [node name="PanelDiagrams" type="Node3D" parent="Control Room Panels/Main Panel Left Side"]
 
@@ -9233,24 +9213,6 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.5238
 [node name="Elec_Box6" parent="Annunciators" instance=ExtResource("29_8fyte")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.52384, 2.5426, -4.19016)
 
-[node name="Annunciators_Box4_Box_OrangeOutlines_OrangeOutline3#Subtract" type="CSGBox3D" parent="."]
-transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
-operation = 2
-size = Vector3(0.0962942, 0.04, 0.129)
-material = ExtResource("27_mwtj8")
-
-[node name="Annunciators_Box4_Box_OrangeOutlines_OrangeOutline5#Subtract" type="CSGBox3D" parent="."]
-transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
-operation = 2
-size = Vector3(0.0962942, 0.04, 0.129)
-material = ExtResource("27_mwtj8")
-
-[node name="Annunciators_Box4_Box_OrangeOutlines_OrangeOutline4#Subtract" type="CSGBox3D" parent="."]
-transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
-operation = 2
-size = Vector3(0.0962942, 0.04, 0.129)
-material = ExtResource("27_mwtj8")
-
 [node name="Alarm1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.55557, 2.31361, 2.79219)
 script = ExtResource("30_mjcs6")
@@ -9567,12 +9529,12 @@ omni_range = 17.632
 [editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_p_2"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_p_2/selector_switch"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_p_2/Label"]
-[editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4"]
-[editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/selector_switch"]
-[editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/Label"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/cb_4_2"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/cb_4_2/selector_switch"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/cb_4_2/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/Label"]
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/selector_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch2"]

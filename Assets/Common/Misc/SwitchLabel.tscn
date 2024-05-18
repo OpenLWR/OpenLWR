@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cpwib70utulux"]
+[gd_scene load_steps=4 format=3 uid="uid://cpwib70utulux"]
 
 [ext_resource type="Material" uid="uid://b0b37alwlfoju" path="res://Assets/Materials/white_metal.tres" id="1_jodx0"]
 [ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="2_ptd58"]
+[ext_resource type="Texture2D" uid="uid://b0nkl8jxbkk6j" path="res://Assets/Textures/PAM.png" id="3_wtrtr"]
 
 [node name="Label" type="CSGBox3D"]
 transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -7.45058e-08, 0.746681, -8.88178e-16, -1, -1.49012e-08, -4.47035e-08, 0, 0, 0)
@@ -11,6 +12,7 @@ material = ExtResource("1_jodx0")
 
 [node name="Name" type="Label3D" parent="."]
 transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "PLACEHOLDER
 HOLD-V-1"
@@ -20,9 +22,15 @@ outline_size = 0
 
 [node name="Power" type="Label3D" parent="."]
 transform = Transform3D(-1.31134e-09, 1.16573e-15, 0.03, -3.96703e-18, 0.042, 9.31322e-10, -0.03, 1.24922e-15, -1.31135e-09, 0.00105124, -0.00981124, -0.0354925)
+shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "PLACEHOLDER"
 font = ExtResource("2_ptd58")
 font_size = 25
 outline_size = 0
 horizontal_alignment = 2
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(-3.93402e-10, 1.38778e-16, 0.009, -6.61744e-24, 0.013, -2.77556e-16, -0.009, 1.19682e-16, -3.93403e-10, 0.00116039, -0.00777758, 0.0299549)
+shaded = true
+texture = ExtResource("3_wtrtr")

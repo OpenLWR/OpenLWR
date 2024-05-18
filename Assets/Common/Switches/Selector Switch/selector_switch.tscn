@@ -56,6 +56,7 @@ material = ExtResource("3_ym3f2")
 [node name="Label3D" type="Label3D" parent="selector_switch/CSGBox3D"]
 transform = Transform3D(0.45, 2.01948e-28, 0, 0, 0.45, 1.69407e-21, 0, -1.69407e-21, 0.45, -0.236182, 0, 0.0108409)
 sorting_offset = 1.0
+shaded = true
 text = "OFF"
 font = ExtResource("5_hmpvk")
 font_size = 35
@@ -64,6 +65,7 @@ outline_size = 0
 [node name="Label3D2" type="Label3D" parent="selector_switch/CSGBox3D"]
 transform = Transform3D(0.45, 5.04871e-28, 0, 0, 0.45, 2.5411e-21, 0, -2.5411e-21, 0.45, -0.00445222, 0, 0.010841)
 sorting_offset = 1.0
+shaded = true
 text = "AUTO"
 font = ExtResource("5_hmpvk")
 font_size = 35
@@ -72,6 +74,7 @@ outline_size = 0
 [node name="Label3D3" type="Label3D" parent="selector_switch/CSGBox3D"]
 transform = Transform3D(0.45, 5.04871e-28, 0, 0, 0.45, 2.5411e-21, 0, -2.5411e-21, 0.45, 0.239263, 0, 0.010841)
 sorting_offset = 1.0
+shaded = true
 text = "OPEN"
 font = ExtResource("5_hmpvk")
 font_size = 35

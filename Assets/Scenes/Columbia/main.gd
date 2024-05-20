@@ -130,71 +130,36 @@ var switches = {
 		"momentary": false,
 		"updated": false,
 	},
-	"cb_14-2": {
+	"hpcs_p_1": {
 		"switch": null,
 		"positions": {
-			0: 45, #Trip
-			1: 0, 
-			2: -45, #Close
+			0: 45,
+			1: 0,
+			2: -45, 
 		},
-		"position": 1,
+		"position": 0,
 		"momentary": false,
 		"updated": false,
 	},
-	"cb_15-3": {
+	"hpcs_v_4": {
 		"switch": null,
 		"positions": {
-			0: 45, #Trip
-			1: 0, 
-			2: -45, #Close
+			0: 45,
+			1: 0,
+			2: -45, 
 		},
-		"position": 1,
+		"position": 0,
 		"momentary": false,
 		"updated": false,
 	},
-	
-	"cb_14-1": {
+	"TempFW": {
 		"switch": null,
 		"positions": {
-			0: 45, #Trip
-			1: 0, 
-			2: -45, #Close
+			0: 45,
+			1: 0,
+			2: -45, 
 		},
-		"position": 1,
-		"momentary": false,
-		"updated": false,
-	},
-	"cb_101-14": {
-		"switch": null,
-		"positions": {
-			0: 45, #Trip
-			1: 0, 
-			2: -45, #Close
-		},
-		"position": 1,
-		"momentary": false,
-		"updated": false,
-	},
-	
-	"cb_15-8": {
-		"switch": null,
-		"positions": {
-			0: 45, #Trip
-			1: 0, 
-			2: -45, #Close
-		},
-		"position": 1,
-		"momentary": false,
-		"updated": false,
-	},
-	"cb_103-8": {
-		"switch": null,
-		"positions": {
-			0: 45, #Trip
-			1: 0, 
-			2: -45, #Close
-		},
-		"position": 1,
+		"position": 0,
 		"momentary": false,
 		"updated": false,
 	},

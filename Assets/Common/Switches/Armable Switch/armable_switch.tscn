@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://dn7mi80gxcn24"]
+
+[ext_resource type="PackedScene" uid="uid://bl7ygkdjt1g3s" path="res://Assets/Common/Switches/Armable Switch/untitled.glb" id="1_r86ma"]
+[ext_resource type="Script" path="res://Assets/Common/Switches/Armable Switch/Armable Switch.gd" id="2_p3ofa"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_oeja8"]
+height = 2.1246
+radius = 0.776635
+
+[node name="Armable Switch" instance=ExtResource("1_r86ma")]
+transform = Transform3D(0.015, 0, 0, 0, 0.015, 0, 0, 0, 0.015, 0, 0, 0)
+script = ExtResource("2_p3ofa")
+
+[node name="button" parent="." index="2"]
+transform = Transform3D(0.999736, 0, 0, 0, -3.57534e-07, 0.999736, 0, -0.999736, -3.57534e-07, 0, 2.501, 0)
+
+[node name="arrow_decal" parent="button" index="0"]
+transform = Transform3D(-0.865347, -7.5651e-08, -3.78255e-08, 3.78255e-08, 1.65341e-15, -0.865347, 7.56511e-08, -0.865347, 1.65341e-15, 0, -2.53982e-09, 0.00710154)
+
+[node name="Arm" type="AudioStreamPlayer3D" parent="." index="3"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.22978, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+shape = SubResource("CylinderShape3D_oeja8")
+
+[connection signal="input_event" from="StaticBody3D" to="." method="button_clicked"]

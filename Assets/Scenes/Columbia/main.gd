@@ -178,6 +178,21 @@ var switches = {
 			"red" : null,
 		},
 	},
+	"hpcs_v_15": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45, 
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
 	"TempFW": {
 		"switch": null,
 		"positions": {
@@ -197,24 +212,28 @@ var buttons = {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 	"SCRAM_B1": {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 	"SCRAM_A2": {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 	"SCRAM_B2": {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 	
@@ -222,12 +241,14 @@ var buttons = {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 	"SCRAM_RESET_B": {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 	
@@ -235,12 +256,14 @@ var buttons = {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 	"ALARM_RESET_1": {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 	
@@ -248,18 +271,21 @@ var buttons = {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 	"ALARM_ACK_2": {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 	"ALARM_RESET_2": {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 	
@@ -267,12 +293,14 @@ var buttons = {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 	"ROD_DRIFT_RESET": {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 	
@@ -280,12 +308,22 @@ var buttons = {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 	"RMCS_WITHDRAW_PB": {
 		"switch": null,
 		"state": false,
 		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	
+	"hpcs_init": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
 		"updated": false,
 	},
 }
@@ -493,7 +531,7 @@ func _process(delta):
 			for button_name in buttons:
 				var button = buttons[button_name]
 				if button.updated == true:
-					updated_buttons[button_name] = button.state
+					updated_buttons[button_name] = {"state" : button.state, "armed" : button.armed}
 					
 			if updated_buttons != {}:
 				var err = socket.send_text(build_packet(client_packets.BUTTON_PARAMETERS_UPDATE, json.stringify(updated_buttons)))
@@ -613,11 +651,12 @@ func _process(delta):
 					server_packets.BUTTON_PARAMETERS_UPDATE:
 						packet_data = json.parse_string(packet_data)
 						for button in packet_data:
-							var button_state = packet_data[button]
+							var data = packet_data[button]
 							if button not in buttons:
 								continue
 							if buttons[button].switch != null:
-								buttons[button].switch.button_state_change(button_state)
+								buttons[button].switch.button_state_change(data.state)
+								buttons[button].switch.button_arm_change(data.armed)
 								print(button)
 					
 					server_packets.PLAYER_POSITION_PARAMETERS_UPDATE:

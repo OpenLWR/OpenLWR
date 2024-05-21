@@ -14,6 +14,9 @@ func _ready():
 func button_state_change(state: bool):
 	button.state = state
 	# TODO: button audio
+	
+func button_arm_change(armed: bool):
+	button.armed = armed
 
 func switch_click(_camera, event, _position, _normal, _shape_idx):
 	var mouse_click = event as InputEventMouseButton

@@ -1,4 +1,4 @@
-[gd_scene load_steps=287 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=293 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -15,6 +15,8 @@
 [ext_resource type="PackedScene" uid="uid://cpwib70utulux" path="res://Assets/Common/Misc/SwitchLabel.tscn" id="13_sbqyo"]
 [ext_resource type="Script" path="res://Assets/Common/Switches/button.gd" id="14_bc77r"]
 [ext_resource type="FontFile" uid="uid://buyai76qopogh" path="res://Assets/Fonts/Roboto/Roboto-Regular.ttf" id="14_chbuk"]
+[ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="15_o5a3n"]
+[ext_resource type="Texture2D" uid="uid://b0nkl8jxbkk6j" path="res://Assets/Textures/PAM.png" id="16_w8k2n"]
 [ext_resource type="Script" path="res://Assets/Scenes/Nine Mile Point Unit 2/four_rod_display.gd" id="17_qk8dd"]
 [ext_resource type="PackedScene" uid="uid://dok8h20vi4url" path="res://Assets/Common/Gauges/Edgewise/edgewise_gauge.tscn" id="18_bcd1o"]
 [ext_resource type="Script" path="res://Assets/Common/label.gd" id="18_pl3um"]
@@ -36,6 +38,15 @@ ambient_light_source = 1
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_av737"]
 metallic = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aa70l"]
+albedo_color = Color(0, 0.547876, 0.128561, 1)
+emission_enabled = true
+emission = Color(0.26334, 0.95078, 0.19242, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vm6o8"]
+albedo_color = Color(0.479588, 0, 0.050164, 1)
+emission = Color(0.882621, 0, 0.0941243, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k4h0m"]
 albedo_color = Color(0, 0.547876, 0.128561, 1)
@@ -60,6 +71,15 @@ refraction_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hjk8c"]
 size = Vector3(0.0144663, 0.0430282, 0.0426735)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gki1c"]
+albedo_color = Color(0, 0.547876, 0.128561, 1)
+emission_enabled = true
+emission = Color(0.26334, 0.95078, 0.19242, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wfwbt"]
+albedo_color = Color(0.479588, 0, 0.050164, 1)
+emission = Color(0.882621, 0, 0.0941243, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_skqwy"]
 albedo_color = Color(1, 0.120131, 0.122347, 1)
@@ -2253,7 +2273,7 @@ material = SubResource("StandardMaterial3D_av737")
 transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
 radius = 0.014
 rings = 5
-material = SubResource("StandardMaterial3D_k4h0m")
+material = SubResource("StandardMaterial3D_aa70l")
 
 [node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_p_1"]
 transform = Transform3D(0.699999, 0, 0, 0, 1.49012e-08, -0.7, 0, 0.7, -2.98023e-08, -0.022, 0.07, 0.012)
@@ -2266,7 +2286,7 @@ material = SubResource("StandardMaterial3D_av737")
 transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
 radius = 0.014
 rings = 5
-material = SubResource("StandardMaterial3D_86mto")
+material = SubResource("StandardMaterial3D_vm6o8")
 
 [node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_p_1" instance=ExtResource("13_sbqyo")]
 transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -3.55271e-15, -1, -5.96046e-08, -4.47035e-08, 0, 0.0432863, 0.0111108)
@@ -2529,6 +2549,9 @@ transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 
 [node name="selector_switch" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4" index="0"]
 transform = Transform3D(-1, 8.74228e-08, 3.82137e-15, 3.55271e-15, -1.49012e-08, 1, 8.74228e-08, 1, 1.49012e-08, 0, 0.00783634, -0.000158787)
 
+[node name="Right" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/selector_switch" index="4"]
+transform = Transform3D(5, 0, -4.89599e-15, 5.68434e-14, 5, -1.19209e-07, 1.77639e-15, 2.32941e-21, 5, 0.0122313, 0.00425655, 0)
+
 [node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/selector_switch/CSGBox3D" index="0"]
 transform = Transform3D(0.45, -8.88177e-16, -7.10543e-15, 1.15186e-15, 0.45, -5.45955e-23, 0, 7.45058e-09, 0.45, -0.236176, 0, 0.0108414)
 text = "CLOSE"
@@ -2547,7 +2570,7 @@ material = SubResource("StandardMaterial3D_av737")
 transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
 radius = 0.014
 rings = 5
-material = SubResource("StandardMaterial3D_k4h0m")
+material = SubResource("StandardMaterial3D_gki1c")
 
 [node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4"]
 transform = Transform3D(0.699999, 0, 0, 0, 4.47035e-08, -0.7, 0, 0.7, -1.49012e-08, -0.0220013, 0.0700026, 0.0119368)
@@ -2560,7 +2583,7 @@ material = SubResource("StandardMaterial3D_av737")
 transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
 radius = 0.014
 rings = 5
-material = SubResource("StandardMaterial3D_86mto")
+material = SubResource("StandardMaterial3D_wfwbt")
 
 [node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4" instance=ExtResource("13_sbqyo")]
 transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -7.45058e-08, 0.746681, -4.44089e-15, -1, -5.96046e-08, -4.47035e-08, -1.43051e-06, 0.0432863, 0.0110474)
@@ -2571,6 +2594,50 @@ HPCS-V-4"
 
 [node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/Label" index="1"]
 text = "MC-4A"
+
+[node name="hpcs_flow" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 7.15494, 0.991194, 5.75813)
+
+[node name="Label" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_flow"]
+transform = Transform3D(-4.37114e-08, 0, -0.999999, 0, 0.746681, 0, 1, 0, -4.37113e-08, 0.020412, -0.0864944, 0.133456)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0885625)
+material = ExtResource("3_pvt5y")
+
+[node name="Name" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_flow/Label"]
+transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105762, 0.00663781, 0.0230532)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "SYSTEM FLOW"
+font = ExtResource("15_o5a3n")
+font_size = 30
+outline_size = 0
+
+[node name="Name3" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_flow/Label"]
+transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105762, -0.00857902, 0.000804424)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "HIGH PRESS CORE SPRAY"
+font = ExtResource("15_o5a3n")
+font_size = 30
+outline_size = 0
+
+[node name="Name2" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_flow/Label"]
+transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105762, 0.00663781, -0.0200834)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DISCH PRESS"
+font = ExtResource("15_o5a3n")
+font_size = 30
+outline_size = 0
+
+[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/hpcs_flow/Label"]
+transform = Transform3D(-3.93402e-10, 1.38778e-16, 0.009, -6.61744e-24, 0.013, -2.77556e-16, -0.009, 1.19682e-16, -3.93403e-10, 0.00116062, -0.000610828, 0.0390334)
+shaded = true
+texture = ExtResource("16_w8k2n")
+
+[node name="hpcs_press" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 7.12675, 0.991194, 5.72993)
 
 [node name="PanelDiagrams" type="Node3D" parent="Control Room Panels/Main Panel Left Side"]
 
@@ -9536,6 +9603,8 @@ omni_range = 17.632
 [editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/selector_switch"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_flow"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_flow/edgewise_gauge"]
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/selector_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/TempFW"]

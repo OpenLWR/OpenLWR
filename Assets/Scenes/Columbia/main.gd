@@ -115,6 +115,23 @@ enum server_packets {
 		"atypical" : false,
 		"text" : true,
 	},
+	
+	"hpcs_flow": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/hpcs_flow",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 7000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"hpcs_press": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/hpcs_press",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 1500,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var switches = {
@@ -129,6 +146,7 @@ var switches = {
 		"position": 0,
 		"momentary": false,
 		"updated": false,
+		"lights": {},
 	},
 	"hpcs_p_1": {
 		"switch": null,
@@ -140,6 +158,10 @@ var switches = {
 		"position": 0,
 		"momentary": false,
 		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
 	},
 	"hpcs_v_4": {
 		"switch": null,
@@ -151,6 +173,10 @@ var switches = {
 		"position": 0,
 		"momentary": false,
 		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
 	},
 	"TempFW": {
 		"switch": null,
@@ -162,6 +188,7 @@ var switches = {
 		"position": 0,
 		"momentary": false,
 		"updated": false,
+		"lights": {},
 	},
 }
 
@@ -541,9 +568,14 @@ func _process(delta):
 					server_packets.SWITCH_PARAMETERS_UPDATE:
 						packet_data = json.parse_string(packet_data)
 						for switch in packet_data:
-							var position = packet_data[switch]
+							var data = packet_data[switch]
 							if switches[switch].switch != null:
-								switches[switch].switch.switch_position_change(position)
+								switches[switch].switch.switch_position_change(data.position)
+								
+							for light_name in switches[switch].lights:
+								var light = switches[switch].lights[light_name]
+								state = data.lights[light_name]
+								light.emission_enabled = state
 					
 					server_packets.INDICATOR_PARAMETERS_UPDATE:
 						packet_data = json.parse_string(packet_data)

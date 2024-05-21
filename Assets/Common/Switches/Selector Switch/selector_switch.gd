@@ -5,7 +5,11 @@ extends Node3D
 
 func _ready():
 	switch.switch = self
-
+	
+	if switch.lights != {}:
+		for light in switch.lights:
+			switch["lights"][light] = get_node(light+"/Lamp").get_material()
+			
 func switch_position_change(to_position: int):
 	switch.position = to_position
 	var rotate_position = switch.positions[switch.position]

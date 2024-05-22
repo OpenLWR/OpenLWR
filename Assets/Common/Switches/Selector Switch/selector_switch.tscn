@@ -8,7 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://wlb0cgw34y6m" path="res://Assets/Audio/breaker_switch.mp3" id="5_o4khq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_isvvb"]
-size = Vector3(0.0166016, 0.0341797, 0.0185547)
+size = Vector3(0.0205078, 0.0341797, 0.0185547)
 
 [node name="Selector Switch" type="Node3D"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
@@ -38,16 +38,17 @@ ring_sides = 3
 material = ExtResource("3_ym3f2")
 
 [node name="Left" type="StaticBody3D" parent="selector_switch"]
-transform = Transform3D(1, 0, -4.85524e-36, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(1, 0, -4.85524e-36, 0, 1, 0, 0, 0, 1, -0.00158787, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="selector_switch/Left"]
 transform = Transform3D(1, 0, -4.85524e-36, 1.9421e-35, 1, 0, 0, 0, 1, -0.00863382, 0, 0)
 shape = SubResource("BoxShape3D_isvvb")
 
 [node name="Right" type="StaticBody3D" parent="selector_switch"]
+transform = Transform3D(1, 0, -4.85524e-36, 0, 1, 0, 0, 0, 1, -0.00158787, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="selector_switch/Right"]
-transform = Transform3D(1, 0, -4.85524e-36, 0, 1, 0, 0, 0, 1, 0.00808601, 0, 0)
+transform = Transform3D(1, 0, -4.85524e-36, 0, 1, 0, 0, 0, 1, 0.0119923, 0, 0)
 shape = SubResource("BoxShape3D_isvvb")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="selector_switch"]

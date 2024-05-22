@@ -132,6 +132,23 @@ enum server_packets {
 		"atypical" : false,
 		"text" : false,
 	},
+
+	"rhr_b_flow": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/rhr_b_flow",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 10000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"rhr_b_press": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/rhr_b_press",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 500,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var switches = {
@@ -193,7 +210,7 @@ var switches = {
 			"red" : null,
 		},
 	},
-	"TempFW": {
+	"rhr_p_2b": {
 		"switch": null,
 		"positions": {
 			0: 45,
@@ -203,7 +220,157 @@ var switches = {
 		"position": 0,
 		"momentary": false,
 		"updated": false,
-		"lights": {},
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_v_48b": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45, 
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_v_3b": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45, 
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_v_42b": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45, 
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_v_4b": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_v_6b": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	
+	"rhr_p_2c": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_p_3": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_v_4c": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_v_42c": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_v_24c": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
 	},
 }
 
@@ -260,28 +427,6 @@ var buttons = {
 		"updated": false,
 	},
 	"ALARM_RESET_1": {
-		"switch": null,
-		"state": false,
-		"momentary": false,
-		"armed" : false,
-		"updated": false,
-	},
-	
-	"ALARM_SILENCE_2": {
-		"switch": null,
-		"state": false,
-		"momentary": false,
-		"armed" : false,
-		"updated": false,
-	},
-	"ALARM_ACK_2": {
-		"switch": null,
-		"state": false,
-		"momentary": false,
-		"armed" : false,
-		"updated": false,
-	},
-	"ALARM_RESET_2": {
 		"switch": null,
 		"state": false,
 		"momentary": false,

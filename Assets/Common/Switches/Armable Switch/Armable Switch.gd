@@ -5,7 +5,7 @@ extends Node3D
 
 
 func _ready():
-	$"button/arrow_decal".rotation_degrees.y = 45
+	$"button".rotation_degrees.y = 45
 	button.switch = self
 	pass
 	
@@ -20,8 +20,8 @@ func button_arm_change(to_position:bool):
 	var position = 45
 	if to_position:
 		position = -45
-	if $"button/arrow_decal".rotation_degrees.y !=  position:
-		$"button/arrow_decal".rotation_degrees.y = position
+	if $"button".rotation_degrees.y !=  position:
+		$"button".rotation_degrees.y = position
 		$"Arm".playing = true
 		
 func button_state_change(state):

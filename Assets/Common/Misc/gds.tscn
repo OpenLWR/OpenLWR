@@ -1,0 +1,133 @@
+[gd_scene load_steps=4 format=3 uid="uid://nm6xlg1x324r"]
+
+[ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="1_oqmfu"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_em6l2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hidw0"]
+font = ExtResource("1_oqmfu")
+font_size = 17
+
+[node name="GDS" type="Node2D"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(575.75, 325.25)
+scale = Vector2(1152.5, 651.5)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+position = Vector2(1014, 165)
+scale = Vector2(266.5, 165)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="MeshInstance2D2"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-5.82077e-08, -3.35276e-08)
+scale = Vector2(0.976548, 0.959091)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="MeshInstance2D2"]
+modulate = Color(0.95193, 0.118528, 5.77569e-07, 1)
+position = Vector2(0.00375229, -0.272727)
+scale = Vector2(0.870544, 0.121212)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="MeshInstance2D2"]
+modulate = Color(0.95193, 0.118528, 5.77569e-07, 1)
+position = Vector2(0.00375229, -0.145455)
+scale = Vector2(0.870544, 0.121212)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="MeshInstance2D2"]
+modulate = Color(0.84671, 0.756718, 0, 1)
+position = Vector2(0.00375229, -0.0181818)
+scale = Vector2(0.870544, 0.121212)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="MeshInstance2D2"]
+modulate = Color(0.161405, 0.622221, 3.85046e-07, 1)
+position = Vector2(0.00375229, 0.109091)
+scale = Vector2(0.870544, 0.121212)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 974.0
+offset_top = 86.0
+offset_right = 1057.0
+offset_bottom = 110.0
+text = "GROUP 1"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 898.0
+offset_top = 110.0
+offset_right = 981.0
+offset_bottom = 134.0
+text = "MS-V-22A"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 898.0
+offset_top = 130.0
+offset_right = 981.0
+offset_bottom = 154.0
+text = "MS-V-22B"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 898.0
+offset_top = 150.0
+offset_right = 981.0
+offset_bottom = 174.0
+text = "MS-V-22C"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 898.0
+offset_top = 170.0
+offset_right = 981.0
+offset_bottom = 194.0
+text = "MS-V-22D"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+
+[node name="Label6" type="Label" parent="."]
+offset_left = 1048.0
+offset_top = 110.0
+offset_right = 1131.0
+offset_bottom = 134.0
+text = "MS-V-28A"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+
+[node name="Label7" type="Label" parent="."]
+offset_left = 1048.0
+offset_top = 130.0
+offset_right = 1131.0
+offset_bottom = 154.0
+text = "MS-V-28B"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+
+[node name="Label8" type="Label" parent="."]
+offset_left = 1048.0
+offset_top = 150.0
+offset_right = 1131.0
+offset_bottom = 174.0
+text = "MS-V-28C"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+
+[node name="Label9" type="Label" parent="."]
+offset_left = 1048.0
+offset_top = 170.0
+offset_right = 1131.0
+offset_bottom = 194.0
+text = "MS-V-28D"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1

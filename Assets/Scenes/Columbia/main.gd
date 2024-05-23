@@ -149,6 +149,23 @@ enum server_packets {
 		"atypical" : false,
 		"text" : false,
 	},
+	
+	"rhr_c_flow": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/rhr_c_flow",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 10000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"rhr_c_press": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/rhr_c_press",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 500,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var switches = {
@@ -180,7 +197,52 @@ var switches = {
 			"red" : null,
 		},
 	},
+	"hpcs_p_3": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
 	"hpcs_v_4": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45, 
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+			"override" : null,
+		},
+	},
+	"hpcs_v_1": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45, 
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"hpcs_v_12": {
 		"switch": null,
 		"positions": {
 			0: 45,
@@ -208,8 +270,25 @@ var switches = {
 		"lights" : {
 			"green" : null,
 			"red" : null,
+			"override" : null,
 		},
 	},
+	"hpcs_v_23": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45, 
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	
 	"rhr_p_2b": {
 		"switch": null,
 		"positions": {
@@ -598,6 +677,8 @@ var alarm_groups = {
 	"APRM_D_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D/DOWNSCALE".get_material(),
 	"APRM_E_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E/DOWNSCALE".get_material(),
 	"APRM_F_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F/DOWNSCALE".get_material(),
+	
+	"hpcs_init": $"Control Room Panels/Main Panel Left Side/Controls/hpcs_active/seal_in".get_material(),
 	
 }
 

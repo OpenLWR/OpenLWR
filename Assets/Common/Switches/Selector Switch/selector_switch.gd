@@ -8,7 +8,10 @@ func _ready():
 	
 	if switch.lights != {}:
 		for light in switch.lights:
-			switch["lights"][light] = get_node(light+"/Lamp").get_material()
+			if light == "green" or light == "red":
+				switch["lights"][light] = get_node(light+"/Lamp").get_material()
+			else:
+				switch["lights"][light] = get_node(light).get_material()
 			
 func switch_position_change(to_position: int):
 	switch.position = to_position

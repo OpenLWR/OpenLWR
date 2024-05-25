@@ -1,4 +1,4 @@
-[gd_scene load_steps=352 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=354 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -523,6 +523,12 @@ viewport_path = NodePath("Control Room Panels/Main Panel Center/Controls/NMS2/Sp
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_dux8d"]
 viewport_path = NodePath("Control Room Panels/Main Panel Center/Controls/NMS1/Sprite3D/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_bpirt"]
+viewport_path = NodePath("Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_n7i8x"]
+viewport_path = NodePath("Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6niud"]
 vertex_color_use_as_albedo = true
@@ -7211,6 +7217,80 @@ text = "APRM C"
 [node name="4_UNIT" parent="Control Room Panels/Main Panel Center/Controls/NMS1/Sprite3D/SubViewport/Node2D" index="11"]
 text = "%"
 
+[node name="NMS4" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls"]
+transform = Transform3D(-1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 0.917087, 0.382108, -3.26833)
+size = Vector3(0.17, 0.17, 0.17)
+
+[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/NMS4"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.085393, 0, 0)
+pixel_size = 0.0003
+texture = SubResource("ViewportTexture_bpirt")
+
+[node name="SubViewport" type="SubViewport" parent="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D"]
+
+[node name="Node2D" parent="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport" instance=ExtResource("20_4hiiv")]
+
+[node name="1_NAME" parent="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D" index="1"]
+text = "IRM F"
+
+[node name="1_UNIT" parent="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D" index="2"]
+text = "%"
+
+[node name="2_NAME" parent="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D" index="4"]
+text = "APRM F"
+
+[node name="2_UNIT" parent="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D" index="5"]
+text = "%"
+
+[node name="3_NAME" parent="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D" index="7"]
+text = "IRM H"
+
+[node name="3_UNIT" parent="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D" index="8"]
+text = "%"
+
+[node name="4_NAME" parent="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D" index="10"]
+text = "RBM B"
+
+[node name="4_UNIT" parent="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D" index="11"]
+text = "%"
+
+[node name="NMS3" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls"]
+transform = Transform3D(-1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 0.917085, 0.382108, -2.97257)
+size = Vector3(0.17, 0.17, 0.17)
+
+[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/NMS3"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.085393, 0, 0)
+pixel_size = 0.0003
+texture = SubResource("ViewportTexture_n7i8x")
+
+[node name="SubViewport" type="SubViewport" parent="Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D"]
+
+[node name="Node2D" parent="Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport" instance=ExtResource("20_4hiiv")]
+
+[node name="1_NAME" parent="Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D" index="1"]
+text = "IRM B"
+
+[node name="1_UNIT" parent="Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D" index="2"]
+text = "%"
+
+[node name="2_NAME" parent="Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D" index="4"]
+text = "APRM B"
+
+[node name="2_UNIT" parent="Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D" index="5"]
+text = "%"
+
+[node name="3_NAME" parent="Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D" index="7"]
+text = "IRM D"
+
+[node name="3_UNIT" parent="Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D" index="8"]
+text = "%"
+
+[node name="4_NAME" parent="Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D" index="10"]
+text = "APRM D"
+
+[node name="4_UNIT" parent="Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D" index="11"]
+text = "%"
+
 [node name="irm_c_range" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(0, -0.978148, -0.207912, 0, 0.207912, -0.978148, 1, 0, 0, 1.35301, 0.0628635, -1.89644)
 
@@ -13566,6 +13646,8 @@ omni_range = 17.632
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch3/selector_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/NMS2/Sprite3D/SubViewport/Node2D"]
 [editable path="Control Room Panels/Main Panel Center/Controls/NMS1/Sprite3D/SubViewport/Node2D"]
+[editable path="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D"]
+[editable path="Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D"]
 [editable path="Control Room Panels/Main Panel Center/Controls/irm_c_range"]
 [editable path="Control Room Panels/Main Panel Center/Controls/irm_c_range/selector_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/irm_c_range/Label"]

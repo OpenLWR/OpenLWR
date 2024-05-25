@@ -229,6 +229,57 @@ enum server_packets {
 		"atypical" : false,
 		"text" : true,
 	},
+	
+	
+	"irm_b_recorder": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D/1_VALUE",
+		"value": 1,
+		"atypical" : false,
+		"text" : true,
+	},
+	"aprm_b_recorder": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D/2_VALUE",
+		"value": 1,
+		"atypical" : false,
+		"text" : true,
+	},
+	"irm_d_recorder": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D/3_VALUE",
+		"value": 1,
+		"atypical" : false,
+		"text" : true,
+	},
+	"aprm_d_recorder": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D/4_VALUE",
+		"value": 1,
+		"atypical" : false,
+		"text" : true,
+	},
+	
+	"irm_f_recorder": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D/1_VALUE",
+		"value": 1,
+		"atypical" : false,
+		"text" : true,
+	},
+	"aprm_f_recorder": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D/2_VALUE",
+		"value": 1,
+		"atypical" : false,
+		"text" : true,
+	},
+	"irm_h_recorder": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D/3_VALUE",
+		"value": 1,
+		"atypical" : false,
+		"text" : true,
+	},
+	"rbm_b_recorder": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D/4_VALUE",
+		"value": 1,
+		"atypical" : false,
+		"text" : true,
+	},
 }
 
 var switches = {

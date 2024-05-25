@@ -16,11 +16,12 @@ func _ready():
 func switch_position_change(to_position: int):
 	switch.position = to_position
 	var rotate_position = switch.positions[switch.position]
+	var handle_rotation = round($"selector_switch/Handle".rotation_degrees.y)
 	
 	# used in the case where a switch was modeled such that it needs to be rotated the opposite direction
 	if get_node_or_null("rotate_opposite") != null:
 		rotate_position = rotate_position * -1
-	if $"selector_switch/Handle".rotation_degrees.y != rotate_position:
+	if handle_rotation != rotate_position:
 		$"Move".playing = true
 		$"selector_switch/Handle".rotation_degrees.y = rotate_position
 

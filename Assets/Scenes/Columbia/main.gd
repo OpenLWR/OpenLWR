@@ -853,6 +853,29 @@ var buttons = {
 		"armed" : false,
 		"updated": false,
 	},
+	
+	"SELECT_SRM_A": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	
+	"DET_DRIVE_IN": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"DET_DRIVE_OUT": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
 }
 
 enum annunciator_state {
@@ -1098,6 +1121,10 @@ var alarm_groups = {
 	"APRM_F_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F/DOWNSCALE".get_material(),
 	
 	"hpcs_init": $"Control Room Panels/Main Panel Left Side/Controls/hpcs_active/seal_in".get_material(),
+	
+	"SELECT_SRM_A": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_A".get_material(),
+	"SRM_A_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_A_POS/IN".get_material(),
+	"SRM_A_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_A_POS/OUT".get_material(),
 	
 }
 

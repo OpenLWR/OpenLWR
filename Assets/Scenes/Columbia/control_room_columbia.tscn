@@ -1,4 +1,4 @@
-[gd_scene load_steps=365 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=364 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -22,7 +22,6 @@
 [ext_resource type="Script" path="res://Assets/Scenes/Nine Mile Point Unit 2/four_rod_display.gd" id="17_qk8dd"]
 [ext_resource type="PackedScene" uid="uid://dok8h20vi4url" path="res://Assets/Common/Gauges/Edgewise/edgewise_gauge.tscn" id="18_bcd1o"]
 [ext_resource type="Texture2D" uid="uid://bxvksf58t2vat" path="res://Assets/Textures/ADS.png" id="18_idun7"]
-[ext_resource type="Script" path="res://Assets/Common/label.gd" id="18_pl3um"]
 [ext_resource type="PackedScene" uid="uid://dyk86rtadlnxg" path="res://Assets/Scenes/Nine Mile Point Unit 2/full_core_display/full_core_display_lights.tscn" id="19_pl0e3"]
 [ext_resource type="PackedScene" uid="uid://kf7fvt4u82cu" path="res://Assets/Scenes/Columbia/2_channel_recorder.tscn" id="19_qwg0d"]
 [ext_resource type="PackedScene" uid="uid://cvpkjmwhk3ffe" path="res://Assets/Scenes/Columbia/4_channel_recorder.tscn" id="20_4hiiv"]
@@ -7714,18 +7713,6 @@ transform = Transform3D(0.382683, 0, 0.92388, 0.92388, -4.03841e-08, -0.382683, 
 radius = 0.593037
 height = 0.145006
 material = ExtResource("21_y8sv6")
-
-[node name="Power" type="CSGBox3D" parent="Control Room Panels/Main Panel Center"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.716245, 1.71129, -1.81723)
-size = Vector3(0.544434, 0.246582, 0.623047)
-
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Power"]
-transform = Transform3D(-1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, 0.272336, 0, 0)
-modulate = Color(0, 1, 0, 1)
-text = "100%"
-font_size = 100
-outline_size = 0
-script = ExtResource("18_pl3um")
 
 [node name="SRM_IRM POSITIONER" type="Node3D" parent="Control Room Panels/Main Panel Center"]
 transform = Transform3D(0.980033, 0.198838, 0, -0.198838, 0.980032, 0, 0, 0, 1, 1.32456, -0.00428027, -1.69204)

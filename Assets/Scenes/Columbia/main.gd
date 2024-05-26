@@ -109,12 +109,6 @@ enum server_packets {
 		"atypical" : false,
 		"text" : false,
 	},
-	"aprm_temporary": {
-		"node": $"Control Room Panels/Main Panel Center/Power/Label3D",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
 	
 	"hpcs_flow": {
 		"node": $"Control Room Panels/Main Panel Left Side/Controls/hpcs_flow",

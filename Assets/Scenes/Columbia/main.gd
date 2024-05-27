@@ -1120,6 +1120,9 @@ var alarm_groups = {
 	"SRM_A_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_A_POS/IN".get_material(),
 	"SRM_A_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_A_POS/OUT".get_material(),
 	
+	"FCD_OPERATE": null,
+	"CHART_RECORDERS_OPERATE": null,
+	
 }
 
 var rod_information = {}
@@ -1290,6 +1293,10 @@ func _process(delta):
 									$LightNormal.visible = indicator_state
 								if indicator == "cr_light_emergency":
 									$LightEmergency.visible = indicator_state
+								continue
+							if "OPERATE" in indicator:
+								if indicator == "FCD_OPERATE":
+									$"Control Room Panels/Main Panel Center/Full Core Display/full core display lights".fcd_inop = not indicator_state
 								continue
 							indicators[indicator].emission_enabled = indicator_state
 							

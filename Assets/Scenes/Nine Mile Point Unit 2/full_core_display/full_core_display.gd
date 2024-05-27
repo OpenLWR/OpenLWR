@@ -29,7 +29,7 @@ var fcd_lights = {
 
 func set_rod_light_emission(rod_number,light,state):
 	var fcd_light = fcd_lights[rod_number][light]
-	fcd_light.emission_enabled = state
+	fcd_light.emission_enabled = state and (not fcd_inop)
 	
 func generate_rod_material():
 	for rod_number in node_3d.rod_information:

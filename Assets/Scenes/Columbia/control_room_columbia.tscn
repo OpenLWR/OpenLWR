@@ -1,4 +1,4 @@
-[gd_scene load_steps=364 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=366 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://dyk86rtadlnxg" path="res://Assets/Scenes/Nine Mile Point Unit 2/full_core_display/full_core_display_lights.tscn" id="19_pl0e3"]
 [ext_resource type="PackedScene" uid="uid://kf7fvt4u82cu" path="res://Assets/Scenes/Columbia/2_channel_recorder.tscn" id="19_qwg0d"]
 [ext_resource type="PackedScene" uid="uid://cvpkjmwhk3ffe" path="res://Assets/Scenes/Columbia/4_channel_recorder.tscn" id="20_4hiiv"]
+[ext_resource type="PackedScene" uid="uid://nm6xlg1x324r" path="res://Assets/Common/Misc/gds.tscn" id="20_5h0ir"]
 [ext_resource type="Material" uid="uid://yjqqhessod4t" path="res://Assets/Materials/blue_plastic.tres" id="20_nx706"]
 [ext_resource type="Script" path="res://Assets/Scenes/Nine Mile Point Unit 2/full_core_display/full_core_display.gd" id="20_pa6vd"]
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="21_y8sv6"]
@@ -230,6 +231,9 @@ emission = Color(0.882621, 0, 0.0941243, 1)
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_p4cy1"]
 viewport_path = NodePath("Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_s1qrm"]
+viewport_path = NodePath("Control Room Panels/Main Panel Left Side/Controls/GDS1/Sprite3D/SubViewport")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5njp"]
 albedo_color = Color(0.070179, 0.677853, 0.920756, 1)
@@ -5676,6 +5680,21 @@ text = "RPV PRESS"
 [node name="2_UNIT" parent="Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport/Node2D" index="5"]
 text = "PSIG"
 
+[node name="GDS1" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/Controls"]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 6.08059, 0.731261, 4.59291)
+size = Vector3(0.17, 0.416, 0.416)
+
+[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/GDS1"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.085393, 0, 0)
+pixel_size = 0.0003
+texture = SubResource("ViewportTexture_s1qrm")
+region_rect = Rect2(0, 0, 701, 512)
+
+[node name="SubViewport" type="SubViewport" parent="Control Room Panels/Main Panel Left Side/Controls/GDS1/Sprite3D"]
+size = Vector2i(1150, 1150)
+
+[node name="GDS" parent="Control Room Panels/Main Panel Left Side/Controls/GDS1/Sprite3D/SubViewport" instance=ExtResource("20_5h0ir")]
+
 [node name="PanelDiagrams" type="Node3D" parent="Control Room Panels/Main Panel Left Side"]
 
 [node name="label3" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
@@ -7198,6 +7217,7 @@ pixel_size = 0.0003
 texture = SubResource("ViewportTexture_p5s5p")
 
 [node name="SubViewport" type="SubViewport" parent="Control Room Panels/Main Panel Center/Controls/NMS2/Sprite3D"]
+size = Vector2i(526, 526)
 
 [node name="Node2D" parent="Control Room Panels/Main Panel Center/Controls/NMS2/Sprite3D/SubViewport" instance=ExtResource("20_4hiiv")]
 
@@ -7235,6 +7255,7 @@ pixel_size = 0.0003
 texture = SubResource("ViewportTexture_dux8d")
 
 [node name="SubViewport" type="SubViewport" parent="Control Room Panels/Main Panel Center/Controls/NMS1/Sprite3D"]
+size = Vector2i(526, 526)
 
 [node name="Node2D" parent="Control Room Panels/Main Panel Center/Controls/NMS1/Sprite3D/SubViewport" instance=ExtResource("20_4hiiv")]
 
@@ -7272,6 +7293,7 @@ pixel_size = 0.0003
 texture = SubResource("ViewportTexture_bpirt")
 
 [node name="SubViewport" type="SubViewport" parent="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D"]
+size = Vector2i(526, 526)
 
 [node name="Node2D" parent="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport" instance=ExtResource("20_4hiiv")]
 
@@ -7309,6 +7331,7 @@ pixel_size = 0.0003
 texture = SubResource("ViewportTexture_n7i8x")
 
 [node name="SubViewport" type="SubViewport" parent="Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D"]
+size = Vector2i(526, 526)
 
 [node name="Node2D" parent="Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport" instance=ExtResource("20_4hiiv")]
 
@@ -8557,7 +8580,7 @@ line_spacing = -10.0
 [node name="IRM_H_POS" type="Node3D" parent="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER"]
 
 [node name="PERMIT" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_H_POS"]
-transform = Transform3D(0.23, 3.72529e-09, 0, 3.72529e-09, 0.23, 0, 0, 0, 0.23, 0.0517569, 0.0412511, -0.0165339)
+transform = Transform3D(0.23, 3.72529e-09, 0, 1.11759e-08, 0.23, 0, 0, 0, 0.23, 0.0517578, 0.0412512, -0.0165339)
 size = Vector3(0.0504883, 0.1, 0.1)
 material = SubResource("StandardMaterial3D_bt17o")
 

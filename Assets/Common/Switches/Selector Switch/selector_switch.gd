@@ -2,6 +2,7 @@ extends Node3D
 
 @onready var node_3d = $"/root/Node3D"
 @onready var switch = node_3d.switches[self.name]
+@onready var rotate_opposite = get_node_or_null("rotate_opposite") != null
 
 func _ready():
 	switch.switch = self
@@ -19,7 +20,7 @@ func switch_position_change(to_position: int):
 	var handle_rotation = round($"selector_switch/Handle".rotation_degrees.y)
 	
 	# used in the case where a switch was modeled such that it needs to be rotated the opposite direction
-	if get_node_or_null("rotate_opposite") != null:
+	if rotate_opposite:
 		rotate_position = rotate_position * -1
 	if handle_rotation != rotate_position:
 		$"Move".playing = true

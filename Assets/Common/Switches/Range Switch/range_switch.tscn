@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwbh50131lniu"]
+
+[ext_resource type="Script" path="res://Assets/Common/Switches/Selector Switch/selector_switch.gd" id="1_gl67l"]
+[ext_resource type="PackedScene" uid="uid://ekemd01ag1n1" path="res://Assets/Common/Switches/Range Switch/range_switch.glb" id="2_3ae11"]
+[ext_resource type="Texture2D" uid="uid://c37qqeynm0u81" path="res://Assets/Textures/OLWR_RangeSW.png" id="3_yqmxp"]
+[ext_resource type="AudioStream" uid="uid://wlb0cgw34y6m" path="res://Assets/Audio/breaker_switch.mp3" id="4_sj8gw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qta0r"]
+size = Vector3(6.46823, 2.46985, 3.50476)
+
+[node name="Range Switch" type="Node3D"]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 0, 0, 0)
+script = ExtResource("1_gl67l")
+
+[node name="selector_switch" parent="." instance=ExtResource("2_3ae11")]
+transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0)
+
+[node name="Sprite3D" type="Sprite3D" parent="selector_switch"]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 0.453545, -0.813, 0)
+pixel_size = 0.012
+texture = ExtResource("3_yqmxp")
+
+[node name="Left" type="StaticBody3D" parent="selector_switch"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.389748, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="selector_switch/Left"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.662247, 0.734924, -1.75934)
+shape = SubResource("BoxShape3D_qta0r")
+
+[node name="Right" type="StaticBody3D" parent="selector_switch"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.389748, 3.51846)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="selector_switch/Right"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.662247, 0.734924, -1.75934)
+shape = SubResource("BoxShape3D_qta0r")
+
+[node name="Move" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(2.85714, 0, 0, 0, 2.85714, 0, 0, 0, 2.85714, 0, 0, 0)
+stream = ExtResource("4_sj8gw")
+max_distance = 6.0
+
+[connection signal="input_event" from="selector_switch/Left" to="." method="switch_click_left"]
+[connection signal="input_event" from="selector_switch/Right" to="." method="switch_click_right"]
+
+[editable path="selector_switch"]

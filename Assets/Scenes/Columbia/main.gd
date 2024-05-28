@@ -1061,6 +1061,14 @@ var alarms = {
 		"silenced" : false,
 		"material": null,
 	},
+	
+	"setpoint_setdown_active": {
+		"box": "Box2",
+		"window": "2-7",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
 }
 
 var alarm_groups = {

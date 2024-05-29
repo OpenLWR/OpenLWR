@@ -63,4 +63,5 @@ general_control_button={
 
 [rendering]
 
+textures/vram_compression/import_etc2_astc=true
 anti_aliasing/quality/msaa_3d=3

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8q4aym8ckihj"
 path.s3tc="res://.godot/imported/AnnunciatorTriangle.png-9e91ac17985eacba909d21cde28a5208.s3tc.ctex"
+path.etc2="res://.godot/imported/AnnunciatorTriangle.png-9e91ac17985eacba909d21cde28a5208.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Textures/AnnunciatorTriangle.png"
-dest_files=["res://.godot/imported/AnnunciatorTriangle.png-9e91ac17985eacba909d21cde28a5208.s3tc.ctex"]
+dest_files=["res://.godot/imported/AnnunciatorTriangle.png-9e91ac17985eacba909d21cde28a5208.s3tc.ctex", "res://.godot/imported/AnnunciatorTriangle.png-9e91ac17985eacba909d21cde28a5208.etc2.ctex"]
 
 [params]
 

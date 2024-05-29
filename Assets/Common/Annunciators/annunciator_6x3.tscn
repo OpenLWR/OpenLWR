@@ -105,7 +105,7 @@ refraction_enabled = true
 [node name="Node3D" type="Node3D"]
 
 [node name="Box" type="CSGBox3D" parent="."]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
+transform = Transform3D(-2.62268e-08, 0, -0.6, 0, 0.6, 0, 0.6, 0, -2.62268e-08, 0, 0, 0)
 size = Vector3(0.0433738, 0.420358, 0.861724)
 material = SubResource("StandardMaterial3D_7kt2m")
 

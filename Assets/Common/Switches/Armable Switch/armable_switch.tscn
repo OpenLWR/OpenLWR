@@ -8,7 +8,7 @@ height = 2.1246
 radius = 0.776635
 
 [node name="Armable Switch" instance=ExtResource("1_r86ma")]
-transform = Transform3D(0.015, 0, 0, 0, 0.015, 0, 0, 0, 0.015, 0, 0, 0)
+transform = Transform3D(2.86603e-17, 6.55671e-10, 0.015, 0.015, -6.55671e-10, 0, 6.55671e-10, 0.015, -6.55671e-10, 0, 0, 0)
 script = ExtResource("2_p3ofa")
 
 [node name="button" parent="." index="2"]

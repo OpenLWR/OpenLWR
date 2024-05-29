@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://0yt1ny82gm6f"
 path.s3tc="res://.godot/imported/selector_switch_2_Image_4.png-78e65acd459f3ba933f8ed8c7fef15db.s3tc.ctex"
+path.etc2="res://.godot/imported/selector_switch_2_Image_4.png-78e65acd459f3ba933f8ed8c7fef15db.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Common/Switches/Selector Switch 2/selector_switch_2_Image_4.png"
-dest_files=["res://.godot/imported/selector_switch_2_Image_4.png-78e65acd459f3ba933f8ed8c7fef15db.s3tc.ctex"]
+dest_files=["res://.godot/imported/selector_switch_2_Image_4.png-78e65acd459f3ba933f8ed8c7fef15db.s3tc.ctex", "res://.godot/imported/selector_switch_2_Image_4.png-78e65acd459f3ba933f8ed8c7fef15db.etc2.ctex"]
 
 [params]
 

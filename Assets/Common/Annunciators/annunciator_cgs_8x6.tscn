@@ -18,6 +18,7 @@ clearcoat_roughness = 1.0
 refraction_enabled = true
 
 [node name="Node3D" type="Node3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 
 [node name="Windows" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0015929, -0.0182424, -0.0687156)

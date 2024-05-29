@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://hvpufxr54wq7"
 path.s3tc="res://.godot/imported/IRMRangeSwitchText.png-a17385919a84b60750739f02f1f5a65e.s3tc.ctex"
+path.etc2="res://.godot/imported/IRMRangeSwitchText.png-a17385919a84b60750739f02f1f5a65e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Textures/IRMRangeSwitchText.png"
-dest_files=["res://.godot/imported/IRMRangeSwitchText.png-a17385919a84b60750739f02f1f5a65e.s3tc.ctex"]
+dest_files=["res://.godot/imported/IRMRangeSwitchText.png-a17385919a84b60750739f02f1f5a65e.s3tc.ctex", "res://.godot/imported/IRMRangeSwitchText.png-a17385919a84b60750739f02f1f5a65e.etc2.ctex"]
 
 [params]
 

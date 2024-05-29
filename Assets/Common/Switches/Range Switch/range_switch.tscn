@@ -9,7 +9,7 @@
 size = Vector3(6.46823, 2.46985, 3.50476)
 
 [node name="Range Switch" type="Node3D"]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 0, 0, 0)
+transform = Transform3D(6.6874e-16, 1.5299e-08, 0.35, 0.35, -1.5299e-08, 0, 1.5299e-08, 0.35, -1.5299e-08, 0, 0, 0)
 script = ExtResource("1_gl67l")
 
 [node name="selector_switch" parent="." instance=ExtResource("2_3ae11")]

@@ -251,6 +251,7 @@ backlight = Color(1, 0.537255, 0, 1)
 refraction_enabled = true
 
 [node name="Node3D3" type="Node3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 
 [node name="Box" type="CSGBox3D" parent="."]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)

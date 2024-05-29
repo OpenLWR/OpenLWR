@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6wxx3h3n7ma4"
 path.s3tc="res://.godot/imported/far right top.png-ba6c12df46ead6255e9b11758a544da5.s3tc.ctex"
+path.etc2="res://.godot/imported/far right top.png-ba6c12df46ead6255e9b11758a544da5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Textures/reference diagrams/far right top.png"
-dest_files=["res://.godot/imported/far right top.png-ba6c12df46ead6255e9b11758a544da5.s3tc.ctex"]
+dest_files=["res://.godot/imported/far right top.png-ba6c12df46ead6255e9b11758a544da5.s3tc.ctex", "res://.godot/imported/far right top.png-ba6c12df46ead6255e9b11758a544da5.etc2.ctex"]
 
 [params]
 

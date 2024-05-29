@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b0nkl8jxbkk6j" path="res://Assets/Textures/PAM.png" id="3_wtrtr"]
 
 [node name="Label" type="CSGBox3D"]
-transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -7.45058e-08, 0.746681, -8.88178e-16, -1, -1.49012e-08, -4.47035e-08, 0, 0, 0)
+transform = Transform3D(-4.37114e-08, 0, -0.999999, 0, 0.746681, 0, 1, 0, -4.37113e-08, 0, 0, 0)
 use_collision = true
 size = Vector3(0.002, 0.0239888, 0.071291)
 material = ExtResource("1_jodx0")

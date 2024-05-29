@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0nkl8jxbkk6j"
 path.s3tc="res://.godot/imported/PAM.png-15765c981d8dfa0e51798cf0364bca20.s3tc.ctex"
+path.etc2="res://.godot/imported/PAM.png-15765c981d8dfa0e51798cf0364bca20.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Textures/PAM.png"
-dest_files=["res://.godot/imported/PAM.png-15765c981d8dfa0e51798cf0364bca20.s3tc.ctex"]
+dest_files=["res://.godot/imported/PAM.png-15765c981d8dfa0e51798cf0364bca20.s3tc.ctex", "res://.godot/imported/PAM.png-15765c981d8dfa0e51798cf0364bca20.etc2.ctex"]
 
 [params]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfxr8mswmegkc"
 path.s3tc="res://.godot/imported/right.png-375c7021137c92bb70038a949f8fc67b.s3tc.ctex"
+path.etc2="res://.godot/imported/right.png-375c7021137c92bb70038a949f8fc67b.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://Assets/Common/Gauges/Edgewise/Textures/Placeholder/right.png"
-dest_files=["res://.godot/imported/right.png-375c7021137c92bb70038a949f8fc67b.s3tc.ctex"]
+dest_files=["res://.godot/imported/right.png-375c7021137c92bb70038a949f8fc67b.s3tc.ctex", "res://.godot/imported/right.png-375c7021137c92bb70038a949f8fc67b.etc2.ctex"]
 
 [params]
 

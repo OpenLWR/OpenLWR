@@ -274,6 +274,15 @@ enum server_packets {
 		"atypical" : false,
 		"text" : true,
 	},
+	
+	"rcic_rpm": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/rcic_rpm",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 7000,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var switches = {
@@ -734,6 +743,22 @@ var switches = {
 		},
 	},
 	"ms_rv_4c": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	
+	"rcic_v_45": {
 		"switch": null,
 		"positions": {
 			0: 45,

@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://cyksa23nxqjwn"]
 
 [ext_resource type="Script" path="res://Assets/Common/Switches/Selector Switch/selector_switch.gd" id="1_w2284"]
-[ext_resource type="Material" uid="uid://dqms4q6oxflb7" path="res://Assets/Materials/silver_metal.tres" id="2_jm5jg"]
+[ext_resource type="Material" path="res://Assets/Materials/silver_metal.tres" id="2_jm5jg"]
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="3_ym3f2"]
 [ext_resource type="PackedScene" uid="uid://gxikcyses8jk" path="res://Assets/Common/Switches/Selector Switch/selector_switch.glb" id="4_o0pj7"]
 [ext_resource type="FontFile" uid="uid://cqsshl4y7vp2w" path="res://Assets/Fonts/Roboto Condensed/RobotoCondensed-VariableFont_wght.ttf" id="5_hmpvk"]

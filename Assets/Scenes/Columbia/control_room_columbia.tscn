@@ -1,4 +1,4 @@
-[gd_scene load_steps=368 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=370 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -34,7 +34,7 @@
 [ext_resource type="AudioStream" uid="uid://h63ya0mtowh1" path="res://Assets/Audio/CGSPanelAlarm.mp3" id="26_77or2"]
 [ext_resource type="Texture2D" uid="uid://c8q4aym8ckihj" path="res://Assets/Textures/AnnunciatorTriangle.png" id="26_ud3n4"]
 [ext_resource type="PackedScene" uid="uid://bwi0yuo7jm8bp" path="res://Assets/Common/Annunciators/annunciator_cgs_8x6.tscn" id="27_6jg2m"]
-[ext_resource type="Material" uid="uid://h3pec0eq2wyc" path="res://Assets/Materials/red_plastic.tres" id="27_mwtj8"]
+[ext_resource type="Material" path="res://Assets/Materials/red_plastic.tres" id="27_mwtj8"]
 [ext_resource type="PackedScene" uid="uid://cwbh50131lniu" path="res://Assets/Common/Switches/Range Switch/range_switch.tscn" id="29_tg1gb"]
 [ext_resource type="Material" uid="uid://c2raag84b6lqd" path="res://Assets/Materials/black_metal.tres" id="30_1q8ae"]
 [ext_resource type="Script" path="res://Assets/Common/Annunciators/alarms.gd" id="30_mjcs6"]
@@ -228,6 +228,15 @@ emission_enabled = true
 emission = Color(0.26334, 0.95078, 0.19242, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mji4f"]
+albedo_color = Color(0.479588, 0, 0.050164, 1)
+emission = Color(0.882621, 0, 0.0941243, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bbnog"]
+albedo_color = Color(0, 0.547876, 0.128561, 1)
+emission_enabled = true
+emission = Color(0.26334, 0.95078, 0.19242, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ydp7k"]
 albedo_color = Color(0.479588, 0, 0.050164, 1)
 emission = Color(0.882621, 0, 0.0941243, 1)
 
@@ -3730,6 +3739,47 @@ transform = Transform3D(-3.93402e-10, 1.38778e-16, 0.009, -6.61744e-24, 0.013, -
 shaded = true
 texture = ExtResource("16_w8k2n")
 
+[node name="rcic_rpm" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 4.36978, 0.991194, 2.97296)
+
+[node name="Label" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_rpm"]
+transform = Transform3D(-4.37114e-08, 0, -0.999999, 0, 0.746681, 0, 1, 0, -4.37113e-08, 0.020412, -0.0864944, 0.133456)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0885625)
+material = ExtResource("3_pvt5y")
+
+[node name="Name" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_rpm/Label"]
+transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105762, 0.00663781, 0.0230532)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "FLOW"
+font = ExtResource("15_o5a3n")
+font_size = 30
+outline_size = 0
+
+[node name="Name3" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_rpm/Label"]
+transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105762, -0.00857902, 0.000804424)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "RHR-P-2B"
+font = ExtResource("15_o5a3n")
+font_size = 30
+outline_size = 0
+
+[node name="Name2" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_rpm/Label"]
+transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105762, 0.00663781, -0.0200834)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "PRESSURE"
+font = ExtResource("15_o5a3n")
+font_size = 30
+outline_size = 0
+
+[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_rpm/Label"]
+transform = Transform3D(-3.93402e-10, 1.38778e-16, 0.009, -6.61744e-24, 0.013, -2.77556e-16, -0.009, 1.19682e-16, -3.93403e-10, 0.00116062, -0.000610828, 0.0390334)
+shaded = true
+texture = ExtResource("16_w8k2n")
+
 [node name="rhr_b_press" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("18_bcd1o")]
 transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.63178, 0.991194, 5.23495)
 
@@ -5563,6 +5613,51 @@ text = "1131 PSIG"
 font_size = 20
 
 [node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_4a/Label" index="2"]
+transform = Transform3D(-3.93402e-10, -5.11893e-24, 0.009, -6.93889e-18, 0.013, 2.32831e-10, -0.009, 1.26621e-16, -3.93403e-10, 0.00116032, -0.00777626, 0.0218549)
+
+[node name="rcic_v_45" parent="Control Room Panels/Main Panel Left Side/Controls/SRV" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.77698, -0.00819415, 2.27434)
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/rcic_v_45"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/rcic_v_45/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_bbnog")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/rcic_v_45"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/rcic_v_45/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_ydp7k")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/rcic_v_45" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/rcic_v_45/Label" index="0"]
+transform = Transform3D(-1.31134e-09, -1.06988e-31, 0.03, 0, 0.042, 9.31323e-10, -0.03, 2.77556e-17, -1.31134e-09, 0.00105715, 0.00197601, 1.71661e-05)
+text = "SAFETY RELIEF
+MS-RV-4A"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/rcic_v_45/Label" index="1"]
+transform = Transform3D(-1.31134e-09, -5.58048e-23, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 1.33249e-15, -1.31135e-09, 0.00105131, -0.0080471, -0.0324926)
+text = "1131 PSIG"
+font_size = 20
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/rcic_v_45/Label" index="2"]
 transform = Transform3D(-3.93402e-10, -5.11893e-24, 0.009, -6.93889e-18, 0.013, 2.32831e-10, -0.009, 1.26621e-16, -3.93403e-10, 0.00116032, -0.00777626, 0.0218549)
 
 [node name="ms_rv_3a19" parent="Control Room Panels/Main Panel Left Side/Controls/SRV" instance=ExtResource("13_r65ec")]
@@ -14272,6 +14367,8 @@ omni_range = 17.632
 [editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_flow/edgewise_gauge"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/rhr_b_flow"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/rhr_b_flow/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/rcic_rpm"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/rcic_rpm/edgewise_gauge"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/rhr_c_flow"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/rhr_c_flow/edgewise_gauge"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4"]
@@ -14385,6 +14482,9 @@ omni_range = 17.632
 [editable path="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_4a"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_4a/selector_switch"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_4a/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/SRV/rcic_v_45"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/SRV/rcic_v_45/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/SRV/rcic_v_45/Label"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_3a19"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_3a19/selector_switch"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_3a19/Label"]

@@ -3,11 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://lnm7bow2xcc4" path="res://Assets/Common/Annunciators/cover.glb" id="1_07dcx"]
 [ext_resource type="FontFile" uid="uid://cqsshl4y7vp2w" path="res://Assets/Fonts/Roboto Condensed/RobotoCondensed-VariableFont_wght.ttf" id="2_4apjq"]
 [ext_resource type="Material" uid="uid://b0b37alwlfoju" path="res://Assets/Materials/white_metal.tres" id="2_27rx0"]
+[ext_resource type="Material" uid="uid://dhj0kjjcc7lie" path="res://Assets/Materials/annunciator_red.tres" id="2_xn14l"]
 [ext_resource type="Texture2D" uid="uid://c8q4aym8ckihj" path="res://Assets/Textures/AnnunciatorTriangle.png" id="4_841lo"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7lu1s"]
-emission = Color(0.605563, 0.000574561, 0.000314438, 1)
-emission_energy_multiplier = 1.9
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oti7f"]
 vertex_color_use_as_albedo = true
@@ -29,7 +26,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/1-8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/1-8/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -48,7 +45,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/1-7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/1-7/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -67,7 +64,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/1-6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/1-6/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -86,7 +83,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/1-5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/1-5/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -105,7 +102,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/1-4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/1-4/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -124,7 +121,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/1-3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/1-3/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -143,7 +140,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/1-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/1-2/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -162,7 +159,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/1-1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/1-1/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -181,7 +178,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/2-8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/2-8/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -200,7 +197,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/2-7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/2-7/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -219,7 +216,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/2-6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/2-6/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -238,7 +235,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/2-5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/2-5/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -257,7 +254,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/2-4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/2-4/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -276,7 +273,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/2-3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/2-3/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -295,7 +292,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/2-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/2-2/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -314,7 +311,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/2-1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/2-1/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -333,7 +330,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/3-8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/3-8/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -352,7 +349,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/3-7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/3-7/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -371,7 +368,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/3-6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/3-6/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -390,7 +387,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/3-5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/3-5/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -409,7 +406,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/3-4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/3-4/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -428,7 +425,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/3-3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/3-3/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -447,7 +444,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/3-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/3-2/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -466,7 +463,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/3-1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/3-1/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -485,7 +482,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/4-8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/4-8/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -504,7 +501,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/4-7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/4-7/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -523,7 +520,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/4-6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/4-6/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -542,7 +539,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/4-5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/4-5/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -561,7 +558,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/4-4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/4-4/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -580,7 +577,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/4-3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/4-3/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -599,7 +596,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/4-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/4-2/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -618,7 +615,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/4-1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/4-1/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -637,7 +634,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/5-8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/5-8/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -656,7 +653,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/5-7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/5-7/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -675,7 +672,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/5-6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/5-6/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -694,7 +691,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/5-5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/5-5/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -713,7 +710,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/5-4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/5-4/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -732,7 +729,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/5-3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/5-3/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -751,7 +748,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/5-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/5-2/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -770,7 +767,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/5-1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/5-1/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -789,7 +786,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/6-8"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/6-8/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -808,7 +805,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/6-7"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/6-7/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -827,7 +824,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/6-6"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/6-6/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -846,7 +843,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/6-5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/6-5/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -865,7 +862,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/6-4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/6-4/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -884,7 +881,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/6-3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/6-3/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -903,7 +900,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/6-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/6-2/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)
@@ -922,7 +919,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/6-1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
 size = Vector3(3.04053, 1.95386, 0.300903)
-material = SubResource("StandardMaterial3D_7lu1s")
+material = ExtResource("2_xn14l")
 
 [node name="Label3D" type="Label3D" parent="Windows/6-1/CSGBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163079)

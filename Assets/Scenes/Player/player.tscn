@@ -84,6 +84,7 @@ text = "State: Not Connected"
 script = ExtResource("5_72wwd")
 
 [node name="Menu" type="Node2D" parent="Head/Camera3d"]
+visible = false
 script = ExtResource("6_qkj5w")
 
 [node name="Menu" type="Node2D" parent="Head/Camera3d/Menu"]
@@ -144,6 +145,7 @@ scale = Vector2(147.5, 271.75)
 mesh = SubResource("BoxMesh_nyxp3")
 
 [node name="Graphics" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
+visible = false
 layout_mode = 2
 script = ExtResource("6_ssrgo")
 
@@ -193,8 +195,14 @@ offset_bottom = -2.0
 text = "Antialiasing"
 
 [node name="Controls" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
-visible = false
 layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="Head/Camera3d/Menu/Settings/Settings/Controls"]
+offset_left = 21.0
+offset_top = 38.0
+offset_right = 124.0
+offset_bottom = 69.0
+text = "Toggle Zoom"
 
 [node name="Exit" type="Button" parent="Head/Camera3d/Menu/Settings"]
 offset_left = 794.0

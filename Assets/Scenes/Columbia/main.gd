@@ -274,6 +274,58 @@ enum server_packets {
 		"atypical" : false,
 		"text" : true,
 	},
+	
+	"rcic_flow": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/rcic_flow",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 700,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	"rcic_rpm": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/rcic_rpm",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 7000,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	"rcic_supply_press": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/rcic_supply_press",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 1200,
+		"atypical" : false,
+		"text" : false,
+	},
+	"rcic_exhaust_press": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/rcic_exhaust_press",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 50,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	"rcic_pump_disch_press": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/rcic_pump_disch_press",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 1300,
+		"atypical" : false,
+		"text" : false,
+	},
+	"rcic_pump_suct_press": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/rcic_pump_suct_press",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 100,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var switches = {
@@ -748,6 +800,123 @@ var switches = {
 			"red" : null,
 		},
 	},
+	
+	"rcic_v_1": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rcic_v_45": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rcic_v_8": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rcic_v_63": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rcic_v_68": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	
+	"rcic_v_13": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rcic_v_31": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	
+	"rfw_trip": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {},
+	},
 }
 
 var buttons = {
@@ -864,6 +1033,21 @@ var buttons = {
 		"updated": false,
 	},
 	"DET_DRIVE_OUT": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	
+	"rcic_init": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"rcic_init_reset": {
 		"switch": null,
 		"state": false,
 		"momentary": false,
@@ -1069,6 +1253,28 @@ var alarms = {
 		"silenced" : false,
 		"material": null,
 	},
+	
+	"rcic_init_rpv_level_low": {
+		"box": "P601_A4",
+		"window": "1-2",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	"rcic_rpv_level_high": {
+		"box": "P601_A4",
+		"window": "1-3",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	"rcic_turbine_trip": {
+		"box": "P601_A4",
+		"window": "1-5",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
 }
 
 var alarm_groups = {
@@ -1130,6 +1336,8 @@ var alarm_groups = {
 	
 	"FCD_OPERATE": null,
 	"CHART_RECORDERS_OPERATE": null,
+	
+	"rcic_init": $"Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/sealed_in".get_material(),
 	
 }
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=368 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=386 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -31,14 +31,14 @@
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="21_y8sv6"]
 [ext_resource type="Script" path="res://Assets/Scenes/Nine Mile Point Unit 2/rod_select_panel.gd" id="23_uaogx"]
 [ext_resource type="Script" path="res://Assets/Common/Annunciators/annunciator.gd" id="24_02a15"]
+[ext_resource type="Material" uid="uid://di3ysg56v4wql" path="res://Assets/Materials/yellow_plastic.tres" id="25_h18gl"]
 [ext_resource type="AudioStream" uid="uid://h63ya0mtowh1" path="res://Assets/Audio/CGSPanelAlarm.mp3" id="26_77or2"]
 [ext_resource type="Texture2D" uid="uid://c8q4aym8ckihj" path="res://Assets/Textures/AnnunciatorTriangle.png" id="26_ud3n4"]
 [ext_resource type="PackedScene" uid="uid://bwi0yuo7jm8bp" path="res://Assets/Common/Annunciators/annunciator_cgs_8x6.tscn" id="27_6jg2m"]
-[ext_resource type="Material" uid="uid://h3pec0eq2wyc" path="res://Assets/Materials/red_plastic.tres" id="27_mwtj8"]
+[ext_resource type="Material" path="res://Assets/Materials/red_plastic.tres" id="27_mwtj8"]
 [ext_resource type="PackedScene" uid="uid://cwbh50131lniu" path="res://Assets/Common/Switches/Range Switch/range_switch.tscn" id="29_tg1gb"]
 [ext_resource type="Material" uid="uid://c2raag84b6lqd" path="res://Assets/Materials/black_metal.tres" id="30_1q8ae"]
 [ext_resource type="Script" path="res://Assets/Common/Annunciators/alarms.gd" id="30_mjcs6"]
-[ext_resource type="AudioStream" uid="uid://bfn1cqw1n0oqs" path="res://Assets/Audio/reactor_alarm_loop.mp3" id="31_l3fxx"]
 [ext_resource type="AudioStream" uid="uid://bqm26847iqdj1" path="res://Assets/Audio/electrical_alarm_loop.mp3" id="32_nxmn4"]
 
 [sub_resource type="Environment" id="Environment_gjsn6"]
@@ -222,20 +222,90 @@ emission = Color(0.26334, 0.95078, 0.19242, 1)
 albedo_color = Color(0.479588, 0, 0.050164, 1)
 emission = Color(0.882621, 0, 0.0941243, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vu5sq"]
-albedo_color = Color(0, 0.547876, 0.128561, 1)
-emission_enabled = true
-emission = Color(0.26334, 0.95078, 0.19242, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mji4f"]
-albedo_color = Color(0.479588, 0, 0.050164, 1)
-emission = Color(0.882621, 0, 0.0941243, 1)
-
 [sub_resource type="ViewportTexture" id="ViewportTexture_p4cy1"]
 viewport_path = NodePath("Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport")
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_s1qrm"]
 viewport_path = NodePath("Control Room Panels/Main Panel Left Side/Controls/GDS1/Sprite3D/SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n14ft"]
+albedo_color = Color(0, 0.547876, 0.128561, 1)
+emission_enabled = true
+emission = Color(0.26334, 0.95078, 0.19242, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_guuhy"]
+albedo_color = Color(0.479588, 0, 0.050164, 1)
+emission = Color(0.882621, 0, 0.0941243, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w0iym"]
+albedo_color = Color(0, 0.547876, 0.128561, 1)
+emission_enabled = true
+emission = Color(0.26334, 0.95078, 0.19242, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iq2fb"]
+albedo_color = Color(0.479588, 0, 0.050164, 1)
+emission = Color(0.882621, 0, 0.0941243, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lwdbg"]
+albedo_color = Color(0, 0.547876, 0.128561, 1)
+emission_enabled = true
+emission = Color(0.26334, 0.95078, 0.19242, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_45hq3"]
+albedo_color = Color(0.479588, 0, 0.050164, 1)
+emission = Color(0.882621, 0, 0.0941243, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r1ab8"]
+albedo_color = Color(0, 0.547876, 0.128561, 1)
+emission_enabled = true
+emission = Color(0.26334, 0.95078, 0.19242, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j6xr1"]
+albedo_color = Color(0.479588, 0, 0.050164, 1)
+emission = Color(0.882621, 0, 0.0941243, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s4e07"]
+albedo_color = Color(0, 0.547876, 0.128561, 1)
+emission_enabled = true
+emission = Color(0.26334, 0.95078, 0.19242, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q1x6a"]
+albedo_color = Color(0.479588, 0, 0.050164, 1)
+emission = Color(0.882621, 0, 0.0941243, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vqkuo"]
+albedo_color = Color(0.381226, 0.126006, 0, 1)
+emission = Color(0.926916, 0.357969, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_umpcg"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.705882, 0.517647, 0.254902, 1)
+albedo_texture_force_srgb = true
+emission = Color(1, 1, 1, 1)
+clearcoat = 0.16
+clearcoat_roughness = 1.0
+refraction_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hjk8c"]
+size = Vector3(0.0144663, 0.0430282, 0.0426735)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fqel5"]
+albedo_color = Color(0, 0.547876, 0.128561, 1)
+emission_enabled = true
+emission = Color(0.26334, 0.95078, 0.19242, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xe4kk"]
+albedo_color = Color(0.479588, 0, 0.050164, 1)
+emission = Color(0.882621, 0, 0.0941243, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h1vi7"]
+albedo_color = Color(0, 0.547876, 0.128561, 1)
+emission_enabled = true
+emission = Color(0.26334, 0.95078, 0.19242, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vkmcq"]
+albedo_color = Color(0.479588, 0, 0.050164, 1)
+emission = Color(0.882621, 0, 0.0941243, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5njp"]
 albedo_color = Color(0.070179, 0.677853, 0.920756, 1)
@@ -258,18 +328,6 @@ radius = 0.429731
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_82s6k"]
 albedo_color = Color(0.701961, 0.643137, 0.52549, 0.752941)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_umpcg"]
-vertex_color_use_as_albedo = true
-albedo_color = Color(0.705882, 0.517647, 0.254902, 1)
-albedo_texture_force_srgb = true
-emission = Color(1, 1, 1, 1)
-clearcoat = 0.16
-clearcoat_roughness = 1.0
-refraction_enabled = true
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_hjk8c"]
-size = Vector3(0.0144663, 0.0430282, 0.0426735)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cis0m"]
 albedo_color = Color(0.535444, 0.709759, 0.787381, 1)
@@ -2385,6 +2443,26 @@ emission_energy_multiplier = 1.9
 emission = Color(0.605563, 0.000574561, 0.000314438, 1)
 emission_energy_multiplier = 1.9
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ocqlc"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hnrl8"]
+emission = Color(0.79395, 0.396243, 3.85046e-07, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8sidq"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ofvgn"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s1dek"]
+emission = Color(0.79395, 0.396243, 3.85046e-07, 1)
+emission_energy_multiplier = 1.9
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ihh33"]
 emission = Color(0.605563, 0.000574561, 0.000314438, 1)
 emission_energy_multiplier = 1.9
@@ -3729,6 +3807,144 @@ outline_size = 0
 transform = Transform3D(-3.93402e-10, 1.38778e-16, 0.009, -6.61744e-24, 0.013, -2.77556e-16, -0.009, 1.19682e-16, -3.93403e-10, 0.00116062, -0.000610828, 0.0390334)
 shaded = true
 texture = ExtResource("16_w8k2n")
+
+[node name="rcic_flow" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 4.36978, 0.991194, 2.97296)
+
+[node name="Label" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_flow"]
+transform = Transform3D(-4.37114e-08, 0, -0.999999, 0, 0.746681, 0, 1, 0, -4.37113e-08, -0.000507832, -0.0864944, 0.133456)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0467227)
+material = ExtResource("3_pvt5y")
+
+[node name="Name" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_flow/Label"]
+transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105762, 0.000124454, 0.00064826)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "PUMP FLOW"
+font = ExtResource("15_o5a3n")
+font_size = 30
+outline_size = 0
+
+[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_flow/Label"]
+transform = Transform3D(-3.93402e-10, 1.38778e-16, 0.009, -6.61744e-24, 0.013, -2.77556e-16, -0.009, 1.19682e-16, -3.93403e-10, 0.00116062, -0.00644732, 0.0175416)
+visible = false
+shaded = true
+texture = ExtResource("16_w8k2n")
+
+[node name="rcic_rpm" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 4.27337, 0.991194, 2.87655)
+
+[node name="Label" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_rpm"]
+transform = Transform3D(-4.37114e-08, 0, -0.999999, 0, 0.746681, 0, 1, 0, -4.37113e-08, -0.000610828, -0.0864944, 0.133456)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0467227)
+material = ExtResource("3_pvt5y")
+
+[node name="Name" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_rpm/Label"]
+transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105762, 0.000124454, 0.00064826)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "TURBINE SPEED"
+font = ExtResource("15_o5a3n")
+font_size = 30
+outline_size = 0
+
+[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_rpm/Label"]
+transform = Transform3D(-3.93402e-10, 1.38778e-16, 0.009, -6.61744e-24, 0.013, -2.77556e-16, -0.009, 1.19682e-16, -3.93403e-10, 0.00116062, -0.00644732, 0.0175416)
+visible = false
+shaded = true
+texture = ExtResource("16_w8k2n")
+
+[node name="rcic_pump_suct_press" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 4.1178, 0.991194, 2.72099)
+
+[node name="Label" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_pump_suct_press"]
+transform = Transform3D(-4.37114e-08, 0, -0.999999, 0, 0.746681, 0, 1, 0, -4.37113e-08, 0.020412, -0.0864944, 0.133456)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0885625)
+material = ExtResource("3_pvt5y")
+
+[node name="Name" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_pump_suct_press/Label"]
+transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105762, 0.00663781, 0.0230532)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "SUCTION"
+font = ExtResource("15_o5a3n")
+font_size = 30
+outline_size = 0
+
+[node name="Name3" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_pump_suct_press/Label"]
+transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105762, -0.00857902, 0.000804424)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "PUMP PRESSURE"
+font = ExtResource("15_o5a3n")
+font_size = 30
+outline_size = 0
+
+[node name="Name2" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_pump_suct_press/Label"]
+transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105762, 0.00663781, -0.0200834)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DISCHARGE"
+font = ExtResource("15_o5a3n")
+font_size = 30
+outline_size = 0
+
+[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_pump_suct_press/Label"]
+transform = Transform3D(-3.93402e-10, 1.38778e-16, 0.009, -6.61744e-24, 0.013, -2.77556e-16, -0.009, 1.19682e-16, -3.93403e-10, 0.00116062, -0.000610828, 0.0390334)
+visible = false
+shaded = true
+texture = ExtResource("16_w8k2n")
+
+[node name="rcic_supply_press" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 4.04709, 0.991194, 2.65028)
+
+[node name="Label" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_supply_press"]
+transform = Transform3D(-4.37114e-08, 0, -0.999999, 0, 0.746681, 0, 1, 0, -4.37113e-08, 0.020412, -0.0864944, 0.133456)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0885625)
+material = ExtResource("3_pvt5y")
+
+[node name="Name" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_supply_press/Label"]
+transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105762, 0.00663781, 0.0230532)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "SUPPLY"
+font = ExtResource("15_o5a3n")
+font_size = 30
+outline_size = 0
+
+[node name="Name3" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_supply_press/Label"]
+transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105762, -0.00857902, 0.000804424)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "TURBINE PRESSURE"
+font = ExtResource("15_o5a3n")
+font_size = 30
+outline_size = 0
+
+[node name="Name2" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_supply_press/Label"]
+transform = Transform3D(-1.31134e-09, -5.59553e-17, 0.03, -3.96726e-18, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105762, 0.00663781, -0.0200834)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "EXHAUST"
+font = ExtResource("15_o5a3n")
+font_size = 30
+outline_size = 0
+
+[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/rcic_supply_press/Label"]
+transform = Transform3D(-3.93402e-10, 1.38778e-16, 0.009, -6.61744e-24, 0.013, -2.77556e-16, -0.009, 1.19682e-16, -3.93403e-10, 0.00116062, -0.000610828, 0.0390334)
+visible = false
+shaded = true
+texture = ExtResource("16_w8k2n")
+
+[node name="rcic_pump_disch_press" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 4.08953, 0.991194, 2.69271)
+
+[node name="rcic_exhaust_press" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 4.01882, 0.991194, 2.622)
 
 [node name="rhr_b_press" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("18_bcd1o")]
 transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.63178, 0.991194, 5.23495)
@@ -5510,11 +5726,11 @@ transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.0912
 [node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_4c/Label" index="0"]
 transform = Transform3D(-1.31134e-09, -1.06988e-31, 0.03, 0, 0.042, 9.31323e-10, -0.03, 2.77556e-17, -1.31134e-09, 0.00105715, 0.00197601, 1.71661e-05)
 text = "SAFETY RELIEF
-MS-RV-4C"
+MS-RV-3B"
 
 [node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_4c/Label" index="1"]
 transform = Transform3D(-1.31134e-09, -5.58048e-23, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 1.33249e-15, -1.31135e-09, 0.00105131, -0.0080471, -0.0324926)
-text = "1121 PSIG"
+text = "1111 PSIG"
 font_size = 20
 
 [node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_4c/Label" index="2"]
@@ -5534,7 +5750,7 @@ material = SubResource("StandardMaterial3D_av737")
 transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
 radius = 0.014
 rings = 5
-material = SubResource("StandardMaterial3D_vu5sq")
+material = SubResource("StandardMaterial3D_elr33")
 
 [node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_4a"]
 transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
@@ -5547,7 +5763,7 @@ material = SubResource("StandardMaterial3D_av737")
 transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
 radius = 0.014
 rings = 5
-material = SubResource("StandardMaterial3D_mji4f")
+material = SubResource("StandardMaterial3D_gwhfn")
 
 [node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_4a" instance=ExtResource("13_sbqyo")]
 transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
@@ -5555,11 +5771,11 @@ transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.0912
 [node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_4a/Label" index="0"]
 transform = Transform3D(-1.31134e-09, -1.06988e-31, 0.03, 0, 0.042, 9.31323e-10, -0.03, 2.77556e-17, -1.31134e-09, 0.00105715, 0.00197601, 1.71661e-05)
 text = "SAFETY RELIEF
-MS-RV-4A"
+MS-RV-3B"
 
 [node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_4a/Label" index="1"]
 transform = Transform3D(-1.31134e-09, -5.58048e-23, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 1.33249e-15, -1.31135e-09, 0.00105131, -0.0080471, -0.0324926)
-text = "1131 PSIG"
+text = "1111 PSIG"
 font_size = 20
 
 [node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_4a/Label" index="2"]
@@ -5696,6 +5912,819 @@ region_rect = Rect2(0, 0, 701, 512)
 size = Vector2i(1150, 1150)
 
 [node name="GDS" parent="Control Room Panels/Main Panel Left Side/Controls/GDS1/Sprite3D/SubViewport" instance=ExtResource("20_5h0ir")]
+
+[node name="RCIC" type="Node3D" parent="Control Room Panels/Main Panel Left Side/Controls"]
+
+[node name="rcic_v_31" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.91812, -0.00763798, 2.41579)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31/selector_switch/CSGBox3D" index="0"]
+text = "CLOSE"
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_n14ft")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_guuhy")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31/Label" index="0"]
+text = "PUMP SUCTION FROM
+SUPPRESSION POOL
+RCIC-V-31"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31/Label" index="1"]
+text = "TODO"
+
+[node name="rhr_v_24b7" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.84741, -0.00763798, 2.34508)
+script = null
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b7/selector_switch/CSGBox3D" index="0"]
+text = "CLOSE"
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b7"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b7/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_gki1c")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b7"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b7/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_wfwbt")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b7" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b7/Label" index="0"]
+text = "SUPPRESSION POOL
+COOLING/TEST RETURN
+RHR-V-24B"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b7/Label" index="1"]
+text = "TODO"
+
+[node name="rhr_v_24b8" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.7767, -0.00763798, 2.27436)
+script = null
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b8/selector_switch/CSGBox3D" index="0"]
+text = "CLOSE"
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b8"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b8/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_gki1c")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b8"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b8/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_wfwbt")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b8" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b8/Label" index="0"]
+text = "SUPPRESSION POOL
+COOLING/TEST RETURN
+RHR-V-24B"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b8/Label" index="1"]
+text = "TODO"
+
+[node name="rhr_v_24b9" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.67295, 0.0235488, 2.37811)
+script = null
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b9/selector_switch/CSGBox3D" index="0"]
+text = "CLOSE"
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b9"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b9/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_gki1c")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b9"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b9/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_wfwbt")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b9" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b9/Label" index="0"]
+text = "MINIMUM FLOW BYPASS
+RCIC-V-19"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b9/Label" index="1"]
+text = "MC-S2-1A"
+
+[node name="rhr_v_24b21" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.74366, 0.0235488, 2.44882)
+script = null
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b21/selector_switch/CSGBox3D" index="0"]
+text = "CLOSE"
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b21"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b21/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_gki1c")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b21"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b21/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_wfwbt")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b21" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b21/Label" index="0"]
+text = "WATER LEG PUMP
+RCIC-P-3"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b21/Label" index="1"]
+text = "MC-7A"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b21/Label" index="2"]
+visible = false
+
+[node name="rcic_v_1" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.60224, 0.0235488, 2.3074)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_1/selector_switch/CSGBox3D" index="0"]
+text = "CLOSE"
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_1"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_1/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_w0iym")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_1"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_1/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_iq2fb")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_1" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_1/Label" index="0"]
+text = "TURBINE TRIP
+RCIC-V-1"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_1/Label" index="1"]
+text = "MC-S2-1A"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_1/Label" index="2"]
+visible = false
+
+[node name="rhr_v_24b10" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.56868, 0.0512819, 2.48238)
+script = null
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b10/selector_switch/CSGBox3D" index="0"]
+text = "CLOSE"
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b10"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b10/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_gki1c")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b10"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b10/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_wfwbt")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b10" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b10/Label" index="0"]
+text = "SUPPRESSION POOL
+COOLING/TEST RETURN
+RHR-V-24B"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b10/Label" index="1"]
+text = "TODO"
+
+[node name="rhr_v_24b16" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.63939, 0.0512819, 2.55309)
+script = null
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b16/selector_switch/CSGBox3D" index="0"]
+text = "CLOSE"
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b16"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b16/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_gki1c")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b16"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b16/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_wfwbt")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b16" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b16/Label" index="0"]
+text = "SUPPRESSION POOL
+COOLING/TEST RETURN
+RHR-V-24B"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b16/Label" index="1"]
+text = "TODO"
+
+[node name="rcic_v_13" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.7101, 0.0512819, 2.6238)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_13/selector_switch/CSGBox3D" index="0"]
+text = "CLOSE"
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_13"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_13/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_lwdbg")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_13"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_13/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_45hq3")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_13" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_13/Label" index="0"]
+text = "RPV INJECTION
+RCIC-V-13"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_13/Label" index="1"]
+text = "MC-S2-1A"
+
+[node name="rcic_v_45" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.49797, 0.0512819, 2.41167)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_45/selector_switch/CSGBox3D" index="0"]
+text = "CLOSE"
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_45"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_45/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_r1ab8")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_45"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_45/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_j6xr1")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_45" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_45/Label" index="0"]
+text = "STEAM TO TURBINE
+RCIC-V-45"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_45/Label" index="1"]
+text = "MC-S2-1A"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_45/Label" index="2"]
+visible = false
+
+[node name="rhr_v_24b19" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.35655, 0.0512819, 2.27025)
+script = null
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b19/selector_switch/CSGBox3D" index="0"]
+text = "CLOSE"
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b19"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b19/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_gki1c")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b19"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b19/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_wfwbt")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b19" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b19/Label" index="0"]
+text = "SUPPRESSION POOL
+COOLING/TEST RETURN
+RHR-V-24B"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b19/Label" index="1"]
+text = "TODO"
+
+[node name="rhr_v_24b20" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.28584, 0.0512819, 2.19954)
+script = null
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b20/selector_switch/CSGBox3D" index="0"]
+text = "CLOSE"
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b20"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b20/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_gki1c")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b20"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b20/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_wfwbt")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b20" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b20/Label" index="0"]
+text = "SUPPRESSION POOL
+COOLING/TEST RETURN
+RHR-V-24B"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b20/Label" index="1"]
+text = "TODO"
+
+[node name="rcic_v_68" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.46464, 0.0804827, 2.58643)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_68/selector_switch/CSGBox3D" index="0"]
+transform = Transform3D(0.45, 2.37428e-16, -1.42109e-14, 3.81639e-15, 0.45, -1.49012e-08, -2.13163e-14, 6.70552e-08, 0.45, -0.146187, -4.57764e-05, 0.0108204)
+text = "CLOSE"
+
+[node name="Label3D2" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_68/selector_switch/CSGBox3D" index="1"]
+text = ""
+
+[node name="Label3D3" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_68/selector_switch/CSGBox3D" index="2"]
+transform = Transform3D(0.45, -8.88177e-16, -3.55271e-15, 1.15186e-15, 0.45, -7.45058e-09, 0, 1.49012e-08, 0.45, 0.149261, -1.52588e-05, 0.0108376)
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_68"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_68/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_s4e07")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_68"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_68/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_q1x6a")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_68" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_68/Label" index="0"]
+text = "STEAM EXHAUST TO
+SUPPRESSION POOL
+RCIC-V-68"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_68/Label" index="1"]
+text = "MC-S2-1A"
+
+[node name="rcic_initiation" type="Node3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC"]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 4.32874, 0.182071, 2.72233)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/Label" index="0"]
+text = "RCIC INITIATION RESET"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/Label" index="1"]
+visible = false
+text = "MC-S2-1A"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/Label" index="2"]
+visible = false
+
+[node name="sealed_in" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation"]
+transform = Transform3D(0.0299997, 0, 0, 0, 0.03, 0, 0, 0, 0.03, -0.0175705, 0.0624897, 0.0101309)
+size = Vector3(1, 0.910645, 0.654785)
+material = SubResource("StandardMaterial3D_vqkuo")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/sealed_in"]
+transform = Transform3D(-0.700001, 6.93898e-16, -6.11961e-08, -1.77636e-15, 0.7, 1.49012e-08, 6.11959e-08, -2.98023e-08, -0.7, 0, 0.00857544, -0.330629)
+modulate = Color(0, 0, 0, 1)
+text = "SEALED
+IN"
+font = ExtResource("15_o5a3n")
+font_size = 60
+outline_size = 0
+
+[node name="rcic_init_reset" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0.0139999)
+use_collision = true
+size = Vector3(0.002, 0.042, 0.042)
+material = SubResource("StandardMaterial3D_umpcg")
+script = ExtResource("14_bc77r")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/rcic_init_reset"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/rcic_init_reset/StaticBody3D"]
+shape = SubResource("BoxShape3D_hjk8c")
+
+[node name="rcic_man_init" type="Node3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC"]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 4.39945, 0.182071, 2.79304)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_man_init" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_man_init/Label" index="0"]
+text = "RCIC MANUAL INITIATION"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_man_init/Label" index="1"]
+visible = false
+text = "MC-S2-1A"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_man_init/Label" index="2"]
+visible = false
+
+[node name="rcic_init" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_man_init" instance=ExtResource("17_p3ckw")]
+transform = Transform3D(0, 0, -0.015, 0.015, -6.55671e-10, 0, -6.5567e-10, -0.015, 0, -0.000415564, 0.00990385, 0.0167227)
+
+[node name="rhr_v_24b12" type="Node3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC"]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.39393, 0.0804827, 2.51572)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b12" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b12/Label" index="0"]
+text = "RCIC MANUAL ISOLATION"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b12/Label" index="1"]
+visible = false
+text = "TODO"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b12/Label" index="2"]
+visible = false
+
+[node name="rhr_v_24b13" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.32322, 0.0804827, 2.44501)
+script = null
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b13/selector_switch/CSGBox3D" index="0"]
+transform = Transform3D(0.45, -8.88177e-16, -3.55271e-15, 1.15186e-15, 0.45, -7.45058e-09, 0, 1.49012e-08, 0.45, -0.146187, -1.52588e-05, 0.0108376)
+text = "CLOSE"
+
+[node name="Label3D2" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b13/selector_switch/CSGBox3D" index="1"]
+text = ""
+
+[node name="Label3D3" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b13/selector_switch/CSGBox3D" index="2"]
+transform = Transform3D(0.45, -8.88177e-16, -3.55271e-15, 1.15186e-15, 0.45, -7.45058e-09, 0, 1.49012e-08, 0.45, 0.149261, -1.52588e-05, 0.0108376)
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b13"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b13/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_gki1c")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b13"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b13/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_wfwbt")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b13" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b13/Label" index="0"]
+text = "STEAM LINE
+DRIP POT DRAIN
+RCIC-V-54"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b13/Label" index="1"]
+visible = false
+text = "TODO"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b13/Label" index="2"]
+visible = false
+
+[node name="rcic_v_8" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.2525, 0.0804827, 2.3743)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_8/selector_switch/CSGBox3D" index="0"]
+transform = Transform3D(0.45, -6.51049e-16, -1.06581e-14, 2.92821e-15, 0.45, -2.23517e-08, -1.42109e-14, 5.21541e-08, 0.45, -0.146179, -4.57764e-05, 0.010828)
+text = "CLOSE"
+
+[node name="Label3D2" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_8/selector_switch/CSGBox3D" index="1"]
+transform = Transform3D(0.45, -1.36183e-15, -3.55271e-15, 2.04004e-15, 0.45, -1.49012e-08, -3.55271e-15, 3.72529e-08, 0.45, -0.00445175, -3.05176e-05, 0.0108356)
+text = ""
+
+[node name="Label3D3" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_8/selector_switch/CSGBox3D" index="2"]
+transform = Transform3D(0.45, -1.36183e-15, -3.55271e-15, 2.04004e-15, 0.45, -1.49012e-08, -3.55271e-15, 3.72529e-08, 0.45, 0.149265, -3.05176e-05, 0.0108356)
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_8"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_8/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_fqel5")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_8"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_8/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_xe4kk")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_8" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_8/Label" index="0"]
+text = "STEAM SUPPLY LINE
+OUTBOARD ISOLATION
+RCIC-V-8"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_8/Label" index="1"]
+text = "MC-S2-1A"
+
+[node name="rcic_v_63" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 4.18179, 0.0804827, 2.30359)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_63/selector_switch/CSGBox3D" index="0"]
+transform = Transform3D(0.45, -1.36183e-15, -3.55271e-15, 2.04004e-15, 0.45, -1.49012e-08, -3.55271e-15, 3.72529e-08, 0.45, -0.146183, -3.05176e-05, 0.0108356)
+text = "CLOSE"
+
+[node name="Label3D2" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_63/selector_switch/CSGBox3D" index="1"]
+text = ""
+
+[node name="Label3D3" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_63/selector_switch/CSGBox3D" index="2"]
+transform = Transform3D(0.45, -1.65779e-15, -7.10543e-15, 2.04004e-15, 0.45, -2.23517e-08, -1.06581e-14, 5.21541e-08, 0.45, 0.149265, -4.57764e-05, 0.0108337)
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_63"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219975, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_63/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_h1vi7")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_63"]
+transform = Transform3D(0.699999, 0, 0, 0, 7.45058e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0220022, 0.0624819, 0.0119364)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_63/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_vkmcq")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_63" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47035e-08, 0, 0.999999, -8.9407e-08, 0.746681, 9.09129e-09, -1, -5.96046e-08, -4.27711e-08, -1.90735e-06, 0.0357656, 0.0110473)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_63/Label" index="0"]
+text = "STEAM SUPPLY LINE
+INBOARD ISOLATION
+RCIC-V-63"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_63/Label" index="1"]
+text = "MC-S2-1A"
 
 [node name="PanelDiagrams" type="Node3D" parent="Control Room Panels/Main Panel Left Side"]
 
@@ -5917,8 +6946,38 @@ use_collision = true
 size = Vector3(0.002, 0.0100413, 0.134014)
 material = ExtResource("21_y8sv6")
 
+[node name="Outline69" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.207912, -0.950941, 5.10009e-08, 0.978148, 0.202129, 2.3994e-07, -4.47031e-08, 3.88027e-08, 5.48722, 1.7306, -0.0379636, -4.90338)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.130183)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline70" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.207912, -0.672417, -3.79526, 0.978148, 0.142927, 0.806709, -4.6511e-08, -0.687439, 3.88005, 1.72322, -0.0363939, -4.54026)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.00466443)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline71" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.35667, 0.0367712, -4.53364)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.134014)
+material = ExtResource("21_y8sv6")
+
 [node name="Outline46" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
 transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.35667, 0.0367712, -3.45952)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.134014)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline72" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.207912, -0.672417, 3.79526, 0.978148, 0.142927, -0.806708, -4.47035e-08, 0.687439, 3.88005, 1.72322, -0.0363939, -5.26622)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.00466443)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline73" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.35667, 0.0367712, -5.27403)
 use_collision = true
 size = Vector3(0.002, 0.0100413, 0.134014)
 material = ExtResource("21_y8sv6")
@@ -6048,6 +7107,120 @@ transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08,
 use_collision = true
 size = Vector3(0.002, 0.0100413, 0.0285375)
 material = SubResource("StandardMaterial3D_c5njp")
+
+[node name="Outline50" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.40813, 0.0268394, -4.89956)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0179376)
+material = ExtResource("25_h18gl")
+
+[node name="Outline56" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.39442, 0.0295783, -4.85207)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0578291)
+material = ExtResource("25_h18gl")
+
+[node name="Outline59" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.40545, 0.0273755, -4.59985)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0193401)
+material = ExtResource("27_mwtj8")
+
+[node name="Outline61" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.57095, -0.00569564, -4.59985)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0119695)
+material = ExtResource("27_mwtj8")
+
+[node name="Outline64" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.52851, 0.00278491, -4.62335)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0061959)
+material = ExtResource("27_mwtj8")
+
+[node name="Outline62" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.57095, -0.00569564, -4.69707)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0119695)
+material = ExtResource("27_mwtj8")
+
+[node name="Outline63" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, -0.95334, 2.61094e-07, 0.980615, 0.190496, 1.4766e-06, -2.98023e-08, 8.23849e-10, 5.48722, 1.54355, -0.000219762, -4.64909)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0191684)
+material = ExtResource("27_mwtj8")
+
+[node name="Outline60" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.25722, 0.0569938, -4.59985)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0193401)
+material = ExtResource("27_mwtj8")
+
+[node name="Outline51" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.27231, 0.053978, -4.89956)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0132124)
+material = ExtResource("25_h18gl")
+
+[node name="Outline53" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.2113, 0.0661705, -5.05015)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0129539)
+material = ExtResource("25_h18gl")
+
+[node name="Outline58" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.22215, 0.064001, -4.80063)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.00891834)
+material = ExtResource("25_h18gl")
+
+[node name="Outline52" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 0.95334, 6.47877e-07, 0.980615, -0.190496, 1.0268e-06, -2.98023e-08, 8.41674e-08, -5.48722, 1.24163, 0.0601093, -4.97508)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0290816)
+material = ExtResource("25_h18gl")
+
+[node name="Outline57" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 0.95334, 6.47877e-07, 0.980615, -0.190496, 1.0268e-06, -2.98023e-08, 8.41674e-08, -5.48722, 1.24163, 0.0601092, -4.82622)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0111766)
+material = ExtResource("25_h18gl")
+
+[node name="Outline65" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 0.95334, 6.47877e-07, 0.980615, -0.190496, 1.0268e-06, -2.98023e-08, 8.41674e-08, -5.48722, 1.37531, 0.0332062, -4.63312)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0111766)
+material = ExtResource("20_nx706")
+
+[node name="Outline67" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 0.95334, 6.47877e-07, 0.980615, -0.190496, 1.0268e-06, -2.98023e-08, 8.41674e-08, -5.48722, 1.32909, 0.0424424, -4.66894)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.00473383)
+material = ExtResource("20_nx706")
+
+[node name="Outline68" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 0.95334, 6.47877e-07, 0.980615, -0.190496, 1.0268e-06, -2.98023e-08, 8.41674e-08, -5.48722, 1.32909, 0.0424424, -4.75051)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0122546)
+material = ExtResource("20_nx706")
+
+[node name="Outline66" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.78323e-08, -5.38085, 0.980615, -4.62946e-08, 1.0752, -1.49012e-08, -0.972186, -1.94267e-07, 1.3521, 0.0378447, -4.65917)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.0103491)
+material = ExtResource("20_nx706")
+
+[node name="Outline54" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 0.95334, 6.47877e-07, 0.980615, -0.190496, 1.0268e-06, -2.98023e-08, 8.41674e-08, -5.48722, 1.18152, 0.0721202, -5.06394)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.00685035)
+material = ExtResource("25_h18gl")
+
+[node name="Outline55" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 0.95334, 6.47877e-07, 0.980615, -0.190496, 1.0268e-06, -2.98023e-08, 8.41674e-08, -5.48722, 1.18152, 0.0721202, -5.15008)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.011726)
+material = ExtResource("25_h18gl")
 
 [node name="Outline20" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
 transform = Transform3D(0.195946, 0.95334, 4.09459e-07, 0.980615, -0.190496, -2.84506e-07, -2.98023e-08, 8.41674e-08, -5.48722, 1.54992, -0.00149345, -1.42006)
@@ -6472,39 +7645,39 @@ MODE SWITCH"
 font_size = 20
 outline_size = 0
 
-[node name="reactor_mode_switch3" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("13_ba4xl")]
+[node name="rfw_trip" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(-0.707107, -0.69255, -0.14274, 0, 0.201864, -0.979414, 0.707107, -0.69255, -0.14274, 1.37673, 0.108535, -4.51166)
 script = null
 
-[node name="Cube_003" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch3/selector_switch/Base/Cube_002" index="0"]
+[node name="Cube_003" parent="Control Room Panels/Main Panel Center/Controls/rfw_trip/selector_switch/Base/Cube_002" index="0"]
 transform = Transform3D(1, 1.42109e-14, 0, 0, 1, 0, 0, 2.84217e-14, 1, 0, 0, 0)
 
-[node name="CSGPolygon3D2" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch3/selector_switch/Handle" index="3"]
+[node name="CSGPolygon3D2" parent="Control Room Panels/Main Panel Center/Controls/rfw_trip/selector_switch/Handle" index="3"]
 transform = Transform3D(1, -1.77636e-15, -2.22045e-15, -3.55271e-15, 1, -1.49012e-08, 5.55112e-15, 2.98023e-08, 1, 0, 0, 0)
 
-[node name="Label3D" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch3/selector_switch" index="2"]
+[node name="Label3D" parent="Control Room Panels/Main Panel Center/Controls/rfw_trip/selector_switch" index="2"]
 transform = Transform3D(-0.3, 5.96046e-08, 0, -3.72529e-09, -1.30385e-08, 0.3, 4.47035e-08, 0.3, 1.49012e-08, -8.39233e-05, 0.156525, 0.737564)
 
-[node name="Label3D3" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch3/selector_switch" index="3"]
+[node name="Label3D3" parent="Control Room Panels/Main Panel Center/Controls/rfw_trip/selector_switch" index="3"]
 transform = Transform3D(-0.212132, -0.212132, 0, 5.50062e-09, -1.11759e-08, 0.3, -0.212132, 0.212132, 1.49012e-08, -0.450111, 0.156525, 0.55835)
 text = "HOLD
 RESET"
 
-[node name="Label3D4" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch3/selector_switch" index="4"]
+[node name="Label3D4" parent="Control Room Panels/Main Panel Center/Controls/rfw_trip/selector_switch" index="4"]
 transform = Transform3D(-1.31134e-08, -0.3, 4.47035e-08, 1.31134e-08, 4.47035e-08, 0.3, -0.3, 1.31134e-08, 1.31134e-08, -0.673019, 0.160721, 0.106232)
 text = ""
 
-[node name="Label3D2" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch3/selector_switch" index="5"]
+[node name="Label3D2" parent="Control Room Panels/Main Panel Center/Controls/rfw_trip/selector_switch" index="5"]
 transform = Transform3D(-0.212132, 0.212132, 4.47035e-08, 7.45058e-09, -8.19564e-08, 0.3, 0.212132, 0.212132, 1.31134e-08, 0.467735, 0.157074, 0.53817)
 text = "TRIP"
 
-[node name="label2" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch3"]
+[node name="label2" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/rfw_trip"]
 transform = Transform3D(-5.96046e-08, 2.98023e-08, 1, 3.72529e-08, 0.746681, 0, -1, 7.45058e-09, -8.9407e-08, -0.000754356, 0.0436651, 0.0134239)
 use_collision = true
 size = Vector3(0.002, 0.0239888, 0.071291)
 material = ExtResource("3_pvt5y")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch3/label2"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/rfw_trip/label2"]
 transform = Transform3D(-8.74228e-10, -1.86264e-10, 0.02, 0, 0.028, 1.33046e-10, -0.02, 8.14188e-18, -8.74228e-10, 0.00105691, 0, 4.76837e-07)
 modulate = Color(0, 0, 0, 1)
 text = "TURBINE
@@ -13558,6 +14731,289 @@ shaded = true
 double_sided = false
 texture = ExtResource("26_ud3n4")
 
+[node name="P601_A4" parent="Annunciators" instance=ExtResource("27_6jg2m")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 8.52248, 2.12677, -3.33019)
+
+[node name="Windows" parent="Annunciators/P601_A4" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00159264, -0.0182424, -0.0687156)
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/1-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/1-7" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671387, -0.109344)
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/1-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/1-6/CSGBox3D" index="0"]
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/1-5" index="1"]
+material = SubResource("StandardMaterial3D_ocqlc")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/1-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "RCIC
+TURBINE
+TRIP"
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/1-4" index="1"]
+material = SubResource("StandardMaterial3D_hnrl8")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/1-4/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, -1.77636e-14, 0, 1, 0, 1.77636e-14, 0, 1, 0, 0, 0.162994)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/1-3" index="1"]
+transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0.00170898, 0.0067215, -0.109344)
+material = SubResource("StandardMaterial3D_8sidq")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/1-3/CSGBox3D" index="0"]
+text = "RCIC
+RPV LEVEL HIGH
++54\""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/1-2" index="1"]
+transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0.00170898, 0.0067215, -0.109344)
+material = SubResource("StandardMaterial3D_ofvgn")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/1-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, -1.52588e-05, 0, 0.163055)
+text = "RCIC INIT
+RPV LEVEL LOW
+-51\""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/1-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, -1.77636e-14, 0, 1, 0, 1.77636e-14, 0, 1, -1.52588e-05, 0, 0.162994)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/2-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/2-7" index="1"]
+material = SubResource("StandardMaterial3D_4jef3")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/2-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/2-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/2-5" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671387, -0.109344)
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/2-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/2-4" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00169373, 0.00671387, -0.109329)
+material = SubResource("StandardMaterial3D_s1dek")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/2-4/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/2-3" index="1"]
+material = SubResource("StandardMaterial3D_qal4j")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/2-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/2-2" index="1"]
+material = SubResource("StandardMaterial3D_gqoeq")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/2-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/2-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/3-8/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/3-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/3-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/3-5" index="1"]
+material = SubResource("StandardMaterial3D_c45f3")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/3-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="3-4" parent="Annunciators/P601_A4/Windows" index="20"]
+transform = Transform3D(0, 0, 0.03, 0, 0.03, 0, -0.03, 0, 0, 0.0136123, 0.0557945, 0.118167)
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/3-4" index="1"]
+material = SubResource("StandardMaterial3D_3ec62")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/3-4/CSGBox3D" index="0"]
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/3-3" index="1"]
+material = SubResource("StandardMaterial3D_y7imo")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/3-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, -1.52588e-05, 0, 0.163055)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/3-2/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/3-1/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/4-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/4-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/4-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/4-5" index="1"]
+material = SubResource("StandardMaterial3D_1huk4")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/4-5/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/4-4/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/4-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/4-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/4-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/5-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/5-7" index="1"]
+material = SubResource("StandardMaterial3D_r1so6")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/5-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/5-6" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00169373, 0.00671387, -0.109329)
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/5-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/5-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/5-4/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/5-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/5-2" index="1"]
+material = SubResource("StandardMaterial3D_e2shx")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/5-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/5-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, -1.52588e-05, 0, 0.163055)
+text = ""
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/6-8" index="1"]
+transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0.00170898, 0.00671387, -0.109344)
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/6-8/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = "RCIC
+OUT OF
+SERVICE"
+
+[node name="CSGBox3D" parent="Annunciators/P601_A4/Windows/6-7" index="1"]
+material = SubResource("StandardMaterial3D_ijh84")
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/6-7/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/6-6/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/6-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/6-4/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/6-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/6-2/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = ""
+
+[node name="Label3D" parent="Annunciators/P601_A4/Windows/6-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
+text = "RHR A
+OUT OF
+SERVICE"
+
+[node name="Label3D" parent="Annunciators/P601_A4/Label" index="0"]
+text = "ANN PANEL
+P601.A4"
+
+[node name="Triangle" parent="Annunciators/P601_A4" index="3"]
+transform = Transform3D(-4.65661e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.65661e-10, 0.0133395, 0.0788476, 0.108312)
+
+[node name="Triangle2" type="Sprite3D" parent="Annunciators/P601_A4"]
+transform = Transform3D(-4.65661e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.65661e-10, 0.0133395, 0.0788476, 0.204294)
+shaded = true
+double_sided = false
+texture = ExtResource("26_ud3n4")
+
+[node name="Triangle3" type="Sprite3D" parent="Annunciators/P601_A4"]
+transform = Transform3D(-4.65661e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.65661e-10, 0.0133405, -0.166197, 0.0123229)
+shaded = true
+double_sided = false
+texture = ExtResource("26_ud3n4")
+
 [node name="Box2" parent="Annunciators" instance=ExtResource("27_6jg2m")]
 transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.25768, 2.12677, 3.50093)
 
@@ -13920,11 +15376,11 @@ stream = ExtResource("26_77or2")
 stream = ExtResource("32_nxmn4")
 
 [node name="Alarm2" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.10685, 2.31361, -5.81238)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.10685, 2.31361, -4.29313)
 script = ExtResource("30_mjcs6")
 
 [node name="Fast" type="AudioStreamPlayer" parent="Alarm2"]
-stream = ExtResource("31_l3fxx")
+stream = ExtResource("26_77or2")
 
 [node name="Slow" type="AudioStreamPlayer" parent="Alarm2"]
 stream = ExtResource("32_nxmn4")
@@ -14008,6 +15464,7 @@ light_indirect_energy = 0.838
 light_size = 0.172
 omni_range = 17.632
 
+[connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/rcic_init_reset/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/rcic_init_reset" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM1/Node3D/SCRAM_A1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM1/Node3D/SCRAM_A1" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM1/Node3D2/SCRAM_B1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM1/Node3D2/SCRAM_B1" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM2/Node3D/SCRAM_A2/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM2/Node3D/SCRAM_A2" method="switch_click"]
@@ -14272,6 +15729,18 @@ omni_range = 17.632
 [editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_flow/edgewise_gauge"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/rhr_b_flow"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/rhr_b_flow/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/rcic_flow"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/rcic_flow/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/rcic_rpm"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/rcic_rpm/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/rcic_pump_suct_press"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/rcic_pump_suct_press/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/rcic_supply_press"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/rcic_supply_press/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/rcic_pump_disch_press"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/rcic_pump_disch_press/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/rcic_exhaust_press"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/rcic_exhaust_press/edgewise_gauge"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/rhr_c_flow"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/rhr_c_flow/edgewise_gauge"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/hpcs_v_4"]
@@ -14392,10 +15861,61 @@ omni_range = 17.632
 [editable path="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_3a20/selector_switch"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/SRV/ms_rv_3a20/Label"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport/Node2D"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b7"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b7/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b7/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b8"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b8/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b8/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b9"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b9/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b9/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b21"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b21/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b21/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_1"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_1/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_1/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b10"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b10/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b10/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b16"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b16/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b16/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_13"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_13/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_13/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_45"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_45/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_45/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b19"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b19/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b19/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b20"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b20/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b20/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_68"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_68/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_68/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_man_init/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b12/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b13"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b13/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rhr_v_24b13/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_8"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_8/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_8/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_63"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_63/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_63/Label"]
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/selector_switch"]
-[editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch3"]
-[editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch3/selector_switch"]
+[editable path="Control Room Panels/Main Panel Center/Controls/rfw_trip"]
+[editable path="Control Room Panels/Main Panel Center/Controls/rfw_trip/selector_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/NMS2/Sprite3D/SubViewport/Node2D"]
 [editable path="Control Room Panels/Main Panel Center/Controls/NMS1/Sprite3D/SubViewport/Node2D"]
 [editable path="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D"]
@@ -14426,4 +15946,5 @@ omni_range = 17.632
 [editable path="Control Room Panels/Main Panel Center/Controls/irm_f_range/Label"]
 [editable path="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/Label"]
 [editable path="Annunciators/Box1"]
+[editable path="Annunciators/P601_A4"]
 [editable path="Annunciators/Box2"]

@@ -904,6 +904,19 @@ var switches = {
 			"red" : null,
 		},
 	},
+	
+	"rfw_trip": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {},
+	},
 }
 
 var buttons = {

@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://nm6xlg1x324r"]
+[gd_scene load_steps=5 format=3 uid="uid://nm6xlg1x324r"]
 
 [ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="1_oqmfu"]
 
@@ -6,101 +6,803 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_hidw0"]
 font = ExtResource("1_oqmfu")
-font_size = 17
+font_size = 40
+
+[sub_resource type="LabelSettings" id="LabelSettings_sm0kt"]
+font = ExtResource("1_oqmfu")
+font_size = 40
 font_color = Color(0, 0, 0, 1)
 
 [node name="GDS" type="Node2D"]
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 modulate = Color(0, 0, 0, 1)
-position = Vector2(576.25, 576.25)
-scale = Vector2(1152.5, 1152.5)
+position = Vector2(960, 960)
+scale = Vector2(1920, 1920)
 mesh = SubResource("BoxMesh_em6l2")
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Valve_Status" type="Node2D" parent="."]
 
-[node name="MeshInstance2D2" type="MeshInstance2D" parent="Node2D"]
-position = Vector2(139.25, 158)
-scale = Vector2(266.5, 304)
+[node name="Group_1" type="Node2D" parent="Valve_Status"]
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Valve_Status/Group_1"]
+position = Vector2(180, 275)
+scale = Vector2(350, 528)
 mesh = SubResource("BoxMesh_em6l2")
 
-[node name="Label" type="Label" parent="Node2D"]
-offset_left = 99.25
-offset_top = 9.5
-offset_right = 182.25
-offset_bottom = 33.5
-text = "GROUP 1"
-label_settings = SubResource("LabelSettings_hidw0")
-horizontal_alignment = 1
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="Valve_Status/Group_1"]
+z_index = 1
+position = Vector2(180, 65.5)
+scale = Vector2(350, 5)
+mesh = SubResource("BoxMesh_em6l2")
 
-[node name="Label2" type="Label" parent="Node2D"]
-offset_left = 23.25
-offset_top = 33.5
-offset_right = 106.25
-offset_bottom = 57.5
-text = "MS-V-22A"
-label_settings = SubResource("LabelSettings_hidw0")
-horizontal_alignment = 1
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="Valve_Status/Group_1"]
+z_index = 1
+position = Vector2(180, 170.5)
+scale = Vector2(350, 5)
+mesh = SubResource("BoxMesh_em6l2")
 
-[node name="Label3" type="Label" parent="Node2D"]
-offset_left = 23.25
-offset_top = 53.5
-offset_right = 106.25
-offset_bottom = 77.5
-text = "MS-V-22B"
-label_settings = SubResource("LabelSettings_hidw0")
-horizontal_alignment = 1
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="Valve_Status/Group_1"]
+z_index = 1
+position = Vector2(180, 274.5)
+scale = Vector2(350, 5)
+mesh = SubResource("BoxMesh_em6l2")
 
-[node name="Label4" type="Label" parent="Node2D"]
-offset_left = 23.25
-offset_top = 73.5
-offset_right = 106.25
-offset_bottom = 97.5
-text = "MS-V-22C"
-label_settings = SubResource("LabelSettings_hidw0")
-horizontal_alignment = 1
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="Valve_Status/Group_1"]
+z_index = 1
+position = Vector2(180, 378.5)
+scale = Vector2(350, 5)
+mesh = SubResource("BoxMesh_em6l2")
 
-[node name="Label5" type="Label" parent="Node2D"]
-offset_left = 23.25
-offset_top = 93.5
-offset_right = 106.25
-offset_bottom = 117.5
-text = "MS-V-22D"
-label_settings = SubResource("LabelSettings_hidw0")
-horizontal_alignment = 1
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="Valve_Status/Group_1"]
+z_index = 1
+position = Vector2(180, 482.5)
+scale = Vector2(350, 5)
+mesh = SubResource("BoxMesh_em6l2")
 
-[node name="Label6" type="Label" parent="Node2D"]
-offset_left = 23.0
-offset_top = 114.0
-offset_right = 106.0
-offset_bottom = 138.0
-text = "MS-V-28A"
-label_settings = SubResource("LabelSettings_hidw0")
-horizontal_alignment = 1
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Valve_Status/Group_1"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(180, 275)
+scale = Vector2(339.85, 518)
+mesh = SubResource("BoxMesh_em6l2")
 
-[node name="Label7" type="Label" parent="Node2D"]
-offset_left = 23.0
-offset_top = 134.0
-offset_right = 106.0
-offset_bottom = 158.0
-text = "MS-V-28B"
+[node name="Label" type="Label" parent="Valve_Status/Group_1"]
+offset_left = 11.0
+offset_top = 16.0
+offset_right = 350.0
+offset_bottom = 64.0
+text = "Group 1"
 label_settings = SubResource("LabelSettings_hidw0")
 horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
-[node name="Label8" type="Label" parent="Node2D"]
-offset_left = 23.0
-offset_top = 154.0
-offset_right = 106.0
-offset_bottom = 178.0
-text = "MS-V-28C"
-label_settings = SubResource("LabelSettings_hidw0")
-horizontal_alignment = 1
+[node name="Valves" type="Node2D" parent="Valve_Status/Group_1"]
 
-[node name="Label9" type="Label" parent="Node2D"]
-offset_left = 23.0
-offset_top = 174.0
-offset_right = 106.0
-offset_bottom = 198.0
-text = "MS-V-28D"
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="Valve_Status/Group_1/Valves"]
+modulate = Color(0.871185, 0.0538586, 1.92523e-07, 1)
+z_index = 1
+position = Vector2(94.5, 118)
+scale = Vector2(169, 100)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="Valve_Status/Group_1/Valves"]
+modulate = Color(0.871185, 0.0538586, 1.92523e-07, 1)
+z_index = 1
+position = Vector2(265.5, 92.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="Valve_Status/Group_1/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(265.5, 143.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label2" type="Label" parent="Valve_Status/Group_1/Valves"]
+z_index = 2
+offset_left = 11.0
+offset_top = 68.0
+offset_right = 177.0
+offset_bottom = 168.0
+text = "MS-22A"
 label_settings = SubResource("LabelSettings_hidw0")
 horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="Valve_Status/Group_1/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 119.0
+offset_right = 350.0
+offset_bottom = 168.0
+text = "MS-67A"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="Valve_Status/Group_1/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 68.0
+offset_right = 350.0
+offset_bottom = 117.0
+text = "MS-28A"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="Valve_Status/Group_1/Valves"]
+modulate = Color(0.871185, 0.0538586, 1.92523e-07, 1)
+z_index = 1
+position = Vector2(94.5, 222)
+scale = Vector2(169, 100)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="Valve_Status/Group_1/Valves"]
+modulate = Color(0.871185, 0.0538586, 1.92523e-07, 1)
+z_index = 1
+position = Vector2(265.5, 196.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="Valve_Status/Group_1/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(265.5, 247.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label5" type="Label" parent="Valve_Status/Group_1/Valves"]
+z_index = 2
+offset_left = 11.0
+offset_top = 172.0
+offset_right = 177.0
+offset_bottom = 272.0
+text = "MS-22B"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label6" type="Label" parent="Valve_Status/Group_1/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 223.0
+offset_right = 350.0
+offset_bottom = 272.0
+text = "MS-67B"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label7" type="Label" parent="Valve_Status/Group_1/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 172.0
+offset_right = 350.0
+offset_bottom = 221.0
+text = "MS-28B"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="Valve_Status/Group_1/Valves"]
+modulate = Color(0.871185, 0.0538586, 1.92523e-07, 1)
+z_index = 1
+position = Vector2(94.5, 326)
+scale = Vector2(169, 100)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D11" type="MeshInstance2D" parent="Valve_Status/Group_1/Valves"]
+modulate = Color(0.871185, 0.0538586, 1.92523e-07, 1)
+z_index = 1
+position = Vector2(265.5, 300.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D12" type="MeshInstance2D" parent="Valve_Status/Group_1/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(265.5, 351.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label8" type="Label" parent="Valve_Status/Group_1/Valves"]
+z_index = 2
+offset_left = 11.0
+offset_top = 276.0
+offset_right = 177.0
+offset_bottom = 376.0
+text = "MS-22C"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label9" type="Label" parent="Valve_Status/Group_1/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 327.0
+offset_right = 350.0
+offset_bottom = 376.0
+text = "MS-67C"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label10" type="Label" parent="Valve_Status/Group_1/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 276.0
+offset_right = 350.0
+offset_bottom = 325.0
+text = "MS-28C"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D13" type="MeshInstance2D" parent="Valve_Status/Group_1/Valves"]
+modulate = Color(0.871185, 0.0538586, 1.92523e-07, 1)
+z_index = 1
+position = Vector2(94.5, 430)
+scale = Vector2(169, 100)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D14" type="MeshInstance2D" parent="Valve_Status/Group_1/Valves"]
+modulate = Color(0.871185, 0.0538586, 1.92523e-07, 1)
+z_index = 1
+position = Vector2(265.5, 404.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D15" type="MeshInstance2D" parent="Valve_Status/Group_1/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(265.5, 455.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label11" type="Label" parent="Valve_Status/Group_1/Valves"]
+z_index = 2
+offset_left = 11.0
+offset_top = 380.0
+offset_right = 177.0
+offset_bottom = 480.0
+text = "MS-22C"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label12" type="Label" parent="Valve_Status/Group_1/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 431.0
+offset_right = 350.0
+offset_bottom = 480.0
+text = "MS-67C"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D16" type="MeshInstance2D" parent="Valve_Status/Group_1/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(265.5, 509.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label14" type="Label" parent="Valve_Status/Group_1/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 485.0
+offset_right = 350.0
+offset_bottom = 534.0
+text = "MS-19"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D17" type="MeshInstance2D" parent="Valve_Status/Group_1/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(94.5, 509.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label15" type="Label" parent="Valve_Status/Group_1/Valves"]
+z_index = 2
+offset_left = 10.0
+offset_top = 485.0
+offset_right = 179.0
+offset_bottom = 534.0
+text = "MS-16"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label13" type="Label" parent="Valve_Status/Group_1/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 380.0
+offset_right = 350.0
+offset_bottom = 429.0
+text = "MS-28C"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Group_2" type="Node2D" parent="Valve_Status"]
+position = Vector2(376, 0)
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Valve_Status/Group_2"]
+position = Vector2(180, 66.5)
+scale = Vector2(350, 111)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="Valve_Status/Group_2"]
+z_index = 1
+position = Vector2(180, 65.5)
+scale = Vector2(350, 5)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Valve_Status/Group_2"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(180, 66.5)
+scale = Vector2(339.85, 101)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="GroupStatus" type="MeshInstance2D" parent="Valve_Status/Group_2"]
+modulate = Color(0.870588, 0.054902, 0, 1)
+position = Vector2(180, 39.5)
+scale = Vector2(339.85, 47)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label" type="Label" parent="Valve_Status/Group_2"]
+offset_left = 11.0
+offset_top = 16.0
+offset_right = 350.0
+offset_bottom = 64.0
+text = "Group 2"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Valves" type="Node2D" parent="Valve_Status/Group_2"]
+
+[node name="MeshInstance2D16" type="MeshInstance2D" parent="Valve_Status/Group_2/Valves"]
+modulate = Color(0.870588, 0.054902, 0, 1)
+z_index = 1
+position = Vector2(265.5, 92.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label14" type="Label" parent="Valve_Status/Group_2/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 68.0
+offset_right = 350.0
+offset_bottom = 117.0
+text = "RRC-20"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D17" type="MeshInstance2D" parent="Valve_Status/Group_2/Valves"]
+modulate = Color(0.870588, 0.054902, 0, 1)
+z_index = 1
+position = Vector2(94.5, 92.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label15" type="Label" parent="Valve_Status/Group_2/Valves"]
+z_index = 2
+offset_left = 10.0
+offset_top = 68.0
+offset_right = 179.0
+offset_bottom = 117.0
+text = "RRC-19"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Group_3" type="Node2D" parent="Valve_Status"]
+position = Vector2(752, 0)
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="Valve_Status/Group_3"]
+position = Vector2(180, 255.5)
+scale = Vector2(350, 489)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="Valve_Status/Group_3"]
+z_index = 1
+position = Vector2(180, 65.5)
+scale = Vector2(350, 5)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="Valve_Status/Group_3"]
+z_index = 1
+position = Vector2(180, 119.5)
+scale = Vector2(350, 5)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="Valve_Status/Group_3"]
+z_index = 1
+position = Vector2(180, 173.5)
+scale = Vector2(350, 5)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="Valve_Status/Group_3"]
+z_index = 1
+position = Vector2(180, 227.5)
+scale = Vector2(350, 5)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="Valve_Status/Group_3"]
+z_index = 1
+position = Vector2(180, 281.5)
+scale = Vector2(350, 5)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="Valve_Status/Group_3"]
+z_index = 1
+position = Vector2(180, 335.5)
+scale = Vector2(350, 5)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D11" type="MeshInstance2D" parent="Valve_Status/Group_3"]
+z_index = 1
+position = Vector2(180, 389.5)
+scale = Vector2(350, 5)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D12" type="MeshInstance2D" parent="Valve_Status/Group_3"]
+z_index = 1
+position = Vector2(180, 443.5)
+scale = Vector2(350, 5)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="Valve_Status/Group_3"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(180, 281.5)
+scale = Vector2(339.85, 427)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="GroupStatus" type="MeshInstance2D" parent="Valve_Status/Group_3"]
+modulate = Color(0.223529, 0.764706, 0, 1)
+position = Vector2(180, 39.5)
+scale = Vector2(339.85, 47)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label" type="Label" parent="Valve_Status/Group_3"]
+offset_left = 11.0
+offset_top = 16.0
+offset_right = 350.0
+offset_bottom = 64.0
+text = "Group 3"
+label_settings = SubResource("LabelSettings_sm0kt")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Valves" type="Node2D" parent="Valve_Status/Group_3"]
+
+[node name="MeshInstance2D16" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(265.5, 92.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label14" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 68.0
+offset_right = 350.0
+offset_bottom = 117.0
+text = "CEP-1A"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D17" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(94.5, 92.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label15" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 10.0
+offset_top = 68.0
+offset_right = 179.0
+offset_bottom = 117.0
+text = "CEP-2A"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D18" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(265.5, 146.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label16" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 122.0
+offset_right = 350.0
+offset_bottom = 171.0
+text = "CEP-1B"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D19" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(94.5, 146.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label17" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 10.0
+offset_top = 122.0
+offset_right = 179.0
+offset_bottom = 171.0
+text = "CEP-2B"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D20" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(265.5, 200.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label18" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 176.0
+offset_right = 350.0
+offset_bottom = 225.0
+text = "CEP-3A"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D21" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(94.5, 200.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label19" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 10.0
+offset_top = 176.0
+offset_right = 179.0
+offset_bottom = 225.0
+text = "CEP-4A"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D22" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(265.5, 254.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label20" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 230.0
+offset_right = 350.0
+offset_bottom = 279.0
+text = "CEP-3B"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D23" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(94.5, 254.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label21" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 10.0
+offset_top = 230.0
+offset_right = 179.0
+offset_bottom = 279.0
+text = "CEP-4B"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D24" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(265.5, 308.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label22" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 284.0
+offset_right = 350.0
+offset_bottom = 333.0
+text = "CSP-1"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D25" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(94.5, 308.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label23" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 10.0
+offset_top = 284.0
+offset_right = 179.0
+offset_bottom = 333.0
+text = "CSP-2"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D26" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(265.5, 362.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label24" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 338.0
+offset_right = 350.0
+offset_bottom = 387.0
+text = "CSP-3"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D27" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(94.5, 362.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label25" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 10.0
+offset_top = 338.0
+offset_right = 179.0
+offset_bottom = 387.0
+text = "CSP-4"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D28" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(265.5, 416.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label26" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 392.0
+offset_right = 350.0
+offset_bottom = 441.0
+text = "CSP-97"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D29" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(94.5, 416.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label27" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 10.0
+offset_top = 392.0
+offset_right = 179.0
+offset_bottom = 441.0
+text = "CSP-96"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D30" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(265.5, 470.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label28" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 181.0
+offset_top = 446.0
+offset_right = 350.0
+offset_bottom = 495.0
+text = "CSP-98"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MeshInstance2D31" type="MeshInstance2D" parent="Valve_Status/Group_3/Valves"]
+modulate = Color(0.223498, 0.763635, 3.85046e-07, 1)
+z_index = 1
+position = Vector2(94.5, 470.5)
+scale = Vector2(169, 49)
+mesh = SubResource("BoxMesh_em6l2")
+
+[node name="Label29" type="Label" parent="Valve_Status/Group_3/Valves"]
+z_index = 2
+offset_left = 10.0
+offset_top = 446.0
+offset_right = 179.0
+offset_bottom = 495.0
+text = "CSP-93"
+label_settings = SubResource("LabelSettings_hidw0")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

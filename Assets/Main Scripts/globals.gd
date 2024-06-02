@@ -8,3 +8,5 @@ var last_sent_y = 0
 var last_sent_z = 0
 
 var renderer = null
+
+var use_vr = false

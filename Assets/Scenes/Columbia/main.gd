@@ -1358,6 +1358,8 @@ var connection_ready = false
 var connection_packet_sent = false
 
 const remote_player_scene = preload("res://Assets/Scenes/Player/remote_player.tscn")
+const vr_player_scene = preload("res://Assets/Scenes/Player/vr_player.tscn")
+const pc_player_scene = preload("res://Assets/Scenes/Player/player.tscn")
 
 func build_packet(packet_id, data):
 	return "%s|%s" % [str(packet_id), Marshalls.utf8_to_base64(data)]
@@ -1378,6 +1380,13 @@ func _ready(): # assume here that the scene was called by the lobby screen
 	build_rod_select()
 	var endpoint = "ws://%s/ws" % [globals.server_ip_requested_tojoin] # TODO: should token be generated on server-side?
 	socket.connect_to_url(endpoint)
+	
+	if globals.use_vr:
+		self.remove_child($"Player")
+		var NewVRPlayer = vr_player_scene.instantiate()
+		NewVRPlayer.name = "Player"
+		self.add_child(NewVRPlayer)
+		
 
 	for alarm in alarms:
 		alarm = alarms[alarm]
@@ -1440,18 +1449,19 @@ func _process(delta):
 			
 			var local_player_position = {}
 			
-			var local_player = get_node("Player")
+			if not globals.use_vr:
+				var local_player = get_node("Player")
 			
-			local_player_position = {globals.username_requested_tojoin : {
-				"x" : local_player.position["x"],
-				"y" : local_player.position["y"],
-				"z" : local_player.position["z"],
-			}}
+				local_player_position = {globals.username_requested_tojoin : {
+					"x" : local_player.position["x"],
+					"y" : local_player.position["y"],
+					"z" : local_player.position["z"],
+				}}
 			
-			if local_player_position != {}:
-				var err = socket.send_text(build_packet(client_packets.PLAYER_POSITION_PARAMETERS_UPDATE, json.stringify(local_player_position)))
-				if err:
-					print(err)
+				if local_player_position != {}:
+					var err = socket.send_text(build_packet(client_packets.PLAYER_POSITION_PARAMETERS_UPDATE, json.stringify(local_player_position)))
+					if err:
+						print(err)
 					
 			#TODO: add a script on each remote player that updates their own position (?)
 			

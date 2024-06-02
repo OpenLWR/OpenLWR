@@ -25,6 +25,9 @@ func _ready():
 		_on_connect_button_pressed()
 	pass
 
+func use_vr(toggle):
+	globals.use_vr = toggle
+
 func _on_connect_button_pressed():
 	print("Connect")
 	var server_ip_requested = $Panel/ServerIP/TextEdit.text
@@ -33,6 +36,7 @@ func _on_connect_button_pressed():
 	print(username_requested)
 	globals.server_ip_requested_tojoin = server_ip_requested
 	globals.username_requested_tojoin = username_requested
+	
 	match $Panel/Scene.selected:
 		0:
 			get_tree().change_scene_to_file("res://Assets/Scenes/Test Scene/test_scene.tscn")

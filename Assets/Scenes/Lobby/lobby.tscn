@@ -97,5 +97,29 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Join that one thing"
 
+[node name="VR" type="CheckBox" parent="Panel"]
+layout_mode = 0
+offset_left = 426.0
+offset_top = 392.0
+offset_right = 450.0
+offset_bottom = 416.0
+
+[node name="Label2" type="Label" parent="Panel/VR"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = -0.435
+anchor_right = 0.5
+anchor_bottom = -0.435
+offset_left = 10.0
+offset_top = 11.44
+offset_right = 79.0
+offset_bottom = 34.44
+grow_horizontal = 2
+grow_vertical = 2
+text = "Use VR?"
+horizontal_alignment = 1
+
 [connection signal="text_submitted" from="Panel/Username/TextEdit" to="." method="_on_connect_button_pressed" unbinds=1]
 [connection signal="pressed" from="Panel/Button" to="." method="_on_connect_button_pressed"]
+[connection signal="toggled" from="Panel/VR" to="." method="use_vr"]

@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 globals="*res://Assets/Main Scripts/globals.gd"
+XRToolsUserSettings="*res://addons/godot-xr-tools/user_settings/user_settings.gd"
 
 [display]
 
@@ -70,3 +71,8 @@ general_control_button={
 
 textures/vram_compression/import_etc2_astc=true
 anti_aliasing/quality/msaa_3d=3
+
+[xr]
+
+openxr/enabled=true
+shaders/enabled=true

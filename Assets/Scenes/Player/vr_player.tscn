@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgp8v2vik6nnu"]
+
+[ext_resource type="Script" path="res://Assets/Scenes/Player/vr_player.gd" id="1_vwgep"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_y0bul"]
+
+[node name="vr_player" type="Node3D"]
+script = ExtResource("1_vwgep")
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+
+[node name="LeftController" type="XRController3D" parent="XROrigin3D"]
+tracker = &"left_hand"
+
+[node name="Hand" type="MeshInstance3D" parent="XROrigin3D/LeftController"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+mesh = SubResource("SphereMesh_y0bul")
+
+[node name="RightController" type="XRController3D" parent="XROrigin3D"]
+tracker = &"right_hand"
+
+[node name="Hand" type="MeshInstance3D" parent="XROrigin3D/RightController"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+mesh = SubResource("SphereMesh_y0bul")
+skeleton = NodePath("../../LeftController")
+
+[connection signal="input_vector2_changed" from="XROrigin3D/LeftController" to="." method="left_controller_joystick_input"]

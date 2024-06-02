@@ -84,46 +84,44 @@ text = "State: Not Connected"
 script = ExtResource("5_72wwd")
 
 [node name="Menu" type="Node2D" parent="Head/Camera3d"]
-visible = false
 script = ExtResource("6_qkj5w")
 
 [node name="Menu" type="Node2D" parent="Head/Camera3d/Menu"]
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="Head/Camera3d/Menu/Menu"]
 modulate = Color(0.120758, 0.166205, 0.220152, 0.603922)
-position = Vector2(576, 324)
-scale = Vector2(1152, 648)
+position = Vector2(960, 540)
+scale = Vector2(1920, 1080)
 mesh = SubResource("BoxMesh_n4lxw")
 
 [node name="Disconnect" type="Button" parent="Head/Camera3d/Menu/Menu"]
-offset_left = 393.0
-offset_top = 570.0
-offset_right = 722.0
-offset_bottom = 618.0
+offset_left = 747.0
+offset_top = 931.0
+offset_right = 1076.0
+offset_bottom = 1030.0
 text = "Disconnect "
 
 [node name="Settings" type="Button" parent="Head/Camera3d/Menu/Menu"]
-offset_left = 393.0
-offset_top = 500.0
-offset_right = 722.0
-offset_bottom = 548.0
+offset_left = 747.0
+offset_top = 814.0
+offset_right = 1076.0
+offset_bottom = 913.0
 text = "Settings"
 
 [node name="Continue" type="Button" parent="Head/Camera3d/Menu/Menu"]
-offset_left = 393.0
-offset_top = 429.0
-offset_right = 722.0
-offset_bottom = 477.0
+offset_left = 747.0
+offset_top = 700.0
+offset_right = 1076.0
+offset_bottom = 799.0
 text = "Continue"
 
 [node name="Settings" type="Node2D" parent="Head/Camera3d/Menu"]
-visible = false
 
 [node name="Settings" type="TabContainer" parent="Head/Camera3d/Menu/Settings"]
 offset_left = 287.0
 offset_top = 75.0
-offset_right = 830.0
-offset_bottom = 400.0
+offset_right = 1535.0
+offset_bottom = 680.0
 current_tab = 1
 
 [node name="General" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
@@ -145,7 +143,6 @@ scale = Vector2(147.5, 271.75)
 mesh = SubResource("BoxMesh_nyxp3")
 
 [node name="Graphics" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
-visible = false
 layout_mode = 2
 script = ExtResource("6_ssrgo")
 
@@ -163,6 +160,21 @@ offset_top = -25.0
 offset_right = 78.0
 offset_bottom = -2.0
 text = "Occlusion"
+
+[node name="Resolution" type="OptionButton" parent="Head/Camera3d/Menu/Settings/Settings/Graphics"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 219.0
+offset_right = 107.0
+offset_bottom = 239.0
+
+[node name="Label" type="Label" parent="Head/Camera3d/Menu/Settings/Settings/Graphics/Resolution"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = -25.0
+offset_right = 78.0
+offset_bottom = -2.0
+text = "Resolution"
 
 [node name="Vsync" type="OptionButton" parent="Head/Camera3d/Menu/Settings/Settings/Graphics"]
 layout_mode = 0
@@ -195,9 +207,11 @@ offset_bottom = -2.0
 text = "Antialiasing"
 
 [node name="Controls" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
+visible = false
 layout_mode = 2
 
 [node name="CheckButton" type="CheckButton" parent="Head/Camera3d/Menu/Settings/Settings/Controls"]
+layout_mode = 0
 offset_left = 21.0
 offset_top = 38.0
 offset_right = 124.0
@@ -216,6 +230,7 @@ text = "X"
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Settings" to="Head/Camera3d/Menu" method="_settings_button_pressed"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Continue" to="Head/Camera3d/Menu" method="_continue_button_pressed"]
 [connection signal="item_selected" from="Head/Camera3d/Menu/Settings/Settings/Graphics/Occlusion" to="Head/Camera3d/Menu/Settings/Settings/Graphics" method="_new_occlusion_selected"]
+[connection signal="item_selected" from="Head/Camera3d/Menu/Settings/Settings/Graphics/Resolution" to="Head/Camera3d/Menu/Settings/Settings/Graphics" method="new_resolution_selected"]
 [connection signal="item_selected" from="Head/Camera3d/Menu/Settings/Settings/Graphics/Vsync" to="Head/Camera3d/Menu/Settings/Settings/Graphics" method="_new_vsync_selected"]
 [connection signal="item_selected" from="Head/Camera3d/Menu/Settings/Settings/Graphics/Antialiasing" to="Head/Camera3d/Menu/Settings/Settings/Graphics" method="_new_antialiasing_selected"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Settings/Exit" to="Head/Camera3d/Menu" method="_settings_exit_pressed"]

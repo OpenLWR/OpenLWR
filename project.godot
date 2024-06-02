@@ -19,6 +19,13 @@ config/icon="res://icon.svg"
 
 globals="*res://Assets/Main Scripts/globals.gd"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_width"
+
 [filesystem]
 
 import/fbx/enabled=false

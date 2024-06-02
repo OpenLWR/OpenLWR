@@ -35,7 +35,7 @@
 [ext_resource type="AudioStream" uid="uid://h63ya0mtowh1" path="res://Assets/Audio/CGSPanelAlarm.mp3" id="26_77or2"]
 [ext_resource type="Texture2D" uid="uid://c8q4aym8ckihj" path="res://Assets/Textures/AnnunciatorTriangle.png" id="26_ud3n4"]
 [ext_resource type="PackedScene" uid="uid://bwi0yuo7jm8bp" path="res://Assets/Common/Annunciators/annunciator_cgs_8x6.tscn" id="27_6jg2m"]
-[ext_resource type="Material" path="res://Assets/Materials/red_plastic.tres" id="27_mwtj8"]
+[ext_resource type="Material" uid="uid://h3pec0eq2wyc" path="res://Assets/Materials/red_plastic.tres" id="27_mwtj8"]
 [ext_resource type="PackedScene" uid="uid://cwbh50131lniu" path="res://Assets/Common/Switches/Range Switch/range_switch.tscn" id="29_tg1gb"]
 [ext_resource type="Material" uid="uid://c2raag84b6lqd" path="res://Assets/Materials/black_metal.tres" id="30_1q8ae"]
 [ext_resource type="Script" path="res://Assets/Common/Annunciators/alarms.gd" id="30_mjcs6"]
@@ -5904,12 +5904,12 @@ size = Vector3(0.17, 0.416, 0.416)
 
 [node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/GDS1"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.085393, 0, 0)
-pixel_size = 0.0003
+pixel_size = 0.0002
 texture = SubResource("ViewportTexture_s1qrm")
 region_rect = Rect2(0, 0, 701, 512)
 
 [node name="SubViewport" type="SubViewport" parent="Control Room Panels/Main Panel Left Side/Controls/GDS1/Sprite3D"]
-size = Vector2i(1150, 1150)
+size = Vector2i(1920, 1920)
 
 [node name="GDS" parent="Control Room Panels/Main Panel Left Side/Controls/GDS1/Sprite3D/SubViewport" instance=ExtResource("20_5h0ir")]
 

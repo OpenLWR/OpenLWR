@@ -7647,7 +7647,6 @@ outline_size = 0
 
 [node name="rfw_trip" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(-0.707107, -0.69255, -0.14274, 0, 0.201864, -0.979414, 0.707107, -0.69255, -0.14274, 1.37673, 0.108535, -4.51166)
-script = null
 
 [node name="Cube_003" parent="Control Room Panels/Main Panel Center/Controls/rfw_trip/selector_switch/Base/Cube_002" index="0"]
 transform = Transform3D(1, 1.42109e-14, 0, 0, 1, 0, 0, 2.84217e-14, 1, 0, 0, 0)

@@ -111,7 +111,7 @@ enum server_packets {
 	},
 	
 	"hpcs_flow": {
-		"node": $"Control Room Panels/Main Panel Left Side/Controls/hpcs_flow",
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/HPCS/hpcs_flow",
 		"value": 0,
 		"min_value": 0,
 		"max_value": 7000,
@@ -119,7 +119,7 @@ enum server_packets {
 		"text" : false,
 	},
 	"hpcs_press": {
-		"node": $"Control Room Panels/Main Panel Left Side/Controls/hpcs_press",
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/HPCS/hpcs_press",
 		"value": 0,
 		"min_value": 0,
 		"max_value": 1500,
@@ -128,7 +128,7 @@ enum server_packets {
 	},
 
 	"rhr_b_flow": {
-		"node": $"Control Room Panels/Main Panel Left Side/Controls/rhr_b_flow",
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RHR B/rhr_b_flow",
 		"value": 0,
 		"min_value": 0,
 		"max_value": 10000,
@@ -136,7 +136,7 @@ enum server_packets {
 		"text" : false,
 	},
 	"rhr_b_press": {
-		"node": $"Control Room Panels/Main Panel Left Side/Controls/rhr_b_press",
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RHR B/rhr_b_press",
 		"value": 0,
 		"min_value": 0,
 		"max_value": 500,
@@ -145,7 +145,7 @@ enum server_packets {
 	},
 	
 	"rhr_c_flow": {
-		"node": $"Control Room Panels/Main Panel Left Side/Controls/rhr_c_flow",
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RHR C/rhr_c_flow",
 		"value": 0,
 		"min_value": 0,
 		"max_value": 10000,
@@ -153,7 +153,7 @@ enum server_packets {
 		"text" : false,
 	},
 	"rhr_c_press": {
-		"node": $"Control Room Panels/Main Panel Left Side/Controls/rhr_c_press",
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RHR C/rhr_c_press",
 		"value": 0,
 		"min_value": 0,
 		"max_value": 500,
@@ -276,7 +276,7 @@ enum server_packets {
 	},
 	
 	"rcic_flow": {
-		"node": $"Control Room Panels/Main Panel Left Side/Controls/rcic_flow",
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_flow",
 		"value": 0,
 		"min_value": 0,
 		"max_value": 700,
@@ -285,7 +285,7 @@ enum server_packets {
 	},
 	
 	"rcic_rpm": {
-		"node": $"Control Room Panels/Main Panel Left Side/Controls/rcic_rpm",
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_rpm",
 		"value": 0,
 		"min_value": 0,
 		"max_value": 7000,
@@ -294,7 +294,7 @@ enum server_packets {
 	},
 	
 	"rcic_supply_press": {
-		"node": $"Control Room Panels/Main Panel Left Side/Controls/rcic_supply_press",
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_supply_press",
 		"value": 0,
 		"min_value": 0,
 		"max_value": 1200,
@@ -302,7 +302,7 @@ enum server_packets {
 		"text" : false,
 	},
 	"rcic_exhaust_press": {
-		"node": $"Control Room Panels/Main Panel Left Side/Controls/rcic_exhaust_press",
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_exhaust_press",
 		"value": 0,
 		"min_value": 0,
 		"max_value": 50,
@@ -311,7 +311,7 @@ enum server_packets {
 	},
 	
 	"rcic_pump_disch_press": {
-		"node": $"Control Room Panels/Main Panel Left Side/Controls/rcic_pump_disch_press",
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_pump_disch_press",
 		"value": 0,
 		"min_value": 0,
 		"max_value": 1300,
@@ -319,7 +319,7 @@ enum server_packets {
 		"text" : false,
 	},
 	"rcic_pump_suct_press": {
-		"node": $"Control Room Panels/Main Panel Left Side/Controls/rcic_pump_suct_press",
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_pump_suct_press",
 		"value": 0,
 		"min_value": 0,
 		"max_value": 100,
@@ -979,6 +979,36 @@ var buttons = {
 		"updated": false,
 	},
 	
+	"ALARM_ACK_2": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"ALARM_RESET_2": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	
+	"ALARM_ACK_3": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"ALARM_RESET_3": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	
 	"ACCUM_TROUBLE_RESET": {
 		"switch": null,
 		"state": false,
@@ -1275,11 +1305,21 @@ var alarms = {
 		"silenced" : false,
 		"material": null,
 	},
+	
+	#HPCS
+	"hpcs_init_rpv_level_low": {
+		"box": "P601_A1",
+		"window": "1-8",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
 }
 
 var alarm_groups = {
 	"1" : {"F" : true, "S" : true}, # F - Fast S - Slow
 	"2" : {"F" : true, "S" : true}, # F - Fast S - Slow
+	"3" : {"F" : true, "S" : true}, # F - Fast S - Slow
 }
 
 @onready var indicators = {
@@ -1328,7 +1368,7 @@ var alarm_groups = {
 	"APRM_E_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E/DOWNSCALE".get_material(),
 	"APRM_F_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F/DOWNSCALE".get_material(),
 	
-	"hpcs_init": $"Control Room Panels/Main Panel Left Side/Controls/hpcs_active/seal_in".get_material(),
+	"hpcs_init": $"Control Room Panels/Main Panel Left Side/Controls/HPCS/hpcs_active/seal_in".get_material(),
 	
 	"SELECT_SRM_A": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_A".get_material(),
 	"SRM_A_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_A_POS/IN".get_material(),

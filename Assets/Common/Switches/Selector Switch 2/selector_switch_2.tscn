@@ -107,6 +107,7 @@ max_distance = 6.0
 
 [node name="VRInteractionZone" type="Area3D" parent="."]
 transform = Transform3D(0.0252, 1.14679e-15, -2.20305e-09, 9.04728e-29, -0.0252, -1.31178e-08, -2.20305e-09, 1.31178e-08, -0.0252, -4.10558e-10, -0.0016467, 0.00730372)
+input_ray_pickable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="VRInteractionZone"]
 transform = Transform3D(0.999999, 1.03398e-25, -8.13152e-20, 0, 0.999999, -2.84217e-13, 8.13152e-20, 2.84217e-13, 0.999999, 0.00997166, 0.477111, 0.901794)

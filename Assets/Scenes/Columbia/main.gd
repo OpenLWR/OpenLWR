@@ -326,6 +326,40 @@ enum server_packets {
 		"atypical" : false,
 		"text" : false,
 	},
+	
+	"lpcs_flow": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/LPCS/lpcs_flow",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 10000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"lpcs_press": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/LPCS/lpcs_press",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 500,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	"rhr_a_flow": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RHR A/rhr_a_flow",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 10000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"rhr_a_press": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RHR A/rhr_a_press",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 500,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var switches = {
@@ -897,6 +931,98 @@ var switches = {
 			2: -45,
 		},
 		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	
+	#LPCS
+	
+	"lpcs_p_1": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"lpcs_v_5": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"lpcs_v_11": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"lpcs_v_12": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"lpcs_v_1": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	
+	"rhr_p_2a": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: -45,
+		},
+		"position": 1,
 		"momentary": false,
 		"updated": false,
 		"lights" : {

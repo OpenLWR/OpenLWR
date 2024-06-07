@@ -23,3 +23,18 @@ func _physics_process(_delta):
 func left_controller_joystick_input(name,value):
 	if name == "primary": 
 		joystick_left = value
+		
+func vr_controller_input(name,value):
+	print(name,value)
+	if name == "grip" and value == 1:
+		var touching = $XROrigin3D/RightController/Hand/Area3D.get_overlapping_areas()
+		
+		if $XROrigin3D/RightController/Hand/Area3D.has_overlapping_areas():
+			#print("yo grabbing the switch boy")
+			#is there a better way to get the hand rotation, like through OpenXR?
+			#var hand_rotation = $XROrigin3D/RightController.rotation_degrees.y
+			#var hand_rotation = $XROrigin3D/RightController.global_rotation_degrees.y
+			var hand_position = $XROrigin3D/RightController.global_position
+			touching[0].get_parent().switch_vr_player(hand_position)
+			
+		

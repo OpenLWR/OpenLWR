@@ -6953,6 +6953,233 @@ MS-V-22A"
 visible = false
 text = "SM-8"
 
+[node name="ms_v_22a2" parent="Control Room Panels/Main Panel Left Side/Controls/ICS" instance=ExtResource("13_ba4xl")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 6.23992, 0.177824, 4.6367)
+script = null
+
+[node name="Left" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2" index="0"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
+
+[node name="Right" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2" index="1"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, -0.013, 0.00648308, 0.00137824)
+
+[node name="selector_switch" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2" index="2"]
+transform = Transform3D(0.028, -2.44783e-09, -1.06998e-16, -2.22045e-16, -1.39698e-09, 0.028, -2.44783e-09, -0.028, -1.39698e-09, 0, 0.00483799, 0.01302)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2/selector_switch" index="2"]
+transform = Transform3D(-0.3, 5.96046e-08, 1.86265e-09, -7.45058e-09, -1.49012e-08, 0.3, 4.47035e-08, 0.3, 1.49012e-08, -7.62939e-05, 0.156521, 0.737579)
+text = "AUTO"
+
+[node name="Label3D3" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2/selector_switch" index="3"]
+transform = Transform3D(-0.212132, -0.212132, 1.86265e-09, 1.77533e-09, -1.11759e-08, 0.3, -0.212132, 0.212132, 1.49012e-08, -0.450104, 0.156525, 0.558346)
+text = "OPEN"
+
+[node name="Label3D4" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2/selector_switch" index="4"]
+transform = Transform3D(0, -0.3, -9.31323e-09, 7.45058e-09, -1.30385e-08, 0.3, -0.3, 0, 1.67638e-08, -0.674812, 0.156523, 0.0837402)
+text = ""
+
+[node name="Label3D2" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2/selector_switch" index="5"]
+transform = Transform3D(-0.212132, 0.212132, 1.86265e-09, -1.11759e-08, -5.50062e-09, 0.3, 0.212132, 0.212132, 1.67638e-08, 0.47258, 0.156521, 0.535522)
+text = "CLOSE"
+
+[node name="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2" index="3"]
+transform = Transform3D(0.382683, 8.57943e-10, 0.923879, 0.92388, -1.39698e-09, -0.382683, 2.98023e-08, 0.0317948, 0, 0, 0.00648308, 0.00922257)
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2"]
+transform = Transform3D(0.699999, 0, 0, 0, 2.98023e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219998, 0.0700006, 0.0120001)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_f8vam")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2"]
+transform = Transform3D(0.699999, 0, 0, 0, 1.49012e-08, -0.7, 0, 0.7, -2.98023e-08, -0.022, 0.07, 0.012)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_2xljo")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -3.55271e-15, -1, -5.96046e-08, -4.47035e-08, 0, 0.0432863, 0.0111108)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2/Label" index="0"]
+text = "TIP PURGE
+ISOLATION
+TIP-V-15"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="ms_v_22a3" type="Node3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS"]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 6.31063, 0.177824, 4.70741)
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a3"]
+transform = Transform3D(0.699999, 0, 0, 0, 2.98023e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219998, 0.0700006, 0.0120001)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a3/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_f8vam")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a3"]
+transform = Transform3D(0.699999, 0, 0, 0, 1.49012e-08, -0.7, 0, 0.7, -2.98023e-08, -0.022, 0.07, 0.012)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a3/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_2xljo")
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a3" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -3.55271e-15, -1, -5.96046e-08, -4.47035e-08, 0, 0.0432863, 0.0111108)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a3/Label" index="0"]
+text = "TIP PURGE
+ISOLATION
+TIP-V-15"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a3/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="msiv_logic_d" type="Node3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS"]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 6.38134, 0.277824, 4.77813)
+
+[node name="msiv_logic_d" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_d" instance=ExtResource("17_p3ckw")]
+transform = Transform3D(2.86603e-17, 6.55671e-10, -0.015, 0.015, -6.55671e-10, 0, -6.55671e-10, -0.015, -6.55671e-10, 0, 0.010155, 0.0137873)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_d/msiv_logic_d" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-3.04638e-06, 49.7787, 2.08017e-14, 66.6667, 1.79774e-06, 5.89432e-06, 5.89432e-06, -1.98682e-06, -66.6666, 2.20876, 0.178406, 0)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_d/msiv_logic_d/Label" index="0"]
+text = "MSIV ISOLATION
+LOGIC D"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_d/msiv_logic_d/Label" index="1"]
+text = "ARMED"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_d/msiv_logic_d/Label" index="2"]
+visible = false
+
+[node name="Power2" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_d/msiv_logic_d/Label"]
+transform = Transform3D(-1.31134e-09, 1.05427e-15, 0.03, -3.9671e-18, 0.042, 9.31323e-10, -0.03, 1.22125e-15, -1.31135e-09, 0.00105095, -0.00981128, 0.0166588)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DISARMED"
+font = ExtResource("15_o5a3n")
+font_size = 25
+outline_size = 0
+horizontal_alignment = 2
+
+[node name="msiv_logic_c" type="Node3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS"]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 6.45205, 0.277824, 4.84884)
+
+[node name="msiv_logic_c" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_c" instance=ExtResource("17_p3ckw")]
+transform = Transform3D(2.86603e-17, 6.55671e-10, -0.015, 0.015, -6.55671e-10, 0, -6.55671e-10, -0.015, -6.55671e-10, 0, 0.010155, 0.0137873)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_c/msiv_logic_c" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-3.04638e-06, 49.7787, 2.08017e-14, 66.6667, 1.79774e-06, 5.89432e-06, 5.89432e-06, -1.98682e-06, -66.6666, 2.20876, 0.178406, 0)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_c/msiv_logic_c/Label" index="0"]
+text = "MSIV ISOLATION
+LOGIC C"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_c/msiv_logic_c/Label" index="1"]
+text = "ARMED"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_c/msiv_logic_c/Label" index="2"]
+visible = false
+
+[node name="Power2" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_c/msiv_logic_c/Label"]
+transform = Transform3D(-1.31134e-09, 1.05427e-15, 0.03, -3.9671e-18, 0.042, 9.31323e-10, -0.03, 1.22125e-15, -1.31135e-09, 0.00105095, -0.00981128, 0.0166588)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DISARMED"
+font = ExtResource("15_o5a3n")
+font_size = 25
+outline_size = 0
+horizontal_alignment = 2
+
+[node name="msiv_logic_b" type="Node3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS"]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 5.88636, 0.277824, 4.28315)
+
+[node name="msiv_logic_b" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_b" instance=ExtResource("17_p3ckw")]
+transform = Transform3D(2.86603e-17, 6.55671e-10, -0.015, 0.015, -6.55671e-10, 0, -6.55671e-10, -0.015, -6.55671e-10, 0, 0.010155, 0.0137873)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_b/msiv_logic_b" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-3.04638e-06, 49.7787, 2.08017e-14, 66.6667, 1.79774e-06, 5.89432e-06, 5.89432e-06, -1.98682e-06, -66.6666, 2.20876, 0.178406, 0)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_b/msiv_logic_b/Label" index="0"]
+text = "MSIV ISOLATION
+LOGIC B"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_b/msiv_logic_b/Label" index="1"]
+text = "ARMED"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_b/msiv_logic_b/Label" index="2"]
+visible = false
+
+[node name="Power2" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_b/msiv_logic_b/Label"]
+transform = Transform3D(-1.31134e-09, 1.05427e-15, 0.03, -3.9671e-18, 0.042, 9.31323e-10, -0.03, 1.22125e-15, -1.31135e-09, 0.00105095, -0.00981128, 0.0166588)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DISARMED"
+font = ExtResource("15_o5a3n")
+font_size = 25
+outline_size = 0
+horizontal_alignment = 2
+
+[node name="msiv_logic_a" type="Node3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS"]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 5.95707, 0.277824, 4.35386)
+
+[node name="msiv_logic_a" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_a" instance=ExtResource("17_p3ckw")]
+transform = Transform3D(2.86603e-17, 6.55671e-10, -0.015, 0.015, -6.55671e-10, 0, -6.55671e-10, -0.015, -6.55671e-10, 0, 0.010155, 0.0137873)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_a/msiv_logic_a" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-3.04638e-06, 49.7787, 2.08017e-14, 66.6667, 1.79774e-06, 5.89432e-06, 5.89432e-06, -1.98682e-06, -66.6666, 2.20876, 0.178406, 0)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_a/msiv_logic_a/Label" index="0"]
+text = "MSIV ISOLATION
+LOGIC A"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_a/msiv_logic_a/Label" index="1"]
+text = "ARMED"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_a/msiv_logic_a/Label" index="2"]
+visible = false
+
+[node name="Power2" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_a/msiv_logic_a/Label"]
+transform = Transform3D(-1.31134e-09, 1.05427e-15, 0.03, -3.9671e-18, 0.042, 9.31323e-10, -0.03, 1.22125e-15, -1.31135e-09, 0.00105095, -0.00981128, 0.0166588)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DISARMED"
+font = ExtResource("15_o5a3n")
+font_size = 25
+outline_size = 0
+horizontal_alignment = 2
+
 [node name="ms_v_28a" parent="Control Room Panels/Main Panel Left Side/Controls/ICS" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 6.30323, 0.0820068, 4.41266)
 script = null
@@ -9597,6 +9824,20 @@ font = ExtResource("14_chbuk")
 font_size = 80
 outline_size = 0
 
+[node name="label17" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(1, 0, 0, 0, 0.972186, 0, 0, 0, 5.48722, 0.998498, 0.132281, -2.15506)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0581875)
+material = ExtResource("3_pvt5y")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams/label17"]
+transform = Transform3D(-1.39696e-09, -1.86265e-09, 0.05, -1.32094e-15, 0.053763, 2.79397e-09, -0.00911209, 3.39455e-10, -4.24319e-10, 0.00105667, 1.90735e-06, -3.63588e-05)
+modulate = Color(0, 0, 0, 1)
+text = "ISOLATION CONTROL SYSTEM"
+font = ExtResource("14_chbuk")
+font_size = 80
+outline_size = 0
+
 [node name="label12" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
 transform = Transform3D(1, 0, 0, 0, 0.972186, 0, 0, 0, 5.48722, 0.998498, 0.132281, -3.75623)
 use_collision = true
@@ -9651,6 +9892,50 @@ modulate = Color(0, 0, 0, 1)
 text = "RHR B SYSTEM"
 font = ExtResource("14_chbuk")
 font_size = 80
+outline_size = 0
+
+[node name="label16" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.0979731, -0.476579, 0, 0.490307, 0.0952298, 0, 0, 0, 2.744, 1.09013, 0.0903897, -2.15211)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0585137)
+material = ExtResource("3_pvt5y")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams/label16"]
+transform = Transform3D(-1.39696e-09, -1.86265e-09, 0.05, -1.32094e-15, 0.053763, 2.79397e-09, -0.00911209, 3.39455e-10, -4.24319e-10, 0.00105673, 1.90735e-06, -3.63588e-05)
+modulate = Color(0, 0, 0, 1)
+text = "MAIN STEAM ISOLATION VALVES"
+font = ExtResource("14_chbuk")
+font_size = 80
+outline_size = 0
+
+[node name="label18" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.5, 0, 0, 0, 0.486, 0, 0, 0, 2.744, 0.99836, 0.340996, -1.841)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0346279)
+material = ExtResource("3_pvt5y")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams/label18"]
+transform = Transform3D(-1.39696e-09, -1.86265e-09, 0.05, -1.32094e-15, 0.053763, 2.79397e-09, -0.00911209, 3.39455e-10, -4.24319e-10, 0.00105673, 1.90735e-06, -3.63588e-05)
+modulate = Color(0, 0, 0, 1)
+text = "DEPRESS LOGIC C/D FOR ISOL
+DEPRESS LOGIC D FOR INBD ISOL"
+font = ExtResource("14_chbuk")
+font_size = 40
+outline_size = 0
+
+[node name="label19" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.5, 0, 0, 0, 0.486, 0, 0, 0, 2.744, 0.99836, 0.340996, -2.54409)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0346279)
+material = ExtResource("3_pvt5y")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams/label19"]
+transform = Transform3D(-1.39696e-09, -1.86265e-09, 0.05, -1.32094e-15, 0.053763, 2.79397e-09, -0.00911209, 3.39455e-10, -4.24319e-10, 0.00105673, 1.90735e-06, -3.63588e-05)
+modulate = Color(0, 0, 0, 1)
+text = "DEPRESS LOGIC A/B FOR ISOL
+DEPRESS LOGIC B FOR OUTBD ISOL"
+font = ExtResource("14_chbuk")
+font_size = 40
 outline_size = 0
 
 [node name="label10" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
@@ -9745,6 +10030,60 @@ material = ExtResource("21_y8sv6")
 transform = Transform3D(0.195946, 0.95334, -4.2436e-07, 0.980615, -0.190496, 1.65297e-07, 2.98023e-08, -8.41674e-08, -5.48722, 1.05651, 0.0968412, -1.04719)
 use_collision = true
 size = Vector3(0.002, 0.00697376, 0.029811)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline45" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.207912, -0.672417, 3.79526, 0.978148, 0.142927, -0.806708, -4.47035e-08, 0.687439, 3.88005, 1.72218, -0.0361747, -2.35182)
+use_collision = true
+size = Vector3(0.002, 0.00697376, 0.00466443)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline118" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.207912, -0.672417, 3.79526, 0.978148, 0.142927, -0.806708, -4.47035e-08, 0.687439, 3.88005, 1.06411, 0.095077, -1.95347)
+use_collision = true
+size = Vector3(0.002, 0.00697376, 0.00466443)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline119" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.207912, 0.672417, 3.79526, 0.978148, -0.142927, -0.806709, -5.96046e-08, 0.687439, -3.88005, 1.06437, 0.0948026, -2.35217)
+use_collision = true
+size = Vector3(0.002, 0.00697376, 0.00466443)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline120" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, 5.38085, 0.980615, -4.16718e-08, -1.0752, 3.51463e-08, 0.972186, -2.35204e-07, 1.39396, 0.0294124, -2.35982)
+use_collision = true
+size = Vector3(0.002, 0.00697376, 0.119968)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline123" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, 5.38085, 0.980615, -4.16718e-08, -1.0752, 3.51463e-08, 0.972186, -2.35204e-07, 1.41733, 0.024743, -2.15188)
+use_collision = true
+size = Vector3(0.002, 0.00697376, 0.0967831)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline124" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, 5.38085, 0.980615, -4.16718e-08, -1.0752, 3.51463e-08, 0.972186, -2.35204e-07, 1.41733, 0.024743, -2.55907)
+use_collision = true
+size = Vector3(0.002, 0.00697376, 0.0967831)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline121" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 0.95334, -4.2436e-07, 0.980615, -0.190496, 1.65297e-07, 2.98023e-08, -8.41674e-08, -5.48722, 1.05651, 0.0968412, -2.15305)
+use_collision = true
+size = Vector3(0.002, 0.00697376, 0.07038)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline122" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.207912, 0.672417, 3.79526, 0.978148, -0.142927, -0.806709, -4.47035e-08, 0.687439, -3.88005, 1.72218, -0.0361747, -1.9528)
+use_collision = true
+size = Vector3(0.002, 0.00697376, 0.00466443)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline125" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.195946, 3.41687e-08, 5.38085, 0.980615, -4.16718e-08, -1.0752, 3.51463e-08, 0.972186, -2.35204e-07, 1.39396, 0.0294124, -1.94525)
+use_collision = true
+size = Vector3(0.002, 0.00697376, 0.119968)
 material = ExtResource("21_y8sv6")
 
 [node name="Outline82" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
@@ -20304,6 +20643,18 @@ omni_range = 17.632
 [editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a/selector_switch"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a2/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_22a3/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_d/msiv_logic_d"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_d/msiv_logic_d/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_c/msiv_logic_c"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_c/msiv_logic_c/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_b/msiv_logic_b"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_b/msiv_logic_b/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_a/msiv_logic_a"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/msiv_logic_a/msiv_logic_a/Label"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_28a"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_28a/selector_switch"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/ICS/ms_v_28a/Label"]

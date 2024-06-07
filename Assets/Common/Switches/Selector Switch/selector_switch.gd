@@ -41,3 +41,29 @@ func switch_click_right(_camera, event, _position, _normal, _shape_idx):
 		if mouse_click.pressed and (switch.position-1 in switch.positions):
 			switch_position_change(switch.position-1)
 			switch.updated = true
+			
+func switch_vr_player(hand_position):
+	
+	#this is so broken and i dont know what the fuck im doing
+	
+	var handle_position = $"selector_switch/Handle".global_position
+
+	var angle = handle_position.direction_to(hand_position)
+	
+	$"selector_switch/Handle".rotation = angle
+
+	var rotation = 0
+	
+	if rotation < -10:
+		if switch.position+1 in switch.positions:
+			switch_position_change(switch.position+1)
+			switch.updated = true
+	elif rotation > 10:
+		if switch.position-1 in switch.positions:
+			switch_position_change(switch.position-1)
+			switch.updated = true
+	else:
+		switch_position_change(1) #TODO: make this just the middle position, or "0" degrees
+		switch.updated = true
+		
+	print(angle)

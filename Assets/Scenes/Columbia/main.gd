@@ -1084,6 +1084,36 @@ var buttons = {
 		"armed" : false,
 		"updated": false,
 	},
+	
+	#MSIV Logic pushbuttons
+	"msiv_logic_a": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"msiv_logic_b": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"msiv_logic_c": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"msiv_logic_d": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
 }
 
 enum annunciator_state {

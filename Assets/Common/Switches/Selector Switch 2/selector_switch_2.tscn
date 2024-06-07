@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://crga4wior2o86"]
+[gd_scene load_steps=10 format=3 uid="uid://crga4wior2o86"]
 
 [ext_resource type="Script" path="res://Assets/Common/Switches/Selector Switch/selector_switch.gd" id="1_t033c"]
 [ext_resource type="PackedScene" uid="uid://cnkhmv4fni50x" path="res://Assets/Common/Switches/Selector Switch 2/selector_switch_2.glb" id="2_jskew"]
@@ -11,6 +11,9 @@
 size = Vector3(0.0273438, 0.0568848, 0.0185547)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a3cg5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hswia"]
+size = Vector3(2.16042, 1.95422, 2.80359)
 
 [node name="Switch" type="Node3D"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
@@ -101,6 +104,13 @@ material = ExtResource("3_mip2f")
 [node name="Move" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("6_gwkef")
 max_distance = 6.0
+
+[node name="VRInteractionZone" type="Area3D" parent="."]
+transform = Transform3D(0.0252, 1.14679e-15, -2.20305e-09, 9.04728e-29, -0.0252, -1.31178e-08, -2.20305e-09, 1.31178e-08, -0.0252, -4.10558e-10, -0.0016467, 0.00730372)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VRInteractionZone"]
+transform = Transform3D(0.999999, 1.03398e-25, -8.13152e-20, 0, 0.999999, -2.84217e-13, 8.13152e-20, 2.84217e-13, 0.999999, 0.00997166, 0.477111, 0.901794)
+shape = SubResource("BoxShape3D_hswia")
 
 [connection signal="input_event" from="Left" to="." method="switch_click_left"]
 [connection signal="input_event" from="Right" to="." method="switch_click_right"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://7gv6q50fuutj"]
+[gd_scene load_steps=14 format=3 uid="uid://7gv6q50fuutj"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Player/player.gd" id="1_1w47b"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/framerate_counter.gd" id="2_m6aot"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://Assets/Scenes/Player/connection_state_text.gd" id="5_72wwd"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/menu_player.gd" id="6_qkj5w"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/graphics_menu.gd" id="6_ssrgo"]
+[ext_resource type="Script" path="res://Assets/Scenes/Player/Chat.gd" id="8_c1qgp"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_emkox"]
 radius = 0.493347
@@ -225,6 +226,30 @@ offset_right = 829.0
 offset_bottom = 105.0
 text = "X"
 
+[node name="Chat" type="VBoxContainer" parent="Head/Camera3d"]
+anchors_preset = -1
+anchor_top = 0.75
+anchor_right = 0.25
+anchor_bottom = 1.0
+grow_vertical = 0
+alignment = 2
+script = ExtResource("8_c1qgp")
+
+[node name="Messages" type="ScrollContainer" parent="Head/Camera3d/Chat"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Head/Camera3d/Chat/Messages"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 2
+
+[node name="Edit" type="LineEdit" parent="Head/Camera3d/Chat"]
+layout_mode = 2
+size_flags_vertical = 8
+
 [connection signal="input_event" from="Head/Camera3d/SettingsButton/Button/StaticBody2D" to="Head/Camera3d/SettingsButton/Button/StaticBody2D" method="_on_input_event"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Disconnect" to="Head/Camera3d/Menu" method="_disconnect_button_pressed"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Settings" to="Head/Camera3d/Menu" method="_settings_button_pressed"]
@@ -234,3 +259,4 @@ text = "X"
 [connection signal="item_selected" from="Head/Camera3d/Menu/Settings/Settings/Graphics/Vsync" to="Head/Camera3d/Menu/Settings/Settings/Graphics" method="_new_vsync_selected"]
 [connection signal="item_selected" from="Head/Camera3d/Menu/Settings/Settings/Graphics/Antialiasing" to="Head/Camera3d/Menu/Settings/Settings/Graphics" method="_new_antialiasing_selected"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Settings/Exit" to="Head/Camera3d/Menu" method="_settings_exit_pressed"]
+[connection signal="text_submitted" from="Head/Camera3d/Chat/Edit" to="Head/Camera3d/Chat" method="_on_text_edit_text_submitted"]

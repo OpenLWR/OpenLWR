@@ -1020,6 +1020,96 @@ var switches = {
 		"switch": null,
 		"positions": {
 			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_v_42a": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_v_53a": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_v_48a": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_v_3a": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_v_64a": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"rhr_v_4a": {
+		"switch": null,
+		"positions": {
+			0: 45,
 			1: -45,
 		},
 		"position": 1,
@@ -1029,6 +1119,172 @@ var switches = {
 			"green" : null,
 			"red" : null,
 		},
+	},
+	"rhr_v_6a": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	
+	#MSIVs (inboard)
+	
+	"ms_v_22a": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"ms_v_22b": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"ms_v_22c": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"ms_v_22d": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	
+	#MSIVs (outboard)
+	
+	"ms_v_28a": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"ms_v_28b": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"ms_v_28c": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"ms_v_28d": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	
+	"bypass_valve": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {},
+	},
+	
+	"turbine_valve": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {},
 	},
 	
 	"rfw_trip": {
@@ -1240,6 +1496,21 @@ var buttons = {
 		"armed" : false,
 		"updated": false,
 	},
+	
+	"lpcs_man_init": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"lpcs_init_reset": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
 }
 
 enum annunciator_state {
@@ -1440,16 +1711,9 @@ var alarms = {
 		"material": null,
 	},
 	
-	"rcic_init_rpv_level_low": {
+	"rcic_actuated": {
 		"box": "P601_A4",
 		"window": "1-2",
-		"state": annunciator_state.CLEAR,
-		"silenced" : false,
-		"material": null,
-	},
-	"rcic_rpv_level_high": {
-		"box": "P601_A4",
-		"window": "1-3",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
@@ -1462,10 +1726,26 @@ var alarms = {
 		"material": null,
 	},
 	
+	#LPCS
+	"lpcs_rhr_a_actuated": {
+		"box": "P601_A3",
+		"window": "1-3",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	"lpcs_rhr_a_init_rpv_level_low": {
+		"box": "P601_A4",
+		"window": "6-2",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	
 	#HPCS
-	"hpcs_init_rpv_level_low": {
+	"hpcs_actuated": {
 		"box": "P601_A1",
-		"window": "1-8",
+		"window": "1-6",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
@@ -1534,6 +1814,8 @@ var alarm_groups = {
 	"CHART_RECORDERS_OPERATE": null,
 	
 	"rcic_init": $"Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/sealed_in".get_material(),
+	
+	"lpcs_init": $"Control Room Panels/Main Panel Left Side/Controls/LPCS/lpcs_init/seal_in".get_material(),
 	
 }
 

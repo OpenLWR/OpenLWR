@@ -501,3 +501,15 @@ transform = Transform3D(-4.37114e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.37114e-1
 shaded = true
 double_sided = false
 texture = ExtResource("5_xvfvu")
+
+[node name="Lighting" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.209559, 0, 0.197953)
+visible = false
+light_color = Color(0.430892, 0.0630912, 7.21961e-08, 1)
+light_energy = 0.02
+light_indirect_energy = 5.618
+light_size = 0.794
+light_specular = 0.0
+light_bake_mode = 1
+omni_range = 15.244
+omni_attenuation = 0.707107

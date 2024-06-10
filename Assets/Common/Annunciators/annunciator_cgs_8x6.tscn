@@ -957,3 +957,21 @@ transform = Transform3D(-4.37114e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.37114e-1
 shaded = true
 double_sided = false
 texture = ExtResource("4_841lo")
+
+[node name="a" type="SpotLight3D" parent="."]
+transform = Transform3D(-4.17001e-08, 0.213269, -0.976994, 1.86446e-08, 0.976994, 0.213269, 1, -9.32229e-09, -4.4717e-08, 0, 0, 0)
+visible = false
+light_color = Color(1, 0.011004, 0.141076, 1)
+light_energy = 0.175
+spot_angle = 76.54
+
+[node name="Lighting" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.209559, 0, -9.16011e-09)
+visible = false
+light_energy = 0.02
+light_indirect_energy = 5.618
+light_size = 0.794
+light_specular = 0.0
+light_bake_mode = 1
+omni_range = 15.244
+omni_attenuation = 0.707107

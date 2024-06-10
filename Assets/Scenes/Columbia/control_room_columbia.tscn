@@ -13768,7 +13768,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "02-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="06-19" type="CSGBox3D" parent="Rod Select Panel/Rod Selectors"]
 transform = Transform3D(1, 0, 0, -7.45058e-08, 1, 0, 0, 0, 1, 5.96046e-08, 0.0960026, 0.159998)
@@ -13784,7 +13784,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "06-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/06-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -13807,7 +13807,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "10-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/10-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -13830,7 +13830,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "14-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/14-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -13853,7 +13853,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -13876,7 +13876,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -13899,7 +13899,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -13922,7 +13922,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -13945,7 +13945,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -13968,7 +13968,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -13991,7 +13991,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14014,7 +14014,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "46-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/46-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14037,7 +14037,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "50-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/50-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14060,7 +14060,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "54-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/54-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14083,7 +14083,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "06-15"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/06-15"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14106,7 +14106,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "10-15"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/10-15"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14129,7 +14129,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "14-15"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/14-15"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14152,7 +14152,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-15"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-15"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14175,7 +14175,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-15"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-15"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14198,7 +14198,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-15"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-15"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14221,7 +14221,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-15"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-15"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14244,7 +14244,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-15"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-15"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14267,7 +14267,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-15"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-15"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14290,7 +14290,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-15"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-15"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14313,7 +14313,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "46-15"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/46-15"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14336,7 +14336,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "50-15"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/50-15"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14359,7 +14359,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "10-11"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/10-11"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14382,7 +14382,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "14-11"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/14-11"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14405,7 +14405,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-11"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-11"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14428,7 +14428,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-11"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-11"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14451,7 +14451,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-11"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-11"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14474,7 +14474,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-11"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-11"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14497,7 +14497,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-11"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-11"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14520,7 +14520,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-11"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-11"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14543,7 +14543,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-11"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-11"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14566,7 +14566,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "46-11"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/46-11"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14589,7 +14589,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "50-11"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/50-11"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14612,7 +14612,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "10-51"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/10-51"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14635,7 +14635,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "14-51"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/14-51"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14658,7 +14658,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-51"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-51"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14681,7 +14681,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-51"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-51"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14704,7 +14704,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-51"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-51"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14727,7 +14727,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-51"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-51"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14750,7 +14750,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-51"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-51"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14773,7 +14773,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-51"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-51"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14796,7 +14796,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-51"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-51"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14819,7 +14819,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "46-51"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/46-51"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14842,7 +14842,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "50-51"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/50-51"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14865,7 +14865,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "14-07"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/14-07"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14888,7 +14888,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-07"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-07"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14911,7 +14911,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-07"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-07"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14934,7 +14934,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-07"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-07"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14957,7 +14957,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-07"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-07"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -14980,7 +14980,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-07"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-07"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15003,7 +15003,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-07"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-07"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15026,7 +15026,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-07"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-07"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15049,7 +15049,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-03"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-03"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15072,7 +15072,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-03"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-03"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15095,7 +15095,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-03"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-03"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15118,7 +15118,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-03"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-03"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15141,7 +15141,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-03"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-03"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15164,7 +15164,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-03"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-03"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15187,7 +15187,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-03"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-03"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15210,7 +15210,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-59"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-59"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15233,7 +15233,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-59"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-59"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15256,7 +15256,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-59"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-59"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15279,7 +15279,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-59"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-59"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15302,7 +15302,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-59"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-59"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15325,7 +15325,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-59"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-59"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15348,7 +15348,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-59"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-59"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15371,7 +15371,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "46-07"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/46-07"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15394,7 +15394,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "14-55"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/14-55"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15417,7 +15417,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-55"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-55"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15440,7 +15440,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-55"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-55"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15463,7 +15463,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-55"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-55"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15486,7 +15486,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-55"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-55"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15509,7 +15509,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-55"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-55"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15532,7 +15532,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-55"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-55"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15555,7 +15555,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-55"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-55"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15578,7 +15578,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "46-55"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/46-55"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15601,7 +15601,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "54-15"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/54-15"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15624,7 +15624,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "06-47"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/06-47"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15647,7 +15647,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "10-47"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/10-47"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15670,7 +15670,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "14-47"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/14-47"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15693,7 +15693,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-47"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-47"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15716,7 +15716,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-47"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-47"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15739,7 +15739,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-47"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-47"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15762,7 +15762,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-47"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-47"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15785,7 +15785,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-47"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-47"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15808,7 +15808,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-47"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-47"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15831,7 +15831,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-47"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-47"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15854,7 +15854,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "46-47"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/46-47"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15877,7 +15877,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "50-47"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/50-47"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15900,7 +15900,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "54-47"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/54-47"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15923,7 +15923,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "58-19"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/58-19"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15946,7 +15946,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "02-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/02-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15969,7 +15969,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "06-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/06-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -15992,7 +15992,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "10-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/10-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16015,7 +16015,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "14-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/14-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16038,7 +16038,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16061,7 +16061,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16084,7 +16084,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16107,7 +16107,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16130,7 +16130,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16153,7 +16153,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16176,7 +16176,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16199,7 +16199,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "46-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/46-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16222,7 +16222,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "50-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/50-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16245,7 +16245,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "54-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/54-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16268,7 +16268,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "58-23"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/58-23"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16291,7 +16291,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "02-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/02-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16314,7 +16314,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "06-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/06-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16337,7 +16337,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "10-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/10-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16360,7 +16360,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "14-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/14-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16383,7 +16383,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16406,7 +16406,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16429,7 +16429,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16452,7 +16452,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16475,7 +16475,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16498,7 +16498,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16521,7 +16521,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16544,7 +16544,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "46-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/46-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16567,7 +16567,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "50-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/50-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16590,7 +16590,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "54-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/54-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16613,7 +16613,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "58-27"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/58-27"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16636,7 +16636,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "02-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/02-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16659,7 +16659,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "06-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/06-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16682,7 +16682,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "10-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/10-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16705,7 +16705,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "14-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/14-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16728,7 +16728,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16751,7 +16751,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16774,7 +16774,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16797,7 +16797,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16820,7 +16820,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16843,7 +16843,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16866,7 +16866,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16889,7 +16889,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "46-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/46-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16912,7 +16912,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "50-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/50-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16935,7 +16935,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "54-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/54-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16958,7 +16958,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "58-31"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/58-31"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -16981,7 +16981,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "02-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/02-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17004,7 +17004,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "06-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/06-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17027,7 +17027,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "10-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/10-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17050,7 +17050,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "14-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/14-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17073,7 +17073,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17096,7 +17096,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17119,7 +17119,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17142,7 +17142,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17165,7 +17165,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17188,7 +17188,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17211,7 +17211,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17234,7 +17234,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "46-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/46-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17257,7 +17257,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "50-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/50-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17280,7 +17280,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "54-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/54-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17303,7 +17303,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "58-35"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/58-35"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17326,7 +17326,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "02-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/02-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17349,7 +17349,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "06-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/06-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17372,7 +17372,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "10-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/10-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17395,7 +17395,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "14-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/14-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17418,7 +17418,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17441,7 +17441,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17464,7 +17464,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17487,7 +17487,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17510,7 +17510,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17533,7 +17533,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17556,7 +17556,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17579,7 +17579,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "46-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/46-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17602,7 +17602,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "50-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/50-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17625,7 +17625,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "54-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/54-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17648,7 +17648,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "58-43"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/58-43"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17671,7 +17671,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "02-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/02-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17694,7 +17694,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "06-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/06-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17717,7 +17717,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "10-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/10-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17740,7 +17740,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "14-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/14-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17763,7 +17763,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "18-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/18-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17786,7 +17786,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "22-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/22-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17809,7 +17809,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "26-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/26-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17832,7 +17832,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "30-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/30-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17855,7 +17855,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "34-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/34-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17878,7 +17878,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "38-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/38-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17901,7 +17901,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "42-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/42-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17924,7 +17924,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "46-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/46-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17947,7 +17947,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "50-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/50-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17970,7 +17970,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "54-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/54-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)
@@ -17993,7 +17993,7 @@ shaded = true
 modulate = Color(0, 0, 0, 1)
 text = "58-39"
 font_size = 16
-outline_size = 16
+outline_size = 0
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rod Select Panel/Rod Selectors/58-39"]
 transform = Transform3D(2.7, 0, 0, 0, 2.7, 0, 0, 0, 2.7, 0, 0, 0)

@@ -53,7 +53,8 @@ func _ready():
 					alarm.material.emission_enabled = clear_annunciator_on
 					clear_alarm_active = true	
 					
-			#TODO: allow clients to turn this off in settings as this probably has a pretty big performance impact
+			# TODO: allow clients to turn this off in settings as this probably has a pretty big performance impact
+			# also disable when main lights on as it's not visible anyways
 			if true:
 				if alarm.material.emission_enabled == true:
 					ann_light[alarm.box].lights_on += 1
@@ -63,20 +64,15 @@ func _ready():
 		
 		for box in ann_light:
 			var box_table = ann_light[box]
-			var r = 0
-			var g = 0
-			var b = 0
 			for color in box_table.colors:
-				r+=color[0]
-				g+=color[1]
-				b+=color[2]
-		
+				box_table.avg_color += color
+				
 			if len(box_table.colors) != 0:
-				r = r/len(box_table.colors)
-				g = g/len(box_table.colors)
-				b = b/len(box_table.colors)
-		
-			box_table.avg_color = Color(r,g,b)
+				box_table.avg_color = box_table.avg_color/len(box_table.colors)
+				
+			box_table.avg_color.a = 1
+			
+			print(box_table.avg_color)
 			if box_table.lights_on > 0:
 				get_node(box+"/Lighting").visible = true
 				get_node(box+"/Lighting").light_energy = (box_table.lights_on/30)+0.003

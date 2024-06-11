@@ -6,6 +6,12 @@ func _ready():
 	$/root/Node3D.connect(&"chat_message", _on_chat_message)
 	pass
 
+func _input(event):
+	if event is InputEventMouseButton or event is InputEventScreenTouch:
+		if not $Edit.get_global_rect().has_point(event.position):
+			$Edit.release_focus()
+	pass
+
 func _on_chat_message(message: String):
 	var node = Label.new()
 	node.text = message

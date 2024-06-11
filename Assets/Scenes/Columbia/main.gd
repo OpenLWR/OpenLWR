@@ -22,7 +22,7 @@ enum server_packets {
 	PLAYER_POSITION_PARAMETERS_UPDATE = 8,
 	ROD_POSITION_PARAMETERS_UPDATE = 10,
 	USER_LOGIN_ACK = 13,
-	CHAT = 15,
+	CHAT = 16,
 }
 
 signal chat_message(message)

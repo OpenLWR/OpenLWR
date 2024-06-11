@@ -24,7 +24,7 @@ func _on_chat_message(message: String):
 	await get_tree().process_frame
 	#HACK: this seems like the only way to scroll to the most recent chat
 	# message in the same frame
-	$Messages.scroll_vertical = 21 * child_count + 1
+	$Messages.scroll_vertical = 21 * child_count - 230
 	$AnimationPlayer.seek(0)
 	$AnimationPlayer.play($AnimationPlayer.assigned_animation)
 	pass

@@ -24,6 +24,7 @@ func _ready():
 		for box in ann_light:
 			ann_light[box].lights_on = 0
 			ann_light[box].colors = []
+			#ann_light[box].avg_color = Color()
 		
 		
 		for alarm in node_3d.alarms:
@@ -64,6 +65,7 @@ func _ready():
 		
 		for box in ann_light:
 			var box_table = ann_light[box]
+			box_table.avg_color = Color(0,0,0,1)
 			for color in box_table.colors:
 				box_table.avg_color += color
 				

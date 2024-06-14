@@ -1497,6 +1497,21 @@ var buttons = {
 		"updated": false,
 	},
 	
+	"isol_logic_reset_1": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"isol_logic_reset_2": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	
 	"lpcs_man_init": {
 		"switch": null,
 		"state": false,
@@ -1563,6 +1578,14 @@ var alarms = {
 		"silenced" : false,
 		"material": null,
 	},
+	"msiv_closure_trip_a": {
+		"box": "Box1",
+		"window": "2-1",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	
 	"rod_accumulator_trouble": {
 		"box": "Box1",
 		"window": "6-7",
@@ -1624,6 +1647,13 @@ var alarms = {
 	"neutron_monitor_system_trip_b": {
 		"box": "Box2",
 		"window": "3-3",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	"msiv_closure_trip_b": {
+		"box": "Box2",
+		"window": "2-1",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
@@ -1706,6 +1736,38 @@ var alarms = {
 	"setpoint_setdown_active": {
 		"box": "Box2",
 		"window": "2-7",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	
+	#P601.A11
+	"msiv_half_trip_system_b": {
+		"box": "P601_A11",
+		"window": "5-3",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	"rc_2_half_trip": {
+		"box": "P601_A11",
+		"window": "2-2",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	
+	#P601.A12
+	"msiv_half_trip_system_a": {
+		"box": "P601_A12",
+		"window": "2-1",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	"rc_1_half_trip": {
+		"box": "P601_A12",
+		"window": "4-3",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,

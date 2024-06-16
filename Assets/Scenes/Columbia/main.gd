@@ -9,6 +9,7 @@ enum client_packets {
 	ROD_SELECT_UPDATE = 11,
 	USER_LOGIN = 12,
 	SYNCHRONIZE = 14,
+	CHAT = 15,
 }
 
 enum server_packets {
@@ -21,7 +22,10 @@ enum server_packets {
 	PLAYER_POSITION_PARAMETERS_UPDATE = 8,
 	ROD_POSITION_PARAMETERS_UPDATE = 10,
 	USER_LOGIN_ACK = 13,
+	CHAT = 16,
 }
+
+signal chat_message(message)
 
 @onready var gauges = {
 	"four_rod_br": {
@@ -1897,6 +1901,8 @@ var selected_rod = null
 var connection_ready = false
 var connection_packet_sent = false
 
+var sent_messages: PackedStringArray = PackedStringArray()
+
 const remote_player_scene = preload("res://Assets/Scenes/Player/remote_player.tscn")
 const vr_player_scene = preload("res://Assets/Scenes/Player/vr_player.tscn")
 const pc_player_scene = preload("res://Assets/Scenes/Player/player.tscn")
@@ -2014,7 +2020,10 @@ func _process(delta):
 				twn.set_ease(Tween.EASE_IN_OUT)
 				twn.play()
 				
-				
+			for message in sent_messages:
+				socket.send_text(build_packet(client_packets.CHAT, message))
+			sent_messages.clear()
+			
 			# recieve packets
 			while socket.get_available_packet_count():
 				var packet = socket.get_packet().get_string_from_utf8().split("|")
@@ -2122,7 +2131,8 @@ func _process(delta):
 								# TODO: remove remote player instance when they disconnect
 								
 								
-					
+					server_packets.CHAT:
+						chat_message.emit(packet_data)
 					
 		elif state == WebSocketPeer.STATE_CLOSING:
 			# Keep polling to achieve proper close.

@@ -1,4 +1,4 @@
-[gd_scene load_steps=480 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=481 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -43,6 +43,7 @@
 [ext_resource type="Material" uid="uid://cpgwpldvm45d2" path="res://Assets/Materials/annunciator_white.tres" id="37_tvh2d"]
 [ext_resource type="PackedScene" uid="uid://72in678msos6" path="res://Assets/Common/Annunciators/annunciator_cgs_4x6.tscn" id="38_44ng5"]
 [ext_resource type="PackedScene" uid="uid://dkfnabcvwvt3w" path="res://Assets/Common/Annunciators/annunciator_cgs_5x6.tscn" id="40_hblaj"]
+[ext_resource type="PackedScene" uid="uid://b6voaf3q40kxq" path="res://Assets/Common/Switches/Breaker Switch/breaker_switch.tscn" id="44_253tc"]
 
 [sub_resource type="Environment" id="Environment_gjsn6"]
 ambient_light_source = 2
@@ -21276,6 +21277,9 @@ light_color = Color(1, 0.542708, 0.0156544, 1)
 light_energy = 0.5
 light_indirect_energy = 5.0
 spot_range = 20.0
+
+[node name="TestBreaker" parent="." instance=ExtResource("44_253tc")]
+transform = Transform3D(1, 0, 0, 0, 0.203215, -0.979134, 0, 0.979134, 0.203215, -5.8203, 0.782737, 3.15137)
 
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/rcic_init_reset/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/rcic_init_reset" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/LPCS/lpcs_init/lpcs_init_reset/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/LPCS/lpcs_init/lpcs_init_reset" method="switch_click"]

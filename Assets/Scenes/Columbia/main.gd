@@ -1271,6 +1271,7 @@ var switches = {
 		"position": 0,
 		"momentary": false,
 		"updated": false,
+		"flag": false,
 		"lights" : {},
 	},
 	
@@ -1284,6 +1285,7 @@ var switches = {
 		"position": 0,
 		"momentary": false,
 		"updated": false,
+		"flag": false,
 		"lights" : {},
 	},
 	
@@ -1297,8 +1299,23 @@ var switches = {
 		"position": 0,
 		"momentary": false,
 		"updated": false,
+		"flag": false, #assume we have a flag and let the switch handle it
 		"lights" : {},
 	},
+	"TestBreaker": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"flag": false, #assume we have a flag and let the switch handle it
+		"lights" : {},
+	},
+	
 }
 
 var buttons = {
@@ -1972,14 +1989,12 @@ func _process(delta):
 				if not err:
 					for button in updated_buttons:
 						buttons[button].updated = false
-						print(button)
 				else:
 					print(err)
 					
 			# TODO: only fire to server when our position updated
 			
 			if selected_rod != null:
-				print("a")
 				var err = socket.send_text(build_packet(client_packets.ROD_SELECT_UPDATE, json.stringify(selected_rod)))
 				if not err:
 					selected_rod = null
@@ -2043,6 +2058,7 @@ func _process(delta):
 						for switch in packet_data:
 							var data = packet_data[switch]
 							if switches[switch].switch != null:
+								switches[switch].flag = data.flag
 								switches[switch].switch.switch_position_change(data.position)
 								
 							for light_name in switches[switch].lights:

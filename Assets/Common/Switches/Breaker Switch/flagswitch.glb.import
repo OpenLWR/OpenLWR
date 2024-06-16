@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dmu3oxh27xxhe"
-path="res://.godot/imported/breakerswitch2.glb-55337514d74623ac4db05c49a5e0b2a5.scn"
+uid="uid://dajqyrsq1qo2"
+path="res://.godot/imported/flagswitch.glb-52430e4a570dfbebad40595d7fec8b47.scn"
 
 [deps]
 
-source_file="res://Assets/Common/Switches/Breaker Switch/breakerswitch2.glb"
-dest_files=["res://.godot/imported/breakerswitch2.glb-55337514d74623ac4db05c49a5e0b2a5.scn"]
+source_file="res://Assets/Common/Switches/Breaker Switch/flagswitch.glb"
+dest_files=["res://.godot/imported/flagswitch.glb-52430e4a570dfbebad40595d7fec8b47.scn"]
 
 [params]
 

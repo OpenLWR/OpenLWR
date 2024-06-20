@@ -49,7 +49,7 @@ func switch_click_left(_camera, event, _position, _normal, _shape_idx):
 		var switch = node_3d.switches[self.name]
 		if mouse_click.pressed and (switch.position+1 in switch.positions):
 			switch_position_change(switch.position+1)
-			if switch.position+1 >=2 and ("flag" in switch):
+			if switch.position >=2 and ("flag" in switch):
 				switch.flag = "red"
 			switch.updated = true
 
@@ -59,7 +59,7 @@ func switch_click_right(_camera, event, _position, _normal, _shape_idx):
 		var switch = node_3d.switches[self.name]
 		if mouse_click.pressed and (switch.position-1 in switch.positions):
 			switch_position_change(switch.position-1)
-			if switch.position-1 <=0 and ("flag" in switch):
+			if switch.position <=0 and ("flag" in switch):
 				switch.flag = "green"
 			switch.updated = true
 

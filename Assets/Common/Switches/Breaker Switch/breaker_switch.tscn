@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b6voaf3q40kxq"]
+[gd_scene load_steps=11 format=3 uid="uid://b6voaf3q40kxq"]
 
 [ext_resource type="PackedScene" uid="uid://dajqyrsq1qo2" path="res://Assets/Common/Switches/Breaker Switch/flagswitch.glb" id="1_jvw7k"]
 [ext_resource type="Script" path="res://Assets/Common/Switches/Selector Switch/selector_switch.gd" id="1_tl2tb"]
@@ -6,6 +6,8 @@
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="3_u0dyy"]
 [ext_resource type="Material" uid="uid://dcl4g6cdcurmk" path="res://Assets/Materials/green_flag.tres" id="4_fc8tq"]
 [ext_resource type="AudioStream" uid="uid://wlb0cgw34y6m" path="res://Assets/Audio/breaker_switch.mp3" id="5_bstpb"]
+[ext_resource type="FontFile" uid="uid://cqsshl4y7vp2w" path="res://Assets/Fonts/Roboto Condensed/RobotoCondensed-VariableFont_wght.ttf" id="7_4gdkb"]
+[ext_resource type="Texture2D" uid="uid://c0m7unh6r8ard" path="res://Assets/Textures/GenericPowerLogo.png" id="8_eyxga"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xugpy"]
 size = Vector3(0.0273438, 0.0568848, 0.0185547)
@@ -67,6 +69,58 @@ input_ray_pickable = false
 [node name="CollisionShape3D" type="CollisionShape3D" parent="VRInteractionZone"]
 transform = Transform3D(0.999999, 1.03398e-25, -8.13152e-20, 0, 0.999999, -2.84217e-13, 8.13152e-20, 2.84217e-13, 0.999999, 0.00997166, 0.477111, 0.901794)
 shape = SubResource("BoxShape3D_o0c4u")
+
+[node name="PTL" type="Label3D" parent="."]
+transform = Transform3D(-1.32972e-05, 0.0149999, -4.4693e-05, 0.0149897, 1.16357e-05, -0.000554577, -0.00055454, -4.5154e-05, -0.0149897, 0.0152167, 0.000106926, -0.00393649)
+shaded = true
+double_sided = false
+render_priority = 1
+text = "PULL TO
+LOCK"
+font = ExtResource("7_4gdkb")
+font_size = 50
+outline_size = 0
+line_spacing = -15.0
+
+[node name="Label3D4" type="Label3D" parent="."]
+transform = Transform3D(-0.0149999, -1.32978e-05, -4.4693e-05, -1.16364e-05, 0.0149897, -0.000554577, 4.51541e-05, -0.00055454, -0.0149897, 0, -0.016, -0.004)
+shaded = true
+double_sided = false
+render_priority = 1
+text = "GENERAL         POWER   "
+font = ExtResource("7_4gdkb")
+font_size = 50
+outline_size = 0
+line_spacing = -15.0
+
+[node name="Sprite3D" type="Sprite3D" parent="Label3D4"]
+transform = Transform3D(0.035, 5.30539e-12, 2.42532e-11, -5.30539e-12, 0.035, -4.85064e-10, -2.42532e-11, 4.85064e-10, 0.035, 0, 0, 0)
+shaded = true
+double_sided = false
+render_priority = 1
+texture = ExtResource("8_eyxga")
+
+[node name="Trip" type="Label3D" parent="."]
+transform = Transform3D(-0.010616, 0.0105971, -4.4693e-05, 0.0105911, 0.0106076, -0.000554577, -0.00036019, -0.000424047, -0.0149897, 0.0137903, 0.0138052, -0.00443904)
+shaded = true
+double_sided = false
+render_priority = 1
+text = "TRIP"
+font = ExtResource("7_4gdkb")
+font_size = 50
+outline_size = 0
+line_spacing = -15.0
+
+[node name="Close" type="Label3D" parent="."]
+transform = Transform3D(-0.0105971, -0.010616, -4.4693e-05, -0.0106076, 0.0105911, -0.000554577, 0.000424047, -0.00036019, -0.0149897, -0.013413, 0.0135857, -0.00394346)
+shaded = true
+double_sided = false
+render_priority = 1
+text = "CLOSE"
+font = ExtResource("7_4gdkb")
+font_size = 50
+outline_size = 0
+line_spacing = -15.0
 
 [connection signal="input_event" from="Left" to="." method="switch_click_left"]
 [connection signal="input_event" from="Right" to="." method="switch_click_right"]

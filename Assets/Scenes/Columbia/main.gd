@@ -1275,7 +1275,6 @@ var switches = {
 		"position": 0,
 		"momentary": false,
 		"updated": false,
-		"flag": false,
 		"lights" : {},
 	},
 	
@@ -1289,7 +1288,6 @@ var switches = {
 		"position": 0,
 		"momentary": false,
 		"updated": false,
-		"flag": false,
 		"lights" : {},
 	},
 	
@@ -1303,10 +1301,12 @@ var switches = {
 		"position": 0,
 		"momentary": false,
 		"updated": false,
-		"flag": false, #assume we have a flag and let the switch handle it
 		"lights" : {},
 	},
-	"TestBreaker": {
+	
+	
+	
+	"cb_s1": {
 		"switch": null,
 		"positions": {
 			0: 45,
@@ -1316,8 +1316,11 @@ var switches = {
 		"position": 1,
 		"momentary": false,
 		"updated": false,
-		"flag": false, #assume we have a flag and let the switch handle it
-		"lights" : {},
+		"lights" : {
+			"green" : null,
+			"red" : null,
+			"lockout" : null,
+		},
 	},
 	
 }
@@ -1971,7 +1974,7 @@ func _process(delta):
 			for switch_name in switches:
 				var switch = switches[switch_name]
 				if switch.updated == true:
-					updated_switches[switch_name] = switch.position
+					updated_switches[switch_name] = {"position" : switch.position, "flag" : switch.flag} #TODO: should we trust the client's flag?
 			
 			# if switches have been turned, send them to the server
 			if updated_switches != {}:

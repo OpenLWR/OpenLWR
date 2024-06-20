@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bjwjgqtl525do"]
+
+[ext_resource type="Script" path="res://Assets/Common/Gauges/Circular/circular_gauge.gd" id="1_qiauc"]
+[ext_resource type="PackedScene" uid="uid://cuvblegnliqlt" path="res://Assets/Common/Gauges/Circular/Circular.glb" id="1_tthqd"]
+[ext_resource type="Texture2D" uid="uid://w58r1cc1wc87" path="res://Assets/Textures/Radial Gauge/Columbia/OpenLWR_PlaceholderRadial_Outer.png" id="3_ipsoc"]
+[ext_resource type="Texture2D" uid="uid://c57ou4js18r32" path="res://Assets/Textures/Radial Gauge/Columbia/OpenLWR_PlaceholderRadial_Inner_V2.png" id="3_l0l4r"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(0.28, 0, 0, 0, 0.28, 0, 0, 0, 0.28, 0, 0, 0)
+script = ExtResource("1_qiauc")
+
+[node name="Circular" parent="." instance=ExtResource("1_tthqd")]
+transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, 0.1, 0, -0.1, -4.37114e-09, 0, 0, 0)
+
+[node name="Glass" parent="Circular" index="1"]
+transparency = 0.9
+
+[node name="Sprite3D" type="Sprite3D" parent="Circular"]
+transform = Transform3D(-0.41, 6.19083e-08, 2.7061e-15, -1.05879e-21, -1.79217e-08, 0.41, 6.19083e-08, 0.41, 1.79217e-08, -6.21176e-23, -0.130343, 5.69749e-09)
+shaded = true
+double_sided = false
+texture = ExtResource("3_l0l4r")
+
+[node name="Sprite3D2" type="Sprite3D" parent="Circular"]
+transform = Transform3D(-0.4, 6.03983e-08, 2.64009e-15, 0, -1.74846e-08, 0.4, 6.03983e-08, 0.4, 1.74846e-08, 5.51328e-16, -0.0468119, 9.34876e-09)
+shaded = true
+double_sided = false
+texture = ExtResource("3_ipsoc")
+
+[editable path="Circular"]

@@ -364,6 +364,15 @@ signal chat_message(message)
 		"atypical" : false,
 		"text" : false,
 	},
+	
+	"bus_4_voltage": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/HPCS/bus_4_voltage",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 6000,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var switches = {
@@ -1470,6 +1479,56 @@ var switches = {
 		},
 	},
 	
+	#DG2
+	
+	"cb_dg2_8": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+			"lockout" : null,
+		},
+	},
+	"cb_8dg2": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+			"lockout" : null,
+		},
+	},
+	"diesel_gen_2": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	
 }
 
 var buttons = {
@@ -2013,7 +2072,8 @@ var alarm_groups = {
 	"RMCS_INSERT": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT".get_material(),
 	"RMCS_SETTLE": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_SETTLE".get_material(),
 	
-	"cr_light_normal": null,
+	"cr_light_normal_1": null,
+	"cr_light_normal_2": null,
 	"cr_light_emergency": null,
 	
 	"APRM_A_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A/UPSCALE_INOP".get_material(),
@@ -2230,8 +2290,10 @@ func _process(delta):
 						for indicator in packet_data:
 							var indicator_state = packet_data[indicator]
 							if "cr_light" in indicator:
-								if indicator == "cr_light_normal":
-									$LightNormal.visible = indicator_state
+								if indicator == "cr_light_normal_1":
+									$LightNormal_1.visible = indicator_state
+								if indicator == "cr_light_normal_2":
+									$LightNormal_2.visible = indicator_state
 								if indicator == "cr_light_emergency":
 									$LightEmergency.visible = indicator_state
 								continue

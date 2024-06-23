@@ -24,3 +24,4 @@ func switch_click(_camera, event, _position, _normal, _shape_idx):
 		var button = node_3d.buttons[self.name]
 		button_state_change(mouse_click.pressed)
 		button.updated = true
+

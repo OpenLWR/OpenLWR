@@ -1,4 +1,4 @@
-[gd_scene load_steps=503 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=525 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -39,7 +39,10 @@
 [ext_resource type="PackedScene" uid="uid://cwbh50131lniu" path="res://Assets/Common/Switches/Range Switch/range_switch.tscn" id="29_tg1gb"]
 [ext_resource type="Material" uid="uid://c2raag84b6lqd" path="res://Assets/Materials/black_metal.tres" id="30_1q8ae"]
 [ext_resource type="Script" path="res://Assets/Common/Annunciators/alarms.gd" id="30_mjcs6"]
+[ext_resource type="FontFile" uid="uid://cqsshl4y7vp2w" path="res://Assets/Fonts/Roboto Condensed/RobotoCondensed-VariableFont_wght.ttf" id="31_6suc0"]
+[ext_resource type="Script" path="res://Assets/Scenes/Columbia/Rod Worth Minimizer.gd" id="31_sp420"]
 [ext_resource type="AudioStream" uid="uid://bqm26847iqdj1" path="res://Assets/Audio/electrical_alarm_loop.mp3" id="32_nxmn4"]
+[ext_resource type="Material" uid="uid://bvxdwburpvc23" path="res://Assets/Materials/white_amber_lamp.tres" id="33_eke4b"]
 [ext_resource type="Material" uid="uid://cpgwpldvm45d2" path="res://Assets/Materials/annunciator_white.tres" id="37_tvh2d"]
 [ext_resource type="PackedScene" uid="uid://72in678msos6" path="res://Assets/Common/Annunciators/annunciator_cgs_4x6.tscn" id="38_44ng5"]
 [ext_resource type="PackedScene" uid="uid://dkfnabcvwvt3w" path="res://Assets/Common/Annunciators/annunciator_cgs_5x6.tscn" id="40_hblaj"]
@@ -622,6 +625,76 @@ albedo_color = Color(0.535444, 0.709759, 0.787381, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lfx18"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k458a"]
+albedo_color = Color(0.516368, 0.693543, 0.772232, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nca75"]
+emission = Color(0.74978, 0.74978, 0.74978, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ilmn1"]
+size = Vector3(0.841675, 0.436691, 0.656738)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tu7gs"]
+emission = Color(0.919011, 0.461146, 0, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wr66v"]
+emission = Color(0.74978, 0.74978, 0.74978, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7f46y"]
+emission = Color(0.74978, 0.74978, 0.74978, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2uiro"]
+emission = Color(0.74978, 0.74978, 0.74978, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qv40f"]
+emission = Color(0.74978, 0.74978, 0.74978, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v32ly"]
+emission = Color(0.74978, 0.74978, 0.74978, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kcc6r"]
+emission = Color(0.74978, 0.74978, 0.74978, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pa4jn"]
+emission = Color(0.74978, 0.74978, 0.74978, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wfn1k"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mkryk"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y3r77"]
+emission = Color(0.74978, 0.74978, 0.74978, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s3pxg"]
+emission = Color(0.74978, 0.74978, 0.74978, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r7u52"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rwivr"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ygyb"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lbaja"]
 vertex_color_use_as_albedo = true
 albedo_color = Color(0.629675, 0.629675, 0.629675, 1)
@@ -885,8 +958,6 @@ viewport_path = NodePath("Control Room Panels/Main Panel Center/Controls/NMS3/Sp
 albedo_color = Color(0.537255, 0.537255, 0.537255, 1)
 emission = Color(0.999999, 0.976884, 0.680685, 1)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ilmn1"]
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bt17o"]
 albedo_color = Color(0.537255, 0.537255, 0.537255, 1)
 emission = Color(0.999999, 0.976884, 0.680685, 1)
@@ -1010,6 +1081,16 @@ albedo_color = Color(1, 1, 1, 0.180392)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qqe8e"]
 size = Vector3(0.0601973, 0.0614711, 0.0373446)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f4tbx"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.552941, 0.552941, 0.552941, 1)
+albedo_texture_force_srgb = true
+emission = Color(1, 0.839216, 0.666667, 1)
+emission_energy_multiplier = 2.0
+clearcoat = 0.16
+clearcoat_roughness = 1.0
+refraction_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c5dx5"]
 vertex_color_use_as_albedo = true
@@ -2682,6 +2763,10 @@ refraction_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xa3lg"]
 albedo_color = Color(0.00362519, 0.00934596, 0.012812, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ljesk"]
+emission = Color(0.79395, 0.396243, 3.85046e-07, 1)
+emission_energy_multiplier = 1.9
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6bqp4"]
 emission = Color(0.605563, 0.000574561, 0.000314438, 1)
@@ -12768,10 +12853,450 @@ outline_size = 0
 
 [node name="Rod Worth Minimizer" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.989454, 0.649201, -0.933556)
+script = ExtResource("31_sp420")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.244693, -0.279761, 0.151245)
-size = Vector3(0.51062, 0.239014, 0.303467)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00401735, -0.279761, 0.151247)
+size = Vector3(0.0292663, 0.239014, 0.303467)
+material = SubResource("StandardMaterial3D_k458a")
+
+[node name="Text" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer"]
+
+[node name="INSERT_ERR_1" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Text"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346041, -0.202154, 0.211494)
+size = Vector3(0.0303802, 0.0490074, 0.170541)
+material = ExtResource("21_y8sv6")
+
+[node name="Label" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Text/INSERT_ERR_1"]
+transform = Transform3D(-1.31134e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.31134e-08, 0.0155296, 0, 0)
+pixel_size = 0.001
+shaded = true
+text = "00 - 00"
+font = ExtResource("14_chbuk")
+font_size = 150
+outline_size = 0
+line_spacing = -15.0
+
+[node name="INSERT_ERR_2" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Text"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346041, -0.262154, 0.211494)
+size = Vector3(0.0303802, 0.0490074, 0.170541)
+material = ExtResource("21_y8sv6")
+
+[node name="Label" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Text/INSERT_ERR_2"]
+transform = Transform3D(-1.31134e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.31134e-08, 0.0155296, 0, 0)
+pixel_size = 0.001
+shaded = true
+text = "00 - 00"
+font = ExtResource("14_chbuk")
+font_size = 150
+outline_size = 0
+line_spacing = -15.0
+
+[node name="WITHDRAW_ERR" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Text"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346041, -0.322154, 0.211494)
+size = Vector3(0.0303802, 0.0490074, 0.170541)
+material = ExtResource("21_y8sv6")
+
+[node name="Label" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Text/WITHDRAW_ERR"]
+transform = Transform3D(-1.31134e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.31134e-08, 0.0155296, 0, 0)
+pixel_size = 0.001
+shaded = true
+text = "00 - 00"
+font = ExtResource("14_chbuk")
+font_size = 150
+outline_size = 0
+line_spacing = -15.0
+
+[node name="GROUP" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Text"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346088, -0.202154, 0.0685949)
+size = Vector3(0.0303802, 0.0490074, 0.105778)
+material = ExtResource("21_y8sv6")
+
+[node name="Label" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Text/GROUP"]
+transform = Transform3D(-1.31134e-08, 0, 0.3, 0, 0.3, 0, -0.3, 0, -1.31134e-08, 0.0155296, 0, 0)
+pixel_size = 0.001
+shaded = true
+text = "00"
+font = ExtResource("14_chbuk")
+font_size = 150
+outline_size = 0
+line_spacing = -15.0
+
+[node name="Indicators" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer"]
+
+[node name="rwm_diag" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.375336, 0.103857)
+size = Vector3(0.0303802, 0.0217733, 0.0330364)
+material = SubResource("StandardMaterial3D_nca75")
+script = ExtResource("14_bc77r")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_diag"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "SYSTEM
+DIAGNOSTIC"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_diag"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_diag/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.0719662, 0.0334396)
+shape = SubResource("BoxShape3D_ilmn1")
+
+[node name="SELECT_ERROR" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.261318, 0.103857)
+size = Vector3(0.0303802, 0.0217733, 0.0330364)
+material = ExtResource("33_eke4b")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/SELECT_ERROR"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "SELECT
+ERROR"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="SEQ" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00299978, -0.37, 0.244)
+size = Vector3(0.03, 0.011, 0.033)
+material = SubResource("StandardMaterial3D_tu7gs")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/SEQ"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0151591, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "OUT OF SEQ"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="rwm_seq" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00299978, -0.381, 0.244)
+size = Vector3(0.03, 0.011, 0.033)
+material = SubResource("StandardMaterial3D_wr66v")
+script = ExtResource("14_bc77r")
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_seq"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0150757, 0, 0)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "SYSTEM
+INITIALIZE"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_seq"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, 0.00225461, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_seq/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.0719662, 0.0334396)
+shape = SubResource("BoxShape3D_ilmn1")
+
+[node name="LPSP" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00299978, -0.37, 0.209)
+size = Vector3(0.03, 0.011, 0.033)
+material = SubResource("StandardMaterial3D_7f46y")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/LPSP"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0151591, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "BELOW
+LPSP"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="CSGBox3D24" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00413799, -0.358521, 0.151143)
+size = Vector3(0.03, 0.00146655, 0.303195)
+material = ExtResource("30_1q8ae")
+
+[node name="CSGBox3D25" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.00413799, -0.259134, 0.123303)
+size = Vector3(0.03, 0.00146655, 0.197567)
+material = ExtResource("30_1q8ae")
+
+[node name="BLANK" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00299978, -0.381, 0.209)
+size = Vector3(0.03, 0.011, 0.033)
+material = SubResource("StandardMaterial3D_2uiro")
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/BLANK"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0150757, 0, 0)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="LPAP" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00300026, -0.37, 0.174001)
+size = Vector3(0.03, 0.011, 0.033)
+material = SubResource("StandardMaterial3D_qv40f")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/LPAP"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0151591, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "BELOW
+LPAP"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="BLANK2" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00300026, -0.381, 0.174001)
+size = Vector3(0.03, 0.011, 0.033)
+material = SubResource("StandardMaterial3D_v32ly")
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/BLANK2"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0150757, 0, 0)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="rwm_test" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00300074, -0.37, 0.139001)
+size = Vector3(0.03, 0.011, 0.033)
+material = SubResource("StandardMaterial3D_kcc6r")
+script = ExtResource("14_bc77r")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_test"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0151591, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "ROD TEST"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_test"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.00874543, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_test/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.0719662, 0.0334396)
+shape = SubResource("BoxShape3D_ilmn1")
+
+[node name="SELECT" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00300074, -0.381, 0.139001)
+size = Vector3(0.03, 0.011, 0.033)
+material = SubResource("StandardMaterial3D_pa4jn")
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/SELECT"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0150757, 0, 0)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "SELECT"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="INSERT_BLOCK" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00300121, -0.255968, 0.0690022)
+size = Vector3(0.03, 0.011, 0.033)
+material = SubResource("StandardMaterial3D_wfn1k")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/INSERT_BLOCK"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0151591, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "INSERT
+BLOCK"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="WITHDRAW_BLOCK" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00300121, -0.266968, 0.0690022)
+size = Vector3(0.03, 0.011, 0.033)
+material = SubResource("StandardMaterial3D_mkryk")
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/WITHDRAW_BLOCK"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0150757, 0, 0)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "WITHDRAW
+BLOCK"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="MANUAL" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00300121, -0.255968, 0.0340023)
+size = Vector3(0.03, 0.011, 0.033)
+material = SubResource("StandardMaterial3D_y3r77")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/MANUAL"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0151591, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "MANUAL"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="AUTO" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00300121, -0.266968, 0.0340023)
+size = Vector3(0.03, 0.011, 0.033)
+material = SubResource("StandardMaterial3D_s3pxg")
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/AUTO"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0150757, 0, 0)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "AUTO"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="COMP" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00300026, -0.37, 0.0609999)
+size = Vector3(0.03, 0.011, 0.017)
+material = SubResource("StandardMaterial3D_r7u52")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/COMP"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0151591, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "COMP"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="RWM" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00299978, -0.37, 0.0770001)
+size = Vector3(0.03, 0.011, 0.017)
+material = SubResource("StandardMaterial3D_rwivr")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/RWM"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0151591, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "RWM"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="rwm_rwm_comp_prog" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00300121, -0.381, 0.0690022)
+size = Vector3(0.03, 0.011, 0.033)
+material = SubResource("StandardMaterial3D_2ygyb")
+script = ExtResource("14_bc77r")
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_rwm_comp_prog"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0150757, 0, 0)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "PROGRAM"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_rwm_comp_prog"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, 0.00225461, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_rwm_comp_prog/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.0719662, 0.0334396)
+shape = SubResource("BoxShape3D_ilmn1")
+
+[node name="Buttons" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer"]
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0109959, -0.231663, 0.0690022)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "ROD GROUP"
+font = ExtResource("14_chbuk")
+font_size = 70
+outline_size = 0
+line_spacing = -15.0
+
+[node name="Label3D3" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0109944, -0.231663, 0.212363)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "INSERT ERROR"
+font = ExtResource("14_chbuk")
+font_size = 70
+outline_size = 0
+line_spacing = -15.0
+
+[node name="Label3D4" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.010994, -0.291877, 0.212363)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "INSERT ERROR"
+font = ExtResource("14_chbuk")
+font_size = 70
+outline_size = 0
+line_spacing = -15.0
+
+[node name="Label3D6" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.010994, -0.277247, 0.0859776)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "INTERLOCKS"
+font = ExtResource("14_chbuk")
+font_size = 70
+outline_size = 0
+line_spacing = -15.0
+
+[node name="Label3D7" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0109935, -0.277247, 0.0344596)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "BYPASS"
+font = ExtResource("14_chbuk")
+font_size = 70
+outline_size = 0
+line_spacing = -15.0
+
+[node name="Label3D8" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0109935, -0.298247, 0.0649228)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "NORMAL     BYPASS"
+font = ExtResource("14_chbuk")
+font_size = 70
+outline_size = 0
+line_spacing = -15.0
+
+[node name="Label3D5" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.010994, -0.352181, 0.212363)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "WITHDRAW ERROR"
+font = ExtResource("14_chbuk")
+font_size = 70
+outline_size = 0
+line_spacing = -15.0
 
 [node name="srm_d_counts" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("18_bcd1o")]
 transform = Transform3D(-8.9407e-08, 0, 1, 0, 1, 0, -1, 0, -8.9407e-08, 0.864584, 0.991194, -3.01999)
@@ -14909,7 +15434,7 @@ transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 1.49012e-08, 0, -7.45058e-09, 1
 shape = SubResource("BoxShape3D_qqe8e")
 
 [node name="Panel 1" type="CSGBox3D" parent="Rod Select Panel"]
-transform = Transform3D(0.999998, -2.98023e-08, 0, -2.83122e-07, 1, 0, 0, 0, 1, -0.037, 0, 0.352)
+transform = Transform3D(0.999998, 0, 0, -2.83122e-07, 1, 0, 0, 0, 1, -0.0369999, 9.53674e-07, 0.352)
 size = Vector3(0.002, 0.452603, 0.130933)
 material = ExtResource("21_y8sv6")
 
@@ -14948,7 +15473,7 @@ outline_size = 16
 transform = Transform3D(1, 1.49012e-07, 0, -1.19209e-07, 1, 0, 0, 0, 1, 0, -0.032999, -0.0299993)
 use_collision = true
 size = Vector3(0.002, 0.0338821, 0.042)
-material = SubResource("StandardMaterial3D_7s68e")
+material = SubResource("StandardMaterial3D_f4tbx")
 
 [node name="Label" type="Label3D" parent="Rod Select Panel/Panel 1/Lights and buttons/SelectBlock"]
 transform = Transform3D(2.98023e-08, -7.45058e-09, -1, -8.9407e-08, -1, 0, -1, 5.96046e-08, -4.47035e-08, -0.00200027, 0, 4.76837e-07)
@@ -19423,6 +19948,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
 
 [node name="CSGBox3D" parent="Annunciators/Box1/Windows/1-7" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671387, -0.109344)
+material = SubResource("StandardMaterial3D_ljesk")
 
 [node name="Label3D" parent="Annunciators/Box1/Windows/1-7/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
@@ -22446,6 +22972,10 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_ACK_1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_ACK_1" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_RESET_1/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Annunciation/ALARM_RESET_1" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Annunciation/pain/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Annunciation/pain" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_diag/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_diag" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_seq/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_seq" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_test/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_test" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_rwm_comp_prog/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_rwm_comp_prog" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_A/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_A" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_B/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_B" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_A/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_A" method="switch_click"]

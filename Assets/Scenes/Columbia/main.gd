@@ -373,6 +373,27 @@ signal chat_message(message)
 		"atypical" : false,
 		"text" : false,
 	},
+	
+	"rwm_group": {
+		"value": -1,
+		"atypical" : true,
+		"text" : false,
+	},
+	"rwm_insert_error_1": {
+		"value": -1,
+		"atypical" : true,
+		"text" : false,
+	},
+	"rwm_insert_error_2": {
+		"value": -1,
+		"atypical" : true,
+		"text" : false,
+	},
+	"rwm_withdraw_error": {
+		"value": -1,
+		"atypical" : true,
+		"text" : false,
+	},
 }
 
 var switches = {
@@ -1756,6 +1777,35 @@ var buttons = {
 		"armed" : false,
 		"updated": false,
 	},
+	
+	"rwm_seq": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"rwm_rwm_comp_prog": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"rwm_diag": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"rwm_test": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
 }
 
 enum annunciator_state {
@@ -1819,6 +1869,13 @@ var alarms = {
 	"rod_accumulator_trouble": {
 		"box": "Box1",
 		"window": "6-7",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	"rpis_or_rwm_inop": {
+		"box": "Box1",
+		"window": "1-7",
 		"state": annunciator_state.CLEAR,
 		"silenced" : false,
 		"material": null,
@@ -2067,6 +2124,7 @@ var alarm_groups = {
 	
 	"RMCS_WITHDRAW_BLOCK": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_BLOCK".get_material(),
 	"RMCS_INSERT_BLOCK": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_BLOCK".get_material(),
+	"RMCS_SELECT_BLOCK": $"Rod Select Panel/Panel 1/Lights and buttons/SelectBlock".get_material(),
 	
 	"RMCS_WITHDRAW": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW".get_material(),
 	"RMCS_INSERT": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT".get_material(),
@@ -2109,6 +2167,23 @@ var alarm_groups = {
 	"rcic_init": $"Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/sealed_in".get_material(),
 	
 	"lpcs_init": $"Control Room Panels/Main Panel Left Side/Controls/LPCS/lpcs_init/seal_in".get_material(),
+	
+	"rwm_insert_block": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/INSERT_BLOCK".get_material(),
+	"rwm_withdraw_block": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/WITHDRAW_BLOCK".get_material(),
+	"rwm_select_error": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/SELECT_ERROR".get_material(),
+	"rwm_manual": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/MANUAL".get_material(),
+	"rwm_auto": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/AUTO".get_material(),
+	
+	"rwm_seq": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/SEQ".get_material(),
+	"rwm_init": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_seq".get_material(),
+	"rwm_lpsp": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/LPSP".get_material(),
+	"rwm_lpap": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/LPAP".get_material(),
+	"rwm_test": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_test".get_material(),
+	"rwm_select": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/SELECT".get_material(),
+	"rwm_diag": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_diag".get_material(),
+	"rwm_rwm": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/RWM".get_material(),
+	"rwm_comp": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/COMP".get_material(),
+	"rwm_prog": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_rwm_comp_prog".get_material(),
 	
 }
 

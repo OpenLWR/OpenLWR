@@ -1,4 +1,4 @@
-[gd_scene load_steps=525 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=527 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -3044,6 +3044,10 @@ emission_energy_multiplier = 1.9
 emission = Color(0.605563, 0.000574561, 0.000314438, 1)
 emission_energy_multiplier = 1.9
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtl12"]
+emission = Color(0.79395, 0.396243, 3.85046e-07, 1)
+emission_energy_multiplier = 1.9
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6lb8r"]
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 1.9
@@ -3070,6 +3074,10 @@ emission_energy_multiplier = 1.9
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w25c2"]
 emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l6lw8"]
+emission = Color(0.621524, 0.621524, 0.621524, 1)
 emission_energy_multiplier = 1.9
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6njip"]
@@ -22303,6 +22311,9 @@ text = "FLOW
 REFERENCE
 OFF NORMAL"
 
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/3-5" index="1"]
+material = SubResource("StandardMaterial3D_gtl12")
+
 [node name="Label3D" parent="Annunciators/Box2/Windows/3-5/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
 text = "RBM
@@ -22461,6 +22472,9 @@ material = SubResource("StandardMaterial3D_w25c2")
 [node name="Label3D" parent="Annunciators/Box2/Windows/6-7/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
 text = ""
+
+[node name="CSGBox3D" parent="Annunciators/Box2/Windows/6-6" index="1"]
+material = SubResource("StandardMaterial3D_l6lw8")
 
 [node name="Label3D" parent="Annunciators/Box2/Windows/6-6/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)

@@ -1946,6 +1946,21 @@ var alarms = {
 		"material": null,
 	},
 	
+	"rbm_downscale": {
+		"box": "Box2",
+		"window": "6-6",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	"rbm_upscale_or_inop": {
+		"box": "Box2",
+		"window": "3-5",
+		"state": annunciator_state.CLEAR,
+		"silenced" : false,
+		"material": null,
+	},
+	
 	"irm_downscale": {
 		"box": "Box1",
 		"window": "4-5",

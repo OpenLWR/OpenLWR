@@ -1671,6 +1671,20 @@ var buttons = {
 		"armed" : false,
 		"updated": false,
 	},
+	"RMCS_CONT_INSERT_PB": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"RMCS_CONT_WITHDRAW_PB": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
 	
 	"hpcs_init": {
 		"switch": null,
@@ -2142,6 +2156,7 @@ var alarm_groups = {
 	"RMCS_SELECT_BLOCK": $"Rod Select Panel/Panel 1/Lights and buttons/SelectBlock".get_material(),
 	
 	"RMCS_WITHDRAW": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW".get_material(),
+	"RMCS_CONT_WITHDRAW": $"Rod Select Panel/Panel 1/Lights and buttons/RMCS_CONT_WITHDRAW".get_material(),
 	"RMCS_INSERT": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT".get_material(),
 	"RMCS_SETTLE": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_SETTLE".get_material(),
 	

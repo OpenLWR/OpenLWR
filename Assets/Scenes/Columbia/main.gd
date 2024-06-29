@@ -837,7 +837,81 @@ var switches = {
 	},
 	
 	#safety/relief valves
-	
+	"ms_rv_5b": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_3d": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_5c": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_4d": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_4b": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
 	"ms_rv_4a": {
 		"switch": null,
 		"positions": {
@@ -849,8 +923,8 @@ var switches = {
 		"momentary": false,
 		"updated": false,
 		"lights" : {
-			"green" : null,
-			"red" : null,
+			"green" : true,
+			"red" : false,
 		},
 	},
 	"ms_rv_4c": {
@@ -864,8 +938,173 @@ var switches = {
 		"momentary": false,
 		"updated": false,
 		"lights" : {
-			"green" : null,
-			"red" : null,
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_1a": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_2b": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_1c": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_1b": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_2c": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_1d": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_3c": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_2d": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_2a": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_3b": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
+		},
+	},
+	"ms_rv_3a": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 0,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : true,
+			"red" : false,
 		},
 	},
 	
@@ -2190,6 +2429,62 @@ var alarm_groups = {
 	"SELECT_SRM_A": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_A".get_material(),
 	"SRM_A_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_A_POS/IN".get_material(),
 	"SRM_A_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_A_POS/OUT".get_material(),
+	"SRM_A_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_A_POS/PERMIT".get_material(),
+
+	"SELECT_SRM_B": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_B".get_material(),
+	"SRM_B_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_B_POS/IN".get_material(),
+	"SRM_B_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_B_POS/OUT".get_material(),
+	"SRM_B_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_B_POS/PERMIT".get_material(),
+
+	"SELECT_SRM_C": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_C".get_material(),
+	"SRM_C_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_C_POS/IN".get_material(),
+	"SRM_C_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_C_POS/OUT".get_material(),
+	"SRM_C_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_C_POS/PERMIT".get_material(),
+
+	"SELECT_SRM_D": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_D".get_material(),
+	"SRM_D_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_D_POS/IN".get_material(),
+	"SRM_D_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_D_POS/OUT".get_material(),
+	"SRM_D_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_D_POS/PERMIT".get_material(),
+	
+	"SELECT_IRM_A": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_A".get_material(),
+	"IRM_A_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_A_POS/IN".get_material(),
+	"IRM_A_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_A_POS/OUT".get_material(),
+	"IRM_A_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_A_POS/PERMIT".get_material(),
+
+	"SELECT_IRM_B": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_B".get_material(),
+	"IRM_B_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_B_POS/IN".get_material(),
+	"IRM_B_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_B_POS/OUT".get_material(),
+	"IRM_B_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_B_POS/PERMIT".get_material(),
+
+	"SELECT_IRM_C": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_C".get_material(),
+	"IRM_C_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_C_POS/IN".get_material(),
+	"IRM_C_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_C_POS/OUT".get_material(),
+	"IRM_C_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_C_POS/PERMIT".get_material(),
+
+	"SELECT_IRM_D": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_D".get_material(),
+	"IRM_D_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_D_POS/IN".get_material(),
+	"IRM_D_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_D_POS/OUT".get_material(),
+	"IRM_D_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_D_POS/PERMIT".get_material(),
+
+	"SELECT_IRM_E": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_E".get_material(),
+	"IRM_E_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_E_POS/IN".get_material(),
+	"IRM_E_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_E_POS/OUT".get_material(),
+	"IRM_E_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_E_POS/PERMIT".get_material(),
+
+	"SELECT_IRM_F": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_F".get_material(),
+	"IRM_F_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_F_POS/IN".get_material(),
+	"IRM_F_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_F_POS/OUT".get_material(),
+	"IRM_F_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_F_POS/PERMIT".get_material(),
+
+	"SELECT_IRM_G": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_G".get_material(),
+	"IRM_G_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_G_POS/IN".get_material(),
+	"IRM_G_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_G_POS/OUT".get_material(),
+	"IRM_G_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_G_POS/PERMIT".get_material(),
+
+	"SELECT_IRM_H": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_H".get_material(),
+	"IRM_H_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_H_POS/IN".get_material(),
+	"IRM_H_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_H_POS/OUT".get_material(),
+	"IRM_H_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_H_POS/PERMIT".get_material(),
 	
 	"FCD_OPERATE": null,
 	"CHART_RECORDERS_OPERATE": null,

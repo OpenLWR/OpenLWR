@@ -1940,6 +1940,84 @@ var buttons = {
 		"armed" : false,
 		"updated": false,
 	},
+	"SELECT_SRM_B": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"SELECT_SRM_C": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"SELECT_SRM_D": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	
+	"SELECT_IRM_A": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"SELECT_IRM_B": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"SELECT_IRM_C": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"SELECT_IRM_D": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"SELECT_IRM_E": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"SELECT_IRM_F": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"SELECT_IRM_G": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"SELECT_IRM_H": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
 	
 	"DET_DRIVE_IN": {
 		"switch": null,
@@ -2376,139 +2454,148 @@ var alarm_groups = {
 }
 
 @onready var indicators = {
-	"SCRAM_A1": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_A/A1".get_material(),
-	"SCRAM_A2": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_A/A2".get_material(),
-	"SCRAM_A3": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_A/A3".get_material(),
-	"SCRAM_A4": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_A/A4".get_material(),
-	"SCRAM_A5": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_A/A5".get_material(),
-	"SCRAM_A6": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_A/A6".get_material(),
+	"SCRAM_A1": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_A/A1",
+	"SCRAM_A2": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_A/A2",
+	"SCRAM_A3": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_A/A3",
+	"SCRAM_A4": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_A/A4",
+	"SCRAM_A5": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_A/A5",
+	"SCRAM_A6": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_A/A6",
 	
-	"SCRAM_B1": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_B/A1".get_material(),
-	"SCRAM_B2": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_B/A2".get_material(),
-	"SCRAM_B3": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_B/A3".get_material(),
-	"SCRAM_B4": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_B/A4".get_material(),
-	"SCRAM_B5": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_B/A5".get_material(),
-	"SCRAM_B6": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_B/A6".get_material(),
+	"SCRAM_B1": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_B/A1",
+	"SCRAM_B2": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_B/A2",
+	"SCRAM_B3": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_B/A3",
+	"SCRAM_B4": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_B/A4",
+	"SCRAM_B5": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_B/A5",
+	"SCRAM_B6": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_B/A6",
 	
-	"RMCS_WITHDRAW_BLOCK": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_BLOCK".get_material(),
-	"RMCS_INSERT_BLOCK": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_BLOCK".get_material(),
-	"RMCS_SELECT_BLOCK": $"Rod Select Panel/Panel 1/Lights and buttons/SelectBlock".get_material(),
+	"RMCS_WITHDRAW_BLOCK": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_BLOCK",
+	"RMCS_INSERT_BLOCK": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_BLOCK",
+	"RMCS_SELECT_BLOCK": $"Rod Select Panel/Panel 1/Lights and buttons/SelectBlock",
 	
-	"RMCS_WITHDRAW": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW".get_material(),
-	"RMCS_CONT_WITHDRAW": $"Rod Select Panel/Panel 1/Lights and buttons/RMCS_CONT_WITHDRAW".get_material(),
-	"RMCS_INSERT": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT".get_material(),
-	"RMCS_SETTLE": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_SETTLE".get_material(),
+	"RMCS_WITHDRAW": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW",
+	"RMCS_CONT_WITHDRAW": $"Rod Select Panel/Panel 1/Lights and buttons/RMCS_CONT_WITHDRAW",
+	"RMCS_INSERT": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT",
+	"RMCS_SETTLE": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_SETTLE",
 	
 	"cr_light_normal_1": null,
 	"cr_light_normal_2": null,
 	"cr_light_emergency": null,
 	
-	"APRM_A_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A/UPSCALE_INOP".get_material(),
-	"APRM_B_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B/UPSCALE_INOP".get_material(),
-	"APRM_C_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C/UPSCALE_INOP".get_material(),
-	"APRM_D_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D/UPSCALE_INOP".get_material(),
-	"APRM_E_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E/UPSCALE_INOP".get_material(),
-	"APRM_F_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F/UPSCALE_INOP".get_material(),
+	"APRM_A_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A/UPSCALE_INOP",
+	"APRM_B_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B/UPSCALE_INOP",
+	"APRM_C_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C/UPSCALE_INOP",
+	"APRM_D_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D/UPSCALE_INOP",
+	"APRM_E_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E/UPSCALE_INOP",
+	"APRM_F_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F/UPSCALE_INOP",
 	
-	"APRM_A_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A/UPSCALE".get_material(),
-	"APRM_B_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B/UPSCALE".get_material(),
-	"APRM_C_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C/UPSCALE".get_material(),
-	"APRM_D_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D/UPSCALE".get_material(),
-	"APRM_E_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E/UPSCALE".get_material(),
-	"APRM_F_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F/UPSCALE".get_material(),
+	"APRM_A_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A/UPSCALE",
+	"APRM_B_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B/UPSCALE",
+	"APRM_C_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C/UPSCALE",
+	"APRM_D_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D/UPSCALE",
+	"APRM_E_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E/UPSCALE",
+	"APRM_F_UPSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F/UPSCALE",
 
-	"APRM_A_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A/DOWNSCALE".get_material(),
-	"APRM_B_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B/DOWNSCALE".get_material(),
-	"APRM_C_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C/DOWNSCALE".get_material(),
-	"APRM_D_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D/DOWNSCALE".get_material(),
-	"APRM_E_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E/DOWNSCALE".get_material(),
-	"APRM_F_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F/DOWNSCALE".get_material(),
+	"APRM_A_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A/DOWNSCALE",
+	"APRM_B_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/B/DOWNSCALE",
+	"APRM_C_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/C/DOWNSCALE",
+	"APRM_D_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/D/DOWNSCALE",
+	"APRM_E_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/E/DOWNSCALE",
+	"APRM_F_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F/DOWNSCALE",
 	
-	"hpcs_init": $"Control Room Panels/Main Panel Left Side/Controls/HPCS/hpcs_active/seal_in".get_material(),
+	"hpcs_init": $"Control Room Panels/Main Panel Left Side/Controls/HPCS/hpcs_active/seal_in",
 	
-	"SELECT_SRM_A": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_A".get_material(),
-	"SRM_A_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_A_POS/IN".get_material(),
-	"SRM_A_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_A_POS/OUT".get_material(),
-	"SRM_A_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_A_POS/PERMIT".get_material(),
-
-	"SELECT_SRM_B": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_B".get_material(),
-	"SRM_B_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_B_POS/IN".get_material(),
-	"SRM_B_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_B_POS/OUT".get_material(),
-	"SRM_B_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_B_POS/PERMIT".get_material(),
-
-	"SELECT_SRM_C": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_C".get_material(),
-	"SRM_C_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_C_POS/IN".get_material(),
-	"SRM_C_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_C_POS/OUT".get_material(),
-	"SRM_C_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_C_POS/PERMIT".get_material(),
-
-	"SELECT_SRM_D": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_D".get_material(),
-	"SRM_D_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_D_POS/IN".get_material(),
-	"SRM_D_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_D_POS/OUT".get_material(),
-	"SRM_D_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_D_POS/PERMIT".get_material(),
+	#IRM/SRM Positioner
 	
-	"SELECT_IRM_A": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_A".get_material(),
-	"IRM_A_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_A_POS/IN".get_material(),
-	"IRM_A_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_A_POS/OUT".get_material(),
-	"IRM_A_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_A_POS/PERMIT".get_material(),
+	#select and indications
+	
+	"SELECT_SRM_A": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_A",
+	"SRM_A_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_A_POS/IN",
+	"SRM_A_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_A_POS/OUT",
+	"SRM_A_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_A_POS/PERMIT",
 
-	"SELECT_IRM_B": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_B".get_material(),
-	"IRM_B_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_B_POS/IN".get_material(),
-	"IRM_B_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_B_POS/OUT".get_material(),
-	"IRM_B_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_B_POS/PERMIT".get_material(),
+	"SELECT_SRM_B": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_B",
+	"SRM_B_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_B_POS/IN",
+	"SRM_B_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_B_POS/OUT",
+	"SRM_B_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_B_POS/PERMIT",
 
-	"SELECT_IRM_C": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_C".get_material(),
-	"IRM_C_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_C_POS/IN".get_material(),
-	"IRM_C_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_C_POS/OUT".get_material(),
-	"IRM_C_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_C_POS/PERMIT".get_material(),
+	"SELECT_SRM_C": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_C",
+	"SRM_C_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_C_POS/IN",
+	"SRM_C_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_C_POS/OUT",
+	"SRM_C_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_C_POS/PERMIT",
 
-	"SELECT_IRM_D": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_D".get_material(),
-	"IRM_D_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_D_POS/IN".get_material(),
-	"IRM_D_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_D_POS/OUT".get_material(),
-	"IRM_D_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_D_POS/PERMIT".get_material(),
+	"SELECT_SRM_D": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_D",
+	"SRM_D_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_D_POS/IN",
+	"SRM_D_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_D_POS/OUT",
+	"SRM_D_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SRM_D_POS/PERMIT",
+	
+	"SELECT_IRM_A": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_A",
+	"IRM_A_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_A_POS/IN",
+	"IRM_A_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_A_POS/OUT",
+	"IRM_A_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_A_POS/PERMIT",
 
-	"SELECT_IRM_E": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_E".get_material(),
-	"IRM_E_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_E_POS/IN".get_material(),
-	"IRM_E_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_E_POS/OUT".get_material(),
-	"IRM_E_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_E_POS/PERMIT".get_material(),
+	"SELECT_IRM_B": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_B",
+	"IRM_B_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_B_POS/IN",
+	"IRM_B_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_B_POS/OUT",
+	"IRM_B_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_B_POS/PERMIT",
 
-	"SELECT_IRM_F": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_F".get_material(),
-	"IRM_F_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_F_POS/IN".get_material(),
-	"IRM_F_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_F_POS/OUT".get_material(),
-	"IRM_F_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_F_POS/PERMIT".get_material(),
+	"SELECT_IRM_C": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_C",
+	"IRM_C_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_C_POS/IN",
+	"IRM_C_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_C_POS/OUT",
+	"IRM_C_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_C_POS/PERMIT",
 
-	"SELECT_IRM_G": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_G".get_material(),
-	"IRM_G_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_G_POS/IN".get_material(),
-	"IRM_G_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_G_POS/OUT".get_material(),
-	"IRM_G_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_G_POS/PERMIT".get_material(),
+	"SELECT_IRM_D": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_D",
+	"IRM_D_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_D_POS/IN",
+	"IRM_D_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_D_POS/OUT",
+	"IRM_D_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_D_POS/PERMIT",
 
-	"SELECT_IRM_H": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_H".get_material(),
-	"IRM_H_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_H_POS/IN".get_material(),
-	"IRM_H_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_H_POS/OUT".get_material(),
-	"IRM_H_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_H_POS/PERMIT".get_material(),
+	"SELECT_IRM_E": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_E",
+	"IRM_E_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_E_POS/IN",
+	"IRM_E_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_E_POS/OUT",
+	"IRM_E_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_E_POS/PERMIT",
+
+	"SELECT_IRM_F": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_F",
+	"IRM_F_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_F_POS/IN",
+	"IRM_F_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_F_POS/OUT",
+	"IRM_F_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_F_POS/PERMIT",
+
+	"SELECT_IRM_G": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_G",
+	"IRM_G_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_G_POS/IN",
+	"IRM_G_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_G_POS/OUT",
+	"IRM_G_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_G_POS/PERMIT",
+
+	"SELECT_IRM_H": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_H",
+	"IRM_H_POS_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_H_POS/IN",
+	"IRM_H_POS_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_H_POS/OUT",
+	"IRM_H_RETRACT_PERMIT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/IRM_H_POS/PERMIT",
+	
+	#Drive control lights for IRM/SRM Positoner
+	
+	"DET_DRIVE_IN": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/DET_DRIVE_IN",
+	"DET_DRIVE_OUT": $"Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/DET_DRIVE_OUT",
 	
 	"FCD_OPERATE": null,
 	"CHART_RECORDERS_OPERATE": null,
 	
-	"rcic_init": $"Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/sealed_in".get_material(),
+	"rcic_init": $"Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/sealed_in",
 	
-	"lpcs_init": $"Control Room Panels/Main Panel Left Side/Controls/LPCS/lpcs_init/seal_in".get_material(),
+	"lpcs_init": $"Control Room Panels/Main Panel Left Side/Controls/LPCS/lpcs_init/seal_in",
 	
-	"rwm_insert_block": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/INSERT_BLOCK".get_material(),
-	"rwm_withdraw_block": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/WITHDRAW_BLOCK".get_material(),
-	"rwm_select_error": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/SELECT_ERROR".get_material(),
-	"rwm_manual": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/MANUAL".get_material(),
-	"rwm_auto": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/AUTO".get_material(),
+	"rwm_insert_block": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/INSERT_BLOCK",
+	"rwm_withdraw_block": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/WITHDRAW_BLOCK",
+	"rwm_select_error": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/SELECT_ERROR",
+	"rwm_manual": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/MANUAL",
+	"rwm_auto": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/AUTO",
 	
-	"rwm_seq": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/SEQ".get_material(),
-	"rwm_init": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_seq".get_material(),
-	"rwm_lpsp": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/LPSP".get_material(),
-	"rwm_lpap": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/LPAP".get_material(),
-	"rwm_test": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_test".get_material(),
-	"rwm_select": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/SELECT".get_material(),
-	"rwm_diag": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_diag".get_material(),
-	"rwm_rwm": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/RWM".get_material(),
-	"rwm_comp": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/COMP".get_material(),
-	"rwm_prog": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_rwm_comp_prog".get_material(),
+	"rwm_seq": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/SEQ",
+	"rwm_init": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_seq",
+	"rwm_lpsp": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/LPSP",
+	"rwm_lpap": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/LPAP",
+	"rwm_test": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_test",
+	"rwm_select": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/SELECT",
+	"rwm_diag": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_diag",
+	"rwm_rwm": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/RWM",
+	"rwm_comp": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/COMP",
+	"rwm_prog": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_rwm_comp_prog",
 	
 }
 
@@ -2550,20 +2637,31 @@ func disconnected(socket):
 	set_process(false) # Stop processing.
 
 func _ready(): # assume here that the scene was called by the lobby screen
-	build_rod_select()
-	var endpoint = "ws://%s/ws" % [globals.server_ip_requested_tojoin] # TODO: should token be generated on server-side?
-	socket.connect_to_url(endpoint)
-	
 	if globals.use_vr:
 		self.remove_child($"Player")
 		var NewVRPlayer = vr_player_scene.instantiate()
 		NewVRPlayer.name = "Player"
 		self.add_child(NewVRPlayer)
 		
+	for indicator_name in indicators:
+		var indicator = indicators[indicator_name]
+		
+		if indicator == null:
+			continue
+			
+		var indicator_material = indicator.get_material().duplicate()
+		indicator.material = indicator_material
+		indicators[indicator_name] = indicator_material
 
 	for alarm in alarms:
 		alarm = alarms[alarm]
-		alarm["material"] = get_node("Annunciators/"+alarm["box"]+"/Windows/"+alarm["window"]+"/CSGBox3D").get_material()
+		var alarm_material = get_node("Annunciators/"+alarm["box"]+"/Windows/"+alarm["window"]+"/CSGBox3D").get_material().duplicate()
+		get_node("Annunciators/"+alarm["box"]+"/Windows/"+alarm["window"]+"/CSGBox3D").material = alarm_material
+		alarm["material"] = alarm_material
+		
+	build_rod_select()
+	var endpoint = "ws://%s/ws" % [globals.server_ip_requested_tojoin] # TODO: should token be generated on server-side?
+	socket.connect_to_url(endpoint)
 	
 
 	
@@ -2785,3 +2883,4 @@ func _process(delta):
 					connection_ready = true
 					#request all the information for the client
 					var err = socket.send_text(build_packet(client_packets.SYNCHRONIZE,"a")) #TODO: does it matter what text we send? can i use a different way?
+

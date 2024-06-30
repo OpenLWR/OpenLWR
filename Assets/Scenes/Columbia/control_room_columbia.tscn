@@ -14906,6 +14906,7 @@ shape = SubResource("BoxShape3D_ilmn1")
 transform = Transform3D(0.23, 3.72529e-09, 0, 3.72529e-09, 0.23, 0, 0, 0, 0.23, -0.0437541, 0.0412513, 0.0340648)
 size = Vector3(0.1, 0.1, 0.1)
 material = SubResource("StandardMaterial3D_bt17o")
+script = ExtResource("14_bc77r")
 
 [node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_C"]
 transform = Transform3D(0, -0.1, -3.72529e-09, 9.31323e-10, -7.45058e-09, 0.1, -0.1, 0, 0, 0, 0.0503107, -3.8147e-06)
@@ -14928,6 +14929,7 @@ shape = SubResource("BoxShape3D_ilmn1")
 transform = Transform3D(0.23, 3.72529e-09, 0, 3.72529e-09, 0.23, 0, 0, 0, 0.23, -0.0184546, 0.0412514, 0.0340648)
 size = Vector3(0.1, 0.1, 0.1)
 material = SubResource("StandardMaterial3D_ti4r6")
+script = ExtResource("14_bc77r")
 
 [node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_A"]
 transform = Transform3D(0, -0.1, -3.72529e-09, 9.31323e-10, -5.58794e-09, 0.1, -0.1, 0, 0, 1.90735e-06, 0.0503111, -1.90735e-06)
@@ -14950,6 +14952,7 @@ shape = SubResource("BoxShape3D_ilmn1")
 transform = Transform3D(0.23, 3.72529e-09, 0, 3.72529e-09, 0.23, 0, 0, 0, 0.23, 0.0068469, 0.0412514, 0.0340648)
 size = Vector3(0.1, 0.1, 0.1)
 material = SubResource("StandardMaterial3D_bt17o")
+script = ExtResource("14_bc77r")
 
 [node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_C"]
 transform = Transform3D(-4.37114e-09, -0.1, -4.37114e-09, 0, -4.37114e-09, 0.1, -0.1, 4.37114e-09, 1.91069e-16, 3.8147e-06, 0.0503109, 0)
@@ -14972,6 +14975,7 @@ shape = SubResource("BoxShape3D_ilmn1")
 transform = Transform3D(0.23, 3.72529e-09, 0, 3.72529e-09, 0.23, 0, 0, 0, 0.23, 0.0321474, 0.0412515, 0.0340643)
 size = Vector3(0.1, 0.1, 0.1)
 material = SubResource("StandardMaterial3D_bt17o")
+script = ExtResource("14_bc77r")
 
 [node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_E"]
 transform = Transform3D(-4.37114e-09, -0.1, -4.37114e-09, 0, -4.37114e-09, 0.1, -0.1, 4.37114e-09, 1.91069e-16, 3.8147e-06, 0.0503109, 0)
@@ -14994,6 +14998,7 @@ shape = SubResource("BoxShape3D_ilmn1")
 transform = Transform3D(0.23, 3.72529e-09, 0, 3.72529e-09, 0.23, 0, 0, 0, 0.23, 0.0574474, 0.0412515, 0.0340643)
 size = Vector3(0.1, 0.1, 0.1)
 material = SubResource("StandardMaterial3D_bt17o")
+script = ExtResource("14_bc77r")
 
 [node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_G"]
 transform = Transform3D(0, -0.1, -3.72529e-09, 9.31323e-10, -5.58794e-09, 0.1, -0.1, 0, 0, 7.62939e-06, 0.0503106, 0)
@@ -15066,6 +15071,7 @@ material = SubResource("StandardMaterial3D_unq6w")
 transform = Transform3D(0.23, 3.72529e-09, 0, 3.72529e-09, 0.23, 0, 0, 0, 0.23, -0.0690527, 0.0412515, -0.0418353)
 size = Vector3(0.1, 0.1, 0.1)
 material = SubResource("StandardMaterial3D_bt17o")
+script = ExtResource("14_bc77r")
 
 [node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_B"]
 transform = Transform3D(-4.37114e-09, -0.1, -4.37114e-09, 0, -4.37114e-09, 0.1, -0.1, 4.37114e-09, 1.91069e-16, 3.8147e-06, 0.0503109, 0)
@@ -15088,6 +15094,7 @@ shape = SubResource("BoxShape3D_ilmn1")
 transform = Transform3D(0.23, 3.72529e-09, 0, 3.72529e-09, 0.23, 0, 0, 0, 0.23, -0.0437531, 0.0412512, -0.0418344)
 size = Vector3(0.1, 0.1, 0.1)
 material = SubResource("StandardMaterial3D_bt17o")
+script = ExtResource("14_bc77r")
 
 [node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_D"]
 transform = Transform3D(0, -0.1, -5.58794e-09, 9.31323e-10, -9.31323e-09, 0.0999999, -0.1, 0, 0, 0, 0.0503112, -5.72205e-06)
@@ -15110,6 +15117,7 @@ shape = SubResource("BoxShape3D_ilmn1")
 transform = Transform3D(0.23, 3.72529e-09, 0, 3.72529e-09, 0.23, 0, 0, 0, 0.23, -0.0184541, 0.0412514, -0.0418353)
 size = Vector3(0.1, 0.1, 0.1)
 material = SubResource("StandardMaterial3D_bt17o")
+script = ExtResource("14_bc77r")
 
 [node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_B"]
 transform = Transform3D(0, -0.1, -3.72529e-09, 9.31323e-10, -5.58794e-09, 0.1, -0.1, 0, 0, 1.90735e-06, 0.0503111, -1.90735e-06)
@@ -15132,6 +15140,7 @@ shape = SubResource("BoxShape3D_ilmn1")
 transform = Transform3D(0.23, 3.72529e-09, 0, 3.72529e-09, 0.23, 0, 0, 0, 0.23, 0.00684881, 0.0412513, -0.0418348)
 size = Vector3(0.1, 0.1, 0.1)
 material = SubResource("StandardMaterial3D_bt17o")
+script = ExtResource("14_bc77r")
 
 [node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_D"]
 transform = Transform3D(0, -0.1, -3.72529e-09, 9.31323e-10, -5.58794e-09, 0.1, -0.1, 0, 0, 3.8147e-06, 0.0503111, 1.90735e-06)
@@ -15154,6 +15163,7 @@ shape = SubResource("BoxShape3D_ilmn1")
 transform = Transform3D(0.23, 3.72529e-09, 0, 3.72529e-09, 0.23, 0, 0, 0, 0.23, 0.0321488, 0.0412516, -0.0418358)
 size = Vector3(0.1, 0.1, 0.1)
 material = SubResource("StandardMaterial3D_bt17o")
+script = ExtResource("14_bc77r")
 
 [node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_F"]
 transform = Transform3D(-4.37114e-09, -0.1, -4.37114e-09, 0, -4.37114e-09, 0.1, -0.1, 4.37114e-09, 1.91069e-16, 3.8147e-06, 0.0503109, 0)
@@ -15176,6 +15186,7 @@ shape = SubResource("BoxShape3D_ilmn1")
 transform = Transform3D(0.23, 3.72529e-09, 0, 3.72529e-09, 0.23, 0, 0, 0, 0.23, 0.0574474, 0.0412515, -0.0418358)
 size = Vector3(0.1, 0.1, 0.1)
 material = SubResource("StandardMaterial3D_bt17o")
+script = ExtResource("14_bc77r")
 
 [node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_H"]
 transform = Transform3D(0, -0.1, -3.72529e-09, 9.31323e-10, -5.58794e-09, 0.1, -0.1, 0, 0, 7.62939e-06, 0.0503106, 0)
@@ -23612,7 +23623,18 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_A/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_A" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_B/StaticBody3D" to="Control Room Panels/Main Panel Center/Controls/SCRAM_RESET_B" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_A/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_A" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_C/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_C" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_A/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_A" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_C/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_C" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_E/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_E" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_G/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_G" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/DET_DRIVE_IN/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/DET_DRIVE_IN" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_B/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_B" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_D/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_SRM_D" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_B/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_B" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_D/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_D" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_F/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_F" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_H/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/SELECT_IRM_H" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/DET_DRIVE_OUT/StaticBody3D" to="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/DET_DRIVE_OUT" method="switch_click"]
 [connection signal="input_event" from="Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_PB/StaticBody3D" to="Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_PB" method="switch_click"]
 [connection signal="input_event" from="Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_PB/StaticBody3D" to="Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_PB" method="switch_click"]

@@ -14,9 +14,14 @@ func _ready():
 	if switch.lights != {}:
 		for light in switch.lights:
 			if light == "green" or light == "red":
-				switch["lights"][light] = get_node(light+"/Lamp").get_material()
+				#this is so we dont have to make every light unique
+				var light_material = get_node(light+"/Lamp").get_material().duplicate()
+				get_node(light+"/Lamp").material = light_material
+				switch["lights"][light] = light_material
 			else:
-				switch["lights"][light] = get_node(light).get_material()
+				var light_material = get_node(light).get_material().duplicate()
+				get_node(light).material = light_material
+				switch["lights"][light] = light_material
 				
 	if has_flag:
 		switch["flag"] = "green"

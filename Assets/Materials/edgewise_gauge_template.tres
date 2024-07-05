@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://2or1ibx01es4"]
+
+[ext_resource type="Texture2D" uid="uid://crfs6sxjw337n" path="res://Assets/Textures/Edgewise Gauge/Columbia/EDGEWISE_TURBINE_SPEED_RPM_GRAPH_V2.png" id="1_4yps2"]
+
+[resource]
+albedo_texture = ExtResource("1_4yps2")
+uv1_scale = Vector3(0.99, 1.5, 1.4)
+uv1_offset = Vector3(0, -0.23, 0)

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Reactor"
-run/main_scene="res://Assets/Scenes/Lobby/lobby.tscn"
+run/main_scene="res://Assets/Scenes/Lobby/new_lobby.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -24,6 +24,7 @@ XRToolsUserSettings="*res://addons/godot-xr-tools/user_settings/user_settings.gd
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+window/size/mode=2
 
 [filesystem]
 

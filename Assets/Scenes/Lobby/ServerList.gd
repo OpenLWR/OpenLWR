@@ -6,10 +6,11 @@ signal server_updated(server: Control)
 const item_scene = preload("res://Assets/Scenes/Lobby/LobbyItem.tscn")
 @onready var list = $PanelContainer/ScrollContainer/VBoxContainer
 
+var selected_server: Control = null
 
 var known_servers = []
 
-func _add_server(ip, server_name):
+func add_server(ip: String, server_name: String):
 	var item = item_scene.instantiate()
 	item.server_ip = ip
 	item.server_name = server_name
@@ -20,8 +21,12 @@ func _add_server(ip, server_name):
 	list.add_child(item)
 	pass
 
+func _add_default_servers():
+	add_server("127.0.0.1:7001", "Local server")
+	pass
+
 func _ready():
-	_add_server("127.0.0.1:7001", "Local server")
+	_add_default_servers()
 	pass
 
 func _on_ping_fail(server: Control):
@@ -36,3 +41,17 @@ func _on_server_focused(server: Control):
 	#$"../../..".connect_server(server.server_ip, 2)
 	server_selected.emit(server)
 	pass
+
+
+func _on_server_selected(server):
+	selected_server = server
+	$HBoxContainer/Remove.disabled = server == null
+	pass # Replace with function body.
+
+
+func _on_remove_pressed():
+	$PanelContainer/ScrollContainer/VBoxContainer.remove_child(selected_server)
+	var deleted_server = selected_server
+	server_selected.emit(null)
+	deleted_server.queue_free()
+	pass # Replace with function body.

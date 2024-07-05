@@ -28,7 +28,7 @@ signal ping_complete()
 
 func _on_ping_complete():
 	var status = response["status"]
-	var online = str(response.get("online", "???"))
+	var online = str(response.get("online", "??"))
 	$LobbyItem/Line2/Label3.text = status
 	$LobbyItem/Line1/Label2.text = "%s online" % online
 	pass

@@ -3,12 +3,18 @@ extends Control
 var selected_server: Control = null
 
 func _update_info():
-	if selected_server.response != null:
+	if not _verify_server() or selected_server.response == null:
+		$VBoxContainer/RichTextLabel.text = "Connection error or no server selected\n<--- Select a server to begin"
+		$VBoxContainer/HBoxContainer2/Join.disabled = true
+	else:
 		$VBoxContainer/RichTextLabel.text = selected_server.response.get("motd", "no motd")
 		$VBoxContainer/HBoxContainer2/Join.disabled = false
-	else:
-		$VBoxContainer/HBoxContainer2/Join.disabled = true
 	pass
+
+func _verify_server() -> bool:
+	if not is_instance_valid(selected_server):
+		selected_server = null
+	return selected_server != null
 
 func _on_server_list_server_selected(server):
 	selected_server = server
@@ -31,5 +37,7 @@ func _get_model_number(model: String):
 			return 2
 
 func _on_join_pressed():
+	if not _verify_server():
+		return
 	$"../../..".connect_server(selected_server.server_ip, _get_model_number(selected_server.response["model"]))
 	pass # Replace with function body.

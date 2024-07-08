@@ -2768,6 +2768,8 @@ func _process(delta):
 					server_packets.USER_LOGOUT:
 						# data: the username of the person who logged out, string
 						print("User %s logged out." % [packet_data])
+						get_node(packet_data).queue_free() #deletes the remote player instance
+						players.erase(packet_data) #removes the player's info from the player table
 						
 						
 					server_packets.SWITCH_PARAMETERS_UPDATE:
@@ -2820,7 +2822,6 @@ func _process(delta):
 						packet_data = json.parse_string(packet_data)
 						for rod in packet_data:
 							rod_information[rod] = packet_data[rod]
-						print("rod update")
 							
 					server_packets.BUTTON_PARAMETERS_UPDATE:
 						packet_data = json.parse_string(packet_data)
@@ -2831,7 +2832,6 @@ func _process(delta):
 							if buttons[button].switch != null:
 								buttons[button].switch.button_state_change(data.state)
 								buttons[button].switch.button_arm_change(data.armed)
-								print(button)
 					
 					server_packets.PLAYER_POSITION_PARAMETERS_UPDATE:
 						packet_data = json.parse_string(packet_data) # dict of all players, dict OR Vector3(?) of position

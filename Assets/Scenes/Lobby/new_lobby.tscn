@@ -1,0 +1,186 @@
+[gd_scene load_steps=5 format=3 uid="uid://dmffnfkuj0cd4"]
+
+[ext_resource type="Script" path="res://Assets/Scenes/Lobby/new_lobby.gd" id="1_dc5mj"]
+[ext_resource type="Script" path="res://Assets/Scenes/Lobby/ServerList.gd" id="1_qdlwb"]
+[ext_resource type="Script" path="res://Assets/Scenes/Lobby/ServerInfo.gd" id="3_pb2tk"]
+[ext_resource type="Script" path="res://Assets/Scenes/Lobby/Add_server.gd" id="4_780co"]
+
+[node name="Lobby" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_dc5mj")
+
+[node name="Panel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Panel"]
+layout_mode = 2
+split_offset = 975
+
+[node name="ServerList" type="Control" parent="Panel/HSplitContainer"]
+layout_mode = 2
+mouse_filter = 1
+script = ExtResource("1_qdlwb")
+
+[node name="PanelContainer" type="PanelContainer" parent="Panel/HSplitContainer/ServerList"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.02
+anchor_top = 0.02
+anchor_right = 0.98
+anchor_bottom = 0.98
+offset_right = 10.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/HSplitContainer/ServerList/PanelContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/HSplitContainer/ServerList/PanelContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/HSplitContainer/ServerList"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Add" type="Button" parent="Panel/HSplitContainer/ServerList/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Add Server..."
+
+[node name="Remove" type="Button" parent="Panel/HSplitContainer/ServerList/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+disabled = true
+text = "Delete server"
+
+[node name="ServerInfo" type="Control" parent="Panel/HSplitContainer"]
+layout_mode = 2
+script = ExtResource("3_pb2tk")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/HSplitContainer/ServerInfo"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.02
+anchor_top = 0.02
+anchor_right = 0.98
+anchor_bottom = 1.0
+offset_bottom = 0.279999
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Username: "
+
+[node name="LineEdit" type="LineEdit" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "clx0"
+
+[node name="CheckBox" type="CheckBox" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Use VR"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 2
+bbcode_enabled = true
+text = "[p align=center][font_size=48]OpenLWR[/font_size]
+version ding dong bing bong[/p]
+
+
+
+[font_size=30]<--- Select a server to begin[/font_size]"
+selection_enabled = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Join" type="Button" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 6
+disabled = true
+text = "Join server"
+
+[node name="Add server" type="ConfirmationDialog" parent="."]
+disable_3d = true
+title = "Add server"
+position = Vector2i(660, 390)
+size = Vector2i(600, 300)
+ok_button_text = "Add"
+dialog_hide_on_ok = false
+script = ExtResource("4_780co")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Add server"]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -292.0
+offset_top = 8.0
+offset_right = 292.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Name" type="HBoxContainer" parent="Add server/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="Label" type="Label" parent="Add server/VBoxContainer/Name"]
+layout_mode = 2
+text = "Server name:"
+
+[node name="LineEdit" type="LineEdit" parent="Add server/VBoxContainer/Name"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="Ip" type="HBoxContainer" parent="Add server/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="Label" type="Label" parent="Add server/VBoxContainer/Ip"]
+layout_mode = 2
+text = "Server ip:"
+
+[node name="LineEdit" type="LineEdit" parent="Add server/VBoxContainer/Ip"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="server_selected" from="Panel/HSplitContainer/ServerList" to="Panel/HSplitContainer/ServerList" method="_on_server_selected"]
+[connection signal="server_selected" from="Panel/HSplitContainer/ServerList" to="Panel/HSplitContainer/ServerInfo" method="_on_server_list_server_selected"]
+[connection signal="server_updated" from="Panel/HSplitContainer/ServerList" to="Panel/HSplitContainer/ServerInfo" method="_on_server_list_server_updated"]
+[connection signal="pressed" from="Panel/HSplitContainer/ServerList/HBoxContainer/Add" to="." method="_on_add_server_pressed"]
+[connection signal="pressed" from="Panel/HSplitContainer/ServerList/HBoxContainer/Remove" to="Panel/HSplitContainer/ServerList" method="_on_remove_pressed"]
+[connection signal="pressed" from="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer2/Join" to="Panel/HSplitContainer/ServerInfo" method="_on_join_pressed"]
+[connection signal="canceled" from="Add server" to="Add server" method="_on_canceled"]
+[connection signal="confirmed" from="Add server" to="Add server" method="_on_confirmed"]

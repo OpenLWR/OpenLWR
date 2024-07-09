@@ -25,7 +25,6 @@ func left_controller_joystick_input(name,value):
 		joystick_left = value
 		
 func vr_controller_input(name,value):
-	print(name,value)
 	if name == "grip" and value == 1:
 		var touching = $XROrigin3D/RightController/Hand/Area3D.get_overlapping_areas()
 		

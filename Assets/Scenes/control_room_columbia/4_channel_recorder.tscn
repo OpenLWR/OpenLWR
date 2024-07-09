@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://cvpkjmwhk3ffe"]
 
-[ext_resource type="Script" path="res://Assets/Scenes/Columbia/2_channel_recorder.gd" id="1_m4qmy"]
+[ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/2_channel_recorder.gd" id="1_m4qmy"]
 [ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="2_b2cye"]
-[ext_resource type="Script" path="res://Assets/Scenes/Columbia/recorder_value.gd" id="3_ahn3d"]
+[ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/recorder_value.gd" id="3_ahn3d"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mkcyx"]
 font = ExtResource("2_b2cye")

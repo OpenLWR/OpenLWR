@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bj3y1ridejbw0"]
 
-[ext_resource type="PackedScene" uid="uid://dyk86rtadlnxg" path="res://Assets/Scenes/Nine Mile Point Unit 2/full_core_display/full_core_display_lights.tscn" id="1_8eyi6"]
+[ext_resource type="PackedScene" uid="uid://dyk86rtadlnxg" path="res://Assets/Scenes/control_room_nmp2/full_core_display/full_core_display_lights.tscn" id="1_8eyi6"]
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="2_sak3l"]
 
 [node name="Node3D" type="Node3D"]

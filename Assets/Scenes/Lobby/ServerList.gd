@@ -1,5 +1,8 @@
 extends Control
 
+@onready var config = ConfigFile.new()
+
+
 signal server_selected(server: Control)
 signal server_updated(server: Control)
 
@@ -10,7 +13,16 @@ var selected_server: Control = null
 
 var known_servers = []
 
+
 func add_server(ip: String, server_name: String):
+	var cfg = config.get_value("server_browser","servers")
+	cfg[server_name] = ip
+	config.set_value("server_browser","servers",cfg)
+	config.save("game.cfg")
+	add_server_internal(ip,server_name)
+	pass
+
+func add_server_internal(ip: String, server_name: String):
 	var item = item_scene.instantiate()
 	item.server_ip = ip
 	item.server_name = server_name
@@ -21,12 +33,24 @@ func add_server(ip: String, server_name: String):
 	list.add_child(item)
 	pass
 
-func _add_default_servers():
-	add_server("127.0.0.1:7001", "Local server")
+func _add_initial_servers():
+	for server in config.get_value("server_browser","servers"):
+		if typeof(server) == TYPE_INT:
+			continue
+		add_server_internal(config.get_value("server_browser","servers")[server],server)
+		
 	pass
 
 func _ready():
-	_add_default_servers()
+	var err = config.load("game.cfg")
+	if not err and config.get_value("server_browser","servers") != null:
+		_add_initial_servers()
+	elif config.get_value("server_browser","servers") == null:
+		#for whatever reason, whenever the table is empty, it defaults to a table. This sits in the config to keep it a table.
+		config.set_value("server_browser","servers",{"Local Server":"127.0.0.1:7001",1:1}) #use a integer because the client cant input an integer
+		config.save("game.cfg")
+		_add_initial_servers()
+		
 	pass
 
 func _on_ping_fail(server: Control):
@@ -52,6 +76,12 @@ func _on_server_selected(server):
 func _on_remove_pressed():
 	$PanelContainer/ScrollContainer/VBoxContainer.remove_child(selected_server)
 	var deleted_server = selected_server
+	#erase from the config
+	var cur_config = config.get_value("server_browser","servers")
+	cur_config = cur_config.erase(deleted_server.server_name)
+	config.set_value("server_browser","servers",cur_config)
+	config.save("game.cfg")
+	
 	server_selected.emit(null)
 	deleted_server.queue_free()
 	pass # Replace with function body.

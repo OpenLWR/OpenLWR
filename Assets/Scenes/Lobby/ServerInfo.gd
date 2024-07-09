@@ -27,17 +27,8 @@ func _on_server_list_server_updated(server):
 		_update_info()
 	pass # Replace with function body.
 
-func _get_model_number(model: String):
-	match model:
-		"dev_test":
-			return 0
-		"control_room_nmp2":
-			return 1
-		"control_room_columbia":
-			return 2
-
 func _on_join_pressed():
 	if not _verify_server():
 		return
-	$"../../..".connect_server(selected_server.server_ip, _get_model_number(selected_server.response["model"]))
+	$"../../..".connect_server(selected_server.server_ip, selected_server.response["model"])
 	pass # Replace with function body.

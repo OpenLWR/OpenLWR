@@ -1,21 +1,17 @@
 extends Control
 
-func connect_server(ip: String, requested_scene: int):
-	print("Connect")
+func connect_server(ip: String, requested_scene: String):
+
 	var server_ip_requested = ip
 	var username_requested = $Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer/LineEdit.text
-	print(server_ip_requested)
-	print(username_requested)
 	globals.server_ip_requested_tojoin = server_ip_requested
 	globals.username_requested_tojoin = username_requested
 	
-	match requested_scene:
-		0:
-			get_tree().change_scene_to_file("res://Assets/Scenes/Test Scene/test_scene.tscn")
-		1:
-			get_tree().change_scene_to_file("res://Assets/Scenes/Nine Mile Point Unit 2/control_room_nmp2.tscn")
-		2:
-			get_tree().change_scene_to_file("res://Assets/Scenes/Columbia/control_room_columbia.tscn")
+	if ResourceLoader.exists("res://Assets/Scenes/%s/control_room.tscn" % requested_scene):
+		get_tree().change_scene_to_file("res://Assets/Scenes/%s/control_room.tscn" % requested_scene)
+	else:
+		print("This scene doesnt exist, we cant change to it")
+
 
 func _parse_arguments() -> Dictionary:
 	var arguments = {}

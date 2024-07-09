@@ -2633,7 +2633,7 @@ func disconnected(socket):
 	var reason = socket.get_close_reason()
 	print("WebSocket closed with code: %d, reason %s. Clean: %s" % [code, reason, code != -1])
 	#kick to lobby screen
-	get_tree().change_scene_to_file("res://Assets/Scenes/Lobby/lobby.tscn")
+	get_tree().change_scene_to_file("res://Assets/Scenes/Lobby/new_lobby.tscn")
 	set_process(false) # Stop processing.
 
 func _ready(): # assume here that the scene was called by the lobby screen
@@ -2843,7 +2843,6 @@ func _process(delta):
 							
 							if player in players:
 								players[player].position = player_position
-								
 							else:
 								# player is not in our list, assume its a new player and insert a new entry
 								players[player] = {

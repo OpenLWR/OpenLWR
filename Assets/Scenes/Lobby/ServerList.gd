@@ -35,8 +35,6 @@ func add_server_internal(ip: String, server_name: String):
 
 func _add_initial_servers():
 	for server in config.get_value("server_browser","servers"):
-		if typeof(server) == TYPE_INT:
-			continue
 		add_server_internal(config.get_value("server_browser","servers")[server],server)
 		
 	pass
@@ -46,8 +44,7 @@ func _ready():
 	if not err and config.get_value("server_browser","servers") != null:
 		_add_initial_servers()
 	elif config.get_value("server_browser","servers") == null:
-		#for whatever reason, whenever the table is empty, it defaults to a table. This sits in the config to keep it a table.
-		config.set_value("server_browser","servers",{"Local Server":"127.0.0.1:7001",1:1}) #use a integer because the client cant input an integer
+		config.set_value("server_browser","servers",{"Local Server":"127.0.0.1:7001"})
 		config.save("game.cfg")
 		_add_initial_servers()
 		
@@ -78,7 +75,7 @@ func _on_remove_pressed():
 	var deleted_server = selected_server
 	#erase from the config
 	var cur_config = config.get_value("server_browser","servers")
-	cur_config = cur_config.erase(deleted_server.server_name)
+	cur_config.erase(deleted_server.server_name)
 	config.set_value("server_browser","servers",cur_config)
 	config.save("game.cfg")
 	

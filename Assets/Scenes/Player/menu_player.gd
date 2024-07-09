@@ -5,8 +5,7 @@ func _ready():
 	
 func _disconnect_button_pressed():
 	#TODO: handle disconnecting properly
-	print("disconnect")
-	get_tree().change_scene_to_file("res://Assets/Scenes/Lobby/lobby.tscn")
+	get_tree().change_scene_to_file("res://Assets/Scenes/Lobby/new_lobby.tscn")
 	
 func _settings_button_pressed():
 	get_node("Settings").visible = true

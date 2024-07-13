@@ -99,7 +99,6 @@ text = "Username: "
 [node name="LineEdit" type="LineEdit" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "clx0"
 
 [node name="CheckBox" type="CheckBox" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -125,6 +124,7 @@ size_flags_vertical = 8
 [node name="Join" type="Button" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 6
+disabled = true
 text = "Join server"
 
 [node name="Add server" type="ConfirmationDialog" parent="."]

@@ -180,6 +180,7 @@ size_flags_horizontal = 3
 [connection signal="server_updated" from="Panel/HSplitContainer/ServerList" to="Panel/HSplitContainer/ServerInfo" method="_on_server_list_server_updated"]
 [connection signal="pressed" from="Panel/HSplitContainer/ServerList/HBoxContainer/Add" to="." method="_on_add_server_pressed"]
 [connection signal="pressed" from="Panel/HSplitContainer/ServerList/HBoxContainer/Remove" to="Panel/HSplitContainer/ServerList" method="_on_remove_pressed"]
+[connection signal="text_changed" from="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer/LineEdit" to="." method="_on_line_edit_text_changed"]
 [connection signal="pressed" from="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer2/Join" to="Panel/HSplitContainer/ServerInfo" method="_on_join_pressed"]
 [connection signal="canceled" from="Add server" to="Add server" method="_on_canceled"]
 [connection signal="confirmed" from="Add server" to="Add server" method="_on_confirmed"]

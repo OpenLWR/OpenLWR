@@ -5,10 +5,8 @@ var selected_server: Control = null
 func _update_info():
 	if not _verify_server() or selected_server.response == null:
 		$VBoxContainer/RichTextLabel.text = "Connection error or no server selected\n<--- Select a server to begin"
-		$VBoxContainer/HBoxContainer2/Join.disabled = true
 	else:
 		$VBoxContainer/RichTextLabel.text = selected_server.response.get("motd", "no motd")
-		$VBoxContainer/HBoxContainer2/Join.disabled = false
 	pass
 
 func _verify_server() -> bool:

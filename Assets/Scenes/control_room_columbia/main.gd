@@ -394,6 +394,15 @@ signal chat_message(message)
 		"atypical" : true,
 		"text" : false,
 	},
+	
+	"mt_rpm": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/mt_rpm",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 2200,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var switches = {
@@ -2137,6 +2146,71 @@ var buttons = {
 		"armed" : false,
 		"updated": false,
 	},
+	
+	"ehc_closed": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"ehc_100": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"ehc_500": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"ehc_1500": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"ehc_1800": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"ehc_overspeed": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	
+	"ehc_slow": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"ehc_med": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"ehc_fast": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
 }
 
 enum annunciator_state {
@@ -2596,6 +2670,17 @@ var alarm_groups = {
 	"rwm_rwm": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/RWM",
 	"rwm_comp": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/COMP",
 	"rwm_prog": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/rwm_rwm_comp_prog",
+	
+	"ehc_closed": $"Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_closed",
+	"ehc_100": $"Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_100",
+	"ehc_500": $"Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_500",
+	"ehc_1500": $"Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1500",
+	"ehc_1800": $"Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1800",
+	"ehc_overspeed": $"Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_overspeed",
+	
+	"ehc_slow": $"Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_slow",
+	"ehc_med": $"Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_med",
+	"ehc_fast": $"Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_fast",
 	
 }
 

@@ -2147,6 +2147,14 @@ var buttons = {
 		"updated": false,
 	},
 	
+	"ehc_lamp_test": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	
 	"ehc_closed": {
 		"switch": null,
 		"state": false,

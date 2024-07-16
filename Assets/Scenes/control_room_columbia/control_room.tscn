@@ -3296,10 +3296,10 @@ script = ExtResource("1_4t1fm")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06602, 0)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -0.842663, 1.96479, -2.23032)
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, 0.0259184, 1.96479, -2.06316)
 use_collision = true
 flip_faces = true
-size = Vector3(20.6954, 3.9657, 14.5513)
+size = Vector3(22.3302, 3.9657, 18.3238)
 material = ExtResource("3_pvt5y")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -3311,7 +3311,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.9503)
 [node name="Main Panel Right Side" type="CSGPolygon3D" parent="Control Room Panels"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.93732, 0.806, 15.7596)
 use_collision = true
-polygon = PackedVector2Array(0.998528, 0.108852, 0.999, 1.584, -3.97203, 1.47386, 0.072, -0.805, 1.612, -0.805, 1.612, -0.702, 1.73853, -0.0391665)
+polygon = PackedVector2Array(0.998528, 0.108852, 1, 1.584, -0.0641322, 1.58704, -0.0657349, -0.805885, 1.612, -0.805, 1.612, -0.702, 1.73853, -0.0391665)
 depth = 13.0
 material = ExtResource("4_6rpi8")
 
@@ -4478,12 +4478,13 @@ material = ExtResource("30_1q8ae")
 
 [node name="EHC" type="Node3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC"]
 
-[node name="lamp_test" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC"]
+[node name="ehc_lamp_test" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.377397, 0.156374)
 size = Vector3(0.03, 0.03, 0.033)
 material = SubResource("StandardMaterial3D_nca75")
+script = ExtResource("14_bc77r")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/lamp_test"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/ehc_lamp_test"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
 pixel_size = 0.001
 modulate = Color(0, 0, 0, 1)
@@ -4493,10 +4494,10 @@ font_size = 55
 outline_size = 0
 line_spacing = -15.0
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/lamp_test"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/ehc_lamp_test"]
 transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/lamp_test/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/ehc_lamp_test/StaticBody3D"]
 transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
 shape = SubResource("BoxShape3D_wlver")
 
@@ -24055,7 +24056,6 @@ light_size = 0.172
 omni_range = 17.632
 
 [node name="LightEmergency" type="Node3D" parent="."]
-visible = false
 
 [node name="SpotLight3D" type="SpotLight3D" parent="LightEmergency"]
 transform = Transform3D(0.205026, -0.406428, 0.890383, -0.978757, -0.0851367, 0.186513, 4.63704e-08, -0.909708, -0.415249, 9.69599, 3.22972, -0.0694786)
@@ -24138,7 +24138,7 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [node name="Node3D12" parent="." instance=ExtResource("45_mx4yt")]
 transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-08, 8.49855, 1.37566, -7.86545)
 
-[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/lamp_test/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/lamp_test" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/ehc_lamp_test/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/ehc_lamp_test" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/ehc_hyd_fluid/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/ehc_hyd_fluid" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/lamp_test2/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/lamp_test2" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_closed/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_closed" method="switch_click"]

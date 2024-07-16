@@ -2867,7 +2867,14 @@ func _process(delta):
 	else:
 		if state == WebSocketPeer.STATE_OPEN:
 			if not connection_packet_sent:
-				var err = socket.send_text(build_packet(client_packets.USER_LOGIN, globals.username_requested_tojoin))
+				var login_parameters = {
+					"username": globals.username_requested_tojoin,
+
+					# TODO: make a seperate service for this, so the server doesn't have access to the unique id
+					#"unique_id": OS.get_unique_id(),
+
+				}
+				var err = socket.send_text(build_packet(client_packets.USER_LOGIN, json.stringify(login_parameters)))
 				if err: 
 					disconnected(socket) 
 				else:

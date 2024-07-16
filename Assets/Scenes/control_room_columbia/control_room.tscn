@@ -1,4 +1,4 @@
-[gd_scene load_steps=569 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=572 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -18,6 +18,7 @@
 [ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="15_o5a3n"]
 [ext_resource type="Texture2D" uid="uid://b0nkl8jxbkk6j" path="res://Assets/Textures/PAM.png" id="16_w8k2n"]
 [ext_resource type="Material" uid="uid://b3i8ly6chtdr4" path="res://Assets/Materials/amber_lamp.tres" id="17_63w5w"]
+[ext_resource type="Material" uid="uid://dqdt17a6hmq0u" path="res://Assets/Materials/annunciator_amber.tres" id="17_854tn"]
 [ext_resource type="PackedScene" uid="uid://dn7mi80gxcn24" path="res://Assets/Common/Switches/Armable Switch/armable_switch.tscn" id="17_p3ckw"]
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/four_rod_display.gd" id="17_qk8dd"]
 [ext_resource type="PackedScene" uid="uid://dok8h20vi4url" path="res://Assets/Common/Gauges/Edgewise/edgewise_gauge.tscn" id="18_bcd1o"]
@@ -167,6 +168,14 @@ emission_energy_multiplier = 1.9
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wlver"]
 size = Vector3(0.841675, 0.585247, 0.656738)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jvkxt"]
+emission = Color(0.247327, 0.897679, 0, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dg63t"]
+emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_p4cy1"]
 viewport_path = NodePath("Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport")
@@ -4554,12 +4563,13 @@ line_spacing = -15.0
 
 [node name="SPEED" type="Node3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC"]
 
-[node name="ehc_hyd_fluid2" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED"]
+[node name="ehc_closed" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.313173, 0.278857)
 size = Vector3(0.03, 0.03, 0.033)
-material = SubResource("StandardMaterial3D_nca75")
+material = SubResource("StandardMaterial3D_jvkxt")
+script = ExtResource("14_bc77r")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid2"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_closed"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
 pixel_size = 0.001
 modulate = Color(0, 0, 0, 1)
@@ -4571,19 +4581,20 @@ font_size = 55
 outline_size = 0
 line_spacing = -15.0
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid2"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_closed"]
 transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_closed/StaticBody3D"]
 transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
 shape = SubResource("BoxShape3D_wlver")
 
-[node name="ehc_hyd_fluid3" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED"]
+[node name="ehc_100" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.313173, 0.243857)
 size = Vector3(0.03, 0.03, 0.033)
 material = SubResource("StandardMaterial3D_nca75")
+script = ExtResource("14_bc77r")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid3"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_100"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
 pixel_size = 0.001
 modulate = Color(0, 0, 0, 1)
@@ -4593,19 +4604,20 @@ font_size = 55
 outline_size = 0
 line_spacing = -15.0
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid3"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_100"]
 transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid3/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_100/StaticBody3D"]
 transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
 shape = SubResource("BoxShape3D_wlver")
 
-[node name="ehc_hyd_fluid4" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED"]
+[node name="ehc_500" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.313173, 0.208857)
 size = Vector3(0.03, 0.03, 0.033)
 material = SubResource("StandardMaterial3D_nca75")
+script = ExtResource("14_bc77r")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid4"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_500"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
 pixel_size = 0.001
 modulate = Color(0, 0, 0, 1)
@@ -4615,19 +4627,20 @@ font_size = 55
 outline_size = 0
 line_spacing = -15.0
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid4"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_500"]
 transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid4/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_500/StaticBody3D"]
 transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
 shape = SubResource("BoxShape3D_wlver")
 
-[node name="ehc_hyd_fluid5" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED"]
+[node name="ehc_1500" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.313173, 0.173857)
 size = Vector3(0.03, 0.03, 0.033)
 material = SubResource("StandardMaterial3D_nca75")
+script = ExtResource("14_bc77r")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid5"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1500"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
 pixel_size = 0.001
 modulate = Color(0, 0, 0, 1)
@@ -4637,19 +4650,20 @@ font_size = 55
 outline_size = 0
 line_spacing = -15.0
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid5"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1500"]
 transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid5/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1500/StaticBody3D"]
 transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
 shape = SubResource("BoxShape3D_wlver")
 
-[node name="ehc_hyd_fluid6" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED"]
+[node name="ehc_1800" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.313173, 0.138857)
 size = Vector3(0.03, 0.03, 0.033)
-material = SubResource("StandardMaterial3D_nca75")
+material = SubResource("StandardMaterial3D_dg63t")
+script = ExtResource("14_bc77r")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid6"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1800"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
 pixel_size = 0.001
 modulate = Color(0, 0, 0, 1)
@@ -4659,19 +4673,20 @@ font_size = 55
 outline_size = 0
 line_spacing = -15.0
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid6"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1800"]
 transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid6/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1800/StaticBody3D"]
 transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
 shape = SubResource("BoxShape3D_wlver")
 
-[node name="ehc_hyd_fluid7" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED"]
+[node name="ehc_overspeed" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.313173, 0.103857)
 size = Vector3(0.03, 0.03, 0.033)
-material = SubResource("StandardMaterial3D_nca75")
+material = ExtResource("17_854tn")
+script = ExtResource("14_bc77r")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid7"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_overspeed"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
 pixel_size = 0.001
 modulate = Color(0, 0, 0, 1)
@@ -4683,10 +4698,10 @@ font_size = 55
 outline_size = 0
 line_spacing = -15.0
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid7"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_overspeed"]
 transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid7/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_overspeed/StaticBody3D"]
 transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
 shape = SubResource("BoxShape3D_wlver")
 
@@ -4753,34 +4768,13 @@ shape = SubResource("BoxShape3D_wlver")
 
 [node name="START UP RATE" type="Node3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC"]
 
-[node name="ehc_hyd_fluid10" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.181878, 0.138671)
-size = Vector3(0.03, 0.03, 0.033)
-material = SubResource("StandardMaterial3D_nca75")
-
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid10"]
-transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
-pixel_size = 0.001
-modulate = Color(0, 0, 0, 1)
-text = "MEDIUM"
-font = ExtResource("31_6suc0")
-font_size = 55
-outline_size = 0
-line_spacing = -15.0
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid10"]
-transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid10/StaticBody3D"]
-transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
-shape = SubResource("BoxShape3D_wlver")
-
-[node name="ehc_hyd_fluid12" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE"]
+[node name="ehc_slow" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.181878, 0.173671)
 size = Vector3(0.03, 0.03, 0.033)
 material = SubResource("StandardMaterial3D_nca75")
+script = ExtResource("14_bc77r")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid12"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_slow"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
 pixel_size = 0.001
 modulate = Color(0, 0, 0, 1)
@@ -4790,19 +4784,43 @@ font_size = 55
 outline_size = 0
 line_spacing = -15.0
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid12"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_slow"]
 transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid12/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_slow/StaticBody3D"]
 transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
 shape = SubResource("BoxShape3D_wlver")
 
-[node name="ehc_hyd_fluid11" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE"]
+[node name="ehc_med" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.181878, 0.138671)
+size = Vector3(0.03, 0.03, 0.033)
+material = SubResource("StandardMaterial3D_nca75")
+script = ExtResource("14_bc77r")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_med"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "MEDIUM"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_med"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_med/StaticBody3D"]
+transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
+shape = SubResource("BoxShape3D_wlver")
+
+[node name="ehc_fast" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.181878, 0.103671)
 size = Vector3(0.03, 0.03, 0.033)
 material = SubResource("StandardMaterial3D_nca75")
+script = ExtResource("14_bc77r")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid11"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_fast"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
 pixel_size = 0.001
 modulate = Color(0, 0, 0, 1)
@@ -4812,10 +4830,10 @@ font_size = 55
 outline_size = 0
 line_spacing = -15.0
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid11"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_fast"]
 transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid11/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_fast/StaticBody3D"]
 transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
 shape = SubResource("BoxShape3D_wlver")
 
@@ -4837,13 +4855,6 @@ font_size = 55
 outline_size = 0
 line_spacing = -15.0
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED MONITORING/ehc_hyd_fluid8"]
-transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED MONITORING/ehc_hyd_fluid8/StaticBody3D"]
-transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
-shape = SubResource("BoxShape3D_wlver")
-
 [node name="ehc_hyd_fluid9" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED MONITORING"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.240545, 0.120942)
 size = Vector3(0.03, 0.03, 0.033)
@@ -4859,13 +4870,6 @@ font = ExtResource("31_6suc0")
 font_size = 55
 outline_size = 0
 line_spacing = -15.0
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED MONITORING/ehc_hyd_fluid9"]
-transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED MONITORING/ehc_hyd_fluid9/StaticBody3D"]
-transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
-shape = SubResource("BoxShape3D_wlver")
 
 [node name="Main Panel Left Side" type="CSGPolygon3D" parent="Control Room Panels"]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 9.5113, 0.806, 2.68892)
@@ -14455,15 +14459,22 @@ transform = Transform3D(-8.9407e-08, 0, 1, 0, 1, 0, -1, 0, -8.9407e-08, 0.864583
 [node name="srm_d_period" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("18_bcd1o")]
 transform = Transform3D(-8.9407e-08, 0, 1, 0, 1, 0, -1, 0, -8.9407e-08, 0.864583, 0.798108, -3.02229)
 
-[node name="srm_d_period2" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("18_bcd1o")]
+[node name="mt_rpm" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("18_bcd1o")]
 transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 4.58628, 0.75313, -7.99909)
 
-[node name="Face" parent="Control Room Panels/Main Panel Center/Controls/srm_d_period2/edgewise_gauge" index="0"]
+[node name="Face" parent="Control Room Panels/Main Panel Center/Controls/mt_rpm/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
 material_override = ExtResource("35_ahra6")
 
-[node name="Face_001" parent="Control Room Panels/Main Panel Center/Controls/srm_d_period2/edgewise_gauge" index="7"]
+[node name="Needle" parent="Control Room Panels/Main Panel Center/Controls/mt_rpm/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Center/Controls/mt_rpm/edgewise_gauge" index="7"]
 transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
 material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Axis" parent="Control Room Panels/Main Panel Center/Controls/mt_rpm/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
 
 [node name="srm_c_counts" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("18_bcd1o")]
 transform = Transform3D(-8.9407e-08, 0, 1, 0, 1, 0, -1, 0, -8.9407e-08, 0.864584, 0.991194, -2.98051)
@@ -24130,19 +24141,17 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/lamp_test/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/lamp_test" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/ehc_hyd_fluid/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/ehc_hyd_fluid" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/lamp_test2/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/lamp_test2" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid2/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid2" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid3/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid3" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid4/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid4" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid5/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid5" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid6/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid6" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid7/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_hyd_fluid7" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_closed/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_closed" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_100/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_100" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_500/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_500" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1500/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1500" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1800/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1800" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_overspeed/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_overspeed" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/lamp_test4/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/lamp_test4" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_hyd_fluid12/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_hyd_fluid12" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid10/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid10" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid12/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid12" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid11/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_hyd_fluid11" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED MONITORING/ehc_hyd_fluid8/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED MONITORING/ehc_hyd_fluid8" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED MONITORING/ehc_hyd_fluid9/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED MONITORING/ehc_hyd_fluid9" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_slow/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_slow" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_med/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_med" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_fast/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_fast" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/rcic_init_reset/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/rcic_init_reset" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/LPCS/lpcs_init/lpcs_init_reset/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/LPCS/lpcs_init/lpcs_init_reset" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/601Ann1/ALARM_ACK_2/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/601Ann1/ALARM_ACK_2" method="switch_click"]
@@ -24821,8 +24830,8 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [editable path="Control Room Panels/Main Panel Center/Controls/bypass_valve/selector_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/turbine_valve"]
 [editable path="Control Room Panels/Main Panel Center/Controls/turbine_valve/selector_switch"]
-[editable path="Control Room Panels/Main Panel Center/Controls/srm_d_period2"]
-[editable path="Control Room Panels/Main Panel Center/Controls/srm_d_period2/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Center/Controls/mt_rpm"]
+[editable path="Control Room Panels/Main Panel Center/Controls/mt_rpm/edgewise_gauge"]
 [editable path="Control Room Panels/Main Panel Center/Controls/NMS2/Sprite3D/SubViewport/Node2D"]
 [editable path="Control Room Panels/Main Panel Center/Controls/NMS1/Sprite3D/SubViewport/Node2D"]
 [editable path="Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D"]

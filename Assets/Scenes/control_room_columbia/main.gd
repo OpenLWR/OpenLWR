@@ -373,6 +373,14 @@ signal chat_message(message)
 		"atypical" : false,
 		"text" : false,
 	},
+	"synchroscope": {
+		"node": $"Synchroscope",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 0,
+		"atypical" : false,
+		"text" : false,
+	},
 	
 	"rwm_group": {
 		"value": -1,
@@ -1783,6 +1791,37 @@ var switches = {
 		},
 	},
 	"diesel_gen_2": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	
+	"cb_4885": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	"cb_4888": {
 		"switch": null,
 		"positions": {
 			0: 45,

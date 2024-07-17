@@ -1,4 +1,4 @@
-[gd_scene load_steps=572 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=573 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -53,6 +53,7 @@
 [ext_resource type="PackedScene" uid="uid://bjwjgqtl525do" path="res://Assets/Common/Gauges/Circular/circular.tscn" id="45_mx4yt"]
 [ext_resource type="Texture2D" uid="uid://p2k3q72ebv8k" path="res://Assets/Textures/Radial Gauge/Columbia/OpenLWR_Synchroscope_Inner.png" id="46_lasde"]
 [ext_resource type="Texture2D" uid="uid://bivqu44wdnr28" path="res://Assets/Textures/Radial Gauge/Columbia/OpenLWR_Synchroscope_Outer.png" id="47_fyt36"]
+[ext_resource type="Script" path="res://Assets/Common/Gauges/Circular/synchroscope.gd" id="54_8uecp"]
 
 [sub_resource type="Environment" id="Environment_gjsn6"]
 ambient_light_source = 2
@@ -3410,6 +3411,102 @@ AVAIL"
 font = ExtResource("15_o5a3n")
 font_size = 60
 outline_size = 0
+
+[node name="cb_4885" parent="Control Room Panels/Main Panel Right Side/Controls" instance=ExtResource("44_253tc")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4.26499, 0.622295, -6.54604)
+
+[node name="PTL" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4885" index="5"]
+visible = false
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4885"]
+transform = Transform3D(0.699999, 0, 0, 0, 2.98023e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219998, 0.0637619, 0.00195831)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4885/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_f8vam")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4885"]
+transform = Transform3D(0.699999, 0, 0, 0, 1.49012e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0219998, 0.0637612, 0.00195813)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4885/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_2xljo")
+
+[node name="Label" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4885" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -4.44089e-15, -1, -1.04308e-07, -4.47035e-08, 0, 0.0400376, -0.000916421)
+
+[node name="Name" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4885/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "GENERATOR TO
+SOUTH BUS
+CB-4885"
+
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4885/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4885/Label" index="2"]
+visible = false
+
+[node name="cb_4888" parent="Control Room Panels/Main Panel Right Side/Controls" instance=ExtResource("44_253tc")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4.26499, 0.622295, -6.74604)
+
+[node name="PTL" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4888" index="5"]
+visible = false
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4888"]
+transform = Transform3D(0.699999, 0, 0, 0, 2.98023e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219998, 0.0637619, 0.00195831)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4888/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_f8vam")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4888"]
+transform = Transform3D(0.699999, 0, 0, 0, 1.49012e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0219998, 0.0637612, 0.00195813)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4888/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_2xljo")
+
+[node name="Label" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4888" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -4.44089e-15, -1, -1.04308e-07, -4.47035e-08, 0, 0.0400376, -0.000916421)
+
+[node name="Name" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4888/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "GENERATOR TO
+NORTH BUS
+CB-4888"
+
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4888/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/cb_4888/Label" index="2"]
+visible = false
 
 [node name="cb_n1_1" parent="Control Room Panels/Main Panel Right Side/Controls" instance=ExtResource("44_253tc")]
 transform = Transform3D(-4.37113e-08, -0.979134, -0.203215, 0, 0.203215, -0.979134, 1, -4.27993e-08, -8.88281e-09, 4.38332, 0.0879759, -7.29711)
@@ -24056,6 +24153,7 @@ light_size = 0.172
 omni_range = 17.632
 
 [node name="LightEmergency" type="Node3D" parent="."]
+visible = false
 
 [node name="SpotLight3D" type="SpotLight3D" parent="LightEmergency"]
 transform = Transform3D(0.205026, -0.406428, 0.890383, -0.978757, -0.0851367, 0.186513, 4.63704e-08, -0.909708, -0.415249, 9.69599, 3.22972, -0.0694786)
@@ -24106,6 +24204,16 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 texture = ExtResource("46_lasde")
 
 [node name="Sprite3D2" parent="Node3D/Circular" index="4"]
+texture = ExtResource("47_fyt36")
+
+[node name="Synchroscope" parent="." instance=ExtResource("45_mx4yt")]
+transform = Transform3D(0.28, 0, 1.15463e-14, 0, 0.28, 0, -1.15463e-14, 0, 0.28, -2.73848, 1.84867, 3.76191)
+script = ExtResource("54_8uecp")
+
+[node name="Sprite3D" parent="Synchroscope/Circular" index="3"]
+texture = ExtResource("46_lasde")
+
+[node name="Sprite3D2" parent="Synchroscope/Circular" index="4"]
 texture = ExtResource("47_fyt36")
 
 [node name="Node3D2" parent="." instance=ExtResource("45_mx4yt")]
@@ -24389,6 +24497,12 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [editable path="Control Room Panels/Main Panel Right Side/Controls/cb_s1"]
 [editable path="Control Room Panels/Main Panel Right Side/Controls/cb_s1/selector_switch"]
 [editable path="Control Room Panels/Main Panel Right Side/Controls/cb_s1/Label"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/cb_4885"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/cb_4885/selector_switch"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/cb_4885/Label"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/cb_4888"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/cb_4888/selector_switch"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/cb_4888/Label"]
 [editable path="Control Room Panels/Main Panel Right Side/Controls/cb_n1_1"]
 [editable path="Control Room Panels/Main Panel Right Side/Controls/cb_n1_1/selector_switch"]
 [editable path="Control Room Panels/Main Panel Right Side/Controls/cb_n1_1/Label"]
@@ -24874,3 +24988,5 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [editable path="Annunciators/P602_A13"]
 [editable path="Node3D"]
 [editable path="Node3D/Circular"]
+[editable path="Synchroscope"]
+[editable path="Synchroscope/Circular"]

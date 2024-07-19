@@ -373,8 +373,8 @@ signal chat_message(message)
 		"atypical" : false,
 		"text" : false,
 	},
-	"synchroscope": {
-		"node": $"Synchroscope",
+	"main_generator_sync": {
+		"node": $"main_generator_sync",
 		"value": 0,
 		"min_value": 0,
 		"max_value": 0,
@@ -1835,6 +1835,31 @@ var switches = {
 			"green" : null,
 			"red" : null,
 		},
+	},
+	
+	"sync_cb_4885": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {},
+	},
+	"sync_cb_4888": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {},
 	},
 	
 }

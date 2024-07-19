@@ -4969,6 +4969,98 @@ font_size = 55
 outline_size = 0
 line_spacing = -15.0
 
+[node name="sync_cb_4888" parent="Control Room Panels/Main Panel Right Side/Controls" instance=ExtResource("13_ba4xl")]
+transform = Transform3D(-1.03316e-07, 2.10734e-08, -1, -1.19209e-07, 1, 4.37114e-08, 1, 2.10734e-08, -4.37114e-08, 4.27659, 0.767213, -6.74657)
+
+[node name="Left" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888" index="0"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
+
+[node name="Right" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888" index="1"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, -0.013, 0.00648308, 0.00137824)
+
+[node name="selector_switch" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888" index="2"]
+transform = Transform3D(0.028, -2.44783e-09, -1.06998e-16, -2.22045e-16, -1.39698e-09, 0.028, -2.44783e-09, -0.028, -1.39698e-09, 0, 0.00483799, 0.01302)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888/selector_switch" index="2"]
+transform = Transform3D(-0.3, 5.96046e-08, 1.86265e-09, -7.45058e-09, -1.49012e-08, 0.3, 4.47035e-08, 0.3, 1.49012e-08, -7.62939e-05, 0.156521, 0.737579)
+text = "OFF"
+
+[node name="Label3D3" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888/selector_switch" index="3"]
+transform = Transform3D(-0.212132, -0.212132, 1.86265e-09, 1.77533e-09, -1.11759e-08, 0.3, -0.212132, 0.212132, 1.49012e-08, -0.450104, 0.156523, 0.55835)
+text = "MAN
+CHECK"
+
+[node name="Label3D4" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888/selector_switch" index="4"]
+transform = Transform3D(0, -0.3, -9.31323e-09, 7.45058e-09, -1.30385e-08, 0.3, -0.3, 0, 1.67638e-08, -0.674812, 0.156523, 0.0837402)
+text = ""
+
+[node name="Label3D2" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888/selector_switch" index="5"]
+transform = Transform3D(-0.212132, 0.212132, 1.86265e-09, -1.11759e-08, -5.50062e-09, 0.3, 0.212132, 0.212132, 1.67638e-08, 0.47258, 0.156521, 0.535522)
+text = "MAN"
+
+[node name="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888" index="3"]
+transform = Transform3D(0.382683, 8.57943e-10, 0.923879, 0.92388, -1.39698e-09, -0.382683, 2.98023e-08, 0.0317948, 0, 0, 0.00648308, 0.00922257)
+
+[node name="Label" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -6.51345e-16, -1, -5.96046e-08, -4.47035e-08, 0, 0.045267, 0.0111105)
+
+[node name="Name" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888/Label" index="0"]
+text = "CB-4888
+SYNC SELECTOR"
+
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888/Label" index="1"]
+visible = false
+text = "SM-7"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888/Label" index="2"]
+visible = false
+
+[node name="sync_cb_4885" parent="Control Room Panels/Main Panel Right Side/Controls" instance=ExtResource("13_ba4xl")]
+transform = Transform3D(-1.03316e-07, 2.10734e-08, -1, -1.19209e-07, 1, 4.37114e-08, 1, 2.10734e-08, -4.37114e-08, 4.27659, 0.767213, -6.54657)
+
+[node name="Left" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885" index="0"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
+
+[node name="Right" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885" index="1"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, -0.013, 0.00648308, 0.00137824)
+
+[node name="selector_switch" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885" index="2"]
+transform = Transform3D(0.028, -2.44783e-09, -1.06998e-16, -2.22045e-16, -1.39698e-09, 0.028, -2.44783e-09, -0.028, -1.39698e-09, 0, 0.00483799, 0.01302)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885/selector_switch" index="2"]
+transform = Transform3D(-0.3, 5.96046e-08, 1.86265e-09, -7.45058e-09, -1.49012e-08, 0.3, 4.47035e-08, 0.3, 1.49012e-08, -7.62939e-05, 0.156521, 0.737579)
+text = "OFF"
+
+[node name="Label3D3" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885/selector_switch" index="3"]
+transform = Transform3D(-0.212132, -0.212132, 1.86265e-09, 1.77533e-09, -1.11759e-08, 0.3, -0.212132, 0.212132, 1.49012e-08, -0.450104, 0.156523, 0.55835)
+text = "MAN
+CHECK"
+
+[node name="Label3D4" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885/selector_switch" index="4"]
+transform = Transform3D(0, -0.3, -9.31323e-09, 7.45058e-09, -1.30385e-08, 0.3, -0.3, 0, 1.67638e-08, -0.674812, 0.156523, 0.0837402)
+text = ""
+
+[node name="Label3D2" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885/selector_switch" index="5"]
+transform = Transform3D(-0.212132, 0.212132, 1.86265e-09, -1.11759e-08, -5.50062e-09, 0.3, 0.212132, 0.212132, 1.67638e-08, 0.47258, 0.156521, 0.535522)
+text = "MAN"
+
+[node name="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885" index="3"]
+transform = Transform3D(0.382683, 8.57943e-10, 0.923879, 0.92388, -1.39698e-09, -0.382683, 2.98023e-08, 0.0317948, 0, 0, 0.00648308, 0.00922257)
+
+[node name="Label" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -6.51345e-16, -1, -5.96046e-08, -4.47035e-08, 0, 0.045267, 0.0111105)
+
+[node name="Name" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885/Label" index="0"]
+text = "CB-4885
+SYNC SELECTOR"
+
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885/Label" index="1"]
+visible = false
+text = "SM-7"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885/Label" index="2"]
+visible = false
+
 [node name="Main Panel Left Side" type="CSGPolygon3D" parent="Control Room Panels"]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 9.5113, 0.806, 2.68892)
 use_collision = true
@@ -24206,14 +24298,14 @@ texture = ExtResource("46_lasde")
 [node name="Sprite3D2" parent="Node3D/Circular" index="4"]
 texture = ExtResource("47_fyt36")
 
-[node name="Synchroscope" parent="." instance=ExtResource("45_mx4yt")]
+[node name="main_generator_sync" parent="." instance=ExtResource("45_mx4yt")]
 transform = Transform3D(0.28, 0, 1.15463e-14, 0, 0.28, 0, -1.15463e-14, 0, 0.28, -2.73848, 1.84867, 3.76191)
 script = ExtResource("54_8uecp")
 
-[node name="Sprite3D" parent="Synchroscope/Circular" index="3"]
+[node name="Sprite3D" parent="main_generator_sync/Circular" index="3"]
 texture = ExtResource("46_lasde")
 
-[node name="Sprite3D2" parent="Synchroscope/Circular" index="4"]
+[node name="Sprite3D2" parent="main_generator_sync/Circular" index="4"]
 texture = ExtResource("47_fyt36")
 
 [node name="Node3D2" parent="." instance=ExtResource("45_mx4yt")]
@@ -24551,6 +24643,12 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [editable path="Control Room Panels/Main Panel Right Side/Controls/tbd"]
 [editable path="Control Room Panels/Main Panel Right Side/Controls/tbd/selector_switch"]
 [editable path="Control Room Panels/Main Panel Right Side/Controls/tbd/Label"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888/selector_switch"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888/Label"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885/selector_switch"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4885/Label"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport/Node2D"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31/selector_switch"]
@@ -24988,5 +25086,5 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [editable path="Annunciators/P602_A13"]
 [editable path="Node3D"]
 [editable path="Node3D/Circular"]
-[editable path="Synchroscope"]
-[editable path="Synchroscope/Circular"]
+[editable path="main_generator_sync"]
+[editable path="main_generator_sync/Circular"]

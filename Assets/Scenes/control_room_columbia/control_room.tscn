@@ -1,4 +1,4 @@
-[gd_scene load_steps=574 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=576 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://dn7mi80gxcn24" path="res://Assets/Common/Switches/Armable Switch/armable_switch.tscn" id="17_p3ckw"]
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/four_rod_display.gd" id="17_qk8dd"]
 [ext_resource type="PackedScene" uid="uid://dok8h20vi4url" path="res://Assets/Common/Gauges/Edgewise/edgewise_gauge.tscn" id="18_bcd1o"]
+[ext_resource type="Material" uid="uid://dhj0kjjcc7lie" path="res://Assets/Materials/annunciator_red.tres" id="18_cvut7"]
 [ext_resource type="Texture2D" uid="uid://bxvksf58t2vat" path="res://Assets/Textures/ADS.png" id="18_idun7"]
 [ext_resource type="PackedScene" uid="uid://dyk86rtadlnxg" path="res://Assets/Scenes/control_room_nmp2/full_core_display/full_core_display_lights.tscn" id="19_pl0e3"]
 [ext_resource type="PackedScene" uid="uid://kf7fvt4u82cu" path="res://Assets/Scenes/control_room_columbia/2_channel_recorder.tscn" id="19_qwg0d"]
@@ -177,6 +178,10 @@ emission_energy_multiplier = 1.9
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dg63t"]
 emission = Color(0.605563, 0.000574561, 0.000314438, 1)
+emission_energy_multiplier = 1.9
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2nrt8"]
+emission = Color(0.150006, 0.495343, 0, 1)
 emission_energy_multiplier = 1.9
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_p4cy1"]
@@ -4806,12 +4811,13 @@ shape = SubResource("BoxShape3D_wlver")
 
 [node name="LINE SPEED MATCHER" type="Node3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC"]
 
-[node name="lamp_test4" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER"]
+[node name="ehc_line_speed_selected" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.116167, 0.121024)
 size = Vector3(0.03, 0.015, 0.033)
-material = SubResource("StandardMaterial3D_nca75")
+material = ExtResource("18_cvut7")
+script = ExtResource("14_bc77r")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/lamp_test4"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_selected"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
 pixel_size = 0.001
 modulate = Color(0, 0, 0, 1)
@@ -4821,19 +4827,19 @@ font_size = 55
 outline_size = 0
 line_spacing = -15.0
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/lamp_test4"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_selected"]
 transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0111437, -0.00162029)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/lamp_test4/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_selected/StaticBody3D"]
 transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
 shape = SubResource("BoxShape3D_wlver")
 
-[node name="lamp_test5" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER"]
+[node name="ehc_line_speed_operating" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.13116, 0.121024)
 size = Vector3(0.03, 0.015, 0.033)
-material = SubResource("StandardMaterial3D_nca75")
+material = ExtResource("18_cvut7")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/lamp_test5"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_operating"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
 pixel_size = 0.001
 modulate = Color(0, 0, 0, 1)
@@ -4843,12 +4849,13 @@ font_size = 55
 outline_size = 0
 line_spacing = -15.0
 
-[node name="ehc_hyd_fluid12" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER"]
+[node name="ehc_line_speed_off" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.123856, 0.155942)
 size = Vector3(0.03, 0.03, 0.033)
-material = SubResource("StandardMaterial3D_nca75")
+material = SubResource("StandardMaterial3D_2nrt8")
+script = ExtResource("14_bc77r")
 
-[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_hyd_fluid12"]
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_off"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
 pixel_size = 0.001
 modulate = Color(0, 0, 0, 1)
@@ -4858,10 +4865,10 @@ font_size = 55
 outline_size = 0
 line_spacing = -15.0
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_hyd_fluid12"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_off"]
 transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_hyd_fluid12/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_off/StaticBody3D"]
 transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
 shape = SubResource("BoxShape3D_wlver")
 
@@ -24410,7 +24417,7 @@ texture = ExtResource("46_lasde")
 texture = ExtResource("47_fyt36")
 
 [node name="main_generator_sync" parent="." instance=ExtResource("45_mx4yt")]
-transform = Transform3D(0.28, 0, 1.15463e-14, 0, 0.28, 0, -1.15463e-14, 0, 0.28, -2.73848, 1.84867, 3.76191)
+transform = Transform3D(0.28, 0, 1.15463e-14, 0, 0.28, 0, -1.15463e-14, 0, 0.28, -2.73848, 1.84867, 3.80173)
 script = ExtResource("54_8uecp")
 
 [node name="Sprite3D" parent="main_generator_sync/Circular" index="3"]
@@ -24458,8 +24465,8 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1500/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1500" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1800/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_1800" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_overspeed/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_overspeed" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/lamp_test4/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/lamp_test4" method="switch_click"]
-[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_hyd_fluid12/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_hyd_fluid12" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_selected/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_selected" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_off/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_off" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_slow/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_slow" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_med/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_med" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_fast/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_fast" method="switch_click"]

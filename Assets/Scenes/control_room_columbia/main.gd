@@ -2283,6 +2283,21 @@ var buttons = {
 		"armed" : false,
 		"updated": false,
 	},
+	
+	"ehc_line_speed_off": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
+	"ehc_line_speed_selected": {
+		"switch": null,
+		"state": false,
+		"momentary": false,
+		"armed" : false,
+		"updated": false,
+	},
 }
 
 enum annunciator_state {
@@ -2753,6 +2768,10 @@ var alarm_groups = {
 	"ehc_slow": $"Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_slow",
 	"ehc_med": $"Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_med",
 	"ehc_fast": $"Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_fast",
+	
+	"ehc_line_speed_off": $"Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_off",
+	"ehc_line_speed_selected": $"Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_selected",
+	"ehc_line_speed_operating": $"Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_operating",
 	
 }
 

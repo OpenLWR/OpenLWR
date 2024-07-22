@@ -19,7 +19,7 @@ refraction_enabled = true
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 
 [node name="Windows" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0015929, -0.0182424, -0.0687156)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0015929, -0.0182424, -0.124345)
 
 [node name="1-1" parent="Windows" instance=ExtResource("1_ohy2f")]
 transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-09, 0.013612, 0.178195, 0.406167)
@@ -1562,12 +1562,12 @@ font_size = 70
 outline_size = 0
 
 [node name="Box" type="CSGBox3D" parent="."]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -2.22045e-16, 0.0324537, 0.0488384)
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -2.43165e-09, 0.0324537, -0.00679126)
 size = Vector3(0.0433738, 0.589624, 1.19522)
 material = SubResource("StandardMaterial3D_oti7f")
 
 [node name="Label" type="CSGBox3D" parent="."]
-transform = Transform3D(-4.37115e-08, 0, 1, 0, 0.999996, 0, -1, 0, -4.37115e-08, 0.0117186, -0.130995, 0.0491784)
+transform = Transform3D(-4.37115e-08, 0, 1, 0, 0.999996, 0, -1, 0, -4.37115e-08, 0.0117186, -0.130995, -0.00645126)
 size = Vector3(0.0731425, 0.0191919, 0.00717134)
 material = ExtResource("5_0acsm")
 
@@ -1582,20 +1582,20 @@ outline_size = 0
 line_spacing = -2.0
 
 [node name="Triangle" type="Sprite3D" parent="."]
-transform = Transform3D(-4.37114e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.37114e-10, 0.0133391, 0.139933, 0.300451)
+transform = Transform3D(-4.37114e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.37114e-10, 0.0133391, 0.139933, 0.244821)
 shaded = true
 double_sided = false
 texture = ExtResource("6_bs842")
 
 [node name="a" type="SpotLight3D" parent="."]
-transform = Transform3D(-4.17001e-08, 0.213269, -0.976994, 1.86446e-08, 0.976994, 0.213269, 1, -9.32229e-09, -4.4717e-08, 0, 0, 0)
+transform = Transform3D(-4.17001e-08, 0.213269, -0.976994, 1.86446e-08, 0.976994, 0.213269, 1, -9.32232e-09, -4.4717e-08, -2.43165e-09, 0, -0.0556297)
 visible = false
 light_color = Color(1, 0.011004, 0.141076, 1)
 light_energy = 0.175
 spot_angle = 76.54
 
 [node name="Lighting" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.209559, 0, -9.16011e-09)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.209559, 0, -0.0556297)
 visible = false
 light_energy = 0.02
 light_indirect_energy = 5.618

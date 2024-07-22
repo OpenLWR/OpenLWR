@@ -1,4 +1,4 @@
-[gd_scene load_steps=573 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=574 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -53,6 +53,7 @@
 [ext_resource type="PackedScene" uid="uid://bjwjgqtl525do" path="res://Assets/Common/Gauges/Circular/circular.tscn" id="45_mx4yt"]
 [ext_resource type="Texture2D" uid="uid://p2k3q72ebv8k" path="res://Assets/Textures/Radial Gauge/Columbia/OpenLWR_Synchroscope_Inner.png" id="46_lasde"]
 [ext_resource type="Texture2D" uid="uid://bivqu44wdnr28" path="res://Assets/Textures/Radial Gauge/Columbia/OpenLWR_Synchroscope_Outer.png" id="47_fyt36"]
+[ext_resource type="PackedScene" uid="uid://baf78ewkivud5" path="res://Assets/Common/Annunciators/annunciator_cgs_7x5dual.tscn" id="49_fqkdj"]
 [ext_resource type="Script" path="res://Assets/Common/Gauges/Circular/synchroscope.gd" id="54_8uecp"]
 
 [sub_resource type="Environment" id="Environment_gjsn6"]
@@ -24166,6 +24167,116 @@ transform = Transform3D(-0.8, 0, 1.20797e-07, 0, 0.8, 0, -1.20797e-07, 0, -0.8, 
 text = "ANN PANEL
 P602.A13"
 
+[node name="C1" parent="Annunciators" instance=ExtResource("49_fqkdj")]
+transform = Transform3D(-3.49691e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.49691e-08, -1.60304, 2.1712, 3.80729)
+
+[node name="C5" parent="Annunciators" instance=ExtResource("49_fqkdj")]
+transform = Transform3D(-3.49691e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.49691e-08, -6.09428, 2.1712, 3.80729)
+
+[node name="Label3D" parent="Annunciators/C5/Windows/1-1/CSGBox3D" index="0"]
+text = "DG 2
+RUNNING"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/1-2/CSGBox3D" index="0"]
+text = "DG 2
+AUTO START"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/1-3/CSGBox3D" index="0"]
+text = "BUS 8 CONTROL
+POWER LOSS"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/2-1/CSGBox3D2" index="0"]
+text = "DG 2
+FAIL TO START"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/2-2/CSGBox3D2" index="0"]
+text = "DG 2 STATOR BRG
+TEMP HIGH"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/2-3/CSGBox3D2" index="0"]
+text = "BUS 8
+LOSS OF VOLTAGE"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/2-4/CSGBox3D2" index="0"]
+text = "DG 2
+IMPROPER PARALLEL"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/3-1/CSGBox3D" index="0"]
+text = "DG 2 LOCAL
+PNL ALARM"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/3-2/CSGBox3D" index="0"]
+text = "DG 2 ENGINE CLR
+SW FLOW LOW"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/3-3/CSGBox3D" index="0"]
+text = "BUS 8
+PARALLEL OPER"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/3-4/CSGBox3D" index="0"]
+text = "DG 2
+BKR 8DG2 GND"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/4-1/CSGBox3D2" index="0"]
+text = "
+"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/4-2/CSGBox3D2" index="0"]
+text = "DG 2
+GEN GND"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/5-1/CSGBox3D" index="0"]
+text = "DG 2 RM CLR
+SW FLOW LOW"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/5-2/CSGBox3D" index="0"]
+text = "DG 2
+FIELD GND"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/6-1/CSGBox3D2" index="0"]
+text = "DG 2 DAY TANK
+OIL LEVEL LOW"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/6-2/CSGBox3D2" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/C5/Windows/7-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163071)
+text = "DG 2 DAY TANK
+OIL LEVEL HIGH"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/7-2/CSGBox3D" index="0"]
+text = "DG 2
+VIBRATION HIGH"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/8-1/CSGBox3D2" index="0"]
+text = "DG 2 STOR TANK
+OIL LEVEL LOW"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/8-2/CSGBox3D2" index="0"]
+text = "125 VDC BATT
+B1-2 GND"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/9-1/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163071)
+text = "DG 2 STOR TANK
+OIL LEVEL HIGH"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/9-2/CSGBox3D" index="0"]
+text = "125 VDC CHARGER
+C1-2A/2B TROUBLE"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/10-1/CSGBox3D2" index="0"]
+text = "DG 2
+OUT OF SERVICE"
+
+[node name="Label3D" parent="Annunciators/C5/Windows/10-2/CSGBox3D2" index="0"]
+text = "125 VDC LOSS
+BATT B1-2 FAIL"
+
+[node name="Triangle" parent="Annunciators/C5" index="3"]
+visible = false
+
 [node name="Alarm1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.55557, 2.31361, 2.79219)
 script = ExtResource("30_mjcs6")
@@ -25084,6 +25195,8 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [editable path="Annunciators/P601_A11"]
 [editable path="Annunciators/P601_A12"]
 [editable path="Annunciators/P602_A13"]
+[editable path="Annunciators/C1"]
+[editable path="Annunciators/C5"]
 [editable path="Node3D"]
 [editable path="Node3D/Circular"]
 [editable path="main_generator_sync"]

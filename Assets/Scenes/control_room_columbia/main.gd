@@ -1614,6 +1614,7 @@ var switches = {
 			"green" : null,
 			"red" : null,
 			"lockout" : null,
+			"sync" : null,
 		},
 	},
 	"cb_s2": {
@@ -1630,6 +1631,7 @@ var switches = {
 			"green" : null,
 			"red" : null,
 			"lockout" : null,
+			"sync" : null,
 		},
 	},
 	"cb_s3": {
@@ -1646,6 +1648,103 @@ var switches = {
 			"green" : null,
 			"red" : null,
 			"lockout" : null,
+			"sync" : null,
+		},
+	},
+	#SL-11
+	"cb_1_11": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+			"lockout" : null,
+		},
+	},
+	"cb_11_1": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	#SL-21
+	"cb_2_21": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+			"lockout" : null,
+		},
+	},
+	"cb_21_2": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+		},
+	},
+	#SL-31
+	"cb_3_31": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
+			"lockout" : null,
+		},
+	},
+	"cb_31_3": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {
+			"green" : null,
+			"red" : null,
 		},
 	},
 	

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://7gv6q50fuutj"]
+[gd_scene load_steps=20 format=3 uid="uid://7gv6q50fuutj"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Player/player.gd" id="1_1w47b"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/framerate_counter.gd" id="2_m6aot"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://Assets/Scenes/Player/menu_player.gd" id="6_qkj5w"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/graphics_menu.gd" id="6_ssrgo"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/Chat.gd" id="8_c1qgp"]
+[ext_resource type="Texture2D" uid="uid://dlivrciyvivsb" path="res://icon.svg" id="9_jpp6s"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_emkox"]
 radius = 0.493347
@@ -75,6 +76,9 @@ _data = {
 "opaque": SubResource("Animation_qrta0")
 }
 
+[sub_resource type="LabelSettings" id="LabelSettings_p58d1"]
+font_size = 50
+
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_1w47b")
 
@@ -139,6 +143,7 @@ text = "State: Not Connected"
 script = ExtResource("5_72wwd")
 
 [node name="Menu" type="Node2D" parent="Head/Camera3d"]
+visible = false
 script = ExtResource("6_qkj5w")
 
 [node name="Menu" type="Node2D" parent="Head/Camera3d/Menu"]
@@ -308,6 +313,46 @@ size_flags_vertical = 8
 libraries = {
 "": SubResource("AnimationLibrary_ypu8n")
 }
+
+[node name="TouchScreen" type="Node2D" parent="Head/Camera3d"]
+
+[node name="goup" type="TouchScreenButton" parent="Head/Camera3d/TouchScreen"]
+position = Vector2(185, 460)
+texture_normal = ExtResource("9_jpp6s")
+action = "move_up"
+
+[node name="goback" type="TouchScreenButton" parent="Head/Camera3d/TouchScreen"]
+position = Vector2(179, 761)
+texture_normal = ExtResource("9_jpp6s")
+action = "move_down"
+
+[node name="gogogahleft" type="TouchScreenButton" parent="Head/Camera3d/TouchScreen"]
+position = Vector2(19, 610)
+texture_normal = ExtResource("9_jpp6s")
+action = "move_left"
+
+[node name="appleisgarbageright" type="TouchScreenButton" parent="Head/Camera3d/TouchScreen"]
+position = Vector2(347, 620)
+texture_normal = ExtResource("9_jpp6s")
+action = "move_right"
+
+[node name="gogoagahLOOKLEFT" type="TouchScreenButton" parent="Head/Camera3d/TouchScreen"]
+position = Vector2(1411, 622)
+texture_normal = ExtResource("9_jpp6s")
+action = "lookieleft"
+
+[node name="gdfisadipufsadLOOOKRGIHT" type="TouchScreenButton" parent="Head/Camera3d/TouchScreen"]
+position = Vector2(1737, 622)
+texture_normal = ExtResource("9_jpp6s")
+action = "lookieright"
+
+[node name="Label" type="Label" parent="Head/Camera3d/TouchScreen"]
+offset_left = 832.0
+offset_top = 4.0
+offset_right = 1346.0
+offset_bottom = 145.0
+text = "fuck you"
+label_settings = SubResource("LabelSettings_p58d1")
 
 [connection signal="input_event" from="Head/Camera3d/SettingsButton/Button/StaticBody2D" to="Head/Camera3d/SettingsButton/Button/StaticBody2D" method="_on_input_event"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Disconnect" to="Head/Camera3d/Menu" method="_disconnect_button_pressed"]

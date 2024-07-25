@@ -36,26 +36,23 @@ func _physics_process(_delta):
 	move_and_slide()
 
 func _unhandled_input(event: InputEvent):
-	if event is InputEventMouseMotion and Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT):
-		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-		rotation.y -= event.relative.x / mouseSensibility
-		$Head/Camera3d.rotation.x -= event.relative.y / mouseSensibility
-		$Head/Camera3d.rotation.x = clamp($Head/Camera3d.rotation.x, deg_to_rad(-90), deg_to_rad(90) )
-		mouse_relative_x = clamp(event.relative.x, -50, 50)
-		mouse_relative_y = clamp(event.relative.y, -50, 10)
-	elif event is InputEventMouseMotion:
-		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-	else:
-		input_dir = Input.get_vector("move_left", "move_right", "move_up", "move_down")
-		if $Head/Camera3d/Chat/Edit.has_focus():
-			input_dir = Vector2(0,0)
-		if event.is_action_pressed("menu_toggle"):
-			get_node("Head/Camera3d/Menu").visible = true
-		if event.is_action_pressed("zoom"):
-			if $"Head/Camera3d/Menu/Settings/Settings/Controls/CheckButton".button_pressed:
-				zoom_toggle = not zoom_toggle
-			else:
-				zoom_toggle = true
-		elif event.is_action_released("zoom"):
-			if not $"Head/Camera3d/Menu/Settings/Settings/Controls/CheckButton".button_pressed:
-				zoom_toggle = false
+
+	input_dir = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	if $Head/Camera3d/Chat/Edit.has_focus():
+		input_dir = Vector2(0,0)
+	if event.is_action_pressed("menu_toggle"):
+		get_node("Head/Camera3d/Menu").visible = true
+	if event.is_action_pressed("zoom"):
+		if $"Head/Camera3d/Menu/Settings/Settings/Controls/CheckButton".button_pressed:
+			zoom_toggle = not zoom_toggle
+		else:
+			zoom_toggle = true
+	elif event.is_action_released("zoom"):
+		if not $"Head/Camera3d/Menu/Settings/Settings/Controls/CheckButton".button_pressed:
+			zoom_toggle = false
+			
+	if event.is_action_pressed("lookieleft"):
+		$Head/Camera3d.rotation.y = $Head/Camera3d.rotation.y + deg_to_rad(5)
+		
+	if event.is_action_pressed("lookieright"):
+		$Head/Camera3d.rotation.y = $Head/Camera3d.rotation.y - deg_to_rad(5)

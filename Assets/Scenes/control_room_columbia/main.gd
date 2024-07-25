@@ -381,6 +381,14 @@ signal chat_message(message)
 		"atypical" : false,
 		"text" : false,
 	},
+	"div_1_sync": {
+		"node": $"div_1_sync",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 0,
+		"atypical" : false,
+		"text" : false,
+	},
 	
 	"rwm_group": {
 		"value": -1,
@@ -1721,7 +1729,7 @@ var switches = {
 		"lights" : {
 			"green" : null,
 			"red" : null,
-			"lockout" : null,
+			"close_permit" : null,
 		},
 	},
 	"cb_7dg1": {
@@ -1739,6 +1747,54 @@ var switches = {
 			"red" : null,
 			"lockout" : null,
 		},
+	},
+	"dg1_voltreg": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {},
+	},
+	"cb_dg1_7_mode": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {},
+	},
+	"sync_cb_dg1_7": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {},
+	},
+	"dg1_gov": {
+		"switch": null,
+		"positions": {
+			0: 45,
+			1: 0,
+			2: -45,
+		},
+		"position": 1,
+		"momentary": false,
+		"updated": false,
+		"lights" : {},
 	},
 	"diesel_gen_1": {
 		"switch": null,
@@ -1771,7 +1827,7 @@ var switches = {
 		"lights" : {
 			"green" : null,
 			"red" : null,
-			"lockout" : null,
+			"close_permit" : null,
 		},
 	},
 	"cb_8dg2": {

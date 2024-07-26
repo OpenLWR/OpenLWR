@@ -10,7 +10,7 @@ However, if you wish to play on a newer version, you can play from the source co
 
   <summary>Installing and Loading the project</summary>
 
-  First, you need to downloaded the Godot Editor, which can be found here : https://godotengine.org/download/windows/
+  First, you need to downloaded the Godot Editor, which can be found [here](https://godotengine.org/download)\
   When you unzip the downloaded file, you can launch godot, there is no actual installation required.
 
   Next, download the source code
@@ -42,11 +42,11 @@ However, if you wish to play on a newer version, you can play from the source co
 
 <details>
   <summary>Building the project (OPTIONAL)</summary>
+  
   Click "Edit" on the right side of the project manager.
   In the top left of the editor, click "Project", then "Export"
   
   ![image](https://github.com/user-attachments/assets/a3c90b61-d0b9-4863-8997-4420bec65634)
-
   In the new export window, click "Add..."
   Then select your operating system.
 

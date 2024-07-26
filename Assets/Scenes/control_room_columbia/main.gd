@@ -628,6 +628,7 @@ var selected_rod = null
 
 var connection_ready = false
 var connection_packet_sent = false
+var connection_timeout = 0
 
 var sent_messages: PackedStringArray = PackedStringArray()
 
@@ -859,7 +860,7 @@ func _process(delta):
 							var player_position = packet_data[player]
 							
 							if player == globals.username_requested_tojoin:
-								break #if the player is ourselves, ignore it
+								continue #if the player is ourselves, ignore it
 							
 							if player in players:
 								players[player].position = player_position
@@ -953,4 +954,12 @@ func _process(delta):
 							for alarm in alarms:
 								alarm = alarms[alarm]
 								alarm["material"] = null
-
+		elif state == WebSocketPeer.STATE_CONNECTING:
+			connection_timeout += 1
+			if connection_timeout > 300: #around 5 seconds
+				socket.close()
+				globals.disconnect_msg = "Client failed to connect in a timely manner. Please check your internet connection."
+				get_tree().change_scene_to_file("res://Assets/Scenes/Lobby/new_lobby.tscn")
+				set_process(false)
+				
+			

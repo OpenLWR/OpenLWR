@@ -3414,7 +3414,6 @@ visible = false
 
 [node name="cb_2_4" parent="Control Room Panels/Main Panel Right Side/Controls" instance=ExtResource("44_253tc")]
 transform = Transform3D(-4.37113e-08, -0.979134, -0.203215, 0, 0.203215, -0.979134, 1, -4.27993e-08, -8.88281e-09, 4.55956, 0.0513972, -7.99711)
-script = null
 
 [node name="PTL" parent="Control Room Panels/Main Panel Right Side/Controls/cb_2_4" index="5"]
 visible = false
@@ -5675,7 +5674,6 @@ outline_size = 0
 
 [node name="cb_b8" parent="Control Room Panels/Main Panel Right Side/Controls/SM8" instance=ExtResource("44_253tc")]
 transform = Transform3D(-4.37113e-08, -0.979134, -0.203215, 0, 0.203215, -0.979134, 1, -4.27993e-08, -8.88281e-09, 4.7358, 0.0148185, -10.1971)
-script = null
 
 [node name="Sphere_001" parent="Control Room Panels/Main Panel Right Side/Controls/SM8/cb_b8/selector_switch/Base" index="2"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.49012e-08, 0, 1.49012e-08, 1, 0.772068, 0.123819, 0.575294)
@@ -6013,7 +6011,6 @@ outline_size = 0
 
 [node name="cb_dg2_8_mode" parent="Control Room Panels/Main Panel Right Side/Controls/SM8" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(-4.37114e-08, -0.979223, -0.202787, 0, 0.202787, -0.979223, 1, -4.28032e-08, -8.86412e-09, 4.56682, 0.061177, -10.2969)
-script = null
 
 [node name="Left" parent="Control Room Panels/Main Panel Right Side/Controls/SM8/cb_dg2_8_mode" index="0"]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
@@ -6068,7 +6065,6 @@ horizontal_alignment = 2
 
 [node name="sync_cb_b8" parent="Control Room Panels/Main Panel Right Side/Controls/SM8" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(-4.37114e-08, -0.979223, -0.202787, 0, 0.202787, -0.979223, 1, -4.28032e-08, -8.86412e-09, 4.74308, 0.0246754, -10.2969)
-script = null
 
 [node name="Left" parent="Control Room Panels/Main Panel Right Side/Controls/SM8/sync_cb_b8" index="0"]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
@@ -6115,7 +6111,6 @@ visible = false
 
 [node name="sync_cb_8_3" parent="Control Room Panels/Main Panel Right Side/Controls/SM8" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(-4.37114e-08, -0.979223, -0.202787, 0, 0.202787, -0.979223, 1, -4.28032e-08, -8.86412e-09, 4.91934, -0.0118263, -9.99686)
-script = null
 
 [node name="Left" parent="Control Room Panels/Main Panel Right Side/Controls/SM8/sync_cb_8_3" index="0"]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
@@ -6162,7 +6157,6 @@ visible = false
 
 [node name="sync_cb_dg2_8" parent="Control Room Panels/Main Panel Right Side/Controls/SM8" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(-4.37114e-08, -0.979223, -0.202787, 0, 0.202787, -0.979223, 1, -4.28032e-08, -8.86412e-09, 4.56682, 0.061177, -10.1969)
-script = null
 
 [node name="Left" parent="Control Room Panels/Main Panel Right Side/Controls/SM8/sync_cb_dg2_8" index="0"]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
@@ -6212,7 +6206,6 @@ visible = false
 
 [node name="dg2_voltreg" parent="Control Room Panels/Main Panel Right Side/Controls/SM8" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(-4.37114e-08, -0.979223, -0.202787, 0, 0.202787, -0.979223, 1, -4.28032e-08, -8.86412e-09, 4.56682, 0.061177, -10.3969)
-script = null
 
 [node name="Left" parent="Control Room Panels/Main Panel Right Side/Controls/SM8/dg2_voltreg" index="0"]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
@@ -6258,7 +6251,6 @@ visible = false
 
 [node name="dg2_gov" parent="Control Room Panels/Main Panel Right Side/Controls/SM8" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(-4.37114e-08, -0.979223, -0.202787, 0, 0.202787, -0.979223, 1, -4.28032e-08, -8.86412e-09, 4.50807, 0.0733442, -9.99686)
-script = null
 
 [node name="Left" parent="Control Room Panels/Main Panel Right Side/Controls/SM8/dg2_gov" index="0"]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
@@ -7107,7 +7099,6 @@ outline_size = 0
 
 [node name="cb_b7" parent="Control Room Panels/Main Panel Right Side/Controls/SM7" instance=ExtResource("44_253tc")]
 transform = Transform3D(-4.37113e-08, -0.979134, -0.203215, 0, 0.203215, -0.979134, 1, -4.27993e-08, -8.88281e-09, 4.7358, 0.0148185, -5.59711)
-script = null
 
 [node name="Sphere_001" parent="Control Room Panels/Main Panel Right Side/Controls/SM7/cb_b7/selector_switch/Base" index="2"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.49012e-08, 0, 1.49012e-08, 1, 0.772068, 0.123819, 0.575294)
@@ -7499,7 +7490,6 @@ horizontal_alignment = 2
 
 [node name="sync_cb_b7" parent="Control Room Panels/Main Panel Right Side/Controls/SM7" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(-4.37114e-08, -0.979223, -0.202787, 0, 0.202787, -0.979223, 1, -4.28032e-08, -8.86412e-09, 4.74308, 0.0246754, -5.69686)
-script = null
 
 [node name="Left" parent="Control Room Panels/Main Panel Right Side/Controls/SM7/sync_cb_b7" index="0"]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
@@ -7546,7 +7536,6 @@ visible = false
 
 [node name="sync_cb_7_1" parent="Control Room Panels/Main Panel Right Side/Controls/SM7" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(-4.37114e-08, -0.979223, -0.202787, 0, 0.202787, -0.979223, 1, -4.28032e-08, -8.86412e-09, 4.91934, -0.0118263, -5.79686)
-script = null
 
 [node name="Left" parent="Control Room Panels/Main Panel Right Side/Controls/SM7/sync_cb_7_1" index="0"]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
@@ -14787,7 +14776,6 @@ visible = false
 
 [node name="cb_4_2" parent="Control Room Panels/Main Panel Left Side/Controls/HPCS" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 7.59293, 0.0792902, 5.68428)
-script = null
 
 [node name="Left" parent="Control Room Panels/Main Panel Left Side/Controls/HPCS/cb_4_2" index="0"]
 transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
@@ -27098,6 +27086,16 @@ texture = ExtResource("46_lasde")
 [node name="Sprite3D2" parent="div_1_sync/Circular" index="4"]
 texture = ExtResource("47_fyt36")
 
+[node name="div_2_sync" parent="." instance=ExtResource("45_mx4yt")]
+transform = Transform3D(0.28, 0, 1.15463e-14, 0, 0.28, 0, -1.15463e-14, 0, 0.28, -6.19586, 1.05907, 3.80173)
+script = ExtResource("54_8uecp")
+
+[node name="Sprite3D" parent="div_2_sync/Circular" index="3"]
+texture = ExtResource("46_lasde")
+
+[node name="Sprite3D2" parent="div_2_sync/Circular" index="4"]
+texture = ExtResource("47_fyt36")
+
 [node name="Node3D2" parent="." instance=ExtResource("45_mx4yt")]
 transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-08, 8.49855, 1.71166, -7.94945)
 
@@ -28011,3 +28009,5 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [editable path="main_generator_sync/Circular"]
 [editable path="div_1_sync"]
 [editable path="div_1_sync/Circular"]
+[editable path="div_2_sync"]
+[editable path="div_2_sync/Circular"]

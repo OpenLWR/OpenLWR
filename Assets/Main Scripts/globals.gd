@@ -6,6 +6,7 @@ var connection_state = WebSocketPeer.STATE_CLOSED
 var last_sent_x = 0
 var last_sent_y = 0
 var last_sent_z = 0
+var disconnect_msg = ""
 
 var renderer = null
 

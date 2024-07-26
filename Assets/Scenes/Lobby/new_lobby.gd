@@ -38,6 +38,12 @@ func _ready():
 		if not arguments.join.is_empty():
 			djoin_ip = arguments.join
 		connect_server(djoin_ip, djoin_scene)
+		
+	if globals.disconnect_msg != "":
+		$KickMessage/VBoxContainer/Name/Label.text = "You were disconnected with reason:\n%s" % globals.disconnect_msg
+		$KickMessage.popup()
+		globals.disconnect_msg = ""
+		
 	pass
 
 func _on_add_server_pressed():

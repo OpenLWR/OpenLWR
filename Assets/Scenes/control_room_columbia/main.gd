@@ -912,8 +912,13 @@ func _process(delta):
 				var packet_data = parse_b64(packet[1])
 				
 				if packet_id == server_packets.USER_LOGIN_ACK:
-					connection_ready = true
-					init_scene()
+					if packet_data == "ok":
+						connection_ready = true
+						init_scene()
+					else:
+						globals.disconnect_msg = packet_data
+						get_tree().change_scene_to_file("res://Assets/Scenes/Lobby/new_lobby.tscn")
+						set_process(false)
 	
 				elif packet_id == server_packets.DOWNLOAD_DATA:
 					packet_data = packet_data.split("|")

@@ -5,7 +5,7 @@
 [sub_resource type="SphereMesh" id="SphereMesh_y0bul"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_etu0p"]
-radius = 0.613552
+radius = 0.448812
 
 [node name="vr_player" type="Node3D"]
 script = ExtResource("1_vwgep")
@@ -13,19 +13,20 @@ script = ExtResource("1_vwgep")
 [node name="XROrigin3D" type="XROrigin3D" parent="."]
 
 [node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+fov = 120.0
 
 [node name="LeftController" type="XRController3D" parent="XROrigin3D"]
 tracker = &"left_hand"
 
 [node name="Hand" type="MeshInstance3D" parent="XROrigin3D/LeftController"]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+transform = Transform3D(0.08, 0, 0, 0, 0.08, 0, 0, 0, 0.08, 0, 0, 0)
 mesh = SubResource("SphereMesh_y0bul")
 
 [node name="RightController" type="XRController3D" parent="XROrigin3D"]
 tracker = &"right_hand"
 
 [node name="Hand" type="MeshInstance3D" parent="XROrigin3D/RightController"]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+transform = Transform3D(0.08, 0, 0, 0, 0.08, 0, 0, 0, 0.08, 0, 0, 0)
 mesh = SubResource("SphereMesh_y0bul")
 skeleton = NodePath("../../LeftController")
 

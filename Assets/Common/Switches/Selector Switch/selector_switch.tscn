@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://cyksa23nxqjwn"]
+[gd_scene load_steps=9 format=3 uid="uid://cyksa23nxqjwn"]
 
 [ext_resource type="Script" path="res://Assets/Common/Switches/Selector Switch/selector_switch.gd" id="1_w2284"]
-[ext_resource type="Material" uid="uid://dqms4q6oxflb7" path="res://Assets/Materials/silver_metal.tres" id="2_jm5jg"]
+[ext_resource type="Material" path="res://Assets/Materials/silver_metal.tres" id="2_jm5jg"]
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="3_ym3f2"]
 [ext_resource type="PackedScene" uid="uid://gxikcyses8jk" path="res://Assets/Common/Switches/Selector Switch/selector_switch.glb" id="4_o0pj7"]
 [ext_resource type="FontFile" uid="uid://cqsshl4y7vp2w" path="res://Assets/Fonts/Roboto Condensed/RobotoCondensed-VariableFont_wght.ttf" id="5_hmpvk"]
@@ -9,6 +9,9 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_isvvb"]
 size = Vector3(0.0205078, 0.0341797, 0.0185547)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jsqot"]
+size = Vector3(1.07826, 1.35989, 1.4996)
 
 [node name="Selector Switch" type="Node3D"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
@@ -88,6 +91,22 @@ stream = ExtResource("5_o4khq")
 max_distance = 6.0
 
 [node name="rotate_opposite" type="Node" parent="."]
+
+[node name="VRInteractionZoneL" type="Area3D" parent="."]
+transform = Transform3D(0.0252, 1.14679e-15, -2.20305e-09, 9.04728e-29, -0.0252, -1.31178e-08, -2.20305e-09, 1.31178e-08, -0.0252, -4.10558e-10, -0.0016467, 0.00730372)
+input_ray_pickable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VRInteractionZoneL"]
+transform = Transform3D(0.999997, 1.93224e-24, -4.81115e-18, -1.01459e-24, 0.999997, -1.02887e-11, 4.81115e-18, 1.02887e-11, 0.999997, 0.551053, -0.169142, 0.249802)
+shape = SubResource("BoxShape3D_jsqot")
+
+[node name="VRInteractionZoneR" type="Area3D" parent="."]
+transform = Transform3D(0.00063504, -2.88992e-17, 3.46945e-18, 2.88992e-17, 0.00063504, 6.61137e-10, -3.46945e-18, -6.61137e-10, 0.00063504, -4.36994e-10, -0.0016052, 0.00711967)
+input_ray_pickable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VRInteractionZoneR"]
+transform = Transform3D(39.6824, -1.1601e-17, -3.46914e-06, 1.80585e-12, -39.6824, 2.06567e-05, -3.46914e-06, -2.06567e-05, -39.6824, -20.3014, 6.47783, -9.33018)
+shape = SubResource("BoxShape3D_jsqot")
 
 [connection signal="input_event" from="selector_switch/Left" to="." method="switch_click_left"]
 [connection signal="input_event" from="selector_switch/Right" to="." method="switch_click_right"]

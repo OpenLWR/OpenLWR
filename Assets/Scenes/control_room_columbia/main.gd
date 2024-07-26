@@ -1770,6 +1770,7 @@ var switches = {
 			"green" : null,
 			"red" : null,
 			"lockout" : null,
+			"sync" : null,
 		},
 	},
 	"sync_cb_7_1": {
@@ -1865,6 +1866,7 @@ var switches = {
 			"green" : null,
 			"red" : null,
 			"lockout" : null,
+			"sync" : null,
 		},
 	},
 	"sync_cb_8_3": {

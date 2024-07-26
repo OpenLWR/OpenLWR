@@ -3383,6 +3383,7 @@ func _process(delta):
 			if not connection_packet_sent:
 				var login_parameters = {
 					"username": globals.username_requested_tojoin,
+					"version": globals.version
 
 					# TODO: make a seperate service for this, so the server doesn't have access to the unique id
 					#"unique_id": OS.get_unique_id(),

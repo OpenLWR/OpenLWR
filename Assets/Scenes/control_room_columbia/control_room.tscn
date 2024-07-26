@@ -6844,7 +6844,7 @@ font_size = 60
 outline_size = 0
 
 [node name="sync" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/SM7/cb_7_1"]
-transform = Transform3D(0.0299997, 1.58819e-22, 3.97047e-23, 0, 0.03, 1.11759e-08, 0, -4.65661e-10, 0.03, -0.0217961, 0.0936673, 0.00109553)
+transform = Transform3D(0.0299997, 2.11758e-22, 5.29396e-23, 0, 0.03, 1.11759e-08, 0, -4.65661e-10, 0.03, -0.0217961, 0.0936673, 0.00109553)
 size = Vector3(1, 0.910645, 0.654785)
 material = ExtResource("13_vi7pg")
 

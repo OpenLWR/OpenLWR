@@ -10,3 +10,5 @@ var last_sent_z = 0
 var renderer = null
 
 var use_vr = false
+
+var version = "alpha20240725"

@@ -32,8 +32,7 @@ func format_position(pos:int):
 		
 	return {"a" : text, "b" : selected}
 
-func _ready():
-	
+func init():
 	while true:
 		await get_tree().create_timer(0.1).timeout
 		
@@ -73,3 +72,6 @@ func _ready():
 			$"TL/Pos".modulate = Color(1, 0.994, 0.705)
 		else:
 			$"TL/Pos".modulate = Color(255,255,255)
+
+func _ready():
+	node_3d.init_scene_objects.connect(init)

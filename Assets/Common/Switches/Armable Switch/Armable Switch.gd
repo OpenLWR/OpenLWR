@@ -1,12 +1,15 @@
 extends Node3D
 
 @onready var node_3d = $"/root/Node3D"
-@onready var button = node_3d.buttons[self.name]
+var button = null
 
+func init():
+	button = node_3d.buttons[self.name]
+	button.switch = self
 
 func _ready():
 	$"button".rotation_degrees.y = 45
-	button.switch = self
+	node_3d.init_scene_objects.connect(init)
 	pass
 	
 func animate_armed(armed:bool):

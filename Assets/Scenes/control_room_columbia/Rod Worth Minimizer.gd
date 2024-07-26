@@ -18,8 +18,7 @@ func format_rwm(num:int,no_extra:bool):
 		
 	return text
 
-func _ready():
-	
+func init():
 	while true:
 		await get_tree().create_timer(0.1).timeout
 
@@ -34,4 +33,8 @@ func _ready():
 		
 		value = format_rwm(node_3d.gauges["rwm_group"].value,true)
 		$"Text/GROUP/Label".text = value
+
+func _ready():
+	node_3d.init_scene_objects.connect(init)
+	
 

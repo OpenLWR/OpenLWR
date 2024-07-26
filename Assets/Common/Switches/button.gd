@@ -3,14 +3,13 @@ extends CSGBox3D
 @onready var node_3d = $"/root/Node3D"
 var button 
 
-func _ready():
-	while not self.name in node_3d.buttons:
-		await get_tree().create_timer(0.1).timeout
+func init():
 	button = node_3d.buttons[self.name]
 	button.switch = self
+
+func _ready():
+	node_3d.init_scene_objects.connect(init)
 	
-
-
 func button_state_change(state: bool):
 	button.state = state
 	# TODO: button audio

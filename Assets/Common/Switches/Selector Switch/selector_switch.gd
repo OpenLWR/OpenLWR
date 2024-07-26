@@ -2,13 +2,14 @@
 extends Node3D
 
 @onready var node_3d = $"/root/Node3D"
-@onready var switch = node_3d.switches[self.name]
+var switch = null
 @onready var rotate_opposite = get_node_or_null("rotate_opposite") != null
 @onready var has_flag = get_node_or_null("selector_switch/Flag")
 var flag_green = null
 var flag_red = null
 
-func _ready():
+func init():
+	switch = node_3d.switches[self.name]
 	switch.switch = self
 	
 	if switch.lights != {}:
@@ -28,7 +29,10 @@ func _ready():
 		#preload the materials here, if it has a flag
 		flag_green = preload("res://Assets/Materials/green_flag.tres")
 		flag_red = preload("res://Assets/Materials/red_flag.tres")
-			
+
+func _ready():
+	node_3d.init_scene_objects.connect(init)
+
 func switch_position_change(to_position: int):
 	switch.position = to_position
 	var rotate_position = switch.positions[switch.position]

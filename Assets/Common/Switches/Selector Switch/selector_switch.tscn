@@ -8,7 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://wlb0cgw34y6m" path="res://Assets/Audio/breaker_switch.mp3" id="5_o4khq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_isvvb"]
-size = Vector3(0.0205078, 0.0341797, 0.0185547)
+size = Vector3(0.0205078, 0.0341797, 0.0229492)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jsqot"]
 size = Vector3(1.07826, 1.35989, 1.4996)

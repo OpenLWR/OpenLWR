@@ -399,6 +399,146 @@ signal chat_message(message)
 		"text" : false,
 	},
 	
+	#Reactor Recirculation
+	
+	#RR B
+	
+	"rrc_p_1b_volts": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/rrc_p_1b_volts",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 8000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"rrc_p_1b_amps": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/rrc_p_1b_amps",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 1000,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	"rrc_p_1b_freq": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/rrc_p_1b_freq",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 70,
+		"atypical" : false,
+		"text" : false,
+	},
+	"rrc_p_1b_speed": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/rrc_p_1b_speed",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 2000,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	"station_1b_flow": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/station_1b/station_1b_flow",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 60000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"station_1b_bias": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/station_1b/station_1b_bias",
+		"value": 0,
+		"min_value": -10,
+		"max_value": 10,
+		"atypical" : false,
+		"text" : false,
+	},
+	"station_1b_demand": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/station_1b/station_1b_demand",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 70,
+		"atypical" : false,
+		"text" : false,
+	},
+	"station_1b_actual": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/station_1b/station_1b_actual",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 70,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	#RR A
+	
+	"rrc_p_1a_volts": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/rrc_p_1a_volts",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 8000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"rrc_p_1a_amps": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/rrc_p_1a_amps",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 1000,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	"rrc_p_1a_freq": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/rrc_p_1a_freq",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 70,
+		"atypical" : false,
+		"text" : false,
+	},
+	"rrc_p_1a_speed": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/rrc_p_1a_speed",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 2000,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	"station_1a_flow": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/station_1a/station_1a_flow",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 60000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"station_1a_bias": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/station_1a/station_1a_bias",
+		"value": 0,
+		"min_value": -10,
+		"max_value": 10,
+		"atypical" : false,
+		"text" : false,
+	},
+	"station_1a_demand": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/station_1a/station_1a_demand",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 70,
+		"atypical" : false,
+		"text" : false,
+	},
+	"station_1a_actual": {
+		"node": $"Control Room Panels/Main Panel Left Side/Controls/RRC/station_1a/station_1a_actual",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 70,
+		"atypical" : false,
+		"text" : false,
+	},
+	
 	"rwm_group": {
 		"value": -1,
 		"atypical" : true,

@@ -6,5 +6,5 @@ func calculate_vertical_scale_position(indicated_value, scale_min, scale_max, me
 func set_gauge_value(value, min, max):
 	var tween = get_tree().create_tween()
 	tween.set_parallel()
-	tween.tween_property($edgewise_gauge/Needle, "rotation_degrees", Vector3(-180, 0, calculate_vertical_scale_position(value, min, max)), 0.1)
+	tween.tween_property($edgewise_gauge/Needle, "rotation_degrees", Vector3(-180, 0, calculate_vertical_scale_position(value, min, max)), 0.3)
 	

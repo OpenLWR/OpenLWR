@@ -1,0 +1,80 @@
+[gd_scene load_steps=9 format=3 uid="uid://c5dd8edkvmcwo"]
+
+[ext_resource type="Script" path="res://Assets/Common/Switches/Selector Switch/selector_button.gd" id="1_88ksu"]
+[ext_resource type="PackedScene" uid="uid://gxikcyses8jk" path="res://Assets/Common/Switches/Selector Switch/selector_switch.glb" id="2_dp1pw"]
+[ext_resource type="Material" path="res://Assets/Materials/silver_metal.tres" id="3_1w00v"]
+[ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="4_hi3rd"]
+[ext_resource type="FontFile" uid="uid://cqsshl4y7vp2w" path="res://Assets/Fonts/Roboto Condensed/RobotoCondensed-VariableFont_wght.ttf" id="5_hl56d"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tv5kh"]
+albedo_color = Color(0.215902, 0.215902, 0.215902, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jsqot"]
+size = Vector3(1.07826, 1.35989, 1.4996)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_isvvb"]
+size = Vector3(0.0205078, 0.0341797, 0.0229492)
+
+[node name="Button" type="Node3D"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+script = ExtResource("1_88ksu")
+
+[node name="Button" parent="." instance=ExtResource("2_dp1pw")]
+transform = Transform3D(-1, 8.74228e-08, 3.82137e-15, 0, -4.37114e-08, 1, 8.74228e-08, 1, 4.37114e-08, -1.38783e-11, 0, -0.00015875)
+
+[node name="Base" parent="Button" index="0"]
+material_override = ExtResource("3_1w00v")
+
+[node name="Handle" parent="Button" index="1"]
+transform = Transform3D(1, 3.48683e-35, -3.61112e-35, 0, -3.57628e-07, -1, 0, 1, -3.57628e-07, 0, 0, -4.88111e-05)
+visible = false
+material_override = ExtResource("3_1w00v")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Button/Handle" index="0"]
+transform = Transform3D(-8.74228e-09, -4.66436e-35, 0.2, -0.2, -7.15256e-08, -8.74228e-09, 7.15256e-08, -0.2, 3.12648e-15, -4.2725e-05, 6.56703e-05, -0.000270959)
+size = Vector3(0.0897217, 0.002, 0.0112915)
+material = ExtResource("4_hi3rd")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Button"]
+transform = Transform3D(0.05, 0, 7.44793e-35, 0, -2.18557e-09, -0.05, 0, 0.05, -2.18557e-09, -2.26288e-05, 0.012883, 0.0200607)
+size = Vector3(0.719238, 0.17273, 0.0166133)
+material = ExtResource("4_hi3rd")
+
+[node name="Label3D" type="Label3D" parent="Button/CSGBox3D"]
+transform = Transform3D(0.45, 5.04871e-28, 0, 0, 0.45, 2.5411e-21, 0, -2.5411e-21, 0.45, -0.00445222, 0, 0.010841)
+sorting_offset = 1.0
+shaded = true
+text = "AUTO"
+font = ExtResource("5_hl56d")
+font_size = 35
+outline_size = 0
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Button"]
+transform = Transform3D(1, 0, -4.85524e-36, 0, 1, 0, 0, 0, 1, 0, 0.009029, -4.25007e-17)
+radius = 0.0128281
+height = 0.00656719
+material = SubResource("StandardMaterial3D_tv5kh")
+
+[node name="Move" type="AudioStreamPlayer3D" parent="."]
+max_distance = 6.0
+
+[node name="rotate_opposite" type="Node" parent="."]
+
+[node name="VRInteractionZone" type="Area3D" parent="."]
+transform = Transform3D(0.0252, 1.14679e-15, -2.20305e-09, 9.04728e-29, -0.0252, -1.31178e-08, -2.20305e-09, 1.31178e-08, -0.0252, -4.10558e-10, -0.0016467, 0.00730372)
+input_ray_pickable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VRInteractionZone"]
+transform = Transform3D(0.999997, 1.94517e-24, -4.81115e-18, -1.01459e-24, 0.999997, -1.02887e-11, 4.81115e-18, 1.02887e-11, 0.999997, 0.101091, -0.169142, 0.249802)
+shape = SubResource("BoxShape3D_jsqot")
+
+[node name="Press" type="StaticBody3D" parent="."]
+transform = Transform3D(-1, 8.74228e-08, 3.82137e-15, 0, -4.37114e-08, 1, 8.74228e-08, 1, 4.37114e-08, -0.00562458, 0.00280332, -0.000158749)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Press"]
+transform = Transform3D(1, 0, -4.85524e-36, 1.9421e-35, 1, 0, 0, 0, 1, -0.00863382, -2.91038e-11, -0.00219726)
+shape = SubResource("BoxShape3D_isvvb")
+
+[connection signal="input_event" from="Press" to="." method="switch_click"]
+
+[editable path="Button"]

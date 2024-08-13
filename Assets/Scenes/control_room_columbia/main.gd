@@ -1046,6 +1046,8 @@ func _process(delta):
 										rcd.history[channel] = []
 										
 									rcd.history[channel].append(channels[channel].value)
+									
+								rcd.update_time = 0
 							
 							rcd.update_time += 1
 							

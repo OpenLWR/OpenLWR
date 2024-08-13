@@ -1030,11 +1030,26 @@ func _process(delta):
 						packet_data = json.parse_string(packet_data)
 						
 						for recorder in packet_data:
-							var page_info = packet_data[recorder].page_info
-							var page = packet_data[recorder].page
+							#var page_info = packet_data[recorder].page_info
+							#var page = packet_data[recorder].page
+							var channels = packet_data[recorder].channels
 							
-							if recorders[recorder].object != null:
-								recorders[recorder].object.update(page,page_info)
+							var rcd = recorders[recorder]
+							
+							if rcd.object != null:
+								#rcd.object.update(page,page_info)
+								rcd.object.update(channels)
+								
+							if rcd.update_time >= 10: #1 second, assuming the server or connection isnt lacking
+								for channel in channels:
+									if rcd.history[channel] == null:
+										rcd.history[channel] = []
+										
+									rcd.history[channel].append(channels[channel].value)
+							
+							rcd.update_time += 1
+							
+							
 							
 							
 							
@@ -1119,6 +1134,8 @@ func _process(delta):
 							for recorder in recorders:
 								recorder = recorders[recorder]
 								recorder["object"] = null
+								recorder["history"] = {}
+								recorder["update_time"] = 0
 								
 		elif state == WebSocketPeer.STATE_CONNECTING:
 			connection_timeout += 1

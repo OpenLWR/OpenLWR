@@ -1,4 +1,4 @@
-[gd_scene load_steps=575 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=576 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -51,6 +51,7 @@
 [ext_resource type="Material" uid="uid://bvxdwburpvc23" path="res://Assets/Materials/white_amber_lamp.tres" id="33_eke4b"]
 [ext_resource type="Texture2D" uid="uid://b5f6exhfj4b6v" path="res://Assets/Textures/white-square.png" id="33_m77f1"]
 [ext_resource type="Material" uid="uid://wv7xg7qe3lhc" path="res://Assets/Scenes/control_room_columbia/grey_metal.tres" id="33_rm5oy"]
+[ext_resource type="PackedScene" uid="uid://c43dvwlnpb8qa" path="res://Assets/Common/Recorders/recorder.tscn" id="35_00tn5"]
 [ext_resource type="Material" uid="uid://2or1ibx01es4" path="res://Assets/Materials/edgewise_gauge_template.tres" id="35_ahra6"]
 [ext_resource type="Texture2D" uid="uid://cxu5dsqgud1ll" path="res://Assets/Textures/Edgewise Gauge/Columbia/EDGEWISE_TURBINE_SPEED_RPM_V2.png" id="36_pun37"]
 [ext_resource type="Material" uid="uid://cpgwpldvm45d2" path="res://Assets/Materials/annunciator_white.tres" id="37_tvh2d"]
@@ -3274,10 +3275,10 @@ script = ExtResource("1_4t1fm")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06602, 0)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, 0.0259184, 1.96479, -2.06316)
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -0.861246, 1.96479, -11.6681)
 use_collision = true
 flip_faces = true
-size = Vector3(22.3302, 3.9657, 18.3238)
+size = Vector3(24, 3.9657, 37.5)
 material = ExtResource("3_pvt5y")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -8545,7 +8546,7 @@ material = ExtResource("4_6rpi8")
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -0.12327, 0, -9.78588)
 
 [node name="rpv_level" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/Controls"]
-transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 4.59353, 0.617788, 3.10584)
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 4.41553, 0.617788, 2.92784)
 size = Vector3(0.17, 0.17, 0.17)
 
 [node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/rpv_level"]
@@ -17631,6 +17632,9 @@ transform = Transform3D(3.62636e-08, -0.5, 1.4902e-08, -0.0986914, 7.451e-09, 0.
 [node name="Frame" parent="Control Room Panels/Main Panel Left Side/Controls/RRC/station_1a/station_1a_actual/edgewise_gauge" index="1"]
 transform = Transform3D(1.04657, -2.98023e-08, 1.49011e-08, 1.49012e-08, -3.74283e-07, -1.04657, 5.96046e-08, 1.04657, -3.74283e-07, 0.958853, 0, 0)
 
+[node name="601RPV" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("35_00tn5")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 4.77312, 0.622153, 3.29348)
+
 [node name="PanelDiagrams" type="Node3D" parent="Control Room Panels/Main Panel Left Side"]
 
 [node name="label3" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
@@ -21542,6 +21546,66 @@ text = "SM-8"
 
 [node name="Sprite3D" parent="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/Label" index="2"]
 visible = false
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Control Room Panels"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.46864, 1.19435, 0.823868)
+size = Vector3(7.03703, 2.40366, 1.04492)
+material = ExtResource("4_6rpi8")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Control Room Panels"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.03136, 1.19435, 0.823868)
+size = Vector3(7.03703, 2.40366, 1.04492)
+material = ExtResource("4_6rpi8")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Control Room Panels"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.46864, 1.19435, -2.67613)
+size = Vector3(7.03703, 2.40366, 1.04492)
+material = ExtResource("4_6rpi8")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Control Room Panels"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.03136, 1.19435, -2.67613)
+size = Vector3(7.03703, 2.40366, 1.04492)
+material = ExtResource("4_6rpi8")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Control Room Panels"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.46864, 1.19435, -6.17613)
+size = Vector3(7.03703, 2.40366, 1.04492)
+material = ExtResource("4_6rpi8")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Control Room Panels"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.03136, 1.19435, -6.17613)
+size = Vector3(7.03703, 2.40366, 1.04492)
+material = ExtResource("4_6rpi8")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Control Room Panels"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.46864, 1.19435, -9.67613)
+size = Vector3(7.03703, 2.40366, 1.04492)
+material = ExtResource("4_6rpi8")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Control Room Panels"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.03136, 1.19435, -9.67613)
+size = Vector3(7.03703, 2.40366, 1.04492)
+material = ExtResource("4_6rpi8")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Control Room Panels"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.46864, 1.19435, -13.1761)
+size = Vector3(7.03703, 2.40366, 1.04492)
+material = ExtResource("4_6rpi8")
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Control Room Panels"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.03136, 1.19435, -13.1761)
+size = Vector3(7.03703, 2.40366, 1.04492)
+material = ExtResource("4_6rpi8")
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="Control Room Panels"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.46864, 1.19435, -16.6761)
+size = Vector3(7.03703, 2.40366, 1.04492)
+material = ExtResource("4_6rpi8")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Control Room Panels"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.03136, 1.19435, -16.6761)
+size = Vector3(7.03703, 2.40366, 1.04492)
+material = ExtResource("4_6rpi8")
 
 [node name="CSGPolygon3D" type="CSGPolygon3D" parent="."]
 transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, 7.228, 2.39, 4.943)
@@ -26982,43 +27046,54 @@ transform = Transform3D(-0.8, 0, -1.20797e-07, 0, 0.8, 0, 1.20797e-07, 0, -0.8, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00159264, -0.0182424, -0.0687156)
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/1-8/CSGBox3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
-text = ""
+transform = Transform3D(1, 0, 2.84217e-14, 0, 1, 0, -2.84217e-14, 0, 1, 0, 0, 0.163086)
+text = "RECIRC B
+MOTOR
+BEARING OIL
+LEVEL LOW"
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/1-7" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671387, -0.109344)
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/1-7/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
-text = ""
+text = "RECIRC B
+MOTOR
+BEARING OIL
+LEVEL HIGH"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/1-6/CSGBox3D" index="0"]
-text = ""
+text = "RECIRC B
+PUMP TRIP
+ATWS
+INITIATED"
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/1-5" index="1"]
 material = SubResource("StandardMaterial3D_wjhff")
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/1-5/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
-text = "RCIC
-TURBINE
-TRIP"
+text = ""
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/1-4" index="1"]
 material = SubResource("StandardMaterial3D_hnrl8")
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/1-4/CSGBox3D" index="0"]
-transform = Transform3D(1, 0, -1.77636e-14, 0, 1, 0, 1.77636e-14, 0, 1, 0, 0, 0.162994)
-text = "RCIC TURBINE
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.162994)
+text = "RECIRC A
+MOTOR
 BEARING OIL
-PRESSURE LOW"
+LEVEL LOW"
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/1-3" index="1"]
 transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0.00170898, 0.0067215, -0.109344)
 material = SubResource("StandardMaterial3D_lnwvn")
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/1-3/CSGBox3D" index="0"]
-text = ""
+text = "RECIRC A
+MOTOR
+BEARING OIL
+LEVEL HIGH"
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/1-2" index="1"]
 transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0.00170898, 0.0067215, -0.109344)
@@ -27026,8 +27101,10 @@ material = SubResource("StandardMaterial3D_cnfnx")
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/1-2/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, -1.52588e-05, 0, 0.163055)
-text = "RCIC
-ACTUATED"
+text = "RECIRC A
+PUMP TRIP
+ATWS
+INITIATED"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/1-1/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, -1.77636e-14, 0, 1, 0, 1.77636e-14, 0, 1, -1.52588e-05, 0, 0.162994)
@@ -27035,25 +27112,36 @@ text = ""
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/2-8/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
-text = ""
+text = "RECIRC B
+SYSTEM
+VIB HIGH"
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/2-7" index="1"]
 material = SubResource("StandardMaterial3D_y6dtc")
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/2-7/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
-text = ""
+text = "RECIRC B
+ PUMP 
+SEAL STAGING
+FLOW HIGH/LOW"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/2-6/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
-text = ""
+text = "RECIRC B
+PUMP
+OUTER SEAL
+LEAKAGE HIGH"
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/2-5" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671387, -0.109344)
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/2-5/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
-text = ""
+text = "RECIRC B
+PUMP SEAL
+COOLING WTR
+FLOW LOW"
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/2-4" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00169373, 0.00671387, -0.109329)
@@ -27061,43 +27149,63 @@ material = SubResource("StandardMaterial3D_s1dek")
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/2-4/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
-text = ""
+text = "RECIRC A
+SYSTEM
+VIB HIGH"
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/2-3" index="1"]
 material = SubResource("StandardMaterial3D_5n2ku")
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/2-3/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
-text = ""
+text = "RECIRC A
+ PUMP 
+SEAL STAGING
+FLOW HIGH/LOW"
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/2-2" index="1"]
 material = SubResource("StandardMaterial3D_nappv")
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/2-2/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
-text = ""
+text = "RECIRC A
+PUMP
+OUTER SEAL
+LEAKAGE HIGH"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/2-1/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
-text = ""
+text = "RECIRC A
+PUMP SEAL
+COOLING WTR
+FLOW LOW"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/3-8/CSGBox3D" index="0"]
 text = ""
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/3-7/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
-text = ""
+text = "LOOP B
+DELTA T
+CAVITATION
+LIMIT"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/3-6/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
-text = ""
+text = "RECIRC B
+MOTOR WINDING
+COOLANT FLOW
+LOW"
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/3-5" index="1"]
 material = SubResource("StandardMaterial3D_c45f3")
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/3-5/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
-text = ""
+text = "RECIRC B
+MOTOR WINDING
+COOLANT
+LEAKAGE"
 
 [node name="3-4" parent="Annunciators/P602_A6/Windows" index="20"]
 transform = Transform3D(0, 0, 0.03, 0, 0.03, 0, -0.03, 0, 0, 0.0136123, 0.0557945, 0.118167)
@@ -27113,15 +27221,22 @@ material = SubResource("StandardMaterial3D_bjeda")
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/3-3/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, -1.52588e-05, 0, 0.163055)
-text = ""
+text = "LOOP A
+DELTA T
+CAVITATION
+LIMIT"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/3-2/CSGBox3D" index="0"]
-text = ""
+text = "RECIRC A
+MOTOR WINDING
+COOLANT FLOW
+LOW"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/3-1/CSGBox3D" index="0"]
-text = "RHR A PUMP
-DISCH PRESS
-HIGH/LOW"
+text = "RECIRC A
+MOTOR WINDING
+COOLANT
+LEAKAGE"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/4-8/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
@@ -27129,42 +27244,55 @@ text = ""
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/4-7/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
-text = ""
+text = "RECIRC B
+MOTOR
+OC/GND"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/4-6/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
-text = ""
+text = "RECIRC B
+MOTOR BKR
+TRIP CKT
+UNDERVOLTAGE"
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/4-5" index="1"]
 material = SubResource("StandardMaterial3D_1huk4")
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/4-5/CSGBox3D" index="0"]
-text = ""
+text = "RECIRC B
+MOTOR BKR
+LOCKOUT BUS
+UNDERVOLTAGE"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/4-4/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
 text = ""
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/4-3/CSGBox3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
-text = "RHR A
-INJECTION VLV
-OPEN PERMISSIVE"
+transform = Transform3D(1, 0, 2.84217e-14, 0, 1, 0, -2.84217e-14, 0, 1, -1.52588e-05, 0, 0.163086)
+text = "RECIRC A
+MOTOR
+OC/GND"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/4-2/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
-text = "RHR A SUCTION
-VALVE V-4A
-SWITCH
-IN CLOSE"
+text = "RECIRC A
+MOTOR BKR
+TRIP CKT
+UNDERVOLTAGE"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/4-1/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
-text = ""
+text = "RECIRC A
+MOTOR BKR
+LOCKOUT BUS
+UNDERVOLTAGE"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/5-8/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
-text = ""
+text = "FEEDWATER
+PUMP TRIP
+LIMIT"
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/5-7" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671387, -0.109344)
@@ -27172,9 +27300,7 @@ material = SubResource("StandardMaterial3D_kyjjk")
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/5-7/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
-text = "RCIC PUMP RM
-WATER LEVEL
-HIGH"
+text = ""
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/5-6" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00169373, 0.00671387, -0.109329)
@@ -27185,7 +27311,10 @@ text = ""
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/5-5/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
-text = ""
+text = "LOOP B
+ASD CHANNEL
+FAILURE
+LIMIT"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/5-4/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
@@ -27193,9 +27322,7 @@ text = ""
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/5-3/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
-text = "RHR A PUMP RM
-WATER LEVEL
-HIGH"
+text = ""
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/5-2" index="1"]
 material = SubResource("StandardMaterial3D_lo5gr")
@@ -27206,27 +27333,34 @@ text = ""
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/5-1/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, -1.52588e-05, 0, 0.163055)
-text = ""
+text = "LOOP A
+ASD CHANNEL
+FAILURE
+LIMIT"
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/6-8" index="1"]
 transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 0.00170898, 0.00671387, -0.109344)
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/6-8/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
-text = "RCIC
-OUT OF
-SERVICE"
+text = ""
 
 [node name="CSGBox3D" parent="Annunciators/P602_A6/Windows/6-7" index="1"]
 material = SubResource("StandardMaterial3D_fhcci")
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/6-7/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
-text = ""
+text = "ATWS
+A OR B
+TEST SW
+IN TEST"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/6-6/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
-text = ""
+text = "RECIRC
+A OR B
+PUMP/MOTOR
+HIGH TEMP"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/6-5/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
@@ -27242,13 +27376,16 @@ text = ""
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/6-2/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
-text = ""
+text = "RECIRC
+A OR B
+HIGH FLOW
+DELTA"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Windows/6-1/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
-text = "RHR A
-OUT OF
-SERVICE"
+text = "RPV LEVEL
+LOW
+LIMIT"
 
 [node name="Label3D" parent="Annunciators/P602_A6/Label" index="0"]
 text = "ANN PANEL
@@ -27257,18 +27394,6 @@ P602.A6"
 [node name="Triangle" parent="Annunciators/P602_A6" index="3"]
 transform = Transform3D(-4.65661e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.65661e-10, 0.013339, 0.0788476, 0.108312)
 visible = false
-
-[node name="Triangle3" type="Sprite3D" parent="Annunciators/P602_A6"]
-transform = Transform3D(-4.65661e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.65661e-10, 0.013341, -0.104553, -0.276173)
-shaded = true
-double_sided = false
-texture = ExtResource("26_ud3n4")
-
-[node name="Triangle4" type="Sprite3D" parent="Annunciators/P602_A6"]
-transform = Transform3D(-4.65661e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.65661e-10, 0.013341, -0.104553, 0.108377)
-shaded = true
-double_sided = false
-texture = ExtResource("26_ud3n4")
 
 [node name="P602_A5" parent="Annunciators" instance=ExtResource("27_6jg2m")]
 transform = Transform3D(-0.8, 0, -1.20797e-07, 0, 0.8, 0, 1.20797e-07, 0, -0.8, 8.51969, 2.17951, -0.560829)
@@ -29191,6 +29316,130 @@ visible = false
 [node name="P602_A13" parent="Annunciators" instance=ExtResource("40_hblaj")]
 transform = Transform3D(-0.8, 0, 1.20797e-07, 0, 0.8, 0, -1.20797e-07, 0, -0.8, 8.51998, 2.17926, 0.244077)
 
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/1-4/CSGBox3D" index="0"]
+text = "ASD 1B1
+ALARM"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/1-3/CSGBox3D" index="0"]
+text = "ASD 1A1
+ALARM"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/1-2/CSGBox3D" index="0"]
+text = "REACTOR BLDG
+FLOOR SUMP B
+LEVEL HIGH"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/1-1/CSGBox3D" index="0"]
+text = "REACTOR BLDG
+FLOOR SUMP A
+LEVEL HIGH"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/2-4/CSGBox3D" index="0"]
+text = "ASD 1B1
+FAULT"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/2-3/CSGBox3D" index="0"]
+text = "ASD 1A1
+FAULT"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/2-2/CSGBox3D" index="0"]
+text = "REACTOR BLDG
+FLOOR SUMP R2
+LEVEL HIGH"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/2-1/CSGBox3D" index="0"]
+text = "REACTOR BLDG
+FLOOR SUMP R1
+LEVEL HIGH"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/3-4/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/3-3/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/3-2/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/3-1/CSGBox3D" index="0"]
+text = "REACTOR BLDG
+EQUIP SUMP
+LEVEL HIGH"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/4-4/CSGBox3D" index="0"]
+text = "ASD 1B2
+ALARM"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/4-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = "ASD 1A2
+ALARM"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/4-2/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/4-1/CSGBox3D" index="0"]
+text = "REACTOR BLDG
+EQUIP SUMP
+TEMP HIGH"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/5-4/CSGBox3D" index="0"]
+text = "ASD 1B2
+FAULT"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/5-3/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = "ASD 1A2
+FAULT"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/5-2/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/5-1/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/6-4/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/1-5/CSGBox3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
+text = "RECIRC A
+MOTOR
+BREAKER
+TRIP"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/2-5/CSGBox3D" index="0"]
+text = "RECIRC A
+MOTOR
+LOCKOUT"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/3-5/CSGBox3D" index="0"]
+text = "ASD UPS
+TROUBLE"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/4-5/CSGBox3D" index="0"]
+text = "RECIRC B
+MOTOR
+BREAKER
+TRIP"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/5-5/CSGBox3D" index="0"]
+text = "RECIRC B
+MOTOR
+LOCKOUT"
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/6-5/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/6-3/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/6-2/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P602_A13/Windows/6-1/CSGBox3D" index="0"]
+text = ""
+
 [node name="Label3D" parent="Annunciators/P602_A13/Label" index="0"]
 text = "ANN PANEL
 P602.A13"
@@ -29360,6 +29609,27 @@ light_indirect_energy = 0.838
 light_size = 0.172
 omni_range = 17.632
 
+[node name="OmniLight3D3" type="OmniLight3D" parent="LightNormal_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43964, 3.26588, -9.4566)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="LightNormal_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2066, 3.26588, -14.6655)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="LightNormal_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33286, 3.26588, -14.6655)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
 [node name="LightNormal_2" type="Node3D" parent="."]
 
 [node name="OmniLight3D" type="OmniLight3D" parent="LightNormal_2"]
@@ -29378,6 +29648,27 @@ omni_range = 17.632
 
 [node name="OmniLight3D5" type="OmniLight3D" parent="LightNormal_2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43964, 3.26588, -4.43525)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="LightNormal_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2066, 3.26588, -9.48437)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="LightNormal_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33286, 3.26588, -9.48437)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="LightNormal_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43964, 3.26588, -14.6933)
 light_energy = 0.515
 light_indirect_energy = 0.838
 light_size = 0.172

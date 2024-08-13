@@ -1,0 +1,217 @@
+[gd_scene load_steps=6 format=3 uid="uid://bu46luipe0g01"]
+
+[ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="1_k3e8c"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mkcyx"]
+font = ExtResource("1_k3e8c")
+
+[sub_resource type="LabelSettings" id="LabelSettings_o7xn3"]
+font = ExtResource("1_k3e8c")
+font_size = 25
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ndq7w"]
+font = ExtResource("1_k3e8c")
+font_size = 150
+font_color = Color(0, 0, 0.564706, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ireg8"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="1_PAGE" type="Node2D" parent="."]
+visible = false
+
+[node name="Group" type="Label" parent="1_PAGE"]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 67.0
+offset_bottom = 24.0
+text = "GROUP 1"
+label_settings = SubResource("LabelSettings_mkcyx")
+horizontal_alignment = 1
+
+[node name="1_NAME" type="Label" parent="1_PAGE"]
+offset_left = 2.0
+offset_top = 38.0
+offset_right = 172.0
+offset_bottom = 69.0
+text = "RPV LEVEL WR"
+label_settings = SubResource("LabelSettings_o7xn3")
+
+[node name="1_UNIT" type="Label" parent="1_PAGE"]
+offset_left = 389.0
+offset_top = 38.0
+offset_right = 524.0
+offset_bottom = 69.0
+text = "INCHES"
+label_settings = SubResource("LabelSettings_o7xn3")
+horizontal_alignment = 1
+
+[node name="1_VALUE" type="Label" parent="1_PAGE"]
+offset_left = 7.0
+offset_top = 78.0
+offset_right = 521.0
+offset_bottom = 255.0
+text = "0"
+label_settings = SubResource("LabelSettings_ndq7w")
+horizontal_alignment = 2
+
+[node name="2_NAME" type="Label" parent="1_PAGE"]
+offset_left = 2.0
+offset_top = 282.0
+offset_right = 137.0
+offset_bottom = 313.0
+text = "RPV PRESS"
+label_settings = SubResource("LabelSettings_o7xn3")
+
+[node name="2_UNIT" type="Label" parent="1_PAGE"]
+offset_left = 389.0
+offset_top = 282.0
+offset_right = 524.0
+offset_bottom = 313.0
+text = "PSIG"
+label_settings = SubResource("LabelSettings_o7xn3")
+horizontal_alignment = 1
+
+[node name="2_VALUE" type="Label" parent="1_PAGE"]
+offset_left = 7.0
+offset_top = 322.0
+offset_right = 521.0
+offset_bottom = 499.0
+text = "0"
+label_settings = SubResource("LabelSettings_ndq7w")
+horizontal_alignment = 2
+
+[node name="DateTime" type="Label" parent="1_PAGE"]
+offset_left = 1.0
+offset_top = 18.0
+offset_right = 162.0
+offset_bottom = 41.0
+text = "2023/09/07   20:00:12"
+label_settings = SubResource("LabelSettings_mkcyx")
+horizontal_alignment = 1
+
+[node name="Background" type="Node2D" parent="1_PAGE"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="1_PAGE/Background"]
+z_index = -1
+position = Vector2(263, 263)
+rotation = 3.14159
+scale = Vector2(525.5, -525.5)
+mesh = SubResource("BoxMesh_ireg8")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="1_PAGE/Background"]
+modulate = Color(0, 0, 0.564706, 1)
+z_index = -1
+position = Vector2(263, 17.9753)
+rotation = 3.14159
+scale = Vector2(525.5, -35.4506)
+mesh = SubResource("BoxMesh_ireg8")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="1_PAGE/Background"]
+modulate = Color(0, 0, 0, 1)
+z_index = -1
+position = Vector2(263, 405)
+rotation = 3.14159
+scale = Vector2(525.5, -246.637)
+mesh = SubResource("BoxMesh_ireg8")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="1_PAGE/Background"]
+z_index = -1
+position = Vector2(263, 405)
+rotation = 3.14159
+scale = Vector2(523.5, -244.637)
+mesh = SubResource("BoxMesh_ireg8")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="1_PAGE/Background"]
+modulate = Color(0, 0, 0, 1)
+z_index = -1
+position = Vector2(263, 159)
+rotation = 3.14159
+scale = Vector2(525.5, -246.637)
+mesh = SubResource("BoxMesh_ireg8")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="1_PAGE/Background"]
+z_index = -1
+position = Vector2(263, 159)
+rotation = 3.14159
+scale = Vector2(523.5, -243.637)
+mesh = SubResource("BoxMesh_ireg8")
+
+[node name="2_PAGE" type="Node2D" parent="."]
+
+[node name="Group" type="Label" parent="2_PAGE"]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 67.0
+offset_bottom = 24.0
+text = "GROUP 1"
+label_settings = SubResource("LabelSettings_mkcyx")
+horizontal_alignment = 1
+
+[node name="DateTime" type="Label" parent="2_PAGE"]
+offset_left = 1.0
+offset_top = 18.0
+offset_right = 162.0
+offset_bottom = 41.0
+text = "2023/09/07   20:00:12"
+label_settings = SubResource("LabelSettings_mkcyx")
+horizontal_alignment = 1
+
+[node name="Background" type="Node2D" parent="2_PAGE"]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="2_PAGE/Background"]
+z_index = -1
+position = Vector2(263, 263)
+rotation = 3.14159
+scale = Vector2(525.5, -525.5)
+mesh = SubResource("BoxMesh_ireg8")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="2_PAGE/Background"]
+modulate = Color(0, 0, 0.564706, 1)
+z_index = -1
+position = Vector2(263, 17.9753)
+rotation = 3.14159
+scale = Vector2(525.5, -35.4506)
+mesh = SubResource("BoxMesh_ireg8")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="2_PAGE/Background"]
+modulate = Color(0, 0, 0, 1)
+z_index = -1
+position = Vector2(263.001, 474.705)
+rotation = 3.14159
+scale = Vector2(525.5, -102.267)
+mesh = SubResource("BoxMesh_ireg8")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="2_PAGE/Background"]
+modulate = Color(0.862745, 0.862745, 0.862745, 1)
+z_index = -1
+position = Vector2(131.233, 501)
+rotation = 3.14159
+scale = Vector2(262.466, -50)
+mesh = SubResource("BoxMesh_ireg8")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="2_PAGE/Background"]
+modulate = Color(0.862745, 0.862745, 0.862745, 1)
+z_index = -1
+position = Vector2(394.632, 501)
+rotation = 3.14159
+scale = Vector2(262.735, -50)
+mesh = SubResource("BoxMesh_ireg8")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="2_PAGE/Background"]
+modulate = Color(0.862745, 0.862745, 0.862745, 1)
+z_index = -1
+position = Vector2(131.218, 450)
+rotation = 3.14159
+scale = Vector2(262.437, -50)
+mesh = SubResource("BoxMesh_ireg8")
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="2_PAGE/Background"]
+modulate = Color(0.862745, 0.862745, 0.862745, 1)
+z_index = -1
+position = Vector2(394.632, 450)
+rotation = 3.14159
+scale = Vector2(262.735, -50)
+mesh = SubResource("BoxMesh_ireg8")

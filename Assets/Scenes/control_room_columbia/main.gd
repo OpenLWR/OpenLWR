@@ -10,6 +10,8 @@ enum client_packets {
 	USER_LOGIN = 12,
 	SYNCHRONIZE = 14,
 	CHAT = 15,
+	RCON = 19,
+	RECORDER = 21,
 }
 
 enum server_packets {
@@ -24,6 +26,8 @@ enum server_packets {
 	USER_LOGIN_ACK = 13,
 	CHAT = 16,
 	DOWNLOAD_DATA = 17,
+	KICK = 18,
+	RECORDER = 20,
 }
 
 signal chat_message(message)
@@ -753,6 +757,8 @@ var alarm_groups = {
 
 var rod_information = {}
 
+var recorders = {}
+
 @onready var players = {
 	#"1":{ #key is userid, for now its username
 	#	"position" : {"x" : 0, "y" : 0, "z" : 0,}, # Can we use a Vector3 here?
@@ -1020,6 +1026,19 @@ func _process(delta):
 					server_packets.CHAT:
 						chat_message.emit(packet_data)
 						
+					server_packets.RECORDER:
+						packet_data = json.parse_string(packet_data)
+						
+						for recorder in packet_data:
+							var page_info = packet_data[recorder].page_info
+							var page = packet_data[recorder].page
+							
+							if recorders[recorder].object != null:
+								recorders[recorder].object.update(page,page_info)
+							
+							
+							
+						
 			if not synchronized:
 				#request all the information for the client
 				var err = socket.send_text(build_packet(client_packets.SYNCHRONIZE,"a")) #TODO: does it matter what text we send? can i use a different way?
@@ -1094,6 +1113,13 @@ func _process(delta):
 							for alarm in alarms:
 								alarm = alarms[alarm]
 								alarm["material"] = null
+								
+						"recorders":
+							recorders = info
+							for recorder in recorders:
+								recorder = recorders[recorder]
+								recorder["object"] = null
+								
 		elif state == WebSocketPeer.STATE_CONNECTING:
 			connection_timeout += 1
 			if connection_timeout > 300: #around 5 seconds

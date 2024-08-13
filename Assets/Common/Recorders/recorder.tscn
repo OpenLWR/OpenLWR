@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c43dvwlnpb8qa"]
+
+[ext_resource type="PackedScene" uid="uid://bu46luipe0g01" path="res://Assets/Common/Recorders/recorder_screen.tscn" id="1_n12ye"]
+[ext_resource type="Script" path="res://Assets/Common/Recorders/recorder.gd" id="1_o7tax"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ipuhr"]
+viewport_path = NodePath("recorder/Sprite3D/SubViewport")
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_o7tax")
+
+[node name="recorder" type="CSGBox3D" parent="."]
+size = Vector3(0.17, 0.17, 0.17)
+
+[node name="Sprite3D" type="Sprite3D" parent="recorder"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.0853084, 0, 0)
+pixel_size = 0.0003
+texture = SubResource("ViewportTexture_ipuhr")
+
+[node name="SubViewport" type="SubViewport" parent="recorder/Sprite3D"]
+
+[node name="Node2D" parent="recorder/Sprite3D/SubViewport" instance=ExtResource("1_n12ye")]

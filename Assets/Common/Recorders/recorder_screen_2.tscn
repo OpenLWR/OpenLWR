@@ -1,19 +1,20 @@
-[gd_scene load_steps=21 format=3 uid="uid://bu46luipe0g01"]
+[gd_scene load_steps=24 format=3 uid="uid://c62ydsv8ub24"]
 
-[ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="1_k3e8c"]
-[ext_resource type="Texture2D" uid="uid://d2bhl5bdf44wm" path="res://Assets/Common/Recorders/icons/memory_sampling_idle_icon.png" id="2_lrj6b"]
-[ext_resource type="FontFile" uid="uid://cqsshl4y7vp2w" path="res://Assets/Fonts/Roboto Condensed/RobotoCondensed-VariableFont_wght.ttf" id="2_mhel8"]
-[ext_resource type="Texture2D" uid="uid://c306ishpfroia" path="res://Assets/Common/Recorders/icons/memory_sampling_off_icon.png" id="3_5xvld"]
-[ext_resource type="Texture2D" uid="uid://dsfa5q3jytrqi" path="res://Assets/Common/Recorders/icons/computation_started_icon.png" id="4_711bk"]
-[ext_resource type="Texture2D" uid="uid://bf6utt7rmbbsc" path="res://Assets/Common/Recorders/icons/memory_sampling_uploading_icon.png" id="4_nq802"]
-[ext_resource type="Texture2D" uid="uid://b42krg7ij8h6x" path="res://Assets/Common/Recorders/icons/alarm_red_icon.png" id="5_88ueq"]
-[ext_resource type="Texture2D" uid="uid://bo0tsl6wnwqhx" path="res://Assets/Common/Recorders/icons/alarm_green_icon.png" id="6_2make"]
-[ext_resource type="Texture2D" uid="uid://d04wns4q3l8vt" path="res://Assets/Common/Recorders/Screenshot 2024-08-14 183944.png" id="9_wua8m"]
-[ext_resource type="Texture2D" uid="uid://dhxq70ic830bg" path="res://Assets/Common/Recorders/Screenshot 2024-08-14 185308.png" id="10_1i5ms"]
-[ext_resource type="Texture2D" uid="uid://g6oq8df87f4l" path="res://Assets/Common/Recorders/Screenshot 2024-08-14 183205.png" id="10_pl6sn"]
+[ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="1_nw8jj"]
+[ext_resource type="Texture2D" uid="uid://d2bhl5bdf44wm" path="res://Assets/Common/Recorders/icons/memory_sampling_idle_icon.png" id="2_gxcai"]
+[ext_resource type="Texture2D" uid="uid://dsfa5q3jytrqi" path="res://Assets/Common/Recorders/icons/computation_started_icon.png" id="3_5yxkf"]
+[ext_resource type="Texture2D" uid="uid://b42krg7ij8h6x" path="res://Assets/Common/Recorders/icons/alarm_red_icon.png" id="4_ayx5y"]
+[ext_resource type="Texture2D" uid="uid://bo0tsl6wnwqhx" path="res://Assets/Common/Recorders/icons/alarm_green_icon.png" id="5_fata3"]
+[ext_resource type="Texture2D" uid="uid://c306ishpfroia" path="res://Assets/Common/Recorders/icons/memory_sampling_off_icon.png" id="6_1sfxk"]
+[ext_resource type="Texture2D" uid="uid://bf6utt7rmbbsc" path="res://Assets/Common/Recorders/icons/memory_sampling_uploading_icon.png" id="7_qh336"]
+[ext_resource type="FontFile" uid="uid://cqsshl4y7vp2w" path="res://Assets/Fonts/Roboto Condensed/RobotoCondensed-VariableFont_wght.ttf" id="8_tleox"]
+[ext_resource type="Texture2D" uid="uid://d04wns4q3l8vt" path="res://Assets/Common/Recorders/Screenshot 2024-08-14 183944.png" id="9_i5b74"]
+[ext_resource type="Shader" path="res://Assets/Common/Recorders/RecorderChart.gdshader" id="9_jtoey"]
+[ext_resource type="Texture2D" uid="uid://dhxq70ic830bg" path="res://Assets/Common/Recorders/Screenshot 2024-08-14 185308.png" id="10_q5l6e"]
+[ext_resource type="Texture2D" uid="uid://g6oq8df87f4l" path="res://Assets/Common/Recorders/Screenshot 2024-08-14 183205.png" id="11_ib3ms"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mkcyx"]
-font = ExtResource("1_k3e8c")
+font = ExtResource("1_nw8jj")
 font_size = 20
 
 [sub_resource type="BoxMesh" id="BoxMesh_ireg8"]
@@ -21,33 +22,45 @@ font_size = 20
 [sub_resource type="BoxMesh" id="BoxMesh_6owd0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_honim"]
-font = ExtResource("1_k3e8c")
+font = ExtResource("1_nw8jj")
 font_size = 20
 font_color = Color(0, 0, 0.996078, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_5mltq"]
-font = ExtResource("2_mhel8")
+font = ExtResource("8_tleox")
 font_size = 40
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_mujtg"]
-font = ExtResource("1_k3e8c")
+font = ExtResource("1_nw8jj")
 font_size = 75
 font_color = Color(0.0705882, 0.0705882, 1, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_6hul7"]
-font = ExtResource("2_mhel8")
+font = ExtResource("8_tleox")
 font_size = 25
 
 [sub_resource type="LabelSettings" id="LabelSettings_q5ecs"]
-font = ExtResource("2_mhel8")
+font = ExtResource("8_tleox")
 font_size = 25
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_1ptak"]
-font = ExtResource("1_k3e8c")
-font_size = 39
+font = ExtResource("1_nw8jj")
+font_size = 45
 font_color = Color(0.0705882, 0.0705882, 1, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_skogt"]
+shader = ExtResource("9_jtoey")
+shader_parameter/color = null
+shader_parameter/maxValue = null
+shader_parameter/minValue = null
+shader_parameter/lineThickness = null
+shader_parameter/dataPoints = null
+shader_parameter/data = null
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rd2f6"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
 
 [node name="Node2D" type="Node2D"]
 
@@ -116,39 +129,39 @@ visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("2_lrj6b")
+texture = ExtResource("2_gxcai")
 
 [node name="computation_started" type="Sprite2D" parent="3_PAGE/Icons"]
 z_index = 2
 position = Vector2(520, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("4_711bk")
+texture = ExtResource("3_5yxkf")
 
 [node name="alarm_red" type="Sprite2D" parent="3_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("5_88ueq")
+texture = ExtResource("4_ayx5y")
 
 [node name="alarm_green" type="Sprite2D" parent="3_PAGE/Icons"]
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("6_2make")
+texture = ExtResource("5_fata3")
 
 [node name="memory_sampling_off" type="Sprite2D" parent="3_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("3_5xvld")
+texture = ExtResource("6_1sfxk")
 
 [node name="memory_sampling_uploading" type="Sprite2D" parent="3_PAGE/Icons"]
 z_index = 2
 position = Vector2(265.543, 23)
 scale = Vector2(0.335185, 0.340741)
-texture = ExtResource("4_nq802")
+texture = ExtResource("7_qh336")
 
 [node name="Group2" type="Label" parent="3_PAGE"]
 z_index = 2
@@ -162,7 +175,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="1_PAGE" type="Node2D" parent="."]
-visible = false
 
 [node name="2_UNIT" type="Label" parent="1_PAGE"]
 z_index = 2
@@ -342,41 +354,42 @@ visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("2_lrj6b")
+texture = ExtResource("2_gxcai")
 
 [node name="computation_started" type="Sprite2D" parent="1_PAGE/Icons"]
 z_index = 2
 position = Vector2(520, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("4_711bk")
+texture = ExtResource("3_5yxkf")
 
 [node name="alarm_red" type="Sprite2D" parent="1_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("5_88ueq")
+texture = ExtResource("4_ayx5y")
 
 [node name="alarm_green" type="Sprite2D" parent="1_PAGE/Icons"]
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("6_2make")
+texture = ExtResource("5_fata3")
 
 [node name="memory_sampling_off" type="Sprite2D" parent="1_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("3_5xvld")
+texture = ExtResource("6_1sfxk")
 
 [node name="memory_sampling_uploading" type="Sprite2D" parent="1_PAGE/Icons"]
 z_index = 2
 position = Vector2(265.543, 23)
 scale = Vector2(0.335185, 0.340741)
-texture = ExtResource("4_nq802")
+texture = ExtResource("7_qh336")
 
 [node name="2_PAGE" type="Node2D" parent="."]
+visible = false
 
 [node name="DateTime" type="Label" parent="2_PAGE"]
 z_index = 2
@@ -413,24 +426,24 @@ label_settings = SubResource("LabelSettings_6hul7")
 [node name="1_UNIT" type="Label" parent="2_PAGE"]
 z_index = 2
 offset_left = 81.0
-offset_top = 398.0
+offset_top = 449.0
 offset_right = 282.0
-offset_bottom = 429.0
+offset_bottom = 480.0
 text = "V"
 label_settings = SubResource("LabelSettings_q5ecs")
 horizontal_alignment = 2
 
 [node name="1_VALUE" type="Label" parent="2_PAGE"]
 z_index = 2
-offset_left = 5.0
-offset_top = 386.0
-offset_right = 200.0
-offset_bottom = 433.0
+offset_left = 4.0
+offset_top = 398.0
+offset_right = 315.0
+offset_bottom = 445.0
 text = "0.5014"
 label_settings = SubResource("LabelSettings_1ptak")
 horizontal_alignment = 2
 
-[node name="1_NAME3" type="Label" parent="2_PAGE"]
+[node name="2_NAME" type="Label" parent="2_PAGE"]
 z_index = 2
 offset_left = 319.0
 offset_top = 367.0
@@ -439,79 +452,22 @@ offset_bottom = 398.0
 text = "1"
 label_settings = SubResource("LabelSettings_6hul7")
 
-[node name="1_UNIT3" type="Label" parent="2_PAGE"]
+[node name="2_UNIT" type="Label" parent="2_PAGE"]
 z_index = 2
 offset_left = 400.0
+offset_top = 449.0
+offset_right = 601.0
+offset_bottom = 480.0
+text = "V"
+label_settings = SubResource("LabelSettings_q5ecs")
+horizontal_alignment = 2
+
+[node name="2_VALUE" type="Label" parent="2_PAGE"]
+z_index = 2
+offset_left = 325.0
 offset_top = 398.0
-offset_right = 601.0
-offset_bottom = 429.0
-text = "V"
-label_settings = SubResource("LabelSettings_q5ecs")
-horizontal_alignment = 2
-
-[node name="1_VALUE3" type="Label" parent="2_PAGE"]
-z_index = 2
-offset_left = 324.0
-offset_top = 386.0
-offset_right = 519.0
-offset_bottom = 433.0
-text = "0.5014"
-label_settings = SubResource("LabelSettings_1ptak")
-horizontal_alignment = 2
-
-[node name="1_NAME4" type="Label" parent="2_PAGE"]
-z_index = 2
-offset_left = 319.0
-offset_top = 423.0
-offset_right = 515.0
-offset_bottom = 454.0
-text = "1"
-label_settings = SubResource("LabelSettings_6hul7")
-
-[node name="1_UNIT4" type="Label" parent="2_PAGE"]
-z_index = 2
-offset_left = 400.0
-offset_top = 454.0
-offset_right = 601.0
-offset_bottom = 485.0
-text = "V"
-label_settings = SubResource("LabelSettings_q5ecs")
-horizontal_alignment = 2
-
-[node name="1_VALUE4" type="Label" parent="2_PAGE"]
-z_index = 2
-offset_left = 324.0
-offset_top = 442.0
-offset_right = 519.0
-offset_bottom = 489.0
-text = "0.5014"
-label_settings = SubResource("LabelSettings_1ptak")
-horizontal_alignment = 2
-
-[node name="1_NAME2" type="Label" parent="2_PAGE"]
-z_index = 2
-offset_top = 423.0
-offset_right = 196.0
-offset_bottom = 454.0
-text = "1"
-label_settings = SubResource("LabelSettings_6hul7")
-
-[node name="1_UNIT2" type="Label" parent="2_PAGE"]
-z_index = 2
-offset_left = 81.0
-offset_top = 454.0
-offset_right = 282.0
-offset_bottom = 485.0
-text = "V"
-label_settings = SubResource("LabelSettings_q5ecs")
-horizontal_alignment = 2
-
-[node name="1_VALUE2" type="Label" parent="2_PAGE"]
-z_index = 2
-offset_left = 5.0
-offset_top = 442.0
-offset_right = 200.0
-offset_bottom = 489.0
+offset_right = 639.0
+offset_bottom = 451.0
 text = "0.5014"
 label_settings = SubResource("LabelSettings_1ptak")
 horizontal_alignment = 2
@@ -545,33 +501,17 @@ mesh = SubResource("BoxMesh_ireg8")
 [node name="MeshInstance2D11" type="MeshInstance2D" parent="2_PAGE/Background"]
 modulate = Color(1, 0, 0, 1)
 z_index = 1
-position = Vector2(99.8624, 381.265)
+position = Vector2(158.586, 381.264)
 rotation = 3.14159
-scale = Vector2(199.725, 22.4977)
-mesh = SubResource("BoxMesh_ireg8")
-
-[node name="MeshInstance2D9" type="MeshInstance2D" parent="2_PAGE/Background"]
-modulate = Color(1, 0, 0, 1)
-z_index = 1
-position = Vector2(99.8624, 437.265)
-rotation = 3.14159
-scale = Vector2(199.725, 22.4977)
+scale = Vector2(317.172, 22.4977)
 mesh = SubResource("BoxMesh_ireg8")
 
 [node name="MeshInstance2D12" type="MeshInstance2D" parent="2_PAGE/Background"]
 modulate = Color(1, 0, 0, 1)
 z_index = 1
-position = Vector2(419, 381)
+position = Vector2(479.504, 381.132)
 rotation = 3.14159
-scale = Vector2(199.725, 22.4977)
-mesh = SubResource("BoxMesh_ireg8")
-
-[node name="MeshInstance2D13" type="MeshInstance2D" parent="2_PAGE/Background"]
-modulate = Color(1, 0, 0, 1)
-z_index = 1
-position = Vector2(419, 437)
-rotation = 3.14159
-scale = Vector2(199.725, 22.4977)
+scale = Vector2(320.994, 22.7614)
 mesh = SubResource("BoxMesh_ireg8")
 
 [node name="MeshInstance2D4" type="MeshInstance2D" parent="2_PAGE/Background"]
@@ -580,14 +520,6 @@ z_index = 1
 position = Vector2(318.013, 424.4)
 rotation = 3.14159
 scale = Vector2(-1.98835, 110.92)
-mesh = SubResource("BoxMesh_ireg8")
-
-[node name="MeshInstance2D5" type="MeshInstance2D" parent="2_PAGE/Background"]
-modulate = Color(0, 0, 0, 1)
-z_index = 1
-position = Vector2(320, 425)
-rotation = 3.14159
-scale = Vector2(640, 2.03038)
 mesh = SubResource("BoxMesh_ireg8")
 
 [node name="MeshInstance2D6" type="MeshInstance2D" parent="2_PAGE/Background"]
@@ -610,54 +542,61 @@ visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("2_lrj6b")
+texture = ExtResource("2_gxcai")
 
 [node name="computation_started" type="Sprite2D" parent="2_PAGE/Icons"]
 z_index = 2
 position = Vector2(520, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("4_711bk")
+texture = ExtResource("3_5yxkf")
 
 [node name="alarm_red" type="Sprite2D" parent="2_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("5_88ueq")
+texture = ExtResource("4_ayx5y")
 
 [node name="alarm_green" type="Sprite2D" parent="2_PAGE/Icons"]
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("6_2make")
+texture = ExtResource("5_fata3")
 
 [node name="memory_sampling_off" type="Sprite2D" parent="2_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("3_5xvld")
+texture = ExtResource("6_1sfxk")
 
 [node name="memory_sampling_uploading" type="Sprite2D" parent="2_PAGE/Icons"]
 z_index = 2
 position = Vector2(265.543, 23)
 scale = Vector2(0.335185, 0.340741)
-texture = ExtResource("4_nq802")
+texture = ExtResource("7_qh336")
+
+[node name="Graph" type="Sprite2D" parent="2_PAGE"]
+material = SubResource("ShaderMaterial_skogt")
+position = Vector2(271.5, 207)
+scale = Vector2(4.24219, 2.51562)
+texture = SubResource("CompressedTexture2D_rd2f6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(320, 240)
 scale = Vector2(0.711111, 0.712166)
-texture = ExtResource("9_wua8m")
+texture = ExtResource("9_i5b74")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
+visible = false
 z_index = 4
 position = Vector2(591.233, 206.5)
 scale = Vector2(0.618376, 0.625731)
-texture = ExtResource("10_1i5ms")
+texture = ExtResource("10_q5l6e")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(319.5, 240)
 scale = Vector2(0.833116, 0.83045)
-texture = ExtResource("10_pl6sn")
+texture = ExtResource("11_ib3ms")

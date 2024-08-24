@@ -1035,14 +1035,10 @@ func _process(delta):
 							var channels = packet_data[recorder].channels
 							
 							var rcd = recorders[recorder]
-							
-							if rcd.object != null:
-								#rcd.object.update(page,page_info)
-								rcd.object.update(channels)
 								
 							if rcd.update_time >= 10: #1 second, assuming the server or connection isnt lacking
 								for channel in channels:
-									if rcd.history[channel] == null:
+									if not channel in rcd.history:
 										rcd.history[channel] = []
 										
 									rcd.history[channel].append(channels[channel].value)
@@ -1050,6 +1046,10 @@ func _process(delta):
 								rcd.update_time = 0
 							
 							rcd.update_time += 1
+							
+							if rcd.object != null:
+								#rcd.object.update(page,page_info)
+								rcd.object.update(channels,rcd.history)
 							
 							
 							
@@ -1137,7 +1137,7 @@ func _process(delta):
 								recorder = recorders[recorder]
 								recorder["object"] = null
 								recorder["history"] = {}
-								recorder["update_time"] = 0
+								recorder["update_time"] = 11
 								
 		elif state == WebSocketPeer.STATE_CONNECTING:
 			connection_timeout += 1

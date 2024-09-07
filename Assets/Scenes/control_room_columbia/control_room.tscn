@@ -27064,7 +27064,7 @@ material = SubResource("StandardMaterial3D_ljesk")
 [node name="Label3D" parent="Annunciators/Box1/Windows/1-7/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
 text = "RPIS OR
-RWM INOP"
+DMM INOP"
 
 [node name="Label3D" parent="Annunciators/Box1/Windows/1-6/CSGBox3D" index="0"]
 text = "CRD PUMP A

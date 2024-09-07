@@ -1040,8 +1040,14 @@ func _process(delta):
 								for channel in channels:
 									if not channel in rcd.history:
 										rcd.history[channel] = []
-										
-									rcd.history[channel].append(channels[channel].value)
+										rcd.history[channel].resize(600)
+										rcd.history[channel].fill(0)
+									
+									if len(rcd.history[channel]) > 600:
+										rcd.history[channel].remove_at(600) #TODO: use 1800
+							
+									rcd.history[channel].insert(0,channels[channel].value)
+									
 									
 								rcd.update_time = 0
 							

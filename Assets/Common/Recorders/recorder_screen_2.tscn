@@ -175,6 +175,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="1_PAGE" type="Node2D" parent="."]
+visible = false
 
 [node name="2_UNIT" type="Label" parent="1_PAGE"]
 z_index = 2
@@ -389,7 +390,6 @@ scale = Vector2(0.335185, 0.340741)
 texture = ExtResource("7_qh336")
 
 [node name="2_PAGE" type="Node2D" parent="."]
-visible = false
 
 [node name="DateTime" type="Label" parent="2_PAGE"]
 z_index = 2
@@ -589,7 +589,6 @@ scale = Vector2(0.711111, 0.712166)
 texture = ExtResource("9_i5b74")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
-visible = false
 z_index = 4
 position = Vector2(591.233, 206.5)
 scale = Vector2(0.618376, 0.625731)

@@ -155,6 +155,11 @@ emission = Color(0.26334, 0.95078, 0.19242, 1)
 albedo_color = Color(0.479588, 0, 0.050164, 1)
 emission = Color(0.882621, 0, 0.0941243, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krekq"]
+albedo_texture = ExtResource("36_pun37")
+uv1_scale = Vector3(0.7, 1.5, 1.5)
+uv1_offset = Vector3(0.25, -0.2, 0)
+
 [sub_resource type="ViewportTexture" id="ViewportTexture_p4cy1"]
 viewport_path = NodePath("Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport")
 
@@ -851,11 +856,6 @@ emission_energy_multiplier = 1.9
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ygyb"]
 emission = Color(0.605563, 0.000574561, 0.000314438, 1)
 emission_energy_multiplier = 1.9
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krekq"]
-albedo_texture = ExtResource("36_pun37")
-uv1_scale = Vector3(0.7, 1.5, 1.5)
-uv1_offset = Vector3(0.25, -0.2, 0)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lbaja"]
 vertex_color_use_as_albedo = true
@@ -9186,6 +9186,561 @@ text = "MC-S2-1A"
 
 [node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/Vacuum/rcic_v_52/Label" index="2"]
 visible = false
+
+[node name="Condensate" type="Node3D" parent="Control Room Panels/Main Panel Right Side/Controls"]
+
+[node name="cond_p_2a" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("44_253tc")]
+transform = Transform3D(-4.37113e-08, -0.979134, -0.203215, 0, 0.203215, -0.979134, 1, -4.27993e-08, -8.88281e-09, 4.38332, 0.0879759, -0.597111)
+
+[node name="Sphere_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a/selector_switch/Base" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.49012e-08, 0, 1.49012e-08, 1, 0.772068, 0.123819, 0.575294)
+
+[node name="PTL" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a" index="4"]
+visible = false
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a"]
+transform = Transform3D(0.699999, 1.05879e-21, -2.5411e-21, 0, 2.98023e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0324998, 0.0637619, 0.00195843)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_f6271")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a"]
+transform = Transform3D(0.699999, 1.69407e-21, -3.38813e-21, 0, 1.49012e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0324998, 0.0637615, 0.00195813)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_6yc17")
+
+[node name="Label" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -4.44089e-15, -1, -1.04308e-07, -4.47035e-08, 0, 0.0400376, -0.000916421)
+
+[node name="Name" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "DIESEL GEN 1
+BUS 7 FDR
+CB-7DG1"
+
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a/Label" index="2"]
+visible = false
+
+[node name="lockout" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a"]
+transform = Transform3D(0.0299997, 5.29396e-23, 1.32349e-23, 0, 0.03, 1.11759e-08, 0, -4.65661e-10, 0.03, -0.000196457, 0.0642672, 0.00109559)
+size = Vector3(1, 0.910645, 0.654785)
+material = SubResource("StandardMaterial3D_5eqcs")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a/lockout"]
+transform = Transform3D(-0.700001, 6.93898e-16, -6.11961e-08, -1.77636e-15, 0.7, 1.49012e-08, 6.11959e-08, -2.98023e-08, -0.7, 0, 0.00857544, -0.330629)
+modulate = Color(0, 0, 0, 1)
+text = "LOCKOUT
+CIRCUIT
+AVAIL"
+font = ExtResource("15_o5a3n")
+font_size = 60
+outline_size = 0
+
+[node name="cond_p_2b" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("44_253tc")]
+transform = Transform3D(-4.37113e-08, -0.979134, -0.203215, 0, 0.203215, -0.979134, 1, -4.27993e-08, -8.88281e-09, 4.38332, 0.0879759, -0.697111)
+
+[node name="Sphere_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b/selector_switch/Base" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.49012e-08, 0, 1.49012e-08, 1, 0.772068, 0.123819, 0.575294)
+
+[node name="PTL" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b" index="4"]
+visible = false
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b"]
+transform = Transform3D(0.699999, 1.05879e-21, -2.5411e-21, 0, 2.98023e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0324998, 0.0637619, 0.00195843)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_f6271")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b"]
+transform = Transform3D(0.699999, 1.69407e-21, -3.38813e-21, 0, 1.49012e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0324998, 0.0637615, 0.00195813)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_6yc17")
+
+[node name="Label" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -4.44089e-15, -1, -1.04308e-07, -4.47035e-08, 0, 0.0400376, -0.000916421)
+
+[node name="Name" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "DIESEL GEN 1
+BUS 7 FDR
+CB-7DG1"
+
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b/Label" index="2"]
+visible = false
+
+[node name="lockout" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b"]
+transform = Transform3D(0.0299997, 5.29396e-23, 1.32349e-23, 0, 0.03, 1.11759e-08, 0, -4.65661e-10, 0.03, -0.000196457, 0.0642672, 0.00109559)
+size = Vector3(1, 0.910645, 0.654785)
+material = SubResource("StandardMaterial3D_5eqcs")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b/lockout"]
+transform = Transform3D(-0.700001, 6.93898e-16, -6.11961e-08, -1.77636e-15, 0.7, 1.49012e-08, 6.11959e-08, -2.98023e-08, -0.7, 0, 0.00857544, -0.330629)
+modulate = Color(0, 0, 0, 1)
+text = "LOCKOUT
+CIRCUIT
+AVAIL"
+font = ExtResource("15_o5a3n")
+font_size = 60
+outline_size = 0
+
+[node name="cond_p_2c" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("44_253tc")]
+transform = Transform3D(-4.37113e-08, -0.979134, -0.203215, 0, 0.203215, -0.979134, 1, -4.27993e-08, -8.88281e-09, 4.38332, 0.0879759, -0.797111)
+
+[node name="Sphere_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c/selector_switch/Base" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.49012e-08, 0, 1.49012e-08, 1, 0.772068, 0.123819, 0.575294)
+
+[node name="PTL" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c" index="4"]
+visible = false
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c"]
+transform = Transform3D(0.699999, 1.05879e-21, -2.5411e-21, 0, 2.98023e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0324998, 0.0637619, 0.00195843)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_f6271")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c"]
+transform = Transform3D(0.699999, 1.69407e-21, -3.38813e-21, 0, 1.49012e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0324998, 0.0637615, 0.00195813)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_6yc17")
+
+[node name="Label" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -4.44089e-15, -1, -1.04308e-07, -4.47035e-08, 0, 0.0400376, -0.000916421)
+
+[node name="Name" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "DIESEL GEN 1
+BUS 7 FDR
+CB-7DG1"
+
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c/Label" index="2"]
+visible = false
+
+[node name="lockout" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c"]
+transform = Transform3D(0.0299997, 5.29396e-23, 1.32349e-23, 0, 0.03, 1.11759e-08, 0, -4.65661e-10, 0.03, -0.000196457, 0.0642672, 0.00109559)
+size = Vector3(1, 0.910645, 0.654785)
+material = SubResource("StandardMaterial3D_5eqcs")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c/lockout"]
+transform = Transform3D(-0.700001, 6.93898e-16, -6.11961e-08, -1.77636e-15, 0.7, 1.49012e-08, 6.11959e-08, -2.98023e-08, -0.7, 0, 0.00857544, -0.330629)
+modulate = Color(0, 0, 0, 1)
+text = "LOCKOUT
+CIRCUIT
+AVAIL"
+font = ExtResource("15_o5a3n")
+font_size = 60
+outline_size = 0
+
+[node name="cond_p_1c" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("44_253tc")]
+transform = Transform3D(-4.37113e-08, -0.979134, -0.203215, 0, 0.203215, -0.979134, 1, -4.27993e-08, -8.88281e-09, 4.38332, 0.0879759, -0.397111)
+
+[node name="Sphere_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c/selector_switch/Base" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.49012e-08, 0, 1.49012e-08, 1, 0.772068, 0.123819, 0.575294)
+
+[node name="PTL" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c" index="4"]
+visible = false
+
+[node name="Label" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -4.44089e-15, -1, -1.04308e-07, -4.47035e-08, 0, 0.0400376, -0.000916421)
+
+[node name="Name" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "DIESEL GEN 1
+BUS 7 FDR
+CB-7DG1"
+
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c/Label" index="2"]
+visible = false
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c"]
+transform = Transform3D(0.699999, 0, 0, 0, 2.98023e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219998, 0.0637619, 0.00195831)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_f6271")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c"]
+transform = Transform3D(0.699999, 0, 0, 0, 1.49012e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0219998, 0.0637612, 0.00195813)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_6yc17")
+
+[node name="cond_p_1b" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("44_253tc")]
+transform = Transform3D(-4.37113e-08, -0.979134, -0.203215, 0, 0.203215, -0.979134, 1, -4.27993e-08, -8.88281e-09, 4.38332, 0.0879759, -0.297111)
+
+[node name="Sphere_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b/selector_switch/Base" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.49012e-08, 0, 1.49012e-08, 1, 0.772068, 0.123819, 0.575294)
+
+[node name="PTL" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b" index="4"]
+visible = false
+
+[node name="Label" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -4.44089e-15, -1, -1.04308e-07, -4.47035e-08, 0, 0.0400376, -0.000916421)
+
+[node name="Name" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "DIESEL GEN 1
+BUS 7 FDR
+CB-7DG1"
+
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b/Label" index="2"]
+visible = false
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b"]
+transform = Transform3D(0.699999, 0, 0, 0, 2.98023e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219998, 0.0637619, 0.00195831)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_f6271")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b"]
+transform = Transform3D(0.699999, 0, 0, 0, 1.49012e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0219998, 0.0637612, 0.00195813)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_6yc17")
+
+[node name="cond_p_1a" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("44_253tc")]
+transform = Transform3D(-4.37113e-08, -0.979134, -0.203215, 0, 0.203215, -0.979134, 1, -4.27993e-08, -8.88281e-09, 4.38332, 0.0879759, -0.197111)
+
+[node name="Sphere_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a/selector_switch/Base" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.49012e-08, 0, 1.49012e-08, 1, 0.772068, 0.123819, 0.575294)
+
+[node name="PTL" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a" index="4"]
+visible = false
+
+[node name="Label" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -4.44089e-15, -1, -1.04308e-07, -4.47035e-08, 0, 0.0400376, -0.000916421)
+
+[node name="Name" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "DIESEL GEN 1
+BUS 7 FDR
+CB-7DG1"
+
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a/Label" index="2"]
+visible = false
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a"]
+transform = Transform3D(0.699999, 0, 0, 0, 2.98023e-08, -0.7, 0, 0.7, -2.98023e-08, 0.0219998, 0.0637619, 0.00195831)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_f6271")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a"]
+transform = Transform3D(0.699999, 0, 0, 0, 1.49012e-08, -0.7, 0, 0.7, -2.98023e-08, -0.0219998, 0.0637612, 0.00195813)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_6yc17")
+
+[node name="cond_p_2a_amps" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(4.37113e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 4.12295, 0.25313, -0.651247)
+
+[node name="Face" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a_amps/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = null
+
+[node name="Needle" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a_amps/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a_amps/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Axis" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a_amps/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="cond_p_2b_amps" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(4.37113e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 4.12295, 0.25313, -0.690879)
+
+[node name="Face" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b_amps/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = null
+
+[node name="Needle" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b_amps/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b_amps/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Axis" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b_amps/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="cond_p_2c_amps" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(4.37113e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 4.12295, 0.25313, -0.731087)
+
+[node name="Face" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c_amps/edgewise_gauge" index="0"]
+transform = Transform3D(1, 3.55271e-15, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = null
+
+[node name="Needle" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c_amps/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c_amps/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Axis" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c_amps/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="cond_booster_discharge_press" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(4.37113e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 4.12295, 0.25313, -0.771064)
+
+[node name="Face" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_press/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = ExtResource("35_ahra6")
+
+[node name="Needle" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_press/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_press/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Axis" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_press/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="Label" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_press" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.27194e-08, 2.98023e-08, -0.999999, 1.89984e-07, 0.746681, 7.9826e-08, 1, -1.04308e-07, -4.27192e-08, 0.020457, -0.0863833, 0.136613)
+
+[node name="Name" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_press/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "DIESEL GEN 1
+BUS 7 FDR
+CB-7DG1"
+
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_press/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_press/Label" index="2"]
+visible = false
+
+[node name="cond_booster_discharge_temp" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(4.37113e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 4.12295, 0.25313, -0.810978)
+
+[node name="Face" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_temp/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = ExtResource("35_ahra6")
+
+[node name="Needle" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_temp/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_temp/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Axis" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_temp/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="cond_p_1a_amps" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(4.37113e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 4.12295, 0.25313, -0.217097)
+
+[node name="Face" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a_amps/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = null
+
+[node name="Needle" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a_amps/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a_amps/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Axis" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a_amps/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="cond_p_1b_amps" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(4.37113e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 4.12295, 0.25313, -0.25673)
+
+[node name="Face" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b_amps/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = null
+
+[node name="Needle" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b_amps/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b_amps/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Axis" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b_amps/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="cond_p_1c_amps" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(4.37113e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 4.12295, 0.25313, -0.296938)
+
+[node name="Face" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c_amps/edgewise_gauge" index="0"]
+transform = Transform3D(1, 3.55271e-15, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = null
+
+[node name="Needle" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c_amps/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c_amps/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Axis" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c_amps/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="cond_discharge_press" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(4.37113e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 4.12295, 0.25313, -0.336914)
+
+[node name="Face" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = ExtResource("35_ahra6")
+
+[node name="Needle" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Axis" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="Label" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.27194e-08, 2.98023e-08, -0.999999, 1.89984e-07, 0.746681, 7.9826e-08, 1, -1.04308e-07, -4.27192e-08, 0.020457, -0.0863833, 0.136613)
+
+[node name="Name" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "DIESEL GEN 1
+BUS 7 FDR
+CB-7DG1"
+
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/Label" index="2"]
+visible = false
+
+[node name="cond_discharge_temp" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(4.37113e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 4.12295, 0.25313, -0.376828)
+
+[node name="Face" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_temp/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = ExtResource("35_ahra6")
+
+[node name="Needle" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_temp/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_temp/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Axis" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_temp/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
 
 [node name="Main Panel Left Side" type="CSGPolygon3D" parent="Control Room Panels"]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 9.5113, 0.806, 2.68892)
@@ -30880,6 +31435,46 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [editable path="Control Room Panels/Main Panel Right Side/Controls/Vacuum/rcic_v_52"]
 [editable path="Control Room Panels/Main Panel Right Side/Controls/Vacuum/rcic_v_52/selector_switch"]
 [editable path="Control Room Panels/Main Panel Right Side/Controls/Vacuum/rcic_v_52/Label"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a/selector_switch"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a/Label"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b/selector_switch"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b/Label"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c/selector_switch"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c/Label"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c/selector_switch"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c/Label"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b/selector_switch"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b/Label"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a/selector_switch"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a/Label"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a_amps"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2a_amps/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b_amps"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2b_amps/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c_amps"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_2c_amps/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_press"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_press/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_press/Label"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_temp"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_booster_discharge_temp/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a_amps"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1a_amps/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b_amps"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1b_amps/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c_amps"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c_amps/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/Label"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_temp"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_temp/edgewise_gauge"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport/Node2D"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31/selector_switch"]

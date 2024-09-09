@@ -1,4 +1,4 @@
-[gd_scene load_steps=576 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=578 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -38,6 +38,7 @@
 [ext_resource type="Material" uid="uid://di3ysg56v4wql" path="res://Assets/Materials/yellow_plastic.tres" id="25_h18gl"]
 [ext_resource type="AudioStream" uid="uid://h63ya0mtowh1" path="res://Assets/Audio/CGSPanelAlarm.mp3" id="26_77or2"]
 [ext_resource type="Texture2D" uid="uid://c8q4aym8ckihj" path="res://Assets/Textures/AnnunciatorTriangle.png" id="26_ud3n4"]
+[ext_resource type="Texture2D" uid="uid://cspnjxqce6g7i" path="res://Assets/Textures/Edgewise Gauge/Columbia/Condensate/cond_boost_amp.png" id="27_3xehw"]
 [ext_resource type="PackedScene" uid="uid://bwi0yuo7jm8bp" path="res://Assets/Common/Annunciators/annunciator_cgs_8x6.tscn" id="27_6jg2m"]
 [ext_resource type="Material" uid="uid://h3pec0eq2wyc" path="res://Assets/Materials/red_plastic.tres" id="27_mwtj8"]
 [ext_resource type="PackedScene" uid="uid://cwbh50131lniu" path="res://Assets/Common/Switches/Range Switch/range_switch.tscn" id="29_tg1gb"]
@@ -159,6 +160,14 @@ emission = Color(0.882621, 0, 0.0941243, 1)
 albedo_texture = ExtResource("36_pun37")
 uv1_scale = Vector3(0.7, 1.5, 1.5)
 uv1_offset = Vector3(0.25, -0.2, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6t2ic"]
+albedo_texture = ExtResource("27_3xehw")
+uv1_scale = Vector3(1, 1.545, 1)
+uv1_offset = Vector3(0, -0.25, 0)
+uv1_triplanar_sharpness = 7.72749
+uv2_offset = Vector3(0.025, 0, 0)
+texture_repeat = false
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_p4cy1"]
 viewport_path = NodePath("Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport")
@@ -9680,10 +9689,10 @@ transform = Transform3D(4.37113e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 4.12295,
 
 [node name="Face" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c_amps/edgewise_gauge" index="0"]
 transform = Transform3D(1, 3.55271e-15, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
-material_override = null
+material_override = SubResource("StandardMaterial3D_6t2ic")
 
 [node name="Needle" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c_amps/edgewise_gauge" index="3"]
-transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+transform = Transform3D(0.0165577, -4.65661e-09, 5.83229e-10, -2.32831e-09, -0.0291044, 0, 1.44752e-09, 2.22045e-16, -0.00667136, -0.00357437, 0, -0.0601902)
 
 [node name="Face_001" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_p_1c_amps/edgewise_gauge" index="7"]
 transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)

@@ -1,0 +1,343 @@
+[gd_scene load_steps=8 format=3 uid="uid://877n78cdi188"]
+
+[ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/Areas/RB422/main.gd" id="1_hhebp"]
+[ext_resource type="Material" uid="uid://b0b37alwlfoju" path="res://Assets/Materials/white_metal.tres" id="1_l2eti"]
+[ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_vp3no"]
+[ext_resource type="Texture2D" uid="uid://bmkxo8sx71ojo" path="res://Assets/Textures/Reactor Building/rb422.png" id="3_8qfon"]
+[ext_resource type="AudioStream" uid="uid://x5esrn3on0el" path="res://Assets/Audio/air.mp3" id="4_08kgm"]
+[ext_resource type="Texture2D" uid="uid://oswfy7ptuomj" path="res://Assets/Textures/Reactor Building/RB422detailed.png" id="4_lpjxf"]
+
+[sub_resource type="Environment" id="Environment_ytauu"]
+ambient_light_source = 2
+ambient_light_color = Color(0.0110876, 0.0110876, 0.0110876, 1)
+ssr_enabled = true
+ssao_enabled = true
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_hhebp")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -0.542467, 1.96479, -9.91502)
+use_collision = true
+flip_faces = true
+size = Vector3(40.4, 3.966, 48.5)
+material = ExtResource("1_l2eti")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -2.13637, 1.96479, 8.81842)
+use_collision = true
+size = Vector3(0.4, 3.966, 10.5)
+material = ExtResource("1_l2eti")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="CSGBox3D2"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 9.53674e-07, -0.983, -3.70053)
+operation = 2
+use_collision = true
+size = Vector3(0.6, 2, 1.1)
+material = ExtResource("1_l2eti")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="."]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -2.13637, 1.96479, -30.4511)
+use_collision = true
+size = Vector3(0.4, 3.966, 7.5)
+material = ExtResource("1_l2eti")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="."]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -13.1874, 1.96479, -30.5513)
+use_collision = true
+size = Vector3(0.4, 3.966, 7.3)
+material = ExtResource("1_l2eti")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.64477e-08, 0, -1.00176, 0, 1.00176, 0, 1.0626, 0, -4.37883e-08, -17.9458, 1.96479, -27.0447)
+use_collision = true
+size = Vector3(0.4, 3.966, 10)
+material = ExtResource("1_l2eti")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.64477e-08, 0, -1.00176, 0, 1.00176, 0, 1.0626, 0, -4.37883e-08, -20.4001, 1.96479, -11.3182)
+use_collision = true
+size = Vector3(0.4, 3.966, 5.1)
+material = ExtResource("1_l2eti")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.64477e-08, 0, -1.00176, 0, 1.00176, 0, 1.0626, 0, -4.37883e-08, -19.4484, 1.96479, 5.8959)
+use_collision = true
+size = Vector3(0.4, 3.966, 7)
+material = ExtResource("1_l2eti")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.64477e-08, 0, -1.00176, 0, 1.00176, 0, 1.0626, 0, -4.37883e-08, 16.3645, 1.96479, 8.0211)
+use_collision = true
+size = Vector3(0.4, 3.966, 9.1)
+material = ExtResource("1_l2eti")
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="."]
+transform = Transform3D(0.751372, 0, -0.708351, 0, 1.00176, 0, 0.751372, 0, 0.708351, -13.7578, 1.96479, 3.51132)
+use_collision = true
+size = Vector3(0.4, 3.966, 7)
+material = ExtResource("1_l2eti")
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="."]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -18.3858, 1.96479, 10.3036)
+use_collision = true
+size = Vector3(0.4, 3.966, 8.6)
+material = ExtResource("1_l2eti")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, 11.5712, 1.96479, 3.85918)
+use_collision = true
+size = Vector3(0.4, 3.966, 21)
+material = ExtResource("1_l2eti")
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="CSGBox3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.983, 0.45)
+operation = 2
+use_collision = true
+size = Vector3(0.6, 2, 1.1)
+material = ExtResource("1_l2eti")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, 11.5712, 1.96479, -25.1919)
+use_collision = true
+size = Vector3(0.4, 3.966, 18.4)
+material = ExtResource("1_l2eti")
+
+[node name="Player" parent="." instance=ExtResource("2_vp3no")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06602, 5.4)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ytauu")
+
+[node name="LightNormalRB422" type="Node3D" parent="."]
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43964, 3.26588, 8.77369)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.23964, 3.26588, 8.77369)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4396, 3.26588, -2.42631)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D11" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0396, 3.26588, -2.42631)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D13" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4396, 3.26588, -16.8263)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D14" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0396, 3.26588, -16.8263)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D17" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4396, 3.26588, -31.6263)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D18" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0396, 3.26588, -31.6263)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D19" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.33964, 3.26588, -31.6263)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D20" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.93964, 3.26588, -31.6263)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D21" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0604, 3.26588, -31.6263)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D22" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.46036, 3.26588, -31.6263)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D23" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5604, 3.26588, -21.3263)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D24" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5604, 3.26588, -15.0263)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D25" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5604, 3.26588, -5.62631)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D26" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5604, 3.26588, 0.673687)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.1604, 3.26588, 8.77369)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.5604, 3.26588, 8.77369)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="OmniLight3D9" type="OmniLight3D" parent="LightNormalRB422"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.36036, 3.26588, 8.77369)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.517
+shadow_normal_bias = 0.656
+omni_range = 17.632
+
+[node name="Floorplan" type="Sprite3D" parent="."]
+transform = Transform3D(9, 0, 0, 0, -3.93403e-07, 9, 0, -9, -3.93403e-07, -1.8, -1.61732e-07, -3.7)
+visible = false
+texture = ExtResource("3_8qfon")
+
+[node name="FloorplanDetailed" type="Sprite3D" parent="."]
+transform = Transform3D(1.94, 0, 0, 0, -8.48001e-08, 1.94, 0, -1.94, -8.48001e-08, 11.68, 1.15, -8.812)
+visible = false
+texture = ExtResource("4_lpjxf")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7, 2.5, -11.6)
+use_collision = true
+radius = 15.4
+height = 6.4
+sides = 48
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_08kgm")
+volume_db = -4.0
+autoplay = true

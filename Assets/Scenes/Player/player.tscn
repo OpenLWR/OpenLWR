@@ -82,6 +82,7 @@ script = ExtResource("1_1w47b")
 shape = SubResource("CapsuleShape3D_emkox")
 
 [node name="MeshInstance3d" type="MeshInstance3D" parent="."]
+cast_shadow = 0
 mesh = SubResource("CapsuleMesh_6b3ky")
 
 [node name="Head" type="Node3D" parent="."]

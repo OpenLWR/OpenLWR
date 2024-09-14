@@ -655,6 +655,23 @@ signal chat_message(message)
 		"atypical" : false,
 		"text" : false,
 	},
+	
+	"rft_dt_1a_rpm": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 6000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"rft_dt_1b_rpm": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1b_rpm",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 6000,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var alarms = {}

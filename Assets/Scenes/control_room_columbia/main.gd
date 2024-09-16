@@ -692,6 +692,7 @@ var alarm_groups = {
 	"1" : {"F" : true, "S" : true}, # F - Fast S - Slow
 	"2" : {"F" : true, "S" : true}, # F - Fast S - Slow
 	"3" : {"F" : true, "S" : true}, # F - Fast S - Slow
+	"4" : {"F" : true, "S" : true}, # F - Fast S - Slow
 }
 
 @onready var indicators = {

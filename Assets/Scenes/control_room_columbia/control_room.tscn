@@ -1,4 +1,4 @@
-[gd_scene load_steps=578 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=581 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -64,6 +64,9 @@
 [ext_resource type="Texture2D" uid="uid://bivqu44wdnr28" path="res://Assets/Textures/Radial Gauge/Columbia/OpenLWR_Synchroscope_Outer.png" id="47_fyt36"]
 [ext_resource type="PackedScene" uid="uid://baf78ewkivud5" path="res://Assets/Common/Annunciators/annunciator_cgs_7x5dual.tscn" id="49_fqkdj"]
 [ext_resource type="Script" path="res://Assets/Common/Gauges/Circular/synchroscope.gd" id="54_8uecp"]
+[ext_resource type="PackedScene" uid="uid://bsfdelqlsf7lc" path="res://Assets/Common/Annunciators/annunciator_cgs_fcp.tscn" id="59_st7vo"]
+[ext_resource type="AudioStream" uid="uid://bgt3td8o61fxe" path="res://Assets/Audio/FCPAlarm.mp3" id="63_5obf3"]
+[ext_resource type="AudioStream" uid="uid://bluh33h5y6ohu" path="res://Assets/Audio/clear_alarm.mp3" id="64_f1f2v"]
 
 [sub_resource type="Environment" id="Environment_gjsn6"]
 ambient_light_source = 2
@@ -23739,7 +23742,14 @@ material = ExtResource("4_6rpi8")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Control Room Panels"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.03136, 1.19435, 0.823868)
+use_collision = true
 size = Vector3(7.03703, 2.40366, 1.04492)
+material = ExtResource("4_6rpi8")
+
+[node name="FCP" type="CSGBox3D" parent="Control Room Panels"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.49988, 1.19435, 4.52387)
+use_collision = true
+size = Vector3(4.1, 2.40366, 1.04492)
 material = ExtResource("4_6rpi8")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Control Room Panels"]
@@ -31739,6 +31749,16 @@ BATT B1-2 FAIL"
 [node name="Triangle" parent="Annunciators/C5" index="3"]
 visible = false
 
+[node name="FCP1_A" parent="Annunciators" instance=ExtResource("59_st7vo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10, 2.1, -5.9)
+
+[node name="Label3D" parent="Annunciators/FCP1_A/Windows/1-1/CSGBox3D" index="0"]
+text = "TG BLDG 471'
+ELECT SWGR BAY"
+
+[node name="FCP2_A" parent="Annunciators" instance=ExtResource("59_st7vo")]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -10, 2.1, -6.9571)
+
 [node name="Alarm1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.55557, 2.31361, 2.79219)
 script = ExtResource("30_mjcs6")
@@ -31770,6 +31790,16 @@ pitch_scale = 1.1
 
 [node name="Slow" type="AudioStreamPlayer" parent="Alarm3"]
 stream = ExtResource("32_nxmn4")
+
+[node name="Alarm4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.79315, 2.31361, -6.39784)
+script = ExtResource("30_mjcs6")
+
+[node name="Fast" type="AudioStreamPlayer" parent="Alarm4"]
+stream = ExtResource("63_5obf3")
+
+[node name="Slow" type="AudioStreamPlayer" parent="Alarm4"]
+stream = ExtResource("64_f1f2v")
 
 [node name="LightNormal_1" type="Node3D" parent="."]
 
@@ -33102,6 +33132,8 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [editable path="Annunciators/P602_A13"]
 [editable path="Annunciators/C1"]
 [editable path="Annunciators/C5"]
+[editable path="Annunciators/FCP1_A"]
+[editable path="Annunciators/FCP2_A"]
 [editable path="Node3D"]
 [editable path="Node3D/Circular"]
 [editable path="main_generator_sync"]

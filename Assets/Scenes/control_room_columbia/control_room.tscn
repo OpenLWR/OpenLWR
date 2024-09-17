@@ -31620,6 +31620,277 @@ P602.A13"
 [node name="C1" parent="Annunciators" instance=ExtResource("49_fqkdj")]
 transform = Transform3D(-3.49691e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.49691e-08, -1.60304, 2.1712, 3.80729)
 
+[node name="P840_A1" parent="Annunciators" instance=ExtResource("49_fqkdj")]
+transform = Transform3D(-3.49691e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.49691e-08, 5.43696, 2.1712, 3.80729)
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/1-1/CSGBox3D" index="0"]
+text = "TURBINE A
+TRIPPED"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/1-2/CSGBox3D" index="0"]
+text = "TURBINE A
+VACUUM LOW TRIP"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/1-3/CSGBox3D" index="0"]
+text = "TURBINE A
+TURNING GR FAIL"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/1-4/CSGBox3D" index="0"]
+text = "STARTUP FLOW
+VALVE ΔP HIGH"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/1-5/CSGBox3D" index="0"]
+text = "TURBINE B
+TRIPPED"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/1-6/CSGBox3D" index="0"]
+text = "TURBINE B
+VACUUM LOW TRIP"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/1-7/CSGBox3D" index="0"]
+text = "TURBINE B
+TURNING GR FAIL"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/2-1/CSGBox3D2" index="0"]
+text = "TURBINE A
+TRIP CKT FAIL"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/2-2/CSGBox3D2" index="0"]
+text = "TURBINE A
+EXH HOOD VAC LOW"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/2-3/CSGBox3D2" index="0"]
+text = "TURB A TURNING
+GR OIL PRESS LO"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/2-4/CSGBox3D2" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/2-5/CSGBox3D2" index="0"]
+text = "TURBINE B
+TRIP CKT FAIL"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/2-6/CSGBox3D2" index="0"]
+text = "TURBINE B
+EXH HOOD VAC LOW"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/2-7/CSGBox3D2" index="0"]
+text = "TURB B TURNING
+GR OIL PRESS LO"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/3-1/CSGBox3D" index="0"]
+text = "TURBINE A
+TEST HDR PRESS LO"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/3-2/CSGBox3D" index="0"]
+text = "TURBINE A
+EXH HOOD TEMP HI"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/3-3/CSGBox3D" index="0"]
+text = "TURBINE A
+SEAL STM PRESS LO"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/3-4/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/3-5/CSGBox3D" index="0"]
+text = "TURBINE B
+TEST HDR PRESS LO"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/3-6/CSGBox3D" index="0"]
+text = "TURBINE B
+EXH HOOD TEMP HI"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/3-7/CSGBox3D" index="0"]
+text = "TURBINE B
+SEAL STM PRESS LO"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/4-1/CSGBox3D2" index="0"]
+text = "TURB A TEST TRIP
+HDR PRESSURIZED"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/4-2/CSGBox3D2" index="0"]
+text = "TURBINE A
+OIL FILTER ΔP HI"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/4-3/CSGBox3D2" index="0"]
+text = "TURBINE A
+AOP RUNNING"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/4-4/CSGBox3D2" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/4-5/CSGBox3D2" index="0"]
+text = "TURB B TEST TRIP
+HDR PRESSURIZED"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/4-6/CSGBox3D2" index="0"]
+text = "TURBINE B
+OIL FILTER ΔP HI"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/4-7/CSGBox3D2" index="0"]
+text = "TURBINE B
+AOP RUNNING"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/5-1/CSGBox3D" index="0"]
+text = "TURB A CONTROL
+OIL PRESS LOW"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/5-2/CSGBox3D" index="0"]
+text = "TURB A LUBE
+OIL PRESS LOW"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/5-3/CSGBox3D" index="0"]
+text = "TURBINE A
+EOP RUNNING"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/5-4/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/5-5/CSGBox3D" index="0"]
+text = "TURB B CONTROL
+OIL PRESS LOW"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/5-6/CSGBox3D" index="0"]
+text = "TURB B LUBE
+OIL PRESS LOW"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/5-7/CSGBox3D" index="0"]
+text = "TURBINE B
+EOP RUNNING"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/6-1/CSGBox3D2" index="0"]
+text = "TURBINE A
+OVERSPEED TRIP"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/6-2/CSGBox3D2" index="0"]
+text = "TURB A COUPLING
+BRG OIL TEMP HI"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/6-3/CSGBox3D2" index="0"]
+text = "TURB A RESVR
+OIL LEVEL HIGH"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/6-4/CSGBox3D2" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/6-5/CSGBox3D2" index="0"]
+text = "TURBINE B
+OVERSPEED TRIP"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/6-6/CSGBox3D2" index="0"]
+text = "TURB B COUPLING
+BRG OIL TEMP HI"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/6-7/CSGBox3D2" index="0"]
+text = "TURB B RESVR
+OIL LEVEL HIGH"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/7-1/CSGBox3D" index="0"]
+text = "TURBINE A
+VIBRATION HIGH"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/7-2/CSGBox3D" index="0"]
+text = "TURB A THRUST
+BRG OIL TEMP HI"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/7-3/CSGBox3D" index="0"]
+text = "TURB A RESVR
+OIL LEVEL LOW"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/7-4/CSGBox3D" index="0"]
+text = "RFW PMP A/B
+SEAL TK LVL HIGH"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/7-5/CSGBox3D" index="0"]
+text = "TURBINE B
+VIBRATION HIGH"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/7-6/CSGBox3D" index="0"]
+text = "TURB B THRUST BRG OIL TEMP HI"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/7-7/CSGBox3D" index="0"]
+text = "TURB B RESVR
+OIL LEVEL LOW"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/8-1/CSGBox3D2" index="0"]
+text = "TURB A THRUST
+BRG WEAR HIGH"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/8-2/CSGBox3D2" index="0"]
+text = "TURB A OIL CLR
+OUTLET TEMP HIGH"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/8-3/CSGBox3D2" index="0"]
+text = "RFW PMP A
+SUCT PRESS LOW"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/8-4/CSGBox3D2" index="0"]
+text = "RFW PMP A/B
+DR TK LVL HI/LO"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/8-5/CSGBox3D2" index="0"]
+text = "TURB B THRUST
+BRG WEAR HIGH"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/8-6/CSGBox3D2" index="0"]
+text = "TURB B OIL CLR
+OUTLET TEMP HIGH"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/8-7/CSGBox3D2" index="0"]
+text = "RFW PMP B
+SUCT PRESS LOW"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/9-1/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/9-2/CSGBox3D" index="0"]
+text = "RFW PMP A SEAL
+DRAIN TEMP HIGH"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/9-3/CSGBox3D" index="0"]
+text = "RFW PMP A
+DISCH FLOW LOW"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/9-4/CSGBox3D" index="0"]
+text = "RFW PMP A/B
+SEAL FILTER ΔP HI"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/9-5/CSGBox3D" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/9-6/CSGBox3D" index="0"]
+text = "RFW PMP B SEAL
+DRAIN TEMP HIGH"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/9-7/CSGBox3D" index="0"]
+text = "RFW PMP B
+DISCH FLOW LOW"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/10-1/CSGBox3D2" index="0"]
+text = "RFW PMP A
+AREA TEMP HIGH"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/10-2/CSGBox3D2" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/10-3/CSGBox3D2" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/10-4/CSGBox3D2" index="0"]
+text = "RFW PMP/TURB
+A/B BRG TEMP HI"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/10-5/CSGBox3D2" index="0"]
+text = "RFW PMP B
+AREA TEMP HIGH"
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/10-6/CSGBox3D2" index="0"]
+text = ""
+
+[node name="Label3D" parent="Annunciators/P840_A1/Windows/10-7/CSGBox3D2" index="0"]
+text = ""
+
 [node name="C5" parent="Annunciators" instance=ExtResource("49_fqkdj")]
 transform = Transform3D(-3.49691e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.49691e-08, -6.09428, 2.1712, 3.80729)
 
@@ -33109,6 +33380,7 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [editable path="Annunciators/P601_A12"]
 [editable path="Annunciators/P602_A13"]
 [editable path="Annunciators/C1"]
+[editable path="Annunciators/P840_A1"]
 [editable path="Annunciators/C5"]
 [editable path="Annunciators/FCP1_A"]
 [editable path="Annunciators/FCP2_A"]

@@ -1237,6 +1237,9 @@ func _process(delta):
 								alarm = alarms[alarm]
 								alarm["material"] = null
 								
+						"rods":
+							rod_information = info
+								
 						"recorders":
 							recorders = info
 							for recorder in recorders:

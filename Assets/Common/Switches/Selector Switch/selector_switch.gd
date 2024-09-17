@@ -2,6 +2,7 @@
 extends Node3D
 
 @onready var node_3d = $"/root/Node3D"
+@onready var player = $"/root/Node3D/Player"
 var switch = null
 @onready var rotate_opposite = get_node_or_null("rotate_opposite") != null
 @onready var has_flag = get_node_or_null("selector_switch/Flag")
@@ -11,7 +12,8 @@ var flag_red = null
 func init():
 	switch = node_3d.switches[self.name]
 	switch.switch = self
-	
+	switch.local_push = false
+	player.unclick_left.connect(switch_unclick)
 	if switch.lights != {}:
 		for light in switch.lights:
 			if light == "green" or light == "red":
@@ -58,6 +60,7 @@ func switch_click_left(_camera, event, _position, _normal, _shape_idx):
 	if mouse_click and mouse_click.button_index == 1:
 		var switch = node_3d.switches[self.name]
 		if mouse_click.pressed and (switch.position+1 in switch.positions):
+			switch.local_push = true
 			switch_position_change(switch.position+1)
 			if switch.position >=2 and ("flag" in switch):
 				switch.flag = "red"
@@ -68,10 +71,17 @@ func switch_click_right(_camera, event, _position, _normal, _shape_idx):
 	if mouse_click and mouse_click.button_index == 1:
 		var switch = node_3d.switches[self.name]
 		if mouse_click.pressed and (switch.position-1 in switch.positions):
+			switch.local_push = true
 			switch_position_change(switch.position-1)
 			if switch.position <=0 and ("flag" in switch):
 				switch.flag = "green"
 			switch.updated = true
+			
+func switch_unclick():
+	var switch = node_3d.switches[self.name]
+	if switch.local_push and switch.momentary:
+		switch_position_change(1)
+		switch.updated = true
 
 func switch_click_ptl(_camera, event, _position, _normal, _shape_idx):
 	print("pull to lock") #TODO

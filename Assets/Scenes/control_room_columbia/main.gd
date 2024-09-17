@@ -1215,7 +1215,6 @@ func _process(delta):
 							for switch in switches:
 								switch = switches[switch]
 								switch["switch"] = null
-								switch["momentary"] = false
 								switch["updated"] = false
 								for light in switch["lights"]:
 									light = null

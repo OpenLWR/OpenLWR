@@ -1,5 +1,7 @@
 extends CharacterBody3D
 
+signal unclick_left()
+
 @onready var Cam = $Head/Camera3d as Camera3D
 var mouseSensibility = 1200
 var mouse_relative_x = 0
@@ -35,7 +37,16 @@ func _physics_process(_delta):
 
 	move_and_slide()
 
+var mb1 = false
+
 func _unhandled_input(event: InputEvent):
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+		mb1 = true #TODO: garbaj code
+		
+	if mb1 and not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+		mb1 = false
+		unclick_left.emit()
+	
 	if event is InputEventMouseMotion and Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT):
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 		rotation.y -= event.relative.x / mouseSensibility

@@ -672,6 +672,15 @@ signal chat_message(message)
 		"atypical" : false,
 		"text" : false,
 	},
+	
+	"rfw_rpv_inlet_pressure": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/RFW/rfw_rpv_inlet_pressure",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 1600,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var alarms = {}
@@ -693,6 +702,7 @@ var alarm_groups = {
 	"2" : {"F" : true, "S" : true}, # F - Fast S - Slow
 	"3" : {"F" : true, "S" : true}, # F - Fast S - Slow
 	"4" : {"F" : true, "S" : true}, # F - Fast S - Slow
+	"5" : {"F" : true, "S" : true}, # F - Fast S - Slow
 }
 
 @onready var indicators = {

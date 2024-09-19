@@ -9731,6 +9731,13 @@ transform = Transform3D(-4.27194e-08, 2.98023e-08, -0.999999, 1.89984e-07, 0.746
 transform = Transform3D(-1.31134e-09, 0, 0.03, -1.32469e-15, 0.042, 9.31326e-10, -0.03, -7.01027e-16, -1.31134e-09, 0.00105715, 0.00590944, 0.018713)
 text = "TEXT A"
 
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/Label" index="2"]
+visible = false
+
 [node name="Name2" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/Label"]
 transform = Transform3D(-1.31134e-09, 0, 0.03, -1.54674e-15, 0.042, 9.31326e-10, -0.03, -8.1205e-16, -1.31134e-09, 0.00105715, 0.00590944, -0.0174179)
 shaded = true
@@ -9748,13 +9755,6 @@ text = "TOGETHER"
 font = ExtResource("15_o5a3n")
 font_size = 30
 outline_size = 0
-
-[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/Label" index="3"]
-visible = false
-text = "SM-8"
-
-[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/Label" index="4"]
-visible = false
 
 [node name="Sprite3D2" type="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/Condensate/cond_discharge_press/Label"]
 transform = Transform3D(-2.14186e-08, 1.42109e-14, 0.49, -2.8298e-14, 0.49, 1.42109e-14, -0.49, -2.26856e-14, -2.14186e-08, 0.00113678, 0.00599837, 0)
@@ -10955,6 +10955,13 @@ text = "CONTROL
 PRESS"
 font_size = 25
 
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm4/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm4/Label" index="2"]
+visible = false
+
 [node name="Name2" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm4/Label"]
 transform = Transform3D(-1.31134e-09, 0, 0.03, -1.54674e-15, 0.042, 9.31326e-10, -0.03, -1.03409e-15, -1.31134e-09, 0.00105715, 0.00554752, -0.000234127)
 shaded = true
@@ -10983,13 +10990,6 @@ text = "TURBINE OIL"
 font = ExtResource("15_o5a3n")
 font_size = 30
 outline_size = 0
-
-[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm4/Label" index="4"]
-visible = false
-text = "SM-8"
-
-[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm4/Label" index="5"]
-visible = false
 
 [node name="Sprite3D2" type="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm4/Label"]
 transform = Transform3D(-2.32982e-08, 1.77636e-14, 0.533, -3.89453e-14, 0.533, -1.42109e-14, -0.533, -3.31521e-14, -2.32982e-08, 0.00113678, 0.00540757, 0)
@@ -11066,6 +11066,13 @@ transform = Transform3D(-4.27194e-08, 2.98023e-08, -0.999999, 1.89984e-07, 0.746
 transform = Transform3D(-1.31134e-09, 0, 0.03, -1.32469e-15, 0.042, 9.31326e-10, -0.03, -7.01027e-16, -1.31134e-09, 0.00105715, 0.00590944, 0.018713)
 text = "OUTLET TEMP"
 
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm7/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm7/Label" index="2"]
+visible = false
+
 [node name="Name2" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm7/Label"]
 transform = Transform3D(-1.31134e-09, 0, 0.03, -1.54674e-15, 0.042, 9.31326e-10, -0.03, -8.1205e-16, -1.31134e-09, 0.00105715, 0.00590944, -0.0174179)
 shaded = true
@@ -11083,13 +11090,6 @@ text = "OIL COOLER"
 font = ExtResource("15_o5a3n")
 font_size = 30
 outline_size = 0
-
-[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm7/Label" index="3"]
-visible = false
-text = "SM-8"
-
-[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm7/Label" index="4"]
-visible = false
 
 [node name="Sprite3D2" type="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm7/Label"]
 transform = Transform3D(-2.14186e-08, 1.42109e-14, 0.49, -2.8298e-14, 0.49, 1.42109e-14, -0.49, -2.26856e-14, -2.14186e-08, 0.00113678, 0.00599837, 0)
@@ -11350,6 +11350,13 @@ transform = Transform3D(-4.27194e-08, 2.98023e-08, -0.999999, 1.89984e-07, 0.746
 transform = Transform3D(-1.31134e-09, 0, 0.03, -1.32469e-15, 0.042, 9.31326e-10, -0.03, -7.01027e-16, -1.31134e-09, 0.00105715, 0.00590944, 0.018713)
 text = "FLOW"
 
+[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm15/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm15/Label" index="2"]
+visible = false
+
 [node name="Name2" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm15/Label"]
 transform = Transform3D(-1.31134e-09, 0, 0.03, -1.54674e-15, 0.042, 9.31326e-10, -0.03, -8.1205e-16, -1.31134e-09, 0.00105715, 0.00590944, -0.0174179)
 shaded = true
@@ -11367,13 +11374,6 @@ text = "RFW-P-1A"
 font = ExtResource("15_o5a3n")
 font_size = 30
 outline_size = 0
-
-[node name="Power" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm15/Label" index="3"]
-visible = false
-text = "SM-8"
-
-[node name="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm15/Label" index="4"]
-visible = false
 
 [node name="Sprite3D2" type="Sprite3D" parent="Control Room Panels/Main Panel Right Side/Controls/RFW/rft_dt_1a_rpm15/Label"]
 transform = Transform3D(-2.14186e-08, 1.42109e-14, 0.49, -2.8298e-14, 0.49, 1.42109e-14, -0.49, -2.26856e-14, -2.14186e-08, 0.00113678, 0.00599837, 0)

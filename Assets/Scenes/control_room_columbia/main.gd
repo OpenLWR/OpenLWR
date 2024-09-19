@@ -951,7 +951,155 @@ func _process(delta):
 	globals.connection_state = state
 	if connection_ready:
 		if state == WebSocketPeer.STATE_OPEN:
-				
+			# we have to recieve first or weird things happen
+			
+			# recieve packets
+			while socket.get_available_packet_count():
+				var packet = socket.get_packet().get_string_from_utf8().split("|")
+				var packet_id = int(packet[0])
+				var packet_data = parse_b64(packet[1])
+				match packet_id:
+					server_packets.METER_PARAMETERS_UPDATE:
+						# data: a dict of all indicator values, json
+						packet_data = json.parse_string(packet_data)
+						for gauge in packet_data:
+							var value = packet_data[gauge]
+							gauges[gauge].value = value
+							if gauges[gauge].atypical: continue
+							if gauges[gauge].text:
+								gauges[gauge].node.set_gauge_value(gauges[gauge].value)
+							else:
+								gauges[gauge].node.set_gauge_value(gauges[gauge].value, gauges[gauge].min_value, gauges[gauge].max_value)
+					
+					server_packets.USER_LOGOUT:
+						# data: the username of the person who logged out, string
+						print("User %s logged out." % [packet_data])
+						get_node(packet_data).queue_free() #deletes the remote player instance
+						players.erase(packet_data) #removes the player's info from the player table
+						
+						
+					server_packets.SWITCH_PARAMETERS_UPDATE:
+						packet_data = json.parse_string(packet_data)
+						for switch in packet_data:
+							var data = packet_data[switch]
+							if switches[switch].updated == true: #if we have a update to this, we have to ignore what the server wants
+								continue
+							if switches[switch].switch != null:
+								switches[switch].flag = data.flag
+								switches[switch].switch.switch_position_change(data.position)
+								
+							for light_name in switches[switch].lights:
+								var light = switches[switch].lights[light_name]
+								state = data.lights[light_name]
+								light.emission_enabled = state
+					
+					server_packets.INDICATOR_PARAMETERS_UPDATE:
+						packet_data = json.parse_string(packet_data)
+						for indicator in packet_data:
+							var indicator_state = packet_data[indicator]
+							if "cr_light" in indicator:
+								if indicator == "cr_light_normal_1":
+									$LightNormal_1.visible = indicator_state
+								if indicator == "cr_light_normal_2":
+									$LightNormal_2.visible = indicator_state
+								if indicator == "cr_light_emergency":
+									$LightEmergency.visible = indicator_state
+								continue
+							if "OPERATE" in indicator:
+								if indicator == "FCD_OPERATE":
+									$"Control Room Panels/Main Panel Center/Full Core Display/full core display lights".fcd_inop = not indicator_state
+								continue
+							indicators[indicator].emission_enabled = indicator_state
+							
+					server_packets.ALARM_PARAMETERS_UPDATE:
+						packet_data = packet_data.split("|")
+						var alarm_dict = json.parse_string(packet_data[0])
+						var groups = json.parse_string(packet_data[1])
+						for alarm in alarm_dict:
+							var alarm_state = alarm_dict[alarm]["state"]
+							alarms[alarm].state = int(alarm_state)
+							alarms[alarm].silenced = bool(alarm_dict[alarm]["silenced"])
+
+						for group in groups:
+							var fast_state = groups[group]["F"]
+							var slow_state = groups[group]["S"]
+							alarm_groups[group]["F"] = bool(fast_state)
+							alarm_groups[group]["S"] = bool(slow_state)
+
+					server_packets.ROD_POSITION_PARAMETERS_UPDATE:
+						packet_data = json.parse_string(packet_data)
+						for rod in packet_data:
+							rod_information[rod] = packet_data[rod]
+							
+					server_packets.BUTTON_PARAMETERS_UPDATE:
+						packet_data = json.parse_string(packet_data)
+						for button in packet_data:
+							var data = packet_data[button]
+							if buttons[button].updated == true: #if we have a update to this, we have to ignore what the server wants
+								continue
+							if button not in buttons:
+								continue
+							if buttons[button].switch != null:
+								buttons[button].switch.button_state_change(data.state)
+								buttons[button].switch.button_arm_change(data.armed)
+					
+					server_packets.PLAYER_POSITION_PARAMETERS_UPDATE:
+						packet_data = json.parse_string(packet_data) # dict of all players, dict OR Vector3(?) of position
+						for player in packet_data:
+							var player_position = packet_data[player]
+							
+							if player == globals.username_requested_tojoin:
+								continue #if the player is ourselves, ignore it
+							
+							if player in players:
+								players[player].position = player_position
+							else:
+								# player is not in our list, assume its a new player and insert a new entry
+								players[player] = {
+									"position" : player_position,
+								}
+								# actually create the other player character
+								var NewRemotePlayer = remote_player_scene.instantiate()
+								NewRemotePlayer.name = player
+								self.add_child(NewRemotePlayer)
+								players[player]["object"] = NewRemotePlayer
+								# TODO: remove remote player instance when they disconnect
+								
+								
+					server_packets.CHAT:
+						chat_message.emit(packet_data)
+						
+					server_packets.RECORDER:
+						packet_data = json.parse_string(packet_data)
+						
+						for recorder in packet_data:
+							#var page_info = packet_data[recorder].page_info
+							#var page = packet_data[recorder].page
+							var channels = packet_data[recorder].channels
+							
+							var rcd = recorders[recorder]
+								
+							if rcd.update_time >= 10: #1 second, assuming the server or connection isnt lacking
+								for channel in channels:
+									if not channel in rcd.history:
+										rcd.history[channel] = []
+										rcd.history[channel].resize(600)
+										rcd.history[channel].fill(0)
+									
+									if len(rcd.history[channel]) > 600:
+										rcd.history[channel].remove_at(600) #TODO: use 1800
+							
+									rcd.history[channel].insert(0,channels[channel].value)
+									
+									
+								rcd.update_time = 0
+							
+							rcd.update_time += 1
+							
+							if rcd.object != null:
+								#rcd.object.update(page,page_info)
+								rcd.object.update(channels,rcd.history)
+							
 			# check if any switches have been turned
 			var updated_switches = {}
 			for switch_name in switches:
@@ -1023,152 +1171,7 @@ func _process(delta):
 				
 			for message in sent_messages:
 				socket.send_text(build_packet(client_packets.CHAT, message))
-			sent_messages.clear()
-			
-			# recieve packets
-			while socket.get_available_packet_count():
-				var packet = socket.get_packet().get_string_from_utf8().split("|")
-				var packet_id = int(packet[0])
-				var packet_data = parse_b64(packet[1])
-				match packet_id:
-					server_packets.METER_PARAMETERS_UPDATE:
-						# data: a dict of all indicator values, json
-						packet_data = json.parse_string(packet_data)
-						for gauge in packet_data:
-							var value = packet_data[gauge]
-							gauges[gauge].value = value
-							if gauges[gauge].atypical: continue
-							if gauges[gauge].text:
-								gauges[gauge].node.set_gauge_value(gauges[gauge].value)
-							else:
-								gauges[gauge].node.set_gauge_value(gauges[gauge].value, gauges[gauge].min_value, gauges[gauge].max_value)
-					
-					server_packets.USER_LOGOUT:
-						# data: the username of the person who logged out, string
-						print("User %s logged out." % [packet_data])
-						get_node(packet_data).queue_free() #deletes the remote player instance
-						players.erase(packet_data) #removes the player's info from the player table
-						
-						
-					server_packets.SWITCH_PARAMETERS_UPDATE:
-						packet_data = json.parse_string(packet_data)
-						for switch in packet_data:
-							var data = packet_data[switch]
-							if switches[switch].switch != null:
-								switches[switch].flag = data.flag
-								switches[switch].switch.switch_position_change(data.position)
-								
-							for light_name in switches[switch].lights:
-								var light = switches[switch].lights[light_name]
-								state = data.lights[light_name]
-								light.emission_enabled = state
-					
-					server_packets.INDICATOR_PARAMETERS_UPDATE:
-						packet_data = json.parse_string(packet_data)
-						for indicator in packet_data:
-							var indicator_state = packet_data[indicator]
-							if "cr_light" in indicator:
-								if indicator == "cr_light_normal_1":
-									$LightNormal_1.visible = indicator_state
-								if indicator == "cr_light_normal_2":
-									$LightNormal_2.visible = indicator_state
-								if indicator == "cr_light_emergency":
-									$LightEmergency.visible = indicator_state
-								continue
-							if "OPERATE" in indicator:
-								if indicator == "FCD_OPERATE":
-									$"Control Room Panels/Main Panel Center/Full Core Display/full core display lights".fcd_inop = not indicator_state
-								continue
-							indicators[indicator].emission_enabled = indicator_state
-							
-					server_packets.ALARM_PARAMETERS_UPDATE:
-						packet_data = packet_data.split("|")
-						var alarm_dict = json.parse_string(packet_data[0])
-						var groups = json.parse_string(packet_data[1])
-						for alarm in alarm_dict:
-							var alarm_state = alarm_dict[alarm]["state"]
-							alarms[alarm].state = int(alarm_state)
-							alarms[alarm].silenced = bool(alarm_dict[alarm]["silenced"])
-
-						for group in groups:
-							var fast_state = groups[group]["F"]
-							var slow_state = groups[group]["S"]
-							alarm_groups[group]["F"] = bool(fast_state)
-							alarm_groups[group]["S"] = bool(slow_state)
-
-					server_packets.ROD_POSITION_PARAMETERS_UPDATE:
-						packet_data = json.parse_string(packet_data)
-						for rod in packet_data:
-							rod_information[rod] = packet_data[rod]
-							
-					server_packets.BUTTON_PARAMETERS_UPDATE:
-						packet_data = json.parse_string(packet_data)
-						for button in packet_data:
-							var data = packet_data[button]
-							if button not in buttons:
-								continue
-							if buttons[button].switch != null:
-								buttons[button].switch.button_state_change(data.state)
-								buttons[button].switch.button_arm_change(data.armed)
-					
-					server_packets.PLAYER_POSITION_PARAMETERS_UPDATE:
-						packet_data = json.parse_string(packet_data) # dict of all players, dict OR Vector3(?) of position
-						for player in packet_data:
-							var player_position = packet_data[player]
-							
-							if player == globals.username_requested_tojoin:
-								continue #if the player is ourselves, ignore it
-							
-							if player in players:
-								players[player].position = player_position
-							else:
-								# player is not in our list, assume its a new player and insert a new entry
-								players[player] = {
-									"position" : player_position,
-								}
-								# actually create the other player character
-								var NewRemotePlayer = remote_player_scene.instantiate()
-								NewRemotePlayer.name = player
-								self.add_child(NewRemotePlayer)
-								players[player]["object"] = NewRemotePlayer
-								# TODO: remove remote player instance when they disconnect
-								
-								
-					server_packets.CHAT:
-						chat_message.emit(packet_data)
-						
-					server_packets.RECORDER:
-						packet_data = json.parse_string(packet_data)
-						
-						for recorder in packet_data:
-							#var page_info = packet_data[recorder].page_info
-							#var page = packet_data[recorder].page
-							var channels = packet_data[recorder].channels
-							
-							var rcd = recorders[recorder]
-								
-							if rcd.update_time >= 10: #1 second, assuming the server or connection isnt lacking
-								for channel in channels:
-									if not channel in rcd.history:
-										rcd.history[channel] = []
-										rcd.history[channel].resize(600)
-										rcd.history[channel].fill(0)
-									
-									if len(rcd.history[channel]) > 600:
-										rcd.history[channel].remove_at(600) #TODO: use 1800
-							
-									rcd.history[channel].insert(0,channels[channel].value)
-									
-									
-								rcd.update_time = 0
-							
-							rcd.update_time += 1
-							
-							if rcd.object != null:
-								#rcd.object.update(page,page_info)
-								rcd.object.update(channels,rcd.history)
-							
-							
+			sent_messages.clear()				
 							
 							
 							

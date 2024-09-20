@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://dn7mi80gxcn24" path="res://Assets/Common/Switches/Armable Switch/armable_switch.tscn" id="17_p3ckw"]
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_nmp2/four_rod_display.gd" id="17_qk8dd"]
 [ext_resource type="PackedScene" uid="uid://dok8h20vi4url" path="res://Assets/Common/Gauges/Edgewise/edgewise_gauge.tscn" id="18_bcd1o"]
+[ext_resource type="Material" uid="uid://dvsme7hpd88f1" path="res://Assets/Materials/white_green_lamp.tres" id="18_c161q"]
 [ext_resource type="Material" uid="uid://dhj0kjjcc7lie" path="res://Assets/Materials/annunciator_red.tres" id="18_cvut7"]
 [ext_resource type="Texture2D" uid="uid://bxvksf58t2vat" path="res://Assets/Textures/ADS.png" id="18_idun7"]
 [ext_resource type="PackedScene" uid="uid://dyk86rtadlnxg" path="res://Assets/Scenes/control_room_nmp2/full_core_display/full_core_display_lights.tscn" id="19_pl0e3"]
@@ -103,10 +104,6 @@ emission_energy_multiplier = 1.9
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wlver"]
 size = Vector3(0.841675, 0.585247, 0.656738)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jvkxt"]
-emission = Color(0.247327, 0.897679, 0, 1)
-emission_energy_multiplier = 1.9
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dg63t"]
 emission = Color(0.605563, 0.000574561, 0.000314438, 1)
@@ -5143,6 +5140,51 @@ font_size = 70
 outline_size = 0
 line_spacing = -15.0
 
+[node name="CSGBox3D8" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00352144, -0.211939, -0.534669)
+size = Vector3(0.0302581, 0.0174256, 0.0874691)
+material = SubResource("StandardMaterial3D_8jn2n")
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/CSGBox3D8"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0151904, 0, 0)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "MECHANICAL TRIP TEST"
+font = ExtResource("14_chbuk")
+font_size = 70
+outline_size = 0
+line_spacing = -15.0
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00352144, -0.151939, -0.534669)
+size = Vector3(0.0302581, 0.0174256, 0.0874691)
+material = SubResource("StandardMaterial3D_8jn2n")
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/CSGBox3D9"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0151904, 0, 0)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "MECHANICAL TRIP"
+font = ExtResource("14_chbuk")
+font_size = 70
+outline_size = 0
+line_spacing = -15.0
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00352144, -0.091939, -0.533403)
+size = Vector3(0.0302581, 0.0174256, 0.12)
+material = SubResource("StandardMaterial3D_8jn2n")
+
+[node name="Label3D2" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/CSGBox3D10"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0151904, 0, 0)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "CONDENSER VACUUM TRIP"
+font = ExtResource("14_chbuk")
+font_size = 70
+outline_size = 0
+line_spacing = -15.0
+
 [node name="CSGBox3D7" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00352144, -0.243499, 0.255215)
 size = Vector3(0.0302581, 0.0174256, 0.0431075)
@@ -5192,6 +5234,11 @@ line_spacing = -15.0
 
 [node name="CSGBox3D24" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/Lines"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00413799, -0.337231, 0.151143)
+size = Vector3(0.03, 0.00305218, 0.303195)
+material = ExtResource("30_1q8ae")
+
+[node name="CSGBox3D25" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/Lines"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.00413799, -0.237231, -0.457978)
 size = Vector3(0.03, 0.00305218, 0.303195)
 material = ExtResource("30_1q8ae")
 
@@ -5286,7 +5333,7 @@ line_spacing = -15.0
 [node name="ehc_closed" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.313173, 0.278857)
 size = Vector3(0.03, 0.03, 0.033)
-material = SubResource("StandardMaterial3D_jvkxt")
+material = ExtResource("18_c161q")
 script = ExtResource("14_bc77r")
 
 [node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/ehc_closed"]
@@ -5592,6 +5639,310 @@ font = ExtResource("31_6suc0")
 font_size = 55
 outline_size = 0
 line_spacing = -15.0
+
+[node name="TRIP" type="Node3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC"]
+
+[node name="mt_tripped" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.297397, -0.49387)
+size = Vector3(0.03, 0.03, 0.033)
+material = ExtResource("18_c161q")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/mt_tripped"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "TRIPPED"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="mt_reset" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.297397, -0.57387)
+size = Vector3(0.03, 0.03, 0.033)
+material = ExtResource("18_cvut7")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/mt_reset"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "RESET"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="mt_trip_1" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP" instance=ExtResource("32_61r0u")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.023272, -0.357353, -0.493912)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/mt_trip_1/Button/CSGBox3D" index="0"]
+text = "TRIP"
+
+[node name="CSGCylinder3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/mt_trip_1/Button" index="3"]
+material = ExtResource("27_mwtj8")
+
+[node name="mt_reset_pb" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP" instance=ExtResource("32_61r0u")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.023272, -0.357353, -0.573911)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/mt_reset_pb/Button/CSGBox3D" index="0"]
+text = "RESET"
+
+[node name="MECH TRIP TEST" type="Node3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP"]
+
+[node name="mech_trip_normal" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.237397, -0.482008)
+size = Vector3(0.03, 0.03, 0.033)
+material = SubResource("StandardMaterial3D_nca75")
+script = ExtResource("14_bc77r")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_normal"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "NORMAL"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_normal"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_normal/StaticBody3D"]
+transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
+shape = SubResource("BoxShape3D_wlver")
+
+[node name="mech_trip_lockout" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.237397, -0.516159)
+size = Vector3(0.03, 0.03, 0.033)
+material = ExtResource("17_854tn")
+script = ExtResource("14_bc77r")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_lockout"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "LOCKED
+OUT"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_lockout"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_lockout/StaticBody3D"]
+transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
+shape = SubResource("BoxShape3D_wlver")
+
+[node name="mech_trip_oiltrip" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.237397, -0.550313)
+size = Vector3(0.03, 0.03, 0.033)
+material = ExtResource("17_854tn")
+script = ExtResource("14_bc77r")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_oiltrip"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "OIL
+TRIP"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_oiltrip"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_oiltrip/StaticBody3D"]
+transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
+shape = SubResource("BoxShape3D_wlver")
+
+[node name="mech_trip_reset_pb" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.237397, -0.583976)
+size = Vector3(0.03, 0.03, 0.033)
+material = ExtResource("17_854tn")
+script = ExtResource("14_bc77r")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_reset_pb"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "PUSH
+TO
+RESET"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_reset_pb"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_reset_pb/StaticBody3D"]
+transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
+shape = SubResource("BoxShape3D_wlver")
+
+[node name="COND VAC" type="Node3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP"]
+
+[node name="vacuum_tripped" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.117397, -0.482008)
+size = Vector3(0.03, 0.03, 0.033)
+material = ExtResource("18_c161q")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_tripped"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "TRIPPED"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_tripped"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_tripped/StaticBody3D"]
+transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
+shape = SubResource("BoxShape3D_wlver")
+
+[node name="vacuum_normal" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.117397, -0.516159)
+size = Vector3(0.03, 0.03, 0.033)
+material = ExtResource("18_cvut7")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_normal"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "NORMAL"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_normal"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_normal/StaticBody3D"]
+transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
+shape = SubResource("BoxShape3D_wlver")
+
+[node name="vacuum_reset" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.117397, -0.550313)
+size = Vector3(0.03, 0.03, 0.033)
+material = ExtResource("18_cvut7")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_reset"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "RESET"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_reset"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_reset/StaticBody3D"]
+transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
+shape = SubResource("BoxShape3D_wlver")
+
+[node name="vacuum_low" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.117397, -0.583976)
+size = Vector3(0.03, 0.03, 0.033)
+material = ExtResource("17_854tn")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_low"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "VACUUM
+LOW"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_low"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_low/StaticBody3D"]
+transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
+shape = SubResource("BoxShape3D_wlver")
+
+[node name="MECH TRIP" type="Node3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP"]
+
+[node name="mech_trip_tripped" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.177397, -0.499161)
+size = Vector3(0.03, 0.03, 0.033)
+material = ExtResource("18_c161q")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_tripped"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "TRIPPED"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_tripped"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_tripped/StaticBody3D"]
+transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
+shape = SubResource("BoxShape3D_wlver")
+
+[node name="mech_trip_resetting" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.177397, -0.533313)
+size = Vector3(0.03, 0.03, 0.033)
+material = ExtResource("17_854tn")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_resetting"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "RESETTING"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_resetting"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_resetting/StaticBody3D"]
+transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
+shape = SubResource("BoxShape3D_wlver")
+
+[node name="mech_trip_reset" type="CSGBox3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00346184, -0.177397, -0.567467)
+size = Vector3(0.03, 0.03, 0.033)
+material = ExtResource("18_cvut7")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_reset"]
+transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0153451, 0, -4.76837e-07)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "RESET"
+font = ExtResource("31_6suc0")
+font_size = 55
+outline_size = 0
+line_spacing = -15.0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_reset"]
+transform = Transform3D(0.05, -9.31325e-10, 0, 9.31325e-10, 0.05, 0, 0, 0, 0.05, 0.00300312, -0.0036118, -0.00162029)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_reset/StaticBody3D"]
+transform = Transform3D(1, -5.32907e-15, 0, 8.9407e-08, 0.999998, 0, 0, 0, 1, -0.0791931, 0.080122, 0.0334396)
+shape = SubResource("BoxShape3D_wlver")
 
 [node name="sync_cb_4888" parent="Control Room Panels/Main Panel Right Side/Controls" instance=ExtResource("13_ba4xl")]
 transform = Transform3D(-1.03316e-07, 2.10734e-08, -1, -1.19209e-07, 1, 4.37114e-08, 1, 2.10734e-08, -4.37114e-08, 4.27659, 0.767213, -6.74657)
@@ -32806,6 +33157,17 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_slow/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_slow" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_med/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_med" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_fast/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/START UP RATE/ehc_fast" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_normal/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_normal" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_lockout/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_lockout" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_oiltrip/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_oiltrip" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_reset_pb/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_reset_pb" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_tripped/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_tripped" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_normal/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_normal" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_reset/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_reset" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_low/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_low" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_tripped/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_tripped" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_resetting/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_resetting" method="switch_click"]
+[connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_reset/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_reset" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/rcic_init_reset/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/rcic_init_reset" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/LPCS/lpcs_init/lpcs_init_reset/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/LPCS/lpcs_init/lpcs_init_reset" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Left Side/Controls/601Ann1/ALARM_ACK_2/StaticBody3D" to="Control Room Panels/Main Panel Left Side/Controls/601Ann1/ALARM_ACK_2" method="switch_click"]
@@ -33127,6 +33489,10 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [editable path="Control Room Panels/Main Panel Right Side/Controls/tbd"]
 [editable path="Control Room Panels/Main Panel Right Side/Controls/tbd/selector_switch"]
 [editable path="Control Room Panels/Main Panel Right Side/Controls/tbd/Label"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/mt_trip_1"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/mt_trip_1/Button"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/mt_reset_pb"]
+[editable path="Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/mt_reset_pb/Button"]
 [editable path="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888"]
 [editable path="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888/selector_switch"]
 [editable path="Control Room Panels/Main Panel Right Side/Controls/sync_cb_4888/Label"]

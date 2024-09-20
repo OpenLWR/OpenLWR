@@ -864,6 +864,25 @@ var alarm_groups = {
 	"ehc_line_speed_selected": $"Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_selected",
 	"ehc_line_speed_operating": $"Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_operating",
 	
+	"mt_tripped": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/mt_tripped",
+	"mt_reset": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/mt_reset",
+	
+	#mech trip test
+	"mech_trip_normal": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_normal",
+	"mech_trip_lockout": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_lockout",
+	"mech_trip_oiltrip": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_oiltrip",
+	"mech_trip_reset_pb": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP TEST/mech_trip_reset_pb",
+	
+	#mech trip
+	"mech_trip_tripped": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_tripped",
+	"mech_trip_resetting": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_resetting",
+	"mech_trip_reset": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/MECH TRIP/mech_trip_reset",
+	
+	#condenser vacuum trip
+	"vacuum_tripped": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_tripped",
+	"vacuum_normal": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_normal",
+	"vacuum_reset": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_reset",
+	"vacuum_low": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/COND VAC/vacuum_low",
 }
 
 var rod_information = {}

@@ -74,8 +74,6 @@
 [sub_resource type="Environment" id="Environment_gjsn6"]
 ambient_light_source = 2
 ambient_light_color = Color(0.0110876, 0.0110876, 0.0110876, 1)
-ssr_enabled = true
-ssao_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_av737"]
 metallic = 1.0

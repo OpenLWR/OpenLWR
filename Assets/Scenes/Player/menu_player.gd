@@ -15,3 +15,6 @@ func _settings_exit_pressed():
 
 func _continue_button_pressed():
 	self.visible = false
+
+func bug_report_pressed():
+	OS.shell_open("https://github.com/OpenLWR/OpenLWR/issues") 

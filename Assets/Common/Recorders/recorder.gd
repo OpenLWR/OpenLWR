@@ -37,4 +37,3 @@ func update(channels,history):
 		$"recorder/Sprite3D/SubViewport/Node2D/2_PAGE/1_NAME".text = channel_n
 		$"recorder/Sprite3D/SubViewport/Node2D/2_PAGE/1_UNIT".text = unit
 		$"recorder/Sprite3D/SubViewport/Node2D/2_PAGE/1_VALUE".text = text
-

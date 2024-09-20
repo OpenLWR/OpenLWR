@@ -33,4 +33,3 @@ func switch_click(_camera, event, _position, _normal, _shape_idx):
 		button.local_push = mouse_click.pressed
 		button_state_change(mouse_click.pressed)
 		button.updated = true
-

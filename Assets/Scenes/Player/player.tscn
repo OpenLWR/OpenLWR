@@ -190,6 +190,7 @@ current_tab = 1
 [node name="General" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
 visible = false
 layout_mode = 2
+metadata/_tab_index = 0
 
 [node name="CheckButton" type="CheckButton" parent="Head/Camera3d/Menu/Settings/Settings/General"]
 layout_mode = 0
@@ -208,6 +209,7 @@ mesh = SubResource("BoxMesh_nyxp3")
 [node name="Graphics" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
 layout_mode = 2
 script = ExtResource("6_ssrgo")
+metadata/_tab_index = 1
 
 [node name="Occlusion" type="OptionButton" parent="Head/Camera3d/Menu/Settings/Settings/Graphics"]
 layout_mode = 0
@@ -272,6 +274,7 @@ text = "Antialiasing"
 [node name="Controls" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
 visible = false
 layout_mode = 2
+metadata/_tab_index = 2
 
 [node name="CheckButton" type="CheckButton" parent="Head/Camera3d/Menu/Settings/Settings/Controls"]
 layout_mode = 0

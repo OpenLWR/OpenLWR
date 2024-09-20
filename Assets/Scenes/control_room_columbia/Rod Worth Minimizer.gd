@@ -37,4 +37,3 @@ func init():
 func _ready():
 	node_3d.init_scene_objects.connect(init)
 	
-

@@ -1,4 +1,4 @@
-[gd_scene load_steps=583 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=582 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -51,7 +51,6 @@
 [ext_resource type="Material" uid="uid://bhihf6snj42si" path="res://Assets/Materials/white_lamp.tres" id="31_f0acg"]
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/Rod Worth Minimizer.gd" id="31_sp420"]
 [ext_resource type="PackedScene" uid="uid://c5dd8edkvmcwo" path="res://Assets/Common/Switches/Selector Switch/button.tscn" id="32_61r0u"]
-[ext_resource type="AudioStream" uid="uid://bqm26847iqdj1" path="res://Assets/Audio/electrical_alarm_loop.mp3" id="32_nxmn4"]
 [ext_resource type="Material" uid="uid://bvxdwburpvc23" path="res://Assets/Materials/white_amber_lamp.tres" id="33_eke4b"]
 [ext_resource type="Texture2D" uid="uid://b5f6exhfj4b6v" path="res://Assets/Textures/white-square.png" id="33_m77f1"]
 [ext_resource type="Material" uid="uid://wv7xg7qe3lhc" path="res://Assets/Scenes/control_room_columbia/grey_metal.tres" id="33_rm5oy"]
@@ -68,8 +67,8 @@
 [ext_resource type="PackedScene" uid="uid://baf78ewkivud5" path="res://Assets/Common/Annunciators/annunciator_cgs_7x5dual.tscn" id="49_fqkdj"]
 [ext_resource type="Script" path="res://Assets/Common/Gauges/Circular/synchroscope.gd" id="54_8uecp"]
 [ext_resource type="PackedScene" uid="uid://bsfdelqlsf7lc" path="res://Assets/Common/Annunciators/annunciator_cgs_fcp.tscn" id="59_st7vo"]
-[ext_resource type="AudioStream" uid="uid://bgt3td8o61fxe" path="res://Assets/Audio/FCPAlarm.mp3" id="63_5obf3"]
 [ext_resource type="AudioStream" uid="uid://bluh33h5y6ohu" path="res://Assets/Audio/clear_alarm.mp3" id="64_f1f2v"]
+[ext_resource type="AudioStream" uid="uid://bgt3td8o61fxe" path="res://Assets/Audio/FCPAlarm.mp3" id="66_qk51h"]
 
 [sub_resource type="Environment" id="Environment_gjsn6"]
 ambient_light_source = 2
@@ -11435,7 +11434,7 @@ outline_size = 0
 transform = Transform3D(-1.31134e-09, 0, 0.03, -1.54674e-15, 0.042, 9.31326e-10, -0.03, -1.03409e-15, -1.31134e-09, 0.00105715, -0.00598049, 0.000163078)
 shaded = true
 modulate = Color(0, 0, 0, 1)
-text = "OIL COOLER"
+text = "OIL COOLER/FILTER"
 font = ExtResource("15_o5a3n")
 font_size = 30
 outline_size = 0
@@ -23568,6 +23567,8 @@ text = "SM-8"
 [node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/irm_a_range/Label" index="2"]
 visible = false
 
+[node name="rotate_opposite" type="Node" parent="Control Room Panels/Main Panel Center/Controls/irm_a_range"]
+
 [node name="irm_c_range" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("29_tg1gb")]
 transform = Transform3D(-0.441428, 0.0874131, -8.9407e-08, 0.0874131, 0.441428, -6.70781e-09, 8.9407e-08, -1.86265e-08, -0.45, 1.3566, 0.0488431, -1.89569)
 
@@ -23583,6 +23584,8 @@ text = "SM-8"
 
 [node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/irm_c_range/Label" index="2"]
 visible = false
+
+[node name="rotate_opposite" type="Node" parent="Control Room Panels/Main Panel Center/Controls/irm_c_range"]
 
 [node name="irm_g_range" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("29_tg1gb")]
 transform = Transform3D(-0.441428, 0.0874131, -8.9407e-08, 0.0874131, 0.441428, -6.70781e-09, 8.9407e-08, -1.86265e-08, -0.45, 1.55083, 0.0103813, -1.89569)
@@ -23606,6 +23609,8 @@ text = "SM-8"
 [node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/irm_g_range/Label" index="2"]
 visible = false
 
+[node name="rotate_opposite" type="Node" parent="Control Room Panels/Main Panel Center/Controls/irm_g_range"]
+
 [node name="irm_e_range" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("29_tg1gb")]
 transform = Transform3D(-0.441428, 0.0874131, -8.9407e-08, 0.0874131, 0.441428, -6.70781e-09, 8.9407e-08, -1.86265e-08, -0.45, 1.55083, 0.0103813, -1.79669)
 
@@ -23628,6 +23633,8 @@ text = "SM-8"
 [node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/irm_e_range/Label" index="2"]
 visible = false
 
+[node name="rotate_opposite" type="Node" parent="Control Room Panels/Main Panel Center/Controls/irm_e_range"]
+
 [node name="irm_b_range" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("29_tg1gb")]
 transform = Transform3D(-0.441428, 0.0874131, -8.9407e-08, 0.0874131, 0.441428, -6.70781e-09, 8.9407e-08, -1.86265e-08, -0.45, 1.3566, 0.0488431, -2.92452)
 
@@ -23644,6 +23651,8 @@ text = "SM-8"
 [node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/irm_b_range/Label" index="2"]
 visible = false
 
+[node name="rotate_opposite" type="Node" parent="Control Room Panels/Main Panel Center/Controls/irm_b_range"]
+
 [node name="irm_d_range" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("29_tg1gb")]
 transform = Transform3D(-0.441428, 0.0874131, -8.9407e-08, 0.0874131, 0.441428, -6.70781e-09, 8.9407e-08, -1.86265e-08, -0.45, 1.3566, 0.0488431, -3.02352)
 
@@ -23659,6 +23668,8 @@ text = "SM-8"
 
 [node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/irm_d_range/Label" index="2"]
 visible = false
+
+[node name="rotate_opposite" type="Node" parent="Control Room Panels/Main Panel Center/Controls/irm_d_range"]
 
 [node name="irm_h_range" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("29_tg1gb")]
 transform = Transform3D(-0.441428, 0.0874131, -8.9407e-08, 0.0874131, 0.441428, -6.70781e-09, 8.9407e-08, -1.86265e-08, -0.45, 1.55083, 0.0103813, -3.02352)
@@ -23682,6 +23693,8 @@ text = "SM-8"
 [node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/irm_h_range/Label" index="2"]
 visible = false
 
+[node name="rotate_opposite" type="Node" parent="Control Room Panels/Main Panel Center/Controls/irm_h_range"]
+
 [node name="irm_f_range" parent="Control Room Panels/Main Panel Center/Controls" instance=ExtResource("29_tg1gb")]
 transform = Transform3D(-0.441428, 0.0874131, -8.9407e-08, 0.0874131, 0.441428, -6.70781e-09, 8.9407e-08, -1.86265e-08, -0.45, 1.55083, 0.0103813, -2.92452)
 
@@ -23703,6 +23716,8 @@ text = "SM-8"
 
 [node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/irm_f_range/Label" index="2"]
 visible = false
+
+[node name="rotate_opposite" type="Node" parent="Control Room Panels/Main Panel Center/Controls/irm_f_range"]
 
 [node name="Full Core Display" type="Node3D" parent="Control Room Panels/Main Panel Center"]
 transform = Transform3D(0, 0, -0.75, 0, 0.75, 0, 0.75, 0, 0, 1.00228, 1.01165, -2.40535)
@@ -32891,52 +32906,53 @@ transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -10, 2.1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.55557, 2.31361, 2.79219)
 script = ExtResource("30_mjcs6")
 
-[node name="Fast" type="AudioStreamPlayer" parent="Alarm1"]
+[node name="Fast" type="AudioStreamPlayer3D" parent="Alarm1"]
 stream = ExtResource("26_77or2")
 
-[node name="Slow" type="AudioStreamPlayer" parent="Alarm1"]
-stream = ExtResource("32_nxmn4")
+[node name="Slow" type="AudioStreamPlayer3D" parent="Alarm1"]
+stream = ExtResource("64_f1f2v")
 
 [node name="Alarm5" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05557, 2.31361, 4.49219)
 script = ExtResource("30_mjcs6")
 
-[node name="Fast" type="AudioStreamPlayer" parent="Alarm5"]
+[node name="Fast" type="AudioStreamPlayer3D" parent="Alarm5"]
 stream = ExtResource("26_77or2")
 
-[node name="Slow" type="AudioStreamPlayer" parent="Alarm5"]
+[node name="Slow" type="AudioStreamPlayer3D" parent="Alarm5"]
 stream = ExtResource("64_f1f2v")
 
 [node name="Alarm2" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.10685, 2.31361, -4.29313)
 script = ExtResource("30_mjcs6")
 
-[node name="Fast" type="AudioStreamPlayer" parent="Alarm2"]
+[node name="Fast" type="AudioStreamPlayer3D" parent="Alarm2"]
 stream = ExtResource("26_77or2")
 pitch_scale = 1.1
 
-[node name="Slow" type="AudioStreamPlayer" parent="Alarm2"]
-stream = ExtResource("32_nxmn4")
+[node name="Slow" type="AudioStreamPlayer3D" parent="Alarm2"]
+stream = ExtResource("64_f1f2v")
 
 [node name="Alarm3" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.10685, 2.31361, -7.49784)
 script = ExtResource("30_mjcs6")
 
-[node name="Fast" type="AudioStreamPlayer" parent="Alarm3"]
+[node name="Fast" type="AudioStreamPlayer3D" parent="Alarm3"]
 stream = ExtResource("26_77or2")
 pitch_scale = 1.1
 
-[node name="Slow" type="AudioStreamPlayer" parent="Alarm3"]
-stream = ExtResource("32_nxmn4")
+[node name="Slow" type="AudioStreamPlayer3D" parent="Alarm3"]
+stream = ExtResource("64_f1f2v")
 
 [node name="Alarm4" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.79315, 2.31361, -6.39784)
 script = ExtResource("30_mjcs6")
 
-[node name="Fast" type="AudioStreamPlayer" parent="Alarm4"]
-stream = ExtResource("63_5obf3")
+[node name="Fast" type="AudioStreamPlayer3D" parent="Alarm4"]
+stream = ExtResource("66_qk51h")
+pitch_scale = 1.65
 
-[node name="Slow" type="AudioStreamPlayer" parent="Alarm4"]
+[node name="Slow" type="AudioStreamPlayer3D" parent="Alarm4"]
 stream = ExtResource("64_f1f2v")
 
 [node name="LightNormal_1" type="Node3D" parent="."]

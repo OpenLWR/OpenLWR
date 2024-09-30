@@ -731,6 +731,8 @@ var alarm_groups = {
 	
 	"cr_light_normal_1": null,
 	"cr_light_normal_2": null,
+	"cr_light_normal_3": null,
+	"cr_light_normal_4": null,
 	"cr_light_emergency": null,
 	
 	"APRM_A_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A/UPSCALE_INOP",
@@ -964,6 +966,8 @@ var synchronized = false
 func parse_b64(b64):
 	return Marshalls.base64_to_utf8(b64)
 
+@onready var config = ConfigFile.new()
+
 func _process(delta):
 	socket.poll()
 	var state = socket.get_ready_state()
@@ -1021,6 +1025,10 @@ func _process(delta):
 									$LightNormal_1.visible = indicator_state
 								if indicator == "cr_light_normal_2":
 									$LightNormal_2.visible = indicator_state
+								if indicator == "cr_light_normal_3":
+									$LightNormal_3.visible = indicator_state
+								if indicator == "cr_light_normal_4":
+									$LightNormal_4.visible = indicator_state
 								if indicator == "cr_light_emergency":
 									$LightEmergency.visible = indicator_state
 								continue
@@ -1071,7 +1079,9 @@ func _process(delta):
 								continue #if the player is ourselves, ignore it
 							
 							if player in players:
+								config.load("game.cfg")
 								players[player].position = player_position
+								players[player]["object"].get_children().get_node("MeshInstance3d").transparency = config.get_value("options","player_opacity",1)
 							else:
 								# player is not in our list, assume its a new player and insert a new entry
 								players[player] = {

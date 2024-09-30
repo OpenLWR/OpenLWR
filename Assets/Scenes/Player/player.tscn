@@ -1,10 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://7gv6q50fuutj"]
+[gd_scene load_steps=14 format=3 uid="uid://7gv6q50fuutj"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Player/player.gd" id="1_1w47b"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/framerate_counter.gd" id="2_m6aot"]
-[ext_resource type="Texture2D" uid="uid://dbusbncrfmp2s" path="res://Assets/Textures/gear-solid.svg" id="3_t3trs"]
-[ext_resource type="Script" path="res://Assets/Scenes/Player/settings_button.gd" id="4_blftj"]
-[ext_resource type="Script" path="res://Assets/Scenes/Player/connection_state_text.gd" id="5_72wwd"]
+[ext_resource type="Script" path="res://Assets/Scenes/Player/configuration.gd" id="5_a41y1"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/menu_player.gd" id="6_qkj5w"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/graphics_menu.gd" id="6_ssrgo"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/Chat.gd" id="8_c1qgp"]
@@ -14,12 +12,7 @@ radius = 0.493347
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_6b3ky"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8xd7f"]
-size = Vector2(524.19, 524.19)
-
 [sub_resource type="BoxMesh" id="BoxMesh_n4lxw"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_nyxp3"]
 
 [sub_resource type="Animation" id="Animation_0hvbr"]
 length = 0.001
@@ -105,39 +98,6 @@ offset_bottom = 23.0
 text = "FPS:"
 script = ExtResource("2_m6aot")
 
-[node name="SettingsButton" type="Node2D" parent="Head/Camera3d"]
-visible = false
-
-[node name="Button" type="Sprite2D" parent="Head/Camera3d/SettingsButton"]
-position = Vector2(21, 21)
-scale = Vector2(0.0820313, 0.0820313)
-texture = ExtResource("3_t3trs")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Head/Camera3d/SettingsButton/Button"]
-script = ExtResource("4_blftj")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Head/Camera3d/SettingsButton/Button/StaticBody2D"]
-position = Vector2(6.09525, 6.09525)
-shape = SubResource("RectangleShape2D_8xd7f")
-
-[node name="ConnectionState" type="Node2D" parent="Head/Camera3d/SettingsButton"]
-unique_name_in_owner = true
-visible = false
-
-[node name="MeshInstance2D" type="MeshInstance2D" parent="Head/Camera3d/SettingsButton/ConnectionState"]
-modulate = Color(0.192157, 0.254902, 0.329412, 0.215686)
-position = Vector2(94.875, 133)
-scale = Vector2(178.25, 174)
-mesh = SubResource("BoxMesh_n4lxw")
-
-[node name="State" type="Label" parent="Head/Camera3d/SettingsButton/ConnectionState"]
-offset_left = 11.0
-offset_top = 51.0
-offset_right = 134.0
-offset_bottom = 74.0
-text = "State: Not Connected"
-script = ExtResource("5_72wwd")
-
 [node name="Menu" type="Node2D" parent="Head/Camera3d"]
 script = ExtResource("6_qkj5w")
 
@@ -178,7 +138,6 @@ offset_bottom = 799.0
 text = "Continue"
 
 [node name="Settings" type="Node2D" parent="Head/Camera3d/Menu"]
-visible = false
 
 [node name="Settings" type="TabContainer" parent="Head/Camera3d/Menu/Settings"]
 offset_left = 287.0
@@ -187,24 +146,36 @@ offset_right = 1535.0
 offset_bottom = 680.0
 current_tab = 1
 
-[node name="General" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
+[node name="Gameplay" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
 visible = false
 layout_mode = 2
+script = ExtResource("5_a41y1")
 metadata/_tab_index = 0
 
-[node name="CheckButton" type="CheckButton" parent="Head/Camera3d/Menu/Settings/Settings/General"]
-layout_mode = 0
-offset_left = 21.0
-offset_top = 19.0
-offset_right = 124.0
-offset_bottom = 50.0
-text = "Setting"
+[node name="player_opacity" type="HSlider" parent="Head/Camera3d/Menu/Settings/Settings/Gameplay"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.026
+anchor_top = 0.178
+anchor_right = 0.135
+anchor_bottom = 0.233
+offset_left = -15.448
+offset_top = -80.172
+offset_right = -15.48
+offset_bottom = -79.742
+grow_horizontal = 2
+max_value = 1.0
+step = 0.1
+value = 1.0
+tick_count = 3
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="Head/Camera3d/Menu/Settings/Settings/General"]
-z_index = -1
-position = Vector2(88, 149)
-scale = Vector2(147.5, 271.75)
-mesh = SubResource("BoxMesh_nyxp3")
+[node name="Label" type="Label" parent="Head/Camera3d/Menu/Settings/Settings/Gameplay/player_opacity"]
+layout_mode = 0
+offset_top = -16.0
+offset_right = 135.0
+offset_bottom = 7.0
+text = "Player Opacity"
+horizontal_alignment = 1
 
 [node name="Graphics" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
 layout_mode = 2
@@ -274,15 +245,48 @@ text = "Antialiasing"
 [node name="Controls" type="Control" parent="Head/Camera3d/Menu/Settings/Settings"]
 visible = false
 layout_mode = 2
+script = ExtResource("5_a41y1")
 metadata/_tab_index = 2
 
-[node name="CheckButton" type="CheckButton" parent="Head/Camera3d/Menu/Settings/Settings/Controls"]
+[node name="zoom_toggle" type="CheckButton" parent="Head/Camera3d/Menu/Settings/Settings/Controls"]
 layout_mode = 0
-offset_left = 21.0
+offset_left = 25.0
 offset_top = 38.0
-offset_right = 124.0
+offset_right = 172.0
 offset_bottom = 69.0
 text = "Toggle Zoom"
+
+[node name="pan_mode" type="CheckButton" parent="Head/Camera3d/Menu/Settings/Settings/Controls"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 70.0
+offset_right = 172.0
+offset_bottom = 101.0
+text = "Pan Mode"
+
+[node name="mouse_sensitivity" type="HSlider" parent="Head/Camera3d/Menu/Settings/Settings/Controls"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.026
+anchor_top = 0.178
+anchor_right = 0.135
+anchor_bottom = 0.233
+offset_left = 0.551998
+offset_top = 15.828
+offset_right = 0.519989
+offset_bottom = 16.258
+grow_horizontal = 2
+max_value = 2.0
+step = 0.1
+value = 1.0
+tick_count = 3
+
+[node name="Label" type="Label" parent="Head/Camera3d/Menu/Settings/Settings/Controls/mouse_sensitivity"]
+layout_mode = 0
+offset_top = -16.0
+offset_right = 135.0
+offset_bottom = 7.0
+text = "Camera Sensitivity"
 
 [node name="Exit" type="Button" parent="Head/Camera3d/Menu/Settings"]
 offset_left = 794.0
@@ -320,15 +324,18 @@ libraries = {
 "": SubResource("AnimationLibrary_ypu8n")
 }
 
-[connection signal="input_event" from="Head/Camera3d/SettingsButton/Button/StaticBody2D" to="Head/Camera3d/SettingsButton/Button/StaticBody2D" method="_on_input_event"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Disconnect" to="Head/Camera3d/Menu" method="_disconnect_button_pressed"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Disconnect2" to="Head/Camera3d/Menu" method="bug_report_pressed"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Settings" to="Head/Camera3d/Menu" method="_settings_button_pressed"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Continue" to="Head/Camera3d/Menu" method="_continue_button_pressed"]
+[connection signal="value_changed" from="Head/Camera3d/Menu/Settings/Settings/Gameplay/player_opacity" to="Head/Camera3d/Menu/Settings/Settings/Gameplay" method="option" binds= ["player_opacity"]]
 [connection signal="item_selected" from="Head/Camera3d/Menu/Settings/Settings/Graphics/Occlusion" to="Head/Camera3d/Menu/Settings/Settings/Graphics" method="_new_occlusion_selected"]
 [connection signal="item_selected" from="Head/Camera3d/Menu/Settings/Settings/Graphics/Resolution" to="Head/Camera3d/Menu/Settings/Settings/Graphics" method="new_resolution_selected"]
 [connection signal="item_selected" from="Head/Camera3d/Menu/Settings/Settings/Graphics/Vsync" to="Head/Camera3d/Menu/Settings/Settings/Graphics" method="_new_vsync_selected"]
 [connection signal="item_selected" from="Head/Camera3d/Menu/Settings/Settings/Graphics/Antialiasing" to="Head/Camera3d/Menu/Settings/Settings/Graphics" method="_new_antialiasing_selected"]
+[connection signal="toggled" from="Head/Camera3d/Menu/Settings/Settings/Controls/zoom_toggle" to="Head/Camera3d/Menu/Settings/Settings/Controls" method="option" binds= ["zoom_toggle"]]
+[connection signal="toggled" from="Head/Camera3d/Menu/Settings/Settings/Controls/pan_mode" to="Head/Camera3d/Menu/Settings/Settings/Controls" method="option" binds= ["pan_mode"]]
+[connection signal="value_changed" from="Head/Camera3d/Menu/Settings/Settings/Controls/mouse_sensitivity" to="Head/Camera3d/Menu/Settings/Settings/Controls" method="option" binds= ["mouse_sensitivity"]]
 [connection signal="pressed" from="Head/Camera3d/Menu/Settings/Exit" to="Head/Camera3d/Menu" method="_settings_exit_pressed"]
 [connection signal="mouse_entered" from="Head/Camera3d/Chat" to="Head/Camera3d/Chat" method="_on_mouse_enter_or_leave" binds= [true]]
 [connection signal="mouse_exited" from="Head/Camera3d/Chat" to="Head/Camera3d/Chat" method="_on_mouse_enter_or_leave" binds= [false]]

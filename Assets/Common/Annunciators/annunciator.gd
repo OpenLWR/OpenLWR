@@ -74,7 +74,7 @@ func _ready():
 				
 			box_table.avg_color.a = 1
 			
-			print(box_table.avg_color)
+			#print(box_table.avg_color)
 			if box_table.lights_on > 0:
 				get_node(box+"/Lighting").visible = true
 				get_node(box+"/Lighting").light_energy = (box_table.lights_on/30)+0.003

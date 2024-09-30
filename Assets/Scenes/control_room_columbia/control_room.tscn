@@ -6123,7 +6123,6 @@ outline_size = 0
 
 [node name="cb_8_83" parent="Control Room Panels/Main Panel Right Side/Controls/SM8" instance=ExtResource("44_253tc")]
 transform = Transform3D(-4.37113e-08, -0.979134, -0.203215, 0, 0.203215, -0.979134, 1, -4.27993e-08, -8.88281e-09, 4.91205, -0.0217602, -10.1971)
-script = null
 
 [node name="Sphere_001" parent="Control Room Panels/Main Panel Right Side/Controls/SM8/cb_8_83/selector_switch/Base" index="2"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.49012e-08, 0, 1.49012e-08, 1, 0.772068, 0.123819, 0.575294)
@@ -8087,7 +8086,6 @@ visible = false
 
 [node name="cb_7_73" parent="Control Room Panels/Main Panel Right Side/Controls/SM7" instance=ExtResource("44_253tc")]
 transform = Transform3D(-4.37113e-08, -0.979134, -0.203215, 0, 0.203215, -0.979134, 1, -4.27993e-08, -8.88281e-09, 4.91205, -0.0217602, -5.49711)
-script = null
 
 [node name="Sphere_001" parent="Control Room Panels/Main Panel Right Side/Controls/SM7/cb_7_73/selector_switch/Base" index="2"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.49012e-08, 0, 1.49012e-08, 1, 0.772068, 0.123819, 0.575294)
@@ -21481,6 +21479,12 @@ use_collision = true
 size = Vector3(0.002, 0.0100413, 0.134014)
 material = ExtResource("21_y8sv6")
 
+[node name="Outline126" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
+transform = Transform3D(0.138555, 0.687439, -3.80484, 0.980615, -4.16718e-08, 1.0752, 0.138555, -0.687439, -3.80484, 1.56462, 0.0363013, -9.55479)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.134014)
+material = ExtResource("21_y8sv6")
+
 [node name="Outline9" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
 transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.56102, -0.00371009, -1.19582)
 use_collision = true
@@ -22305,7 +22309,7 @@ font_size = 60
 outline_size = 0
 
 [node name="Rod Worth Minimizer" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.989454, 0.649201, -0.933556)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.989454, 0.946581, -0.933556)
 script = ExtResource("31_sp420")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer"]
@@ -32917,6 +32921,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05557, 2.31361, 4.49219)
 script = ExtResource("30_mjcs6")
 
 [node name="Fast" type="AudioStreamPlayer3D" parent="Alarm5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000791073, 0, 0.000822067)
 stream = ExtResource("26_77or2")
 
 [node name="Slow" type="AudioStreamPlayer3D" parent="Alarm5"]
@@ -32959,42 +32964,42 @@ stream = ExtResource("64_f1f2v")
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="LightNormal_1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43964, 3.26588, 0.773689)
-light_energy = 0.515
+light_energy = 0.3
 light_indirect_energy = 0.838
 light_size = 0.172
 omni_range = 17.632
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="LightNormal_1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2066, 3.26588, -4.43525)
-light_energy = 0.515
+light_energy = 0.3
 light_indirect_energy = 0.838
 light_size = 0.172
 omni_range = 17.632
 
 [node name="OmniLight3D6" type="OmniLight3D" parent="LightNormal_1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33286, 3.26588, -4.43525)
-light_energy = 0.515
+light_energy = 0.3
 light_indirect_energy = 0.838
 light_size = 0.172
 omni_range = 17.632
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="LightNormal_1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43964, 3.26588, -9.4566)
-light_energy = 0.515
+light_energy = 0.3
 light_indirect_energy = 0.838
 light_size = 0.172
 omni_range = 17.632
 
 [node name="OmniLight3D5" type="OmniLight3D" parent="LightNormal_1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2066, 3.26588, -14.6655)
-light_energy = 0.515
+light_energy = 0.3
 light_indirect_energy = 0.838
 light_size = 0.172
 omni_range = 17.632
 
 [node name="OmniLight3D7" type="OmniLight3D" parent="LightNormal_1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33286, 3.26588, -14.6655)
-light_energy = 0.515
+light_energy = 0.3
 light_indirect_energy = 0.838
 light_size = 0.172
 omni_range = 17.632
@@ -33003,41 +33008,89 @@ omni_range = 17.632
 
 [node name="OmniLight3D" type="OmniLight3D" parent="LightNormal_2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2066, 3.26588, 0.773689)
-light_energy = 0.515
+light_energy = 0.3
 light_indirect_energy = 0.838
 light_size = 0.172
 omni_range = 17.632
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="LightNormal_2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33286, 3.26588, 0.773689)
-light_energy = 0.515
+light_energy = 0.3
 light_indirect_energy = 0.838
 light_size = 0.172
 omni_range = 17.632
 
 [node name="OmniLight3D5" type="OmniLight3D" parent="LightNormal_2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43964, 3.26588, -4.43525)
-light_energy = 0.515
+light_energy = 0.3
 light_indirect_energy = 0.838
 light_size = 0.172
 omni_range = 17.632
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="LightNormal_2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2066, 3.26588, -9.48437)
-light_energy = 0.515
+light_energy = 0.3
 light_indirect_energy = 0.838
 light_size = 0.172
 omni_range = 17.632
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="LightNormal_2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33286, 3.26588, -9.48437)
-light_energy = 0.515
+light_energy = 0.3
 light_indirect_energy = 0.838
 light_size = 0.172
 omni_range = 17.632
 
 [node name="OmniLight3D6" type="OmniLight3D" parent="LightNormal_2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43964, 3.26588, -14.6933)
+light_energy = 0.3
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="LightNormal_3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.27956, 0, 0)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="LightNormal_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43964, 3.26588, 0.773689)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="LightNormal_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2066, 3.26588, -4.43525)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="LightNormal_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33286, 3.26588, -4.43525)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="LightNormal_4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.27956, 0, 0)
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="LightNormal_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43964, 3.26588, -9.4566)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="LightNormal_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.2066, 3.26588, -14.6655)
+light_energy = 0.515
+light_indirect_energy = 0.838
+light_size = 0.172
+omni_range = 17.632
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="LightNormal_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.33286, 3.26588, -14.6655)
 light_energy = 0.515
 light_indirect_energy = 0.838
 light_size = 0.172

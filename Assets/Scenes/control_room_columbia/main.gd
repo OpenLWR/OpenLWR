@@ -901,6 +901,8 @@ var recorders = {}
 
 signal init_scene_objects
 
+var tables_received = []
+
 var selected_rod = null
 @onready var tween = get_tree().create_tween()
 
@@ -918,8 +920,9 @@ func build_packet(packet_id, data):
 	return "%s|%s" % [str(packet_id), Marshalls.utf8_to_base64(data)]
 
 func build_rod_select():
-	for rod in rod_information:
-		var button = buttons["select_%s" % rod]
+	print("s")
+	#for rod in rod_information:
+		#var button = buttons["select_%s" % rod]
 		
 func disconnected(socket):
 	var code = socket.get_close_code()
@@ -962,6 +965,7 @@ func _ready(): # assume here that the scene was called by the lobby screen
 	socket.connect_to_url(endpoint)
 	
 var synchronized = false
+var info_got = 0
 	
 func parse_b64(b64):
 	return Marshalls.base64_to_utf8(b64)
@@ -1003,6 +1007,7 @@ func _process(delta):
 						
 					server_packets.SWITCH_PARAMETERS_UPDATE:
 						packet_data = json.parse_string(packet_data)
+						
 						for switch in packet_data:
 							var data = packet_data[switch]
 							if switches[switch].updated == true: #if we have a update to this, we have to ignore what the server wants
@@ -1182,10 +1187,10 @@ func _process(delta):
 					"z" : local_player.position["z"],
 				}}
 			
-				if local_player_position != {}:
-					var err = socket.send_text(build_packet(client_packets.PLAYER_POSITION_PARAMETERS_UPDATE, json.stringify(local_player_position)))
-					if err:
-						print(err)
+			if local_player_position != {}:
+				var err = socket.send_text(build_packet(client_packets.PLAYER_POSITION_PARAMETERS_UPDATE, json.stringify(local_player_position)))
+				if err:
+					print(err)
 					
 			#TODO: add a script on each remote player that updates their own position (?)
 			
@@ -1237,7 +1242,7 @@ func _process(delta):
 				var packet_id = int(packet[0])
 				var packet_data = parse_b64(packet[1])
 				
-				if packet_id == server_packets.USER_LOGIN_ACK:
+				if packet_id == server_packets.USER_LOGIN_ACK and info_got >= 5:
 					if packet_data == "ok":
 						connection_ready = true
 						init_scene()
@@ -1253,6 +1258,7 @@ func _process(delta):
 					
 					match info_name:
 						"switches":
+							info_got += 1
 							switches = info
 							for switch in switches:
 								switch = switches[switch]
@@ -1267,6 +1273,8 @@ func _process(delta):
 									switch["positions"][int(position)] = positions[position]
 									
 						"buttons":
+							info_got += 1
+							
 							buttons = info
 							for button in buttons:
 								button = buttons[button]
@@ -1274,21 +1282,29 @@ func _process(delta):
 								button["momentary"] = false
 								button["updated"] = false
 						"alarms":
+							info_got += 1
+							
 							alarms = info
 							for alarm in alarms:
 								alarm = alarms[alarm]
 								alarm["material"] = null
 								
 						"rods":
+							info_got += 1
+							
 							rod_information = info
 								
 						"recorders":
+							info_got += 1
+							
 							recorders = info
 							for recorder in recorders:
 								recorder = recorders[recorder]
 								recorder["object"] = null
 								recorder["history"] = {}
 								recorder["update_time"] = 11
+								
+					tables_received.append(info_name)
 								
 		elif state == WebSocketPeer.STATE_CONNECTING:
 			connection_timeout += 1

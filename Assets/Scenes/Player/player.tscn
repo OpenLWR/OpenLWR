@@ -1,11 +1,13 @@
-[gd_scene load_steps=14 format=3 uid="uid://7gv6q50fuutj"]
+[gd_scene load_steps=16 format=3 uid="uid://7gv6q50fuutj"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Player/player.gd" id="1_1w47b"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/framerate_counter.gd" id="2_m6aot"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/configuration.gd" id="5_a41y1"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/menu_player.gd" id="6_qkj5w"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/graphics_menu.gd" id="6_ssrgo"]
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="7_c2n07"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/Chat.gd" id="8_c1qgp"]
+[ext_resource type="Texture2D" uid="uid://bkvmydfn5saxg" path="res://addons/virtual_joystick/textures/joystick_tip.png" id="8_dw8so"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_emkox"]
 radius = 0.493347
@@ -95,10 +97,12 @@ target_position = Vector3(60, 0, 0)
 offset_left = 1.0
 offset_right = 115.0
 offset_bottom = 23.0
-text = "FPS:"
+text = "FPS:
+Full:"
 script = ExtResource("2_m6aot")
 
 [node name="Menu" type="Node2D" parent="Head/Camera3d"]
+visible = false
 script = ExtResource("6_qkj5w")
 
 [node name="Menu" type="Node2D" parent="Head/Camera3d/Menu"]
@@ -323,6 +327,25 @@ size_flags_vertical = 8
 libraries = {
 "": SubResource("AnimationLibrary_ypu8n")
 }
+
+[node name="Move" parent="Head/Camera3d" instance=ExtResource("7_c2n07")]
+visible = false
+use_input_actions = false
+
+[node name="Look" parent="Head/Camera3d" instance=ExtResource("7_c2n07")]
+visible = false
+offset_left = 1615.0
+offset_top = -309.0
+offset_right = 1915.0
+offset_bottom = -9.0
+use_input_actions = false
+
+[node name="Zoom" type="TouchScreenButton" parent="Head/Camera3d"]
+visible = false
+position = Vector2(1754, 627)
+scale = Vector2(1.42, 1.36)
+texture_normal = ExtResource("8_dw8so")
+action = "zoom"
 
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Disconnect" to="Head/Camera3d/Menu" method="_disconnect_button_pressed"]
 [connection signal="pressed" from="Head/Camera3d/Menu/Menu/Disconnect2" to="Head/Camera3d/Menu" method="bug_report_pressed"]

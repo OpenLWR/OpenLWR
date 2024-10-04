@@ -4,6 +4,7 @@ extends Control
 
 func _ready():
 	config.load("game.cfg")
+	config.set_value("options","test",true)
 	for option in config.get_section_keys("options"):
 		var setting = get_node_or_null(option)
 		if setting == null:

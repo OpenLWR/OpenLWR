@@ -8149,6 +8149,8 @@ transform = Transform3D(0.00369589, -0.70834, -0.705862, 0.999986, -4.37108e-08,
 
 [node name="02-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0, 0, 0)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="02-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -8232,6 +8234,8 @@ line_spacing = -4.0
 
 [node name="06-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0, 0, 0.0320008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ROD_DRIFT_IND" type="CSGCombiner3D" parent="06-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -8315,6 +8319,8 @@ line_spacing = -4.0
 
 [node name="06-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.0319998, 0, 0.0320005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="06-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -8398,6 +8404,8 @@ line_spacing = -4.0
 
 [node name="02-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.0319996, 0, 7.15256e-07)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="02-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -8481,6 +8489,8 @@ line_spacing = -4.0
 
 [node name="02-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.128, 0, 0)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="02-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -8564,6 +8574,8 @@ line_spacing = -4.0
 
 [node name="06-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.128, 0, 0.0320005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="06-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -8647,6 +8659,8 @@ line_spacing = -4.0
 
 [node name="06-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.16, 0, 0.0320008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="06-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -8730,6 +8744,8 @@ line_spacing = -4.0
 
 [node name="02-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.16, 0, 2.38419e-07)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="02-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -8813,6 +8829,8 @@ line_spacing = -4.0
 
 [node name="02-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.256, -9.53674e-07, 2.38419e-07)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="02-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -8896,6 +8914,8 @@ line_spacing = -4.0
 
 [node name="06-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.256, -9.53674e-07, 0.0320008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="06-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -8979,6 +8999,8 @@ line_spacing = -4.0
 
 [node name="06-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.288, 0, 0.0320005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="06-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -9062,6 +9084,8 @@ line_spacing = -4.0
 
 [node name="02-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.288, -9.53674e-07, 4.76837e-07)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="02-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -9145,6 +9169,8 @@ line_spacing = -4.0
 
 [node name="02-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.384, -9.53674e-07, -2.38419e-07)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="02-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -9228,6 +9254,8 @@ line_spacing = -4.0
 
 [node name="06-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.384, -9.53674e-07, 0.0320005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="06-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -9311,6 +9339,8 @@ line_spacing = -4.0
 
 [node name="06-47" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.416, -9.53674e-07, 0.0320008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="06-47"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -9394,6 +9424,8 @@ line_spacing = -4.0
 
 [node name="06-15" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -0.0960003, 0, 0.0320005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="06-15"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -9477,6 +9509,8 @@ line_spacing = -4.0
 
 [node name="10-11" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -0.128, 9.53674e-07, 0.128)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="10-11"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -9560,6 +9594,8 @@ line_spacing = -4.0
 
 [node name="14-11" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -0.128, 0, 0.160001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="14-11"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -9643,6 +9679,8 @@ line_spacing = -4.0
 
 [node name="14-15" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -0.0960002, 9.53674e-07, 0.16)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="14-15"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -9726,6 +9764,8 @@ line_spacing = -4.0
 
 [node name="10-15" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -0.0960003, 0, 0.128)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="10-15"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -9809,6 +9849,8 @@ line_spacing = -4.0
 
 [node name="10-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0, 9.53674e-07, 0.128)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="10-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -9892,6 +9934,8 @@ line_spacing = -4.0
 
 [node name="14-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0, 0, 0.16)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="14-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -9975,6 +10019,8 @@ line_spacing = -4.0
 
 [node name="14-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.0319996, 0, 0.160001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="14-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -10058,6 +10104,8 @@ line_spacing = -4.0
 
 [node name="10-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.0319996, 9.53674e-07, 0.128001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="10-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -10141,6 +10189,8 @@ line_spacing = -4.0
 
 [node name="10-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.128, 0, 0.128)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="10-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -10224,6 +10274,8 @@ line_spacing = -4.0
 
 [node name="14-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.128, 0, 0.16)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="14-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -10307,6 +10359,8 @@ line_spacing = -4.0
 
 [node name="14-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.16, 0, 0.16)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="14-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -10390,6 +10444,8 @@ line_spacing = -4.0
 
 [node name="10-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.16, 9.53674e-07, 0.128)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="10-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -10473,6 +10529,8 @@ line_spacing = -4.0
 
 [node name="10-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.256, 0, 0.128)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="10-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -10556,6 +10614,8 @@ line_spacing = -4.0
 
 [node name="14-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.256, -9.53674e-07, 0.160001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="14-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -10639,6 +10699,8 @@ line_spacing = -4.0
 
 [node name="14-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.288, 0, 0.16)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="14-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -10722,6 +10784,8 @@ line_spacing = -4.0
 
 [node name="10-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.288, -9.53674e-07, 0.128)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="10-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -10805,6 +10869,8 @@ line_spacing = -4.0
 
 [node name="10-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.384, -9.53674e-07, 0.128001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="10-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -10888,6 +10954,8 @@ line_spacing = -4.0
 
 [node name="14-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.384, -9.53674e-07, 0.16)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="14-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -10971,6 +11039,8 @@ line_spacing = -4.0
 
 [node name="14-47" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.416, -9.53674e-07, 0.160001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="14-47"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -11054,6 +11124,8 @@ line_spacing = -4.0
 
 [node name="10-47" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.416, -9.53674e-07, 0.128)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="10-47"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -11137,6 +11209,8 @@ line_spacing = -4.0
 
 [node name="10-51" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.512, -9.53674e-07, 0.128)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="10-51"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -11220,6 +11294,8 @@ line_spacing = -4.0
 
 [node name="14-51" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.512, -9.53674e-07, 0.160001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="14-51"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -11303,6 +11379,8 @@ line_spacing = -4.0
 
 [node name="14-55" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.544, -9.53674e-07, 0.16)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="14-55"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -11386,6 +11464,8 @@ line_spacing = -4.0
 
 [node name="14-07" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -0.224, 9.53674e-07, 0.16)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="14-07"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -11469,6 +11549,8 @@ line_spacing = -4.0
 
 [node name="18-03" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -0.256, 9.53674e-07, 0.256)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-03"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -11552,6 +11634,8 @@ line_spacing = -4.0
 
 [node name="22-03" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -0.256, 0, 0.288)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-03"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -11635,6 +11719,8 @@ line_spacing = -4.0
 
 [node name="22-07" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -0.224, 0, 0.288001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-07"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -11718,6 +11804,8 @@ line_spacing = -4.0
 
 [node name="18-07" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -0.224, 0, 0.256)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-07"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -11801,6 +11889,8 @@ line_spacing = -4.0
 
 [node name="18-11" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.128, 9.53674e-07, 0.256002)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-11"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -11884,6 +11974,8 @@ line_spacing = -4.0
 
 [node name="22-11" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.128, 9.53674e-07, 0.288002)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-11"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -11967,6 +12059,8 @@ line_spacing = -4.0
 
 [node name="22-15" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.0960008, 9.53674e-07, 0.288001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-15"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -12050,6 +12144,8 @@ line_spacing = -4.0
 
 [node name="18-15" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.0960009, 9.53674e-07, 0.256001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-15"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -12133,6 +12229,8 @@ line_spacing = -4.0
 
 [node name="18-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -7.15256e-07, 9.53674e-07, 0.256004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -12216,6 +12314,8 @@ line_spacing = -4.0
 
 [node name="22-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -2.38419e-07, 1.90735e-06, 0.288005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -12299,6 +12399,8 @@ line_spacing = -4.0
 
 [node name="22-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, 0.0319984, 1.90735e-06, 0.288004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -12382,6 +12484,8 @@ line_spacing = -4.0
 
 [node name="18-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, 0.0319984, 9.53674e-07, 0.256002)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -12465,6 +12569,8 @@ line_spacing = -4.0
 
 [node name="18-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -2.32831e-10, -2.98023e-08, 1, 0.127999, 2.86102e-06, 0.256005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -12548,6 +12654,8 @@ line_spacing = -4.0
 
 [node name="22-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -2.32831e-10, -2.98023e-08, 1, 0.128, 2.86102e-06, 0.288007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -12631,6 +12739,8 @@ line_spacing = -4.0
 
 [node name="22-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -2.32831e-10, -2.98023e-08, 1, 0.159998, 2.86102e-06, 0.288007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -12714,6 +12824,8 @@ line_spacing = -4.0
 
 [node name="18-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -2.32831e-10, -2.98023e-08, 1, 0.159998, 1.90735e-06, 0.256002)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -12797,6 +12909,8 @@ line_spacing = -4.0
 
 [node name="18-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.255999, 3.8147e-06, 0.256006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -12880,6 +12994,8 @@ line_spacing = -4.0
 
 [node name="22-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.255999, 4.76837e-06, 0.288007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -12963,6 +13079,8 @@ line_spacing = -4.0
 
 [node name="22-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.287998, 2.86102e-06, 0.288007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -13046,6 +13164,8 @@ line_spacing = -4.0
 
 [node name="18-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.287998, 2.86102e-06, 0.256004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -13129,6 +13249,8 @@ line_spacing = -4.0
 
 [node name="18-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.383999, 5.72205e-06, 0.256006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -13212,6 +13334,8 @@ line_spacing = -4.0
 
 [node name="22-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.383999, 5.72205e-06, 0.288008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -13295,6 +13419,8 @@ line_spacing = -4.0
 
 [node name="22-47" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.415998, 2.86102e-06, 0.288006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-47"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -13378,6 +13504,8 @@ line_spacing = -4.0
 
 [node name="18-47" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.415997, 2.86102e-06, 0.256006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-47"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -13461,6 +13589,8 @@ line_spacing = -4.0
 
 [node name="18-51" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.511998, 5.72205e-06, 0.256007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-51"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -13544,6 +13674,8 @@ line_spacing = -4.0
 
 [node name="22-51" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.511999, 6.67572e-06, 0.288009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-51"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -13627,6 +13759,8 @@ line_spacing = -4.0
 
 [node name="22-55" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.543998, 2.86102e-06, 0.288007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-55"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -13710,6 +13844,8 @@ line_spacing = -4.0
 
 [node name="18-55" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.543997, 2.86102e-06, 0.256007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-55"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -13793,6 +13929,8 @@ line_spacing = -4.0
 
 [node name="18-59" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.639998, 7.62939e-06, 0.25601)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="18-59"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -13876,6 +14014,8 @@ line_spacing = -4.0
 
 [node name="22-59" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.639999, 8.58307e-06, 0.288011)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="22-59"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -13959,6 +14099,8 @@ line_spacing = -4.0
 
 [node name="26-03" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.256, 2.86102e-06, 0.384001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-03"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -14042,6 +14184,8 @@ line_spacing = -4.0
 
 [node name="30-03" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.256, 9.53674e-07, 0.416)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-03"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -14125,6 +14269,8 @@ line_spacing = -4.0
 
 [node name="30-07" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.224, 9.53674e-07, 0.416003)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-07"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -14208,6 +14354,8 @@ line_spacing = -4.0
 
 [node name="26-07" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.224, 9.53674e-07, 0.384002)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-07"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -14291,6 +14439,8 @@ line_spacing = -4.0
 
 [node name="26-11" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.128001, 9.53674e-07, 0.384002)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-11"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -14374,6 +14524,8 @@ line_spacing = -4.0
 
 [node name="30-11" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.128, 9.53674e-07, 0.416003)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-11"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -14457,6 +14609,8 @@ line_spacing = -4.0
 
 [node name="30-15" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.0960009, 2.86102e-06, 0.416003)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-15"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -14540,6 +14694,8 @@ line_spacing = -4.0
 
 [node name="26-15" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.0960009, 1.90735e-06, 0.384001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-15"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -14623,6 +14779,8 @@ line_spacing = -4.0
 
 [node name="26-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -1.43051e-06, 2.86102e-06, 0.384004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -14706,6 +14864,8 @@ line_spacing = -4.0
 
 [node name="30-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -2.38419e-07, 1.90735e-06, 0.416005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -14789,6 +14949,8 @@ line_spacing = -4.0
 
 [node name="30-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.0319984, 2.86102e-06, 0.416004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -14872,6 +15034,8 @@ line_spacing = -4.0
 
 [node name="26-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.0319977, 9.53674e-07, 0.384002)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -14955,6 +15119,8 @@ line_spacing = -4.0
 
 [node name="26-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -6.98492e-10, -2.98023e-08, 1, 0.128, 2.86102e-06, 0.384005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -15038,6 +15204,8 @@ line_spacing = -4.0
 
 [node name="30-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -6.98492e-10, -2.98023e-08, 1, 0.127999, 3.8147e-06, 0.416007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -15121,6 +15289,8 @@ line_spacing = -4.0
 
 [node name="30-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -6.98492e-10, -2.98023e-08, 1, 0.159998, 4.76837e-06, 0.416007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -15204,6 +15374,8 @@ line_spacing = -4.0
 
 [node name="26-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -6.98492e-10, -2.98023e-08, 1, 0.159998, 1.90735e-06, 0.384002)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -15287,6 +15459,8 @@ line_spacing = -4.0
 
 [node name="26-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.255999, 5.72205e-06, 0.384007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -15370,6 +15544,8 @@ line_spacing = -4.0
 
 [node name="30-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.255999, 4.76837e-06, 0.41601)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -15453,6 +15629,8 @@ line_spacing = -4.0
 
 [node name="30-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.287998, 3.8147e-06, 0.416005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -15536,6 +15714,8 @@ line_spacing = -4.0
 
 [node name="26-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.287997, 4.76837e-06, 0.384004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -15619,6 +15799,8 @@ line_spacing = -4.0
 
 [node name="26-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.383998, 6.67572e-06, 0.384009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -15702,6 +15884,8 @@ line_spacing = -4.0
 
 [node name="30-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.383999, 8.58307e-06, 0.41601)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -15785,6 +15969,8 @@ line_spacing = -4.0
 
 [node name="30-47" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.415998, 2.86102e-06, 0.416006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-47"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -15868,6 +16054,8 @@ line_spacing = -4.0
 
 [node name="26-47" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.415997, 4.76837e-06, 0.384006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-47"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -15951,6 +16139,8 @@ line_spacing = -4.0
 
 [node name="26-51" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.511998, 6.67572e-06, 0.384008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-51"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -16034,6 +16224,8 @@ line_spacing = -4.0
 
 [node name="30-51" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.511999, 7.62939e-06, 0.416011)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-51"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -16117,6 +16309,8 @@ line_spacing = -4.0
 
 [node name="30-55" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.543997, 2.86102e-06, 0.416007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-55"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -16200,6 +16394,8 @@ line_spacing = -4.0
 
 [node name="26-55" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.543996, 3.8147e-06, 0.384007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-55"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -16283,6 +16479,8 @@ line_spacing = -4.0
 
 [node name="26-59" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.86265e-09, -2.98023e-08, 1, 0.639998, 6.67572e-06, 0.384011)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="26-59"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -16366,6 +16564,8 @@ line_spacing = -4.0
 
 [node name="30-59" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.86265e-09, -2.98023e-08, 1, 0.639999, 1.04904e-05, 0.416012)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="30-59"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -16449,6 +16649,8 @@ line_spacing = -4.0
 
 [node name="34-03" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, 9.31323e-10, -2.98023e-08, 1, -0.256, 2.86102e-06, 0.512003)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-03"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -16532,6 +16734,8 @@ line_spacing = -4.0
 
 [node name="38-03" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, 9.31323e-10, -2.98023e-08, 1, -0.256, 9.53674e-07, 0.544001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-03"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -16615,6 +16819,8 @@ line_spacing = -4.0
 
 [node name="38-07" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, 9.31323e-10, -2.98023e-08, 1, -0.224, 2.86102e-06, 0.544003)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-07"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -16698,6 +16904,8 @@ line_spacing = -4.0
 
 [node name="34-07" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, 9.31323e-10, -2.98023e-08, 1, -0.224, 1.90735e-06, 0.512004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-07"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -16781,6 +16989,8 @@ line_spacing = -4.0
 
 [node name="34-11" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, 9.31323e-10, -2.98023e-08, 1, -0.128001, 2.86102e-06, 0.512003)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-11"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -16864,6 +17074,8 @@ line_spacing = -4.0
 
 [node name="38-11" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, 9.31323e-10, -2.98023e-08, 1, -0.128, 9.53674e-07, 0.544004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-11"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -16947,6 +17159,8 @@ line_spacing = -4.0
 
 [node name="38-15" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, 9.31323e-10, -2.98023e-08, 1, -0.0960009, 2.86102e-06, 0.544002)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-15"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -17030,6 +17244,8 @@ line_spacing = -4.0
 
 [node name="34-15" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, 9.31323e-10, -2.98023e-08, 1, -0.0960015, 2.86102e-06, 0.512003)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-15"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -17113,6 +17329,8 @@ line_spacing = -4.0
 
 [node name="34-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -1.43051e-06, 4.76837e-06, 0.512006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -17196,6 +17414,8 @@ line_spacing = -4.0
 
 [node name="38-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -2.38419e-07, 2.86102e-06, 0.544005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -17279,6 +17499,8 @@ line_spacing = -4.0
 
 [node name="38-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.0319977, 4.76837e-06, 0.544005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -17362,6 +17584,8 @@ line_spacing = -4.0
 
 [node name="34-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.0319977, 2.86102e-06, 0.512004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -17445,6 +17669,8 @@ line_spacing = -4.0
 
 [node name="34-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.128, 3.8147e-06, 0.512007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -17528,6 +17754,8 @@ line_spacing = -4.0
 
 [node name="38-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.127999, 4.76837e-06, 0.544007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -17611,6 +17839,8 @@ line_spacing = -4.0
 
 [node name="38-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.159998, 4.76837e-06, 0.544009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -17694,6 +17924,8 @@ line_spacing = -4.0
 
 [node name="34-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.159998, 2.86102e-06, 0.512004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -17777,6 +18009,8 @@ line_spacing = -4.0
 
 [node name="34-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.255998, 7.62939e-06, 0.512007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -17860,6 +18094,8 @@ line_spacing = -4.0
 
 [node name="38-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.255998, 5.72205e-06, 0.544011)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -17943,6 +18179,8 @@ line_spacing = -4.0
 
 [node name="38-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.287998, 3.8147e-06, 0.544005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -18026,6 +18264,8 @@ line_spacing = -4.0
 
 [node name="34-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.287997, 4.76837e-06, 0.512007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -18109,6 +18349,8 @@ line_spacing = -4.0
 
 [node name="34-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.383998, 8.58307e-06, 0.512009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -18192,6 +18434,8 @@ line_spacing = -4.0
 
 [node name="38-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.383998, 9.53674e-06, 0.54401)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -18275,6 +18519,8 @@ line_spacing = -4.0
 
 [node name="38-47" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.415998, 3.8147e-06, 0.544006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-47"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -18358,6 +18604,8 @@ line_spacing = -4.0
 
 [node name="34-47" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.415996, 4.76837e-06, 0.512007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-47"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -18441,6 +18689,8 @@ line_spacing = -4.0
 
 [node name="34-51" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.511997, 6.67572e-06, 0.512009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-51"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -18524,6 +18774,8 @@ line_spacing = -4.0
 
 [node name="38-51" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.511999, 8.58307e-06, 0.544011)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-51"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -18607,6 +18859,8 @@ line_spacing = -4.0
 
 [node name="38-55" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.543997, 4.76837e-06, 0.544008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-55"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -18690,6 +18944,8 @@ line_spacing = -4.0
 
 [node name="34-55" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.543995, 4.76837e-06, 0.512008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-55"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -18773,6 +19029,8 @@ line_spacing = -4.0
 
 [node name="34-59" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.86265e-09, -2.98023e-08, 1, 0.639998, 7.62939e-06, 0.512012)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="34-59"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -18856,6 +19114,8 @@ line_spacing = -4.0
 
 [node name="38-59" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.86265e-09, -2.98023e-08, 1, 0.639999, 1.04904e-05, 0.544013)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="38-59"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -18939,6 +19199,8 @@ line_spacing = -4.0
 
 [node name="42-03" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.256001, 4.76837e-06, 0.640003)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-03"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -19022,6 +19284,8 @@ line_spacing = -4.0
 
 [node name="46-07" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.224, 2.86102e-06, 0.672004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="46-07"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -19105,6 +19369,8 @@ line_spacing = -4.0
 
 [node name="42-07" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.224, 3.8147e-06, 0.640004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-07"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -19188,6 +19454,8 @@ line_spacing = -4.0
 
 [node name="42-11" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.128001, 2.86102e-06, 0.640003)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-11"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -19271,6 +19539,8 @@ line_spacing = -4.0
 
 [node name="46-11" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.128, 9.53674e-07, 0.672004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="46-11"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -19354,6 +19624,8 @@ line_spacing = -4.0
 
 [node name="46-15" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.0960015, 4.76837e-06, 0.672004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="46-15"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -19437,6 +19709,8 @@ line_spacing = -4.0
 
 [node name="42-15" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -0.0960014, 3.8147e-06, 0.640002)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-15"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -19520,6 +19794,8 @@ line_spacing = -4.0
 
 [node name="42-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -1.66893e-06, 4.76837e-06, 0.640005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -19603,6 +19879,8 @@ line_spacing = -4.0
 
 [node name="46-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -2.38419e-07, 2.86102e-06, 0.672006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="46-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -19686,6 +19964,8 @@ line_spacing = -4.0
 
 [node name="46-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.0319979, 4.76837e-06, 0.672005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="46-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -19769,6 +20049,8 @@ line_spacing = -4.0
 
 [node name="42-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.031997, 2.86102e-06, 0.640005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -19852,6 +20134,8 @@ line_spacing = -4.0
 
 [node name="42-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.128, 3.8147e-06, 0.640008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -19935,6 +20219,8 @@ line_spacing = -4.0
 
 [node name="46-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.127999, 6.67572e-06, 0.672008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="46-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -20018,6 +20304,8 @@ line_spacing = -4.0
 
 [node name="46-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.159998, 6.67572e-06, 0.672008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="46-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -20101,6 +20389,8 @@ line_spacing = -4.0
 
 [node name="42-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.159998, 4.76837e-06, 0.640003)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -20184,6 +20474,8 @@ line_spacing = -4.0
 
 [node name="42-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.255998, 6.67572e-06, 0.640009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -20267,6 +20559,8 @@ line_spacing = -4.0
 
 [node name="46-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.255998, 4.76837e-06, 0.672012)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="46-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -20350,6 +20644,8 @@ line_spacing = -4.0
 
 [node name="46-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.287998, 4.76837e-06, 0.672005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="46-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -20433,6 +20729,8 @@ line_spacing = -4.0
 
 [node name="42-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.287997, 4.76837e-06, 0.640006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -20516,6 +20814,8 @@ line_spacing = -4.0
 
 [node name="42-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.383998, 8.58307e-06, 0.640011)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -20599,6 +20899,8 @@ line_spacing = -4.0
 
 [node name="46-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.383998, 1.04904e-05, 0.67201)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="46-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -20682,6 +20984,8 @@ line_spacing = -4.0
 
 [node name="46-47" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.415997, 4.76837e-06, 0.672006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="46-47"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -20765,6 +21069,8 @@ line_spacing = -4.0
 
 [node name="42-47" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.415996, 6.67572e-06, 0.640007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-47"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -20848,6 +21154,8 @@ line_spacing = -4.0
 
 [node name="42-51" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.511997, 8.58307e-06, 0.640009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-51"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -20931,6 +21239,8 @@ line_spacing = -4.0
 
 [node name="46-51" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.511998, 1.04904e-05, 0.672012)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="46-51"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -21014,6 +21324,8 @@ line_spacing = -4.0
 
 [node name="46-55" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.543996, 4.76837e-06, 0.672008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="46-55"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -21097,6 +21409,8 @@ line_spacing = -4.0
 
 [node name="42-55" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.543995, 4.76837e-06, 0.64001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-55"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -21180,6 +21494,8 @@ line_spacing = -4.0
 
 [node name="42-59" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999997, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.639997, 9.53674e-06, 0.640011)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="42-59"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -21263,6 +21579,8 @@ line_spacing = -4.0
 
 [node name="50-11" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, 9.31323e-10, -2.98023e-08, 1, -0.128002, 2.86102e-06, 0.768004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="50-11"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -21346,6 +21664,8 @@ line_spacing = -4.0
 
 [node name="54-15" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, 9.31323e-10, -2.98023e-08, 1, -0.0960014, 4.76837e-06, 0.800004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="54-15"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -21429,6 +21749,8 @@ line_spacing = -4.0
 
 [node name="50-15" type="CSGCombiner3D" parent="."]
 transform = Transform3D(1, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, 9.31323e-10, -2.98023e-08, 1, -0.0960022, 3.8147e-06, 0.768004)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="50-15"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -21512,6 +21834,8 @@ line_spacing = -4.0
 
 [node name="50-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -1.66893e-06, 4.76837e-06, 0.768007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="50-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -21595,6 +21919,8 @@ line_spacing = -4.0
 
 [node name="54-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, -1.19209e-06, 3.8147e-06, 0.800006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="54-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -21678,6 +22004,8 @@ line_spacing = -4.0
 
 [node name="54-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.031997, 5.72205e-06, 0.800007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="54-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -21761,6 +22089,8 @@ line_spacing = -4.0
 
 [node name="50-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 2.32831e-10, -2.98023e-08, 1, 0.0319965, 2.86102e-06, 0.768007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="50-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -21844,6 +22174,8 @@ line_spacing = -4.0
 
 [node name="50-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.128, 4.76837e-06, 0.768008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="50-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -21927,6 +22259,8 @@ line_spacing = -4.0
 
 [node name="54-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.128, 6.67572e-06, 0.800009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="54-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -22010,6 +22344,8 @@ line_spacing = -4.0
 
 [node name="54-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.159998, 6.67572e-06, 0.800009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="54-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -22093,6 +22429,8 @@ line_spacing = -4.0
 
 [node name="50-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.159998, 4.76837e-06, 0.768003)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="50-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -22176,6 +22514,8 @@ line_spacing = -4.0
 
 [node name="50-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.255997, 6.67572e-06, 0.768008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="50-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -22259,6 +22599,8 @@ line_spacing = -4.0
 
 [node name="54-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.255998, 6.67572e-06, 0.800012)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="54-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -22342,6 +22684,8 @@ line_spacing = -4.0
 
 [node name="54-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.287998, 6.67572e-06, 0.800006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="54-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -22425,6 +22769,8 @@ line_spacing = -4.0
 
 [node name="50-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.287997, 6.67572e-06, 0.768008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="50-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -22508,6 +22854,8 @@ line_spacing = -4.0
 
 [node name="50-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999997, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.383997, 8.58307e-06, 0.768011)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="50-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -22591,6 +22939,8 @@ line_spacing = -4.0
 
 [node name="50-51" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999997, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.511997, 8.58307e-06, 0.768015)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="50-51"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -22674,6 +23024,8 @@ line_spacing = -4.0
 
 [node name="54-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999997, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.383998, 1.14441e-05, 0.80001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="54-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -22757,6 +23109,8 @@ line_spacing = -4.0
 
 [node name="54-47" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999997, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.415996, 4.76837e-06, 0.800007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="54-47"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -22840,6 +23194,8 @@ line_spacing = -4.0
 
 [node name="50-47" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999997, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.415996, 5.72205e-06, 0.768009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="50-47"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -22923,6 +23279,8 @@ line_spacing = -4.0
 
 [node name="58-19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, -1.66893e-06, 6.67572e-06, 0.896007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="58-19"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -23006,6 +23364,8 @@ line_spacing = -4.0
 
 [node name="58-23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, 0.0319963, 2.86102e-06, 0.896007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="58-23"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -23089,6 +23449,8 @@ line_spacing = -4.0
 
 [node name="58-27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.128, 4.76837e-06, 0.89601)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="58-27"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -23172,6 +23534,8 @@ line_spacing = -4.0
 
 [node name="58-31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.159998, 6.67572e-06, 0.896005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="58-31"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -23255,6 +23619,8 @@ line_spacing = -4.0
 
 [node name="58-35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.255996, 7.62939e-06, 0.89601)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="58-35"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -23338,6 +23704,8 @@ line_spacing = -4.0
 
 [node name="58-39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.287997, 6.67572e-06, 0.896007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="58-39"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0.064, -2.38419e-07, 0)
@@ -23421,6 +23789,8 @@ line_spacing = -4.0
 
 [node name="58-43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999997, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -1.39698e-09, -2.98023e-08, 1, 0.383997, 9.53674e-06, 0.896013)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="ACCUM_SCRAM_IND" type="CSGCombiner3D" parent="58-43"]
 transform = Transform3D(1, 3.49412e-22, 0, 1.58818e-22, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -23504,6 +23874,8 @@ line_spacing = -4.0
 
 [node name="LPRM 1" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, 6.98492e-10, -2.98023e-08, 1, 0.64, 0.000504494, 0.128003)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 1"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -23607,6 +23979,8 @@ line_spacing = -4.0
 
 [node name="LPRM 2" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, 0, -2.98023e-08, 1, 0.64, 0.000504494, 0.256005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 2"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -23710,6 +24084,8 @@ line_spacing = -4.0
 
 [node name="LPRM 3" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -2.32831e-10, -2.98023e-08, 1, 0.64, 0.000505447, 0.384005)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 3"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -23813,6 +24189,8 @@ line_spacing = -4.0
 
 [node name="LPRM 4" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -6.98492e-10, -2.98023e-08, 1, 0.64, 0.000506401, 0.512006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 4"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -23916,6 +24294,8 @@ line_spacing = -4.0
 
 [node name="LPRM 5" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -6.98492e-10, -2.98023e-08, 1, 0.512, 0.000504494, 6.4373e-06)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 5"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -24019,6 +24399,8 @@ line_spacing = -4.0
 
 [node name="LPRM 6" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -9.31323e-10, -2.98023e-08, 1, 0.512, 0.000504494, 0.128007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 6"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -24122,6 +24504,8 @@ line_spacing = -4.0
 
 [node name="LPRM 7" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.512, 0.000506401, 0.256006)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 7"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -24225,6 +24609,8 @@ line_spacing = -4.0
 
 [node name="LPRM 8" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.511999, 0.000506401, 0.384008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 8"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -24328,6 +24714,8 @@ line_spacing = -4.0
 
 [node name="LPRM 9" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.511999, 0.000507355, 0.512008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 9"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -24431,6 +24819,8 @@ line_spacing = -4.0
 
 [node name="LPRM 10" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -1.39698e-09, -2.98023e-08, 1, 0.511998, 0.000508308, 0.640009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 10"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -24534,6 +24924,8 @@ line_spacing = -4.0
 
 [node name="LPRM 11" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -9.31323e-10, -2.98023e-08, 1, 0.383999, 0.000505447, 7.15256e-06)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 11"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -24637,6 +25029,8 @@ line_spacing = -4.0
 
 [node name="LPRM 12" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.384, 0.000504494, 0.128008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 12"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -24740,6 +25134,8 @@ line_spacing = -4.0
 
 [node name="LPRM 13" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.383999, 0.000506401, 0.256007)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 13"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -24843,6 +25239,8 @@ line_spacing = -4.0
 
 [node name="LPRM 14" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.383999, 0.000506401, 0.38401)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 14"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -24946,6 +25344,8 @@ line_spacing = -4.0
 
 [node name="LPRM 15" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.383999, 0.000508308, 0.512009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 15"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -25049,6 +25449,8 @@ line_spacing = -4.0
 
 [node name="LPRM 16" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.39698e-09, -2.98023e-08, 1, 0.383999, 0.000508308, 0.640009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 16"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -25152,6 +25554,8 @@ line_spacing = -4.0
 
 [node name="LPRM 17" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.383999, 0.000508308, 0.768008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 17"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -25255,6 +25659,8 @@ line_spacing = -4.0
 
 [node name="LPRM 18" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.256, 0.000506401, 7.86781e-06)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 18"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -25358,6 +25764,8 @@ line_spacing = -4.0
 
 [node name="LPRM 19" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.256, 0.000504494, 0.128008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 19"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -25461,6 +25869,8 @@ line_spacing = -4.0
 
 [node name="LPRM 20" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.255999, 0.000506401, 0.256008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 20"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -25564,6 +25974,8 @@ line_spacing = -4.0
 
 [node name="LPRM 21" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.255999, 0.000507355, 0.384011)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 21"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -25667,6 +26079,8 @@ line_spacing = -4.0
 
 [node name="LPRM 22" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.39698e-09, -2.98023e-08, 1, 0.255998, 0.000508308, 0.51201)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 22"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -25770,6 +26184,8 @@ line_spacing = -4.0
 
 [node name="LPRM 23" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.255999, 0.000508308, 0.64001)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 23"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -25873,6 +26289,8 @@ line_spacing = -4.0
 
 [node name="LPRM 24" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.86265e-09, -2.98023e-08, 1, 0.255999, 0.000508308, 0.768009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 24"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -25976,6 +26394,8 @@ line_spacing = -4.0
 
 [node name="LPRM 25" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -2.32831e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.128, 0.000506401, 8.10623e-06)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 25"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -26079,6 +26499,8 @@ line_spacing = -4.0
 
 [node name="LPRM 26" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.128, 0.000505447, 0.128008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 26"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -26182,6 +26604,8 @@ line_spacing = -4.0
 
 [node name="LPRM 27" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0.128, 0.000506401, 0.256008)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 27"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -26285,6 +26709,8 @@ line_spacing = -4.0
 
 [node name="LPRM 28" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.39698e-09, -2.98023e-08, 1, 0.127999, 0.000508308, 0.384011)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 28"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -26388,6 +26814,8 @@ line_spacing = -4.0
 
 [node name="LPRM 29" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, 0.127999, 0.000508308, 0.51201)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 29"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -26491,6 +26919,8 @@ line_spacing = -4.0
 
 [node name="LPRM 30" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.86265e-09, -2.98023e-08, 1, 0.127999, 0.000508308, 0.640011)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 30"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -26594,6 +27024,8 @@ line_spacing = -4.0
 
 [node name="LPRM 31" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, 0.127999, 0.000508308, 0.768009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 31"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -26697,6 +27129,8 @@ line_spacing = -4.0
 
 [node name="LPRM 32" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999999, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, -7.15256e-07, 0.000506401, 8.58307e-06)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 32"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -26800,6 +27234,8 @@ line_spacing = -4.0
 
 [node name="LPRM 33" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.16415e-09, -2.98023e-08, 1, 0, 0.000505447, 0.128009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 33"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -26903,6 +27339,8 @@ line_spacing = -4.0
 
 [node name="LPRM 34" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -4.65661e-10, 1, 2.98023e-08, -1.39698e-09, -2.98023e-08, 1, -4.76837e-07, 0.000506401, 0.256009)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 34"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -27006,6 +27444,8 @@ line_spacing = -4.0
 
 [node name="LPRM 35" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, -7.15256e-07, 0.000508308, 0.384011)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 35"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -27109,6 +27549,8 @@ line_spacing = -4.0
 
 [node name="LPRM 36" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, -1.43051e-06, 0.000508308, 0.51201)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 36"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -27212,6 +27654,8 @@ line_spacing = -4.0
 
 [node name="LPRM 37" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, -1.19209e-06, 0.000508308, 0.640013)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 37"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -27315,6 +27759,8 @@ line_spacing = -4.0
 
 [node name="LPRM 38" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.86265e-09, -2.98023e-08, 1, -7.15256e-07, 0.000509262, 0.76801)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 38"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -27418,6 +27864,8 @@ line_spacing = -4.0
 
 [node name="LPRM 39" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.62981e-09, -2.98023e-08, 1, -0.128, 0.000506401, 0.128012)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 39"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -27521,6 +27969,8 @@ line_spacing = -4.0
 
 [node name="LPRM 40" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -1.86265e-09, -2.98023e-08, 1, -0.128001, 0.000508308, 0.256013)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 40"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -27624,6 +28074,8 @@ line_spacing = -4.0
 
 [node name="LPRM 41" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, -0.128001, 0.000508308, 0.384012)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 41"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -27727,6 +28179,8 @@ line_spacing = -4.0
 
 [node name="LPRM 42" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999998, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, -0.128001, 0.000508308, 0.512013)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 42"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)
@@ -27830,6 +28284,8 @@ line_spacing = -4.0
 
 [node name="LPRM 43" type="CSGCombiner3D" parent="."]
 transform = Transform3D(0.999997, 0, 2.32831e-10, -6.98492e-10, 1, 2.98023e-08, -2.09548e-09, -2.98023e-08, 1, -0.128001, 0.000510216, 0.640012)
+cast_shadow = 0
+gi_mode = 0
 
 [node name="D DOWNSCALE" type="CSGBox3D" parent="LPRM 43"]
 transform = Transform3D(1, -3.00352e-08, 0, -6.03031e-08, 1, 2.98023e-08, 0, -2.98023e-08, 1, -0.0705411, -0.244522, -0.80509)

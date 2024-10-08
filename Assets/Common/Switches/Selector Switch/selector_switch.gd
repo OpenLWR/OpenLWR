@@ -20,10 +20,12 @@ func init():
 				#this is so we dont have to make every light unique
 				var light_material = get_node(light+"/Lamp").get_material().duplicate()
 				get_node(light+"/Lamp").material = light_material
+				light_material.emission_enabled = switch["lights"][light]
 				switch["lights"][light] = light_material
 			else:
 				var light_material = get_node(light).get_material().duplicate()
 				get_node(light).material = light_material
+				light_material.emission_enabled = switch["lights"][light]
 				switch["lights"][light] = light_material
 				
 	if has_flag:
@@ -31,11 +33,13 @@ func init():
 		#preload the materials here, if it has a flag
 		flag_green = preload("res://Assets/Materials/green_flag.tres")
 		flag_red = preload("res://Assets/Materials/red_flag.tres")
+		
+	switch_position_change(switch["position"],true)
 
 func _ready():
 	node_3d.init_scene_objects.connect(init)
 
-func switch_position_change(to_position: int):
+func switch_position_change(to_position: int,nosound: bool = false):
 	switch.position = to_position
 	var rotate_position = switch.positions[switch.position]
 	var handle_rotation = round($"selector_switch/Handle".rotation_degrees.y)
@@ -44,7 +48,8 @@ func switch_position_change(to_position: int):
 	if rotate_opposite:
 		rotate_position = rotate_position * -1
 	if handle_rotation != rotate_position:
-		$"Move".playing = true
+		if not nosound:
+			$"Move".playing = true
 		$"selector_switch/Handle".rotation_degrees.y = rotate_position
 		
 	if has_flag:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=582 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=583 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -65,6 +65,7 @@
 [ext_resource type="Texture2D" uid="uid://p2k3q72ebv8k" path="res://Assets/Textures/Radial Gauge/Columbia/OpenLWR_Synchroscope_Inner.png" id="46_lasde"]
 [ext_resource type="Texture2D" uid="uid://bivqu44wdnr28" path="res://Assets/Textures/Radial Gauge/Columbia/OpenLWR_Synchroscope_Outer.png" id="47_fyt36"]
 [ext_resource type="PackedScene" uid="uid://baf78ewkivud5" path="res://Assets/Common/Annunciators/annunciator_cgs_7x5dual.tscn" id="49_fqkdj"]
+[ext_resource type="Texture2D" uid="uid://c5ta2dget34xu" path="res://Assets/Textures/bailey controller.png" id="52_3c6de"]
 [ext_resource type="Script" path="res://Assets/Common/Gauges/Circular/synchroscope.gd" id="54_8uecp"]
 [ext_resource type="PackedScene" uid="uid://bsfdelqlsf7lc" path="res://Assets/Common/Annunciators/annunciator_cgs_fcp.tscn" id="59_st7vo"]
 [ext_resource type="AudioStream" uid="uid://bluh33h5y6ohu" path="res://Assets/Audio/clear_alarm.mp3" id="64_f1f2v"]
@@ -21480,12 +21481,6 @@ use_collision = true
 size = Vector3(0.002, 0.0100413, 0.134014)
 material = ExtResource("21_y8sv6")
 
-[node name="Outline126" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
-transform = Transform3D(0.138555, 0.687439, -3.80484, 0.980615, -4.16718e-08, 1.0752, 0.138555, -0.687439, -3.80484, 1.56462, 0.0363013, -9.55479)
-use_collision = true
-size = Vector3(0.002, 0.0100413, 0.134014)
-material = ExtResource("21_y8sv6")
-
 [node name="Outline9" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
 transform = Transform3D(0.195946, 3.41687e-08, -5.38085, 0.980615, -4.16718e-08, 1.0752, -3.51463e-08, -0.972186, -2.35204e-07, 1.56102, -0.00371009, -1.19582)
 use_collision = true
@@ -23723,6 +23718,563 @@ text = "SM-8"
 visible = false
 
 [node name="rotate_opposite" type="Node" parent="Control Room Panels/Main Panel Center/Controls/irm_f_range"]
+
+[node name="CRD" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls"]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -0.580365, 0, -8.6773)
+
+[node name="crd_p_1a" parent="Control Room Panels/Main Panel Center/Controls/CRD" instance=ExtResource("13_ba4xl")]
+transform = Transform3D(0.707107, -0.692415, -0.143392, 8.88178e-16, 0.202787, -0.979223, 0.707107, 0.692415, 0.143392, 6.96992, -0.0165862, 3.77537)
+
+[node name="Left" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a" index="0"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
+
+[node name="Right" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a" index="1"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, -0.013, 0.00648308, 0.00137824)
+
+[node name="selector_switch" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a" index="2"]
+transform = Transform3D(0.028, -2.44783e-09, -1.06998e-16, -2.22045e-16, -1.39698e-09, 0.028, -2.44783e-09, -0.028, -1.39698e-09, 0, 0.00483799, 0.01302)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a/selector_switch" index="2"]
+transform = Transform3D(-0.3, 5.96046e-08, 1.86265e-09, -7.45058e-09, -1.49012e-08, 0.3, 4.47035e-08, 0.3, 1.49012e-08, -7.62939e-05, 0.156521, 0.737579)
+
+[node name="Label3D3" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a/selector_switch" index="3"]
+transform = Transform3D(-0.212132, -0.212132, 1.86265e-09, 1.77533e-09, -1.11759e-08, 0.3, -0.212132, 0.212132, 1.49012e-08, -0.450104, 0.156523, 0.55835)
+text = "START"
+
+[node name="Label3D4" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a/selector_switch" index="4"]
+transform = Transform3D(0, -0.3, -9.31323e-09, 7.45058e-09, -1.30385e-08, 0.3, -0.3, 0, 1.67638e-08, -0.674812, 0.156523, 0.0837402)
+text = ""
+
+[node name="Label3D5" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a/selector_switch" index="5"]
+transform = Transform3D(2.62268e-08, 0.3, -9.31323e-09, -2.98023e-08, 5.58797e-09, 0.3, 0.3, -2.62268e-08, 1.86264e-08, 0.675194, 0.156536, 0.0837402)
+sorting_offset = 1.0
+shaded = true
+font_size = 50
+outline_size = 0
+
+[node name="Label3D2" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a/selector_switch" index="6"]
+transform = Transform3D(-0.212132, 0.212132, 1.86265e-09, -1.11759e-08, -5.50062e-09, 0.3, 0.212132, 0.212132, 1.67638e-08, 0.47258, 0.156521, 0.535522)
+text = "STOP"
+
+[node name="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a" index="3"]
+transform = Transform3D(0.382683, 8.57943e-10, 0.923879, 0.92388, -1.86265e-09, -0.382683, 2.98023e-08, 0.0317948, -7.45058e-09, 0, 0.00648284, 0.00922257)
+
+[node name="Label" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -6.51345e-16, -1, -5.96046e-08, -4.47035e-08, 0, 0.045267, 0.0111105)
+
+[node name="Name" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a/Label" index="0"]
+text = "PUMP
+CRD-P-1A"
+
+[node name="Power" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a/Label" index="1"]
+visible = false
+text = "LOCAL"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a/Label" index="2"]
+visible = false
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a"]
+transform = Transform3D(0.699999, -6.66134e-15, 3.90799e-14, 3.90799e-14, 2.98023e-08, -0.7, 3.9968e-15, 0.700001, -2.98023e-08, 0.0219998, 0.0692444, 0.0120548)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_q6ttw")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a"]
+transform = Transform3D(0.699999, -9.76996e-15, 3.90799e-14, 3.90799e-14, 1.49012e-08, -0.7, 3.9968e-15, 0.7, -2.98023e-08, -0.0219998, 0.0692434, 0.0120547)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_m747k")
+
+[node name="crd_v_3" parent="Control Room Panels/Main Panel Center/Controls/CRD" instance=ExtResource("13_ba4xl")]
+transform = Transform3D(0.707107, -0.692415, -0.143392, 8.88178e-16, 0.202787, -0.979223, 0.707107, 0.692415, 0.143392, 6.85221, 0.0178876, 3.89308)
+
+[node name="Left" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3" index="0"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
+
+[node name="Right" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3" index="1"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, -0.013, 0.00648308, 0.00137824)
+
+[node name="selector_switch" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3" index="2"]
+transform = Transform3D(0.028, -2.44783e-09, -1.06998e-16, -2.22045e-16, -1.39698e-09, 0.028, -2.44783e-09, -0.028, -1.39698e-09, 0, 0.00483799, 0.01302)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3/selector_switch" index="2"]
+transform = Transform3D(-0.3, 5.96046e-08, 1.86265e-09, -7.45058e-09, -1.49012e-08, 0.3, 4.47035e-08, 0.3, 1.49012e-08, -7.62939e-05, 0.156521, 0.737579)
+
+[node name="Label3D3" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3/selector_switch" index="3"]
+transform = Transform3D(-0.212132, -0.212132, 1.86265e-09, 1.77533e-09, -1.11759e-08, 0.3, -0.212132, 0.212132, 1.49012e-08, -0.450104, 0.156523, 0.55835)
+text = "OPEN"
+
+[node name="Label3D4" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3/selector_switch" index="4"]
+transform = Transform3D(0, -0.3, -9.31323e-09, 7.45058e-09, -1.30385e-08, 0.3, -0.3, 0, 1.67638e-08, -0.674812, 0.156523, 0.0837402)
+text = ""
+
+[node name="Label3D5" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3/selector_switch" index="5"]
+transform = Transform3D(2.62268e-08, 0.3, -9.31323e-09, -2.98023e-08, 5.58797e-09, 0.3, 0.3, -2.62268e-08, 1.86264e-08, 0.675194, 0.156536, 0.0837402)
+sorting_offset = 1.0
+shaded = true
+font_size = 50
+outline_size = 0
+
+[node name="Label3D2" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3/selector_switch" index="6"]
+transform = Transform3D(-0.212132, 0.212132, 1.86265e-09, -1.11759e-08, -5.50062e-09, 0.3, 0.212132, 0.212132, 1.67638e-08, 0.47258, 0.156521, 0.535522)
+text = "CLOSE"
+
+[node name="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3" index="3"]
+transform = Transform3D(0.382683, 8.57943e-10, 0.923879, 0.92388, -1.86265e-09, -0.382683, 2.98023e-08, 0.0317948, -7.45058e-09, 0, 0.00648284, 0.00922257)
+
+[node name="Label" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -6.51345e-16, -1, -5.96046e-08, -4.47035e-08, 0, 0.045267, 0.0111105)
+
+[node name="Name" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3/Label" index="0"]
+text = "DRIVE WATER PRESS
+CONTROL VALVE
+CRD-V-3"
+
+[node name="Power" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3/Label" index="1"]
+visible = false
+text = "LOCAL"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3/Label" index="2"]
+visible = false
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3"]
+transform = Transform3D(0.699999, -6.66134e-15, 3.90799e-14, 3.90799e-14, 2.98023e-08, -0.7, 3.9968e-15, 0.700001, -2.98023e-08, 0.0219998, 0.0692444, 0.0120548)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_q6ttw")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3"]
+transform = Transform3D(0.699999, -9.76996e-15, 3.90799e-14, 3.90799e-14, 1.49012e-08, -0.7, 3.9968e-15, 0.7, -2.98023e-08, -0.0219998, 0.0692434, 0.0120547)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_m747k")
+
+[node name="crd_p_1b" parent="Control Room Panels/Main Panel Center/Controls/CRD" instance=ExtResource("13_ba4xl")]
+transform = Transform3D(0.707107, -0.692415, -0.143392, 8.88178e-16, 0.202787, -0.979223, 0.707107, 0.692415, 0.143392, 6.89921, -0.0165862, 3.70466)
+
+[node name="Left" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b" index="0"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, 0.013, 0.00648308, 0.00137824)
+
+[node name="Right" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b" index="1"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 7.45058e-08, 0, -7.45058e-08, 1, -0.013, 0.00648308, 0.00137824)
+
+[node name="selector_switch" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b" index="2"]
+transform = Transform3D(0.028, -2.44783e-09, -1.06998e-16, -2.22045e-16, -1.39698e-09, 0.028, -2.44783e-09, -0.028, -1.39698e-09, 0, 0.00483799, 0.01302)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b/selector_switch" index="2"]
+transform = Transform3D(-0.3, 5.96046e-08, 1.86265e-09, -7.45058e-09, -1.49012e-08, 0.3, 4.47035e-08, 0.3, 1.49012e-08, -7.62939e-05, 0.156521, 0.737579)
+
+[node name="Label3D3" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b/selector_switch" index="3"]
+transform = Transform3D(-0.212132, -0.212132, 1.86265e-09, 1.77533e-09, -1.11759e-08, 0.3, -0.212132, 0.212132, 1.49012e-08, -0.450104, 0.156523, 0.55835)
+text = "START"
+
+[node name="Label3D4" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b/selector_switch" index="4"]
+transform = Transform3D(0, -0.3, -9.31323e-09, 7.45058e-09, -1.30385e-08, 0.3, -0.3, 0, 1.67638e-08, -0.674812, 0.156523, 0.0837402)
+text = ""
+
+[node name="Label3D5" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b/selector_switch" index="5"]
+transform = Transform3D(2.62268e-08, 0.3, -9.31323e-09, -2.98023e-08, 5.58797e-09, 0.3, 0.3, -2.62268e-08, 1.86264e-08, 0.675194, 0.156536, 0.0837402)
+sorting_offset = 1.0
+shaded = true
+font_size = 50
+outline_size = 0
+
+[node name="Label3D2" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b/selector_switch" index="6"]
+transform = Transform3D(-0.212132, 0.212132, 1.86265e-09, -1.11759e-08, -5.50062e-09, 0.3, 0.212132, 0.212132, 1.67638e-08, 0.47258, 0.156521, 0.535522)
+text = "STOP"
+
+[node name="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b" index="3"]
+transform = Transform3D(0.382683, 8.57943e-10, 0.923879, 0.92388, -1.86265e-09, -0.382683, 2.98023e-08, 0.0317948, -7.45058e-09, 0, 0.00648284, 0.00922257)
+
+[node name="Label" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.47034e-08, 2.98023e-08, 0.999999, -8.9407e-08, 0.746681, -6.51345e-16, -1, -5.96046e-08, -4.47035e-08, 0, 0.045267, 0.0111105)
+
+[node name="Name" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b/Label" index="0"]
+text = "PUMP
+CRD-P-1B"
+
+[node name="Power" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b/Label" index="1"]
+visible = false
+text = "LOCAL"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b/Label" index="2"]
+visible = false
+
+[node name="green" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b"]
+transform = Transform3D(0.699999, -6.66134e-15, 3.90799e-14, 3.90799e-14, 2.98023e-08, -0.7, 3.9968e-15, 0.700001, -2.98023e-08, 0.0219998, 0.0692444, 0.0120548)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b/green"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, 0, 1, -1.90735e-06, -0.00902429, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_q6ttw")
+
+[node name="red" type="CSGCylinder3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b"]
+transform = Transform3D(0.699999, -9.76996e-15, 3.90799e-14, 3.90799e-14, 1.49012e-08, -0.7, 3.9968e-15, 0.7, -2.98023e-08, -0.0219998, 0.0692434, 0.0120547)
+radius = 0.017
+height = 0.01
+sides = 10
+material = SubResource("StandardMaterial3D_av737")
+
+[node name="Lamp" type="CSGSphere3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b/red"]
+transform = Transform3D(1, -1.49012e-08, 0, 0, 1, 0, 0, -1.49012e-08, 1, -2.86102e-06, -0.00902426, 0)
+radius = 0.014
+rings = 5
+material = SubResource("StandardMaterial3D_m747k")
+
+[node name="crd_p_1b_amps" parent="Control Room Panels/Main Panel Center/Controls/CRD" instance=ExtResource("45_mx4yt")]
+transform = Transform3D(0.19799, 0, -0.19799, 0, 0.28, 0, 0.19799, 0, 0.19799, 6.45802, 1.0654, 4.21284)
+
+[node name="Label" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b_amps" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-1.66103e-07, 1.13313e-07, 3.8, -3.39747e-07, 2.839, -1.5167e-07, -3.8, -2.53826e-07, -1.66103e-07, -1.25398e-08, -0.265965, 0.0286605)
+
+[node name="Name" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b_amps/Label" index="0"]
+text = "CRD-P-1B
+CURRENT"
+
+[node name="Power" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b_amps/Label" index="1"]
+visible = false
+text = "LOCAL"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b_amps/Label" index="2"]
+visible = false
+
+[node name="crd_p_1a_amps" parent="Control Room Panels/Main Panel Center/Controls/CRD" instance=ExtResource("45_mx4yt")]
+transform = Transform3D(0.19799, 0, -0.19799, 0, 0.28, 0, 0.19799, 0, 0.19799, 6.45802, 0.914826, 4.21284)
+
+[node name="Label" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a_amps" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-1.66103e-07, 1.13313e-07, 3.8, -3.39747e-07, 2.839, -1.5167e-07, -3.8, -2.53826e-07, -1.66103e-07, -1.25398e-08, -0.265965, 0.0286605)
+
+[node name="Name" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a_amps/Label" index="0"]
+text = "CRD-P-1A
+CURRENT"
+
+[node name="Power" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a_amps/Label" index="1"]
+visible = false
+text = "LOCAL"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a_amps/Label" index="2"]
+visible = false
+
+[node name="charge_header_pressure" parent="Control Room Panels/Main Panel Center/Controls/CRD" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.39976, 0.55313, 4.358)
+
+[node name="Face" parent="Control Room Panels/Main Panel Center/Controls/CRD/charge_header_pressure/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = null
+
+[node name="Needle" parent="Control Room Panels/Main Panel Center/Controls/CRD/charge_header_pressure/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Center/Controls/CRD/charge_header_pressure/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Face_002" parent="Control Room Panels/Main Panel Center/Controls/CRD/charge_header_pressure/edgewise_gauge" index="8"]
+transform = Transform3D(0.985645, -1.77636e-15, 0, 0, -1.76247e-07, -0.985645, 3.55271e-15, 0.492823, -3.52494e-07, 0, 0, -0.0606041)
+
+[node name="Axis" parent="Control Room Panels/Main Panel Center/Controls/CRD/charge_header_pressure/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="Label" parent="Control Room Panels/Main Panel Center/Controls/CRD/charge_header_pressure" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.27194e-08, 2.98023e-08, -0.999999, 1.89984e-07, 0.746681, 7.9826e-08, 1, -1.04308e-07, -4.27192e-08, 0.00104713, -0.0863833, 0.136613)
+size = Vector3(0.002, 0.0239888, 0.0324712)
+
+[node name="Name" parent="Control Room Panels/Main Panel Center/Controls/CRD/charge_header_pressure/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "CHARGE
+HEADER
+PRESSURE"
+
+[node name="Power" parent="Control Room Panels/Main Panel Center/Controls/CRD/charge_header_pressure/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/charge_header_pressure/Label" index="2"]
+visible = false
+
+[node name="crd_system_flow" parent="Control Room Panels/Main Panel Center/Controls/CRD" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, -0.691941, 0.145663, 0, 0.205999, 0.978552, -0.707107, 0.691941, -0.145663, 6.58795, -0.0552216, 4.16982)
+
+[node name="Face" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_system_flow/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = null
+
+[node name="Needle" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_system_flow/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_system_flow/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Face_002" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_system_flow/edgewise_gauge" index="8"]
+transform = Transform3D(0.985645, -1.77636e-15, 0, 0, -1.76247e-07, -0.985645, 3.55271e-15, 0.492823, -3.52494e-07, 0, 0, -0.0606041)
+
+[node name="Axis" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_system_flow/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="Label" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_system_flow" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.27194e-08, 2.98023e-08, -0.999999, 1.89984e-07, 0.746681, 7.9826e-08, 1, -1.04308e-07, -4.27192e-08, 0.00104713, -0.0863833, 0.136613)
+size = Vector3(0.002, 0.0239888, 0.0324712)
+
+[node name="Name" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_system_flow/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "SYSTEM
+FLOW"
+
+[node name="Power" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_system_flow/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/crd_system_flow/Label" index="2"]
+visible = false
+
+[node name="rft_dt_1a_seal_press2" parent="Control Room Panels/Main Panel Center/Controls/CRD" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.37148, 0.55313, 4.32972)
+script = null
+
+[node name="Face" parent="Control Room Panels/Main Panel Center/Controls/CRD/rft_dt_1a_seal_press2/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = null
+
+[node name="Needle" parent="Control Room Panels/Main Panel Center/Controls/CRD/rft_dt_1a_seal_press2/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Center/Controls/CRD/rft_dt_1a_seal_press2/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Face_002" parent="Control Room Panels/Main Panel Center/Controls/CRD/rft_dt_1a_seal_press2/edgewise_gauge" index="8"]
+transform = Transform3D(0.985645, -1.77636e-15, 0, 0, -1.76247e-07, -0.985645, 3.55271e-15, 0.492823, -3.52494e-07, 0, 0, -0.0606041)
+
+[node name="Axis" parent="Control Room Panels/Main Panel Center/Controls/CRD/rft_dt_1a_seal_press2/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="Label" parent="Control Room Panels/Main Panel Center/Controls/CRD/rft_dt_1a_seal_press2" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.27194e-08, 2.98023e-08, -0.999999, 1.89984e-07, 0.746681, 7.9826e-08, 1, -1.04308e-07, -4.27192e-08, 0.00104713, -0.0863833, 0.136613)
+size = Vector3(0.002, 0.0239888, 0.0324712)
+
+[node name="Name" parent="Control Room Panels/Main Panel Center/Controls/CRD/rft_dt_1a_seal_press2/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "a"
+
+[node name="Power" parent="Control Room Panels/Main Panel Center/Controls/CRD/rft_dt_1a_seal_press2/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/rft_dt_1a_seal_press2/Label" index="2"]
+visible = false
+
+[node name="drive_header_dp" parent="Control Room Panels/Main Panel Center/Controls/CRD" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.39976, 0.74313, 4.358)
+
+[node name="Face" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_dp/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = null
+
+[node name="Needle" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_dp/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_dp/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Face_002" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_dp/edgewise_gauge" index="8"]
+transform = Transform3D(0.985645, -1.77636e-15, 0, 0, -1.76247e-07, -0.985645, 3.55271e-15, 0.492823, -3.52494e-07, 0, 0, -0.0606041)
+
+[node name="Axis" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_dp/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="Label" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_dp" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.27194e-08, 2.98023e-08, -0.999999, 1.89984e-07, 0.746681, 7.9826e-08, 1, -1.04308e-07, -4.27192e-08, 0.00104713, -0.0863833, 0.136613)
+size = Vector3(0.002, 0.0239888, 0.0324712)
+
+[node name="Name" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_dp/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "DRIVE
+HEADER
+ΔP"
+
+[node name="Power" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_dp/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_dp/Label" index="2"]
+visible = false
+
+[node name="cooling_header_dp" parent="Control Room Panels/Main Panel Center/Controls/CRD" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.37148, 0.74313, 4.32972)
+
+[node name="Face" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_dp/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = null
+
+[node name="Needle" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_dp/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_dp/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Face_002" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_dp/edgewise_gauge" index="8"]
+transform = Transform3D(0.985645, -1.77636e-15, 0, 0, -1.76247e-07, -0.985645, 3.55271e-15, 0.492823, -3.52494e-07, 0, 0, -0.0606041)
+
+[node name="Axis" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_dp/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="Label" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_dp" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.27194e-08, 2.98023e-08, -0.999999, 1.89984e-07, 0.746681, 7.9826e-08, 1, -1.04308e-07, -4.27192e-08, 0.00104713, -0.0863833, 0.136613)
+size = Vector3(0.002, 0.0239888, 0.0324712)
+
+[node name="Name" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_dp/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "COOLING
+HEADER
+ΔP"
+
+[node name="Power" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_dp/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_dp/Label" index="2"]
+visible = false
+
+[node name="drive_header_flow" parent="Control Room Panels/Main Panel Center/Controls/CRD" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.34319, 0.55313, 4.30143)
+
+[node name="Face" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_flow/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = null
+
+[node name="Needle" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_flow/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_flow/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Face_002" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_flow/edgewise_gauge" index="8"]
+transform = Transform3D(0.985645, -1.77636e-15, 0, 0, -1.76247e-07, -0.985645, 3.55271e-15, 0.492823, -3.52494e-07, 0, 0, -0.0606041)
+
+[node name="Axis" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_flow/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="Label" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_flow" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-4.27194e-08, 2.98023e-08, -0.999999, 1.89984e-07, 0.746681, 7.9826e-08, 1, -1.04308e-07, -4.27192e-08, 0.00104713, -0.0863833, 0.136613)
+size = Vector3(0.002, 0.0239888, 0.0324712)
+
+[node name="Name" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_flow/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "DRIVE
+HEADER
+FLOW"
+
+[node name="Power" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_flow/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_flow/Label" index="2"]
+visible = false
+
+[node name="cooling_header_flow" parent="Control Room Panels/Main Panel Center/Controls/CRD" instance=ExtResource("18_bcd1o")]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, 6.31491, 0.55313, 4.27315)
+
+[node name="Face" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_flow/edgewise_gauge" index="0"]
+transform = Transform3D(1, 0, 0, 0, -3.57628e-07, -1, -3.55271e-15, 1, -3.57628e-07, 0, 0, 0)
+material_override = null
+
+[node name="Needle" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_flow/edgewise_gauge" index="3"]
+transform = Transform3D(0.0165577, -2.54438e-09, 5.83229e-10, -1.44752e-09, -0.0291044, 0, 1.44752e-09, -2.22437e-16, -0.00667136, -0.00357437, 0, -0.0601892)
+
+[node name="Face_001" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_flow/edgewise_gauge" index="7"]
+transform = Transform3D(1, 8.88178e-16, 0, 0, -1.78814e-07, -1, 0, 0.5, -3.57628e-07, 0, 0, -0.125)
+material_override = SubResource("StandardMaterial3D_krekq")
+
+[node name="Face_002" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_flow/edgewise_gauge" index="8"]
+transform = Transform3D(0.985645, -1.77636e-15, 0, 0, -1.76247e-07, -0.985645, 3.55271e-15, 0.492823, -3.52494e-07, 0, 0, -0.0606041)
+
+[node name="Axis" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_flow/edgewise_gauge" index="9"]
+transform = Transform3D(0.0475361, -4.15574e-09, -4.15574e-09, -4.15574e-09, -0.0475361, -3.26081e-17, -4.15574e-09, 3.95915e-16, -0.0475361, -0.00357437, 0, -0.0601892)
+
+[node name="Label" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_flow" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-5.96046e-08, 2.98023e-08, -0.999999, 1.89984e-07, 0.746681, 7.9826e-08, 1, -1.04308e-07, -5.96046e-08, 0.00104713, -0.0863833, 0.136613)
+size = Vector3(0.002, 0.0239888, 0.0324712)
+
+[node name="Name" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_flow/Label" index="0"]
+transform = Transform3D(-1.31134e-09, 0, 0.03, -5.55112e-17, 0.042, 9.31323e-10, -0.03, 0, -1.31134e-09, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "COOLING
+HEADER
+FLOW"
+
+[node name="Power" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_flow/Label" index="1"]
+visible = false
+text = "SM-8"
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_flow/Label" index="2"]
+visible = false
+
+[node name="Outlines" type="Node3D" parent="Control Room Panels/Main Panel Center/Controls/CRD"]
+
+[node name="Outline" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/Outlines"]
+transform = Transform3D(0.138555, -0.687439, -3.80484, 0.980615, -4.16718e-08, 1.0752, -0.138555, -0.687439, 3.80484, 6.77725, 0.0363013, 4.03751)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.134014)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline2" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/Outlines"]
+transform = Transform3D(0.707107, -0.687439, 0, -4.37114e-08, -8.9407e-08, 5.48722, -0.707107, -0.687439, -2.38419e-07, 6.52358, 0.636184, 4.29118)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.192661)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline3" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/Outlines"]
+transform = Transform3D(0.138555, -0.687439, -3.80484, 0.980615, -4.16718e-08, 1.0752, -0.138555, -0.687439, 3.80484, 6.63284, 0.0363013, 3.8931)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.134014)
+material = ExtResource("21_y8sv6")
+
+[node name="Outline4" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/CRD/Outlines"]
+transform = Transform3D(0.707107, -0.687439, 0, -4.37114e-08, -8.9407e-08, 5.48722, -0.707107, -0.687439, -2.38419e-07, 6.37917, 0.636184, 4.14677)
+use_collision = true
+size = Vector3(0.002, 0.0100413, 0.192661)
+material = ExtResource("21_y8sv6")
+
+[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Center/Controls/CRD"]
+transform = Transform3D(-0.707107, -0.693329, 0.138906, 7.45058e-09, 0.196442, 0.980515, -0.707107, 0.693329, -0.138906, 6.53054, 0.0783942, 4.07313)
+pixel_size = 0.0006
+texture = ExtResource("52_3c6de")
 
 [node name="Full Core Display" type="Node3D" parent="Control Room Panels/Main Panel Center"]
 transform = Transform3D(0, 0, -0.75, 0, 0.75, 0, 0.75, 0, 0, 1.00228, 1.01165, -2.40535)
@@ -34380,6 +34932,42 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [editable path="Control Room Panels/Main Panel Center/Controls/irm_f_range"]
 [editable path="Control Room Panels/Main Panel Center/Controls/irm_f_range/selector_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/irm_f_range/Label"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a/selector_switch"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a/Label"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3/selector_switch"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_v_3/Label"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b/selector_switch"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b/Label"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b_amps"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b_amps/Circular"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b_amps/Label"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a_amps"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a_amps/Circular"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a_amps/Label"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/charge_header_pressure"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/charge_header_pressure/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/charge_header_pressure/Label"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_system_flow"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_system_flow/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/crd_system_flow/Label"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/rft_dt_1a_seal_press2"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/rft_dt_1a_seal_press2/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/rft_dt_1a_seal_press2/Label"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_dp"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_dp/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_dp/Label"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_dp"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_dp/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_dp/Label"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_flow"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_flow/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_flow/Label"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_flow"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_flow/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_flow/Label"]
 [editable path="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/Label"]
 [editable path="Annunciators/Box1"]
 [editable path="Annunciators/P601_A4"]

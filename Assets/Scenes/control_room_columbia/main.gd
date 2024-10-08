@@ -681,6 +681,74 @@ signal chat_message(message)
 		"atypical" : false,
 		"text" : false,
 	},
+	
+	"crd_p_1a_amps": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1a_amps",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 100,
+		"atypical" : false,
+		"text" : false,
+	},
+	"crd_p_1b_amps": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/CRD/crd_p_1b_amps",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 100,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	"charge_header_pressure": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/CRD/charge_header_pressure",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 2000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"drive_header_flow": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/CRD/drive_header_flow",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 50,
+		"atypical" : false,
+		"text" : false,
+	},
+	"cooling_header_flow": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_flow",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 80,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	"drive_header_dp": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/CRD/drive_header_dp",
+		"value": 0,
+		"min_value": -500,
+		"max_value": 500,
+		"atypical" : false,
+		"text" : false,
+	},
+	"cooling_header_dp": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_dp",
+		"value": 0,
+		"min_value": -500,
+		"max_value": 500,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	"crd_system_flow": {
+		"node": $"Control Room Panels/Main Panel Center/Controls/CRD/crd_system_flow",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 300,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var alarms = {}
@@ -1133,7 +1201,7 @@ func _process(delta):
 							if rcd.object != null:
 								#rcd.object.update(page,page_info)
 								rcd.object.update(channels,rcd.history)
-							
+					
 			# check if any switches have been turned
 			var updated_switches = {}
 			for switch_name in switches:
@@ -1205,7 +1273,7 @@ func _process(delta):
 				
 			for message in sent_messages:
 				socket.send_text(build_packet(client_packets.CHAT, message))
-			sent_messages.clear()				
+			sent_messages.clear()
 							
 							
 							
@@ -1260,17 +1328,17 @@ func _process(delta):
 						"switches":
 							info_got += 1
 							switches = info
-							for switch in switches:
-								switch = switches[switch]
+							for switch in info:
+								switch = info[switch]
 								switch["switch"] = null
 								switch["updated"] = false
-								for light in switch["lights"]:
-									light = null
 									
 								var positions = switch["positions"].duplicate()
 								switch["positions"] = {}
 								for position in positions:
 									switch["positions"][int(position)] = positions[position]
+									
+							switches = info
 									
 						"buttons":
 							info_got += 1

@@ -1,22 +1,31 @@
-[gd_scene load_steps=5 format=3 uid="uid://dfd15iqtdnefv"]
+[gd_scene load_steps=9 format=3 uid="uid://dfd15iqtdnefv"]
 
 [ext_resource type="PackedScene" uid="uid://c3kfnbxqwgtd6" path="res://Assets/Scenes/Player/username_text.tscn" id="1_jnwma"]
 [ext_resource type="Script" path="res://Assets/Scenes/Player/username_text.gd" id="2_jjdfv"]
+[ext_resource type="PackedScene" uid="uid://ctsr4dlowd467" path="res://Assets/Scenes/Player/joeybiden.tscn" id="3_lp5gt"]
+[ext_resource type="PackedScene" uid="uid://caexin002j868" path="res://Assets/Scenes/Player/joeybidencard.tscn" id="4_tsd0q"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_6b3ky"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_2n12p"]
 viewport_path = NodePath("Sprite3D/SubViewport")
 
+[sub_resource type="ViewportTexture" id="ViewportTexture_4upbv"]
+viewport_path = NodePath("Sprite3D2/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_pt7wq"]
+viewport_path = NodePath("CARDBOARD/SubViewport")
+
 [node name="Player" type="CharacterBody3D"]
 
 [node name="MeshInstance3d" type="MeshInstance3D" parent="."]
+visible = false
 mesh = SubResource("CapsuleMesh_6b3ky")
 
 [node name="Head" type="Node3D" parent="."]
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.12263, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08, 0.86263, 0)
 pixel_size = 0.002
 billboard = 2
 texture = SubResource("ViewportTexture_2n12p")
@@ -27,3 +36,30 @@ size = Vector2i(1000, 512)
 
 [node name="Node2D" parent="Sprite3D/SubViewport" instance=ExtResource("1_jnwma")]
 script = ExtResource("2_jjdfv")
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+transform = Transform3D(-0.6, 0, -5.24537e-08, 0, 0.6, 0, 5.24537e-08, 0, -0.6, 0, -0.0573856, 0)
+pixel_size = 0.002
+shaded = true
+double_sided = false
+texture = SubResource("ViewportTexture_4upbv")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D2"]
+transparent_bg = true
+size = Vector2i(500, 1580)
+
+[node name="Node2D" parent="Sprite3D2/SubViewport" instance=ExtResource("3_lp5gt")]
+
+[node name="CARDBOARD" type="Sprite3D" parent="."]
+transform = Transform3D(0.6, 0, 1.04907e-07, 0, 0.6, 0, -1.04907e-07, 0, 0.6, 0, -0.0573856, 0)
+flip_h = true
+pixel_size = 0.002
+shaded = true
+double_sided = false
+texture = SubResource("ViewportTexture_pt7wq")
+
+[node name="SubViewport" type="SubViewport" parent="CARDBOARD"]
+transparent_bg = true
+size = Vector2i(500, 1580)
+
+[node name="Node2D" parent="CARDBOARD/SubViewport" instance=ExtResource("4_tsd0q")]

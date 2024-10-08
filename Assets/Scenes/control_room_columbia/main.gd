@@ -1153,7 +1153,8 @@ func _process(delta):
 					server_packets.PLAYER_POSITION_PARAMETERS_UPDATE:
 						packet_data = json.parse_string(packet_data) # dict of all players, dict OR Vector3(?) of position
 						for player in packet_data:
-							var player_position = packet_data[player]
+							var player_position = packet_data[player]["position"]
+							var player_rotation = packet_data[player]["rotation"]
 							
 							if player == globals.username_requested_tojoin:
 								continue #if the player is ourselves, ignore it
@@ -1161,11 +1162,12 @@ func _process(delta):
 							if player in players:
 								config.load("game.cfg")
 								players[player].position = player_position
-								players[player]["object"].get_children().get_node("MeshInstance3d").transparency = config.get_value("options","player_opacity",1)
+								players[player].rotation = player_rotation
 							else:
 								# player is not in our list, assume its a new player and insert a new entry
 								players[player] = {
 									"position" : player_position,
+									"rotation" : player_rotation,
 								}
 								# actually create the other player character
 								var NewRemotePlayer = remote_player_scene.instantiate()
@@ -1257,9 +1259,16 @@ func _process(delta):
 				var local_player = get_node("Player")
 			
 				local_player_position = {globals.username_requested_tojoin : {
-					"x" : local_player.position["x"],
-					"y" : local_player.position["y"],
-					"z" : local_player.position["z"],
+					"position":{
+						"x" : local_player.position["x"],
+						"y" : local_player.position["y"],
+						"z" : local_player.position["z"],
+					},
+					"rotation":{
+						"x" : local_player.rotation_degrees["x"],
+						"y" : local_player.rotation_degrees["y"],
+						"z" : local_player.rotation_degrees["z"],
+					},
 				}}
 			
 			if local_player_position != {}:
@@ -1271,12 +1280,14 @@ func _process(delta):
 			
 			for player in players:
 				var player_position = players[player].position
+				var player_rotation = players[player].rotation
 				var actual_position = players[player].object.position
 				var twn = create_tween()
 				twn.tween_property(players[player].object,"position",Vector3(player_position['x'],player_position['y'],player_position['z']),0.1)
 				twn.set_trans(Tween.TRANS_LINEAR)
 				twn.set_ease(Tween.EASE_IN_OUT)
 				twn.play()
+				players[player].object.rotation_degrees = Vector3(player_rotation['x'],player_rotation['y'],player_rotation['z'])
 				
 			for message in sent_messages:
 				socket.send_text(build_packet(client_packets.CHAT, message))

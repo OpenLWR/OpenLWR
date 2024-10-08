@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctsr4dlowd467"]
+
+[ext_resource type="Texture2D" uid="uid://bdg1deyps30br" path="res://Assets/Textures/biden.png" id="1_u4i7p"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(254, 788)
+texture = ExtResource("1_u4i7p")

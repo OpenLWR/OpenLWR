@@ -27,6 +27,7 @@ func add_server_internal(ip: String, server_name: String):
 	item.server_ip = ip
 	item.server_name = server_name
 	item.focus_entered.connect(_on_server_focused.bind(item))
+	item.focus_entered.connect(_on_server_focused.bind(item))
 	item.ping_complete.connect(_on_ping_success.bind(item))
 	item.ping_fail.connect(_on_ping_fail.bind(item))
 	known_servers.append(item)
@@ -80,5 +81,11 @@ func _on_remove_pressed():
 	config.save("game.cfg")
 	
 	server_selected.emit(null)
+	known_servers.erase(deleted_server)
 	deleted_server.queue_free()
 	pass # Replace with function body.
+
+
+func _on_refresh_pressed():
+	for item in known_servers:
+		item._ready()

@@ -4,8 +4,7 @@ func _ready():
 	pass
 	
 func _disconnect_button_pressed():
-	#TODO: handle disconnecting properly
-	get_tree().change_scene_to_file("res://Assets/Scenes/Lobby/new_lobby.tscn")
+	$"/root/Node3D"._disconnect()
 	
 func _settings_button_pressed():
 	get_node("Settings").visible = true

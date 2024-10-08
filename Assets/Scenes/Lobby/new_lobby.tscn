@@ -1,9 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://dmffnfkuj0cd4"]
+[gd_scene load_steps=7 format=3 uid="uid://dmffnfkuj0cd4"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/Lobby/new_lobby.gd" id="1_dc5mj"]
 [ext_resource type="Script" path="res://Assets/Scenes/Lobby/ServerList.gd" id="1_qdlwb"]
 [ext_resource type="Script" path="res://Assets/Scenes/Lobby/ServerInfo.gd" id="3_pb2tk"]
 [ext_resource type="Script" path="res://Assets/Scenes/Lobby/Add_server.gd" id="4_780co"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7hd70"]
+font_color = Color(1, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_rtjwp"]
 
 [node name="Lobby" type="Control"]
 layout_mode = 3
@@ -76,6 +81,11 @@ size_flags_horizontal = 6
 disabled = true
 text = "Delete server"
 
+[node name="Refresh" type="Button" parent="Panel/HSplitContainer/ServerList/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "Refresh"
+
 [node name="ServerInfo" type="Control" parent="Panel/HSplitContainer"]
 layout_mode = 2
 script = ExtResource("3_pb2tk")
@@ -87,7 +97,7 @@ anchor_left = 0.02
 anchor_top = 0.02
 anchor_right = 0.98
 anchor_bottom = 1.0
-offset_bottom = 0.279999
+offset_bottom = 0.280029
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer"]
 layout_mode = 2
@@ -103,6 +113,22 @@ size_flags_horizontal = 3
 [node name="VREnable" type="CheckBox" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "Use VR"
+
+[node name="InvalidUser" type="VBoxContainer" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Invalid" type="Label" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/InvalidUser"]
+layout_mode = 2
+text = "This username is invalid:
+"
+label_settings = SubResource("LabelSettings_7hd70")
+
+[node name="Requirements" type="Label" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/InvalidUser"]
+layout_mode = 2
+text = "* Greater than 1 character
+* Less than 21 characters"
+label_settings = SubResource("LabelSettings_rtjwp")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer"]
 layout_mode = 2
@@ -212,6 +238,7 @@ autowrap_mode = 2
 [connection signal="server_updated" from="Panel/HSplitContainer/ServerList" to="Panel/HSplitContainer/ServerInfo" method="_on_server_list_server_updated"]
 [connection signal="pressed" from="Panel/HSplitContainer/ServerList/HBoxContainer/Add" to="." method="_on_add_server_pressed"]
 [connection signal="pressed" from="Panel/HSplitContainer/ServerList/HBoxContainer/Remove" to="Panel/HSplitContainer/ServerList" method="_on_remove_pressed"]
+[connection signal="pressed" from="Panel/HSplitContainer/ServerList/HBoxContainer/Refresh" to="Panel/HSplitContainer/ServerList" method="_on_refresh_pressed"]
 [connection signal="text_changed" from="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer/LineEdit" to="." method="_on_line_edit_text_changed"]
 [connection signal="pressed" from="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer2/Join" to="Panel/HSplitContainer/ServerInfo" method="_on_join_pressed"]
 [connection signal="canceled" from="Add server" to="Add server" method="_on_canceled"]

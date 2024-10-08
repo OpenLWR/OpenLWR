@@ -991,7 +991,14 @@ func build_rod_select():
 	print("s")
 	#for rod in rod_information:
 		#var button = buttons["select_%s" % rod]
-		
+
+func _disconnect():
+	socket.close()
+
+func _notification(what):
+	if what == NOTIFICATION_WM_CLOSE_REQUEST:
+		_disconnect()
+
 func disconnected(socket):
 	var code = socket.get_close_code()
 	var reason = socket.get_close_reason()

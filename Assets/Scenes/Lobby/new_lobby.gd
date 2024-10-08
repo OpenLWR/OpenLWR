@@ -54,5 +54,4 @@ func _on_add_server_pressed():
 func _on_line_edit_text_changed(username):
 	var username_valid = len(username) <= 20 and len(username) >= 2
 	$Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer2/Join.disabled = not username_valid
-	var tooltip = "" if username_valid else "Please provide a valid username."
-	$Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer/LineEdit.tooltip_text = tooltip
+	$Panel/HSplitContainer/ServerInfo/VBoxContainer/InvalidUser.visible = not username_valid

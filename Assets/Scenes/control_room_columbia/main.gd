@@ -749,6 +749,31 @@ signal chat_message(message)
 		"atypical" : false,
 		"text" : false,
 	},
+	
+	"sw_p_1a_amps": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SW/sw_p_1a_amps",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 300,
+		"atypical" : false,
+		"text" : false,
+	},
+	"sw_a_flow": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SW/sw_a_flow",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 12000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"sw_a_press": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SW/sw_a_press",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 300,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var alarms = {}

@@ -825,6 +825,7 @@ var alarm_groups = {
 	"APRM_F_DOWNSCALE": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/F/DOWNSCALE",
 	
 	"hpcs_init": $"Control Room Panels/Main Panel Left Side/Controls/HPCS/hpcs_active/seal_in",
+	"hpcs_l8": $"Control Room Panels/Main Panel Left Side/Controls/HPCS/hpcs_l8/seal_in",
 	
 	#IRM/SRM Positioner
 	
@@ -901,6 +902,7 @@ var alarm_groups = {
 	"rcic_init": $"Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_initiation/sealed_in",
 	
 	"lpcs_init": $"Control Room Panels/Main Panel Left Side/Controls/LPCS/lpcs_init/seal_in",
+	"rhr_cb_init": $"Control Room Panels/Main Panel Left Side/Controls/RHR C/rhr_cb_init/seal_in",
 	
 	"rwm_insert_block": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/INSERT_BLOCK",
 	"rwm_withdraw_block": $"Control Room Panels/Main Panel Center/Controls/Rod Worth Minimizer/Indicators/WITHDRAW_BLOCK",

@@ -774,6 +774,14 @@ signal chat_message(message)
 		"atypical" : false,
 		"text" : false,
 	},
+	"sw_a_temp": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SW/sw_a_temp",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 200,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var alarms = {}

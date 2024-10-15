@@ -15,7 +15,7 @@ script = ExtResource("2_p3ofa")
 transform = Transform3D(0.999736, 0, 0, 0, -3.57534e-07, 0.999736, 0, -0.999736, -3.57534e-07, 0, 2.501, 0)
 
 [node name="arrow_decal" parent="button" index="0"]
-transform = Transform3D(-0.865347, -7.5651e-08, -3.78255e-08, 3.78255e-08, 1.65341e-15, -0.865347, 7.56511e-08, -0.865347, 1.65341e-15, 0, -2.53982e-09, 0.00710154)
+transform = Transform3D(-0.865347, -7.5651e-08, -3.78255e-08, 3.78255e-08, -2.84217e-14, -0.865347, 7.56511e-08, -0.865347, 2.84217e-14, 1.61534e-09, -1.41405e-08, 0.0440564)
 
 [node name="Arm" type="AudioStreamPlayer3D" parent="." index="3"]
 

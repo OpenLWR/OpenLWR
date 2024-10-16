@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bw6ngrnd848ig"]
+
+[resource]
+uv1_scale = Vector3(1.2, 1.55, 1.2)
+uv1_offset = Vector3(0.1, -0.255, 0)
+texture_repeat = false

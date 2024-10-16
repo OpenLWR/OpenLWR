@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://703n3ewcyxt7"]
+
+[ext_resource type="Texture2D" uid="uid://ckuiqmnn6j13g" path="res://Assets/Textures/Edgewise Gauge/Columbia/603/counts_per_second.png" id="1_5krim"]
+
+[resource]
+albedo_texture = ExtResource("1_5krim")
+uv1_scale = Vector3(1.2, 1.5, 1)
+uv1_offset = Vector3(0, -0.22, 0)
+texture_repeat = false

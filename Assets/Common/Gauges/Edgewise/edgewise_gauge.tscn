@@ -1,21 +1,15 @@
-[gd_scene load_steps=12 format=3 uid="uid://dok8h20vi4url"]
+[gd_scene load_steps=10 format=4 uid="uid://dok8h20vi4url"]
 
 [ext_resource type="PackedScene" uid="uid://dwlvtbrsq8blg" path="res://Assets/Common/Gauges/Edgewise/edgewise_gauge.glb" id="1_kpy8e"]
 [ext_resource type="Script" path="res://Assets/Common/Gauges/Edgewise/edgewise_gauge.gd" id="1_uwsdk"]
-[ext_resource type="Texture2D" uid="uid://d3hiq4sjgx00w" path="res://Assets/Common/Gauges/Edgewise/Textures/Placeholder/left.png" id="3_1foyj"]
-[ext_resource type="Texture2D" uid="uid://dfxr8mswmegkc" path="res://Assets/Common/Gauges/Edgewise/Textures/Placeholder/right.png" id="4_fihgh"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ysqbr"]
-albedo_texture = ExtResource("3_1foyj")
+[ext_resource type="Material" uid="uid://bw6ngrnd848ig" path="res://Assets/Materials/gauge.tres" id="3_cbij6"]
+[ext_resource type="Material" uid="uid://703n3ewcyxt7" path="res://Assets/Materials/gauge_template_refined.tres" id="4_2xxww"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3waab"]
 metallic = 1.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8gwiq"]
 albedo_color = Color(0.682353, 0.682353, 0.682353, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cndpy"]
-albedo_texture = ExtResource("4_fihgh")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1fvyt"]
 
@@ -24,12 +18,12 @@ _surfaces = [{
 "aabb": AABB(0.881921, 0, -0.471397, 0.118079, 0.1285, 0.942793),
 "format": 34896613377,
 "index_count": 114,
-"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0, 2, 0, 5, 0, 3, 0, 2, 0, 4, 0, 5, 0, 4, 0, 7, 0, 5, 0, 4, 0, 6, 0, 7, 0, 6, 0, 9, 0, 7, 0, 6, 0, 8, 0, 9, 0, 8, 0, 11, 0, 9, 0, 8, 0, 10, 0, 11, 0, 12, 0, 15, 0, 14, 0, 12, 0, 13, 0, 15, 0, 14, 0, 17, 0, 16, 0, 14, 0, 15, 0, 17, 0, 16, 0, 19, 0, 18, 0, 16, 0, 17, 0, 19, 0, 18, 0, 21, 0, 20, 0, 18, 0, 19, 0, 21, 0, 20, 0, 11, 0, 10, 0, 20, 0, 21, 0, 11, 0, 3, 0, 13, 0, 1, 0, 13, 0, 17, 0, 15, 0, 17, 0, 21, 0, 19, 0, 21, 0, 9, 0, 11, 0, 9, 0, 5, 0, 7, 0, 5, 0, 13, 0, 3, 0, 13, 0, 21, 0, 17, 0, 21, 0, 5, 0, 9, 0, 13, 0, 5, 0, 21, 0, 0, 0, 4, 0, 2, 0, 4, 0, 8, 0, 6, 0, 8, 0, 20, 0, 10, 0, 20, 0, 16, 0, 18, 0, 16, 0, 12, 0, 14, 0, 12, 0, 4, 0, 0, 0, 4, 0, 20, 0, 8, 0, 20, 0, 12, 0, 16, 0, 4, 0, 12, 0, 20, 0),
-"lods": [0.0276223, PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 6, 0, 3, 0, 6, 0, 5, 0, 3, 0, 6, 0, 10, 0, 5, 0, 20, 0, 5, 0, 10, 0, 20, 0, 19, 0, 5, 0, 20, 0, 15, 0, 19, 0, 12, 0, 15, 0, 20, 0, 12, 0, 13, 0, 15, 0, 3, 0, 13, 0, 1, 0, 5, 0, 13, 0, 3, 0, 13, 0, 5, 0, 19, 0, 13, 0, 19, 0, 15, 0, 6, 0, 20, 0, 10, 0, 6, 0, 12, 0, 20, 0, 12, 0, 6, 0, 0, 0), 0.0570298, PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 20, 0, 3, 0, 20, 0, 15, 0, 3, 0, 12, 0, 15, 0, 20, 0, 12, 0, 13, 0, 15, 0, 3, 0, 13, 0, 1, 0, 13, 0, 3, 0, 15, 0, 12, 0, 20, 0, 0, 0)],
+"index_data": PackedByteArray("AAADAAEAAAACAAMAAgAFAAMAAgAEAAUABAAHAAUABAAGAAcABgAJAAcABgAIAAkACAALAAkACAAKAAsADAAPAA4ADAANAA8ADgARABAADgAPABEAEAATABIAEAARABMAEgAVABQAEgATABUAFAALAAoAFAAVAAsAAwANAAEADQARAA8AEQAVABMAFQAJAAsACQAFAAcABQANAAMADQAVABEAFQAFAAkADQAFABUAAAAEAAIABAAIAAYACAAUAAoAFAAQABIAEAAMAA4ADAAEAAAABAAUAAgAFAAMABAABAAMABQA"),
+"lods": [0.0276223, PackedByteArray("AAADAAEAAAAGAAMABgAFAAMABgAKAAUAFAAFAAoAFAATAAUAFAAPABMADAAPABQADAANAA8AAwANAAEABQANAAMADQAFABMADQATAA8ABgAUAAoABgAMABQADAAGAAAA"), 0.0570298, PackedByteArray("AAADAAEAAAAUAAMAFAAPAAMADAAPABQADAANAA8AAwANAAEADQADAA8ADAAUAAAA")],
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 22,
-"vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 247, 90, 0, 0, 22, 24, 0, 0, 247, 90, 255, 255, 22, 24, 0, 0, 164, 162, 0, 0, 45, 49, 0, 0, 164, 162, 255, 255, 45, 49, 0, 0, 86, 214, 0, 0, 6, 75, 0, 0, 86, 214, 255, 255, 6, 75, 0, 0, 142, 245, 0, 0, 98, 101, 0, 0, 142, 245, 255, 255, 98, 101, 0, 0, 255, 255, 0, 0, 255, 127, 0, 0, 255, 255, 255, 255, 255, 127, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 247, 90, 0, 0, 232, 231, 0, 0, 247, 90, 255, 255, 232, 231, 0, 0, 164, 162, 0, 0, 209, 206, 0, 0, 164, 162, 255, 255, 209, 206, 0, 0, 86, 214, 0, 0, 248, 180, 0, 0, 86, 214, 255, 255, 248, 180, 0, 0, 142, 245, 0, 0, 156, 154, 0, 0, 142, 245, 255, 255, 156, 154, 0, 0)
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAP//AAAAAPdaAAAWGAAA91r//xYYAACkogAALTEAAKSi//8tMQAAVtYAAAZLAABW1v//BksAAI71AABiZQAAjvX//2JlAAD//wAA/38AAP//////fwAAAAAAAP//AAAAAP////8AAPdaAADo5wAA91r//+jnAACkogAA0c4AAKSi///RzgAAVtYAAPi0AABW1v//+LQAAI71AACcmgAAjvX//5yaAAA=")
 }]
 blend_shape_mode = 0
 
@@ -37,16 +31,16 @@ blend_shape_mode = 0
 resource_name = "edgewise_gauge_Cylinder_004"
 _surfaces = [{
 "aabb": AABB(0.881921, 0, -0.471397, 0.118079, 0.1285, 0.942793),
-"attribute_data": PackedByteArray(181, 245, 145, 143, 255, 255, 249, 225, 87, 123, 145, 143, 219, 247, 249, 225, 181, 245, 157, 152, 140, 254, 204, 228, 87, 123, 157, 152, 77, 249, 204, 228, 181, 245, 71, 162, 105, 253, 189, 231, 87, 123, 71, 162, 113, 250, 189, 231, 181, 245, 118, 172, 150, 252, 197, 234, 87, 123, 118, 172, 67, 251, 197, 234, 181, 245, 17, 183, 23, 252, 221, 237, 87, 123, 17, 183, 194, 251, 221, 237, 181, 245, 254, 193, 237, 251, 252, 240, 87, 123, 254, 193, 237, 251, 252, 240, 181, 245, 182, 249, 255, 255, 255, 255, 87, 123, 182, 249, 219, 247, 255, 255, 181, 245, 200, 238, 140, 254, 43, 253, 87, 123, 200, 238, 77, 249, 43, 253, 181, 245, 164, 227, 105, 253, 58, 250, 87, 123, 164, 227, 113, 250, 58, 250, 181, 245, 99, 216, 150, 252, 50, 247, 87, 123, 99, 216, 67, 251, 50, 247, 181, 245, 35, 205, 23, 252, 27, 244, 87, 123, 35, 205, 194, 251, 27, 244, 87, 123, 157, 152, 87, 123, 200, 238),
+"attribute_data": PackedByteArray("tfWRj///+eFXe5GP2/f54bX1nZiM/szkV3udmE35zOS19Ueiaf2951d7R6Jx+r3ntfV2rJb8xepXe3asQ/vF6rX1EbcX/N3tV3sRt8L73e219f7B7fv88Fd7/sHt+/zwtfW2+f////9Xe7b52/f//7X1yO6M/iv9V3vI7k35K/219aTjaf06+ld7pONx+jr6tfVj2Jb8MvdXe2PYQ/sy97X1I80X/Bv0V3sjzcL7G/RXe52YV3vI7g=="),
 "format": 34896613399,
 "index_count": 114,
-"index_data": PackedByteArray(0, 0, 6, 0, 2, 0, 0, 0, 4, 0, 6, 0, 4, 0, 10, 0, 6, 0, 4, 0, 8, 0, 10, 0, 8, 0, 14, 0, 10, 0, 8, 0, 12, 0, 14, 0, 12, 0, 18, 0, 14, 0, 12, 0, 16, 0, 18, 0, 16, 0, 22, 0, 18, 0, 16, 0, 20, 0, 22, 0, 24, 0, 30, 0, 28, 0, 24, 0, 26, 0, 30, 0, 28, 0, 34, 0, 32, 0, 28, 0, 30, 0, 34, 0, 32, 0, 38, 0, 36, 0, 32, 0, 34, 0, 38, 0, 36, 0, 42, 0, 40, 0, 36, 0, 38, 0, 42, 0, 40, 0, 22, 0, 20, 0, 40, 0, 42, 0, 22, 0, 7, 0, 27, 0, 3, 0, 27, 0, 35, 0, 31, 0, 35, 0, 43, 0, 39, 0, 43, 0, 19, 0, 23, 0, 19, 0, 11, 0, 15, 0, 11, 0, 27, 0, 7, 0, 27, 0, 43, 0, 35, 0, 43, 0, 11, 0, 19, 0, 27, 0, 11, 0, 43, 0, 1, 0, 9, 0, 5, 0, 9, 0, 17, 0, 13, 0, 17, 0, 41, 0, 21, 0, 41, 0, 33, 0, 37, 0, 33, 0, 25, 0, 29, 0, 25, 0, 9, 0, 1, 0, 9, 0, 41, 0, 17, 0, 41, 0, 25, 0, 33, 0, 9, 0, 25, 0, 41, 0),
-"lods": [0.0276223, PackedByteArray(0, 0, 6, 0, 2, 0, 0, 0, 12, 0, 6, 0, 12, 0, 10, 0, 6, 0, 12, 0, 20, 0, 10, 0, 40, 0, 10, 0, 20, 0, 40, 0, 38, 0, 10, 0, 40, 0, 30, 0, 38, 0, 24, 0, 30, 0, 40, 0, 24, 0, 26, 0, 30, 0, 7, 0, 27, 0, 3, 0, 11, 0, 27, 0, 7, 0, 27, 0, 11, 0, 39, 0, 27, 0, 39, 0, 31, 0, 13, 0, 41, 0, 21, 0, 13, 0, 25, 0, 41, 0, 25, 0, 13, 0, 1, 0), 0.0570298, PackedByteArray(0, 0, 6, 0, 2, 0, 0, 0, 40, 0, 6, 0, 40, 0, 45, 0, 44, 0, 24, 0, 30, 0, 40, 0, 24, 0, 26, 0, 30, 0, 7, 0, 27, 0, 3, 0, 27, 0, 7, 0, 31, 0, 25, 0, 41, 0, 1, 0)],
+"index_data": PackedByteArray("AAAGAAIAAAAEAAYABAAKAAYABAAIAAoACAAOAAoACAAMAA4ADAASAA4ADAAQABIAEAAWABIAEAAUABYAGAAeABwAGAAaAB4AHAAiACAAHAAeACIAIAAmACQAIAAiACYAJAAqACgAJAAmACoAKAAWABQAKAAqABYABwAbAAMAGwAjAB8AIwArACcAKwATABcAEwALAA8ACwAbAAcAGwArACMAKwALABMAGwALACsAAQAJAAUACQARAA0AEQApABUAKQAhACUAIQAZAB0AGQAJAAEACQApABEAKQAZACEACQAZACkA"),
+"lods": [0.0276223, PackedByteArray("AAAGAAIAAAAMAAYADAAKAAYADAAUAAoAKAAKABQAKAAmAAoAKAAeACYAGAAeACgAGAAaAB4ABwAbAAMACwAbAAcAGwALACcAGwAnAB8ADQApABUADQAZACkAGQANAAEA"), 0.0570298, PackedByteArray("AAAGAAIAAAAoAAYAKAAtACwAGAAeACgAGAAaAB4ABwAbAAMAGwAHAB8AGQApAAEA")],
 "material": SubResource("StandardMaterial3D_1fvyt"),
 "primitive": 3,
 "uv_scale": Vector4(1.69881, 1.83872, 0, 0),
 "vertex_count": 46,
-"vertex_data": PackedByteArray(0, 0, 0, 0, 0, 0, 97, 224, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 97, 224, 0, 0, 255, 255, 0, 0, 255, 191, 247, 90, 0, 0, 22, 24, 25, 223, 247, 90, 0, 0, 22, 24, 255, 255, 247, 90, 255, 255, 22, 24, 25, 223, 247, 90, 255, 255, 22, 24, 255, 191, 164, 162, 0, 0, 45, 49, 145, 220, 164, 162, 0, 0, 45, 49, 255, 255, 164, 162, 255, 255, 45, 49, 145, 220, 164, 162, 255, 255, 45, 49, 255, 191, 86, 214, 0, 0, 6, 75, 23, 218, 86, 214, 0, 0, 6, 75, 255, 255, 86, 214, 255, 255, 6, 75, 23, 218, 86, 214, 255, 255, 6, 75, 255, 191, 142, 245, 0, 0, 98, 101, 173, 215, 142, 245, 0, 0, 98, 101, 255, 255, 142, 245, 255, 255, 98, 101, 173, 215, 142, 245, 255, 255, 98, 101, 255, 191, 255, 255, 0, 0, 255, 127, 84, 213, 255, 255, 0, 0, 255, 127, 255, 255, 255, 255, 255, 255, 255, 127, 84, 213, 255, 255, 255, 255, 255, 127, 255, 191, 0, 0, 0, 0, 255, 255, 210, 203, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 255, 255, 255, 255, 210, 203, 0, 0, 255, 255, 255, 255, 255, 191, 247, 90, 0, 0, 232, 231, 200, 204, 247, 90, 0, 0, 232, 231, 255, 255, 247, 90, 255, 255, 232, 231, 200, 204, 247, 90, 255, 255, 232, 231, 255, 191, 164, 162, 0, 0, 209, 206, 198, 206, 164, 162, 0, 0, 209, 206, 255, 255, 164, 162, 255, 255, 209, 206, 198, 206, 164, 162, 255, 255, 209, 206, 255, 191, 86, 214, 0, 0, 248, 180, 223, 208, 86, 214, 0, 0, 248, 180, 255, 255, 86, 214, 255, 255, 248, 180, 223, 208, 86, 214, 255, 255, 248, 180, 255, 191, 142, 245, 0, 0, 156, 154, 15, 211, 142, 245, 0, 0, 156, 154, 255, 255, 142, 245, 255, 255, 156, 154, 15, 211, 142, 245, 255, 255, 156, 154, 255, 191, 247, 90, 255, 255, 22, 24, 39, 212, 247, 90, 255, 255, 232, 231, 9, 210, 155, 176, 99, 79, 255, 127, 255, 63, 155, 176, 99, 79, 254, 255, 255, 127, 248, 175, 6, 80, 255, 127, 255, 63, 248, 175, 6, 80, 254, 255, 255, 127, 175, 174, 79, 81, 255, 127, 255, 63, 175, 174, 79, 81, 254, 255, 255, 127, 96, 173, 158, 82, 255, 191, 255, 255, 96, 173, 158, 82, 254, 255, 254, 127, 9, 172, 245, 83, 255, 127, 255, 63, 9, 172, 245, 83, 254, 255, 255, 127, 170, 170, 84, 85, 255, 191, 255, 255, 170, 170, 84, 85, 254, 255, 254, 127, 194, 163, 60, 92, 255, 127, 255, 63, 194, 163, 60, 92, 254, 255, 255, 127, 154, 164, 100, 91, 255, 191, 255, 255, 154, 164, 100, 91, 254, 255, 254, 127, 57, 166, 197, 89, 255, 127, 255, 63, 57, 166, 197, 89, 254, 255, 255, 127, 196, 167, 58, 88, 255, 127, 255, 63, 196, 167, 58, 88, 254, 255, 255, 127, 62, 169, 192, 86, 255, 127, 255, 63, 62, 169, 192, 86, 254, 255, 255, 127, 166, 196, 77, 109, 142, 182, 21, 97)
+"vertex_data": PackedByteArray("AAAAAAAAYeAAAAAAAAD//wAA//8AAGHgAAD//wAA/7/3WgAAFhgZ3/daAAAWGP//91r//xYYGd/3Wv//Fhj/v6SiAAAtMZHcpKIAAC0x//+kov//LTGR3KSi//8tMf+/VtYAAAZLF9pW1gAABkv//1bW//8GSxfaVtb//wZL/7+O9QAAYmWt1471AABiZf//jvX//2JlrdeO9f//YmX/v///AAD/f1TV//8AAP9//////////39U1f//////f/+/AAAAAP//0ssAAAAA/////wAA/////9LLAAD//////7/3WgAA6OfIzPdaAADo5///91r//+jnyMz3Wv//6Of/v6SiAADRzsbOpKIAANHO//+kov//0c7GzqSi///Rzv+/VtYAAPi039BW1gAA+LT//1bW///4tN/QVtb///i0/7+O9QAAnJoP0471AACcmv//jvX//5yaD9OO9f//nJr/v/da//8WGCfU91r//+jnCdKbsGNP/3//P5uwY0/+//9/+K8GUP9//z/4rwZQ/v//f6+uT1H/f/8/r65PUf7//39grZ5S/7///2CtnlL+//5/Caz1U/9//z8JrPVT/v//f6qqVFX/v///qqpUVf7//n/Cozxc/3//P8KjPFz+//9/mqRkW/+///+apGRb/v/+fzmmxVn/f/8/OabFWf7//3/EpzpY/3//P8SnOlj+//9/PqnAVv9//z8+qcBW/v//f6bETW2OthVh")
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_0d7jx")
@@ -58,7 +52,7 @@ script = ExtResource("1_uwsdk")
 transform = Transform3D(-6.66159e-09, 0, -0.152399, 0, 0.152399, 0, 0.152399, 0, -6.66159e-09, 0, 0, 0)
 
 [node name="Face" parent="edgewise_gauge" index="0"]
-material_override = SubResource("StandardMaterial3D_ysqbr")
+material_override = ExtResource("3_cbij6")
 
 [node name="Frame" parent="edgewise_gauge" index="1"]
 material_override = SubResource("StandardMaterial3D_3waab")
@@ -73,7 +67,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_8gwiq")
 surface_material_override/0 = SubResource("StandardMaterial3D_8gwiq")
 
 [node name="Face_001" parent="edgewise_gauge" index="7"]
-material_override = SubResource("StandardMaterial3D_cndpy")
+material_override = ExtResource("4_2xxww")
 mesh = SubResource("ArrayMesh_jeoie")
 
 [editable path="edgewise_gauge"]

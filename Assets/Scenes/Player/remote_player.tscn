@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://dfd15iqtdnefv"]
 
+[ext_resource type="Script" path="res://Assets/Scenes/Player/remote_player.gd" id="1_bha12"]
 [ext_resource type="PackedScene" uid="uid://c3kfnbxqwgtd6" path="res://Assets/Scenes/Player/username_text.tscn" id="1_jnwma"]
-[ext_resource type="Script" path="res://Assets/Scenes/Player/username_text.gd" id="2_jjdfv"]
 [ext_resource type="PackedScene" uid="uid://ctsr4dlowd467" path="res://Assets/Scenes/Player/joeybiden.tscn" id="3_lp5gt"]
 [ext_resource type="PackedScene" uid="uid://caexin002j868" path="res://Assets/Scenes/Player/joeybidencard.tscn" id="4_tsd0q"]
 
@@ -17,6 +17,7 @@ viewport_path = NodePath("Sprite3D2/SubViewport")
 viewport_path = NodePath("CARDBOARD/SubViewport")
 
 [node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_bha12")
 
 [node name="MeshInstance3d" type="MeshInstance3D" parent="."]
 visible = false
@@ -35,7 +36,6 @@ transparent_bg = true
 size = Vector2i(1000, 512)
 
 [node name="Node2D" parent="Sprite3D/SubViewport" instance=ExtResource("1_jnwma")]
-script = ExtResource("2_jjdfv")
 
 [node name="Sprite3D2" type="Sprite3D" parent="."]
 transform = Transform3D(-0.6, 0, -5.24537e-08, 0, 0.6, 0, 5.24537e-08, 0, -0.6, 0, -0.0573856, 0)

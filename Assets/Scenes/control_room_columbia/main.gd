@@ -1207,6 +1207,7 @@ func _process(delta):
 								# actually create the other player character
 								var NewRemotePlayer = remote_player_scene.instantiate()
 								NewRemotePlayer.name = player
+								NewRemotePlayer.set_name_billboard(player)
 								self.add_child(NewRemotePlayer)
 								players[player]["object"] = NewRemotePlayer
 								# TODO: remove remote player instance when they disconnect

@@ -91,7 +91,7 @@ func _unhandled_input(event: InputEvent):
 		if $Head/Camera3d/Chat/Edit.has_focus():
 			input_dir = Vector2(0,0)
 		if event.is_action_pressed("menu_toggle"):
-			get_node("Head/Camera3d/Menu").visible = true
+			get_node("Head/Camera3d/Menu").visible = not get_node("Head/Camera3d/Menu").visible
 		if event.is_action_pressed("zoom"):
 			if config.get_value("options","zoom_toggle",false) or os_is_mobile:
 				zoom_toggle = not zoom_toggle

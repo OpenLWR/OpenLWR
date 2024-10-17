@@ -10,7 +10,9 @@ func _input(event):
 	if event is InputEventMouseButton or event is InputEventScreenTouch:
 		if not $Edit.get_global_rect().has_point(event.position):
 			$Edit.release_focus()
-	pass
+
+	if Input.is_action_pressed("focus_chat"):
+		$Edit.grab_focus()
 
 func _on_chat_message(message: String):
 	var node = Label.new()

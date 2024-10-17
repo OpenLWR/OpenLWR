@@ -16,6 +16,7 @@ func _input(event):
 
 func _on_chat_message(message: String):
 	var node = Label.new()
+	node.autowrap_mode = TextServer.AUTOWRAP_WORD
 	node.text = message
 	$Messages/VBoxContainer.add_child(node)
 	var child_count = $Messages/VBoxContainer.get_child_count()

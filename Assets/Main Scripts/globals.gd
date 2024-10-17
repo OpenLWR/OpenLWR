@@ -12,4 +12,4 @@ var renderer = null
 
 var use_vr = false
 
-var version = "alpha20240919"
+var version = "alpha20241016"

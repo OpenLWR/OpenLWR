@@ -29,14 +29,16 @@ anchor_right = 0.9
 anchor_bottom = 0.9
 offset_left = -128.0
 offset_top = 4.0
-offset_right = -128.0
+offset_right = 136.0
 offset_bottom = 4.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="HSplitContainer" type="HSplitContainer" parent="Panel"]
 layout_mode = 2
+theme_override_constants/separation = 0
 split_offset = 975
+dragger_visibility = 1
 
 [node name="ServerList" type="Control" parent="Panel/HSplitContainer"]
 layout_mode = 2
@@ -90,11 +92,21 @@ layout_mode = 2
 size_flags_horizontal = 6
 text = "Refresh"
 
-[node name="ServerInfo" type="Control" parent="Panel/HSplitContainer"]
+[node name="Control" type="Control" parent="Panel/HSplitContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/HSplitContainer/Control"]
+layout_mode = 2
+offset_right = 817.0
+offset_bottom = 864.0
+
+[node name="ServerInfo" type="Control" parent="Panel/HSplitContainer/Control/HBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_direction = 2
 layout_mode = 2
 script = ExtResource("3_pb2tk")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/HSplitContainer/ServerInfo"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.02
@@ -103,38 +115,38 @@ anchor_right = 0.98
 anchor_bottom = 1.0
 offset_bottom = 0.280029
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "Username: "
 
-[node name="LineEdit" type="LineEdit" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer"]
+[node name="LineEdit" type="LineEdit" parent="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="VREnable" type="CheckBox" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer"]
+[node name="VREnable" type="CheckBox" parent="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "Use VR"
 
-[node name="InvalidUser" type="VBoxContainer" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer"]
+[node name="InvalidUser" type="VBoxContainer" parent="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer"]
 visible = false
 layout_mode = 2
 
-[node name="Invalid" type="Label" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/InvalidUser"]
+[node name="Invalid" type="Label" parent="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/InvalidUser"]
 layout_mode = 2
 text = "This username is invalid:
 "
 label_settings = SubResource("LabelSettings_7hd70")
 
-[node name="Requirements" type="Label" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/InvalidUser"]
+[node name="Requirements" type="Label" parent="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/InvalidUser"]
 layout_mode = 2
 text = "* Greater than 1 character
 * Less than 21 characters"
 label_settings = SubResource("LabelSettings_rtjwp")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 focus_mode = 2
@@ -147,43 +159,31 @@ version ding dong bing bong[/p]
 [font_size=30]<--- Select a server to begin[/font_size]"
 selection_enabled = true
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 8
 
-[node name="Join" type="Button" parent="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer2"]
+[node name="Join" type="Button" parent="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 6
 disabled = true
 text = "Join server"
 
-[node name="Panel2" type="PanelContainer" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.1
-anchor_top = 0.1
-anchor_right = 0.9
-anchor_bottom = 0.9
-offset_left = 1432.0
-offset_top = 4.0
-offset_right = 166.0
-offset_bottom = 4.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="HSplitContainer" type="HSplitContainer" parent="Panel2"]
-layout_mode = 2
-split_offset = 975
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel2/HSplitContainer"]
+[node name="Thanks" type="Control" parent="Panel/HSplitContainer/Control/HBoxContainer"]
+layout_direction = 2
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Panel2/HSplitContainer/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/HSplitContainer/Control/HBoxContainer/Thanks"]
+layout_mode = 2
+offset_right = 270.0
+offset_bottom = 864.0
+
+[node name="Label" type="Label" parent="Panel/HSplitContainer/Control/HBoxContainer/Thanks/VBoxContainer"]
 layout_mode = 2
 text = "Contribuitors"
 horizontal_alignment = 1
 
-[node name="Label2" type="Label" parent="Panel2/HSplitContainer/VBoxContainer"]
+[node name="Label2" type="Label" parent="Panel/HSplitContainer/Control/HBoxContainer/Thanks/VBoxContainer"]
 layout_mode = 2
 text = "rogervanbommel
 Enthalpy
@@ -199,12 +199,12 @@ Fozzie-Bear
 
 "
 
-[node name="Label3" type="Label" parent="Panel2/HSplitContainer/VBoxContainer"]
+[node name="Label3" type="Label" parent="Panel/HSplitContainer/Control/HBoxContainer/Thanks/VBoxContainer"]
 layout_mode = 2
 text = "Donators"
 horizontal_alignment = 1
 
-[node name="Label4" type="Label" parent="Panel2/HSplitContainer/VBoxContainer"]
+[node name="Label4" type="Label" parent="Panel/HSplitContainer/Control/HBoxContainer/Thanks/VBoxContainer"]
 layout_mode = 2
 text = "flooficarr
 Robby (robbytheatomicengineer)
@@ -292,12 +292,12 @@ horizontal_alignment = 1
 autowrap_mode = 2
 
 [connection signal="server_selected" from="Panel/HSplitContainer/ServerList" to="Panel/HSplitContainer/ServerList" method="_on_server_selected"]
-[connection signal="server_selected" from="Panel/HSplitContainer/ServerList" to="Panel/HSplitContainer/ServerInfo" method="_on_server_list_server_selected"]
-[connection signal="server_updated" from="Panel/HSplitContainer/ServerList" to="Panel/HSplitContainer/ServerInfo" method="_on_server_list_server_updated"]
+[connection signal="server_selected" from="Panel/HSplitContainer/ServerList" to="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo" method="_on_server_list_server_selected"]
+[connection signal="server_updated" from="Panel/HSplitContainer/ServerList" to="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo" method="_on_server_list_server_updated"]
 [connection signal="pressed" from="Panel/HSplitContainer/ServerList/HBoxContainer/Add" to="." method="_on_add_server_pressed"]
 [connection signal="pressed" from="Panel/HSplitContainer/ServerList/HBoxContainer/Remove" to="Panel/HSplitContainer/ServerList" method="_on_remove_pressed"]
 [connection signal="pressed" from="Panel/HSplitContainer/ServerList/HBoxContainer/Refresh" to="Panel/HSplitContainer/ServerList" method="_on_refresh_pressed"]
-[connection signal="text_changed" from="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer/LineEdit" to="." method="_on_line_edit_text_changed"]
-[connection signal="pressed" from="Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer2/Join" to="Panel/HSplitContainer/ServerInfo" method="_on_join_pressed"]
+[connection signal="text_changed" from="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/HBoxContainer/LineEdit" to="." method="_on_line_edit_text_changed"]
+[connection signal="pressed" from="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/HBoxContainer2/Join" to="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo" method="_on_join_pressed"]
 [connection signal="canceled" from="Add server" to="Add server" method="_on_canceled"]
 [connection signal="confirmed" from="Add server" to="Add server" method="_on_confirmed"]

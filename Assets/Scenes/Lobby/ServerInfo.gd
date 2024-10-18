@@ -28,5 +28,5 @@ func _on_server_list_server_updated(server):
 func _on_join_pressed():
 	if not _verify_server():
 		return
-	$"../../..".connect_server(selected_server.server_ip, selected_server.response["model"])
+	$"../../../../..".connect_server(selected_server.server_ip, selected_server.response["model"])
 	pass # Replace with function body.

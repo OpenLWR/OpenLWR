@@ -3,10 +3,10 @@ extends Control
 func connect_server(ip: String, requested_scene: String):
 
 	var server_ip_requested = ip
-	var username_requested = $Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer/LineEdit.text
+	var username_requested = $Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/HBoxContainer/LineEdit.text
 	globals.server_ip_requested_tojoin = server_ip_requested
 	globals.username_requested_tojoin = username_requested
-	globals.use_vr = $Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer/VREnable.button_pressed
+	globals.use_vr = $Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/HBoxContainer/VREnable.button_pressed
 	
 	if ResourceLoader.exists("res://Assets/Scenes/%s/control_room.tscn" % requested_scene):
 		get_tree().change_scene_to_file("res://Assets/Scenes/%s/control_room.tscn" % requested_scene)
@@ -31,7 +31,7 @@ func _ready():
 	var djoin_scene = 2
 	var djoin_ip = "127.0.0.1:7001"
 	if arguments.has("username"):
-		$Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer/LineEdit.text = arguments.username
+		$Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/HBoxContainer/LineEdit.text = arguments.username
 	if arguments.has("scene"):
 		djoin_scene = int(arguments.scene)
 	if arguments.has("join"):
@@ -53,5 +53,5 @@ func _on_add_server_pressed():
 
 func _on_line_edit_text_changed(username):
 	var username_valid = len(username) <= 20 and len(username) >= 2
-	$Panel/HSplitContainer/ServerInfo/VBoxContainer/HBoxContainer2/Join.disabled = not username_valid
-	$Panel/HSplitContainer/ServerInfo/VBoxContainer/InvalidUser.visible = not username_valid
+	$Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/HBoxContainer2/Join.disabled = not username_valid
+	$Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/InvalidUser.visible = not username_valid

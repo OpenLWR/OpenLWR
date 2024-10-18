@@ -21250,6 +21250,282 @@ transform = Transform3D(1.04657, -2.98023e-08, 1.49011e-08, 1.49012e-08, -3.7428
 [node name="601RPV" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("35_00tn5")]
 transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 4.77312, 0.622153, 3.29348)
 
+[node name="ADS 1" type="Node3D" parent="Control Room Panels/Main Panel Left Side/Controls"]
+
+[node name="ads_initiate_1a" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1" instance=ExtResource("17_p3ckw")]
+transform = Transform3D(-0.0104004, 0.00208105, -0.0106066, 0.00294304, 0.0147085, 6.42927e-10, 0.0104004, -0.00208105, -0.0106066, 5.9413, 0.0661862, 4.07059)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1a" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-3.04638e-06, 49.7787, 2.08017e-14, 66.6667, 1.79774e-06, 5.89432e-06, 5.89432e-06, -1.98682e-06, -66.6666, 2.20876, 0.178406, 0)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1a/Label" index="0"]
+transform = Transform3D(-8.74228e-10, -1.61853e-25, 0.02, -2.64484e-18, 0.028, 0, -0.02, -3.70278e-18, -8.74228e-10, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "ADS DIVISION 1
+MANUAL INITIATION
+MS-RMS-ADS-30A"
+font_size = 35
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1a/Label" index="1"]
+transform = Transform3D(-8.74228e-10, 7.25346e-16, 0.02, -2.64469e-18, 0.028, -5.18104e-16, -0.02, -3.70259e-18, -8.74228e-10, 0.00105124, -0.00981124, -0.0354925)
+text = "ARMED"
+font_size = 35
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1a/Label" index="2"]
+visible = false
+
+[node name="Power2" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1a/Label"]
+transform = Transform3D(-8.74228e-10, 7.25346e-16, 0.02, -2.64473e-18, 0.028, -5.18104e-16, -0.02, -3.70266e-18, -8.74228e-10, 0.00105095, -0.00981128, 0.0355063)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DISARMED"
+font = ExtResource("15_o5a3n")
+font_size = 35
+outline_size = 0
+horizontal_alignment = 0
+
+[node name="ads_initiate_1b" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1" instance=ExtResource("17_p3ckw")]
+transform = Transform3D(-0.0104004, 0.00208105, -0.0106066, 0.00294304, 0.0147085, 6.42927e-10, 0.0104004, -0.00208105, -0.0106066, 6.0453, 0.0367558, 3.96659)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1b" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-3.04638e-06, 49.7787, 2.08017e-14, 66.6667, 1.79774e-06, 5.89432e-06, 5.89432e-06, -1.98682e-06, -66.6666, 2.20876, 0.178406, 0)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1b/Label" index="0"]
+transform = Transform3D(-8.74228e-10, -1.61853e-25, 0.02, -2.64484e-18, 0.028, 0, -0.02, -3.70278e-18, -8.74228e-10, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "ADS DIVISION 1
+MANUAL INITIATION
+MS-RMS-ADS-31A"
+font_size = 35
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1b/Label" index="1"]
+transform = Transform3D(-8.74228e-10, 7.25346e-16, 0.02, -2.64469e-18, 0.028, -5.18104e-16, -0.02, -3.70259e-18, -8.74228e-10, 0.00105124, -0.00981124, -0.0354925)
+text = "ARMED"
+font_size = 35
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1b/Label" index="2"]
+visible = false
+
+[node name="Power2" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1b/Label"]
+transform = Transform3D(-8.74228e-10, 7.25346e-16, 0.02, -2.64473e-18, 0.028, -5.18104e-16, -0.02, -3.70266e-18, -8.74228e-10, 0.00105095, -0.00981128, 0.0355063)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DISARMED"
+font = ExtResource("15_o5a3n")
+font_size = 35
+outline_size = 0
+horizontal_alignment = 0
+
+[node name="ads_reset_1" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1" instance=ExtResource("32_61r0u")]
+transform = Transform3D(0.707107, -0.691611, -0.147221, -0.00789808, 0.200464, -0.97967, 0.707063, 0.693894, 0.136287, 6.15276, 0.0216047, 3.85792)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_reset_1/Button/CSGBox3D" index="0"]
+text = "RESET"
+
+[node name="Label2" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_reset_1" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-0.00773849, -0.0011799, 0.999968, 0.00434764, 0.746672, 0.00161377, -0.999961, 0.00325547, -0.00773156, -8.29406e-05, 0.0353864, 0.0125905)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_reset_1/Label2" index="0"]
+transform = Transform3D(-8.74228e-10, -1.61853e-25, 0.02, -2.64484e-18, 0.028, 0, -0.02, -3.70278e-18, -8.74228e-10, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "REACTOR VESSEL
+LOW LEVEL/TIMER
+SEAL IN
+MS-RMS-ADS-13A"
+font_size = 35
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_reset_1/Label2" index="1"]
+transform = Transform3D(-8.74228e-10, 7.25346e-16, 0.02, -2.64469e-18, 0.028, -5.18104e-16, -0.02, -3.70259e-18, -8.74228e-10, 0.00105124, -0.00981124, -0.0354925)
+visible = false
+text = "ARMED"
+font_size = 35
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_reset_1/Label2" index="2"]
+visible = false
+
+[node name="ads_inhibit_1" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 6.25641, -0.00617826, 3.75429)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_inhibit_1/selector_switch/CSGBox3D" index="0"]
+transform = Transform3D(0.45, -1.3024e-15, -1.06581e-14, 2.92821e-15, 0.45, -2.23517e-08, -1.42109e-14, 5.96046e-08, 0.45, -0.201492, -3.05176e-05, 0.0108356)
+text = "NORMAL"
+
+[node name="Label3D2" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_inhibit_1/selector_switch/CSGBox3D" index="1"]
+text = ""
+
+[node name="Label3D3" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_inhibit_1/selector_switch/CSGBox3D" index="2"]
+transform = Transform3D(0.45, -1.36183e-15, -3.55271e-15, 2.04004e-15, 0.45, -1.49012e-08, -3.55271e-15, 3.72529e-08, 0.45, 0.182083, -3.05176e-05, 0.0108414)
+text = "INHIBIT"
+
+[node name="Label2" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_inhibit_1" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-0.00773849, -0.0011799, 0.999968, 0.00434764, 0.746672, 0.00161377, -0.999961, 0.00325547, -0.00773156, -8.29406e-05, 0.0353864, 0.0125905)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_inhibit_1/Label2" index="0"]
+transform = Transform3D(-8.74228e-10, -1.61853e-25, 0.02, -2.64484e-18, 0.028, 0, -0.02, -3.70278e-18, -8.74228e-10, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "ADS DIVISION 1
+INHIBIT
+MS-RMS-ADS-12A"
+font_size = 35
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_inhibit_1/Label2" index="1"]
+transform = Transform3D(-8.74228e-10, 7.25346e-16, 0.02, -2.64469e-18, 0.028, -5.18104e-16, -0.02, -3.70259e-18, -8.74228e-10, 0.00105124, -0.00981124, -0.0354925)
+visible = false
+text = "ARMED"
+font_size = 35
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_inhibit_1/Label2" index="2"]
+visible = false
+
+[node name="notice_push_both" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1"]
+transform = Transform3D(0.0617646, -0.338369, 1.9403, 0.492311, 0.0849025, 0, -0.0617646, 0.338369, 1.9403, 5.82971, 0.100531, 4.18059)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0288596)
+material = ExtResource("3_pvt5y")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 1/notice_push_both"]
+transform = Transform3D(-1.39696e-09, -1.86265e-09, 0.05, -1.32094e-15, 0.053763, 2.79397e-09, -0.00911209, 3.39455e-10, -4.24319e-10, 0.00105673, 1.90735e-06, -3.63588e-05)
+modulate = Color(0, 0, 0, 1)
+text = "PUSH BOTH MANUAL CONTROLS
+FOR ADS INITIATION"
+font = ExtResource("14_chbuk")
+font_size = 40
+outline_size = 0
+
+[node name="ADS 2" type="Node3D" parent="Control Room Panels/Main Panel Left Side/Controls"]
+
+[node name="ads_initiate_2a" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2" instance=ExtResource("17_p3ckw")]
+transform = Transform3D(-0.0104004, 0.00208105, -0.0106066, 0.00294304, 0.0147085, 6.42927e-10, 0.0104004, -0.00208105, -0.0106066, 6.65271, 0.0661862, 4.782)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_initiate_2a" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-3.04638e-06, 49.7787, 2.08017e-14, 66.6667, 1.79774e-06, 5.89432e-06, 5.89432e-06, -1.98682e-06, -66.6666, 2.20876, 0.178406, 0)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_initiate_2a/Label" index="0"]
+transform = Transform3D(-8.74228e-10, -1.61853e-25, 0.02, -2.64484e-18, 0.028, 0, -0.02, -3.70278e-18, -8.74228e-10, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "ADS DIVISION 1
+MANUAL INITIATION
+MS-RMS-ADS-30A"
+font_size = 35
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_initiate_2a/Label" index="1"]
+transform = Transform3D(-8.74228e-10, 7.25346e-16, 0.02, -2.64469e-18, 0.028, -5.18104e-16, -0.02, -3.70259e-18, -8.74228e-10, 0.00105124, -0.00981124, -0.0354925)
+text = "ARMED"
+font_size = 35
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_initiate_2a/Label" index="2"]
+visible = false
+
+[node name="Power2" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_initiate_2a/Label"]
+transform = Transform3D(-8.74228e-10, 7.25346e-16, 0.02, -2.64473e-18, 0.028, -5.18104e-16, -0.02, -3.70266e-18, -8.74228e-10, 0.00105095, -0.00981128, 0.0355063)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DISARMED"
+font = ExtResource("15_o5a3n")
+font_size = 35
+outline_size = 0
+horizontal_alignment = 0
+
+[node name="ads_initiate_2b" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2" instance=ExtResource("17_p3ckw")]
+transform = Transform3D(-0.0104004, 0.00208105, -0.0106066, 0.00294304, 0.0147085, 6.42927e-10, 0.0104004, -0.00208105, -0.0106066, 6.75671, 0.0367558, 4.678)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_initiate_2b" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-3.04638e-06, 49.7787, 2.08017e-14, 66.6667, 1.79774e-06, 5.89432e-06, 5.89432e-06, -1.98682e-06, -66.6666, 2.20876, 0.178406, 0)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_initiate_2b/Label" index="0"]
+transform = Transform3D(-8.74228e-10, -1.61853e-25, 0.02, -2.64484e-18, 0.028, 0, -0.02, -3.70278e-18, -8.74228e-10, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "ADS DIVISION 1
+MANUAL INITIATION
+MS-RMS-ADS-31A"
+font_size = 35
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_initiate_2b/Label" index="1"]
+transform = Transform3D(-8.74228e-10, 7.25346e-16, 0.02, -2.64469e-18, 0.028, -5.18104e-16, -0.02, -3.70259e-18, -8.74228e-10, 0.00105124, -0.00981124, -0.0354925)
+text = "ARMED"
+font_size = 35
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_initiate_2b/Label" index="2"]
+visible = false
+
+[node name="Power2" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_initiate_2b/Label"]
+transform = Transform3D(-8.74228e-10, 7.25346e-16, 0.02, -2.64473e-18, 0.028, -5.18104e-16, -0.02, -3.70266e-18, -8.74228e-10, 0.00105095, -0.00981128, 0.0355063)
+shaded = true
+modulate = Color(0, 0, 0, 1)
+text = "DISARMED"
+font = ExtResource("15_o5a3n")
+font_size = 35
+outline_size = 0
+horizontal_alignment = 0
+
+[node name="ads_reset_2" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2" instance=ExtResource("32_61r0u")]
+transform = Transform3D(0.707107, -0.691612, -0.147221, -0.00789808, 0.200464, -0.97967, 0.707063, 0.693894, 0.136287, 6.86417, 0.0216047, 4.56933)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_reset_2/Button/CSGBox3D" index="0"]
+text = "RESET"
+
+[node name="Label2" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_reset_2" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-0.00773849, -0.0011799, 0.999968, 0.00434764, 0.746672, 0.00161377, -0.999961, 0.00325547, -0.00773156, -8.29406e-05, 0.0353864, 0.0125905)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_reset_2/Label2" index="0"]
+transform = Transform3D(-8.74228e-10, -1.61853e-25, 0.02, -2.64484e-18, 0.028, 0, -0.02, -3.70278e-18, -8.74228e-10, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "REACTOR VESSEL
+LOW LEVEL/TIMER
+SEAL IN
+MS-RMS-ADS-13A"
+font_size = 35
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_reset_2/Label2" index="1"]
+transform = Transform3D(-8.74228e-10, 7.25346e-16, 0.02, -2.64469e-18, 0.028, -5.18104e-16, -0.02, -3.70259e-18, -8.74228e-10, 0.00105124, -0.00981124, -0.0354925)
+visible = false
+text = "ARMED"
+font_size = 35
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_reset_2/Label2" index="2"]
+visible = false
+
+[node name="ads_inhibit_2" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2" instance=ExtResource("13_r65ec")]
+transform = Transform3D(0.707107, -0.691655, -0.147016, 0, 0.207912, -0.978148, 0.707107, 0.691655, 0.147016, 6.96782, -0.00617826, 4.4657)
+
+[node name="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_inhibit_2/selector_switch/CSGBox3D" index="0"]
+transform = Transform3D(0.45, -1.3024e-15, -1.06581e-14, 2.92821e-15, 0.45, -2.23517e-08, -1.42109e-14, 5.96046e-08, 0.45, -0.201492, -3.05176e-05, 0.0108356)
+text = "NORMAL"
+
+[node name="Label3D2" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_inhibit_2/selector_switch/CSGBox3D" index="1"]
+text = ""
+
+[node name="Label3D3" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_inhibit_2/selector_switch/CSGBox3D" index="2"]
+transform = Transform3D(0.45, -1.36183e-15, -3.55271e-15, 2.04004e-15, 0.45, -1.49012e-08, -3.55271e-15, 3.72529e-08, 0.45, 0.182083, -3.05176e-05, 0.0108414)
+text = "INHIBIT"
+
+[node name="Label2" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_inhibit_2" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-0.00773849, -0.0011799, 0.999968, 0.00434764, 0.746672, 0.00161377, -0.999961, 0.00325547, -0.00773156, -8.29406e-05, 0.0353864, 0.0125905)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_inhibit_2/Label2" index="0"]
+transform = Transform3D(-8.74228e-10, -1.61853e-25, 0.02, -2.64484e-18, 0.028, 0, -0.02, -3.70278e-18, -8.74228e-10, 0.00105715, 9.53674e-07, 1.71661e-05)
+text = "ADS DIVISION 1
+INHIBIT
+MS-RMS-ADS-12A"
+font_size = 35
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_inhibit_2/Label2" index="1"]
+transform = Transform3D(-8.74228e-10, 7.25346e-16, 0.02, -2.64469e-18, 0.028, -5.18104e-16, -0.02, -3.70259e-18, -8.74228e-10, 0.00105124, -0.00981124, -0.0354925)
+visible = false
+text = "ARMED"
+font_size = 35
+
+[node name="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_inhibit_2/Label2" index="2"]
+visible = false
+
+[node name="notice_push_both" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2"]
+transform = Transform3D(0.0617646, -0.338369, 1.9403, 0.492311, 0.0849025, 0, -0.0617646, 0.338369, 1.9403, 6.54252, 0.100531, 4.8934)
+use_collision = true
+size = Vector3(0.002, 0.0239888, 0.0288596)
+material = ExtResource("3_pvt5y")
+
+[node name="Label3D" type="Label3D" parent="Control Room Panels/Main Panel Left Side/Controls/ADS 2/notice_push_both"]
+transform = Transform3D(-1.39696e-09, -1.86265e-09, 0.05, -1.32094e-15, 0.053763, 2.79397e-09, -0.00911209, 3.39455e-10, -4.24319e-10, 0.00105673, 1.90735e-06, -3.63588e-05)
+modulate = Color(0, 0, 0, 1)
+text = "PUSH BOTH MANUAL CONTROLS
+FOR ADS INITIATION"
+font = ExtResource("14_chbuk")
+font_size = 40
+outline_size = 0
+
 [node name="PanelDiagrams" type="Node3D" parent="Control Room Panels/Main Panel Left Side"]
 
 [node name="label3" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/PanelDiagrams"]
@@ -35492,6 +35768,26 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 [editable path="Control Room Panels/Main Panel Left Side/Controls/RRC/station_1a/station_1a_demand/edgewise_gauge"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/RRC/station_1a/station_1a_actual"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/RRC/station_1a/station_1a_actual/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1a"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1a/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1b"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1b/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_reset_1"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_reset_1/Button"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_reset_1/Label2"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_inhibit_1"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_inhibit_1/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_inhibit_1/Label2"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_initiate_2a"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_initiate_2a/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_initiate_2b"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_initiate_2b/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_reset_2"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_reset_2/Button"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_reset_2/Label2"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_inhibit_2"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_inhibit_2/selector_switch"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 2/ads_inhibit_2/Label2"]
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/reactor_mode_switch/selector_switch"]
 [editable path="Control Room Panels/Main Panel Center/Controls/srm_d_counts"]

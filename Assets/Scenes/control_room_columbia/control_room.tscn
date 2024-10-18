@@ -31924,11 +31924,15 @@ material = SubResource("StandardMaterial3D_ofvgn")
 
 [node name="Label3D" parent="Annunciators/P601_A3/Windows/1-2/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, -1.52588e-05, 0, 0.163055)
-text = ""
+text = "ADS
+TIMER
+INITIATED"
 
 [node name="Label3D" parent="Annunciators/P601_A3/Windows/1-1/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, -1.77636e-14, 0, 1, 0, 1.77636e-14, 0, 1, -1.52588e-05, 0, 0.162994)
-text = ""
+text = "ADS
+SYSTEM
+INITIATED"
 
 [node name="Label3D" parent="Annunciators/P601_A3/Windows/2-8/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
@@ -32563,14 +32567,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00159264, -0.0182424, -0.0
 
 [node name="Label3D" parent="Annunciators/P601_A2/Windows/1-8/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
-text = ""
+text = "ADS
+TIMER
+INITIATED"
 
 [node name="CSGBox3D" parent="Annunciators/P601_A2/Windows/1-7" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671387, -0.109344)
 
 [node name="Label3D" parent="Annunciators/P601_A2/Windows/1-7/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
-text = ""
+text = "ADS
+SYSTEM
+INITIATED"
 
 [node name="Label3D" parent="Annunciators/P601_A2/Windows/1-6/CSGBox3D" index="0"]
 text = "RHR B/C
@@ -32717,9 +32725,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671387, -0.10
 
 [node name="Label3D" parent="Annunciators/P601_A2/Windows/4-8/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
-text = "RELIEF VALVE
-TAILPIPE
-TEMP HIGH"
+text = "ADS
+RPV LEVEL LOW
+CONFIRMED
++13\""
 
 [node name="Label3D" parent="Annunciators/P601_A2/Windows/4-7/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
@@ -32814,7 +32823,9 @@ material = SubResource("StandardMaterial3D_s5n15")
 
 [node name="Label3D" parent="Annunciators/P601_A2/Windows/6-7/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
-text = ""
+text = "RELIEF VALVE
+TAILPIPE
+TEMP HIGH"
 
 [node name="Label3D" parent="Annunciators/P601_A2/Windows/6-6/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163055)
@@ -32855,6 +32866,12 @@ texture = ExtResource("26_ud3n4")
 
 [node name="Triangle3" type="Sprite3D" parent="Annunciators/P601_A2"]
 transform = Transform3D(-4.65661e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.65661e-10, 0.0133405, -0.166197, 0.0123229)
+shaded = true
+double_sided = false
+texture = ExtResource("26_ud3n4")
+
+[node name="Triangle4" type="Sprite3D" parent="Annunciators/P601_A2"]
+transform = Transform3D(-4.65661e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.65661e-10, 0.0133405, -0.044197, -0.371677)
 shaded = true
 double_sided = false
 texture = ExtResource("26_ud3n4")

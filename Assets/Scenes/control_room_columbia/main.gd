@@ -565,7 +565,7 @@ signal chat_message(message)
 	},
 	
 	"mt_rpm": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/mt_rpm",
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/EHC/SPEED/mt_rpm",
 		"value": 0,
 		"min_value": 0,
 		"max_value": 2200,
@@ -821,14 +821,14 @@ var alarm_groups = {
 	"SCRAM_B5": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_B/A5",
 	"SCRAM_B6": $"Control Room Panels/Main Panel Center/Controls/SCRAM_LOGIC_B/A6",
 	
-	"RMCS_WITHDRAW_BLOCK": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_BLOCK",
-	"RMCS_INSERT_BLOCK": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_BLOCK",
-	"RMCS_SELECT_BLOCK": $"Rod Select Panel/Panel 1/Lights and buttons/SelectBlock",
+	"RMCS_WITHDRAW_BLOCK": $"Control Room Panels/Main Panel Center/Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW_BLOCK",
+	"RMCS_INSERT_BLOCK": $"Control Room Panels/Main Panel Center/Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT_BLOCK",
+	"RMCS_SELECT_BLOCK": $"Control Room Panels/Main Panel Center/Rod Select Panel/Panel 1/Lights and buttons/SelectBlock",
 	
-	"RMCS_WITHDRAW": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW",
-	"RMCS_CONT_WITHDRAW": $"Rod Select Panel/Panel 1/Lights and buttons/RMCS_CONT_WITHDRAW",
-	"RMCS_INSERT": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT",
-	"RMCS_SETTLE": $"Rod Select Panel/Panel 2/Lights and buttons/RMCS_SETTLE",
+	"RMCS_WITHDRAW": $"Control Room Panels/Main Panel Center/Rod Select Panel/Panel 2/Lights and buttons/RMCS_WITHDRAW",
+	"RMCS_CONT_WITHDRAW": $"Control Room Panels/Main Panel Center/Rod Select Panel/Panel 1/Lights and buttons/RMCS_CONT_WITHDRAW",
+	"RMCS_INSERT": $"Control Room Panels/Main Panel Center/Rod Select Panel/Panel 2/Lights and buttons/RMCS_INSERT",
+	"RMCS_SETTLE": $"Control Room Panels/Main Panel Center/Rod Select Panel/Panel 2/Lights and buttons/RMCS_SETTLE",
 	
 	"cr_light_normal_1": null,
 	"cr_light_normal_2": null,

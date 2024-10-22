@@ -34841,6 +34841,7 @@ outline_size = 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 11)
 
 [node name="soundscape_control_room" type="Node3D" parent="."]
+editor_description = "plays ambience while only in the main control room"
 script = ExtResource("74_ok0ft")
 
 [node name="area_audio" type="AudioStreamPlayer" parent="soundscape_control_room"]

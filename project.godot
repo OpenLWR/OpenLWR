@@ -87,4 +87,5 @@ anti_aliasing/quality/msaa_3d=3
 [xr]
 
 openxr/enabled=true
+openxr/startup_alert=false
 shaders/enabled=true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=596 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=602 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -73,8 +73,11 @@
 [ext_resource type="Texture2D" uid="uid://c5ta2dget34xu" path="res://Assets/Textures/bailey controller.png" id="52_3c6de"]
 [ext_resource type="Script" path="res://Assets/Common/Gauges/Circular/synchroscope.gd" id="54_8uecp"]
 [ext_resource type="PackedScene" uid="uid://bsfdelqlsf7lc" path="res://Assets/Common/Annunciators/annunciator_cgs_fcp.tscn" id="59_st7vo"]
+[ext_resource type="ArrayMesh" uid="uid://vlcxysms4u3g" path="res://Assets/Misc/Models/panel v1.obj" id="60_vr701"]
 [ext_resource type="AudioStream" uid="uid://bluh33h5y6ohu" path="res://Assets/Audio/clear_alarm.mp3" id="64_f1f2v"]
 [ext_resource type="AudioStream" uid="uid://bgt3td8o61fxe" path="res://Assets/Audio/FCPAlarm.mp3" id="66_qk51h"]
+[ext_resource type="Texture2D" uid="uid://by275fn14k4q1" path="res://Assets/Textures/501'RW CONTROL ROOM AperatureCard.png" id="76_5g4pe"]
+[ext_resource type="Texture2D" uid="uid://cf4wr44tc1sw3" path="res://Assets/Textures/ColumbiaDeskDimensions.png" id="77_frwn1"]
 
 [sub_resource type="Environment" id="Environment_gjsn6"]
 ambient_light_source = 2
@@ -1222,6 +1225,9 @@ emission = Color(0.999999, 0.976884, 0.680685, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_65qbn"]
 albedo_color = Color(0.537255, 0.537255, 0.537255, 1)
 emission = Color(0.999999, 0.976884, 0.680685, 1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_vdwyh"]
+data = PackedVector3Array(0, 0, 0, 0, 0, 59.9995, 36, 0, 59.9995, 0, 0, 0, 36, 0, 59.9995, 36, 0, 0, 0, 0, 59.9995, 0, 3.999, 59.9995, 36, 3.999, 59.9995, 0, 0, 59.9995, 36, 3.999, 59.9995, 36, 0, 59.9995, 0, 3.999, 59.9995, 0, 29.9994, 65.3939, 36, 29.9994, 65.3939, 0, 3.999, 59.9995, 36, 29.9994, 65.3939, 36, 3.999, 59.9995, 0, 29.9994, 65.3939, 0, 35.9993, 35.9993, 36, 35.9993, 35.9993, 0, 29.9994, 65.3939, 36, 35.9993, 35.9993, 36, 29.9994, 65.3939, 0, 35.9993, 35.9993, 0, 93.9986, 35.9993, 36, 93.9986, 35.9993, 0, 35.9993, 35.9993, 36, 93.9986, 35.9993, 36, 35.9993, 35.9993, 0, 93.9986, 35.9993, 0, 94, 0, 36, 94, 0, 0, 93.9986, 35.9993, 36, 94, 0, 36, 93.9986, 35.9993, 0, 94, 0, 0, 0, 0, 36, 0, 0, 0, 94, 0, 36, 0, 0, 36, 94, 0, 36, 0, 0, 36, 0, 59.9995, 36, 35.9993, 35.9993, 36, 0, 0, 36, 35.9993, 35.9993, 36, 94, 0, 36, 94, 0, 36, 35.9993, 35.9993, 36, 93.9986, 35.9993, 36, 3.999, 59.9995, 36, 29.9994, 65.3939, 36, 35.9993, 35.9993, 36, 3.999, 59.9995, 36, 35.9993, 35.9993, 36, 0, 59.9995, 0, 94, 0, 0, 93.9986, 35.9993, 0, 35.9993, 35.9993, 0, 94, 0, 0, 35.9993, 35.9993, 0, 0, 0, 0, 0, 0, 0, 35.9993, 35.9993, 0, 0, 59.9995, 0, 3.999, 59.9995, 0, 0, 59.9995, 0, 35.9993, 35.9993, 0, 3.999, 59.9995, 0, 35.9993, 35.9993, 0, 29.9994, 65.3939)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6niud"]
 vertex_color_use_as_albedo = true
@@ -3331,18 +3337,16 @@ emission_energy_multiplier = 1.9
 emission = Color(0.79395, 0.396243, 3.85046e-07, 1)
 emission_energy_multiplier = 1.9
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r5qbn"]
+albedo_color = Color(0, 0.378798, 0.750987, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sm4mo"]
+
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_4t1fm")
 
 [node name="Player" parent="." instance=ExtResource("2_upyw6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.06602, 0)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -0.861246, 1.96479, -11.6681)
-use_collision = true
-flip_faces = true
-size = Vector3(24, 3.9657, 37.5)
-material = ExtResource("3_pvt5y")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.3693, 1.06602, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_gjsn6")
@@ -25939,7 +25943,7 @@ size = Vector3(7.03703, 2.40366, 1.04492)
 material = ExtResource("4_6rpi8")
 
 [node name="FCP" type="CSGBox3D" parent="Control Room Panels"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.49988, 1.19435, 4.52387)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4385, 1.19435, 4.52387)
 use_collision = true
 size = Vector3(4.1, 2.40366, 1.04492)
 material = ExtResource("4_6rpi8")
@@ -26061,6 +26065,16 @@ material = ExtResource("4_6rpi8")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.03136, 1.19435, -16.6761)
 size = Vector3(7.03703, 2.40366, 1.04492)
 material = ExtResource("4_6rpi8")
+
+[node name="Panel2" type="MeshInstance3D" parent="Control Room Panels"]
+transform = Transform3D(-0.06, 1.50996e-09, 6.60024e-17, 0, -4.37114e-10, 0.01, 9.05975e-09, 0.01, 4.37114e-10, -7.78908, -0.0131508, 15.7789)
+cast_shadow = 0
+mesh = ExtResource("60_vr701")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Control Room Panels/Panel2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Control Room Panels/Panel2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_vdwyh")
 
 [node name="CSGPolygon3D" type="CSGPolygon3D" parent="."]
 transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, 7.228, 2.39, 4.943)
@@ -34288,14 +34302,14 @@ C1-2A/2B TROUBLE"
 visible = false
 
 [node name="FCP1_A" parent="Annunciators" instance=ExtResource("59_st7vo")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10, 2.1, -5.9)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6.93862, 2.1, -5.9)
 
 [node name="Label3D" parent="Annunciators/FCP1_A/Windows/1-1/CSGBox3D" index="0"]
 text = "TG BLDG 471'
 ELECT SWGR BAY"
 
 [node name="FCP2_A" parent="Annunciators" instance=ExtResource("59_st7vo")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -10, 2.1, -6.9571)
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -6.93862, 2.1, -6.9571)
 
 [node name="Alarm1" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.55557, 2.31361, 2.79219)
@@ -34600,6 +34614,147 @@ transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-0
 
 [node name="Node3D12" parent="." instance=ExtResource("45_mx4yt")]
 transform = Transform3D(-1.22392e-08, 0, 0.28, 0, 0.28, 0, -0.28, 0, -1.22392e-08, 8.49855, 1.37566, -7.86545)
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(3.01992e-07, 4, 1.74846e-07, 0, -1.74846e-07, 4, 4, -3.01992e-07, -1.32005e-14, -2.62611, -4.09746e-07, -8.35699)
+visible = false
+texture = ExtResource("76_5g4pe")
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, -7.64444, 0.707917, 4.03419)
+visible = false
+transparency = 0.89
+cast_shadow = 0
+texture = ExtResource("77_frwn1")
+
+[node name="Control Room" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -3.54401, 1.96479, -11.6681)
+use_collision = true
+flip_faces = true
+size = Vector3(29.0494, 3.9657, 37.5)
+material = ExtResource("3_pvt5y")
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -13.9776, 1.96479, 2.70579)
+use_collision = true
+size = Vector3(0.163334, 3.9657, 8.80273)
+material = ExtResource("3_pvt5y")
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -13.9776, 1.96479, -17.6227)
+use_collision = true
+size = Vector3(0.163334, 3.9657, 25.6118)
+material = ExtResource("3_pvt5y")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -12.6026, 1.96479, -4.75685)
+use_collision = true
+size = Vector3(2.75122, 3.9657, 0.477036)
+material = ExtResource("3_pvt5y")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -12.6026, 1.96479, -1.56374)
+use_collision = true
+size = Vector3(2.75122, 3.9657, 0.477036)
+material = ExtResource("3_pvt5y")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -11.31, 1.03374, -2.02728)
+use_collision = true
+size = Vector3(0.318237, 2.10687, 0.477036)
+material = ExtResource("3_pvt5y")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -11.31, 1.03374, -0.828541)
+use_collision = true
+size = Vector3(0.318237, 2.10687, 2.8703)
+material = ExtResource("3_pvt5y")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, 1.32836, 0.442335, -1.90592)
+use_collision = true
+size = Vector3(4.82898, 0.914, 0.719)
+material = SubResource("StandardMaterial3D_r5qbn")
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(-4.64477e-08, 0, 1.00176, 0, 1.00176, 0, -1.0626, 0, -4.37883e-08, 3.52999, 0.442335, -3.17634)
+use_collision = true
+size = Vector3(2.98671, 0.914, 0.719)
+material = SubResource("StandardMaterial3D_r5qbn")
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(-4.64477e-08, 0, 1.00176, 0, 1.00176, 0, -1.0626, 0, -4.37883e-08, -1.43055, 0.442335, -4.14799)
+use_collision = true
+size = Vector3(4.8975, 0.914, 0.719)
+material = SubResource("StandardMaterial3D_r5qbn")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(-4.64477e-08, 0, 1.00176, 0, 1.00176, 0, -1.0626, 0, -4.37883e-08, 3.52999, 0.442335, -6.45233)
+use_collision = true
+size = Vector3(0.856636, 0.914, 0.719)
+material = SubResource("StandardMaterial3D_r5qbn")
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, 0.852882, 0.442335, -6.54894)
+use_collision = true
+size = Vector3(4.97012, 0.914, 0.719)
+material = SubResource("StandardMaterial3D_r5qbn")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, 0.988464, 0.151961, -4.27934)
+use_collision = true
+size = Vector3(4.11508, 0.386589, 4.04212)
+material = SubResource("StandardMaterial3D_sm4mo")
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(0.956097, 0.43713, 0, -0.463678, 0.901355, 0, 0, 0, 1.00176, 3.44578, 0.00259079, -5.35216)
+use_collision = true
+size = Vector3(0.744964, 0.386589, 1.38063)
+material = SubResource("StandardMaterial3D_sm4mo")
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, 1.38953, 0.324021, 0.694491)
+use_collision = true
+size = Vector3(2.832, 0.677788, 0.719)
+material = ExtResource("3_pvt5y")
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(-4.64477e-08, 0, 1.00176, 0, 1.00176, 0, -1.0626, 0, -4.37883e-08, 5.37532, 0.324021, -4.30551)
+use_collision = true
+size = Vector3(2.832, 0.677788, 0.719)
+material = ExtResource("3_pvt5y")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -11.31, 3.02538, -3.11932)
+use_collision = true
+size = Vector3(0.318237, 1.88461, 2.81567)
+material = ExtResource("3_pvt5y")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -11.31, 1.03374, -4.29619)
+use_collision = true
+size = Vector3(0.318237, 2.10687, 0.477036)
+material = ExtResource("3_pvt5y")
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -13.8978, 1.03374, -1.99078)
+use_collision = true
+size = Vector3(0.318237, 2.10687, 0.549896)
+material = ExtResource("3_pvt5y")
+
+[node name="CSGBox3D20" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -13.8978, 3.02538, -3.11932)
+use_collision = true
+size = Vector3(0.318237, 1.88461, 2.81567)
+material = ExtResource("3_pvt5y")
+
+[node name="CSGBox3D21" type="CSGBox3D" parent="Control Room"]
+transform = Transform3D(1.0626, 0, 0, 0, 1.00176, 0, 0, 0, 1.00176, -13.8978, 1.03374, -4.29619)
+use_collision = true
+size = Vector3(0.318237, 2.10687, 0.477036)
+material = ExtResource("3_pvt5y")
 
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/ehc_lamp_test/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/ehc_lamp_test" method="switch_click"]
 [connection signal="input_event" from="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/ehc_hyd_fluid/StaticBody3D" to="Control Room Panels/Main Panel Right Side/Controls/EHC/EHC/ehc_hyd_fluid" method="switch_click"]

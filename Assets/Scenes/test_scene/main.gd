@@ -281,4 +281,3 @@ func _process(delta):
 			pass
 		elif state == WebSocketPeer.STATE_CLOSED:
 			disconnected(socket)
-

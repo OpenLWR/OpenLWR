@@ -22,6 +22,11 @@ tracker = &"left_hand"
 transform = Transform3D(0.08, 0, 0, 0, 0.08, 0, 0, 0, 0.08, 0, 0, 0)
 mesh = SubResource("SphereMesh_y0bul")
 
+[node name="Area3D" type="Area3D" parent="XROrigin3D/LeftController/Hand"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="XROrigin3D/LeftController/Hand/Area3D"]
+shape = SubResource("SphereShape3D_etu0p")
+
 [node name="RightController" type="XRController3D" parent="XROrigin3D"]
 tracker = &"right_hand"
 

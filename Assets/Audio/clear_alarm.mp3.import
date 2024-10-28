@@ -2,7 +2,7 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://bluh33h5y6ohu"
+uid="uid://dmg7y0bfuv5tb"
 path="res://.godot/imported/clear_alarm.mp3-1f143d36843426132038d31212064dfa.mp3str"
 
 [deps]
@@ -12,8 +12,8 @@ dest_files=["res://.godot/imported/clear_alarm.mp3-1f143d36843426132038d31212064
 
 [params]
 
-loop=true
-loop_offset=0.0
-bpm=0.0
+loop=false
+loop_offset=0
+bpm=0
 beat_count=0
 bar_beats=4

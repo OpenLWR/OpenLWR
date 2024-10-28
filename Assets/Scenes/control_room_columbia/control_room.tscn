@@ -69,7 +69,7 @@
 [ext_resource type="Script" path="res://Assets/Common/Gauges/Circular/synchroscope.gd" id="54_8uecp"]
 [ext_resource type="PackedScene" uid="uid://bsfdelqlsf7lc" path="res://Assets/Common/Annunciators/annunciator_cgs_fcp.tscn" id="59_st7vo"]
 [ext_resource type="ArrayMesh" uid="uid://vlcxysms4u3g" path="res://Assets/Misc/Models/panel v1.obj" id="60_vr701"]
-[ext_resource type="AudioStream" uid="uid://bluh33h5y6ohu" path="res://Assets/Audio/clear_alarm.mp3" id="64_f1f2v"]
+[ext_resource type="AudioStream" uid="uid://dmg7y0bfuv5tb" path="res://Assets/Audio/clear_alarm.mp3" id="64_f1f2v"]
 [ext_resource type="AudioStream" uid="uid://bgt3td8o61fxe" path="res://Assets/Audio/FCPAlarm.mp3" id="66_qk51h"]
 [ext_resource type="Script" path="res://Assets/Common/Misc/soundscape.gd" id="74_ok0ft"]
 [ext_resource type="AudioStream" uid="uid://bgbj1garebo2j" path="res://Assets/Audio/background_noise_cgs.mp3" id="75_8iia2"]
@@ -34297,6 +34297,8 @@ stream = ExtResource("26_77or2")
 
 [node name="Slow" type="AudioStreamPlayer3D" parent="Alarm1"]
 stream = ExtResource("64_f1f2v")
+volume_db = -20.0
+pitch_scale = 0.4
 
 [node name="Alarm5" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05557, 2.31361, 4.49219)
@@ -34308,6 +34310,8 @@ stream = ExtResource("26_77or2")
 
 [node name="Slow" type="AudioStreamPlayer3D" parent="Alarm5"]
 stream = ExtResource("64_f1f2v")
+volume_db = -20.0
+pitch_scale = 0.4
 
 [node name="Alarm2" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.10685, 2.31361, -4.29313)
@@ -34319,6 +34323,8 @@ pitch_scale = 1.1
 
 [node name="Slow" type="AudioStreamPlayer3D" parent="Alarm2"]
 stream = ExtResource("64_f1f2v")
+volume_db = -20.0
+pitch_scale = 0.4
 
 [node name="Alarm3" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.10685, 2.31361, -7.49784)
@@ -34330,6 +34336,8 @@ pitch_scale = 1.1
 
 [node name="Slow" type="AudioStreamPlayer3D" parent="Alarm3"]
 stream = ExtResource("64_f1f2v")
+volume_db = -20.0
+pitch_scale = 0.4
 
 [node name="Alarm4" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.79315, 2.31361, -6.39784)
@@ -34341,6 +34349,8 @@ pitch_scale = 1.65
 
 [node name="Slow" type="AudioStreamPlayer3D" parent="Alarm4"]
 stream = ExtResource("64_f1f2v")
+volume_db = -20.0
+pitch_scale = 0.4
 
 [node name="LightNormal_1" type="Node3D" parent="."]
 

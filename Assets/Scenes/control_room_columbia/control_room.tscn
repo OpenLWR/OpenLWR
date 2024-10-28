@@ -33029,6 +33029,9 @@ text = ""
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52588e-05, 0, 0.163071)
 text = ""
 
+[node name="CSGBox3D" parent="Annunciators/P601_A2/Windows/5-8" index="1"]
+material = ExtResource("17_854tn")
+
 [node name="Label3D" parent="Annunciators/P601_A2/Windows/5-8/CSGBox3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.163086)
 text = "SRV

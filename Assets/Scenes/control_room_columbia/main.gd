@@ -1223,8 +1223,14 @@ func _process(delta):
 							#var page_info = packet_data[recorder].page_info
 							#var page = packet_data[recorder].page
 							var channels = packet_data[recorder].channels
+							var page = packet_data[recorder].page
 							
 							var rcd = recorders[recorder]
+							
+							rcd.channels = channels
+							rcd.page = page
+							
+							
 								
 							if rcd.update_time >= 10: #1 second, assuming the server or connection isnt lacking
 								for channel in channels:
@@ -1244,8 +1250,7 @@ func _process(delta):
 							rcd.update_time += 1
 							
 							if rcd.object != null:
-								#rcd.object.update(page,page_info)
-								rcd.object.update(channels,rcd.history)
+								rcd.object.update(rcd)
 					
 			# check if any switches have been turned
 			var updated_switches = {}
@@ -1280,6 +1285,20 @@ func _process(delta):
 					print(err)
 					
 			# TODO: only fire to server when our position updated
+			
+			var updated_recorder_buttons = {}
+			for recorder_n in recorders:
+				if recorders[recorder_n].updated:
+					updated_recorder_buttons[recorder_n] = recorders[recorder_n].buttons
+			
+			if updated_recorder_buttons != {}:
+				for recorder_n in updated_recorder_buttons:
+					var rcdr = updated_recorder_buttons[recorder_n]
+					var err = socket.send_text(build_packet(client_packets.RECORDER, recorder_n+"|"+json.stringify(rcdr)))
+					if not err:
+						recorders[recorder_n].updated = false
+					else:
+						print(err)
 			
 			if selected_rod != null:
 				var err = socket.send_text(build_packet(client_packets.ROD_SELECT_UPDATE, json.stringify(selected_rod)))

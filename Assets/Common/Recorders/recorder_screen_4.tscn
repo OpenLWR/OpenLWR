@@ -1,19 +1,20 @@
-[gd_scene load_steps=23 format=3 uid="uid://c62ydsv8ub24"]
+[gd_scene load_steps=24 format=3 uid="uid://dx48iw1hxkcu7"]
 
-[ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="1_nw8jj"]
-[ext_resource type="Script" path="res://Assets/Common/Recorders/menu.gd" id="1_pxv14"]
-[ext_resource type="Texture2D" uid="uid://d2bhl5bdf44wm" path="res://Assets/Common/Recorders/icons/memory_sampling_idle_icon.png" id="2_gxcai"]
-[ext_resource type="Texture2D" uid="uid://dsfa5q3jytrqi" path="res://Assets/Common/Recorders/icons/computation_started_icon.png" id="3_5yxkf"]
-[ext_resource type="Texture2D" uid="uid://b42krg7ij8h6x" path="res://Assets/Common/Recorders/icons/alarm_red_icon.png" id="4_ayx5y"]
-[ext_resource type="Texture2D" uid="uid://bo0tsl6wnwqhx" path="res://Assets/Common/Recorders/icons/alarm_green_icon.png" id="5_fata3"]
-[ext_resource type="Texture2D" uid="uid://c306ishpfroia" path="res://Assets/Common/Recorders/icons/memory_sampling_off_icon.png" id="6_1sfxk"]
-[ext_resource type="Texture2D" uid="uid://bf6utt7rmbbsc" path="res://Assets/Common/Recorders/icons/memory_sampling_uploading_icon.png" id="7_qh336"]
-[ext_resource type="Script" path="res://Assets/Common/Recorders/digital.gd" id="8_caw6e"]
-[ext_resource type="FontFile" uid="uid://cqsshl4y7vp2w" path="res://Assets/Fonts/Roboto Condensed/RobotoCondensed-VariableFont_wght.ttf" id="8_tleox"]
-[ext_resource type="Shader" path="res://Assets/Common/Recorders/RecorderChart.gdshader" id="9_jtoey"]
+[ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="1_232wk"]
+[ext_resource type="Texture2D" uid="uid://d2bhl5bdf44wm" path="res://Assets/Common/Recorders/icons/memory_sampling_idle_icon.png" id="2_cbd1o"]
+[ext_resource type="Texture2D" uid="uid://dsfa5q3jytrqi" path="res://Assets/Common/Recorders/icons/computation_started_icon.png" id="3_akrpl"]
+[ext_resource type="Texture2D" uid="uid://b42krg7ij8h6x" path="res://Assets/Common/Recorders/icons/alarm_red_icon.png" id="4_fla1l"]
+[ext_resource type="Texture2D" uid="uid://bo0tsl6wnwqhx" path="res://Assets/Common/Recorders/icons/alarm_green_icon.png" id="5_mr8wo"]
+[ext_resource type="Texture2D" uid="uid://c306ishpfroia" path="res://Assets/Common/Recorders/icons/memory_sampling_off_icon.png" id="6_5y25g"]
+[ext_resource type="Texture2D" uid="uid://bf6utt7rmbbsc" path="res://Assets/Common/Recorders/icons/memory_sampling_uploading_icon.png" id="7_kxvvt"]
+[ext_resource type="FontFile" uid="uid://cqsshl4y7vp2w" path="res://Assets/Fonts/Roboto Condensed/RobotoCondensed-VariableFont_wght.ttf" id="8_rlrgp"]
+[ext_resource type="Shader" path="res://Assets/Common/Recorders/RecorderChart.gdshader" id="9_rd2i3"]
+[ext_resource type="Texture2D" uid="uid://d04wns4q3l8vt" path="res://Assets/Common/Recorders/Screenshot 2024-08-14 183944.png" id="10_wmwl0"]
+[ext_resource type="Texture2D" uid="uid://dhxq70ic830bg" path="res://Assets/Common/Recorders/Screenshot 2024-08-14 185308.png" id="11_llhrs"]
+[ext_resource type="Texture2D" uid="uid://g6oq8df87f4l" path="res://Assets/Common/Recorders/Screenshot 2024-08-14 183205.png" id="12_vgc5q"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_mkcyx"]
-font = ExtResource("1_nw8jj")
+font = ExtResource("1_232wk")
 font_size = 20
 
 [sub_resource type="BoxMesh" id="BoxMesh_ireg8"]
@@ -21,36 +22,36 @@ font_size = 20
 [sub_resource type="BoxMesh" id="BoxMesh_6owd0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_honim"]
-font = ExtResource("1_nw8jj")
+font = ExtResource("1_232wk")
 font_size = 20
 font_color = Color(0, 0, 0.996078, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_5mltq"]
-font = ExtResource("8_tleox")
+font = ExtResource("8_rlrgp")
 font_size = 40
 font_color = Color(0, 0, 0, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_flaes"]
-font = ExtResource("1_nw8jj")
-font_size = 150
+[sub_resource type="LabelSettings" id="LabelSettings_mujtg"]
+font = ExtResource("1_232wk")
+font_size = 75
 font_color = Color(0.0705882, 0.0705882, 1, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_6hul7"]
-font = ExtResource("8_tleox")
+font = ExtResource("8_rlrgp")
 font_size = 25
 
 [sub_resource type="LabelSettings" id="LabelSettings_q5ecs"]
-font = ExtResource("8_tleox")
+font = ExtResource("8_rlrgp")
 font_size = 25
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_1ptak"]
-font = ExtResource("1_nw8jj")
+font = ExtResource("1_232wk")
 font_size = 45
 font_color = Color(0.0705882, 0.0705882, 1, 1)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_skogt"]
-shader = ExtResource("9_jtoey")
+shader = ExtResource("9_rd2i3")
 shader_parameter/color = null
 shader_parameter/maxValue = null
 shader_parameter/minValue = null
@@ -65,7 +66,6 @@ load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.cte
 
 [node name="3_PAGE" type="Node2D" parent="."]
 visible = false
-script = ExtResource("1_pxv14")
 
 [node name="DateTime" type="Label" parent="3_PAGE"]
 z_index = 2
@@ -129,39 +129,39 @@ visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("2_gxcai")
+texture = ExtResource("2_cbd1o")
 
 [node name="computation_started" type="Sprite2D" parent="3_PAGE/Icons"]
 z_index = 2
 position = Vector2(520, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("3_5yxkf")
+texture = ExtResource("3_akrpl")
 
 [node name="alarm_red" type="Sprite2D" parent="3_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("4_ayx5y")
+texture = ExtResource("4_fla1l")
 
 [node name="alarm_green" type="Sprite2D" parent="3_PAGE/Icons"]
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("5_fata3")
+texture = ExtResource("5_mr8wo")
 
 [node name="memory_sampling_off" type="Sprite2D" parent="3_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("6_1sfxk")
+texture = ExtResource("6_5y25g")
 
 [node name="memory_sampling_uploading" type="Sprite2D" parent="3_PAGE/Icons"]
 z_index = 2
 position = Vector2(265.543, 23)
 scale = Vector2(0.335185, 0.340741)
-texture = ExtResource("7_qh336")
+texture = ExtResource("7_kxvvt")
 
 [node name="Group2" type="Label" parent="3_PAGE"]
 z_index = 2
@@ -175,7 +175,16 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="1_PAGE" type="Node2D" parent="."]
-script = ExtResource("8_caw6e")
+
+[node name="2_UNIT" type="Label" parent="1_PAGE"]
+z_index = 2
+offset_left = 425.0
+offset_top = 164.0
+offset_right = 626.0
+offset_bottom = 212.0
+text = "V"
+label_settings = SubResource("LabelSettings_5mltq")
+horizontal_alignment = 2
 
 [node name="DateTime" type="Label" parent="1_PAGE"]
 z_index = 2
@@ -210,52 +219,101 @@ offset_bottom = 94.0
 text = "1"
 label_settings = SubResource("LabelSettings_5mltq")
 
+[node name="2_NAME" type="Label" parent="1_PAGE"]
+z_index = 2
+offset_left = 325.0
+offset_top = 46.0
+offset_right = 637.0
+offset_bottom = 94.0
+text = "1"
+label_settings = SubResource("LabelSettings_5mltq")
+
+[node name="3_NAME" type="Label" parent="1_PAGE"]
+z_index = 2
+offset_left = 4.0
+offset_top = 265.0
+offset_right = 316.0
+offset_bottom = 313.0
+text = "1"
+label_settings = SubResource("LabelSettings_5mltq")
+
+[node name="4_NAME" type="Label" parent="1_PAGE"]
+z_index = 2
+offset_left = 325.0
+offset_top = 265.0
+offset_right = 637.0
+offset_bottom = 313.0
+text = "1"
+label_settings = SubResource("LabelSettings_5mltq")
+
+[node name="3_UNIT" type="Label" parent="1_PAGE"]
+z_index = 2
+offset_left = 104.0
+offset_top = 383.0
+offset_right = 305.0
+offset_bottom = 431.0
+text = "V"
+label_settings = SubResource("LabelSettings_5mltq")
+horizontal_alignment = 2
+
+[node name="3_VALUE" type="Label" parent="1_PAGE"]
+z_index = 2
+offset_left = 11.0
+offset_top = 305.0
+offset_right = 302.0
+offset_bottom = 400.0
+text = "0.5014"
+label_settings = SubResource("LabelSettings_mujtg")
+horizontal_alignment = 2
+
+[node name="4_UNIT" type="Label" parent="1_PAGE"]
+z_index = 2
+offset_left = 425.0
+offset_top = 383.0
+offset_right = 626.0
+offset_bottom = 431.0
+text = "V"
+label_settings = SubResource("LabelSettings_5mltq")
+horizontal_alignment = 2
+
+[node name="4_VALUE" type="Label" parent="1_PAGE"]
+z_index = 2
+offset_left = 332.0
+offset_top = 305.0
+offset_right = 623.0
+offset_bottom = 400.0
+text = "0.5014"
+label_settings = SubResource("LabelSettings_mujtg")
+horizontal_alignment = 2
+
+[node name="2_VALUE" type="Label" parent="1_PAGE"]
+z_index = 2
+offset_left = 332.0
+offset_top = 86.0
+offset_right = 623.0
+offset_bottom = 181.0
+text = "0.5014"
+label_settings = SubResource("LabelSettings_mujtg")
+horizontal_alignment = 2
+
 [node name="1_UNIT" type="Label" parent="1_PAGE"]
 z_index = 2
-offset_left = 434.0
-offset_top = 52.0
-offset_right = 635.0
-offset_bottom = 100.0
+offset_left = 104.0
+offset_top = 164.0
+offset_right = 305.0
+offset_bottom = 212.0
 text = "V"
 label_settings = SubResource("LabelSettings_5mltq")
 horizontal_alignment = 2
 
 [node name="1_VALUE" type="Label" parent="1_PAGE"]
 z_index = 2
-offset_left = 170.0
-offset_top = 85.0
-offset_right = 638.0
-offset_bottom = 262.0
+offset_left = 11.0
+offset_top = 86.0
+offset_right = 302.0
+offset_bottom = 181.0
 text = "0.5014"
-label_settings = SubResource("LabelSettings_flaes")
-horizontal_alignment = 2
-
-[node name="2_NAME" type="Label" parent="1_PAGE"]
-z_index = 2
-offset_top = 262.0
-offset_right = 312.0
-offset_bottom = 310.0
-text = "1"
-label_settings = SubResource("LabelSettings_5mltq")
-
-[node name="2_UNIT" type="Label" parent="1_PAGE"]
-z_index = 2
-offset_left = 430.0
-offset_top = 268.0
-offset_right = 631.0
-offset_bottom = 316.0
-text = "V"
-label_settings = SubResource("LabelSettings_5mltq")
-horizontal_alignment = 2
-
-[node name="2_VALUE" type="Label" parent="1_PAGE"]
-z_index = 2
-offset_left = 166.0
-offset_top = 301.0
-offset_right = 634.0
-offset_bottom = 478.0
-text = "0.5014"
-label_settings = SubResource("LabelSettings_flaes")
+label_settings = SubResource("LabelSettings_mujtg")
 horizontal_alignment = 2
 
 [node name="Background" type="Node2D" parent="1_PAGE"]
@@ -266,6 +324,14 @@ z_index = 1
 position = Vector2(320, 23.0568)
 rotation = 3.14159
 scale = Vector2(640, 46.1136)
+mesh = SubResource("BoxMesh_ireg8")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="1_PAGE/Background"]
+modulate = Color(0, 0, 0, 1)
+z_index = 1
+position = Vector2(320.001, 262.979)
+rotation = 3.14159
+scale = Vector2(1.98835, 433.762)
 mesh = SubResource("BoxMesh_ireg8")
 
 [node name="MeshInstance2D5" type="MeshInstance2D" parent="1_PAGE/Background"]
@@ -288,39 +354,39 @@ visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("2_gxcai")
+texture = ExtResource("2_cbd1o")
 
 [node name="computation_started" type="Sprite2D" parent="1_PAGE/Icons"]
 z_index = 2
 position = Vector2(520, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("3_5yxkf")
+texture = ExtResource("3_akrpl")
 
 [node name="alarm_red" type="Sprite2D" parent="1_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("4_ayx5y")
+texture = ExtResource("4_fla1l")
 
 [node name="alarm_green" type="Sprite2D" parent="1_PAGE/Icons"]
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("5_fata3")
+texture = ExtResource("5_mr8wo")
 
 [node name="memory_sampling_off" type="Sprite2D" parent="1_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("6_1sfxk")
+texture = ExtResource("6_5y25g")
 
 [node name="memory_sampling_uploading" type="Sprite2D" parent="1_PAGE/Icons"]
 z_index = 2
 position = Vector2(265.543, 23)
 scale = Vector2(0.335185, 0.340741)
-texture = ExtResource("7_qh336")
+texture = ExtResource("7_kxvvt")
 
 [node name="2_PAGE" type="Node2D" parent="."]
 visible = false
@@ -476,42 +542,61 @@ visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("2_gxcai")
+texture = ExtResource("2_cbd1o")
 
 [node name="computation_started" type="Sprite2D" parent="2_PAGE/Icons"]
 z_index = 2
 position = Vector2(520, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("3_5yxkf")
+texture = ExtResource("3_akrpl")
 
 [node name="alarm_red" type="Sprite2D" parent="2_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("4_ayx5y")
+texture = ExtResource("4_fla1l")
 
 [node name="alarm_green" type="Sprite2D" parent="2_PAGE/Icons"]
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("5_fata3")
+texture = ExtResource("5_mr8wo")
 
 [node name="memory_sampling_off" type="Sprite2D" parent="2_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
-texture = ExtResource("6_1sfxk")
+texture = ExtResource("6_5y25g")
 
 [node name="memory_sampling_uploading" type="Sprite2D" parent="2_PAGE/Icons"]
 z_index = 2
 position = Vector2(265.543, 23)
 scale = Vector2(0.335185, 0.340741)
-texture = ExtResource("7_qh336")
+texture = ExtResource("7_kxvvt")
 
 [node name="Graph" type="Sprite2D" parent="2_PAGE"]
 material = SubResource("ShaderMaterial_skogt")
 position = Vector2(271.5, 207)
 scale = Vector2(4.24219, 2.51562)
 texture = SubResource("CompressedTexture2D_rd2f6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(320, 240)
+scale = Vector2(0.711111, 0.712166)
+texture = ExtResource("10_wmwl0")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+visible = false
+z_index = 4
+position = Vector2(591.233, 206.5)
+scale = Vector2(0.618376, 0.625731)
+texture = ExtResource("11_llhrs")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(319.5, 240)
+scale = Vector2(0.833116, 0.83045)
+texture = ExtResource("12_vgc5q")

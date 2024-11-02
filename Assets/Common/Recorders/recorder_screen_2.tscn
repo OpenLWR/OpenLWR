@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://c62ydsv8ub24"]
+[gd_scene load_steps=24 format=3 uid="uid://c62ydsv8ub24"]
 
 [ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="1_nw8jj"]
 [ext_resource type="Script" path="res://Assets/Common/Recorders/menu.gd" id="1_pxv14"]
@@ -61,13 +61,17 @@ shader_parameter/data = null
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rd2f6"]
 load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
 
+[sub_resource type="BoxMesh" id="BoxMesh_skfrd"]
+
 [node name="Node2D" type="Node2D"]
 
-[node name="3_PAGE" type="Node2D" parent="."]
+[node name="PAGES" type="Node2D" parent="."]
+
+[node name="3_PAGE" type="Node2D" parent="PAGES"]
 visible = false
 script = ExtResource("1_pxv14")
 
-[node name="DateTime" type="Label" parent="3_PAGE"]
+[node name="DateTime" type="Label" parent="PAGES/3_PAGE"]
 z_index = 2
 offset_top = 24.0
 offset_right = 201.0
@@ -75,14 +79,14 @@ offset_bottom = 48.0
 text = "2023/09/07   20:00:12"
 label_settings = SubResource("LabelSettings_mkcyx")
 
-[node name="Group" type="Label" parent="3_PAGE"]
+[node name="Group" type="Label" parent="PAGES/3_PAGE"]
 z_index = 2
 offset_right = 201.0
 offset_bottom = 24.0
 text = "GROUP 1"
 label_settings = SubResource("LabelSettings_mkcyx")
 
-[node name="DisplayMode" type="Label" parent="3_PAGE"]
+[node name="DisplayMode" type="Label" parent="PAGES/3_PAGE"]
 z_index = 2
 offset_left = 288.0
 offset_top = 12.0
@@ -91,9 +95,9 @@ offset_bottom = 36.0
 text = "DISP"
 label_settings = SubResource("LabelSettings_mkcyx")
 
-[node name="Background" type="Node2D" parent="3_PAGE"]
+[node name="Background" type="Node2D" parent="PAGES/3_PAGE"]
 
-[node name="MeshInstance2D2" type="MeshInstance2D" parent="3_PAGE/Background"]
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="PAGES/3_PAGE/Background"]
 modulate = Color(0, 0, 0.564706, 1)
 z_index = 1
 position = Vector2(320, 23.0568)
@@ -101,7 +105,7 @@ rotation = 3.14159
 scale = Vector2(640, 46.1136)
 mesh = SubResource("BoxMesh_ireg8")
 
-[node name="MeshInstance2D4" type="MeshInstance2D" parent="3_PAGE/Background"]
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="PAGES/3_PAGE/Background"]
 modulate = Color(0.831373, 0.831373, 0.831373, 1)
 z_index = 1
 position = Vector2(320.017, 261.427)
@@ -109,7 +113,7 @@ rotation = 3.14159
 scale = Vector2(618.864, 352.029)
 mesh = SubResource("BoxMesh_ireg8")
 
-[node name="MeshInstance2D5" type="MeshInstance2D" parent="3_PAGE/Background"]
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="PAGES/3_PAGE/Background"]
 modulate = Color(0.831373, 0.831373, 0.831373, 1)
 z_index = 1
 position = Vector2(105.017, 68.7277)
@@ -117,53 +121,53 @@ rotation = 3.14159
 scale = Vector2(188.864, 33.371)
 mesh = SubResource("BoxMesh_ireg8")
 
-[node name="MeshInstance2D3" type="MeshInstance2D" parent="3_PAGE/Background"]
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="PAGES/3_PAGE/Background"]
 position = Vector2(320, 240)
 scale = Vector2(640, 480)
 mesh = SubResource("BoxMesh_6owd0")
 
-[node name="Icons" type="Node2D" parent="3_PAGE"]
+[node name="Icons" type="Node2D" parent="PAGES/3_PAGE"]
 
-[node name="memory_sampling_idle" type="Sprite2D" parent="3_PAGE/Icons"]
+[node name="memory_sampling_idle" type="Sprite2D" parent="PAGES/3_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("2_gxcai")
 
-[node name="computation_started" type="Sprite2D" parent="3_PAGE/Icons"]
+[node name="computation_started" type="Sprite2D" parent="PAGES/3_PAGE/Icons"]
 z_index = 2
 position = Vector2(520, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("3_5yxkf")
 
-[node name="alarm_red" type="Sprite2D" parent="3_PAGE/Icons"]
+[node name="alarm_red" type="Sprite2D" parent="PAGES/3_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("4_ayx5y")
 
-[node name="alarm_green" type="Sprite2D" parent="3_PAGE/Icons"]
+[node name="alarm_green" type="Sprite2D" parent="PAGES/3_PAGE/Icons"]
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("5_fata3")
 
-[node name="memory_sampling_off" type="Sprite2D" parent="3_PAGE/Icons"]
+[node name="memory_sampling_off" type="Sprite2D" parent="PAGES/3_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("6_1sfxk")
 
-[node name="memory_sampling_uploading" type="Sprite2D" parent="3_PAGE/Icons"]
+[node name="memory_sampling_uploading" type="Sprite2D" parent="PAGES/3_PAGE/Icons"]
 z_index = 2
 position = Vector2(265.543, 23)
 scale = Vector2(0.335185, 0.340741)
 texture = ExtResource("7_qh336")
 
-[node name="Group2" type="Label" parent="3_PAGE"]
+[node name="Group2" type="Label" parent="PAGES/3_PAGE"]
 z_index = 2
 offset_left = 11.0
 offset_top = 52.0
@@ -174,10 +178,10 @@ label_settings = SubResource("LabelSettings_honim")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="1_PAGE" type="Node2D" parent="."]
+[node name="1_PAGE" type="Node2D" parent="PAGES"]
 script = ExtResource("8_caw6e")
 
-[node name="DateTime" type="Label" parent="1_PAGE"]
+[node name="DateTime" type="Label" parent="PAGES/1_PAGE"]
 z_index = 2
 offset_top = 24.0
 offset_right = 201.0
@@ -185,14 +189,14 @@ offset_bottom = 48.0
 text = "2023/09/07   20:00:12"
 label_settings = SubResource("LabelSettings_mkcyx")
 
-[node name="Group" type="Label" parent="1_PAGE"]
+[node name="Group" type="Label" parent="PAGES/1_PAGE"]
 z_index = 2
 offset_right = 201.0
 offset_bottom = 24.0
 text = "GROUP 1"
 label_settings = SubResource("LabelSettings_mkcyx")
 
-[node name="DisplayMode" type="Label" parent="1_PAGE"]
+[node name="DisplayMode" type="Label" parent="PAGES/1_PAGE"]
 z_index = 2
 offset_left = 288.0
 offset_top = 12.0
@@ -201,7 +205,7 @@ offset_bottom = 36.0
 text = "DISP"
 label_settings = SubResource("LabelSettings_mkcyx")
 
-[node name="1_NAME" type="Label" parent="1_PAGE"]
+[node name="1_NAME" type="Label" parent="PAGES/1_PAGE"]
 z_index = 2
 offset_left = 4.0
 offset_top = 46.0
@@ -210,7 +214,7 @@ offset_bottom = 94.0
 text = "1"
 label_settings = SubResource("LabelSettings_5mltq")
 
-[node name="1_UNIT" type="Label" parent="1_PAGE"]
+[node name="1_UNIT" type="Label" parent="PAGES/1_PAGE"]
 z_index = 2
 offset_left = 434.0
 offset_top = 52.0
@@ -220,7 +224,7 @@ text = "V"
 label_settings = SubResource("LabelSettings_5mltq")
 horizontal_alignment = 2
 
-[node name="1_VALUE" type="Label" parent="1_PAGE"]
+[node name="1_VALUE" type="Label" parent="PAGES/1_PAGE"]
 z_index = 2
 offset_left = 170.0
 offset_top = 85.0
@@ -230,7 +234,7 @@ text = "0.5014"
 label_settings = SubResource("LabelSettings_flaes")
 horizontal_alignment = 2
 
-[node name="2_NAME" type="Label" parent="1_PAGE"]
+[node name="2_NAME" type="Label" parent="PAGES/1_PAGE"]
 z_index = 2
 offset_top = 262.0
 offset_right = 312.0
@@ -238,7 +242,7 @@ offset_bottom = 310.0
 text = "1"
 label_settings = SubResource("LabelSettings_5mltq")
 
-[node name="2_UNIT" type="Label" parent="1_PAGE"]
+[node name="2_UNIT" type="Label" parent="PAGES/1_PAGE"]
 z_index = 2
 offset_left = 430.0
 offset_top = 268.0
@@ -248,7 +252,7 @@ text = "V"
 label_settings = SubResource("LabelSettings_5mltq")
 horizontal_alignment = 2
 
-[node name="2_VALUE" type="Label" parent="1_PAGE"]
+[node name="2_VALUE" type="Label" parent="PAGES/1_PAGE"]
 z_index = 2
 offset_left = 166.0
 offset_top = 301.0
@@ -258,9 +262,9 @@ text = "0.5014"
 label_settings = SubResource("LabelSettings_flaes")
 horizontal_alignment = 2
 
-[node name="Background" type="Node2D" parent="1_PAGE"]
+[node name="Background" type="Node2D" parent="PAGES/1_PAGE"]
 
-[node name="MeshInstance2D2" type="MeshInstance2D" parent="1_PAGE/Background"]
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="PAGES/1_PAGE/Background"]
 modulate = Color(0, 0, 0.564706, 1)
 z_index = 1
 position = Vector2(320, 23.0568)
@@ -268,7 +272,7 @@ rotation = 3.14159
 scale = Vector2(640, 46.1136)
 mesh = SubResource("BoxMesh_ireg8")
 
-[node name="MeshInstance2D5" type="MeshInstance2D" parent="1_PAGE/Background"]
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="PAGES/1_PAGE/Background"]
 modulate = Color(0, 0, 0, 1)
 z_index = 1
 position = Vector2(320.001, 264.993)
@@ -276,56 +280,56 @@ rotation = 3.14159
 scale = Vector2(640, 2.03038)
 mesh = SubResource("BoxMesh_ireg8")
 
-[node name="MeshInstance2D3" type="MeshInstance2D" parent="1_PAGE/Background"]
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="PAGES/1_PAGE/Background"]
 position = Vector2(320, 240)
 scale = Vector2(640, 480)
 mesh = SubResource("BoxMesh_6owd0")
 
-[node name="Icons" type="Node2D" parent="1_PAGE"]
+[node name="Icons" type="Node2D" parent="PAGES/1_PAGE"]
 
-[node name="memory_sampling_idle" type="Sprite2D" parent="1_PAGE/Icons"]
+[node name="memory_sampling_idle" type="Sprite2D" parent="PAGES/1_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("2_gxcai")
 
-[node name="computation_started" type="Sprite2D" parent="1_PAGE/Icons"]
+[node name="computation_started" type="Sprite2D" parent="PAGES/1_PAGE/Icons"]
 z_index = 2
 position = Vector2(520, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("3_5yxkf")
 
-[node name="alarm_red" type="Sprite2D" parent="1_PAGE/Icons"]
+[node name="alarm_red" type="Sprite2D" parent="PAGES/1_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("4_ayx5y")
 
-[node name="alarm_green" type="Sprite2D" parent="1_PAGE/Icons"]
+[node name="alarm_green" type="Sprite2D" parent="PAGES/1_PAGE/Icons"]
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("5_fata3")
 
-[node name="memory_sampling_off" type="Sprite2D" parent="1_PAGE/Icons"]
+[node name="memory_sampling_off" type="Sprite2D" parent="PAGES/1_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("6_1sfxk")
 
-[node name="memory_sampling_uploading" type="Sprite2D" parent="1_PAGE/Icons"]
+[node name="memory_sampling_uploading" type="Sprite2D" parent="PAGES/1_PAGE/Icons"]
 z_index = 2
 position = Vector2(265.543, 23)
 scale = Vector2(0.335185, 0.340741)
 texture = ExtResource("7_qh336")
 
-[node name="2_PAGE" type="Node2D" parent="."]
+[node name="2_PAGE" type="Node2D" parent="PAGES"]
 visible = false
 
-[node name="DateTime" type="Label" parent="2_PAGE"]
+[node name="DateTime" type="Label" parent="PAGES/2_PAGE"]
 z_index = 2
 offset_top = 24.0
 offset_right = 201.0
@@ -333,14 +337,14 @@ offset_bottom = 48.0
 text = "2023/09/07   20:00:12"
 label_settings = SubResource("LabelSettings_mkcyx")
 
-[node name="Group" type="Label" parent="2_PAGE"]
+[node name="Group" type="Label" parent="PAGES/2_PAGE"]
 z_index = 2
 offset_right = 201.0
 offset_bottom = 24.0
 text = "GROUP 1"
 label_settings = SubResource("LabelSettings_mkcyx")
 
-[node name="DisplayMode" type="Label" parent="2_PAGE"]
+[node name="DisplayMode" type="Label" parent="PAGES/2_PAGE"]
 z_index = 2
 offset_left = 288.0
 offset_top = 12.0
@@ -349,7 +353,7 @@ offset_bottom = 36.0
 text = "DISP"
 label_settings = SubResource("LabelSettings_mkcyx")
 
-[node name="1_NAME" type="Label" parent="2_PAGE"]
+[node name="1_NAME" type="Label" parent="PAGES/2_PAGE"]
 z_index = 2
 offset_top = 367.0
 offset_right = 196.0
@@ -357,7 +361,7 @@ offset_bottom = 398.0
 text = "1"
 label_settings = SubResource("LabelSettings_6hul7")
 
-[node name="1_UNIT" type="Label" parent="2_PAGE"]
+[node name="1_UNIT" type="Label" parent="PAGES/2_PAGE"]
 z_index = 2
 offset_left = 81.0
 offset_top = 449.0
@@ -367,7 +371,7 @@ text = "V"
 label_settings = SubResource("LabelSettings_q5ecs")
 horizontal_alignment = 2
 
-[node name="1_VALUE" type="Label" parent="2_PAGE"]
+[node name="1_VALUE" type="Label" parent="PAGES/2_PAGE"]
 z_index = 2
 offset_left = 4.0
 offset_top = 398.0
@@ -377,7 +381,7 @@ text = "0.5014"
 label_settings = SubResource("LabelSettings_1ptak")
 horizontal_alignment = 2
 
-[node name="2_NAME" type="Label" parent="2_PAGE"]
+[node name="2_NAME" type="Label" parent="PAGES/2_PAGE"]
 z_index = 2
 offset_left = 319.0
 offset_top = 367.0
@@ -386,7 +390,7 @@ offset_bottom = 398.0
 text = "1"
 label_settings = SubResource("LabelSettings_6hul7")
 
-[node name="2_UNIT" type="Label" parent="2_PAGE"]
+[node name="2_UNIT" type="Label" parent="PAGES/2_PAGE"]
 z_index = 2
 offset_left = 400.0
 offset_top = 449.0
@@ -396,7 +400,7 @@ text = "V"
 label_settings = SubResource("LabelSettings_q5ecs")
 horizontal_alignment = 2
 
-[node name="2_VALUE" type="Label" parent="2_PAGE"]
+[node name="2_VALUE" type="Label" parent="PAGES/2_PAGE"]
 z_index = 2
 offset_left = 325.0
 offset_top = 398.0
@@ -406,9 +410,9 @@ text = "0.5014"
 label_settings = SubResource("LabelSettings_1ptak")
 horizontal_alignment = 2
 
-[node name="Background" type="Node2D" parent="2_PAGE"]
+[node name="Background" type="Node2D" parent="PAGES/2_PAGE"]
 
-[node name="MeshInstance2D2" type="MeshInstance2D" parent="2_PAGE/Background"]
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="PAGES/2_PAGE/Background"]
 modulate = Color(0, 0, 0.564706, 1)
 z_index = 1
 position = Vector2(320, 23.0568)
@@ -416,7 +420,7 @@ rotation = 3.14159
 scale = Vector2(640, 46.1136)
 mesh = SubResource("BoxMesh_ireg8")
 
-[node name="MeshInstance2D10" type="MeshInstance2D" parent="2_PAGE/Background"]
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="PAGES/2_PAGE/Background"]
 modulate = Color(0.862745, 0.862745, 0.862745, 1)
 z_index = 1
 position = Vector2(320, 423.902)
@@ -424,7 +428,7 @@ rotation = 3.14159
 scale = Vector2(640, 111.917)
 mesh = SubResource("BoxMesh_ireg8")
 
-[node name="MeshInstance2D14" type="MeshInstance2D" parent="2_PAGE/Background"]
+[node name="MeshInstance2D14" type="MeshInstance2D" parent="PAGES/2_PAGE/Background"]
 modulate = Color(1, 1, 0.8, 1)
 z_index = 1
 position = Vector2(592.261, 207.028)
@@ -432,7 +436,7 @@ rotation = 3.14159
 scale = Vector2(95.478, 321.83)
 mesh = SubResource("BoxMesh_ireg8")
 
-[node name="MeshInstance2D11" type="MeshInstance2D" parent="2_PAGE/Background"]
+[node name="MeshInstance2D11" type="MeshInstance2D" parent="PAGES/2_PAGE/Background"]
 modulate = Color(1, 0, 0, 1)
 z_index = 1
 position = Vector2(158.586, 381.264)
@@ -440,7 +444,7 @@ rotation = 3.14159
 scale = Vector2(317.172, 22.4977)
 mesh = SubResource("BoxMesh_ireg8")
 
-[node name="MeshInstance2D12" type="MeshInstance2D" parent="2_PAGE/Background"]
+[node name="MeshInstance2D12" type="MeshInstance2D" parent="PAGES/2_PAGE/Background"]
 modulate = Color(1, 0, 0, 1)
 z_index = 1
 position = Vector2(479.504, 381.132)
@@ -448,7 +452,7 @@ rotation = 3.14159
 scale = Vector2(320.994, 22.7614)
 mesh = SubResource("BoxMesh_ireg8")
 
-[node name="MeshInstance2D4" type="MeshInstance2D" parent="2_PAGE/Background"]
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="PAGES/2_PAGE/Background"]
 modulate = Color(0, 0, 0, 1)
 z_index = 1
 position = Vector2(318.013, 424.4)
@@ -456,7 +460,7 @@ rotation = 3.14159
 scale = Vector2(-1.98835, 110.92)
 mesh = SubResource("BoxMesh_ireg8")
 
-[node name="MeshInstance2D6" type="MeshInstance2D" parent="2_PAGE/Background"]
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="PAGES/2_PAGE/Background"]
 modulate = Color(0, 0, 0, 1)
 z_index = 1
 position = Vector2(320, 369)
@@ -464,54 +468,146 @@ rotation = 3.14159
 scale = Vector2(640, 2.03038)
 mesh = SubResource("BoxMesh_ireg8")
 
-[node name="MeshInstance2D3" type="MeshInstance2D" parent="2_PAGE/Background"]
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="PAGES/2_PAGE/Background"]
 position = Vector2(320, 240)
 scale = Vector2(640, 480)
 mesh = SubResource("BoxMesh_6owd0")
 
-[node name="Icons" type="Node2D" parent="2_PAGE"]
+[node name="Icons" type="Node2D" parent="PAGES/2_PAGE"]
 
-[node name="memory_sampling_idle" type="Sprite2D" parent="2_PAGE/Icons"]
+[node name="memory_sampling_idle" type="Sprite2D" parent="PAGES/2_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("2_gxcai")
 
-[node name="computation_started" type="Sprite2D" parent="2_PAGE/Icons"]
+[node name="computation_started" type="Sprite2D" parent="PAGES/2_PAGE/Icons"]
 z_index = 2
 position = Vector2(520, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("3_5yxkf")
 
-[node name="alarm_red" type="Sprite2D" parent="2_PAGE/Icons"]
+[node name="alarm_red" type="Sprite2D" parent="PAGES/2_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("4_ayx5y")
 
-[node name="alarm_green" type="Sprite2D" parent="2_PAGE/Icons"]
+[node name="alarm_green" type="Sprite2D" parent="PAGES/2_PAGE/Icons"]
 z_index = 2
 position = Vector2(616, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("5_fata3")
 
-[node name="memory_sampling_off" type="Sprite2D" parent="2_PAGE/Icons"]
+[node name="memory_sampling_off" type="Sprite2D" parent="PAGES/2_PAGE/Icons"]
 visible = false
 z_index = 2
 position = Vector2(265, 23)
 scale = Vector2(0.340741, 0.340741)
 texture = ExtResource("6_1sfxk")
 
-[node name="memory_sampling_uploading" type="Sprite2D" parent="2_PAGE/Icons"]
+[node name="memory_sampling_uploading" type="Sprite2D" parent="PAGES/2_PAGE/Icons"]
 z_index = 2
 position = Vector2(265.543, 23)
 scale = Vector2(0.335185, 0.340741)
 texture = ExtResource("7_qh336")
 
-[node name="Graph" type="Sprite2D" parent="2_PAGE"]
+[node name="Graph" type="Sprite2D" parent="PAGES/2_PAGE"]
 material = SubResource("ShaderMaterial_skogt")
 position = Vector2(271.5, 207)
 scale = Vector2(4.24219, 2.51562)
 texture = SubResource("CompressedTexture2D_rd2f6")
+
+[node name="ELEMENTS" type="Node2D" parent="."]
+z_index = 1
+
+[node name="MODE_SELECT" type="Node2D" parent="ELEMENTS"]
+
+[node name="SELECT" type="Control" parent="ELEMENTS/MODE_SELECT"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 46.0
+offset_right = 177.0
+offset_bottom = 480.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ELEMENTS/MODE_SELECT/SELECT"]
+z_index = 1
+layout_mode = 0
+offset_right = 177.0
+offset_bottom = 434.0
+theme_override_constants/separation = 45
+
+[node name="1" type="Control" parent="ELEMENTS/MODE_SELECT/SELECT/VBoxContainer"]
+layout_mode = 2
+
+[node name="NOSEL" type="Node2D" parent="ELEMENTS/MODE_SELECT/SELECT/VBoxContainer/1"]
+position = Vector2(0, 23)
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="ELEMENTS/MODE_SELECT/SELECT/VBoxContainer/1/NOSEL"]
+modulate = Color(0.589095, 0.589096, 0.589095, 1)
+z_index = 1
+position = Vector2(88.171, 0)
+rotation = 3.14159
+scale = Vector2(176.342, 45.7468)
+mesh = SubResource("BoxMesh_skfrd")
+
+[node name="Group" type="Label" parent="ELEMENTS/MODE_SELECT/SELECT/VBoxContainer/1/NOSEL"]
+z_index = 1
+offset_right = 201.0
+offset_bottom = 24.0
+text = "GROUP 1"
+label_settings = SubResource("LabelSettings_mkcyx")
+
+[node name="SEL" type="Node2D" parent="ELEMENTS/MODE_SELECT/SELECT/VBoxContainer/1"]
+visible = false
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="ELEMENTS/MODE_SELECT/SELECT/VBoxContainer/1/SEL"]
+modulate = Color(0, 0, 0.564706, 1)
+z_index = 1
+position = Vector2(88.1713, 68.9877)
+rotation = 3.14159
+scale = Vector2(176.342, 45.7468)
+mesh = SubResource("BoxMesh_skfrd")
+
+[node name="2" type="Control" parent="ELEMENTS/MODE_SELECT/SELECT/VBoxContainer"]
+layout_mode = 2
+
+[node name="NOSEL" type="Node2D" parent="ELEMENTS/MODE_SELECT/SELECT/VBoxContainer/2"]
+visible = false
+position = Vector2(0, 23)
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="ELEMENTS/MODE_SELECT/SELECT/VBoxContainer/2/NOSEL"]
+modulate = Color(0.589095, 0.589096, 0.589095, 1)
+z_index = 1
+position = Vector2(88.171, 0)
+rotation = 3.14159
+scale = Vector2(176.342, 45.7468)
+mesh = SubResource("BoxMesh_skfrd")
+
+[node name="Group" type="Label" parent="ELEMENTS/MODE_SELECT/SELECT/VBoxContainer/2/NOSEL"]
+z_index = 1
+offset_right = 201.0
+offset_bottom = 24.0
+text = "GROUP 1"
+label_settings = SubResource("LabelSettings_mkcyx")
+
+[node name="SEL" type="Node2D" parent="ELEMENTS/MODE_SELECT/SELECT/VBoxContainer/2"]
+visible = false
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="ELEMENTS/MODE_SELECT/SELECT/VBoxContainer/2/SEL"]
+modulate = Color(0, 0, 0.564706, 1)
+z_index = 1
+position = Vector2(88.1713, 68.9877)
+rotation = 3.14159
+scale = Vector2(176.342, 45.7468)
+mesh = SubResource("BoxMesh_skfrd")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="ELEMENTS/MODE_SELECT"]
+modulate = Color(0.831373, 0.831373, 0.831373, 1)
+z_index = 1
+position = Vector2(88.1718, 262.988)
+rotation = 3.14159
+scale = Vector2(176.342, 433.747)
+mesh = SubResource("BoxMesh_skfrd")

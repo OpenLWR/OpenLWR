@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://c43dvwlnpb8qa"]
+[gd_scene load_steps=7 format=3 uid="uid://c43dvwlnpb8qa"]
 
 [ext_resource type="Script" path="res://Assets/Common/Recorders/recorder.gd" id="1_o7tax"]
 [ext_resource type="PackedScene" uid="uid://c62ydsv8ub24" path="res://Assets/Common/Recorders/recorder_screen_2.tscn" id="2_h2x2g"]
@@ -9,6 +9,9 @@ viewport_path = NodePath("recorder/Sprite3D/SubViewport")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bikvs"]
 size = Vector3(0.00450134, 0.013916, 0.0257721)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qxhwn"]
+size = Vector3(0.00450134, 0.0239258, 0.0257721)
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_o7tax")
@@ -62,5 +65,96 @@ outline_size = 0
 [node name="StaticBody3D" type="StaticBody3D" parent="recorder/Buttons/MENU"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="recorder/Buttons/MENU/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00400542, -0.000854492, 0.000144958)
+shape = SubResource("BoxShape3D_bikvs")
+
+[node name="DOWNARROW" type="CSGBox3D" parent="recorder/Buttons"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0819615, -0.0928787, 0.0765505)
+size = Vector3(0.01, 0.01, 0.0246875)
+script = ExtResource("3_i23bp")
+
+[node name="Label3D" type="Label3D" parent="recorder/Buttons/DOWNARROW"]
+transform = Transform3D(-1.31134e-09, 0, -0.03, 0, 0.03, 0, 0.03, 0, -1.31134e-09, -0.00644772, 0, 0)
+shaded = true
+text = "DOWN"
+font_size = 50
+outline_size = 0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="recorder/Buttons/DOWNARROW"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="recorder/Buttons/DOWNARROW/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00400542, -0.000854492, 0.000144958)
+shape = SubResource("BoxShape3D_bikvs")
+
+[node name="ENTER" type="CSGBox3D" parent="recorder/Buttons"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0819615, -0.0746543, 0.0765505)
+size = Vector3(0.01, 0.0224561, 0.0246875)
+script = ExtResource("3_i23bp")
+
+[node name="Label3D" type="Label3D" parent="recorder/Buttons/ENTER"]
+transform = Transform3D(-1.31134e-09, 0, -0.03, 0, 0.03, 0, 0.03, 0, -1.31134e-09, -0.00644772, 0, 0)
+shaded = true
+text = "DISP/
+ENTER"
+font_size = 50
+outline_size = 0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="recorder/Buttons/ENTER"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="recorder/Buttons/ENTER/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00400542, -0.000244133, 0.000144958)
+shape = SubResource("BoxShape3D_qxhwn")
+
+[node name="UPARROW" type="CSGBox3D" parent="recorder/Buttons"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0819615, -0.0576167, 0.0765505)
+size = Vector3(0.01, 0.01, 0.0246875)
+script = ExtResource("3_i23bp")
+
+[node name="Label3D" type="Label3D" parent="recorder/Buttons/UPARROW"]
+transform = Transform3D(-1.31134e-09, 0, -0.03, 0, 0.03, 0, 0.03, 0, -1.31134e-09, -0.00644772, 0, 0)
+shaded = true
+text = "UP"
+font_size = 50
+outline_size = 0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="recorder/Buttons/UPARROW"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="recorder/Buttons/UPARROW/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00400542, -0.000854492, 0.000144958)
+shape = SubResource("BoxShape3D_bikvs")
+
+[node name="LEFTARROW" type="CSGBox3D" parent="recorder/Buttons"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.0819615, -0.0739635, 0.0576711)
+size = Vector3(0.01, 0.01, 0.0246875)
+script = ExtResource("3_i23bp")
+
+[node name="Label3D" type="Label3D" parent="recorder/Buttons/LEFTARROW"]
+transform = Transform3D(-1.31134e-09, 0, -0.03, 0, 0.03, 0, 0.03, 0, -1.31134e-09, -0.00644772, 0, 0)
+shaded = true
+text = "LEFT"
+font_size = 50
+outline_size = 0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="recorder/Buttons/LEFTARROW"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="recorder/Buttons/LEFTARROW/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00400542, -0.000854492, 0.000144958)
+shape = SubResource("BoxShape3D_bikvs")
+
+[node name="RIGHTARROW" type="CSGBox3D" parent="recorder/Buttons"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0819615, -0.0739635, 0.096421)
+size = Vector3(0.01, 0.01, 0.0246875)
+script = ExtResource("3_i23bp")
+
+[node name="Label3D" type="Label3D" parent="recorder/Buttons/RIGHTARROW"]
+transform = Transform3D(-1.31134e-09, 0, -0.03, 0, 0.03, 0, 0.03, 0, -1.31134e-09, -0.00644772, 0, 0)
+shaded = true
+text = "RIGHT"
+font_size = 50
+outline_size = 0
+
+[node name="StaticBody3D" type="StaticBody3D" parent="recorder/Buttons/RIGHTARROW"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="recorder/Buttons/RIGHTARROW/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00400542, -0.000854492, 0.000144958)
 shape = SubResource("BoxShape3D_bikvs")

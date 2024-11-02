@@ -1224,11 +1224,13 @@ func _process(delta):
 							#var page = packet_data[recorder].page
 							var channels = packet_data[recorder].channels
 							var page = packet_data[recorder].page
+							var elements = packet_data[recorder].elements
 							
 							var rcd = recorders[recorder]
 							
 							rcd.channels = channels
 							rcd.page = page
+							rcd.elements = elements
 							
 							
 								

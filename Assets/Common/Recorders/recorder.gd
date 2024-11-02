@@ -2,7 +2,7 @@ extends Node3D
 
 @onready var node_3d = $"/root/Node3D"
 var recorder
-@onready var material = $"recorder/Sprite3D/SubViewport/Node2D/2_PAGE/Graph".get_material()
+@onready var material = $"recorder/Sprite3D/SubViewport/Node2D/PAGES/2_PAGE/Graph".get_material()
 
 func init():
 	recorder = node_3d.recorders[self.name]
@@ -32,12 +32,16 @@ func button_changed():
 	
 func update(info):
 	var page = info.page
-	get_node("recorder/Sprite3D/SubViewport/Node2D/%s_PAGE" % str(page)).update(info)
+	get_node("recorder/Sprite3D/SubViewport/Node2D/PAGES/%s_PAGE" % str(page)).update(info)
 	
-	var children = $"recorder/Sprite3D/SubViewport/Node2D".get_children()
+	var children = $"recorder/Sprite3D/SubViewport/Node2D/PAGES".get_children()
 	for child in children:
 		if child.name != str(page)+"_PAGE":
 			child.visible = false
 		else:
 			child.visible = true
+			
+	var children_elements = $"recorder/Sprite3D/SubViewport/Node2D/ELEMENTS".get_children()
+	for child in children_elements:
+		child.visible = info.elements[child.name]["SHOW"]
 	

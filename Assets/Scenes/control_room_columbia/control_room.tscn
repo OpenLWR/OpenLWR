@@ -1,4 +1,4 @@
-[gd_scene load_steps=603 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=601 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -22,7 +22,6 @@
 [ext_resource type="Material" uid="uid://dhj0kjjcc7lie" path="res://Assets/Materials/annunciator_red.tres" id="18_cvut7"]
 [ext_resource type="Texture2D" uid="uid://bxvksf58t2vat" path="res://Assets/Textures/ADS.png" id="18_idun7"]
 [ext_resource type="PackedScene" uid="uid://dyk86rtadlnxg" path="res://Assets/Scenes/control_room_nmp2/full_core_display/full_core_display_lights.tscn" id="19_pl0e3"]
-[ext_resource type="PackedScene" uid="uid://kf7fvt4u82cu" path="res://Assets/Scenes/control_room_columbia/2_channel_recorder.tscn" id="19_qwg0d"]
 [ext_resource type="PackedScene" uid="uid://cvpkjmwhk3ffe" path="res://Assets/Scenes/control_room_columbia/4_channel_recorder.tscn" id="20_4hiiv"]
 [ext_resource type="PackedScene" uid="uid://nm6xlg1x324r" path="res://Assets/Common/Misc/gds.tscn" id="20_5h0ir"]
 [ext_resource type="Material" uid="uid://yjqqhessod4t" path="res://Assets/Materials/blue_plastic.tres" id="20_nx706"]
@@ -2380,9 +2379,6 @@ refraction_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xa3lg"]
 albedo_color = Color(0.00362519, 0.00934596, 0.012812, 1)
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_p4cy1"]
-viewport_path = NodePath("Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport")
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_s1qrm"]
 viewport_path = NodePath("Control Room Panels/Main Panel Left Side/Controls/GDS1/Sprite3D/SubViewport")
@@ -20248,31 +20244,6 @@ shape = SubResource("BoxShape3D_nha8j")
 transform = Transform3D(-0.707107, 3.55271e-15, 0.707107, 3.55271e-15, 1, 0, -0.707107, 8.47033e-22, -0.707107, 9.70112, 0.692, 1.45327)
 top_level = true
 
-[node name="rpv_level" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/Controls"]
-transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 4.41553, 0.617788, 2.92784)
-size = Vector3(0.17, 0.17, 0.17)
-
-[node name="Sprite3D" type="Sprite3D" parent="Control Room Panels/Main Panel Left Side/Controls/rpv_level"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.085393, 0, 0)
-pixel_size = 0.0003
-texture = SubResource("ViewportTexture_p4cy1")
-
-[node name="SubViewport" type="SubViewport" parent="Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D"]
-
-[node name="Node2D" parent="Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport" instance=ExtResource("19_qwg0d")]
-
-[node name="1_NAME" parent="Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport/Node2D" index="1"]
-text = "RPV LEVEL WR"
-
-[node name="1_UNIT" parent="Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport/Node2D" index="2"]
-text = "INCHES"
-
-[node name="2_NAME" parent="Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport/Node2D" index="4"]
-text = "RPV PRESS"
-
-[node name="2_UNIT" parent="Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport/Node2D" index="5"]
-text = "PSIG"
-
 [node name="GDS1" type="CSGBox3D" parent="Control Room Panels/Main Panel Left Side/Controls"]
 transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 6.13448, 0.731261, 4.6468)
 size = Vector3(0.17, 0.416, 0.416)
@@ -29406,7 +29377,59 @@ transform = Transform3D(3.62636e-08, -0.5, 1.4902e-08, -0.0986914, 7.451e-09, 0.
 transform = Transform3D(1.04657, -2.98023e-08, 1.49011e-08, 1.49012e-08, -3.74283e-07, -1.04657, 5.96046e-08, 1.04657, -3.74283e-07, 0.958853, 0, 0)
 
 [node name="601RPV" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("35_00tn5")]
-transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 4.77312, 0.622153, 3.29348)
+transform = Transform3D(-0.424264, 0, -0.424264, 0, 0.6, 0, 0.424264, 0, -0.424264, 4.90081, 0.621347, 3.36621)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/601RPV" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-1.66667, -9.9341e-08, -7.12852e-08, -1.49012e-07, 1.24447, 1.51521e-08, 7.45059e-08, 0, -1.66667, -0.055338, -0.155097, 0.00490478)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/601RPV/Label" index="0"]
+text = "REACTOR
+PRESSURE / LEVEL"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/601RPV/Label" index="1"]
+visible = false
+text = "MC-S2-1A"
+
+[node name="601FZR" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("35_00tn5")]
+transform = Transform3D(-0.424264, 0, -0.424264, 0, 0.6, 0, 0.424264, 0, -0.424264, 4.73718, 0.621347, 3.20259)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/601FZR" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-1.66667, -9.9341e-08, -7.12852e-08, -1.49012e-07, 1.24447, 1.51521e-08, 7.45059e-08, 0, -1.66667, -0.055338, -0.155097, 0.00490478)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/601FZR/Label" index="0"]
+text = "REACTOR
+FUEL ZONE RANGE
+MS-LR-xx"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/601FZR/Label" index="1"]
+visible = false
+text = "MC-S2-1A"
+
+[node name="601WWP" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("35_00tn5")]
+transform = Transform3D(-0.424264, 0, -0.424264, 0, 0.6, 0, 0.424264, 0, -0.424264, 5.39975, 0.621347, 3.86516)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/601WWP" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-1.66667, -9.9341e-08, -7.12852e-08, -1.49012e-07, 1.24447, 1.51521e-08, 7.45059e-08, 0, -1.66667, -0.055338, -0.155097, 0.00490478)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/601WWP/Label" index="0"]
+text = "WETWELL PRESS"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/601WWP/Label" index="1"]
+visible = false
+text = "MC-S2-1A"
+
+[node name="601DWP1" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("35_00tn5")]
+transform = Transform3D(-0.424264, 0, -0.424264, 0, 0.6, 0, 0.424264, 0, -0.424264, 5.39975, 0.861347, 3.86516)
+
+[node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/601DWP1" instance=ExtResource("13_sbqyo")]
+transform = Transform3D(-1.66667, -9.9341e-08, -7.12852e-08, -1.49012e-07, 1.24447, 1.51521e-08, 7.45059e-08, 0, -1.66667, -0.055338, -0.155097, 0.00490478)
+
+[node name="Name" parent="Control Room Panels/Main Panel Left Side/Controls/601DWP1/Label" index="0"]
+text = "DRYWELL PRESSURE"
+
+[node name="Power" parent="Control Room Panels/Main Panel Left Side/Controls/601DWP1/Label" index="1"]
+visible = false
+text = "MC-S2-1A"
 
 [node name="ADS 1" type="Node3D" parent="Control Room Panels/Main Panel Left Side/Controls"]
 
@@ -35653,7 +35676,6 @@ shape = SubResource("BoxShape3D_j8ty7")
 [editable path="Control Room Panels/Main Panel Center/Controls/CRD/drive_header_flow/Label"]
 [editable path="Control Room Panels/Main Panel Center/Controls/CRD/cooling_header_flow/Label"]
 [editable path="Control Room Panels/Main Panel Center/SRM_IRM POSITIONER/Label"]
-[editable path="Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport/Node2D"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31/selector_switch"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_v_31/Label"]
@@ -36121,6 +36143,10 @@ shape = SubResource("BoxShape3D_j8ty7")
 [editable path="Control Room Panels/Main Panel Left Side/Controls/RRC/station_1a/station_1a_demand/edgewise_gauge"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/RRC/station_1a/station_1a_actual"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/RRC/station_1a/station_1a_actual/edgewise_gauge"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/601RPV/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/601FZR/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/601WWP/Label"]
+[editable path="Control Room Panels/Main Panel Left Side/Controls/601DWP1/Label"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1a"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1a/Label"]
 [editable path="Control Room Panels/Main Panel Left Side/Controls/ADS 1/ads_initiate_1b"]

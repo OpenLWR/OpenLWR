@@ -170,19 +170,6 @@ signal chat_message(message)
 		"text" : false,
 	},
 	
-	"rpv_level_recorder_1": {
-		"node": $"Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport/Node2D/1_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	"rpv_pressure_recorder_1": {
-		"node": $"Control Room Panels/Main Panel Left Side/Controls/rpv_level/Sprite3D/SubViewport/Node2D/2_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	
 	"irm_a_recorder": {
 		"node": $"Control Room Panels/Main Panel Center/Controls/NMS1/Sprite3D/SubViewport/Node2D/1_VALUE",
 		"value": 1,

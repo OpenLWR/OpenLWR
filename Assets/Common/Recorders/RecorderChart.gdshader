@@ -23,12 +23,12 @@ void fragment() {
     float UVPerIndex = 1./dataPoints;
     float indexHeight = float(dataPoints) * (1.0 - UV.x);
     float prevIndexHeight = float(dataPoints) * (1.0 - UV.x - UVPerIndex);
-    
+
     float mixer = fract(indexHeight);
     float val1 = map(data[uint(ceil(indexHeight))], minValue, maxValue, 0, 1);
     float val2 = map(data[uint(ceil(indexHeight))], minValue, maxValue, 0, 1);
     float NextdataPoint = map(val1 * (1.0-mixer) + val2 * mixer, minValue, maxValue, 0, 1);
-    
+
     float dist = distance(UV.y, NextdataPoint);
     if (dist < lineThickness) {
         COLOR = color;

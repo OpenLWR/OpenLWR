@@ -1,4 +1,4 @@
-[gd_scene load_steps=602 format=3 uid="uid://cnmpxslshsgp6"]
+[gd_scene load_steps=601 format=3 uid="uid://cnmpxslshsgp6"]
 
 [ext_resource type="Script" path="res://Assets/Scenes/control_room_columbia/main.gd" id="1_4t1fm"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_upyw6"]
@@ -212,8 +212,6 @@ size = Vector3(0.0144663, 0.0430282, 0.0426735)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cis0m"]
 albedo_color = Color(0.535444, 0.709759, 0.787381, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lfx18"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ilmn1"]
 size = Vector3(0.841675, 0.436691, 0.656738)
@@ -12469,7 +12467,7 @@ material = SubResource("StandardMaterial3D_cis0m")
 [node name="BR" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Four Rod Display"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.991964, 0.502089, -2.45242)
 size = Vector3(0.0226746, 0.0449467, 0.0582237)
-material = SubResource("StandardMaterial3D_lfx18")
+material = ExtResource("21_y8sv6")
 
 [node name="Pos" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Four Rod Display/BR"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0116744, 0.00161171, -0.000402689)
@@ -12481,7 +12479,7 @@ outline_size = 0
 [node name="BL" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Four Rod Display"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.991963, 0.502089, -2.36056)
 size = Vector3(0.0226746, 0.0449467, 0.0582237)
-material = SubResource("StandardMaterial3D_lfx18")
+material = ExtResource("21_y8sv6")
 
 [node name="Pos" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Four Rod Display/BL"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0116739, 0.00161171, -0.000592947)
@@ -12494,7 +12492,7 @@ outline_size = 0
 [node name="TR" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Four Rod Display"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.991964, 0.576892, -2.45242)
 size = Vector3(0.0226746, 0.0449467, 0.0582237)
-material = SubResource("StandardMaterial3D_lfx18")
+material = ExtResource("21_y8sv6")
 
 [node name="Pos" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Four Rod Display/TR"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0120001, 0.00219762, 0)
@@ -12506,7 +12504,7 @@ outline_size = 0
 [node name="TL" type="CSGBox3D" parent="Control Room Panels/Main Panel Center/Controls/Four Rod Display"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.991963, 0.576892, -2.36056)
 size = Vector3(0.0226746, 0.0449467, 0.0582237)
-material = SubResource("StandardMaterial3D_lfx18")
+material = ExtResource("21_y8sv6")
 
 [node name="Pos" type="Label3D" parent="Control Room Panels/Main Panel Center/Controls/Four Rod Display/TL"]
 transform = Transform3D(0, 0, 0.1, 0, 0.1, 0, -0.1, 0, 0, 0.0116744, 0.00245845, -0.000592709)

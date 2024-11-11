@@ -29897,7 +29897,7 @@ transform = Transform3D(3.62636e-08, -0.5, 1.4902e-08, -0.0986914, 7.451e-09, 0.
 transform = Transform3D(1.04657, -2.98023e-08, 1.49011e-08, 1.49012e-08, -3.74283e-07, -1.04657, 5.96046e-08, 1.04657, -3.74283e-07, 0.958853, 0, 0)
 
 [node name="601RPV" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("35_00tn5")]
-transform = Transform3D(-0.424264, 0, -0.424264, 0, 0.6, 0, 0.424264, 0, -0.424264, 4.90081, 0.621347, 3.36621)
+transform = Transform3D(-0.424264, 0, -0.424264, 0, 0.6, 0, 0.424264, 0, -0.424264, 4.89307, 0.621347, 3.37395)
 
 [node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/601RPV" instance=ExtResource("13_sbqyo")]
 transform = Transform3D(-1.66667, -9.9341e-08, -7.12852e-08, -1.49012e-07, 1.24447, 1.51521e-08, 7.45059e-08, 0, -1.66667, -0.055338, -0.155097, 0.00490478)
@@ -29911,7 +29911,7 @@ visible = false
 text = "MC-S2-1A"
 
 [node name="601FZR" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("35_00tn5")]
-transform = Transform3D(-0.424264, 0, -0.424264, 0, 0.6, 0, 0.424264, 0, -0.424264, 4.73718, 0.621347, 3.20259)
+transform = Transform3D(-0.424264, 0, -0.424264, 0, 0.6, 0, 0.424264, 0, -0.424264, 4.72944, 0.621347, 3.21033)
 
 [node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/601FZR" instance=ExtResource("13_sbqyo")]
 transform = Transform3D(-1.66667, -9.9341e-08, -7.12852e-08, -1.49012e-07, 1.24447, 1.51521e-08, 7.45059e-08, 0, -1.66667, -0.055338, -0.155097, 0.00490478)
@@ -29926,7 +29926,7 @@ visible = false
 text = "MC-S2-1A"
 
 [node name="601WWP" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("35_00tn5")]
-transform = Transform3D(-0.424264, 0, -0.424264, 0, 0.6, 0, 0.424264, 0, -0.424264, 5.39975, 0.621347, 3.86516)
+transform = Transform3D(-0.424264, 0, -0.424264, 0, 0.6, 0, 0.424264, 0, -0.424264, 5.39201, 0.621347, 3.8729)
 
 [node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/601WWP" instance=ExtResource("13_sbqyo")]
 transform = Transform3D(-1.66667, -9.9341e-08, -7.12852e-08, -1.49012e-07, 1.24447, 1.51521e-08, 7.45059e-08, 0, -1.66667, -0.055338, -0.155097, 0.00490478)
@@ -30215,7 +30215,7 @@ font_size = 40
 outline_size = 0
 
 [node name="601DWP1" parent="Control Room Panels/Main Panel Left Side/Controls" instance=ExtResource("54_p4sdj")]
-transform = Transform3D(-0.424264, 0, -0.424264, 0, 0.6, 0, 0.424264, 0, -0.424264, 5.4, 0.861, 3.865)
+transform = Transform3D(-0.424264, 0, -0.424264, 0, 0.6, 0, 0.424264, 0, -0.424264, 5.39226, 0.861, 3.87274)
 
 [node name="Label" parent="Control Room Panels/Main Panel Left Side/Controls/601DWP1" instance=ExtResource("13_sbqyo")]
 transform = Transform3D(-1.66667, -9.9341e-08, -7.12852e-08, -1.49012e-07, 1.24447, 1.51522e-08, 7.45059e-08, 0, -1.66667, -0.0548601, -0.154518, 0.00500679)

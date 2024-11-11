@@ -979,9 +979,11 @@ shape = SubResource("BoxShape3D_7pexd")
 
 [node name="open" type="AudioStreamPlayer3D" parent="Plane"]
 stream = ExtResource("7_0pn1l")
+volume_db = -2.0
 
 [node name="close" type="AudioStreamPlayer3D" parent="Plane"]
 stream = ExtResource("8_bkkry")
+volume_db = -2.0
 
 [node name="Cube_002" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.907389, -1.11178, 0.12688)

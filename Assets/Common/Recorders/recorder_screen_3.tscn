@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://uyafco52nwor"]
+[gd_scene load_steps=27 format=3 uid="uid://uyafco52nwor"]
 
 [ext_resource type="Script" path="res://Assets/Common/Recorders/menu.gd" id="1_tvmb3"]
 [ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="2_4y737"]
@@ -62,6 +62,17 @@ shader_parameter/data = null
 load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
 
 [sub_resource type="BoxMesh" id="BoxMesh_skfrd"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_66cu7"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g5xjs"]
+font = ExtResource("10_sfvor")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_pqt2v"]
+font = ExtResource("10_sfvor")
+font_size = 20
+font_color = Color(0, 0, 0, 1)
 
 [node name="Node2D" type="Node2D"]
 
@@ -650,3 +661,61 @@ position = Vector2(88.1718, 262.988)
 rotation = 3.14159
 scale = Vector2(176.342, 433.747)
 mesh = SubResource("BoxMesh_skfrd")
+
+[node name="BOOT" type="Node2D" parent="."]
+visible = false
+
+[node name="Blue" type="Node2D" parent="BOOT"]
+
+[node name="Background" type="MeshInstance2D" parent="BOOT/Blue"]
+modulate = Color(0, 0, 0.564706, 1)
+z_index = 1
+position = Vector2(320, 240)
+rotation = 3.14159
+scale = Vector2(640, 480)
+mesh = SubResource("BoxMesh_66cu7")
+
+[node name="Code" type="Label" parent="BOOT/Blue"]
+z_index = 2
+offset_left = 4.0
+offset_top = 114.0
+offset_right = 316.0
+offset_bottom = 162.0
+text = "Code OK >>>>>"
+label_settings = SubResource("LabelSettings_g5xjs")
+
+[node name="Finish" type="Label" parent="BOOT/Blue"]
+visible = false
+z_index = 2
+offset_left = 166.0
+offset_top = 162.0
+offset_right = 478.0
+offset_bottom = 210.0
+text = "Finish"
+label_settings = SubResource("LabelSettings_g5xjs")
+
+[node name="White" type="Node2D" parent="BOOT"]
+visible = false
+
+[node name="Background" type="MeshInstance2D" parent="BOOT/White"]
+z_index = 1
+position = Vector2(320, 240)
+rotation = 3.14159
+scale = Vector2(640, 480)
+mesh = SubResource("BoxMesh_66cu7")
+
+[node name="Text" type="Label" parent="BOOT/White"]
+visible = false
+z_index = 2
+offset_left = 81.0
+offset_top = 114.0
+offset_right = 393.0
+offset_bottom = 162.0
+text = "ANALOG: 2
+MEMORY: 80MB
+OPTION:
+    ETHERNET
+    ALARM 2.0.0.0
+    CF
+    USB"
+label_settings = SubResource("LabelSettings_pqt2v")

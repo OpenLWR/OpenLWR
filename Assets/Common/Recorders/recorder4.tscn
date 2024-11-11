@@ -1,101 +1,102 @@
-[gd_scene load_steps=10 format=3 uid="uid://c43dvwlnpb8qa"]
+[gd_scene load_steps=10 format=3 uid="uid://tdver2vluo2l"]
 
-[ext_resource type="Script" path="res://Assets/Common/Recorders/recorder.gd" id="1_o7tax"]
-[ext_resource type="PackedScene" uid="uid://c62ydsv8ub24" path="res://Assets/Common/Recorders/recorder_screen_2.tscn" id="2_h2x2g"]
-[ext_resource type="PackedScene" uid="uid://dxhyvqwtprtgy" path="res://Assets/Common/Recorders/dx1000/dx1000.tscn" id="2_lp4a1"]
-[ext_resource type="Script" path="res://Assets/Common/Recorders/recorder_button.gd" id="3_i23bp"]
+[ext_resource type="Script" path="res://Assets/Common/Recorders/recorder.gd" id="1_7x8ly"]
+[ext_resource type="PackedScene" uid="uid://dxhyvqwtprtgy" path="res://Assets/Common/Recorders/dx1000/dx1000.tscn" id="2_3cp7p"]
+[ext_resource type="Script" path="res://Assets/Common/Recorders/recorder_button.gd" id="3_jgkn5"]
+[ext_resource type="PackedScene" uid="uid://dx48iw1hxkcu7" path="res://Assets/Common/Recorders/recorder_screen_4.tscn" id="4_itu07"]
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_c6sq8"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_m8fui"]
 viewport_path = NodePath("Recorder/Screen")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4xtmp"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8eec5"]
 resource_local_to_scene = true
 shading_mode = 0
-albedo_texture = SubResource("ViewportTexture_c6sq8")
+albedo_texture = SubResource("ViewportTexture_m8fui")
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_300ac"]
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_f2bn3"]
 height = 0.01
 radius = 0.0092454
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_bikvs"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_7hot8"]
 size = Vector3(0.00450134, 0.00790787, 0.0173231)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_bnhe5"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_jdw2f"]
 size = Vector3(0.00450134, 0.00790787, 0.0114108)
 
 [node name="Node3D" type="Node3D"]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
-script = ExtResource("1_o7tax")
+script = ExtResource("1_7x8ly")
 
 [node name="Recorder" type="Node3D" parent="."]
 
-[node name="recorder" parent="Recorder" instance=ExtResource("2_lp4a1")]
+[node name="recorder" parent="Recorder" instance=ExtResource("2_3cp7p")]
+transform = Transform3D(-0.1, 0, -1.50996e-08, 0, 0.1, 0, 1.50996e-08, 0, -0.1, 0, 0, 0)
 
 [node name="Cube_005" parent="Recorder/recorder" index="14"]
-material_override = SubResource("StandardMaterial3D_4xtmp")
+material_override = SubResource("StandardMaterial3D_8eec5")
 
 [node name="Buttons" type="Node3D" parent="Recorder"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00897156, -0.0635645, -0.0123156)
+transform = Transform3D(1, 0, 1.18424e-14, 0, 1, 0, -1.18424e-14, 0, 1, -0.00897156, -0.0635645, -0.0123156)
 
 [node name="ENTER" type="StaticBody3D" parent="Recorder/Buttons"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0911663, -0.0654219, 0.0698851)
-script = ExtResource("3_i23bp")
+script = ExtResource("3_jgkn5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Recorder/Buttons/ENTER"]
 transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, -5.04871e-29, 0, 1, 0.00147207, 0.0002691, 0.000144958)
-shape = SubResource("CylinderShape3D_300ac")
+shape = SubResource("CylinderShape3D_f2bn3")
 
 [node name="LEFTARROW" type="StaticBody3D" parent="Recorder/Buttons"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -0.0884897, -0.0661963, 0.0576711)
-script = ExtResource("3_i23bp")
+script = ExtResource("3_jgkn5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Recorder/Buttons/LEFTARROW"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00400543, 0.000885002, 0.000494003)
-shape = SubResource("BoxShape3D_bikvs")
+shape = SubResource("BoxShape3D_7hot8")
 
 [node name="RIGHTARROW" type="StaticBody3D" parent="Recorder/Buttons"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0881506, -0.0660741, 0.0835114)
-script = ExtResource("3_i23bp")
+script = ExtResource("3_jgkn5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Recorder/Buttons/RIGHTARROW"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00400543, 0.000658035, -0.000378117)
-shape = SubResource("BoxShape3D_bikvs")
+shape = SubResource("BoxShape3D_7hot8")
 
 [node name="DOWNARROW" type="StaticBody3D" parent="Recorder/Buttons"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0819615, -0.0806881, 0.0699269)
-script = ExtResource("3_i23bp")
+script = ExtResource("3_jgkn5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Recorder/Buttons/DOWNARROW"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0123852, 0.00169916, -4.37722e-06)
-shape = SubResource("BoxShape3D_bikvs")
+shape = SubResource("BoxShape3D_7hot8")
 
 [node name="UPARROW" type="StaticBody3D" parent="Recorder/Buttons"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0819615, -0.0534483, 0.0699269)
-script = ExtResource("3_i23bp")
+script = ExtResource("3_jgkn5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Recorder/Buttons/UPARROW"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0123852, 0.00169916, -4.37722e-06)
-shape = SubResource("BoxShape3D_bikvs")
+shape = SubResource("BoxShape3D_7hot8")
 
 [node name="MENU" type="StaticBody3D" parent="Recorder/Buttons"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0739117, -0.0753711, 0.02418)
-script = ExtResource("3_i23bp")
+script = ExtResource("3_jgkn5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Recorder/Buttons/MENU"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0123852, 0.00169916, -0.000646609)
-shape = SubResource("BoxShape3D_bnhe5")
+shape = SubResource("BoxShape3D_jdw2f")
 
 [node name="ESCAPE" type="StaticBody3D" parent="Recorder/Buttons"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0739117, -0.0753711, 0.00925825)
-script = ExtResource("3_i23bp")
+script = ExtResource("3_jgkn5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Recorder/Buttons/ESCAPE"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0123852, 0.00169916, -0.000646609)
-shape = SubResource("BoxShape3D_bnhe5")
+shape = SubResource("BoxShape3D_jdw2f")
 
 [node name="Screen" type="SubViewport" parent="Recorder"]
 size = Vector2i(640, 480)
 
-[node name="Node2D" parent="Recorder/Screen" instance=ExtResource("2_h2x2g")]
+[node name="Node2D" parent="Recorder/Screen" instance=ExtResource("4_itu07")]
 
 [editable path="Recorder/recorder"]

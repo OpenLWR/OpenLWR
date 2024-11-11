@@ -170,107 +170,6 @@ signal chat_message(message)
 		"text" : false,
 	},
 	
-	"irm_a_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS1/Sprite3D/SubViewport/Node2D/1_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	"aprm_a_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS1/Sprite3D/SubViewport/Node2D/2_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	"irm_c_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS1/Sprite3D/SubViewport/Node2D/3_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	"aprm_c_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS1/Sprite3D/SubViewport/Node2D/4_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	
-	"irm_e_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS2/Sprite3D/SubViewport/Node2D/1_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	"aprm_e_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS2/Sprite3D/SubViewport/Node2D/2_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	"irm_g_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS2/Sprite3D/SubViewport/Node2D/3_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	"rbm_a_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS2/Sprite3D/SubViewport/Node2D/4_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	
-	
-	"irm_b_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D/1_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	"aprm_b_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D/2_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	"irm_d_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D/3_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	"aprm_d_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS3/Sprite3D/SubViewport/Node2D/4_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	
-	"irm_f_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D/1_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	"aprm_f_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D/2_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	"irm_h_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D/3_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	"rbm_b_recorder": {
-		"node": $"Control Room Panels/Main Panel Center/Controls/NMS4/Sprite3D/SubViewport/Node2D/4_VALUE",
-		"value": 1,
-		"atypical" : false,
-		"text" : true,
-	},
-	
 	"rcic_flow": {
 		"node": $"Control Room Panels/Main Panel Left Side/Controls/RCIC/rcic_flow",
 		"value": 0,
@@ -1212,12 +1111,14 @@ func _process(delta):
 							var channels = packet_data[recorder].channels
 							var page = packet_data[recorder].page
 							var elements = packet_data[recorder].elements
+							var display_on = packet_data[recorder].display_on
 							
 							var rcd = recorders[recorder]
 							
 							rcd.channels = channels
 							rcd.page = page
 							rcd.elements = elements
+							rcd.display_on = display_on
 							
 							
 								
@@ -1433,6 +1334,7 @@ func _process(delta):
 								recorder["object"] = null
 								recorder["history"] = {}
 								recorder["update_time"] = 11
+								recorder["boot_time"] = 1
 								
 					tables_received.append(info_name)
 								

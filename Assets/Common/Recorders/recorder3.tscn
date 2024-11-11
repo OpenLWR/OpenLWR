@@ -24,7 +24,7 @@ size = Vector3(0.00450134, 0.00790787, 0.0173231)
 size = Vector3(0.00450134, 0.00790787, 0.0114108)
 
 [node name="Node3D" type="Node3D"]
-transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
 script = ExtResource("1_amidv")
 
 [node name="Recorder" type="Node3D" parent="."]

@@ -720,6 +720,8 @@ var alarm_groups = {
 	"cr_light_normal_2": null,
 	"cr_light_normal_3": null,
 	"cr_light_normal_4": null,
+	"cr_light_normal_5": null,
+	"cr_light_normal_6": null,
 	"cr_light_emergency": null,
 	
 	"APRM_A_UPSCALE_TRIP_OR_INOP": $"Control Room Panels/Main Panel Center/Controls/APRM_STATUS/A/UPSCALE_INOP",
@@ -1030,6 +1032,10 @@ func _process(delta):
 									$LightNormal_3.visible = indicator_state
 								if indicator == "cr_light_normal_4":
 									$LightNormal_4.visible = indicator_state
+								if indicator == "cr_light_normal_5":
+									$LightNormal_5.visible = indicator_state
+								if indicator == "cr_light_normal_6":
+									$LightNormal_6.visible = indicator_state
 								if indicator == "cr_light_emergency":
 									$LightEmergency.visible = indicator_state
 								continue

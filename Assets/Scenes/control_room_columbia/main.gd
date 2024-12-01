@@ -458,6 +458,55 @@ signal chat_message(message)
 		"atypical" : false,
 		"text" : false,
 	},
+	"mt_load": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/EHC/LOAD/mt_load",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 1400,
+		"atypical" : false,
+		"text" : false,
+	},
+	"mt_load_set": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/EHC/LOAD/mt_load_set",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 1400,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	"bypass_valve1": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/EHC/VALVES/bypass_valve1",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 100,
+		"atypical" : false,
+		"text" : false,
+	},
+	"bypass_valve2": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/EHC/VALVES/bypass_valve2",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 100,
+		"atypical" : false,
+		"text" : false,
+	},
+	"bypass_valve3": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/EHC/VALVES/bypass_valve3",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 100,
+		"atypical" : false,
+		"text" : false,
+	},
+	"bypass_valve4": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/EHC/VALVES/bypass_valve4",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 100,
+		"atypical" : false,
+		"text" : false,
+	},
 	
 	#condensate
 	"cond_booster_discharge_press": {
@@ -856,6 +905,11 @@ var alarm_groups = {
 	"ehc_line_speed_off": $"Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_off",
 	"ehc_line_speed_selected": $"Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_selected",
 	"ehc_line_speed_operating": $"Control Room Panels/Main Panel Right Side/Controls/EHC/LINE SPEED MATCHER/ehc_line_speed_operating",
+	
+	"load_decrease": $"Control Room Panels/Main Panel Right Side/Controls/EHC/LOAD/load_decrease",
+	"load_increase": $"Control Room Panels/Main Panel Right Side/Controls/EHC/LOAD/load_increase",
+	
+	"load_limit_limiting": $"Control Room Panels/Main Panel Right Side/Controls/EHC/LOAD/load_limit_limiting",
 	
 	"mt_tripped": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/mt_tripped",
 	"mt_reset": $"Control Room Panels/Main Panel Right Side/Controls/EHC/TRIP/mt_reset",

@@ -717,6 +717,23 @@ signal chat_message(message)
 		"atypical" : false,
 		"text" : false,
 	},
+	
+	"cia_main_header_press": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/CIA/cia_main_header_press",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 300,
+		"atypical" : false,
+		"text" : false,
+	},
+	"cia_ads_a_header_press": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/CIA/cia_ads_a_header_press",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 300,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var alarms = {}

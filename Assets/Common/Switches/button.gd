@@ -12,6 +12,10 @@ func init():
 func _ready():
 	node_3d.init_scene_objects.connect(init)
 	player.unclick_left.connect(un_click)
+	if get_node_or_null("StaticBody3D") != null:
+		$"StaticBody3D".input_event.connect(switch_click)
+	elif get_node_or_null("Press") != null:
+		$"Press".input_event.connect(switch_click)
 	
 func button_state_change(state: bool):
 	button.state = state

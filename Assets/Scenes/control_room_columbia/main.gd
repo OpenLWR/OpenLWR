@@ -734,6 +734,15 @@ signal chat_message(message)
 		"atypical" : false,
 		"text" : false,
 	},
+	
+	"control_air_press": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/CAS/control_air_press",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 150,
+		"atypical" : false,
+		"text" : false,
+	}
 }
 
 var alarms = {}
@@ -756,6 +765,7 @@ var alarm_groups = {
 	"3" : {"F" : true, "S" : true}, # F - Fast S - Slow
 	"4" : {"F" : true, "S" : true}, # F - Fast S - Slow
 	"5" : {"F" : true, "S" : true}, # F - Fast S - Slow
+	"6" : {"F" : true, "S" : true}, # F - Fast S - Slow
 }
 
 @onready var indicators = {

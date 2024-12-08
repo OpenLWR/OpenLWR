@@ -2,6 +2,20 @@ It is reccomended to play on the most recent release (https://github.com/OpenLWR
 
 However, if you wish to play on a newer version, you can play from the source code directly
 
+## Installation
+![Github Release Version](https://img.shields.io/github/v/release/OpenLWR/OpenLWR?include_prereleases&label=Current+Release+Version)
+
+OpenLWR is available for Windows, Mac, and Linux
+
+- To install, simply head to the [Releases](https://github.com/OpenLWR/OpenLWR/releases/) section and download the appropriate executable.
+- Alternatively, OpenLWR can be installed as a package on the following platforms:
+
+  | Platform | Package Name  | Package Version                                                | Maintainer                                        |
+  |----------|---------------|----------------------------------------------------------------|---------------------------------------------------|
+  | AUR      | `openlwr-bin` | ![AUR Version](https://img.shields.io/aur/version/openlwr-bin) | [RadiantCorium](https://github.com/RadiantCorium) |
+
+## Running from Source
+
 > [!NOTE]
 > The following steps were performed on windows, if it does not work on other operating systems, please make an issue.
 > 

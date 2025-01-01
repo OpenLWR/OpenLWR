@@ -14,6 +14,58 @@ OpenLWR is available for Windows, Mac, and Linux
   |----------|---------------|----------------------------------------------------------------|---------------------------------------------------|
   | AUR      | `openlwr-bin` | ![AUR Version](https://img.shields.io/aur/version/openlwr-bin) | [RadiantCorium](https://github.com/RadiantCorium) |
 
+## Minimum Recommended System Requirements
+#### Please do not ask for help running the game or report bugs on systems which do not meet the below requirements
+Windows:
+```
+OS: Windows 10 or later
+
+CPU:
+    - Any quad-core 64-bit x86 CPU with SSE4.2 support
+    - Any Snapdragon X Elite CPU or newer
+
+GPU: 
+    - Any dedicated Intel ARC series GPU
+    - Any Nvidia 10 series or newer GTX or RTX GPU
+    - Any AMD Radeon RX, Vega, or R9 series GPU with Vulkan 1.2 support
+    - Any Integrated Snapdragon X Elite GPU or newer
+
+RAM: At least 8GB
+```
+macOS:
+```
+OS: macOS 10.15 or later
+
+CPU:
+    - Any x86 CPU
+    - Any Apple Silicon CPU
+
+GPU:
+    - Any AMD Radeon RX, Vega or R9 series GPU with Metal support
+    - Any Integrated Apple Silicon GPU
+
+RAM: At least 8GB
+```
+Linux:
+```
+OS: Any Linux distribution with glibc 2.31 or later
+
+CPU:
+    - Any quad-core 64-bit x86 CPU with SSE4.2 support
+    - Any ARMv8 based system supporting an external GPU
+    - Any Apple Silicon system running the latest Asahi Linux patches
+
+GPU:
+    - Any dedicated Intel ARC series GPU
+    - Any Nvidia GTX or RTX GPU with the latest nvidia or nvidia-open driver (Nouveau driver is not supported)
+    - Any AMD Radeon RX, Vega, or R9 series GPU with Vulkan 1.2 support
+    - Any Integrated Apple Silicon GPU
+
+RAM: At least 8GB
+```
+
+
+
 ## Running from Source
 
 > [!NOTE]

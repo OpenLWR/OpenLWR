@@ -6,7 +6,7 @@ func connect_server(ip: String, requested_scene: String):
 	var username_requested = $Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/HBoxContainer/LineEdit.text
 	globals.server_ip_requested_tojoin = server_ip_requested
 	globals.username_requested_tojoin = username_requested
-	globals.use_vr = $Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/HBoxContainer/VREnable.button_pressed
+	globals.use_vr = true #$Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer/HBoxContainer/VREnable.button_pressed
 	
 	if ResourceLoader.exists("res://Assets/Scenes/%s/control_room.tscn" % requested_scene):
 		get_tree().change_scene_to_file("res://Assets/Scenes/%s/control_room.tscn" % requested_scene)

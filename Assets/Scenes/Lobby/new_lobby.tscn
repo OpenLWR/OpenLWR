@@ -113,7 +113,10 @@ anchor_left = 0.02
 anchor_top = 0.02
 anchor_right = 0.98
 anchor_bottom = 1.0
-offset_bottom = 0.280029
+offset_left = -161.0
+offset_top = -1.28
+offset_right = -161.0
+offset_bottom = -1.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/HSplitContainer/Control/HBoxContainer/ServerInfo/VBoxContainer"]
 layout_mode = 2

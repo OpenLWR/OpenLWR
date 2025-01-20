@@ -18,7 +18,7 @@ OpenLWR is available for Windows, Mac, and Linux
 #### Please do not ask for help running the game or report bugs on systems which do not meet the below requirements
 Windows:
 ```
-OS: Windows 10 or later
+OS: Windows 7 or later
 
 CPU:
     - Any quad-core 64-bit x86 CPU with SSE4.2 support

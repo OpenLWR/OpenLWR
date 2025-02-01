@@ -53,21 +53,39 @@ transform = Transform3D(-6.66159e-09, 0, -0.152399, 0, 0.152399, 0, 0.152399, 0,
 
 [node name="Face" parent="edgewise_gauge" index="0"]
 material_override = ExtResource("3_cbij6")
+cast_shadow = 0
 
 [node name="Frame" parent="edgewise_gauge" index="1"]
 material_override = SubResource("StandardMaterial3D_3waab")
+cast_shadow = 0
+
+[node name="Back" parent="edgewise_gauge" index="2"]
+cast_shadow = 0
 
 [node name="Needle" parent="edgewise_gauge" index="3"]
 transform = Transform3D(0.0165577, 0, 0, 0, -0.0291043, -5.83229e-10, 0, 2.54438e-09, -0.00667136, -0.003571, 0, -0.06019)
+cast_shadow = 0
+
+[node name="Screw" parent="edgewise_gauge" index="4"]
+cast_shadow = 0
 
 [node name="BezelL" parent="edgewise_gauge" index="5"]
+cast_shadow = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_8gwiq")
 
 [node name="BezelR" parent="edgewise_gauge" index="6"]
+cast_shadow = 0
 surface_material_override/0 = SubResource("StandardMaterial3D_8gwiq")
 
 [node name="Face_001" parent="edgewise_gauge" index="7"]
 material_override = ExtResource("4_2xxww")
+cast_shadow = 0
 mesh = SubResource("ArrayMesh_jeoie")
+
+[node name="Face_002" parent="edgewise_gauge" index="8"]
+cast_shadow = 0
+
+[node name="Axis" parent="edgewise_gauge" index="9"]
+cast_shadow = 0
 
 [editable path="edgewise_gauge"]

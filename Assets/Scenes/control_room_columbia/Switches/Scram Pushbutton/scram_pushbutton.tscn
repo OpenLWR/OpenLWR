@@ -17,16 +17,19 @@ transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0437279, -0.0216675, -0.000164032)
+cast_shadow = 0
 size = Vector3(0.0873337, 0.0101318, 0.105202)
 material = SubResource("StandardMaterial3D_5omvo")
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -1.01825e-06, 0.0194378, 5.28991e-05)
+cast_shadow = 0
 height = 0.871967
 material = SubResource("StandardMaterial3D_5omvo")
 
 [node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGCylinder3D"]
 transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0, 0.117039, 0)
+cast_shadow = 0
 operation = 2
 radius = 0.446067
 height = 0.66858
@@ -34,12 +37,14 @@ material = SubResource("StandardMaterial3D_5omvo")
 
 [node name="CSGCylinder3D3" type="CSGCylinder3D" parent="CSGCylinder3D"]
 transform = Transform3D(0.999999, 0, 0, 0, 0.330902, 0, 0, 0, 0.999999, -0.00500654, -0.3323, 0.000428905)
+cast_shadow = 0
 radius = 0.526879
 height = 0.343645
 material = SubResource("StandardMaterial3D_5omvo")
 
 [node name="Button" type="CSGCylinder3D" parent="."]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.00292618, 0)
+cast_shadow = 0
 radius = 0.471596
 height = 0.559508
 material = SubResource("StandardMaterial3D_cpb2u")

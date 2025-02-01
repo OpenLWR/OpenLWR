@@ -15,6 +15,21 @@ script = ExtResource("1_gl67l")
 [node name="selector_switch" parent="." instance=ExtResource("2_3ae11")]
 transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0)
 
+[node name="Handle" parent="selector_switch" index="0"]
+cast_shadow = 0
+
+[node name="Pointer" parent="selector_switch/Handle" index="0"]
+cast_shadow = 0
+
+[node name="Upper_Switch" parent="selector_switch/Handle" index="1"]
+cast_shadow = 0
+
+[node name="Base" parent="selector_switch" index="1"]
+cast_shadow = 0
+
+[node name="IRM_BASE" parent="selector_switch/Base" index="0"]
+cast_shadow = 0
+
 [node name="Sprite3D" type="Sprite3D" parent="selector_switch"]
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 0.453545, -0.813, 0)
 pixel_size = 0.012

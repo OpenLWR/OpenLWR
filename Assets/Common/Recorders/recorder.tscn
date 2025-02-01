@@ -31,8 +31,81 @@ script = ExtResource("1_o7tax")
 
 [node name="recorder" parent="Recorder" instance=ExtResource("2_lp4a1")]
 
+[node name="Cylinder" parent="Recorder/recorder" index="0"]
+cast_shadow = 0
+
+[node name="Cylinder_001" parent="Recorder/recorder" index="1"]
+cast_shadow = 0
+
+[node name="Cylinder_003" parent="Recorder/recorder" index="2"]
+cast_shadow = 0
+
+[node name="Plane" parent="Recorder/recorder" index="3"]
+cast_shadow = 0
+
+[node name="Cube_002" parent="Recorder/recorder" index="4"]
+cast_shadow = 0
+
+[node name="Cylinder_004" parent="Recorder/recorder" index="5"]
+cast_shadow = 0
+
+[node name="Cylinder_005" parent="Recorder/recorder" index="6"]
+cast_shadow = 0
+
+[node name="Cylinder_006" parent="Recorder/recorder" index="7"]
+cast_shadow = 0
+
+[node name="Cylinder_007" parent="Recorder/recorder" index="8"]
+cast_shadow = 0
+
+[node name="Cylinder_008" parent="Recorder/recorder" index="9"]
+cast_shadow = 0
+
+[node name="Cylinder_009" parent="Recorder/recorder" index="10"]
+cast_shadow = 0
+
+[node name="Cylinder_011" parent="Recorder/recorder" index="11"]
+cast_shadow = 0
+
+[node name="Cylinder_012" parent="Recorder/recorder" index="12"]
+cast_shadow = 0
+
+[node name="Cube_004" parent="Recorder/recorder" index="13"]
+cast_shadow = 0
+
 [node name="Cube_005" parent="Recorder/recorder" index="14"]
 material_override = SubResource("StandardMaterial3D_4xtmp")
+cast_shadow = 0
+
+[node name="Cube_011" parent="Recorder/recorder" index="15"]
+cast_shadow = 0
+
+[node name="Cylinder_017" parent="Recorder/recorder" index="16"]
+cast_shadow = 0
+
+[node name="Cylinder_035" parent="Recorder/recorder" index="17"]
+cast_shadow = 0
+
+[node name="Cylinder_038" parent="Recorder/recorder" index="18"]
+cast_shadow = 0
+
+[node name="Cylinder_039" parent="Recorder/recorder" index="19"]
+cast_shadow = 0
+
+[node name="Cylinder_040" parent="Recorder/recorder" index="20"]
+cast_shadow = 0
+
+[node name="Cylinder_041" parent="Recorder/recorder" index="21"]
+cast_shadow = 0
+
+[node name="Cube_019" parent="Recorder/recorder" index="22"]
+cast_shadow = 0
+
+[node name="Cylinder_043" parent="Recorder/recorder" index="23"]
+cast_shadow = 0
+
+[node name="Cylinder_044" parent="Recorder/recorder" index="24"]
+cast_shadow = 0
 
 [node name="Buttons" type="Node3D" parent="Recorder"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00897156, -0.0635645, -0.0123156)

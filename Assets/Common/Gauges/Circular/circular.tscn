@@ -12,8 +12,21 @@ script = ExtResource("1_qiauc")
 [node name="Circular" parent="." instance=ExtResource("1_tthqd")]
 transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, 0.1, 0, -0.1, -4.37114e-09, 0, 0, 0)
 
+[node name="Base" parent="Circular" index="0"]
+cast_shadow = 0
+
+[node name="Circle_001" parent="Circular/Base" index="0"]
+cast_shadow = 0
+
 [node name="Glass" parent="Circular" index="1"]
 transparency = 0.9
+cast_shadow = 0
+
+[node name="Needle" parent="Circular" index="2"]
+cast_shadow = 0
+
+[node name="Pointer" parent="Circular/Needle" index="0"]
+cast_shadow = 0
 
 [node name="Sprite3D" type="Sprite3D" parent="Circular"]
 transform = Transform3D(-0.41, 6.19083e-08, 2.7061e-15, -1.05879e-21, -1.79217e-08, 0.41, 6.19083e-08, 0.41, 1.79217e-08, -6.21176e-23, -0.130343, 5.69749e-09)

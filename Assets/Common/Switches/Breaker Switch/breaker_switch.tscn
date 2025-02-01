@@ -22,27 +22,38 @@ script = ExtResource("1_tl2tb")
 transform = Transform3D(0.028, 0, 0, 0, -1.22392e-09, 0.028, 0, -0.028, -1.22392e-09, 0, 0, 0)
 
 [node name="Base" parent="selector_switch" index="0"]
+cast_shadow = 0
 surface_material_override/0 = ExtResource("2_hk0qg")
 
 [node name="Cube_001" parent="selector_switch/Base" index="0"]
+cast_shadow = 0
 surface_material_override/0 = ExtResource("2_hk0qg")
 
 [node name="Cube_006" parent="selector_switch/Base" index="1"]
+cast_shadow = 0
 surface_material_override/0 = ExtResource("2_hk0qg")
 
 [node name="Sphere_001" parent="selector_switch/Base" index="2"]
+cast_shadow = 0
 surface_material_override/0 = ExtResource("2_hk0qg")
 
 [node name="Sphere_002" parent="selector_switch/Base" index="3"]
+cast_shadow = 0
 surface_material_override/0 = ExtResource("2_hk0qg")
 
 [node name="Handle" parent="selector_switch" index="1"]
+cast_shadow = 0
 surface_material_override/0 = ExtResource("3_u0dyy")
 
+[node name="Cube_003" parent="selector_switch/Handle" index="0"]
+cast_shadow = 0
+
 [node name="Cylinder_001" parent="selector_switch/Handle" index="1"]
+cast_shadow = 0
 surface_material_override/0 = ExtResource("3_u0dyy")
 
 [node name="Flag" parent="selector_switch" index="2"]
+cast_shadow = 0
 surface_material_override/0 = ExtResource("4_fc8tq")
 
 [node name="Left" type="StaticBody3D" parent="."]
@@ -129,6 +140,8 @@ input_ray_pickable = false
 [node name="CollisionShape3D" type="CollisionShape3D" parent="VRInteractionZoneR"]
 transform = Transform3D(39.6824, -1.09504e-17, -3.46914e-06, 1.80585e-12, -39.6824, 2.06567e-05, -3.46914e-06, -2.06567e-05, -39.6824, -20.3014, -18.9983, -35.4957)
 shape = SubResource("BoxShape3D_x10jv")
+
+[node name="Node" type="Node" parent="."]
 
 [connection signal="input_event" from="Left" to="." method="switch_click_left"]
 [connection signal="input_event" from="Right" to="." method="switch_click_right"]

@@ -25,6 +25,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/1-4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -44,6 +45,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/1-3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -63,6 +65,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/1-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -82,6 +85,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/1-1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -101,6 +105,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/2-4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -120,6 +125,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/2-3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -139,6 +145,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/2-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -158,6 +165,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/2-1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -177,6 +185,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/3-4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -196,6 +205,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/3-3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -215,6 +225,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/3-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -234,6 +245,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/3-1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -253,6 +265,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/4-4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -272,6 +285,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/4-3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -291,6 +305,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/4-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -310,6 +325,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/4-1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -329,6 +345,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/5-4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -348,6 +365,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/5-3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -367,6 +385,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/5-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -386,6 +405,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/5-1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -405,6 +425,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/6-4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -424,6 +445,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/6-3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -443,6 +465,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/6-2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -462,6 +485,7 @@ transform = Transform3D(-1.31134e-09, 0, 0.03, 0, 0.03, 0, -0.03, 0, -1.31134e-0
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/6-1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00170898, 0.00671339, -0.109342)
+cast_shadow = 0
 size = Vector3(3.04053, 1.95386, 0.300903)
 material = ExtResource("2_487u7")
 
@@ -478,11 +502,13 @@ outline_size = 0
 
 [node name="Box" type="CSGBox3D" parent="."]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 8.88178e-16, 0, 0.19169)
+cast_shadow = 0
 size = Vector3(0.0433738, 0.697803, 0.719044)
 material = SubResource("StandardMaterial3D_oti7f")
 
 [node name="Label" type="CSGBox3D" parent="."]
 transform = Transform3D(-4.37115e-08, 0, 1, 0, 0.999996, 0, -1, 0, -4.37115e-08, 0.0117186, -0.191315, 0.193882)
+cast_shadow = 0
 size = Vector3(0.0731425, 0.0191919, 0.00717134)
 material = ExtResource("4_rnii8")
 

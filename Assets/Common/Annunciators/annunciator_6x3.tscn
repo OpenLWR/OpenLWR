@@ -106,6 +106,7 @@ refraction_enabled = true
 
 [node name="Box" type="CSGBox3D" parent="."]
 transform = Transform3D(-2.62268e-08, 0, -0.6, 0, 0.6, 0, 0.6, 0, -2.62268e-08, 0, 0, 0)
+cast_shadow = 0
 size = Vector3(0.0433738, 0.420358, 0.861724)
 material = SubResource("StandardMaterial3D_7kt2m")
 
@@ -114,6 +115,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53674e-07, -0.167073, -0.1
 
 [node name="A1" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.288658, 0.455444)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_33xpd")
 
@@ -131,6 +133,7 @@ font_size = 14
 
 [node name="A2" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.178658, 0.455444)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_nnxcs")
 
@@ -146,6 +149,7 @@ font_size = 14
 
 [node name="A3" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.0686579, 0.455444)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_rv32m")
 
@@ -161,6 +165,7 @@ font_size = 14
 
 [node name="B1" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.288658, 0.325442)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_e2wyb")
 
@@ -178,6 +183,7 @@ font_size = 14
 
 [node name="B2" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.178658, 0.325442)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_axjav")
 
@@ -194,6 +200,7 @@ font_size = 14
 
 [node name="B3" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.0686579, 0.325442)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_jfspj")
 
@@ -210,6 +217,7 @@ font_size = 14
 
 [node name="C1" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.288658, 0.195441)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_k5ad0")
 
@@ -226,6 +234,7 @@ font_size = 14
 
 [node name="C2" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.178658, 0.195441)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_ueovu")
 
@@ -242,6 +251,7 @@ font_size = 14
 
 [node name="C3" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165024, 0.0686579, 0.195441)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_75ow5")
 
@@ -257,6 +267,7 @@ font_size = 14
 
 [node name="D1" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.288658, 0.0654407)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_cj5wa")
 
@@ -273,6 +284,7 @@ font_size = 14
 
 [node name="D2" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.178658, 0.0654407)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_qnvok")
 
@@ -288,6 +300,7 @@ font_size = 14
 
 [node name="D3" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.0686579, 0.0654407)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_rw52j")
 
@@ -305,6 +318,7 @@ font_size = 14
 
 [node name="E1" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.288658, -0.0645604)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_0rq3l")
 
@@ -320,6 +334,7 @@ font_size = 14
 
 [node name="E2" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.178658, -0.0645604)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_vwb2i")
 
@@ -335,6 +350,7 @@ font_size = 14
 
 [node name="E3" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.0686579, -0.0645604)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_k7f7b")
 
@@ -348,6 +364,7 @@ font_size = 14
 
 [node name="F1" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.288658, -0.194561)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_p6b83")
 
@@ -365,6 +382,7 @@ font_size = 14
 
 [node name="F2" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.178658, -0.194561)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_v78ju")
 
@@ -378,6 +396,7 @@ font_size = 14
 
 [node name="F3" type="CSGBox3D" parent="Box/Windows"]
 transform = Transform3D(0.0871558, -0.996195, 0, 0.996194, 0.0871558, 0, 0, 0, 1, 0.0165033, 0.0686579, -0.194561)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = SubResource("StandardMaterial3D_p3uvq")
 
@@ -391,6 +410,7 @@ font_size = 14
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Box"]
 transform = Transform3D(-1.49012e-07, 0, 1.66667, 0, 1.66666, 0, -1.66667, 0, -1.49012e-07, 0.0189915, -0.181602, 0.000445247)
+cast_shadow = 0
 size = Vector3(0.153121, 0.0112841, 0.00717134)
 material = ExtResource("1_rwfib")
 
@@ -408,44 +428,52 @@ transform = Transform3D(1.66667, 0, 0, 0, 1.66667, 0, 0, 0, 1.66667, -1.65686, -
 
 [node name="OrangeOutline2" type="CSGBox3D" parent="Box/Outlines"]
 transform = Transform3D(0.0478188, -0.205029, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.39027, -0.986119)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = ExtResource("2_vxtug")
 
 [node name="Subtract" type="CSGBox3D" parent="Box/Outlines/OrangeOutline2"]
 transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+cast_shadow = 0
 operation = 2
 size = Vector3(0.0962942, 0.04, 0.129)
 material = ExtResource("2_vxtug")
 
 [node name="OrangeOutline3" type="CSGBox3D" parent="Box/Outlines"]
 transform = Transform3D(0.0478192, -0.205031, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.39027, -0.908752)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = ExtResource("2_vxtug")
 
 [node name="Subtract" type="CSGBox3D" parent="Box/Outlines/OrangeOutline3"]
 transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+cast_shadow = 0
 operation = 2
 size = Vector3(0.0962942, 0.04, 0.129)
 material = ExtResource("2_vxtug")
 
 [node name="OrangeOutline4" type="CSGBox3D" parent="Box/Outlines"]
 transform = Transform3D(0.0478192, -0.205031, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.39027, -0.83013)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = ExtResource("3_kypfr")
 
 [node name="Subtract" type="CSGBox3D" parent="Box/Outlines/OrangeOutline4"]
 transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+cast_shadow = 0
 operation = 2
 size = Vector3(0.0962942, 0.04, 0.129)
 material = ExtResource("2_vxtug")
 
 [node name="OrangeOutline5" type="CSGBox3D" parent="Box/Outlines"]
 transform = Transform3D(0.0478192, -0.205031, 0, 0.54657, 0.0179378, 0, 0, 0, 0.57073, 1.01238, 1.39027, -0.751762)
+cast_shadow = 0
 size = Vector3(0.108, 0.04, 0.129)
 material = ExtResource("3_kypfr")
 
 [node name="Subtract" type="CSGBox3D" parent="Box/Outlines/OrangeOutline5"]
 transform = Transform3D(1.06858, -3.72529e-09, 0, -5.06639e-07, 1.1996, 0, 0, 0, 0.957133, 0.000227928, -9.53674e-07, 0)
+cast_shadow = 0
 operation = 2
 size = Vector3(0.0962942, 0.04, 0.129)
 material = ExtResource("2_vxtug")

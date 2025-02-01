@@ -9,4 +9,31 @@ script = ExtResource("1_2s66p")
 [node name="yokohawagauge_Optimized" parent="." instance=ExtResource("2_exvg8")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 
+[node name="Face" parent="yokohawagauge_Optimized" index="0"]
+cast_shadow = 0
+
+[node name="Frame" parent="yokohawagauge_Optimized" index="1"]
+cast_shadow = 0
+
+[node name="Needle" parent="yokohawagauge_Optimized" index="2"]
+cast_shadow = 0
+
+[node name="Screw" parent="yokohawagauge_Optimized" index="3"]
+cast_shadow = 0
+
+[node name="BezelL" parent="yokohawagauge_Optimized" index="4"]
+cast_shadow = 0
+
+[node name="BezelR" parent="yokohawagauge_Optimized" index="5"]
+cast_shadow = 0
+
+[node name="Face_001" parent="yokohawagauge_Optimized" index="6"]
+cast_shadow = 0
+
+[node name="Face_002" parent="yokohawagauge_Optimized" index="7"]
+cast_shadow = 0
+
+[node name="Axis" parent="yokohawagauge_Optimized" index="8"]
+cast_shadow = 0
+
 [editable path="yokohawagauge_Optimized"]

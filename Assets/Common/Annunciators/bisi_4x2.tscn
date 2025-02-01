@@ -18,6 +18,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.67631, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370129, 5.19333, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/1-1"]
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -36,6 +37,7 @@ outline_size = 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.03013, 5.19333, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/1-2"]
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -54,6 +56,7 @@ outline_size = 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370129, 3.23, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/2-1"]
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -72,6 +75,7 @@ outline_size = 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.03013, 3.23, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/2-2"]
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -90,6 +94,7 @@ outline_size = 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370129, 1.33, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/3-1"]
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -108,6 +113,7 @@ outline_size = 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.03013, 1.33, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/3-2"]
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -126,6 +132,7 @@ outline_size = 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370129, -0.57, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/4-1"]
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -143,6 +150,7 @@ outline_size = 0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.03013, -0.57, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Windows/4-2"]
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -165,6 +173,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370129, 5.19333, -0.0651856
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Pushbuttons/1-1"]
 transparency = 1.0
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -180,6 +189,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.03013, 5.19333, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Pushbuttons/1-2"]
 transparency = 1.0
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -195,6 +205,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370129, 3.23, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Pushbuttons/2-1"]
 transparency = 1.0
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -210,6 +221,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.03013, 3.23, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Pushbuttons/2-2"]
 transparency = 1.0
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -225,6 +237,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370129, 1.33, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Pushbuttons/3-1"]
 transparency = 1.0
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -240,6 +253,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.03013, 1.33, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Pushbuttons/3-2"]
 transparency = 1.0
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -255,6 +269,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370129, -0.57, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Pushbuttons/4-1"]
 transparency = 1.0
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -270,6 +285,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.03013, -0.57, -0.0651856)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Pushbuttons/4-2"]
 transparency = 1.0
+cast_shadow = 0
 size = Vector3(2.55353, 1.65118, 0.0561523)
 material = ExtResource("1_fy4dh")
 
@@ -283,6 +299,7 @@ shape = SubResource("BoxShape3D_1txo3")
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 0.0499208, 1.75395, -0.203708)
 material_override = ExtResource("3_u36p6")
+cast_shadow = 0
 size = Vector3(11.5034, 8.9797, 0.329834)
 
 [node name="Label" type="CSGBox3D" parent="."]

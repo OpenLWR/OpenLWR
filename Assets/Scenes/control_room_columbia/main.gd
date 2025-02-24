@@ -742,7 +742,64 @@ signal chat_message(message)
 		"max_value": 150,
 		"atypical" : false,
 		"text" : false,
-	}
+	},
+	
+	"dg1p1volts": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SM7/dg1p1volts",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 6000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"dg1p2volts": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SM7/dg1p2volts",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 6000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"dg1p3volts": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SM7/dg1p3volts",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 6000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"dg1_freq": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SM7/dg1_freq",
+		"value": 0,
+		"min_value": 55,
+		"max_value": 65,
+		"atypical" : false,
+		"text" : false,
+	},
+	"dg1p1amps": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SM7/dg1p1amps",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 700,
+		"atypical" : false,
+		"text" : false,
+	},
+	"dg1p2amps": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SM7/dg1p2amps",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 700,
+		"atypical" : false,
+		"text" : false,
+	},
+	"dg1p3amps": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SM7/dg1p3amps",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 700,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var alarms = {}
@@ -1427,6 +1484,7 @@ func _process(delta):
 								recorder["boot_time"] = 1
 								
 					tables_received.append(info_name)
+					socket.send_text(build_packet(client_packets.USER_LOGIN,"a"))
 								
 		elif state == WebSocketPeer.STATE_CONNECTING:
 			connection_timeout += 1

@@ -92,6 +92,7 @@ func _unhandled_input(event: InputEvent):
 			input_dir = Vector2(0,0)
 		if event.is_action_pressed("menu_toggle"):
 			get_node("Head/Camera3d/Menu").visible = not get_node("Head/Camera3d/Menu").visible
+			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 		if event.is_action_pressed("zoom"):
 			if config.get_value("options","zoom_toggle",false) or os_is_mobile:
 				zoom_toggle = not zoom_toggle

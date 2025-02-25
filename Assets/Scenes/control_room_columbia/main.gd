@@ -800,6 +800,65 @@ signal chat_message(message)
 		"atypical" : false,
 		"text" : false,
 	},
+	
+	"sm7running": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SM7/sm7running",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 6000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"sm7incoming": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SM7/sm7incoming",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 6000,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	"sm7voltage": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SM7/sm7voltage",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 6000,
+		"atypical" : false,
+		"text" : false,
+	},
+	"b7amps": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SM7/b7amps",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 800,
+		"atypical" : false,
+		"text" : false,
+	},
+	"7_1amps": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SM7/7_1amps",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 800,
+		"atypical" : false,
+		"text" : false,
+	},
+	
+	"73voltage": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SM7/73voltage",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 600,
+		"atypical" : false,
+		"text" : false,
+	},
+	"73amps": {
+		"node": $"Control Room Panels/Main Panel Right Side/Controls/SM7/73amps",
+		"value": 0,
+		"min_value": 0,
+		"max_value": 200,
+		"atypical" : false,
+		"text" : false,
+	},
 }
 
 var alarms = {}

@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://c5dd8edkvmcwo"]
 
-[ext_resource type="Script" path="res://Assets/Common/Switches/Selector Switch/selector_button.gd" id="1_88ksu"]
+[ext_resource type="Script" uid="uid://fmjurvmugcur" path="res://Assets/Common/Switches/Selector Switch/selector_button.gd" id="1_88ksu"]
 [ext_resource type="PackedScene" uid="uid://gxikcyses8jk" path="res://Assets/Common/Switches/Selector Switch/selector_switch.glb" id="2_dp1pw"]
 [ext_resource type="Material" uid="uid://dqms4q6oxflb7" path="res://Assets/Materials/silver_metal.tres" id="3_1w00v"]
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="4_hi3rd"]

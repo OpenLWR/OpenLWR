@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cgp8v2vik6nnu"]
 
-[ext_resource type="Script" path="res://Assets/Scenes/Player/vr_player.gd" id="1_vwgep"]
+[ext_resource type="Script" uid="uid://b7760o7c1xfkk" path="res://Assets/Scenes/Player/vr_player.gd" id="1_vwgep"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_y0bul"]
 

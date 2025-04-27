@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://ckpwvkeql8lki"]
 
-[ext_resource type="Script" path="res://Assets/Scenes/Lobby/LobbyItem.gd" id="1_vj86x"]
+[ext_resource type="Script" uid="uid://bb3xddmhhjd22" path="res://Assets/Scenes/Lobby/LobbyItem.gd" id="1_vj86x"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_422ta"]
 resource_local_to_scene = true

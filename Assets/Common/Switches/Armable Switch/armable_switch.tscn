@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dn7mi80gxcn24"]
 
 [ext_resource type="PackedScene" uid="uid://bl7ygkdjt1g3s" path="res://Assets/Common/Switches/Armable Switch/untitled.glb" id="1_r86ma"]
-[ext_resource type="Script" path="res://Assets/Common/Switches/Armable Switch/Armable Switch.gd" id="2_p3ofa"]
+[ext_resource type="Script" uid="uid://bi4ai8sxbwil4" path="res://Assets/Common/Switches/Armable Switch/Armable Switch.gd" id="2_p3ofa"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_oeja8"]
 height = 2.1246

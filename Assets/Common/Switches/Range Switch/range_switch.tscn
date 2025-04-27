@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cwbh50131lniu"]
 
-[ext_resource type="Script" path="res://Assets/Common/Switches/Selector Switch/selector_switch.gd" id="1_gl67l"]
+[ext_resource type="Script" uid="uid://ojqsgb3wo80x" path="res://Assets/Common/Switches/Selector Switch/selector_switch.gd" id="1_gl67l"]
 [ext_resource type="PackedScene" uid="uid://ekemd01ag1n1" path="res://Assets/Common/Switches/Range Switch/range_switch.glb" id="2_3ae11"]
 [ext_resource type="Texture2D" uid="uid://c37qqeynm0u81" path="res://Assets/Textures/OLWR_RangeSW.png" id="3_yqmxp"]
 [ext_resource type="AudioStream" uid="uid://wlb0cgw34y6m" path="res://Assets/Audio/breaker_switch.mp3" id="4_sj8gw"]

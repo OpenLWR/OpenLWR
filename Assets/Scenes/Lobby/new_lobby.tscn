@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://dmffnfkuj0cd4"]
 
-[ext_resource type="Script" path="res://Assets/Scenes/Lobby/new_lobby.gd" id="1_dc5mj"]
-[ext_resource type="Script" path="res://Assets/Scenes/Lobby/ServerList.gd" id="1_qdlwb"]
-[ext_resource type="Script" path="res://Assets/Scenes/Lobby/ServerInfo.gd" id="3_pb2tk"]
-[ext_resource type="Script" path="res://Assets/Scenes/Lobby/Add_server.gd" id="4_780co"]
+[ext_resource type="Script" uid="uid://b1vu2nho6mala" path="res://Assets/Scenes/Lobby/new_lobby.gd" id="1_dc5mj"]
+[ext_resource type="Script" uid="uid://crm37d27o81yu" path="res://Assets/Scenes/Lobby/ServerList.gd" id="1_qdlwb"]
+[ext_resource type="Script" uid="uid://x0y7depf06il" path="res://Assets/Scenes/Lobby/ServerInfo.gd" id="3_pb2tk"]
+[ext_resource type="Script" uid="uid://bifa8k4inyn54" path="res://Assets/Scenes/Lobby/Add_server.gd" id="4_780co"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7hd70"]
 font_color = Color(1, 0, 0, 1)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://h3o7x2at0m1"]
 
-[ext_resource type="Script" path="res://Assets/Common/Gauges/Edgewise/edgewise_gauge.gd" id="1_2s66p"]
+[ext_resource type="Script" uid="uid://c63de85v3tjpj" path="res://Assets/Common/Gauges/Edgewise/edgewise_gauge.gd" id="1_2s66p"]
 [ext_resource type="PackedScene" uid="uid://bmng6varu5ifk" path="res://Assets/Common/Gauges/Edgewise/yokohawagauge_Optimized.glb" id="2_exvg8"]
 
 [node name="edgewise_gauge" type="Node3D"]

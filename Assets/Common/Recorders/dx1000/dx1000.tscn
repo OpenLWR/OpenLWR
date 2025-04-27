@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://caf6afwy36f0a" path="res://Assets/Common/Recorders/dx1000/recorder_map3.png" id="3_4qxux"]
 [ext_resource type="Texture2D" uid="uid://bdao6fkmmt4qf" path="res://Assets/Common/Recorders/dx1000/recorder_Plastic015A_2K-JPG_Roughness.png" id="4_w0lyg"]
 [ext_resource type="Texture2D" uid="uid://bgjf2hefapq0j" path="res://Assets/Common/Recorders/dx1000/recorder_Plastic015A_2K-JPG_NormalGL.jpg" id="5_kkjek"]
-[ext_resource type="Script" path="res://Assets/Common/Recorders/dx1000/door.gd" id="6_hn1yr"]
+[ext_resource type="Script" uid="uid://dq86i0ylh2vq8" path="res://Assets/Common/Recorders/dx1000/door.gd" id="6_hn1yr"]
 [ext_resource type="AudioStream" uid="uid://cdtt8bvcktlte" path="res://Assets/Audio/dx1000/recorder_open.mp3" id="7_0pn1l"]
 [ext_resource type="AudioStream" uid="uid://bgw88j5wo6ruf" path="res://Assets/Audio/dx1000/recorder_close.mp3" id="8_bkkry"]
 

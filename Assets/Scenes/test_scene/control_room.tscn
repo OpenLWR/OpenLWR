@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://d1voufvibxvu4"]
 
-[ext_resource type="Script" path="res://Assets/Scenes/test_scene/main.gd" id="1_1jahg"]
+[ext_resource type="Script" uid="uid://770yufug48hf" path="res://Assets/Scenes/test_scene/main.gd" id="1_1jahg"]
 [ext_resource type="PackedScene" uid="uid://7gv6q50fuutj" path="res://Assets/Scenes/Player/player.tscn" id="2_7sxx2"]
 [ext_resource type="Material" uid="uid://cxsxep1u6sj3f" path="res://Assets/Materials/panel_material.tres" id="3_dnypx"]
 [ext_resource type="ArrayMesh" uid="uid://mh7bhpaspmgv" path="res://Assets/Misc/Models/placeholder_panel.obj" id="4_3dw1b"]
@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cyksa23nxqjwn" path="res://Assets/Common/Switches/Selector Switch/selector_switch.tscn" id="6_ngchh"]
 [ext_resource type="PackedScene" uid="uid://crga4wior2o86" path="res://Assets/Common/Switches/Selector Switch 2/selector_switch_2.tscn" id="7_ca6tt"]
 [ext_resource type="PackedScene" uid="uid://dp5ytydbdxgoi" path="res://Assets/Common/Annunciators/annunciator_6x3.tscn" id="8_wllca"]
-[ext_resource type="Script" path="res://Assets/Common/Annunciators/annunciator.gd" id="9_0yiso"]
+[ext_resource type="Script" uid="uid://h3tqu2pvq4r5" path="res://Assets/Common/Annunciators/annunciator.gd" id="9_0yiso"]
 [ext_resource type="AudioStream" uid="uid://bfn1cqw1n0oqs" path="res://Assets/Audio/reactor_alarm_loop.mp3" id="10_5wjjd"]
 [ext_resource type="AudioStream" uid="uid://bqm26847iqdj1" path="res://Assets/Audio/electrical_alarm_loop.mp3" id="11_v8rg4"]
 

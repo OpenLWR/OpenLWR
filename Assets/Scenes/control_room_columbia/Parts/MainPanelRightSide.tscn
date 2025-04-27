@@ -9,7 +9,7 @@
 [ext_resource type="Material" uid="uid://b0b37alwlfoju" path="res://Assets/Materials/white_metal.tres" id="7_mjfmo"]
 [ext_resource type="FontFile" uid="uid://buyai76qopogh" path="res://Assets/Fonts/Roboto/Roboto-Regular.ttf" id="8_bajey"]
 [ext_resource type="Material" uid="uid://c2raag84b6lqd" path="res://Assets/Materials/black_metal.tres" id="9_jygck"]
-[ext_resource type="Script" path="res://Assets/Common/Switches/button.gd" id="10_y62ac"]
+[ext_resource type="Script" uid="uid://ct1pgi5nl7ych" path="res://Assets/Common/Switches/button.gd" id="10_y62ac"]
 [ext_resource type="FontFile" uid="uid://cqsshl4y7vp2w" path="res://Assets/Fonts/Roboto Condensed/RobotoCondensed-VariableFont_wght.ttf" id="11_2j1hq"]
 [ext_resource type="Material" uid="uid://dvsme7hpd88f1" path="res://Assets/Materials/white_green_lamp.tres" id="12_i0mcm"]
 [ext_resource type="Material" uid="uid://dqdt17a6hmq0u" path="res://Assets/Materials/annunciator_amber.tres" id="13_h3u5p"]

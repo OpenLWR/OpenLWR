@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://c43dvwlnpb8qa"]
 
-[ext_resource type="Script" path="res://Assets/Common/Recorders/recorder.gd" id="1_o7tax"]
+[ext_resource type="Script" uid="uid://dt001cc8kctk6" path="res://Assets/Common/Recorders/recorder.gd" id="1_o7tax"]
 [ext_resource type="PackedScene" uid="uid://c62ydsv8ub24" path="res://Assets/Common/Recorders/recorder_screen_2.tscn" id="2_h2x2g"]
 [ext_resource type="PackedScene" uid="uid://dxhyvqwtprtgy" path="res://Assets/Common/Recorders/dx1000/dx1000.tscn" id="2_lp4a1"]
-[ext_resource type="Script" path="res://Assets/Common/Recorders/recorder_button.gd" id="3_i23bp"]
+[ext_resource type="Script" uid="uid://dvviv0vlj4i3c" path="res://Assets/Common/Recorders/recorder_button.gd" id="3_i23bp"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_c6sq8"]
 viewport_path = NodePath("Recorder/Screen")

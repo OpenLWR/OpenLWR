@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://b6voaf3q40kxq"]
 
 [ext_resource type="PackedScene" uid="uid://dajqyrsq1qo2" path="res://Assets/Common/Switches/Breaker Switch/flagswitch.glb" id="1_jvw7k"]
-[ext_resource type="Script" path="res://Assets/Common/Switches/Selector Switch/selector_switch.gd" id="1_tl2tb"]
+[ext_resource type="Script" uid="uid://ojqsgb3wo80x" path="res://Assets/Common/Switches/Selector Switch/selector_switch.gd" id="1_tl2tb"]
 [ext_resource type="Material" uid="uid://c2raag84b6lqd" path="res://Assets/Materials/black_metal.tres" id="2_hk0qg"]
 [ext_resource type="Material" uid="uid://c1j8toxlvfuds" path="res://Assets/Materials/black_plastic.tres" id="3_u0dyy"]
 [ext_resource type="Material" uid="uid://dcl4g6cdcurmk" path="res://Assets/Materials/green_flag.tres" id="4_fc8tq"]

@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cyksa23nxqjwn" path="res://Assets/Common/Switches/Selector Switch/selector_switch.tscn" id="4_1rvhv"]
 [ext_resource type="PackedScene" uid="uid://cpwib70utulux" path="res://Assets/Common/Misc/SwitchLabel.tscn" id="5_p0nbo"]
 [ext_resource type="FontFile" uid="uid://ckdgkcvthqkat" path="res://Assets/Fonts/Roboto/Roboto-Medium.ttf" id="6_n413r"]
-[ext_resource type="Script" path="res://Assets/Common/Switches/button.gd" id="7_tmgw1"]
+[ext_resource type="Script" uid="uid://ct1pgi5nl7ych" path="res://Assets/Common/Switches/button.gd" id="7_tmgw1"]
 [ext_resource type="PackedScene" uid="uid://dn7mi80gxcn24" path="res://Assets/Common/Switches/Armable Switch/armable_switch.tscn" id="8_ug2cc"]
 [ext_resource type="PackedScene" uid="uid://dok8h20vi4url" path="res://Assets/Common/Gauges/Edgewise/edgewise_gauge.tscn" id="9_vhmbc"]
 [ext_resource type="Material" uid="uid://b0b37alwlfoju" path="res://Assets/Materials/white_metal.tres" id="10_b6uni"]

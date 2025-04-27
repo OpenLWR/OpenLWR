@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=4 uid="uid://dok8h20vi4url"]
 
 [ext_resource type="PackedScene" uid="uid://dwlvtbrsq8blg" path="res://Assets/Common/Gauges/Edgewise/edgewise_gauge.glb" id="1_kpy8e"]
-[ext_resource type="Script" path="res://Assets/Common/Gauges/Edgewise/edgewise_gauge.gd" id="1_uwsdk"]
+[ext_resource type="Script" uid="uid://c63de85v3tjpj" path="res://Assets/Common/Gauges/Edgewise/edgewise_gauge.gd" id="1_uwsdk"]
 [ext_resource type="Material" uid="uid://bw6ngrnd848ig" path="res://Assets/Materials/gauge.tres" id="3_cbij6"]
 [ext_resource type="Material" uid="uid://703n3ewcyxt7" path="res://Assets/Materials/gauge_template_refined.tres" id="4_2xxww"]
 

@@ -326,7 +326,7 @@ size_flags_vertical = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Head/Camera3d/Chat"]
 libraries = {
-"": SubResource("AnimationLibrary_ypu8n")
+&"": SubResource("AnimationLibrary_ypu8n")
 }
 
 [node name="Move" parent="Head/Camera3d" instance=ExtResource("7_c2n07")]

@@ -102,11 +102,11 @@ func update(info):
 		end_boot()
 		
 		$"Recorder/recorder/Cube_005".material_override = screen_material
-		get_node("Recorder/Screen/Node2D/PAGES/%s_PAGE" % str(page)).update(info)
+		get_node("Recorder/Screen/Node2D/PAGES/%s_PAGE" % str(int(page))).update(info)
 		
 		var children = $"Recorder/Screen/Node2D/PAGES".get_children()
 		for child in children:
-			if child.name != str(page)+"_PAGE":
+			if child.name != str(int(page))+"_PAGE":
 				child.visible = false
 			else:
 				child.visible = true

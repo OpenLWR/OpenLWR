@@ -13,7 +13,9 @@ config_version=5
 config/name="Open Light Water Reactor"
 run/main_scene="res://Assets/Scenes/Lobby/new_lobby.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="uid://b18d475mlf1lm"
+config/icon="uid://djhw5rule78dn"
 
 [autoload]
 

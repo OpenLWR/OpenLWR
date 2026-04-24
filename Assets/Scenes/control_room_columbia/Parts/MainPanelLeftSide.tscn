@@ -33,10 +33,10 @@
 [ext_resource type="Material" uid="uid://di3ysg56v4wql" path="res://Assets/Materials/yellow_plastic.tres" id="31_xgvhg"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gbb1r"]
-size = Vector3(15.7414, 82.7295, 33.7764)
+size = Vector3(15.2418, 82.7295, 33.7764)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_m3wg5"]
-size = Vector3(15.7414, 41.9106, 109.626)
+size = Vector3(15.2428, 41.9106, 109.626)
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_vrfw8"]
 viewport_path = NodePath("Control Room Panels/Main Panel Left Side/Controls/GDS1/Sprite3D/SubViewport")
@@ -721,11 +721,11 @@ mesh = ExtResource("2_00qsu")
 transform = Transform3D(1, 0, -2.64698e-23, 0, 1, 1.65714e-21, 0, 1.65714e-21, 1, 0, 0, 0)
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="Model/StaticBody3D"]
-transform = Transform3D(2, 2.22045e-15, 1.58819e-22, 0, 2, 0, 2.13588e-17, 0, 2, 14.7414, -82.3988, 32.7764)
+transform = Transform3D(2, -1.19904e-13, -5.13514e-21, -1.2642e-10, 2, -8.73968e-13, 2.36356e-17, 8.73968e-13, 2, 15.241, -82.3987, 32.7764)
 shape = SubResource("BoxShape3D_gbb1r")
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="Model/StaticBody3D"]
-transform = Transform3D(2, 2.22045e-15, 1.58819e-22, 0, 2, 0, 2.60209e-17, 0, 2, 14.7414, -41.58, 108.627)
+transform = Transform3D(2, -1.27898e-13, -5.45277e-21, -1.34605e-10, 2, -9.30811e-13, 2.84603e-17, 9.30811e-13, 2, 15.24, -41.5799, 108.627)
 shape = SubResource("BoxShape3D_m3wg5")
 
 [node name="Controls" type="Node3D" parent="."]
